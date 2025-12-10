@@ -104,6 +104,14 @@
       -2px 0 hsl(var(--chroma-blue));
   }
 
+  /* Strong Chromatic Aberration for Headlines */
+  .chromatic-text-strong {
+    color: #e0e0e0;
+    text-shadow: 
+      4px 0 red, 
+      -4px 0 blue;
+  }
+
   .tag-glow {
     text-shadow: 2px 2px 0px hsl(var(--accent) / 0.5);
   }
