@@ -244,7 +244,13 @@ const NeuralCloud = () => {
   }, []);
 
   return (
-    <section id="cloud" className="relative h-screen w-full" style={{ backgroundColor: '#050505' }}>
+    <section id="cloud" className="relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111]">
+      {/* Top Vignette Overlay */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#111] to-transparent z-20 pointer-events-none" />
+      
+      {/* Bottom Vignette Overlay */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-20 pointer-events-none" />
+      
       {/* UI Overlay */}
       <div className="absolute top-8 left-8 z-10 font-mono font-bold tracking-wider text-sm md:text-base" style={{ color: '#00ff41' }}>
         // NEURAL_SINGULARITY
@@ -265,8 +271,8 @@ const NeuralCloud = () => {
 
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         {/* Atmosphere */}
-        <color attach="background" args={["#050505"]} />
-        <fog attach="fog" args={["#050505", 5, 20]} />
+        <color attach="background" args={["#000000"]} />
+        <fog attach="fog" args={["#000000", 10, 25]} />
         <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
         
         {/* Lighting */}
