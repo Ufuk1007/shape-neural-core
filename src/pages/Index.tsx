@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Grid3x3, Diamond, MessageSquare, Terminal } from "lucide-react";
+import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
 
 const Index = () => {
   const [time, setTime] = useState(0);
@@ -44,6 +44,14 @@ const Index = () => {
         zIndex: 10
       }} />
 
+      {/* MOVING SCANLINE */}
+      <div 
+        className="absolute left-0 right-0 h-[2px] bg-[#0f0] opacity-10 pointer-events-none z-10"
+        style={{
+          animation: 'scanMove 4s linear infinite',
+        }}
+      />
+
       {/* 2. CRT FLICKER */}
       <div className="absolute inset-0 z-20 pointer-events-none bg-[rgba(18,16,16,0.1)] opacity-10 animate-pulse" />
 
@@ -55,8 +63,8 @@ const Index = () => {
           <div className="flex items-center gap-2 text-[#ff0055]">
             <span style={{ opacity: blink ? 1 : 0.3, transition: 'opacity 0.1s' }}>SYS ●</span>
             <span>[SN_CORE_V1]</span>
+            <span className="text-[#0f0]">{formatTime(time)}</span>
           </div>
-          <span className="text-[#0f0] ml-auto">{formatTime(time)}</span>
         </div>
 
         {/* MAIN HEADLINE (The 3-Layer Technique) */}
@@ -74,7 +82,7 @@ const Index = () => {
           {/* Main Channel */}
           <div className="relative text-[#e0e0e0]"
                style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
-            SHAPE<br/>NEURAL_
+            SHAPE<br/>NEURAL<span style={{ opacity: blink ? 1 : 0.3, transition: 'opacity 0.1s' }}>_</span>
           </div>
         </div>
 
@@ -99,7 +107,7 @@ const Index = () => {
 
             {/* PROJECTS */}
             <a href="#projects" className="group flex items-center gap-3 border-2 border-[#0f0] px-6 py-3 hover:bg-[#0f0] hover:text-black transition-colors min-w-[180px] font-bold tracking-wider">
-              <Diamond className="w-5 h-5" />
+              <Zap className="w-5 h-5" />
               <span>PROJECTS</span>
             </a>
 
