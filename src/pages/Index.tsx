@@ -3,9 +3,17 @@ import { Grid3x3, Diamond, MessageSquare, Terminal } from "lucide-react";
 
 const Index = () => {
   const [time, setTime] = useState(0);
+  const [blink, setBlink] = useState(true);
 
+  // Timer Logic
   useEffect(() => {
     const interval = setInterval(() => setTime((t) => t + 1), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Blinking Logic for "SYS"
+  useEffect(() => {
+    const interval = setInterval(() => setBlink((b) => !b), 800);
     return () => clearInterval(interval);
   }, []);
 
@@ -17,65 +25,88 @@ const Index = () => {
   };
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col justify-center items-center overflow-hidden">
-      
-      {/* 1. THE SCANLINE LAYER (From CSS) */}
-      <div className="scanlines" />
-      
-      {/* 2. THE FLICKER LAYER */}
-      <div className="pointer-events-none absolute inset-0 z-20 animate-flicker bg-[rgba(18,16,16,0.1)] opacity-20" />
+    <div 
+      className="relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111]"
+      style={{
+        fontFamily: "'Courier New', Courier, monospace",
+        color: "#0f0"
+      }}
+    >
+      {/* 1. SCANLINE OVERLAY (Direct Port from User Code) */}
+      <div style={{
+        position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+        backgroundImage: `
+          linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+          linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))
+        `,
+        backgroundSize: '100% 4px, 6px 100%',
+        pointerEvents: 'none',
+        zIndex: 10
+      }} />
 
-      {/* 3. CONTENT */}
-      <div className="relative z-30 w-full max-w-5xl px-6 md:px-12 flex flex-col gap-12">
+      {/* 2. CRT FLICKER */}
+      <div className="absolute inset-0 z-20 pointer-events-none bg-[rgba(18,16,16,0.1)] opacity-10 animate-pulse" />
+
+      {/* 3. CONTENT CONTAINER */}
+      <div className="relative z-30 w-full max-w-6xl">
         
-        {/* TOP BAR */}
-        <div className="flex justify-between items-end border-b-2 border-[#0f0]/30 pb-4 text-sm md:text-base font-bold tracking-widest">
-          <div className="flex items-center gap-4 text-[#ff0055]">
-            <span className="animate-pulse">SYS</span>
-            <span className="hidden md:inline">[SN_CORE_V1]</span>
+        {/* TOP METADATA ROW */}
+        <div className="flex items-center gap-4 mb-6 font-bold tracking-widest text-sm md:text-base">
+          <div className="flex items-center gap-2 text-[#ff0055]">
+            <span style={{ opacity: blink ? 1 : 0.3, transition: 'opacity 0.1s' }}>SYS ●</span>
+            <span>[SN_CORE_V1]</span>
           </div>
-          <div className="text-[#0f0]">
-            SESSION: {formatTime(time)}
+          <span className="text-[#0f0] ml-auto">{formatTime(time)}</span>
+        </div>
+
+        {/* MAIN HEADLINE (The 3-Layer Technique) */}
+        <div className="relative mb-8">
+          {/* Red Channel */}
+          <div className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none"
+               style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
+            SHAPE<br/>NEURAL_
+          </div>
+          {/* Blue Channel */}
+          <div className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none"
+               style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
+            SHAPE<br/>NEURAL_
+          </div>
+          {/* Main Channel */}
+          <div className="relative text-[#e0e0e0]"
+               style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
+            SHAPE<br/>NEURAL_
           </div>
         </div>
 
-        {/* HEADLINE */}
-        <div className="flex flex-col gap-6">
-          <h1 className="glitch-shadow text-7xl md:text-9xl font-bold uppercase leading-[0.85] tracking-tighter text-[#e0e0e0]">
-            SHAPE<br />NEURAL<span className="animate-pulse">_</span>
-          </h1>
-          
-          <div>
-            <span className="inline-block bg-white text-black font-sans font-black text-lg px-4 py-2 -skew-x-12 transform">
-              DESIGNING INTELLIGENCE
-            </span>
-          </div>
+        {/* SUBTAG */}
+        <div className="inline-block bg-white text-black font-sans font-black text-lg px-4 py-2 -skew-x-12 transform mb-16">
+          DESIGNING INTELLIGENCE
         </div>
 
-        {/* BUTTONS (FIXED FONTS & ICONS) */}
-        <div className="mt-12">
-          <div className="text-[#0f0] font-bold mb-4 flex items-center gap-2 uppercase tracking-widest">
-            <Terminal size={16} /> 
-            <span>SELECT_MODE:</span>
+        {/* BUTTON INTERFACE */}
+        <div>
+          <div className="text-[#0f0] font-bold mb-4 flex items-center gap-2 uppercase tracking-widest text-sm">
+            <Terminal size={14} /> 
+            <span>{'>'} SELECT_MODE:</span>
           </div>
           
-          <div className="flex flex-wrap gap-6 font-bold text-lg tracking-widest">
+          <div className="flex flex-wrap gap-4 md:gap-6">
             {/* DATA CLOUD */}
-            <a href="#cloud" className="group flex items-center gap-4 border-4 border-[#0f0] px-6 py-4 hover:bg-[#0f0] hover:text-black transition-colors min-w-[200px]">
-              <Grid3x3 className="w-6 h-6" />
-              DATA_CLOUD
+            <a href="#cloud" className="group flex items-center gap-3 border-2 border-[#0f0] px-6 py-3 hover:bg-[#0f0] hover:text-black transition-colors min-w-[180px] font-bold tracking-wider">
+              <Grid3x3 className="w-5 h-5" />
+              <span>DATA_CLOUD</span>
             </a>
 
             {/* PROJECTS */}
-            <a href="#projects" className="group flex items-center gap-4 border-4 border-[#0f0] px-6 py-4 hover:bg-[#0f0] hover:text-black transition-colors min-w-[200px]">
-              <Diamond className="w-6 h-6" />
-              PROJECTS
+            <a href="#projects" className="group flex items-center gap-3 border-2 border-[#0f0] px-6 py-3 hover:bg-[#0f0] hover:text-black transition-colors min-w-[180px] font-bold tracking-wider">
+              <Diamond className="w-5 h-5" />
+              <span>PROJECTS</span>
             </a>
 
             {/* AI CHAT */}
-            <button className="group flex items-center gap-4 bg-[#ff0055] border-4 border-[#ff0055] text-white px-6 py-4 hover:bg-[#ff3377] hover:border-[#ff3377] transition-colors min-w-[200px]">
-              <MessageSquare className="w-6 h-6 fill-current" />
-              AI_CHAT
+            <button className="group flex items-center gap-3 bg-[#ff0055] border-2 border-[#ff0055] text-white px-6 py-3 hover:bg-[#ff3377] hover:border-[#ff3377] transition-colors min-w-[180px] font-bold tracking-wider">
+              <MessageSquare className="w-5 h-5 fill-current" />
+              <span>AI_CHAT</span>
             </button>
           </div>
         </div>
