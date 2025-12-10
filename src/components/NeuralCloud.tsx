@@ -47,6 +47,32 @@ const MOCK_DEBRIS: DebrisData[] = [
   { id: "d22", category: "STR_ART", relevance: 18, headline: "Legacy Assets" },
 ];
 
+// Data Analysis Functions
+const analyzeDebrisData = (debris: DebrisData[]) => {
+  // Dominant Category
+  const categoryCount = debris.reduce((acc, item) => {
+    acc[item.category] = (acc[item.category] || 0) + 1;
+    return acc;
+  }, {} as Record<Category, number>);
+  
+  const dominantCategory = Object.entries(categoryCount).reduce((a, b) => 
+    a[1] > b[1] ? a : b
+  )[0] as Category;
+
+  // Average Relevance
+  const averageRelevance = debris.reduce((sum, item) => sum + item.relevance, 0) / debris.length;
+
+  // Top 5 Nodes
+  const top5Nodes = [...debris]
+    .sort((a, b) => b.relevance - a.relevance)
+    .slice(0, 5);
+
+  // Pulse speed: map 0-100 to 0.5-3.0
+  const pulseSpeed = 0.5 + (averageRelevance / 100) * 2.5;
+
+  return { dominantCategory, averageRelevance, top5Nodes, pulseSpeed };
+};
+
 // Calculate position based on relevance and category
 const calculatePosition = (relevance: number, category: Category): [number, number, number] => {
   let radius: number;
@@ -147,23 +173,68 @@ const DebrisItem = ({
   );
 };
 
-// Pulsing Core Component
-const PulsingCore = () => {
-  const meshRef = useRef<THREE.Mesh>(null);
+// Reactive Pulsing Core Component
+const ReactiveCore = ({ 
+  dominantColor, 
+  pulseSpeed,
+  top5Positions 
+}: { 
+  dominantColor: string;
+  pulseSpeed: number;
+  top5Positions: [number, number, number][];
+}) => {
+  const innerRef = useRef<THREE.Mesh>(null);
+  const outerRef = useRef<THREE.Mesh>(null);
   
   useFrame((state) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.x += 0.005;
-      meshRef.current.rotation.y += 0.008;
-      const pulse = 1 + Math.sin(state.clock.elapsedTime * 2) * 0.1;
-      meshRef.current.scale.setScalar(pulse);
+    const time = state.clock.elapsedTime;
+    
+    if (innerRef.current) {
+      // Inner core rotates one direction
+      innerRef.current.rotation.x += 0.003;
+      innerRef.current.rotation.y += 0.005;
+      // Pulse based on calculated speed
+      const pulse = 1 + Math.sin(time * pulseSpeed) * 0.15;
+      innerRef.current.scale.setScalar(pulse);
+    }
+    
+    if (outerRef.current) {
+      // Outer shell rotates opposite direction
+      outerRef.current.rotation.x -= 0.002;
+      outerRef.current.rotation.y -= 0.004;
+      // Slower, inverse pulse
+      const outerPulse = 1 + Math.sin(time * pulseSpeed * 0.5) * 0.08;
+      outerRef.current.scale.setScalar(outerPulse);
     }
   });
 
   return (
-    <Icosahedron ref={meshRef} args={[1.5, 1]}>
-      <meshBasicMaterial color="#ff0055" wireframe transparent opacity={0.9} />
-    </Icosahedron>
+    <group>
+      {/* Inner Core - Solid, Glowing */}
+      <Icosahedron ref={innerRef} args={[1.2, 1]}>
+        <meshBasicMaterial color={dominantColor} transparent opacity={0.95} />
+      </Icosahedron>
+      
+      {/* Outer Shell - Wireframe, Counter-rotating */}
+      <Icosahedron ref={outerRef} args={[1.8, 1]}>
+        <meshBasicMaterial color={dominantColor} wireframe transparent opacity={0.4} />
+      </Icosahedron>
+      
+      {/* Permanent Data Streams to Top 5 */}
+      {top5Positions.map((pos, i) => (
+        <Line
+          key={`stream-${i}`}
+          points={[[0, 0, 0], pos]}
+          color={dominantColor}
+          lineWidth={0.5}
+          transparent
+          opacity={0.25}
+          dashed
+          dashSize={0.3}
+          gapSize={0.2}
+        />
+      ))}
+    </group>
   );
 };
 
@@ -200,6 +271,14 @@ const DataCard = ({ data }: { data: DebrisData }) => {
 
 const NeuralCloud = () => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
+  
+  // Analyze data once
+  const analysis = useMemo(() => analyzeDebrisData(MOCK_DEBRIS), []);
+  
+  // Calculate positions for top 5 nodes (stable positions)
+  const top5Positions = useMemo(() => {
+    return analysis.top5Nodes.map(node => calculatePosition(node.relevance, node.category));
+  }, [analysis.top5Nodes]);
 
   return (
     <section 
@@ -214,13 +293,30 @@ const NeuralCloud = () => {
       <div className="absolute top-8 left-8 z-10 text-[#0f0] font-bold tracking-wider text-sm md:text-base">
         // NEURAL_DEBRIS_FIELD
       </div>
+      
+      {/* Data Stats Overlay */}
+      <div className="absolute top-8 right-8 z-10 text-xs font-mono opacity-60">
+        <div style={{ color: CATEGORY_COLORS[analysis.dominantCategory] }}>
+          DOMINANT: {analysis.dominantCategory}
+        </div>
+        <div className="text-[#0f0]">
+          AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
+        </div>
+        <div className="text-white/50">
+          PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
+        </div>
+      </div>
 
       {/* 3D Canvas */}
       <Canvas camera={{ position: [0, 0, 12], fov: 60 }} style={{ background: 'transparent' }}>
         <ambientLight intensity={0.2} />
         <pointLight position={[10, 10, 10]} intensity={0.5} color="#ff0055" />
         
-        <PulsingCore />
+        <ReactiveCore 
+          dominantColor={CATEGORY_COLORS[analysis.dominantCategory]}
+          pulseSpeed={analysis.pulseSpeed}
+          top5Positions={top5Positions}
+        />
         
         {MOCK_DEBRIS.map((item) => (
           <DebrisItem 
