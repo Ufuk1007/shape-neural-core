@@ -105,6 +105,10 @@
   100% { opacity: 0.02; }
 }
 
+.animate-flicker {
+  animation: flicker 0.15s infinite;
+}
+
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
