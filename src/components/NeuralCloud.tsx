@@ -1,6 +1,7 @@
 import { useRef, useMemo, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Icosahedron, Tetrahedron, Line } from "@react-three/drei";
+import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
+import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
 
 // Types
@@ -16,7 +17,7 @@ interface DebrisData {
 // Category Colors
 const CATEGORY_COLORS: Record<Category, string> = {
   STR_ART: "#ff0055",
-  CX_UX: "#0f0",
+  CX_UX: "#00ff41",
   SONIC: "#00ccff",
   META: "#ffffff",
 };
@@ -47,9 +48,8 @@ const MOCK_DEBRIS: DebrisData[] = [
   { id: "d22", category: "STR_ART", relevance: 18, headline: "Legacy Assets" },
 ];
 
-// Data Analysis Functions
+// Data Analysis
 const analyzeDebrisData = (debris: DebrisData[]) => {
-  // Dominant Category
   const categoryCount = debris.reduce((acc, item) => {
     acc[item.category] = (acc[item.category] || 0) + 1;
     return acc;
@@ -59,22 +59,14 @@ const analyzeDebrisData = (debris: DebrisData[]) => {
     a[1] > b[1] ? a : b
   )[0] as Category;
 
-  // Average Relevance
   const averageRelevance = debris.reduce((sum, item) => sum + item.relevance, 0) / debris.length;
-
-  // Top 5 Nodes
-  const top5Nodes = [...debris]
-    .sort((a, b) => b.relevance - a.relevance)
-    .slice(0, 5);
-
-  // Pulse speed: map 0-100 to 0.5-3.0
   const pulseSpeed = 0.5 + (averageRelevance / 100) * 2.5;
 
-  return { dominantCategory, averageRelevance, top5Nodes, pulseSpeed };
+  return { dominantCategory, averageRelevance, pulseSpeed };
 };
 
 // Calculate position based on relevance and category
-const calculatePosition = (relevance: number, category: Category): [number, number, number] => {
+const calculatePosition = (relevance: number, category: Category, seed: number): [number, number, number] => {
   let radius: number;
   if (relevance >= 80) {
     radius = 2.5 + (100 - relevance) / 20 * 1.5;
@@ -84,161 +76,128 @@ const calculatePosition = (relevance: number, category: Category): [number, numb
     radius = 6 + (40 - relevance) / 40 * 3;
   }
 
-  const jitter = () => (Math.random() - 0.5) * 2;
+  // Seeded random for stable positions
+  const seededRandom = (s: number) => {
+    const x = Math.sin(s * 12.9898 + 78.233) * 43758.5453;
+    return x - Math.floor(x);
+  };
+
+  const jitterX = (seededRandom(seed) - 0.5) * 2;
+  const jitterY = (seededRandom(seed + 1) - 0.5) * 2;
+  const jitterZ = (seededRandom(seed + 2) - 0.5) * 2;
+
   let x = 0, y = 0, z = 0;
   
   switch (category) {
     case "CX_UX":
-      y = radius * (0.6 + Math.random() * 0.4);
-      x = jitter() * radius * 0.5;
-      z = jitter() * radius * 0.5;
+      y = radius * (0.6 + seededRandom(seed + 3) * 0.4);
+      x = jitterX * radius * 0.5;
+      z = jitterZ * radius * 0.5;
       break;
     case "STR_ART":
-      y = -radius * (0.6 + Math.random() * 0.4);
-      x = jitter() * radius * 0.5;
-      z = jitter() * radius * 0.5;
+      y = -radius * (0.6 + seededRandom(seed + 3) * 0.4);
+      x = jitterX * radius * 0.5;
+      z = jitterZ * radius * 0.5;
       break;
     case "SONIC":
-      x = radius * (0.6 + Math.random() * 0.4);
-      y = jitter() * radius * 0.5;
-      z = jitter() * radius * 0.5;
+      x = radius * (0.6 + seededRandom(seed + 3) * 0.4);
+      y = jitterY * radius * 0.5;
+      z = jitterZ * radius * 0.5;
       break;
     case "META":
-      x = -radius * (0.6 + Math.random() * 0.4);
-      y = jitter() * radius * 0.5;
-      z = jitter() * radius * 0.5;
+      x = -radius * (0.6 + seededRandom(seed + 3) * 0.4);
+      y = jitterY * radius * 0.5;
+      z = jitterZ * radius * 0.5;
       break;
   }
 
   return [x, y, z];
 };
 
-// Debris Item Component
-const DebrisItem = ({ 
+// The Liquid Core Component
+const LiquidCore = ({ color, pulseSpeed }: { color: string; pulseSpeed: number }) => {
+  const materialRef = useRef<any>(null);
+  
+  useFrame((state) => {
+    if (materialRef.current) {
+      materialRef.current.distort = 0.4 + Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2;
+    }
+  });
+
+  return (
+    <Sphere args={[1.5, 64, 64]}>
+      <MeshDistortMaterial 
+        ref={materialRef}
+        color={color}
+        emissive={color}
+        emissiveIntensity={2}
+        roughness={0.1}
+        metalness={1}
+        speed={5}
+      />
+    </Sphere>
+  );
+};
+
+// Debris Shard Component
+const DebrisShard = ({ 
   data, 
+  position,
   isActive,
   onHover,
   onLeave 
 }: { 
-  data: DebrisData; 
+  data: DebrisData;
+  position: [number, number, number];
   isActive: boolean;
   onHover: () => void;
   onLeave: () => void;
 }) => {
   const meshRef = useRef<THREE.Mesh>(null);
-  const position = useMemo(() => calculatePosition(data.relevance, data.category), [data]);
-  const rotationSpeed = useMemo(() => ({
-    x: (Math.random() - 0.5) * 0.02,
-    y: (Math.random() - 0.5) * 0.02,
-  }), []);
-
   const color = CATEGORY_COLORS[data.category];
 
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.x += rotationSpeed.x;
-      meshRef.current.rotation.y += rotationSpeed.y;
+      meshRef.current.rotation.x += 0.01;
+      meshRef.current.rotation.y += 0.01;
     }
   });
 
   return (
     <group>
-      <Tetrahedron
+      <mesh 
         ref={meshRef}
-        args={[0.2]}
         position={position}
-        scale={isActive ? 1.5 : 1}
+        scale={isActive ? 1.8 : 1}
         onPointerEnter={(e) => { e.stopPropagation(); onHover(); }}
         onPointerLeave={onLeave}
       >
-        <meshBasicMaterial 
+        <tetrahedronGeometry args={[0.25, 0]} />
+        <meshStandardMaterial 
           color={color} 
-          wireframe={!isActive} 
-          transparent 
-          opacity={isActive ? 1 : 0.8} 
+          emissive={color}
+          emissiveIntensity={isActive ? 3 : 0.5}
+          wireframe={!isActive}
+          transparent
+          opacity={isActive ? 1 : 0.6}
         />
-      </Tetrahedron>
-      
-      {/* Connection Line to Center */}
-      {isActive && (
+      </mesh>
+
+      {/* Data Stream - visible when active or high relevance */}
+      {(isActive || data.relevance > 90) && (
         <Line
           points={[position, [0, 0, 0]]}
-          color={color}
-          lineWidth={1}
+          color={isActive ? "#fff" : color}
+          lineWidth={isActive ? 2 : 1}
           transparent
-          opacity={0.6}
+          opacity={isActive ? 0.8 : 0.5}
         />
       )}
     </group>
   );
 };
 
-// Reactive Pulsing Core Component
-const ReactiveCore = ({ 
-  dominantColor, 
-  pulseSpeed,
-  top5Positions 
-}: { 
-  dominantColor: string;
-  pulseSpeed: number;
-  top5Positions: [number, number, number][];
-}) => {
-  const innerRef = useRef<THREE.Mesh>(null);
-  const outerRef = useRef<THREE.Mesh>(null);
-  
-  useFrame((state) => {
-    const time = state.clock.elapsedTime;
-    
-    if (innerRef.current) {
-      // Inner core rotates one direction
-      innerRef.current.rotation.x += 0.003;
-      innerRef.current.rotation.y += 0.005;
-      // Pulse based on calculated speed
-      const pulse = 1 + Math.sin(time * pulseSpeed) * 0.15;
-      innerRef.current.scale.setScalar(pulse);
-    }
-    
-    if (outerRef.current) {
-      // Outer shell rotates opposite direction
-      outerRef.current.rotation.x -= 0.002;
-      outerRef.current.rotation.y -= 0.004;
-      // Slower, inverse pulse
-      const outerPulse = 1 + Math.sin(time * pulseSpeed * 0.5) * 0.08;
-      outerRef.current.scale.setScalar(outerPulse);
-    }
-  });
-
-  return (
-    <group>
-      {/* Inner Core - Solid, Glowing */}
-      <Icosahedron ref={innerRef} args={[1.2, 1]}>
-        <meshBasicMaterial color={dominantColor} transparent opacity={0.95} />
-      </Icosahedron>
-      
-      {/* Outer Shell - Wireframe, Counter-rotating */}
-      <Icosahedron ref={outerRef} args={[1.8, 1]}>
-        <meshBasicMaterial color={dominantColor} wireframe transparent opacity={0.4} />
-      </Icosahedron>
-      
-      {/* Permanent Data Streams to Top 5 */}
-      {top5Positions.map((pos, i) => (
-        <Line
-          key={`stream-${i}`}
-          points={[[0, 0, 0], pos]}
-          color={dominantColor}
-          lineWidth={0.5}
-          transparent
-          opacity={0.25}
-          dashed
-          dashSize={0.3}
-          gapSize={0.2}
-        />
-      ))}
-    </group>
-  );
-};
-
-// Data Card Overlay
+// Data Card Component
 const DataCard = ({ data }: { data: DebrisData }) => {
   const borderColor = CATEGORY_COLORS[data.category];
   
@@ -260,7 +219,7 @@ const DataCard = ({ data }: { data: DebrisData }) => {
         CATEGORY: <span style={{ color: borderColor }}>{data.category}</span>
       </div>
       <div style={{ color: '#888', marginBottom: '4px' }}>
-        RELEVANCE: <span style={{ color: '#0f0' }}>{data.relevance}%</span>
+        RELEVANCE: <span style={{ color: '#00ff41' }}>{data.relevance}%</span>
       </div>
       <div style={{ color: '#888' }}>
         HEADLINE: <span style={{ color: '#fff' }}>{data.headline}</span>
@@ -269,66 +228,78 @@ const DataCard = ({ data }: { data: DebrisData }) => {
   );
 };
 
+// Main Component
 const NeuralCloud = () => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   
-  // Analyze data once
   const analysis = useMemo(() => analyzeDebrisData(MOCK_DEBRIS), []);
+  const dominantColor = CATEGORY_COLORS[analysis.dominantCategory];
   
-  // Calculate positions for top 5 nodes (stable positions)
-  const top5Positions = useMemo(() => {
-    return analysis.top5Nodes.map(node => calculatePosition(node.relevance, node.category));
-  }, [analysis.top5Nodes]);
+  // Pre-calculate stable positions
+  const debrisPositions = useMemo(() => {
+    return MOCK_DEBRIS.map((item, index) => ({
+      data: item,
+      position: calculatePosition(item.relevance, item.category, index * 100)
+    }));
+  }, []);
 
   return (
-    <section 
-      id="cloud"
-      className="relative h-screen w-full"
-      style={{ 
-        backgroundColor: '#111',
-        fontFamily: "'Courier New', Courier, monospace"
-      }}
-    >
-      {/* Section Header */}
-      <div className="absolute top-8 left-8 z-10 text-[#0f0] font-bold tracking-wider text-sm md:text-base">
-        // NEURAL_DEBRIS_FIELD
+    <section id="cloud" className="relative h-screen w-full" style={{ backgroundColor: '#050505' }}>
+      {/* UI Overlay */}
+      <div className="absolute top-8 left-8 z-10 font-mono font-bold tracking-wider text-sm md:text-base" style={{ color: '#00ff41' }}>
+        // NEURAL_SINGULARITY
       </div>
       
-      {/* Data Stats Overlay */}
-      <div className="absolute top-8 right-8 z-10 text-xs font-mono opacity-60">
-        <div style={{ color: CATEGORY_COLORS[analysis.dominantCategory] }}>
+      {/* Stats Overlay */}
+      <div className="absolute top-8 right-8 z-10 text-xs font-mono opacity-70">
+        <div style={{ color: dominantColor }}>
           DOMINANT: {analysis.dominantCategory}
         </div>
-        <div className="text-[#0f0]">
+        <div style={{ color: '#00ff41' }}>
           AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
         </div>
-        <div className="text-white/50">
+        <div style={{ color: 'rgba(255,255,255,0.5)' }}>
           PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
         </div>
       </div>
 
-      {/* 3D Canvas */}
-      <Canvas camera={{ position: [0, 0, 12], fov: 60 }} style={{ background: 'transparent' }}>
-        <ambientLight intensity={0.2} />
-        <pointLight position={[10, 10, 10]} intensity={0.5} color="#ff0055" />
+      <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+        {/* Atmosphere */}
+        <color attach="background" args={["#050505"]} />
+        <fog attach="fog" args={["#050505", 5, 20]} />
+        <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
         
-        <ReactiveCore 
-          dominantColor={CATEGORY_COLORS[analysis.dominantCategory]}
-          pulseSpeed={analysis.pulseSpeed}
-          top5Positions={top5Positions}
-        />
-        
-        {MOCK_DEBRIS.map((item) => (
-          <DebrisItem 
-            key={item.id} 
-            data={item} 
-            isActive={activeShard?.id === item.id}
-            onHover={() => setActiveShard(item)}
+        {/* Lighting */}
+        <ambientLight intensity={0.5} />
+        <pointLight position={[10, 10, 10]} intensity={1} color="#fff" />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ff0055" />
+
+        {/* The Liquid Core */}
+        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} />
+
+        {/* Data Debris */}
+        {debrisPositions.map(({ data, position }) => (
+          <DebrisShard 
+            key={data.id}
+            data={data}
+            position={position}
+            isActive={activeShard?.id === data.id}
+            onHover={() => setActiveShard(data)}
             onLeave={() => setActiveShard(null)}
           />
         ))}
+        
+        {/* Post Processing - The Aura/Glow */}
+        <EffectComposer enableNormalPass={false}>
+          <Bloom 
+            luminanceThreshold={1}
+            mipmapBlur
+            intensity={1.5}
+            radius={0.6}
+          />
+        </EffectComposer>
       </Canvas>
-
+      
       {/* Data Card Overlay */}
       {activeShard && <DataCard data={activeShard} />}
     </section>
