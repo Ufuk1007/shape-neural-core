@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
+import NeuralCloud from "@/components/NeuralCloud";
 
 const Index = () => {
   const [time, setTime] = useState(0);
@@ -25,7 +26,8 @@ const Index = () => {
   };
 
   return (
-    <div 
+    <>
+    <div
       className="relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111]"
       style={{
         fontFamily: "'Courier New', Courier, monospace",
@@ -121,6 +123,10 @@ const Index = () => {
 
       </div>
     </div>
+
+    {/* NEURAL DEBRIS CLOUD SECTION */}
+    <NeuralCloud />
+  </>
   );
 };
 
