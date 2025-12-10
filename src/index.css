@@ -2,51 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-/* SHAPENEURAL - Analog Cybernetic Design System */
+/* SHAPENEURAL - Analog Cybernetic Design System (Route H) */
 
 @layer base {
   :root {
-    /* Core Terminal Colors */
     --background: 0 0% 6.7%;
     --foreground: 0 0% 86.7%;
-
-    /* Terminal Green - Primary */
     --primary: 120 100% 50%;
     --primary-foreground: 0 0% 0%;
-
-    /* VHS Magenta - Accent */
     --accent: 340 100% 50%;
     --accent-foreground: 0 0% 100%;
-
-    /* System Colors */
     --secondary: 0 0% 12%;
     --secondary-foreground: 0 0% 86.7%;
-
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 60%;
-
     --card: 0 0% 8%;
     --card-foreground: 0 0% 86.7%;
-
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 86.7%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 120 100% 50%;
-
     --radius: 0px;
-
-    /* Chromatic Aberration Colors */
     --chroma-red: 0 100% 50%;
     --chroma-blue: 220 100% 50%;
-
-    /* Scanline Colors */
-    --scanline-dark: 0 0% 0%;
-    --scanline-overlay: 0 0% 7%;
   }
 
   .dark {
@@ -81,48 +62,43 @@
   }
 }
 
-/* Scanline Background Effect */
-@layer utilities {
-  .scanlines {
-    background-image: 
-      linear-gradient(
-        rgba(18, 16, 16, 0) 50%, 
-        rgba(0, 0, 0, 0.25) 50%
-      ),
-      linear-gradient(
-        90deg, 
-        rgba(255, 0, 0, 0.06), 
-        rgba(0, 255, 0, 0.02), 
-        rgba(0, 0, 255, 0.06)
-      );
-    background-size: 100% 4px, 6px 100%;
-  }
+/* =========================================
+   ANALOG CYBERNETIC (Retro/Raw) - Route H
+   ========================================= */
 
-  .chromatic-text {
-    text-shadow: 
-      2px 0 hsl(var(--chroma-red)), 
-      -2px 0 hsl(var(--chroma-blue));
-  }
-
-  /* Strong Chromatic Aberration for Headlines */
-  .chromatic-text-strong {
-    color: #e0e0e0;
-    text-shadow: 
-      4px 0 red, 
-      -4px 0 blue;
-  }
-
-  .tag-glow {
-    text-shadow: 2px 2px 0px hsl(var(--accent) / 0.5);
-  }
-
-  .terminal-cursor::after {
-    content: '_';
-    animation: blink 1s step-end infinite;
-  }
+.split-h {
+  flex: 1;
+  min-height: 100vh;
+  background-color: #111;
+  color: #0f0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  /* Scanline Effect */
+  background-image: 
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 6px 100%;
 }
 
 /* CRT Flicker Animation */
+.split-h::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
 @keyframes flicker {
   0% { opacity: 0.02; }
   50% { opacity: 0.05; }
@@ -134,19 +110,91 @@
   51%, 100% { opacity: 0; }
 }
 
-@keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+.tag-h {
+  font-family: 'Courier New', monospace;
+  color: #ff0055;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 0px rgba(255, 0, 85, 0.5);
 }
 
-.animate-flicker {
-  animation: flicker 0.15s infinite;
+.headline-h {
+  font-family: 'Courier New', monospace;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #ddd;
+  text-shadow: 2px 0 red, -2px 0 blue;
 }
 
-.animate-glitch:hover {
-  animation: glitch 0.3s ease-in-out;
+@media (min-width: 768px) {
+  .headline-h {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .headline-h {
+    font-size: 7rem;
+  }
+}
+
+.sub-h {
+  margin-top: 20px;
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  transform: skew(-10deg);
+}
+
+/* Navigation Buttons */
+.nav-btn-green {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 180px;
+  padding: 12px 16px;
+  border: 4px solid #0f0;
+  background: transparent;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-btn-green:hover {
+  background: #0f0;
+  color: #000;
+}
+
+.nav-btn-red {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 180px;
+  padding: 12px 16px;
+  border: none;
+  background: #ff0055;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-btn-red:hover {
+  background: #ff3377;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
 }
