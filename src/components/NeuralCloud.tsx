@@ -1,4 +1,4 @@
-import { useRef, useMemo, useState } from "react";
+import { useRef, useMemo, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
@@ -12,6 +12,8 @@ interface DebrisData {
   category: Category;
   relevance: number;
   headline: string;
+  url?: string;
+  summary?: string;
 }
 
 // Category Colors
@@ -22,34 +24,38 @@ const CATEGORY_COLORS: Record<Category, string> = {
   META: "#ffffff",
 };
 
-// Mock Data
+// Fallback Mock Data
 const MOCK_DEBRIS: DebrisData[] = [
-  { id: "d01", category: "CX_UX", relevance: 95, headline: "User Flow Optimization" },
-  { id: "d02", category: "STR_ART", relevance: 88, headline: "Brand Identity System" },
-  { id: "d03", category: "SONIC", relevance: 72, headline: "Audio Branding Suite" },
-  { id: "d04", category: "META", relevance: 45, headline: "AR Experience Layer" },
-  { id: "d05", category: "CX_UX", relevance: 62, headline: "Onboarding Redesign" },
-  { id: "d06", category: "STR_ART", relevance: 91, headline: "Visual Language V2" },
-  { id: "d07", category: "SONIC", relevance: 33, headline: "Ambient Soundscape" },
-  { id: "d08", category: "META", relevance: 85, headline: "AI Integration Core" },
-  { id: "d09", category: "CX_UX", relevance: 28, headline: "Legacy Support Module" },
-  { id: "d10", category: "STR_ART", relevance: 55, headline: "Icon System Refresh" },
-  { id: "d11", category: "SONIC", relevance: 98, headline: "Voice Interface Engine" },
-  { id: "d12", category: "META", relevance: 15, headline: "Archive Protocol" },
-  { id: "d13", category: "CX_UX", relevance: 77, headline: "Mobile-First Framework" },
-  { id: "d14", category: "STR_ART", relevance: 42, headline: "Print Collateral Set" },
-  { id: "d15", category: "SONIC", relevance: 68, headline: "Notification Tones" },
-  { id: "d16", category: "META", relevance: 82, headline: "Neural Network Hub" },
-  { id: "d17", category: "CX_UX", relevance: 36, headline: "Accessibility Audit" },
-  { id: "d18", category: "STR_ART", relevance: 93, headline: "Motion Design System" },
-  { id: "d19", category: "SONIC", relevance: 22, headline: "Background Loops" },
-  { id: "d20", category: "META", relevance: 58, headline: "Data Viz Dashboard" },
-  { id: "d21", category: "CX_UX", relevance: 89, headline: "Checkout Flow v3" },
-  { id: "d22", category: "STR_ART", relevance: 18, headline: "Legacy Assets" },
+  { id: "d01", category: "CX_UX", relevance: 95, headline: "User Flow Optimization", url: "#", summary: "Optimizing user journeys for maximum conversion." },
+  { id: "d02", category: "STR_ART", relevance: 88, headline: "Brand Identity System", url: "#", summary: "Comprehensive visual identity framework." },
+  { id: "d03", category: "SONIC", relevance: 72, headline: "Audio Branding Suite", url: "#", summary: "Sonic signature and audio identity." },
+  { id: "d04", category: "META", relevance: 45, headline: "AR Experience Layer", url: "#", summary: "Augmented reality interface overlay." },
+  { id: "d05", category: "CX_UX", relevance: 62, headline: "Onboarding Redesign", url: "#", summary: "Streamlined user onboarding flow." },
+  { id: "d06", category: "STR_ART", relevance: 91, headline: "Visual Language V2", url: "#", summary: "Next generation design system." },
+  { id: "d07", category: "SONIC", relevance: 33, headline: "Ambient Soundscape", url: "#", summary: "Environmental audio design." },
+  { id: "d08", category: "META", relevance: 85, headline: "AI Integration Core", url: "#", summary: "Neural network processing hub." },
+  { id: "d09", category: "CX_UX", relevance: 28, headline: "Legacy Support Module", url: "#", summary: "Backward compatibility layer." },
+  { id: "d10", category: "STR_ART", relevance: 55, headline: "Icon System Refresh", url: "#", summary: "Updated iconography set." },
+  { id: "d11", category: "SONIC", relevance: 98, headline: "Voice Interface Engine", url: "#", summary: "Voice-first interaction system." },
+  { id: "d12", category: "META", relevance: 15, headline: "Archive Protocol", url: "#", summary: "Data archival and retrieval." },
+  { id: "d13", category: "CX_UX", relevance: 77, headline: "Mobile-First Framework", url: "#", summary: "Touch-optimized interface." },
+  { id: "d14", category: "STR_ART", relevance: 42, headline: "Print Collateral Set", url: "#", summary: "Physical brand materials." },
+  { id: "d15", category: "SONIC", relevance: 68, headline: "Notification Tones", url: "#", summary: "Alert and notification sounds." },
+  { id: "d16", category: "META", relevance: 82, headline: "Neural Network Hub", url: "#", summary: "AI processing center." },
+  { id: "d17", category: "CX_UX", relevance: 36, headline: "Accessibility Audit", url: "#", summary: "WCAG compliance review." },
+  { id: "d18", category: "STR_ART", relevance: 93, headline: "Motion Design System", url: "#", summary: "Animation and transition library." },
+  { id: "d19", category: "SONIC", relevance: 22, headline: "Background Loops", url: "#", summary: "Ambient audio loops." },
+  { id: "d20", category: "META", relevance: 58, headline: "Data Viz Dashboard", url: "#", summary: "Analytics visualization." },
+  { id: "d21", category: "CX_UX", relevance: 89, headline: "Checkout Flow v3", url: "#", summary: "E-commerce purchase flow." },
+  { id: "d22", category: "STR_ART", relevance: 18, headline: "Legacy Assets", url: "#", summary: "Historical brand assets." },
 ];
 
 // Data Analysis
 const analyzeDebrisData = (debris: DebrisData[]) => {
+  if (debris.length === 0) {
+    return { dominantCategory: "META" as Category, averageRelevance: 50, pulseSpeed: 1.5 };
+  }
+  
   const categoryCount = debris.reduce((acc, item) => {
     acc[item.category] = (acc[item.category] || 0) + 1;
     return acc;
@@ -231,17 +237,44 @@ const DataCard = ({ data }: { data: DebrisData }) => {
 // Main Component
 const NeuralCloud = () => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
+  const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
   
-  const analysis = useMemo(() => analyzeDebrisData(MOCK_DEBRIS), []);
+  // Fetch external data on mount
+  useEffect(() => {
+    const fetchDebrisData = async () => {
+      try {
+        const response = await fetch('/data/debris.json');
+        if (response.ok) {
+          const data = await response.json();
+          setDebrisData(data);
+        } else {
+          // Fallback to mock data if fetch fails
+          console.log('[NEURAL_CLOUD] External data unavailable, using fallback...');
+          setDebrisData(MOCK_DEBRIS);
+        }
+      } catch (error) {
+        // Fallback to mock data on error
+        console.log('[NEURAL_CLOUD] Connection failed, using fallback data...');
+        setDebrisData(MOCK_DEBRIS);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchDebrisData();
+  }, []);
+  
+  const analysis = useMemo(() => analyzeDebrisData(debrisData), [debrisData]);
   const dominantColor = CATEGORY_COLORS[analysis.dominantCategory];
   
   // Pre-calculate stable positions
   const debrisPositions = useMemo(() => {
-    return MOCK_DEBRIS.map((item, index) => ({
+    return debrisData.map((item, index) => ({
       data: item,
       position: calculatePosition(item.relevance, item.category, index * 100)
     }));
-  }, []);
+  }, [debrisData]);
 
   return (
     <section id="cloud" className="relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111]">
@@ -251,23 +284,37 @@ const NeuralCloud = () => {
       {/* Bottom Vignette Overlay */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-20 pointer-events-none" />
       
+      {/* Loading State */}
+      {isLoading && (
+        <div className="absolute inset-0 z-30 flex items-center justify-center">
+          <div className="font-mono text-sm tracking-wider animate-pulse" style={{ color: '#00ff41' }}>
+            INITIALIZING_CONNECTION...
+          </div>
+        </div>
+      )}
+      
       {/* UI Overlay */}
       <div className="absolute top-8 left-8 z-10 font-mono font-bold tracking-wider text-sm md:text-base" style={{ color: '#00ff41' }}>
         // NEURAL_SINGULARITY
       </div>
       
       {/* Stats Overlay */}
-      <div className="absolute top-8 right-8 z-10 text-xs font-mono opacity-70">
-        <div style={{ color: dominantColor }}>
-          DOMINANT: {analysis.dominantCategory}
+      {!isLoading && (
+        <div className="absolute top-8 right-8 z-10 text-xs font-mono opacity-70">
+          <div style={{ color: dominantColor }}>
+            DOMINANT: {analysis.dominantCategory}
+          </div>
+          <div style={{ color: '#00ff41' }}>
+            AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
+          </div>
+          <div style={{ color: 'rgba(255,255,255,0.5)' }}>
+            PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
+          </div>
+          <div style={{ color: 'rgba(255,255,255,0.3)' }}>
+            NODES: {debrisData.length}
+          </div>
         </div>
-        <div style={{ color: '#00ff41' }}>
-          AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
-        </div>
-        <div style={{ color: 'rgba(255,255,255,0.5)' }}>
-          PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
-        </div>
-      </div>
+      )}
 
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         {/* Atmosphere */}
