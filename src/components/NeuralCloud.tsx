@@ -1,6 +1,6 @@
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Icosahedron, Sphere } from "@react-three/drei";
+import { Icosahedron, Tetrahedron, Line } from "@react-three/drei";
 import * as THREE from "three";
 
 // Types
@@ -12,6 +12,14 @@ interface DebrisData {
   relevance: number;
   headline: string;
 }
+
+// Category Colors
+const CATEGORY_COLORS: Record<Category, string> = {
+  STR_ART: "#ff0055",
+  CX_UX: "#0f0",
+  SONIC: "#00ccff",
+  META: "#ffffff",
+};
 
 // Mock Data
 const MOCK_DEBRIS: DebrisData[] = [
@@ -40,40 +48,36 @@ const MOCK_DEBRIS: DebrisData[] = [
 ];
 
 // Calculate position based on relevance and category
-const calculatePosition = (relevance: number, category: Category, seed: number): [number, number, number] => {
-  // Distance from center based on relevance
+const calculatePosition = (relevance: number, category: Category): [number, number, number] => {
   let radius: number;
   if (relevance >= 80) {
-    radius = 2.5 + (100 - relevance) / 20 * 1.5; // 2.5 to 4
+    radius = 2.5 + (100 - relevance) / 20 * 1.5;
   } else if (relevance >= 40) {
-    radius = 4 + (80 - relevance) / 40 * 2; // 4 to 6
+    radius = 4 + (80 - relevance) / 40 * 2;
   } else {
-    radius = 6 + (40 - relevance) / 40 * 3; // 6 to 9
+    radius = 6 + (40 - relevance) / 40 * 3;
   }
 
-  // Jitter
   const jitter = () => (Math.random() - 0.5) * 2;
-  
-  // Base direction by category
   let x = 0, y = 0, z = 0;
   
   switch (category) {
-    case "CX_UX": // North (Positive Y)
+    case "CX_UX":
       y = radius * (0.6 + Math.random() * 0.4);
       x = jitter() * radius * 0.5;
       z = jitter() * radius * 0.5;
       break;
-    case "STR_ART": // South (Negative Y)
+    case "STR_ART":
       y = -radius * (0.6 + Math.random() * 0.4);
       x = jitter() * radius * 0.5;
       z = jitter() * radius * 0.5;
       break;
-    case "SONIC": // East (Positive X)
+    case "SONIC":
       x = radius * (0.6 + Math.random() * 0.4);
       y = jitter() * radius * 0.5;
       z = jitter() * radius * 0.5;
       break;
-    case "META": // West (Negative X)
+    case "META":
       x = -radius * (0.6 + Math.random() * 0.4);
       y = jitter() * radius * 0.5;
       z = jitter() * radius * 0.5;
@@ -84,13 +88,62 @@ const calculatePosition = (relevance: number, category: Category, seed: number):
 };
 
 // Debris Item Component
-const DebrisItem = ({ data, index }: { data: DebrisData; index: number }) => {
-  const position = useMemo(() => calculatePosition(data.relevance, data.category, index), [data, index]);
-  
+const DebrisItem = ({ 
+  data, 
+  isActive,
+  onHover,
+  onLeave 
+}: { 
+  data: DebrisData; 
+  isActive: boolean;
+  onHover: () => void;
+  onLeave: () => void;
+}) => {
+  const meshRef = useRef<THREE.Mesh>(null);
+  const position = useMemo(() => calculatePosition(data.relevance, data.category), [data]);
+  const rotationSpeed = useMemo(() => ({
+    x: (Math.random() - 0.5) * 0.02,
+    y: (Math.random() - 0.5) * 0.02,
+  }), []);
+
+  const color = CATEGORY_COLORS[data.category];
+
+  useFrame(() => {
+    if (meshRef.current) {
+      meshRef.current.rotation.x += rotationSpeed.x;
+      meshRef.current.rotation.y += rotationSpeed.y;
+    }
+  });
+
   return (
-    <Sphere args={[0.1, 8, 8]} position={position}>
-      <meshBasicMaterial color="white" wireframe />
-    </Sphere>
+    <group>
+      <Tetrahedron
+        ref={meshRef}
+        args={[0.2]}
+        position={position}
+        scale={isActive ? 1.5 : 1}
+        onPointerEnter={(e) => { e.stopPropagation(); onHover(); }}
+        onPointerLeave={onLeave}
+      >
+        <meshBasicMaterial 
+          color={color} 
+          wireframe={!isActive} 
+          transparent 
+          opacity={isActive ? 1 : 0.8} 
+        />
+      </Tetrahedron>
+      
+      {/* Connection Line to Center */}
+      {isActive && (
+        <Line
+          points={[position, [0, 0, 0]]}
+          color={color}
+          lineWidth={1}
+          transparent
+          opacity={0.6}
+        />
+      )}
+    </group>
   );
 };
 
@@ -114,7 +167,40 @@ const PulsingCore = () => {
   );
 };
 
+// Data Card Overlay
+const DataCard = ({ data }: { data: DebrisData }) => {
+  const borderColor = CATEGORY_COLORS[data.category];
+  
+  return (
+    <div 
+      className="absolute bottom-8 left-8 z-20 pointer-events-none"
+      style={{
+        fontFamily: "'Courier New', Courier, monospace",
+        background: 'rgba(0, 0, 0, 0.9)',
+        border: `2px solid ${borderColor}`,
+        padding: '16px 20px',
+        minWidth: '280px',
+      }}
+    >
+      <div style={{ color: borderColor, marginBottom: '8px' }}>
+        {`> DECRYPTING_ID: [${data.id}]`}
+      </div>
+      <div style={{ color: '#888', marginBottom: '4px' }}>
+        CATEGORY: <span style={{ color: borderColor }}>{data.category}</span>
+      </div>
+      <div style={{ color: '#888', marginBottom: '4px' }}>
+        RELEVANCE: <span style={{ color: '#0f0' }}>{data.relevance}%</span>
+      </div>
+      <div style={{ color: '#888' }}>
+        HEADLINE: <span style={{ color: '#fff' }}>{data.headline}</span>
+      </div>
+    </div>
+  );
+};
+
 const NeuralCloud = () => {
+  const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
+
   return (
     <section 
       id="cloud"
@@ -134,14 +220,21 @@ const NeuralCloud = () => {
         <ambientLight intensity={0.2} />
         <pointLight position={[10, 10, 10]} intensity={0.5} color="#ff0055" />
         
-        {/* Central Core */}
         <PulsingCore />
         
-        {/* Debris Field */}
-        {MOCK_DEBRIS.map((item, index) => (
-          <DebrisItem key={item.id} data={item} index={index} />
+        {MOCK_DEBRIS.map((item) => (
+          <DebrisItem 
+            key={item.id} 
+            data={item} 
+            isActive={activeShard?.id === item.id}
+            onHover={() => setActiveShard(item)}
+            onLeave={() => setActiveShard(null)}
+          />
         ))}
       </Canvas>
+
+      {/* Data Card Overlay */}
+      {activeShard && <DataCard data={activeShard} />}
     </section>
   );
 };
