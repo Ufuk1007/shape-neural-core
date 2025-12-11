@@ -3,6 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
+import { X, ExternalLink } from "lucide-react";
 
 // Types
 type Category = "STR_ART" | "CX_UX" | "SONIC" | "META";
@@ -150,20 +151,24 @@ const DebrisShard = ({
   data, 
   position,
   isActive,
+  isDecrypted,
   onHover,
-  onLeave 
+  onLeave,
+  onClick
 }: { 
   data: DebrisData;
   position: [number, number, number];
   isActive: boolean;
+  isDecrypted: boolean;
   onHover: () => void;
   onLeave: () => void;
+  onClick: () => void;
 }) => {
   const meshRef = useRef<THREE.Mesh>(null);
   const color = CATEGORY_COLORS[data.category];
 
   useFrame(() => {
-    if (meshRef.current) {
+    if (meshRef.current && !isDecrypted) {
       meshRef.current.rotation.x += 0.01;
       meshRef.current.rotation.y += 0.01;
     }
@@ -177,6 +182,7 @@ const DebrisShard = ({
         scale={isActive ? 1.8 : 1}
         onPointerEnter={(e) => { e.stopPropagation(); onHover(); }}
         onPointerLeave={onLeave}
+        onClick={(e) => { e.stopPropagation(); onClick(); }}
       >
         <tetrahedronGeometry args={[0.25, 0]} />
         <meshStandardMaterial 
@@ -203,7 +209,7 @@ const DebrisShard = ({
   );
 };
 
-// Data Card Component
+// Data Card Component (Hover preview)
 const DataCard = ({ data }: { data: DebrisData }) => {
   const borderColor = CATEGORY_COLORS[data.category];
   
@@ -234,11 +240,171 @@ const DataCard = ({ data }: { data: DebrisData }) => {
   );
 };
 
+// Decryption Panel Component (Full detail view)
+const DecryptionPanel = ({ 
+  data, 
+  onClose 
+}: { 
+  data: DebrisData; 
+  onClose: () => void;
+}) => {
+  const borderColor = CATEGORY_COLORS[data.category];
+  
+  return (
+    <>
+      {/* Backdrop */}
+      <div 
+        className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
+        onClick={onClose}
+      />
+      
+      {/* Side Panel */}
+      <div 
+        className="fixed top-0 right-0 h-full w-full max-w-md z-50 animate-in slide-in-from-right duration-300"
+        style={{
+          fontFamily: "'Courier New', Courier, monospace",
+          background: 'rgba(0, 0, 0, 0.95)',
+          borderLeft: `2px solid ${borderColor}`,
+        }}
+      >
+        {/* Header */}
+        <div 
+          className="flex items-center justify-between p-4 border-b"
+          style={{ borderColor }}
+        >
+          <div style={{ color: '#00ff41' }} className="text-sm tracking-wider">
+            {'>'} DECRYPTION_MODE
+          </div>
+          <button
+            onClick={onClose}
+            className="p-2 hover:bg-white/10 transition-colors rounded"
+            style={{ color: '#fff' }}
+          >
+            <X size={20} />
+          </button>
+        </div>
+        
+        {/* Content */}
+        <div className="p-6 space-y-6">
+          {/* Source ID */}
+          <div>
+            <div className="text-xs mb-1" style={{ color: '#666' }}>
+              {'>'} SOURCE_ID:
+            </div>
+            <div className="text-lg tracking-wider" style={{ color: borderColor }}>
+              [{data.id}]
+            </div>
+          </div>
+          
+          {/* Category */}
+          <div>
+            <div className="text-xs mb-1" style={{ color: '#666' }}>
+              CATEGORY:
+            </div>
+            <div 
+              className="inline-block px-3 py-1 text-sm font-bold tracking-wider"
+              style={{ 
+                color: borderColor, 
+                border: `1px solid ${borderColor}`,
+                background: `${borderColor}15`
+              }}
+            >
+              {data.category}
+            </div>
+          </div>
+          
+          {/* Relevance */}
+          <div>
+            <div className="text-xs mb-1" style={{ color: '#666' }}>
+              RELEVANCE_SCORE:
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="text-2xl font-bold" style={{ color: '#00ff41' }}>
+                {data.relevance}%
+              </div>
+              <div 
+                className="flex-1 h-2 bg-white/10 overflow-hidden"
+                style={{ border: '1px solid #333' }}
+              >
+                <div 
+                  className="h-full transition-all duration-500"
+                  style={{ 
+                    width: `${data.relevance}%`,
+                    background: borderColor
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          
+          {/* Headline */}
+          <div>
+            <div className="text-xs mb-2" style={{ color: '#666' }}>
+              HEADLINE:
+            </div>
+            <div className="text-xl leading-relaxed" style={{ color: '#fff' }}>
+              {data.headline}
+            </div>
+          </div>
+          
+          {/* Summary */}
+          {data.summary && (
+            <div>
+              <div className="text-xs mb-2" style={{ color: '#666' }}>
+                SUMMARY:
+              </div>
+              <div 
+                className="text-sm leading-relaxed p-4"
+                style={{ 
+                  color: '#aaa',
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid #222'
+                }}
+              >
+                {data.summary}
+              </div>
+            </div>
+          )}
+          
+          {/* Link Button */}
+          {data.url && data.url !== '#' && (
+            <a
+              href={data.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-3 mt-8 font-bold tracking-wider text-sm transition-all hover:scale-[1.02]"
+              style={{
+                color: '#000',
+                background: '#00ff41',
+                border: '2px solid #00ff41',
+              }}
+            >
+              <span>[ ACCESS_SOURCE_DATA ]</span>
+              <ExternalLink size={16} />
+            </a>
+          )}
+        </div>
+        
+        {/* Footer */}
+        <div 
+          className="absolute bottom-0 left-0 right-0 p-4 border-t text-xs"
+          style={{ borderColor: '#222', color: '#444' }}
+        >
+          // CLICK_OUTSIDE_OR_[X]_TO_CLOSE
+        </div>
+      </div>
+    </>
+  );
+};
+
 // Main Component
 const NeuralCloud = () => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
+  const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
   const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  
+  const isDecrypted = decryptedShard !== null;
   
   // Fetch external data on mount
   useEffect(() => {
@@ -336,9 +502,11 @@ const NeuralCloud = () => {
             key={data.id}
             data={data}
             position={position}
-            isActive={activeShard?.id === data.id}
-            onHover={() => setActiveShard(data)}
-            onLeave={() => setActiveShard(null)}
+            isActive={activeShard?.id === data.id || decryptedShard?.id === data.id}
+            isDecrypted={isDecrypted}
+            onHover={() => !isDecrypted && setActiveShard(data)}
+            onLeave={() => !isDecrypted && setActiveShard(null)}
+            onClick={() => setDecryptedShard(data)}
           />
         ))}
         
@@ -353,8 +521,16 @@ const NeuralCloud = () => {
         </EffectComposer>
       </Canvas>
       
-      {/* Data Card Overlay */}
-      {activeShard && <DataCard data={activeShard} />}
+      {/* Data Card Overlay (only show when not decrypted) */}
+      {activeShard && !isDecrypted && <DataCard data={activeShard} />}
+      
+      {/* Decryption Panel */}
+      {decryptedShard && (
+        <DecryptionPanel 
+          data={decryptedShard} 
+          onClose={() => setDecryptedShard(null)} 
+        />
+      )}
     </section>
   );
 };
