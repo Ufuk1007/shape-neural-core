@@ -1,4 +1,5 @@
-const fs = require('fs');
+import fs from 'fs';
+import { exit } from 'process';
 
 const PERPLEXITY_API_KEY = process.env.PERPLEXITY_API_KEY;
 const OUTPUT_PATH = './public/data/debris.json';
@@ -45,7 +46,7 @@ async function fetchDebris() {
   
   if (!PERPLEXITY_API_KEY) {
     console.error('[ERROR] PERPLEXITY_API_KEY not set in environment');
-    process.exit(1);
+    exit(1);
   }
 
   try {
@@ -127,7 +128,7 @@ async function fetchDebris() {
       console.log('[WARNING] No existing data to fall back to');
     }
     
-    process.exit(1);
+    exit(1);
   }
 }
 
