@@ -1,0 +1,4 @@
+[
+  {"id": "init_01", "category": "META", "relevance": 75, "headline": "Initial Data Placeholder", "summary": "This is placeholder data. Real data will be fetched by the GitHub Action.", "url": "#"},
+  {"id": "init_02", "category": "CX_UX", "relevance": 88, "headline": "System Initialized", "summary": "Neural Cloud connection established.", "url": "#"}
+]
