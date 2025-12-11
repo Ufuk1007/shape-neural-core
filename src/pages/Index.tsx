@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
 import NeuralCloud from "@/components/NeuralCloud";
+import ProjectRack from "@/components/ProjectRack";
 
 const Index = () => {
   const [time, setTime] = useState(0);
@@ -126,6 +127,9 @@ const Index = () => {
 
     {/* NEURAL DEBRIS CLOUD SECTION */}
     <NeuralCloud />
+
+    {/* PROJECT RACK SECTION */}
+    <ProjectRack />
   </>
   );
 };
