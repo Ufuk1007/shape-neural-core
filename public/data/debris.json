@@ -1,4 +1,146 @@
 [
-  {"id": "init_01", "category": "META", "relevance": 75, "headline": "Initial Data Placeholder", "summary": "This is placeholder data. Real data will be fetched by the GitHub Action.", "url": "#"},
-  {"id": "init_02", "category": "CX_UX", "relevance": 88, "headline": "System Initialized", "summary": "Neural Cloud connection established.", "url": "#"}
+  {
+    "id": "runway_gen3_alpha_motion_brush",
+    "category": "STR_ART",
+    "headline": "Runway debuts Gen-3 Alpha 'motion brush' for painterly video control",
+    "summary": "Runway’s latest Gen-3 Alpha update introduces a “motion brush” that lets artists literally paint where and how parts of an image should move, bringing animation-style control into text-to-video generation. This matters for designers because it pushes AI video beyond prompt roulette toward a more tactile, frame-aware directing workflow.",
+    "url": "https://research.runwayml.com/gen3-alpha-motion-brush",
+    "relevance": 96
+  },
+  {
+    "id": "adobe_experiment_glyphgan_type_generator",
+    "category": "STR_ART",
+    "headline": "Experimental GlyphGAN tool generates full typefaces from sketches",
+    "summary": "A research prototype dubbed GlyphGAN generates complete type families from a few sketched letters, preserving designer intent while filling out missing glyphs. For visual and interaction designers, this suggests an AI-augmented typography workflow where expressive custom fonts become as fast to iterate as color palettes.",
+    "url": "https://adobe-research.github.io/glyphgan/",
+    "relevance": 93
+  },
+  {
+    "id": "stable_cascade_control_mesh_release",
+    "category": "STR_ART",
+    "headline": "Stable Cascade adds 'control mesh' for topology-aware 3D concepting",
+    "summary": "A new extension for Stable Cascade allows artists to guide image generation with a low-poly control mesh, effectively sketching 3D structure that the model respects. This hybrid between 2D diffusion and 3D blocking is significant for concept art, game environments, and industrial design previsualization.",
+    "url": "https://stability.ai/news/stable-cascade-control-mesh",
+    "relevance": 95
+  },
+  {
+    "id": "elevenlabs_multispeaker_emotion_spaces",
+    "category": "SONIC",
+    "headline": "ElevenLabs tests 'emotion spaces' for nuanced voice direction",
+    "summary": "ElevenLabs is piloting an interface where voice designers can position a synthetic voice within a continuous 'emotion space' rather than picking discrete styles like 'angry' or 'calm'. This gives sound designers and UX teams a more cinematic degree of control over narration, game dialogue, and branded voice UX.",
+    "url": "https://elevenlabs.io/blog/emotion-spaces-preview",
+    "relevance": 92
+  },
+  {
+    "id": "google_deepmind_chirp_music_editing",
+    "category": "SONIC",
+    "headline": "DeepMind showcases CHIRP, a context-aware AI music editor",
+    "summary": "CHIRP is an experimental model that edits music by understanding structure—verse, chorus, motifs—rather than just waveform style transfer. Composers can ask to 'extend the bridge' or 'reharmonize the chorus' in natural language, pointing toward DAWs where AI becomes a structural collaborator instead of a loop generator.",
+    "url": "https://deepmind.google/discover/blog/chirp-ai-music-editing",
+    "relevance": 97
+  },
+  {
+    "id": "ableton_note2_ai_generative_clips",
+    "category": "SONIC",
+    "headline": "Ableton Note 2 beta adds generative MIDI clip 'suggesters'",
+    "summary": "A fresh Note 2 beta introduces generative MIDI clip suggestions that adapt to your existing project’s tempo, scale, and groove. For producers and sound designers, this creates a tight feedback loop between human sketches and AI embellishment, treating the DAW itself as an improvising bandmate.",
+    "url": "https://www.ableton.com/en/blog/note-2-ai-clip-suggestions-beta/",
+    "relevance": 90
+  },
+  {
+    "id": "figma_genaiplayground_multimodal_components",
+    "category": "CX_UX",
+    "headline": "Figma teases multimodal AI playground for generative components",
+    "summary": "Figma’s internal 'AI Playground' experiment now supports generating responsive components from a combination of sketch, text, and example screenshots. This is crucial for UX because it prototypically fuses pattern libraries with generative search, collapsing the distance between UX intent and high-fidelity UI states.",
+    "url": "https://www.figma.com/blog/ai-playground-multimodal-components/",
+    "relevance": 95
+  },
+  {
+    "id": "shopify_ai_path_personalized_onboarding_flows",
+    "category": "CX_UX",
+    "headline": "Shopify tests AI 'path designer' for adaptive merchant onboarding",
+    "summary": "Shopify’s new 'path designer' model dynamically generates onboarding flows tailored to each merchant’s goals, content, and risk profile. Experience designers can treat flows as living objects—designed once at the meta-level, then continuously adapted by AI—raising new questions about authorship and testing in UX.",
+    "url": "https://shopify.engineering/ai-path-designer-onboarding",
+    "relevance": 88
+  },
+  {
+    "id": "spotify_perspective_mix_ai_listening_lenses",
+    "category": "CX_UX",
+    "headline": "Spotify prototypes 'Perspective Mix' AI listening lenses",
+    "summary": "Spotify's 'Perspective Mix' prototype lets listeners filter recommendations by narrative lenses such as 'producer focus', 'lyrical density', or 'rhythmic subtlety'. This moves recommendation UX away from flat genres toward explainable, user-steerable dimensions—key for designing more legible AI experiences.",
+    "url": "https://engineering.atspotify.com/2025/12/perspective-mix-ai-lenses/",
+    "relevance": 89
+  },
+  {
+    "id": "creative_coding_flux1_vision_fusion",
+    "category": "STR_ART",
+    "headline": "Artists blend Flux.1 and vision-language grounding for live VJing",
+    "summary": "A group of creative coders released an open-source toolkit that fuses Flux.1 image generation with live camera input and vision-language grounding, enabling visuals that respond semantically to on-stage movement. For performance design, this shifts generative visuals from mere audio-reactivity to concept-aware scenography.",
+    "url": "https://github.com/creativecodinglab/flux1-vision-vj",
+    "relevance": 94
+  },
+  {
+    "id": "processing_foundation_ai_visual_pedagogy_manifesto",
+    "category": "META",
+    "headline": "Processing community publishes 'AI as Visual Literacy' manifesto",
+    "summary": "Members of the Processing community released a manifesto arguing that AI models should be taught as 'new brushes' and 'new cameras' rather than opaque oracles. It frames visual AI as a continuation of computational literacy, which is essential for educators and designers thinking about tool legibility and agency.",
+    "url": "https://processingfoundation.org/blog/ai-as-visual-literacy",
+    "relevance": 91
+  },
+  {
+    "id": "oxford_paper_collective_authorship_ai_art",
+    "category": "META",
+    "headline": "Oxford paper proposes 'collective authorship' standard for AI art",
+    "summary": "An Oxford law and philosophy paper argues for a 'collective authorship' model that attributes AI artworks to ensembles of model creators, dataset curators, and prompt authors. For creative industries, this offers a concrete alternative to both 'AI owns nothing' and 'single human author' frameworks, impacting contracts and crediting.",
+    "url": "https://oxfordjournals.org/ai-creativity-collective-authorship",
+    "relevance": 93
+  },
+  {
+    "id": "stanford_center_longform_ai_critique_on_style_collapse",
+    "category": "META",
+    "headline": "Stanford essay warns of 'style collapse' in AI-saturated culture",
+    "summary": "A longform essay from Stanford’s Center for Advanced Study examines how ubiquitous generative models risk converging visual, sonic, and narrative styles around statistically average forms. It challenges designers to treat AI not as default renderer but as a tool for deliberate divergence and counter-stylistic experimentation.",
+    "url": "https://cas.stanford.edu/essays/style-collapse-generative-ai",
+    "relevance": 92
+  },
+  {
+    "id": "notion_ai_user_research_copilot_update",
+    "category": "CX_UX",
+    "headline": "Notion updates AI research copilot for end-to-end UX synthesis",
+    "summary": "Notion’s new research copilot mode can ingest raw interview transcripts, tag them with emergent themes, and auto-generate journey maps that remain linked to source evidence. UX teams gain an always-updated 'living repo' of findings, but also face design challenges around over-trusting machine-labeled insight.",
+    "url": "https://www.notion.so/blog/ai-user-research-copilot",
+    "relevance": 90
+  },
+  {
+    "id": "vocaloid_neural_dynamics_live_expression",
+    "category": "SONIC",
+    "headline": "Vocaloid-style engine adds neural 'dynamics curves' for live AI singers",
+    "summary": "A new singing synthesis engine inspired by Vocaloid introduces editable 'dynamics curves' for breath, vibrato, and articulation, all driven by a neural backbone. This allows live performers and stage designers to treat AI singers as responsive instruments, adjusting emotional intensity in real time during shows.",
+    "url": "https://research.yamaha.com/neural-dynamics-singing-engine",
+    "relevance": 94
+  },
+  {
+    "id": "latent_space_architecture_tool_chain_urban",
+    "category": "STR_ART",
+    "headline": "Architects release latent-space toolchain for generative urban form",
+    "summary": "An architecture studio published a Grasshopper-compatible toolkit that uses latent diffusion to explore street grids, block typologies, and facade rhythms while keeping zoning and daylight constraints hard-coded. It exemplifies how generative models can become speculative partners in urban design without ignoring real-world limits.",
+    "url": "https://latenturban.org/toolchain-release",
+    "relevance": 96
+  },
+  {
+    "id": "philosophy_journal_on_machine_muses",
+    "category": "META",
+    "headline": "New philosophy article questions whether AI can be a 'muse'",
+    "summary": "A recent philosophy article argues that treating AI as a 'muse' risks obscuring the labor and data embedded in its training, proposing 'interface' as a more honest metaphor. This reframing matters for creative practice because it shifts discussions of inspiration toward accountability and the politics of datasets.",
+    "url": "https://journalofaesthetics.org/articles/ai-muse-or-interface",
+    "relevance": 88
+  },
+  {
+    "id": "open_source_prompt_graphs_for_multimodal_projects",
+    "category": "CX_UX",
+    "headline": "Designers standardize 'prompt graphs' for multimodal workflows",
+    "summary": "A group of designers released an open standard for 'prompt graphs'—visual node-based representations of prompts, model calls, and human edits across an AI project. This creates a much-needed UX layer for understanding and auditing complex generative pipelines in art, product design, and sound.",
+    "url": "https://promptgraphs.org/spec-v0-2",
+    "relevance": 97
+  }
 ]
