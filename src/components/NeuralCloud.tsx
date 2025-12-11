@@ -406,46 +406,37 @@ const NeuralCloud = () => {
   
   const isDecrypted = decryptedShard !== null;
   
-  // Fetch external data on mount with verbose debugging
+  // Fetch external data from GitHub Raw URL
   useEffect(() => {
     const fetchDebrisData = async () => {
-      const paths = ['/data/debris.json', 'data/debris.json', './data/debris.json'];
+      const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/Ufuk1007/shape-neural-core/main/public/data/debris.json';
       
-      for (const path of paths) {
-        console.log(`[NEURAL_CLOUD] Attempting to fetch: ${path}`);
+      console.log('[NEURAL_CLOUD] Fetching from GitHub:', GITHUB_RAW_URL);
+      
+      try {
+        const response = await fetch(GITHUB_RAW_URL);
+        console.log('[NEURAL_CLOUD] Response:', {
+          status: response.status,
+          ok: response.ok,
+          statusText: response.statusText
+        });
         
-        try {
-          const response = await fetch(path);
-          console.log(`[NEURAL_CLOUD] Response for ${path}:`, {
-            status: response.status,
-            ok: response.ok,
-            statusText: response.statusText,
-            contentType: response.headers.get('content-type')
-          });
-          
-          if (response.ok) {
-            const contentType = response.headers.get('content-type');
-            if (contentType && contentType.includes('application/json')) {
-              const data = await response.json();
-              console.log('[NEURAL_CLOUD] ✓ Data successfully loaded:', data);
-              console.log('[NEURAL_CLOUD] Total items:', data.length);
-              setDebrisData(data);
-              setIsLoading(false);
-              return; // Success - exit the function
-            } else {
-              console.warn(`[NEURAL_CLOUD] ✗ Wrong content-type for ${path}:`, contentType);
-            }
-          }
-        } catch (error) {
-          console.error(`[NEURAL_CLOUD] ✗ Error fetching ${path}:`, error);
+        if (response.ok) {
+          const data = await response.json();
+          console.log('[NEURAL_CLOUD] ✓ Live data loaded:', data.length, 'items');
+          console.log('[NEURAL_CLOUD] Data preview:', data.slice(0, 2));
+          setDebrisData(data);
+        } else {
+          console.warn('[NEURAL_CLOUD] ✗ GitHub fetch failed, using fallback');
+          setDebrisData(MOCK_DEBRIS);
         }
+      } catch (error) {
+        console.error('[NEURAL_CLOUD] ✗ Network error:', error);
+        console.log('[NEURAL_CLOUD] Using MOCK_DEBRIS fallback');
+        setDebrisData(MOCK_DEBRIS);
+      } finally {
+        setIsLoading(false);
       }
-      
-      // All paths failed - use fallback
-      console.log('[NEURAL_CLOUD] All fetch attempts failed, using MOCK_DEBRIS fallback');
-      console.log('[NEURAL_CLOUD] Mock data items:', MOCK_DEBRIS.length);
-      setDebrisData(MOCK_DEBRIS);
-      setIsLoading(false);
     };
 
     fetchDebrisData();
