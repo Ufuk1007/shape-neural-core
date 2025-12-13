@@ -470,8 +470,71 @@ const NeuralCloud = () => {
 
   return (
     <section id="cloud" className="relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111]">
-      {/* Top Vignette Overlay */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#111] to-transparent z-20 pointer-events-none" />
+      {/* Section Header - Above everything */}
+      <div className="absolute top-0 left-0 right-0 z-30 px-8 md:px-20 pt-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-4 mb-4">
+            <div
+              className="w-3 h-3 rounded-full animate-pulse"
+              style={{
+                backgroundColor: "#0f0",
+                boxShadow: "0 0 10px #0f0, 0 0 20px #0f044",
+              }}
+            />
+            <span className="text-[#0f0] text-sm tracking-[0.3em] font-bold font-mono">DATA_CLOUD</span>
+          </div>
+          
+          {/* Chromatic Aberration Title */}
+          <div className="relative">
+            {/* Red Channel */}
+            <div
+              className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none text-3xl md:text-6xl font-mono"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+            >
+              NEURAL_SINGULARITY
+            </div>
+            {/* Blue Channel */}
+            <div
+              className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none text-3xl md:text-6xl font-mono"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+            >
+              NEURAL_SINGULARITY
+            </div>
+            {/* Main Channel */}
+            <div
+              className="relative text-[#e0e0e0] text-3xl md:text-6xl font-mono"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+            >
+              NEURAL<span className="text-[#ff0055]">_</span>SINGULARITY
+            </div>
+          </div>
+          
+          <p className="text-[#666] mt-6 max-w-xl tracking-wide font-mono text-sm md:text-base">
+            {">"} Live data visualization. Click nodes to decrypt.
+          </p>
+          
+          {/* Stats - Desktop: right side, Mobile: below subtitle */}
+          {!isLoading && (
+            <div className="mt-4 md:absolute md:top-20 md:right-8 lg:right-20 md:mt-0 text-xs font-mono flex flex-wrap gap-x-4 gap-y-1 md:block md:text-right">
+              <div style={{ color: dominantColor }}>
+                DOMINANT: {analysis.dominantCategory}
+              </div>
+              <div style={{ color: '#00ff41' }}>
+                AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
+              </div>
+              <div className="hidden md:block" style={{ color: 'rgba(255,255,255,0.5)' }}>
+                PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
+              </div>
+              <div style={{ color: 'rgba(255,255,255,0.3)' }}>
+                NODES: {debrisData.length}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+      
+      {/* Top Vignette Overlay - below header */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#111] to-transparent z-10 pointer-events-none" />
       
       {/* Bottom Vignette Overlay */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-20 pointer-events-none" />
@@ -481,29 +544,6 @@ const NeuralCloud = () => {
         <div className="absolute inset-0 z-30 flex items-center justify-center">
           <div className="font-mono text-sm tracking-wider animate-pulse" style={{ color: '#00ff41' }}>
             INITIALIZING_CONNECTION...
-          </div>
-        </div>
-      )}
-      
-      {/* UI Overlay */}
-      <div className="absolute top-8 left-8 z-10 font-mono font-bold tracking-wider text-sm md:text-base" style={{ color: '#00ff41' }}>
-        // NEURAL_SINGULARITY
-      </div>
-      
-      {/* Stats Overlay */}
-      {!isLoading && (
-        <div className="absolute top-8 right-8 z-10 text-xs font-mono opacity-70">
-          <div style={{ color: dominantColor }}>
-            DOMINANT: {analysis.dominantCategory}
-          </div>
-          <div style={{ color: '#00ff41' }}>
-            AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
-          </div>
-          <div style={{ color: 'rgba(255,255,255,0.5)' }}>
-            PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
-          </div>
-          <div style={{ color: 'rgba(255,255,255,0.3)' }}>
-            NODES: {debrisData.length}
           </div>
         </div>
       )}
