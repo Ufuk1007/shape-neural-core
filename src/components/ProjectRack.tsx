@@ -21,7 +21,7 @@ interface Project {
 const PROJECTS: Project[] = [
   {
     id: "MOD_01",
-    title: "SAPIENT_BLOCK",
+    title: "SAPIENTBLOCK",
     client: "CLASSIFIED",
     year: "2024",
     status: "LIVE",
@@ -34,7 +34,7 @@ const PROJECTS: Project[] = [
     id: "MOD_02",
     title: "MELODEYE_EMOTION_ADAPTIVE_MUSIC",
     client: "RESEARCH_PROJECT",
-    year: "2024-2025",
+    year: "2024",
     status: "LIVE",
     tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
     desc: "Multi-modal emotion recognition system that reads facial expressions and eye behaviors separately, generating adaptive music based on true emotional state rather than displayed affect.",
@@ -118,24 +118,27 @@ const SignalLossMedia = ({ image }: { image?: string }) => {
     // Random signal loss intervals
     const triggerGlitch = () => {
       const randomDelay = Math.random() * 4000 + 2000; // 2-6 seconds between glitches
-      
+
       setTimeout(() => {
         setGlitching(true);
-        
+
         // Glitch duration
         setTimeout(() => {
           setShowSignal(false);
           setGlitching(false);
-          
+
           // Show NO_SIGNAL for a bit
-          setTimeout(() => {
-            setGlitching(true);
-            setTimeout(() => {
-              setShowSignal(true);
-              setGlitching(false);
-              triggerGlitch(); // Loop
-            }, 150);
-          }, 800 + Math.random() * 1200);
+          setTimeout(
+            () => {
+              setGlitching(true);
+              setTimeout(() => {
+                setShowSignal(true);
+                setGlitching(false);
+                triggerGlitch(); // Loop
+              }, 150);
+            },
+            800 + Math.random() * 1200,
+          );
         }, 150);
       }, randomDelay);
     };
@@ -318,17 +321,14 @@ const ProjectRack = () => {
                 <div className="text-left relative">
                   <span className="text-[#666] text-xs md:text-sm tracking-widest">[{project.id}]</span>
                   <span className="text-[#666] mx-2 hidden md:inline">//</span>
-                  <span 
+                  <span
                     className="text-sm md:text-lg tracking-wider font-bold transition-colors block md:inline"
-                    style={{ 
-                      color: expandedId === project.id ? getStatusColor(project.status) : '#e0e0e0'
+                    style={{
+                      color: expandedId === project.id ? getStatusColor(project.status) : "#e0e0e0",
                     }}
                   >
                     <span className="group-hover:hidden">{project.title}</span>
-                    <span 
-                      className="hidden group-hover:inline"
-                      style={{ color: getStatusColor(project.status) }}
-                    >
+                    <span className="hidden group-hover:inline" style={{ color: getStatusColor(project.status) }}>
                       {project.title}
                     </span>
                   </span>
