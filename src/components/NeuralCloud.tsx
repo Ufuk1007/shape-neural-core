@@ -397,12 +397,12 @@ const DecryptionPanel = ({
   );
 };
 
-// Mobile detection hook
+// Mobile detection hook - only for phones (< 640px)
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(false);
   
   useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    const checkMobile = () => setIsMobile(window.innerWidth < 640);
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
