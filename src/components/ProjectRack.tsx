@@ -65,23 +65,13 @@ const PROJECTS: Project[] = [
   },
   {
     id: "MOD_05",
-    title: "PHANTOM_PROTOCOL",
+    title: "SAPIENTSHIFT",
     client: "CLASSIFIED",
-    year: "2024",
+    year: "2025",
     status: "LIVE",
-    tags: ["META", "SECURITY"],
-    desc: "Zero-knowledge authentication framework. Biometric neural patterns replace passwords, enabling seamless identity verification without exposing personal data.",
-    techStack: ["Rust", "WebAssembly", "Zero-Knowledge Proofs", "Edge Computing"],
-  },
-  {
-    id: "MOD_05",
-    title: "ECHO_CHAMBER_BREAK",
-    client: "MOZILLA_FOUNDATION",
-    year: "2023",
-    status: "ARCHIVED",
-    tags: ["SOCIAL", "AI_ETHICS"],
-    desc: "Algorithm intervention tool that deliberately introduces cognitive diversity. Designed to rupture filter bubbles and expose users to perspectives outside their algorithmic comfort zones.",
-    techStack: ["GraphQL", "Neo4j", "Svelte", "Deno"],
+    tags: ["AI_PLATFORM", "CONTENT_GENERATION", "ANALYTICS"],
+    desc: "Neural fabric connecting human potential with AI futures. Autonomous creative guild generates hyper-personalized insights through multi-agent orchestration. From analysis to action in one breath.",
+    techStack: ["React", "Supabase Edge Functions", "OpenAI/Perplexity/DeepSeek", "TypeScript", "Tailwind CSS"],
   },
 ];
 
