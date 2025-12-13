@@ -1,5 +1,5 @@
 import { useRef, useMemo, useState, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
@@ -411,6 +411,19 @@ const useIsMobile = () => {
   return isMobile;
 };
 
+// Camera controller that updates based on screen size
+const CameraController = ({ isMobile }: { isMobile: boolean }) => {
+  const { camera } = useThree();
+  
+  useEffect(() => {
+    camera.position.z = isMobile ? 14 : 8;
+    (camera as THREE.PerspectiveCamera).fov = isMobile ? 60 : 45;
+    (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
+  }, [camera, isMobile]);
+  
+  return null;
+};
+
 // Main Component
 const NeuralCloud = () => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
@@ -548,7 +561,10 @@ const NeuralCloud = () => {
         </div>
       )}
 
-      <Canvas camera={{ position: [0, 0, isMobile ? 14 : 8], fov: isMobile ? 60 : 45 }}>
+      <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
+        {/* Dynamic Camera Controller */}
+        <CameraController isMobile={isMobile} />
+        
         {/* Atmosphere */}
         <color attach="background" args={["#000000"]} />
         <fog attach="fog" args={["#000000", 10, 25]} />
