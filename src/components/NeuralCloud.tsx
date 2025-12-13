@@ -496,35 +496,35 @@ const NeuralCloud = () => {
                 boxShadow: "0 0 10px #0f0, 0 0 20px #0f044",
               }}
             />
-            <span className="text-[#0f0] text-sm tracking-[0.3em] font-bold font-mono">DATA_CLOUD</span>
+            <span className="text-[#0f0] text-sm tracking-[0.3em] font-bold" style={{ fontFamily: "'Courier New', monospace" }}>DATA_CLOUD</span>
           </div>
           
           {/* Chromatic Aberration Title */}
           <div className="relative">
             {/* Red Channel */}
             <div
-              className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none text-3xl md:text-6xl font-mono"
-              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+              className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85, fontFamily: "'Courier New', monospace" }}
             >
               NEURAL_SINGULARITY
             </div>
             {/* Blue Channel */}
             <div
-              className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none text-3xl md:text-6xl font-mono"
-              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+              className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85, fontFamily: "'Courier New', monospace" }}
             >
               NEURAL_SINGULARITY
             </div>
             {/* Main Channel */}
             <div
-              className="relative text-[#e0e0e0] text-3xl md:text-6xl font-mono"
-              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+              className="relative text-[#e0e0e0] text-4xl md:text-6xl"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85, fontFamily: "'Courier New', monospace" }}
             >
               NEURAL<span className="text-[#ff0055]">_</span>SINGULARITY
             </div>
           </div>
           
-          <p className="text-[#666] mt-6 max-w-xl tracking-wide font-mono text-sm md:text-base">
+          <p className="text-[#666] mt-6 max-w-xl tracking-wide text-sm md:text-base" style={{ fontFamily: "'Courier New', monospace" }}>
             {">"} Live data visualization. Click nodes to decrypt.
           </p>
           
