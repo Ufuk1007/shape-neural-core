@@ -4,6 +4,7 @@ import { Plus, Minus, ExternalLink } from "lucide-react";
 import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
 import melodeyeImg from "@/assets/melodeye-screenshot.png";
 import problaimImg from "@/assets/problaim-screenshot.png";
+import humancryptoImg from "@/assets/humancrypto-screenshot.jpg";
 
 interface Project {
   id: string;
@@ -53,6 +54,17 @@ const PROJECTS: Project[] = [
   },
   {
     id: "MOD_04",
+    title: "HUMANCRYP.TO",
+    client: "RESEARCH_PROJECT",
+    year: "2023",
+    status: "ARCHIVED",
+    tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
+    desc: "Crypto-education platform where cryptocurrencies take human form. Each coin reveals its distinct character through AI-generated personas, transforming complex blockchain concepts into memorable learning journeys.",
+    techStack: ["Wix", "AI Image Generation", "Video Production", "Storytelling"],
+    image: humancryptoImg,
+  },
+  {
+    id: "MOD_05",
     title: "PHANTOM_PROTOCOL",
     client: "CLASSIFIED",
     year: "2024",
