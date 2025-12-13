@@ -4,7 +4,7 @@ import { Plus, Minus, ExternalLink } from "lucide-react";
 import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
 import melodeyeImg from "@/assets/melodeye-screenshot.png";
 import problaimImg from "@/assets/problaim-screenshot.png";
-import humancryptoImg from "@/assets/humancrypto-screenshot.jpg";
+import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
 
 interface Project {
