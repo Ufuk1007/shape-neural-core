@@ -548,7 +548,7 @@ const NeuralCloud = () => {
         </div>
       )}
 
-      <Canvas camera={{ position: [0, 0, isMobile ? 14 : 10], fov: isMobile ? 60 : 50 }}>
+      <Canvas camera={{ position: [0, 0, isMobile ? 14 : 8], fov: isMobile ? 60 : 45 }}>
         {/* Atmosphere */}
         <color attach="background" args={["#000000"]} />
         <fog attach="fog" args={["#000000", 10, 25]} />
