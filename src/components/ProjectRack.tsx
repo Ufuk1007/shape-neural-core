@@ -124,22 +124,22 @@ const ProjectRack = () => {
         <div className="relative">
           {/* Red Channel */}
           <div
-            className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl font-bold"
-            style={{ letterSpacing: "-2px" }}
+            className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl"
+            style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
           >
             PROJECT_RACK
           </div>
           {/* Blue Channel */}
           <div
-            className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl font-bold"
-            style={{ letterSpacing: "-2px" }}
+            className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl"
+            style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
           >
             PROJECT_RACK
           </div>
           {/* Main Channel */}
           <div
-            className="relative text-[#e0e0e0] text-4xl md:text-6xl font-bold"
-            style={{ letterSpacing: "-2px" }}
+            className="relative text-[#e0e0e0] text-4xl md:text-6xl"
+            style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
           >
             PROJECT<span className="text-[#ff0055]">_</span>RACK
           </div>
@@ -180,10 +180,13 @@ const ProjectRack = () => {
                 />
 
                 {/* Module ID + Title */}
-                <div className="text-left">
+                <div className="text-left relative">
                   <span className="text-[#666] text-xs md:text-sm tracking-widest">[{project.id}]</span>
                   <span className="text-[#666] mx-2 hidden md:inline">//</span>
-                  <span className="text-[#e0e0e0] text-sm md:text-lg tracking-wider font-bold group-hover:text-[#0f0] transition-colors block md:inline">
+                  <span 
+                    className="text-sm md:text-lg tracking-wider font-bold transition-colors block md:inline"
+                    style={{ color: getStatusColor(project.status) }}
+                  >
                     {project.title}
                   </span>
                 </div>
