@@ -17,6 +17,7 @@ interface Project {
   desc: string;
   techStack: string[];
   image?: string;
+  url?: string;
 }
 
 const PROJECTS: Project[] = [
@@ -30,6 +31,7 @@ const PROJECTS: Project[] = [
     desc: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching – digital archaeology for decentralized potential.",
     techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Tailwind CSS"],
     image: sapientBlockImg,
+    url: "https://sapientblock.com",
   },
   {
     id: "MOD_02",
@@ -41,6 +43,7 @@ const PROJECTS: Project[] = [
     desc: "Multi-modal emotion recognition system that reads facial expressions and eye behaviors separately, generating adaptive music based on true emotional state rather than displayed affect.",
     techStack: ["React", "TypeScript", "Supabase", "MediaPipe", "Mureka_API"],
     image: melodeyeImg,
+    url: "https://melodeye.com",
   },
   {
     id: "MOD_03",
@@ -52,6 +55,7 @@ const PROJECTS: Project[] = [
     desc: "AI-orchestrated problem decomposition engine. Transforms cognitive noise into crystallized insight pyramids through multi-model synthesis.",
     techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Perplexity", "Stripe"],
     image: problaimImg,
+    url: "https://problaim.com",
   },
   {
     id: "MOD_04",
@@ -63,6 +67,7 @@ const PROJECTS: Project[] = [
     desc: "Crypto-education platform where cryptocurrencies take human form. Each coin reveals its distinct character through AI-generated personas, transforming complex blockchain concepts into memorable learning journeys.",
     techStack: ["Wix", "AI Image Generation", "Video Production", "Storytelling"],
     image: humancryptoImg,
+    url: "https://humancryp.to",
   },
   {
     id: "MOD_05",
@@ -74,6 +79,7 @@ const PROJECTS: Project[] = [
     desc: "AI-powered potential analysis platform. Analyze your AI potential in 5 minutes – receive tailored use cases, actionable recommendations, and a personal command center for sustainable transformation. From insight to implementation.",
     techStack: ["React", "TypeScript", "Supabase Edge Functions", "OpenAI", "Perplexity", "DeepSeek", "Tailwind CSS"],
     image: sapientshiftImg,
+    url: "https://sapientshift.com",
   },
   {
     id: "MOD_06",
@@ -434,28 +440,46 @@ const ProjectRack = () => {
                         </div>
 
                         {/* Action Button */}
-                        <motion.button
-                          className="w-full mt-4 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider group"
-                          style={{
-                            backgroundColor: "#ff0055",
-                            color: "#fff",
-                            border: "2px solid #ff0055",
-                          }}
-                          whileHover={{
-                            backgroundColor: "#ff3377",
-                            borderColor: "#ff3377",
-                          }}
-                          whileTap={{ scale: 0.98 }}
-                        >
-                          <span>{">"} INITIALIZE_CASE_STUDY</span>
-                          <motion.span
-                            animate={{ opacity: [1, 0, 1] }}
-                            transition={{ duration: 0.8, repeat: Infinity }}
+                        {project.url ? (
+                          <motion.a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full mt-4 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider group"
+                            style={{
+                              backgroundColor: "#ff0055",
+                              color: "#fff",
+                              border: "2px solid #ff0055",
+                            }}
+                            whileHover={{
+                              backgroundColor: "#ff3377",
+                              borderColor: "#ff3377",
+                            }}
+                            whileTap={{ scale: 0.98 }}
                           >
-                            _
-                          </motion.span>
-                          <ExternalLink size={16} />
-                        </motion.button>
+                            <span>{">"} INITIALIZE_CASE_STUDY</span>
+                            <motion.span
+                              animate={{ opacity: [1, 0, 1] }}
+                              transition={{ duration: 0.8, repeat: Infinity }}
+                            >
+                              _
+                            </motion.span>
+                            <ExternalLink size={16} />
+                          </motion.a>
+                        ) : (
+                          <motion.div
+                            className="w-full mt-4 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider cursor-not-allowed"
+                            style={{
+                              backgroundColor: "#333",
+                              color: "#666",
+                              border: "2px solid #444",
+                              opacity: 0.5,
+                            }}
+                          >
+                            <span>{">"} CASE_STUDY_UNAVAILABLE</span>
+                            <span>_</span>
+                          </motion.div>
+                        )}
                       </div>
                     </div>
                   </div>
