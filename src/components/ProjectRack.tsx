@@ -77,7 +77,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "MOD_06",
-    title: "BITCOIN_MOOD_MUSIC",
+    title: "BITCOIN_SOUNDSCAPE",
     client: "CLASSIFIED",
     year: "2025",
     status: "BETA",
