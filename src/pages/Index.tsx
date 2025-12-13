@@ -3,9 +3,12 @@ import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
 import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
+import LegalModal from "@/components/LegalModal";
+
 const Index = () => {
   const [time, setTime] = useState(0);
   const [blink, setBlink] = useState(true);
+  const [isLegalOpen, setIsLegalOpen] = useState(false);
 
   // Timer Logic
   useEffect(() => {
@@ -183,7 +186,10 @@ const Index = () => {
       <ProjectRack />
 
       {/* PROFILE & FOOTER SECTION */}
-      <ProfileSection />
+      <ProfileSection onOpenLegal={() => setIsLegalOpen(true)} />
+
+      {/* LEGAL MODAL */}
+      <LegalModal isOpen={isLegalOpen} onClose={() => setIsLegalOpen(false)} />
     </>
   );
 };

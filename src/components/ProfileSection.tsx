@@ -1,6 +1,10 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
 
-const ProfileSection = () => {
+interface ProfileSectionProps {
+  onOpenLegal: () => void;
+}
+
+const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
   return (
     <section
       className="relative min-h-screen py-20 px-8 md:px-20 overflow-hidden"
@@ -190,36 +194,34 @@ const ProfileSection = () => {
         {/* Links */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6 sm:mb-8">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ufuk-avci-1346871b/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm"
           >
             <span className="text-[#0f0] opacity-60">[</span>
-            <span className="tracking-[0.15em]">LINKEDIN</span>
+            <span className="tracking-[0.15em]">LINKEDIN_NODE</span>
             <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             <span className="text-[#0f0] opacity-60">]</span>
           </a>
           <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-2 text-gray-500 hover:text-[#ff0055] transition-colors duration-300 text-sm"
-          >
-            <span className="text-[#ff0055] opacity-60">[</span>
-            <span className="tracking-[0.15em]">INSTAGRAM</span>
-            <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-            <span className="text-[#ff0055] opacity-60">]</span>
-          </a>
-          <a
-            href="mailto:contact@shapeneural.com"
+            href="mailto:signal@shapeneural.com"
             className="group flex items-center gap-2 text-gray-500 hover:text-white transition-colors duration-300 text-sm"
           >
             <span className="text-gray-600">[</span>
-            <span className="tracking-[0.15em]">MAIL_PROTOCOL</span>
+            <span className="tracking-[0.15em]">SIGNAL_TRANSMISSION</span>
             <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             <span className="text-gray-600">]</span>
           </a>
+          <button
+            onClick={onOpenLegal}
+            className="group flex items-center gap-2 text-gray-500 hover:text-[#ff0055] transition-colors duration-300 text-sm"
+          >
+            <span className="text-[#ff0055] opacity-60">[</span>
+            <span className="tracking-[0.15em]">LEGAL_PROTOCOLS</span>
+            <FileText size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+            <span className="text-[#ff0055] opacity-60">]</span>
+          </button>
         </div>
 
         {/* Copyright */}

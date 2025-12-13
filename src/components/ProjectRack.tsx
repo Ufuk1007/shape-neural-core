@@ -83,7 +83,7 @@ const PROJECTS: Project[] = [
     status: "BETA",
     tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
     desc: "Real-time market sentiment translated into AI-generated soundscapes. Bitcoin's emotional pulse, rendered as ambient music through neural synthesis.",
-    techStack: ["React", "Supabase Edge Functions", "Lovable AI", "Suno API", "Framer Motion"],
+    techStack: ["React", "Supabase Edge Functions", "Suno API", "Framer Motion"],
   },
 ];
 
