@@ -3,42 +3,39 @@ import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
 import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
-
 const Index = () => {
   const [time, setTime] = useState(0);
   const [blink, setBlink] = useState(true);
 
   // Timer Logic
   useEffect(() => {
-    const interval = setInterval(() => setTime((t) => t + 1), 1000);
+    const interval = setInterval(() => setTime(t => t + 1), 1000);
     return () => clearInterval(interval);
   }, []);
 
   // Blinking Logic for "SYS"
   useEffect(() => {
-    const interval = setInterval(() => setBlink((b) => !b), 800);
+    const interval = setInterval(() => setBlink(b => !b), 800);
     return () => clearInterval(interval);
   }, []);
-
   const formatTime = (seconds: number) => {
     const h = Math.floor(seconds / 3600).toString().padStart(2, '0');
-    const m = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+    const m = Math.floor(seconds % 3600 / 60).toString().padStart(2, '0');
     const s = (seconds % 60).toString().padStart(2, '0');
     return `${h}:${m}:${s}`;
   };
-
-  return (
-    <>
-    <div
-      className="relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111]"
-      style={{
-        fontFamily: "'Courier New', Courier, monospace",
-        color: "#0f0"
-      }}
-    >
+  return <>
+    <div className="relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111]" style={{
+      fontFamily: "'Courier New', Courier, monospace",
+      color: "#0f0"
+    }}>
       {/* 1. SCANLINE OVERLAY (Direct Port from User Code) */}
       <div style={{
-        position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
         backgroundImage: `
           linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
           linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06))
@@ -49,12 +46,9 @@ const Index = () => {
       }} />
 
       {/* MOVING SCANLINE */}
-      <div 
-        className="absolute left-0 right-0 h-[2px] bg-[#0f0] opacity-10 pointer-events-none z-10"
-        style={{
-          animation: 'scanMove 4s linear infinite',
-        }}
-      />
+      <div className="absolute left-0 right-0 h-[2px] bg-[#0f0] opacity-10 pointer-events-none z-10" style={{
+        animation: 'scanMove 4s linear infinite'
+      }} />
 
       {/* 2. CRT FLICKER */}
       <div className="absolute inset-0 z-20 pointer-events-none bg-[rgba(18,16,16,0.1)] opacity-10 animate-pulse" />
@@ -65,8 +59,11 @@ const Index = () => {
         {/* TOP METADATA ROW */}
         <div className="flex items-center gap-4 mb-6 font-bold tracking-widest text-sm md:text-base">
           <div className="flex items-center gap-2 text-[#ff0055]">
-            <span style={{ opacity: blink ? 1 : 0.3, transition: 'opacity 0.1s' }}>SYS ●</span>
-            <span>[SN_CORE_V1]</span>
+            <span style={{
+              opacity: blink ? 1 : 0.3,
+              transition: 'opacity 0.1s'
+            }}>SYS ●</span>
+            <span>[SN_LAB_V1]</span>
             <span className="text-[#0f0]">{formatTime(time)}</span>
           </div>
         </div>
@@ -74,19 +71,31 @@ const Index = () => {
         {/* MAIN HEADLINE (The 3-Layer Technique) */}
         <div className="relative mb-8">
           {/* Red Channel */}
-          <div className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none"
-               style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
-            SHAPE<br/>NEURAL_
+          <div className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none" style={{
+            fontSize: 'clamp(4rem, 10vw, 8rem)',
+            lineHeight: 0.85,
+            letterSpacing: '-4px'
+          }}>
+            SHAPE<br />NEURAL_
           </div>
           {/* Blue Channel */}
-          <div className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none"
-               style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
-            SHAPE<br/>NEURAL_
+          <div className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none" style={{
+            fontSize: 'clamp(4rem, 10vw, 8rem)',
+            lineHeight: 0.85,
+            letterSpacing: '-4px'
+          }}>
+            SHAPE<br />NEURAL_
           </div>
           {/* Main Channel */}
-          <div className="relative text-[#e0e0e0]"
-               style={{ fontSize: 'clamp(4rem, 10vw, 8rem)', lineHeight: 0.85, letterSpacing: '-4px' }}>
-            SHAPE<br/>NEURAL<span style={{ opacity: blink ? 1 : 0.3, transition: 'opacity 0.1s' }}>_</span>
+          <div className="relative text-[#e0e0e0]" style={{
+            fontSize: 'clamp(4rem, 10vw, 8rem)',
+            lineHeight: 0.85,
+            letterSpacing: '-4px'
+          }}>
+            SHAPE<br />NEURAL<span style={{
+              opacity: blink ? 1 : 0.3,
+              transition: 'opacity 0.1s'
+            }}>_</span>
           </div>
         </div>
 
@@ -134,8 +143,6 @@ const Index = () => {
 
     {/* PROFILE & FOOTER SECTION */}
     <ProfileSection />
-  </>
-  );
+  </>;
 };
-
 export default Index;
