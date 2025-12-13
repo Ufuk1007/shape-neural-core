@@ -416,8 +416,9 @@ const CameraController = ({ isMobile }: { isMobile: boolean }) => {
   const { camera } = useThree();
   
   useEffect(() => {
-    camera.position.z = isMobile ? 14 : 8;
-    (camera as THREE.PerspectiveCamera).fov = isMobile ? 60 : 45;
+    // Desktop: z=10 (20% further than 8), Mobile: z=16
+    camera.position.z = isMobile ? 16 : 10;
+    (camera as THREE.PerspectiveCamera).fov = isMobile ? 60 : 50;
     (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
   }, [camera, isMobile]);
   
@@ -483,9 +484,10 @@ const NeuralCloud = () => {
 
   return (
     <section id="cloud" className="relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111]">
-      {/* Section Header - Above everything */}
-      <div className="absolute top-0 left-0 right-0 z-30 px-8 md:px-20 pt-20">
-        <div className="max-w-6xl mx-auto">
+      {/* Section Header - Above everything with semi-transparent background */}
+      <div className="absolute top-0 left-0 right-0 z-40 px-8 md:px-20 pt-20 pb-8 pointer-events-none" 
+           style={{ background: 'linear-gradient(to bottom, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.7) 70%, transparent 100%)' }}>
+        <div className="max-w-6xl mx-auto pointer-events-auto">
           <div className="flex items-center gap-4 mb-4">
             <div
               className="w-3 h-3 rounded-full animate-pulse"
@@ -546,11 +548,10 @@ const NeuralCloud = () => {
         </div>
       </div>
       
-      {/* Top Vignette Overlay - below header */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#111] to-transparent z-10 pointer-events-none" />
+      {/* Top Vignette Overlay - removed, now part of header */}
       
-      {/* Bottom Vignette Overlay */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-20 pointer-events-none" />
+      {/* Bottom Vignette Overlay - lower z-index so nodes are clickable */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-10 pointer-events-none" />
       
       {/* Loading State */}
       {isLoading && (
