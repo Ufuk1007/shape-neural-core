@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, ExternalLink } from "lucide-react";
+import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
 
 interface Project {
   id: string;
@@ -11,18 +12,20 @@ interface Project {
   tags: string[];
   desc: string;
   techStack: string[];
+  image?: string;
 }
 
 const PROJECTS: Project[] = [
   {
     id: "MOD_01",
-    title: "SYNTHETIC_SYMPHONY",
-    client: "SONY_MUSIC",
+    title: "SAPIENT_BLOCK",
+    client: "CLASSIFIED",
     year: "2024",
     status: "LIVE",
-    tags: ["SONIC_AI", "CX"],
-    desc: "Generative audio landscapes for adaptive user journeys. Neural networks compose real-time soundscapes that respond to user behavior, creating unique sonic experiences for each listener.",
-    techStack: ["TensorFlow", "Web Audio API", "React", "Node.js"],
+    tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
+    desc: "KI-gestützte Blockchain-Relevanzanalyse für Unternehmen. Algorithmische Mustererkennung trifft auf Use-Case-Matching – digitale Archäologie für dezentrale Potenziale.",
+    techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Tailwind CSS"],
+    image: sapientBlockImg,
   },
   {
     id: "MOD_02",
@@ -86,6 +89,122 @@ const getStatusGlow = (status: Project["status"]) => {
     case "ARCHIVED":
       return "0 0 10px #ff0055, 0 0 20px #ff005544";
   }
+};
+
+// Signal Loss Component for glitch effect
+const SignalLossMedia = ({ image }: { image?: string }) => {
+  const [showSignal, setShowSignal] = useState(true);
+  const [glitching, setGlitching] = useState(false);
+
+  useEffect(() => {
+    if (!image) return;
+
+    // Random signal loss intervals
+    const triggerGlitch = () => {
+      const randomDelay = Math.random() * 4000 + 2000; // 2-6 seconds between glitches
+      
+      setTimeout(() => {
+        setGlitching(true);
+        
+        // Glitch duration
+        setTimeout(() => {
+          setShowSignal(false);
+          setGlitching(false);
+          
+          // Show NO_SIGNAL for a bit
+          setTimeout(() => {
+            setGlitching(true);
+            setTimeout(() => {
+              setShowSignal(true);
+              setGlitching(false);
+              triggerGlitch(); // Loop
+            }, 150);
+          }, 800 + Math.random() * 1200);
+        }, 150);
+      }, randomDelay);
+    };
+
+    triggerGlitch();
+  }, [image]);
+
+  return (
+    <div
+      className="aspect-video relative overflow-hidden"
+      style={{
+        background: "linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)",
+        border: "1px solid #333",
+      }}
+    >
+      {/* Image Layer */}
+      {image && showSignal && (
+        <img
+          src={image}
+          alt="Project screenshot"
+          className="absolute inset-0 w-full h-full object-cover object-top transition-opacity"
+          style={{
+            opacity: glitching ? 0.3 : 1,
+            filter: glitching ? "brightness(2) contrast(2) hue-rotate(90deg)" : "none",
+          }}
+        />
+      )}
+
+      {/* Glitch overlay when transitioning */}
+      {glitching && (
+        <div className="absolute inset-0 pointer-events-none">
+          {[...Array(12)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-full"
+              style={{
+                top: `${Math.random() * 100}%`,
+                height: `${Math.random() * 20 + 5}px`,
+                backgroundColor: i % 2 === 0 ? "#0f0" : "#ff0055",
+                opacity: Math.random() * 0.8,
+                transform: `translateX(${Math.random() * 20 - 10}px)`,
+              }}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* NO_SIGNAL Placeholder - shown when no image or signal lost */}
+      {(!image || !showSignal) && !glitching && (
+        <>
+          {/* Glitch Lines */}
+          <div className="absolute inset-0 opacity-20">
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute w-full h-px"
+                style={{
+                  top: `${12 + i * 12}%`,
+                  backgroundColor: "#0f0",
+                  opacity: Math.random() * 0.5 + 0.2,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Placeholder Text */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-[#333] text-xs tracking-[0.5em] mb-2">MEDIA_FEED</div>
+              <div className="text-[#666] text-2xl font-bold tracking-tight">[NO_SIGNAL]</div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Scanline overlay */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: "linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%)",
+          backgroundSize: "100% 4px",
+        }}
+      />
+    </div>
+  );
 };
 
 const ProjectRack = () => {
@@ -247,46 +366,8 @@ const ProjectRack = () => {
                 >
                   <div className="px-4 pb-8 pt-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                      {/* Left: Media Placeholder */}
-                      <div
-                        className="aspect-video relative overflow-hidden"
-                        style={{
-                          background: "linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%)",
-                          border: "1px solid #333",
-                        }}
-                      >
-                        {/* Glitch Lines */}
-                        <div className="absolute inset-0 opacity-20">
-                          {[...Array(8)].map((_, i) => (
-                            <div
-                              key={i}
-                              className="absolute w-full h-px"
-                              style={{
-                                top: `${12 + i * 12}%`,
-                                backgroundColor: "#0f0",
-                                opacity: Math.random() * 0.5 + 0.2,
-                              }}
-                            />
-                          ))}
-                        </div>
-
-                        {/* Placeholder Text */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="text-[#333] text-xs tracking-[0.5em] mb-2">MEDIA_FEED</div>
-                            <div className="text-[#666] text-2xl font-bold tracking-tight">[NO_SIGNAL]</div>
-                          </div>
-                        </div>
-
-                        {/* Scanline overlay */}
-                        <div
-                          className="absolute inset-0 pointer-events-none"
-                          style={{
-                            backgroundImage: "linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.3) 50%)",
-                            backgroundSize: "100% 4px",
-                          }}
-                        />
-                      </div>
+                      {/* Left: Media with Signal Loss Effect */}
+                      <SignalLossMedia image={project.image} />
 
                       {/* Right: Data Panel */}
                       <div className="space-y-6">
