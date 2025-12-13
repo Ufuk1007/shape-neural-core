@@ -1,4 +1,5 @@
 import { ExternalLink, FileText } from "lucide-react";
+import profilePortrait from "@/assets/profile-portrait.png";
 
 interface ProfileSectionProps {
   onOpenLegal: () => void;
@@ -103,15 +104,56 @@ const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
           </div>
 
           {/* Manifesto Block */}
-          <div className="mt-8 sm:mt-12 border-l-2 border-[#333] pl-4 sm:pl-6">
+          <div className="mt-8 sm:mt-12">
             <div className="text-[#0f0] font-mono text-xs tracking-[0.2em] mb-3 sm:mb-4 opacity-60">
               {">"} MANIFESTO.TXT
             </div>
-            <p className="text-gray-400 font-mono text-sm sm:text-base leading-relaxed italic">
-              "From walls to interfaces, from spray cans to neural networks. Three decades of shaping environments—first
-              with paint, now with prompts. I architect experiences where human intuition meets machine intelligence.
-              Every system I build carries the DNA of street art: bold, unapologetic, designed to move people."
-            </p>
+            <div className="flex gap-4">
+              {/* Profile Portrait */}
+              <div className="shrink-0">
+                <div
+                  className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden"
+                  style={{
+                    border: "2px solid #333",
+                    boxShadow: "0 0 10px rgba(0,255,0,0.1)",
+                  }}
+                >
+                  <img
+                    src={profilePortrait}
+                    alt="Ufuk Avci"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23666' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='120' font-family='monospace'%3EUA%3C/text%3E%3C/svg%3E";
+                    }}
+                  />
+                  {/* Scanline overlay */}
+                  <div
+                    className="absolute inset-0 pointer-events-none opacity-20"
+                    style={{
+                      backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.5) 2px, rgba(0,0,0,0.5) 4px)",
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* Manifesto Text */}
+              <div className="border-l-2 border-[#333] pl-4 sm:pl-6">
+                <p className="text-gray-400 font-mono text-sm sm:text-base leading-relaxed italic">
+                  "From walls to interfaces, from spray cans to neural networks. Three decades of shaping environments—first
+                  with paint, now with prompts. I architect experiences where human intuition meets machine intelligence.
+                  Every system I build carries the DNA of street art:{" "}
+                  <span
+                    className="text-[#ff0055] not-italic font-bold"
+                    style={{
+                      textShadow: "0 0 10px rgba(255, 0, 85, 0.3)"
+                    }}
+                  >
+                    bold, unapologetic, designed to move people
+                  </span>
+                  ."
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Status Indicators */}
@@ -127,57 +169,14 @@ const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
           </div>
         </div>
 
-        {/* Right Column - Cybernetic Portrait */}
+        {/* Right Column - Reserved for Animation */}
         <div className="relative order-1 lg:order-2 max-w-sm mx-auto lg:max-w-none">
-          {/* HUD Frame */}
-          <div className="relative border-2 border-[#333] p-2">
-            {/* Corner brackets */}
-            <div className="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-[#0f0]" />
-            <div className="absolute -top-1 -right-1 w-6 h-6 border-t-2 border-r-2 border-[#0f0]" />
-            <div className="absolute -bottom-1 -left-1 w-6 h-6 border-b-2 border-l-2 border-[#0f0]" />
-            <div className="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-[#0f0]" />
-
-            {/* Image Container */}
-            <div className="relative aspect-[3/4] bg-[#1a1a1a] overflow-hidden">
-              {/* Placeholder Portrait */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center font-mono">
-                  <div className="text-6xl text-[#333] mb-4">SN</div>
-                  <div className="text-xs text-gray-600 tracking-[0.2em]">[ PORTRAIT_DATA ]</div>
-                </div>
-              </div>
-
-              {/* Scanline Overlay */}
-              <div
-                className="absolute inset-0 pointer-events-none opacity-30"
-                style={{
-                  backgroundImage:
-                    "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.3) 2px, rgba(0,0,0,0.3) 4px)",
-                }}
-              />
-
-              {/* CRT Vignette */}
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background: "radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.7) 100%)",
-                }}
-              />
-
-              {/* Glitch Line Effect */}
-              <div className="absolute top-1/3 left-0 right-0 h-[2px] bg-[#0f0] opacity-20 animate-pulse" />
+          {/* TODO: SN → Code transformation animation will be added here */}
+          <div className="relative border-2 border-[#333] p-2 aspect-[3/4] bg-[#0a0a0a] flex items-center justify-center">
+            <div className="text-center font-mono">
+              <div className="text-[#333] text-xs tracking-[0.2em]">[ ANIMATION_SLOT ]</div>
+              <div className="text-[#222] text-xs mt-2">SN → CODE</div>
             </div>
-
-            {/* HUD Data Strip */}
-            <div className="absolute bottom-4 left-4 right-4 flex justify-between font-mono text-xs text-[#0f0] opacity-60">
-              <span>ID_VERIFIED</span>
-              <span>CLEARANCE: ALPHA</span>
-            </div>
-          </div>
-
-          {/* Metadata below frame */}
-          <div className="mt-4 font-mono text-xs text-gray-600 text-center tracking-[0.2em]">
-            [ NEURAL_SCAN_COMPLETE ]
           </div>
         </div>
       </div>
