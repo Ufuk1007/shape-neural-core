@@ -66,23 +66,33 @@ const ProfileSection = () => {
             <div className="font-mono space-y-2 sm:space-y-3 text-sm sm:text-base lg:text-lg">
               <div className="flex flex-wrap">
                 <span className="text-[#0f0] mr-2">{'>'}</span>
-                <span className="text-gray-400 w-16 sm:w-20">IDENT:</span>
+                <span className="text-gray-400 w-20 sm:w-24">IDENT:</span>
                 <span className="text-white tracking-wider">UFUK AVCI</span>
               </div>
               <div className="flex flex-wrap">
                 <span className="text-[#0f0] mr-2">{'>'}</span>
-                <span className="text-gray-400 w-16 sm:w-20">ROLE:</span>
-                <span className="text-white tracking-wider break-all sm:break-normal">CX_SPECIALIST && AI_ARCHITECT</span>
+                <span className="text-gray-400 w-20 sm:w-24">ROLE:</span>
+                <span className="text-white tracking-wider break-all sm:break-normal">CX_STRATEGIST && AI_ARCHITECT</span>
               </div>
               <div className="flex flex-wrap">
                 <span className="text-[#0f0] mr-2">{'>'}</span>
-                <span className="text-gray-400 w-16 sm:w-20">ORIGIN:</span>
-                <span className="text-white tracking-wider">GRAFFITI_WRITER <span className="text-[#ff0055]">(TAG: SN)</span></span>
+                <span className="text-gray-400 w-20 sm:w-24">ORIGIN:</span>
+                <span className="text-white tracking-wider">STREET_ART → DESIGN → STRATEGY</span>
               </div>
               <div className="flex flex-wrap">
                 <span className="text-[#0f0] mr-2">{'>'}</span>
-                <span className="text-gray-400 w-16 sm:w-20">MISSION:</span>
-                <span className="text-white tracking-wider break-all sm:break-normal">BRIDGING_ANALOG_AND_SYNTHETIC</span>
+                <span className="text-gray-400 w-20 sm:w-24">SECTOR:</span>
+                <span className="text-white tracking-wider">FINTECH_VP <span className="text-[#ff0055]">@ TIER1_BANK</span></span>
+              </div>
+              <div className="flex flex-wrap">
+                <span className="text-[#0f0] mr-2">{'>'}</span>
+                <span className="text-gray-400 w-20 sm:w-24">TIMELINE:</span>
+                <span className="text-white tracking-wider">1996_ANALOG {">"}{">"}  2025_SYNTHETIC</span>
+              </div>
+              <div className="flex flex-wrap">
+                <span className="text-[#0f0] mr-2">{'>'}</span>
+                <span className="text-gray-400 w-20 sm:w-24">MISSION:</span>
+                <span className="text-white tracking-wider break-all sm:break-normal">HUMAN_POTENTIAL × AI_FUTURES</span>
               </div>
             </div>
 
@@ -92,9 +102,10 @@ const ProfileSection = () => {
                 {'>'} MANIFESTO.TXT
               </div>
               <p className="text-gray-400 font-mono text-sm sm:text-base leading-relaxed italic">
-                "I don't just prompt. I compose. Combining the raw energy of street art 
-                with the precision of neural networks. Every project is a collision between 
-                chaos and control—analog soul meeting synthetic precision."
+                "From walls to interfaces, from spray cans to neural networks. Three decades of shaping 
+                environments—first with paint, now with prompts. I architect experiences where human 
+                intuition meets machine intelligence. Every system I build carries the DNA of street art: 
+                bold, unapologetic, designed to move people."
               </p>
             </div>
 
