@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, ExternalLink } from "lucide-react";
 import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
+import melodeyeImg from "@/assets/melodeye-screenshot.png";
 
 interface Project {
   id: string;
@@ -23,19 +24,20 @@ const PROJECTS: Project[] = [
     year: "2024",
     status: "LIVE",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
-    desc: "KI-gestützte Blockchain-Relevanzanalyse für Unternehmen. Algorithmische Mustererkennung trifft auf Use-Case-Matching – digitale Archäologie für dezentrale Potenziale.",
+    desc: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching – digital archaeology for decentralized potential.",
     techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Tailwind CSS"],
     image: sapientBlockImg,
   },
   {
     id: "MOD_02",
-    title: "URBAN_GLITCH_MAPPING",
-    client: "BERLIN_CULTURE",
-    year: "2023",
-    status: "ARCHIVED",
-    tags: ["STR_ART", "VISION"],
-    desc: "AI-driven graffiti recognition and mapping system. Computer vision algorithms identify and catalog street art across urban landscapes, preserving ephemeral culture in digital archives.",
-    techStack: ["PyTorch", "OpenCV", "MapBox", "PostgreSQL"],
+    title: "MELODEYE_EMOTION_ADAPTIVE_MUSIC",
+    client: "RESEARCH_PROJECT",
+    year: "2024-2025",
+    status: "LIVE",
+    tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
+    desc: "Multi-modal emotion recognition system that reads facial expressions and eye behaviors separately, generating adaptive music based on true emotional state rather than displayed affect.",
+    techStack: ["React", "TypeScript", "Supabase", "MediaPipe", "Mureka_API"],
+    image: melodeyeImg,
   },
   {
     id: "MOD_03",
