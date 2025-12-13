@@ -2,13 +2,15 @@ import { ExternalLink } from 'lucide-react';
 
 const ProfileSection = () => {
   return (
-    <section className="relative min-h-screen bg-[#0a0a0a] overflow-hidden">
-      {/* Top vignette for seamless transition */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#111] to-transparent z-10 pointer-events-none" />
-      
-      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
-        {/* Section Header - matching Project Rack style */}
-        <div className="mb-12">
+    <section 
+      className="relative min-h-screen py-20 px-8 md:px-20 overflow-hidden"
+      style={{
+        background: "linear-gradient(180deg, #111 0%, #050505 50%, #111 100%)",
+        fontFamily: "'Courier New', Courier, monospace",
+      }}
+    >
+      {/* Section Header - matching Project Rack style */}
+      <div className="max-w-6xl mx-auto mb-12">
           <div className="flex items-center gap-4 mb-4">
             <div
               className="w-3 h-3 rounded-full animate-pulse"
@@ -51,7 +53,7 @@ const ProfileSection = () => {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           
           {/* Left Column - System Log */}
           <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
@@ -163,25 +165,24 @@ const ProfileSection = () => {
         </div>
 
         {/* Separator Line */}
-        <div className="mt-12 sm:mt-16 lg:mt-24 mb-8 sm:mb-12 relative">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-[#0f0] to-transparent opacity-60" />
-          <div className="absolute left-1/2 -translate-x-1/2 -top-2 bg-[#0a0a0a] px-4">
+        <div className="max-w-6xl mx-auto mt-12 pt-8 border-t relative" style={{ borderColor: "#222" }}>
+          <div className="absolute left-1/2 -translate-x-1/2 -top-2 bg-[#050505] px-4">
             <div className="w-2 h-2 rounded-full bg-[#0f0] animate-pulse" />
           </div>
         </div>
 
         {/* Footer */}
-        <footer className="text-center font-mono">
+        <footer className="max-w-6xl mx-auto text-center">
           {/* Links */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6 sm:mb-8">
             <a 
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm sm:text-base"
+              className="group flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm"
             >
               <span className="text-[#0f0] opacity-60">[</span>
-              <span className="tracking-[0.1em] sm:tracking-[0.15em]">LINKEDIN</span>
+              <span className="tracking-[0.15em]">LINKEDIN</span>
               <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="text-[#0f0] opacity-60">]</span>
             </a>
@@ -189,45 +190,29 @@ const ProfileSection = () => {
               href="https://instagram.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 text-gray-500 hover:text-[#ff0055] transition-colors duration-300 text-sm sm:text-base"
+              className="group flex items-center gap-2 text-gray-500 hover:text-[#ff0055] transition-colors duration-300 text-sm"
             >
               <span className="text-[#ff0055] opacity-60">[</span>
-              <span className="tracking-[0.1em] sm:tracking-[0.15em]">INSTAGRAM</span>
+              <span className="tracking-[0.15em]">INSTAGRAM</span>
               <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="text-[#ff0055] opacity-60">]</span>
             </a>
             <a 
               href="mailto:contact@shapeneural.com"
-              className="group flex items-center gap-2 text-gray-500 hover:text-white transition-colors duration-300 text-sm sm:text-base"
+              className="group flex items-center gap-2 text-gray-500 hover:text-white transition-colors duration-300 text-sm"
             >
               <span className="text-gray-600">[</span>
-              <span className="tracking-[0.1em] sm:tracking-[0.15em]">MAIL_PROTOCOL</span>
+              <span className="tracking-[0.15em]">MAIL_PROTOCOL</span>
               <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
               <span className="text-gray-600">]</span>
             </a>
           </div>
 
           {/* Copyright */}
-          <div className="text-gray-600 text-xs sm:text-sm tracking-[0.1em] sm:tracking-[0.2em]">
+          <div className="text-[#444] text-xs tracking-widest">
             © 2025 SHAPENEURAL // <span className="text-[#0f0]">SYSTEM_ONLINE</span>
           </div>
-
-          {/* Bottom padding with decorative element */}
-          <div className="mt-8 flex justify-center gap-2">
-            <div className="w-8 h-[1px] bg-[#333]" />
-            <div className="w-2 h-2 border border-[#333] rotate-45" />
-            <div className="w-8 h-[1px] bg-[#333]" />
-          </div>
         </footer>
-      </div>
-
-      {/* Background noise texture */}
-      <div 
-        className="absolute inset-0 pointer-events-none opacity-5"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-        }}
-      />
     </section>
   );
 };
