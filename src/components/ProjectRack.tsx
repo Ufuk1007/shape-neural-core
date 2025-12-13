@@ -185,9 +185,17 @@ const ProjectRack = () => {
                   <span className="text-[#666] mx-2 hidden md:inline">//</span>
                   <span 
                     className="text-sm md:text-lg tracking-wider font-bold transition-colors block md:inline"
-                    style={{ color: getStatusColor(project.status) }}
+                    style={{ 
+                      color: expandedId === project.id ? getStatusColor(project.status) : '#e0e0e0'
+                    }}
                   >
-                    {project.title}
+                    <span className="group-hover:hidden">{project.title}</span>
+                    <span 
+                      className="hidden group-hover:inline"
+                      style={{ color: getStatusColor(project.status) }}
+                    >
+                      {project.title}
+                    </span>
                   </span>
                 </div>
               </div>
