@@ -5,6 +5,7 @@ import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
 import melodeyeImg from "@/assets/melodeye-screenshot.png";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.jpg";
+import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
 
 interface Project {
   id: string;
@@ -68,10 +69,11 @@ const PROJECTS: Project[] = [
     title: "SAPIENTSHIFT",
     client: "CLASSIFIED",
     year: "2025",
-    status: "LIVE",
-    tags: ["AI_PLATFORM", "CONTENT_GENERATION", "ANALYTICS"],
-    desc: "Neural fabric connecting human potential with AI futures. Autonomous creative guild generates hyper-personalized insights through multi-agent orchestration. From analysis to action in one breath.",
-    techStack: ["React", "Supabase Edge Functions", "OpenAI/Perplexity/DeepSeek", "TypeScript", "Tailwind CSS"],
+    status: "BETA",
+    tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
+    desc: "AI-powered potential analysis platform. Analyze your AI potential in 5 minutes – receive tailored use cases, actionable recommendations, and a personal command center for sustainable transformation. From insight to implementation.",
+    techStack: ["React", "TypeScript", "Supabase Edge Functions", "OpenAI", "Perplexity", "DeepSeek", "Tailwind CSS"],
+    image: sapientshiftImg,
   },
 ];
 
