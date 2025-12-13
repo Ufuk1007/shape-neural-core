@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus, ExternalLink } from "lucide-react";
 import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
 import melodeyeImg from "@/assets/melodeye-screenshot.png";
+import problaimImg from "@/assets/problaim-screenshot.png";
 
 interface Project {
   id: string;
@@ -41,13 +42,14 @@ const PROJECTS: Project[] = [
   },
   {
     id: "MOD_03",
-    title: "NEURAL_COMMERCE",
-    client: "ZALANDO_LABS",
-    year: "2024",
+    title: "PROBLAIM",
+    client: "CLASSIFIED",
+    year: "2025",
     status: "BETA",
-    tags: ["CX_UX", "ML"],
-    desc: "Predictive shopping interfaces powered by behavioral AI. The system anticipates user desires before conscious intent, reducing friction between thought and transaction.",
-    techStack: ["Python", "Kafka", "Redis", "Next.js"],
+    tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
+    desc: "AI-orchestrated problem decomposition engine. Transforms cognitive noise into crystallized insight pyramids through multi-model synthesis.",
+    techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Perplexity", "Stripe"],
+    image: problaimImg,
   },
   {
     id: "MOD_04",
