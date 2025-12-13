@@ -32,7 +32,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "MOD_02",
-    title: "MELODEYE_EMOTION_ADAPTIVE_MUSIC",
+    title: "MELODEYE",
     client: "RESEARCH_PROJECT",
     year: "2024",
     status: "LIVE",
