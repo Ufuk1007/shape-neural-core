@@ -69,11 +69,21 @@ const PROJECTS: Project[] = [
     title: "SAPIENTSHIFT",
     client: "CLASSIFIED",
     year: "2025",
-    status: "BETA",
+    status: "LIVE",
     tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
     desc: "AI-powered potential analysis platform. Analyze your AI potential in 5 minutes – receive tailored use cases, actionable recommendations, and a personal command center for sustainable transformation. From insight to implementation.",
     techStack: ["React", "TypeScript", "Supabase Edge Functions", "OpenAI", "Perplexity", "DeepSeek", "Tailwind CSS"],
     image: sapientshiftImg,
+  },
+  {
+    id: "MOD_06",
+    title: "BITCOIN_MOOD_MUSIC",
+    client: "CLASSIFIED",
+    year: "2025",
+    status: "BETA",
+    tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
+    desc: "Real-time market sentiment translated into AI-generated soundscapes. Bitcoin's emotional pulse, rendered as ambient music through neural synthesis.",
+    techStack: ["React", "Supabase Edge Functions", "Lovable AI", "Suno API", "Framer Motion"],
   },
 ];
 
