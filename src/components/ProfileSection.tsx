@@ -7,11 +7,47 @@ const ProfileSection = () => {
       <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#111] to-transparent z-10 pointer-events-none" />
       
       <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
-        {/* Section Header */}
-        <div className="mb-8 sm:mb-12 lg:mb-16">
-          <span className="text-[#0f0] font-mono text-xs sm:text-sm tracking-[0.3em] opacity-60">
-            {'>'} ACCESSING_PROFILE...
-          </span>
+        {/* Section Header - matching Project Rack style */}
+        <div className="mb-12">
+          <div className="flex items-center gap-4 mb-4">
+            <div
+              className="w-3 h-3 rounded-full animate-pulse"
+              style={{
+                backgroundColor: "#0f0",
+                boxShadow: "0 0 10px #0f0, 0 0 20px #0f044",
+              }}
+            />
+            <span className="text-[#0f0] text-sm tracking-[0.3em] font-bold font-mono">OPERATOR_PROFILE</span>
+          </div>
+          
+          {/* Chromatic Aberration Title */}
+          <div className="relative">
+            {/* Red Channel */}
+            <div
+              className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl font-mono"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+            >
+              SOURCE_IDENTITY
+            </div>
+            {/* Blue Channel */}
+            <div
+              className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none text-4xl md:text-6xl font-mono"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+            >
+              SOURCE_IDENTITY
+            </div>
+            {/* Main Channel */}
+            <div
+              className="relative text-[#e0e0e0] text-4xl md:text-6xl font-mono"
+              style={{ letterSpacing: "-4px", lineHeight: 0.85 }}
+            >
+              SOURCE<span className="text-[#ff0055]">_</span>IDENTITY
+            </div>
+          </div>
+          
+          <p className="text-[#666] mt-6 max-w-xl tracking-wide font-mono">
+            {">"} Accessing operator credentials. Decrypting profile data.
+          </p>
         </div>
 
         {/* Two Column Layout */}
@@ -19,10 +55,10 @@ const ProfileSection = () => {
           
           {/* Left Column - System Log */}
           <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
-            {/* Header */}
-            <h2 className="text-[#0f0] font-mono text-base sm:text-lg lg:text-xl tracking-[0.2em]">
-              // SOURCE_CODE_IDENTITY
-            </h2>
+            {/* Data Block Header */}
+            <h3 className="text-[#0f0] font-mono text-base sm:text-lg tracking-[0.2em]">
+              // DATA_BLOCK
+            </h3>
 
             {/* Data Block */}
             <div className="font-mono space-y-2 sm:space-y-3 text-sm sm:text-base lg:text-lg">
