@@ -34,23 +34,27 @@ export default async function handler(
     // Convert AI SDK 5.0 UIMessages to CoreMessages
     const coreMessages = convertToCoreMessages(messages);
 
-    // Stream the response
-    const result = await streamText({
+    // Stream the response (AI SDK 5.0)
+    const result = streamText({
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
       messages: coreMessages,
       temperature: 0.9,
-      maxTokens: 250,
     });
 
-    // Set headers for Server-Sent Events
-    res.setHeader('Content-Type', 'text/event-stream');
-    res.setHeader('Cache-Control', 'no-cache, no-transform');
-    res.setHeader('Connection', 'keep-alive');
+    // Use toDataStreamResponse for AI SDK 5.0
+    const response = result.toDataStreamResponse();
 
-    // Stream the text using toAIStream (original working version)
-    const stream = result.toAIStream();
-    const reader = stream.getReader();
+    // Copy headers to Vercel response
+    response.headers.forEach((value, key) => {
+      res.setHeader(key, value);
+    });
+
+    // Pipe the stream
+    const reader = response.body?.getReader();
+    if (!reader) {
+      throw new Error('No response body');
+    }
 
     try {
       while (true) {
