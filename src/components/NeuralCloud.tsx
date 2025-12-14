@@ -411,22 +411,29 @@ const useIsMobile = () => {
   return isMobile;
 };
 
-// Camera controller that updates based on screen size
-const CameraController = ({ isMobile }: { isMobile: boolean }) => {
+// Camera controller that updates based on screen size and interrogation mode
+const CameraController = ({ isMobile, isInterrogating }: { isMobile: boolean; isInterrogating: boolean }) => {
   const { camera } = useThree();
-  
+
   useEffect(() => {
     // Desktop: z=10 (20% further than 8), Mobile: z=16
     camera.position.z = isMobile ? 16 : 10;
     (camera as THREE.PerspectiveCamera).fov = isMobile ? 60 : 50;
     (camera as THREE.PerspectiveCamera).updateProjectionMatrix();
   }, [camera, isMobile]);
-  
+
+  // Smooth camera zoom animation using useFrame
+  useFrame(() => {
+    const targetZ = isInterrogating ? 3 : (isMobile ? 16 : 10);
+    // Smooth lerp (linear interpolation)
+    camera.position.z += (targetZ - camera.position.z) * 0.05;
+  });
+
   return null;
 };
 
 // Main Component
-const NeuralCloud = () => {
+const NeuralCloud = ({ isInterrogating = false }: { isInterrogating?: boolean }) => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
   const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
@@ -485,7 +492,7 @@ const NeuralCloud = () => {
   return (
     <section id="cloud" className="relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111]">
       {/* Section Header - Above everything with semi-transparent background */}
-      <div className="absolute top-0 left-0 right-0 z-40 px-8 md:px-20 pt-20 pb-8 pointer-events-none" 
+      <div className={`absolute top-0 left-0 right-0 z-40 px-8 md:px-20 pt-20 pb-8 pointer-events-none transition-opacity duration-1000 ${isInterrogating ? 'opacity-0' : 'opacity-100'}`}
            style={{ background: 'linear-gradient(to bottom, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.7) 70%, transparent 100%)' }}>
         <div className="max-w-6xl mx-auto pointer-events-auto">
           <div className="flex items-center gap-4 mb-4">
@@ -564,7 +571,7 @@ const NeuralCloud = () => {
 
       <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
         {/* Dynamic Camera Controller */}
-        <CameraController isMobile={isMobile} />
+        <CameraController isMobile={isMobile} isInterrogating={isInterrogating} />
         
         {/* Atmosphere */}
         <color attach="background" args={["#000000"]} />

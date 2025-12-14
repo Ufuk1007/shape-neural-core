@@ -9,6 +9,7 @@ const Index = () => {
   const [time, setTime] = useState(0);
   const [blink, setBlink] = useState(true);
   const [isLegalOpen, setIsLegalOpen] = useState(false);
+  const [isInterrogating, setIsInterrogating] = useState(false);
 
   // Timer Logic
   useEffect(() => {
@@ -34,7 +35,7 @@ const Index = () => {
   return (
     <>
       <div
-        className="relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111]"
+        className={`relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111] transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
         style={{
           fontFamily: "'Courier New', Courier, monospace",
           color: "#0f0",
@@ -170,7 +171,10 @@ const Index = () => {
               </a>
 
               {/* AI CHAT */}
-              <button className="group flex items-center gap-3 bg-[#ff0055] border-2 border-[#ff0055] text-white px-6 py-3 hover:bg-[#ff3377] hover:border-[#ff3377] transition-colors min-w-[180px] font-bold tracking-wider">
+              <button
+                onClick={() => setIsInterrogating(true)}
+                className="group flex items-center gap-3 bg-[#ff0055] border-2 border-[#ff0055] text-white px-6 py-3 hover:bg-[#ff3377] hover:border-[#ff3377] transition-colors min-w-[180px] font-bold tracking-wider"
+              >
                 <MessageSquare className="w-5 h-5 fill-current" />
                 <span>AI_CHAT</span>
               </button>
@@ -180,13 +184,41 @@ const Index = () => {
       </div>
 
       {/* NEURAL DEBRIS CLOUD SECTION */}
-      <NeuralCloud />
+      <NeuralCloud isInterrogating={isInterrogating} />
 
       {/* PROJECT RACK SECTION */}
-      <ProjectRack />
+      <div className={`transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+        <ProjectRack />
+      </div>
 
       {/* PROFILE & FOOTER SECTION */}
-      <ProfileSection onOpenLegal={() => setIsLegalOpen(true)} />
+      <div className={`transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+        <ProfileSection onOpenLegal={() => setIsLegalOpen(true)} />
+      </div>
+
+      {/* EXIT BUTTON - Only visible during interrogation */}
+      {isInterrogating && (
+        <button
+          onClick={() => setIsInterrogating(false)}
+          className="fixed top-8 right-8 z-50 px-6 py-3 font-bold tracking-wider border-2 transition-colors"
+          style={{
+            fontFamily: "'Courier New', Courier, monospace",
+            backgroundColor: '#000',
+            color: '#ff0055',
+            borderColor: '#ff0055',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#ff0055';
+            e.currentTarget.style.color = '#000';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#000';
+            e.currentTarget.style.color = '#ff0055';
+          }}
+        >
+          {'>'} EXIT
+        </button>
+      )}
 
       {/* LEGAL MODAL */}
       <LegalModal isOpen={isLegalOpen} onClose={() => setIsLegalOpen(false)} />
