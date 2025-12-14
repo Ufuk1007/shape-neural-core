@@ -4,6 +4,7 @@ import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
 import { X, ExternalLink } from "lucide-react";
+import InterrogationUI from "./InterrogationUI";
 
 // Types
 type Category = "STR_ART" | "CX_UX" | "SONIC" | "META";
@@ -500,7 +501,13 @@ const CameraController = ({ isMobile, isInterrogating }: { isMobile: boolean; is
 };
 
 // Main Component
-const NeuralCloud = ({ isInterrogating = false }: { isInterrogating?: boolean }) => {
+const NeuralCloud = ({
+  isInterrogating = false,
+  onExitInterrogation
+}: {
+  isInterrogating?: boolean;
+  onExitInterrogation?: () => void;
+}) => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
   const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
@@ -684,10 +691,15 @@ const NeuralCloud = ({ isInterrogating = false }: { isInterrogating?: boolean })
       
       {/* Decryption Panel */}
       {decryptedShard && (
-        <DecryptionPanel 
-          data={decryptedShard} 
-          onClose={() => setDecryptedShard(null)} 
+        <DecryptionPanel
+          data={decryptedShard}
+          onClose={() => setDecryptedShard(null)}
         />
+      )}
+
+      {/* Interrogation UI - The Oracle */}
+      {isInterrogating && onExitInterrogation && (
+        <InterrogationUI onExit={onExitInterrogation} />
       )}
     </section>
   );

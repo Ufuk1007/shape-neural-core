@@ -210,7 +210,10 @@ const Index = () => {
       </div>
 
       {/* NEURAL DEBRIS CLOUD SECTION */}
-      <NeuralCloud isInterrogating={isInterrogating} />
+      <NeuralCloud
+        isInterrogating={isInterrogating}
+        onExitInterrogation={() => setIsInterrogating(false)}
+      />
 
       {/* PROJECT RACK SECTION */}
       <div className={`transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
