@@ -1,4 +1,4 @@
-import { streamText } from 'ai';
+import { streamText, pipeTextStreamToResponse } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context';
@@ -52,34 +52,18 @@ export default async function handler(
     ];
 
     // Stream the response
-    const result = await streamText({
+    const result = streamText({
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
       messages,
       temperature: 0.9,
-      maxTokens: 250, // Increased from 150 for better responses
     });
 
-    // Set headers for Server-Sent Events
-    res.setHeader('Content-Type', 'text/event-stream');
-    res.setHeader('Cache-Control', 'no-cache, no-transform');
-    res.setHeader('Connection', 'keep-alive');
-
-    // Stream the text
-    const stream = result.toAIStream();
-    const reader = stream.getReader();
-
-    try {
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        res.write(value);
-      }
-    } finally {
-      reader.releaseLock();
-    }
-
-    res.end();
+    // Use the pipeTextStreamToResponse helper to properly stream to useChat
+    pipeTextStreamToResponse({
+      textStream: result.textStream,
+      response: res,
+    });
 
   } catch (error) {
     console.error('Chat API error:', error);
