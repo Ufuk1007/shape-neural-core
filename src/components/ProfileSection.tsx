@@ -208,7 +208,7 @@ const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
             className="group flex items-center gap-2 text-gray-500 hover:text-white transition-colors duration-300 text-sm"
           >
             <span className="text-gray-600">[</span>
-            <span className="tracking-[0.15em]">SIGNAL_TRANSMISSION</span>
+            <span className="tracking-[0.15em]">EMAIL_TRANSMISSION</span>
             <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             <span className="text-gray-600">]</span>
           </a>
