@@ -11,6 +11,32 @@ const Index = () => {
   const [isLegalOpen, setIsLegalOpen] = useState(false);
   const [isInterrogating, setIsInterrogating] = useState(false);
 
+  const handleInterrogationStart = () => {
+    // First, smooth scroll to the cloud section
+    const cloudSection = document.getElementById('cloud');
+    if (cloudSection) {
+      cloudSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Wait for scroll to complete, then activate interrogation
+      setTimeout(() => {
+        setIsInterrogating(true);
+      }, 800);
+    } else {
+      setIsInterrogating(true);
+    }
+  };
+
+  // Lock body scroll when interrogating
+  useEffect(() => {
+    if (isInterrogating) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isInterrogating]);
+
   // Timer Logic
   useEffect(() => {
     const interval = setInterval(() => setTime((t) => t + 1), 1000);
@@ -172,7 +198,7 @@ const Index = () => {
 
               {/* AI CHAT */}
               <button
-                onClick={() => setIsInterrogating(true)}
+                onClick={handleInterrogationStart}
                 className="group flex items-center gap-3 bg-[#ff0055] border-2 border-[#ff0055] text-white px-6 py-3 hover:bg-[#ff3377] hover:border-[#ff3377] transition-colors min-w-[180px] font-bold tracking-wider"
               >
                 <MessageSquare className="w-5 h-5 fill-current" />
