@@ -42,8 +42,8 @@ export default async function handler(
       temperature: 0.9,
     });
 
-    // Use toDataStreamResponse for AI SDK 5.0
-    const response = result.toDataStreamResponse();
+    // Use toUIMessageStreamResponse for useChat compatibility
+    const response = result.toUIMessageStreamResponse();
 
     // Copy headers to Vercel response
     response.headers.forEach((value, key) => {
