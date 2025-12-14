@@ -27,7 +27,7 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
   const lastMessageRef = useRef<string>("");
 
   // Use Vercel AI SDK's useChat hook
-  const { messages, append, isLoading } = useChat({
+  const { messages, append, isLoading, error } = useChat({
     api: '/api/chat',
     initialMessages: [
       {
@@ -36,7 +36,26 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
         content: 'COMFORT IS THE ENEMY. WHY ARE YOU HERE?'
       }
     ],
+    onError: (error) => {
+      console.error('❌ useChat ERROR:', error);
+      console.error('Error type:', typeof error);
+      console.error('Error details:', JSON.stringify(error, null, 2));
+    },
+    onResponse: (response) => {
+      console.log('✅ API Response received:', response.status, response.statusText);
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+    },
+    onFinish: (message) => {
+      console.log('✅ Message finished:', message);
+    },
   });
+
+  // Log any errors
+  useEffect(() => {
+    if (error) {
+      console.error('🔥 CHAT ERROR STATE:', error);
+    }
+  }, [error]);
 
   // Get the latest assistant message
   const currentMessage = messages.length > 0
