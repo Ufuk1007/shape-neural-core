@@ -3,8 +3,11 @@ import { useChat, UIMessage } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { Mic, MicOff, Volume2, VolumeX } from "lucide-react";
 
+type AtmosphereMood = 'NEUTRAL' | 'AGITATED' | 'ENLIGHTENED' | 'DARK';
+
 interface InterrogationUIProps {
   onExit: () => void;
+  onMoodChange?: (mood: AtmosphereMood) => void;
 }
 
 // Extend Window interface for Web Speech API
@@ -22,7 +25,7 @@ const getMessageText = (message: UIMessage): string => {
     .join('');
 };
 
-const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
+const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const [userInput, setUserInput] = useState("");
   const [isGlitching, setIsGlitching] = useState(false);
   const [showInput, setShowInput] = useState(false);
@@ -30,6 +33,7 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
   const [isMuted, setIsMuted] = useState(false);
   const [sessionEnded, setSessionEnded] = useState(false);
   const [hasSpokenGreeting, setHasSpokenGreeting] = useState(false);
+  const [currentMood, setCurrentMood] = useState<AtmosphereMood>('NEUTRAL');
 
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
@@ -47,6 +51,21 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
     ],
     onError: (error) => {
       console.error('❌ useChat ERROR:', error);
+    },
+    onToolCall: ({ toolCall }) => {
+      console.log('🔧 Tool called:', toolCall);
+      if (toolCall.toolName === 'setAtmosphere' && toolCall.args?.mood) {
+        const newMood = toolCall.args.mood as AtmosphereMood;
+        console.log('🌍 Atmosphere changed:', newMood);
+        setCurrentMood(newMood);
+        onMoodChange?.(newMood);
+
+        // Trigger glitch effect on AGITATED mood
+        if (newMood === 'AGITATED') {
+          setIsGlitching(true);
+          setTimeout(() => setIsGlitching(false), 500);
+        }
+      }
     },
     onFinish: (message) => {
       console.log('✅ Message finished:', message);
@@ -268,7 +287,7 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center pointer-events-none">
+    <div className={`fixed inset-0 z-50 flex items-center justify-center pointer-events-none ${currentMood === 'AGITATED' ? 'screen-shake' : ''}`}>
       <div className="w-full max-w-2xl px-8 pointer-events-auto">
         {/* Oracle Message */}
         <div
@@ -411,6 +430,23 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
           100% {
             transform: translate(0);
           }
+        }
+
+        @keyframes screen-shake-animation {
+          0%, 100% { transform: translate(0, 0); }
+          10% { transform: translate(-5px, 5px); }
+          20% { transform: translate(5px, -5px); }
+          30% { transform: translate(-5px, -5px); }
+          40% { transform: translate(5px, 5px); }
+          50% { transform: translate(-5px, 0); }
+          60% { transform: translate(5px, 0); }
+          70% { transform: translate(0, -5px); }
+          80% { transform: translate(0, 5px); }
+          90% { transform: translate(-2px, 2px); }
+        }
+
+        .screen-shake {
+          animation: screen-shake-animation 0.5s ease-in-out;
         }
 
         @keyframes oracle-pulse {

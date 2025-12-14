@@ -8,6 +8,7 @@ import InterrogationUI from "./InterrogationUI";
 
 // Types
 type Category = "STR_ART" | "CX_UX" | "SONIC" | "META";
+type AtmosphereMood = 'NEUTRAL' | 'AGITATED' | 'ENLIGHTENED' | 'DARK';
 
 interface DebrisData {
   id: string;
@@ -126,11 +127,13 @@ const calculatePosition = (relevance: number, category: Category, seed: number):
 const LiquidCore = ({
   color,
   pulseSpeed,
-  isInterrogating
+  isInterrogating,
+  mood = 'NEUTRAL'
 }: {
   color: string;
   pulseSpeed: number;
   isInterrogating: boolean;
+  mood?: AtmosphereMood;
 }) => {
   const materialRef = useRef<any>(null);
   const meshRef = useRef<THREE.Mesh>(null);
@@ -138,41 +141,98 @@ const LiquidCore = ({
   // Animated values for smooth transitions
   const currentDistort = useRef(0.4);
   const currentSpeed = useRef(1.0);
+  const currentEmissiveIntensity = useRef(2.0);
+  const currentWireframe = useRef(false);
 
   useFrame((state) => {
     if (materialRef.current) {
-      // Target values based on mode
-      const targetDistort = isInterrogating ? 0.8 : 0.4;
-      const targetSpeed = isInterrogating ? 3.0 : 1.0;
+      // Target values based on mood
+      let targetColor: string;
+      let targetDistort: number;
+      let targetSpeed: number;
+      let targetEmissiveIntensity: number;
+      let targetWireframe: boolean;
+
+      switch (mood) {
+        case 'NEUTRAL':
+          targetColor = color; // Dominant category color (Green/Blue)
+          targetDistort = 0.4;
+          targetSpeed = 1.0;
+          targetEmissiveIntensity = 2.0;
+          targetWireframe = false;
+          break;
+
+        case 'AGITATED':
+          targetColor = '#ff0055'; // Red
+          targetDistort = 1.0;
+          targetSpeed = 3.0;
+          targetEmissiveIntensity = 3.0;
+          targetWireframe = false;
+          break;
+
+        case 'ENLIGHTENED':
+          targetColor = '#ffffff'; // White/Gold
+          targetDistort = 0.2;
+          targetSpeed = 0.2;
+          targetEmissiveIntensity = 3.0; // High bloom
+          targetWireframe = false;
+          break;
+
+        case 'DARK':
+          targetColor = '#111111'; // Black
+          targetDistort = 0.3;
+          targetSpeed = 0.5;
+          targetEmissiveIntensity = 0; // No emissive
+          targetWireframe = true; // Only wireframe visible
+          break;
+
+        default:
+          targetColor = color;
+          targetDistort = 0.4;
+          targetSpeed = 1.0;
+          targetEmissiveIntensity = 2.0;
+          targetWireframe = false;
+      }
 
       // Smooth lerp to target values
       currentDistort.current += (targetDistort - currentDistort.current) * 0.05;
       currentSpeed.current += (targetSpeed - currentSpeed.current) * 0.05;
+      currentEmissiveIntensity.current += (targetEmissiveIntensity - currentEmissiveIntensity.current) * 0.05;
 
       // Apply distortion with pulse
       materialRef.current.distort = currentDistort.current +
         Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2;
       materialRef.current.speed = currentSpeed.current;
 
-      // Lerp color to #ff0055 when interrogating
-      if (isInterrogating) {
-        const targetColor = new THREE.Color('#ff0055');
-        const currentColor = new THREE.Color(materialRef.current.color);
-        currentColor.lerp(targetColor, 0.05);
-        materialRef.current.color = currentColor;
-        materialRef.current.emissive = currentColor;
-      } else {
-        const targetColor = new THREE.Color(color);
-        const currentColor = new THREE.Color(materialRef.current.color);
-        currentColor.lerp(targetColor, 0.05);
-        materialRef.current.color = currentColor;
-        materialRef.current.emissive = currentColor;
+      // Lerp color
+      const colorTarget = new THREE.Color(targetColor);
+      const currentColor = new THREE.Color(materialRef.current.color);
+      currentColor.lerp(colorTarget, 0.05);
+      materialRef.current.color = currentColor;
+      materialRef.current.emissive = currentColor;
+      materialRef.current.emissiveIntensity = currentEmissiveIntensity.current;
+
+      // Wireframe transition (immediate for DARK mode)
+      if (mood === 'DARK' && !currentWireframe.current) {
+        materialRef.current.wireframe = true;
+        currentWireframe.current = true;
+      } else if (mood !== 'DARK' && currentWireframe.current) {
+        materialRef.current.wireframe = false;
+        currentWireframe.current = false;
       }
     }
 
-    // Slight rotation when interrogating for extra instability
-    if (meshRef.current && isInterrogating) {
-      meshRef.current.rotation.y += 0.005;
+    // Rotation behavior
+    if (meshRef.current) {
+      if (mood === 'AGITATED') {
+        meshRef.current.rotation.y += 0.01; // Faster rotation when agitated
+      } else if (mood === 'ENLIGHTENED') {
+        meshRef.current.rotation.y += 0.001; // Very slow, peaceful rotation
+      } else if (mood === 'DARK') {
+        meshRef.current.rotation.y += 0.002; // Slow, ominous rotation
+      } else {
+        meshRef.current.rotation.y += 0.003; // Normal rotation
+      }
     }
   });
 
@@ -503,18 +563,24 @@ const CameraController = ({ isMobile, isInterrogating }: { isMobile: boolean; is
 // Main Component
 const NeuralCloud = ({
   isInterrogating = false,
-  onExitInterrogation
+  onExitInterrogation,
+  currentMood = 'NEUTRAL'
 }: {
   isInterrogating?: boolean;
   onExitInterrogation?: () => void;
+  currentMood?: AtmosphereMood;
 }) => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
   const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [interrogationMood, setInterrogationMood] = useState<AtmosphereMood>('NEUTRAL');
   const isMobile = useIsMobile();
-  
+
   const isDecrypted = decryptedShard !== null;
+
+  // When interrogating, use interrogationMood; otherwise use currentMood
+  const activeMood = isInterrogating ? interrogationMood : currentMood;
   
   // Fetch external data from GitHub Raw URL
   useEffect(() => {
@@ -658,7 +724,7 @@ const NeuralCloud = ({
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ff0055" />
 
         {/* The Liquid Core */}
-        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} isInterrogating={isInterrogating} />
+        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} isInterrogating={isInterrogating} mood={activeMood} />
 
         {/* Data Debris */}
         {debrisPositions.map(({ data, position }) => (
@@ -699,7 +765,10 @@ const NeuralCloud = ({
 
       {/* Interrogation UI - The Oracle */}
       {isInterrogating && onExitInterrogation && (
-        <InterrogationUI onExit={onExitInterrogation} />
+        <InterrogationUI
+          onExit={onExitInterrogation}
+          onMoodChange={(mood) => setInterrogationMood(mood)}
+        />
       )}
     </section>
   );

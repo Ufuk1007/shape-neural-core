@@ -1,7 +1,8 @@
-import { streamText, convertToCoreMessages } from 'ai';
+import { streamText, convertToCoreMessages, tool } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
+import { z } from 'zod';
 
 export default async function handler(
   req: VercelRequest,
@@ -34,12 +35,28 @@ export default async function handler(
     // Convert AI SDK 5.0 UIMessages to CoreMessages
     const coreMessages = convertToCoreMessages(messages);
 
+    // Define atmosphere tool for visual mood control
+    const atmosphereTool = tool({
+      description: 'Set the visual atmosphere/mood of the 3D environment based on conversation sentiment',
+      parameters: z.object({
+        mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']).describe(
+          'NEUTRAL: Superficial/boring input. AGITATED: User challenges you or is wrong. ENLIGHTENED: Deep thought/insight. DARK: Dangerous/risky topic'
+        ),
+      }),
+      execute: async ({ mood }) => {
+        return { success: true, mood };
+      },
+    });
+
     // Stream the response (AI SDK 5.0)
     const result = streamText({
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
       messages: coreMessages,
       temperature: 0.9,
+      tools: {
+        setAtmosphere: atmosphereTool,
+      },
     });
 
     // Use toUIMessageStreamResponse for useChat compatibility
