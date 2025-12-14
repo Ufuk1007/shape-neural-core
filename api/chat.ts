@@ -1,7 +1,7 @@
 import { streamText } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { getSystemPrompt } from '../src/lib/context';
+import { getSystemPrompt } from '../shared/context';
 
 interface Message {
   role: 'user' | 'assistant';
