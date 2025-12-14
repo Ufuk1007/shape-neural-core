@@ -122,83 +122,150 @@ const calculatePosition = (relevance: number, category: Category, seed: number):
 };
 
 // The Liquid Core Component
-const LiquidCore = ({ color, pulseSpeed }: { color: string; pulseSpeed: number }) => {
+const LiquidCore = ({
+  color,
+  pulseSpeed,
+  isInterrogating
+}: {
+  color: string;
+  pulseSpeed: number;
+  isInterrogating: boolean;
+}) => {
   const materialRef = useRef<any>(null);
-  
+  const meshRef = useRef<THREE.Mesh>(null);
+
+  // Animated values for smooth transitions
+  const currentDistort = useRef(0.4);
+  const currentSpeed = useRef(1.0);
+
   useFrame((state) => {
     if (materialRef.current) {
-      materialRef.current.distort = 0.4 + Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2;
+      // Target values based on mode
+      const targetDistort = isInterrogating ? 0.8 : 0.4;
+      const targetSpeed = isInterrogating ? 3.0 : 1.0;
+
+      // Smooth lerp to target values
+      currentDistort.current += (targetDistort - currentDistort.current) * 0.05;
+      currentSpeed.current += (targetSpeed - currentSpeed.current) * 0.05;
+
+      // Apply distortion with pulse
+      materialRef.current.distort = currentDistort.current +
+        Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2;
+      materialRef.current.speed = currentSpeed.current;
+
+      // Lerp color to #ff0055 when interrogating
+      if (isInterrogating) {
+        const targetColor = new THREE.Color('#ff0055');
+        const currentColor = new THREE.Color(materialRef.current.color);
+        currentColor.lerp(targetColor, 0.05);
+        materialRef.current.color = currentColor;
+        materialRef.current.emissive = currentColor;
+      } else {
+        const targetColor = new THREE.Color(color);
+        const currentColor = new THREE.Color(materialRef.current.color);
+        currentColor.lerp(targetColor, 0.05);
+        materialRef.current.color = currentColor;
+        materialRef.current.emissive = currentColor;
+      }
+    }
+
+    // Slight rotation when interrogating for extra instability
+    if (meshRef.current && isInterrogating) {
+      meshRef.current.rotation.y += 0.005;
     }
   });
 
   return (
-    <Sphere args={[1.5, 64, 64]}>
-      <MeshDistortMaterial 
+    <Sphere ref={meshRef} args={[1.5, 64, 64]}>
+      <MeshDistortMaterial
         ref={materialRef}
         color={color}
         emissive={color}
         emissiveIntensity={2}
         roughness={0.1}
         metalness={1}
-        speed={5}
+        speed={1.0}
       />
     </Sphere>
   );
 };
 
 // Debris Shard Component
-const DebrisShard = ({ 
-  data, 
+const DebrisShard = ({
+  data,
   position,
   isActive,
   isDecrypted,
+  isInterrogating,
   onHover,
   onLeave,
   onClick
-}: { 
+}: {
   data: DebrisData;
   position: [number, number, number];
   isActive: boolean;
   isDecrypted: boolean;
+  isInterrogating: boolean;
   onHover: () => void;
   onLeave: () => void;
   onClick: () => void;
 }) => {
   const meshRef = useRef<THREE.Mesh>(null);
+  const groupRef = useRef<THREE.Group>(null);
   const color = CATEGORY_COLORS[data.category];
+
+  // Current position for smooth lerp
+  const currentPos = useRef<[number, number, number]>([...position]);
 
   useFrame(() => {
     if (meshRef.current && !isDecrypted) {
       meshRef.current.rotation.x += 0.01;
       meshRef.current.rotation.y += 0.01;
     }
+
+    // Push debris away when interrogating
+    if (groupRef.current) {
+      const targetPos: [number, number, number] = isInterrogating
+        ? [position[0] * 3, position[1] * 3, position[2] * 3]
+        : [...position];
+
+      // Smooth lerp to target position
+      currentPos.current[0] += (targetPos[0] - currentPos.current[0]) * 0.05;
+      currentPos.current[1] += (targetPos[1] - currentPos.current[1]) * 0.05;
+      currentPos.current[2] += (targetPos[2] - currentPos.current[2]) * 0.05;
+
+      groupRef.current.position.set(
+        currentPos.current[0],
+        currentPos.current[1],
+        currentPos.current[2]
+      );
+    }
   });
 
   return (
-    <group>
-      <mesh 
+    <group ref={groupRef}>
+      <mesh
         ref={meshRef}
-        position={position}
         scale={isActive ? 1.8 : 1}
         onPointerEnter={(e) => { e.stopPropagation(); onHover(); }}
         onPointerLeave={onLeave}
         onClick={(e) => { e.stopPropagation(); onClick(); }}
       >
         <tetrahedronGeometry args={[0.25, 0]} />
-        <meshStandardMaterial 
-          color={color} 
+        <meshStandardMaterial
+          color={color}
           emissive={color}
           emissiveIntensity={isActive ? 3 : 0.5}
           wireframe={!isActive}
           transparent
-          opacity={isActive ? 1 : 0.6}
+          opacity={isActive ? 1 : isInterrogating ? 0.3 : 0.6}
         />
       </mesh>
 
       {/* Data Stream - visible when active or high relevance */}
-      {(isActive || data.relevance > 90) && (
+      {(isActive || data.relevance > 90) && !isInterrogating && (
         <Line
-          points={[position, [0, 0, 0]]}
+          points={[[0, 0, 0], [-currentPos.current[0], -currentPos.current[1], -currentPos.current[2]]]}
           color={isActive ? "#fff" : color}
           lineWidth={isActive ? 2 : 1}
           transparent
@@ -584,19 +651,20 @@ const NeuralCloud = ({ isInterrogating = false }: { isInterrogating?: boolean })
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ff0055" />
 
         {/* The Liquid Core */}
-        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} />
+        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} isInterrogating={isInterrogating} />
 
         {/* Data Debris */}
         {debrisPositions.map(({ data, position }) => (
-          <DebrisShard 
+          <DebrisShard
             key={data.id}
             data={data}
             position={position}
             isActive={activeShard?.id === data.id || decryptedShard?.id === data.id}
             isDecrypted={isDecrypted}
-            onHover={() => !isDecrypted && setActiveShard(data)}
+            isInterrogating={isInterrogating}
+            onHover={() => !isDecrypted && !isInterrogating && setActiveShard(data)}
             onLeave={() => !isDecrypted && setActiveShard(null)}
-            onClick={() => setDecryptedShard(data)}
+            onClick={() => !isInterrogating && setDecryptedShard(data)}
           />
         ))}
         
