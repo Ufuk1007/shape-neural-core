@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useChat } from "ai/react";
+import { useChat } from "@ai-sdk/react";
 import { Mic, MicOff, Volume2, VolumeX } from "lucide-react";
 
 interface InterrogationUIProps {
