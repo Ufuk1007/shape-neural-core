@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { useChat } from "@ai-sdk/react";
+import { useChat, UIMessage } from "@ai-sdk/react";
+import { DefaultChatTransport } from "ai";
 import { Mic, MicOff, Volume2, VolumeX } from "lucide-react";
 
 interface InterrogationUIProps {
@@ -12,6 +13,14 @@ declare global {
     webkitSpeechRecognition: any;
   }
 }
+
+// Helper to extract text from UIMessage parts (AI SDK 5.0)
+const getMessageText = (message: UIMessage): string => {
+  return message.parts
+    .filter((p): p is { type: 'text'; text: string } => p.type === 'text')
+    .map(p => p.text)
+    .join('');
+};
 
 const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
   const [userInput, setUserInput] = useState("");
@@ -26,29 +35,25 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
   const recognitionRef = useRef<any>(null);
   const lastMessageRef = useRef<string>("");
 
-  // Use Vercel AI SDK's useChat hook
-  const { messages, append, isLoading, error } = useChat({
-    api: '/api/chat',
-    initialMessages: [
+  // Use Vercel AI SDK's useChat hook (v5.0 API)
+  const { messages, sendMessage, status, error } = useChat({
+    transport: new DefaultChatTransport({ api: '/api/chat' }),
+    messages: [
       {
         id: '0',
         role: 'assistant',
-        content: 'COMFORT IS THE ENEMY. WHY ARE YOU HERE?'
+        parts: [{ type: 'text', text: 'COMFORT IS THE ENEMY. WHY ARE YOU HERE?' }]
       }
     ],
     onError: (error) => {
       console.error('❌ useChat ERROR:', error);
-      console.error('Error type:', typeof error);
-      console.error('Error details:', JSON.stringify(error, null, 2));
-    },
-    onResponse: (response) => {
-      console.log('✅ API Response received:', response.status, response.statusText);
-      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
     },
     onFinish: (message) => {
       console.log('✅ Message finished:', message);
     },
   });
+
+  const isLoading = status === 'streaming' || status === 'submitted';
 
   // Log any errors
   useEffect(() => {
@@ -59,7 +64,7 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
 
   // Get the latest assistant message
   const currentMessage = messages.length > 0
-    ? messages[messages.length - 1].content
+    ? getMessageText(messages[messages.length - 1])
     : '';
 
   // Initial setup
@@ -78,24 +83,27 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
       setHasSpokenGreeting(true);
       speakText(currentMessage);
     }
-  }, [hasSpokenGreeting, isMuted]);
+  }, [hasSpokenGreeting, isMuted, currentMessage]);
 
   // Speak new AI responses (but not greeting again)
   useEffect(() => {
     const latestMessage = messages[messages.length - 1];
+    if (!latestMessage) return;
+
+    const latestContent = getMessageText(latestMessage);
 
     // Only speak assistant messages that are new and not the initial greeting
     if (
-      latestMessage?.role === 'assistant' &&
-      latestMessage.content !== lastMessageRef.current &&
+      latestMessage.role === 'assistant' &&
+      latestContent !== lastMessageRef.current &&
       hasSpokenGreeting && // Only after greeting has been spoken
       !isMuted
     ) {
-      lastMessageRef.current = latestMessage.content;
-      speakText(latestMessage.content);
+      lastMessageRef.current = latestContent;
+      speakText(latestContent);
 
       // Check if session should end
-      if (latestMessage.content.includes('TERMINATED') || latestMessage.content.includes('SESSION END')) {
+      if (latestContent.includes('TERMINATED') || latestContent.includes('SESSION END')) {
         setSessionEnded(true);
         setTimeout(() => {
           onExit();
@@ -235,7 +243,7 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
     }
   };
 
-  // Send message using useChat
+  // Send message using useChat (AI SDK 5.0)
   const handleSendMessage = async (text: string) => {
     if (!text.trim() || isLoading || sessionEnded) return;
 
@@ -246,11 +254,8 @@ const InterrogationUI = ({ onExit }: InterrogationUIProps) => {
     // Clear input
     setUserInput("");
 
-    // Send via useChat hook
-    await append({
-      role: 'user',
-      content: text
-    });
+    // Send via useChat hook (v5.0 API - uses 'text' not 'content')
+    await sendMessage({ text });
 
     // Refocus input after sending
     setTimeout(() => inputRef.current?.focus(), 100);
