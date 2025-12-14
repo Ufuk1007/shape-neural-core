@@ -1,17 +1,7 @@
-import { streamText } from 'ai';
+import { streamText, convertToCoreMessages } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
-
-interface Message {
-  role: 'user' | 'assistant';
-  content: string;
-}
-
-interface ChatRequest {
-  message: string;
-  history?: Message[];
-}
 
 export default async function handler(
   req: VercelRequest,
@@ -23,10 +13,12 @@ export default async function handler(
   }
 
   try {
-    const { message, history = [] }: ChatRequest = req.body;
+    // AI SDK 5.0 sends { messages: [...] } instead of { message, history }
+    const { messages } = req.body;
 
-    if (!message || typeof message !== 'string') {
-      return res.status(400).json({ error: 'Message is required' });
+    if (!messages || !Array.isArray(messages)) {
+      console.error('Invalid request body:', req.body);
+      return res.status(400).json({ error: 'Messages array is required' });
     }
 
     const apiKey = process.env.OPENAI_API_KEY;
@@ -39,23 +31,14 @@ export default async function handler(
     // Get the full system prompt with all context
     const systemPrompt = getSystemPrompt();
 
-    // Build messages array with full context
-    const messages: any[] = [
-      ...history.map(msg => ({
-        role: msg.role,
-        content: msg.content
-      })),
-      {
-        role: 'user',
-        content: message
-      }
-    ];
+    // Convert AI SDK 5.0 UIMessages to CoreMessages
+    const coreMessages = convertToCoreMessages(messages);
 
     // Stream the response
     const result = await streamText({
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
-      messages,
+      messages: coreMessages,
       temperature: 0.9,
       maxTokens: 250,
     });
