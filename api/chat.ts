@@ -45,9 +45,10 @@ export default async function handler(
         setAtmosphere: tool({
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
           parameters: z.object({
-            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
+            mood: z.string()
+              .describe('The target mood. MUST be one of: NEUTRAL, AGITATED, ENLIGHTENED, DARK'),
           }),
-          execute: async ({ mood }: { mood: string }) => {
+          execute: async ({ mood }) => {
             return { mood };
           },
         }),
