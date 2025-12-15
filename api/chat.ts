@@ -35,19 +35,6 @@ export default async function handler(
     // Convert AI SDK 5.0 UIMessages to CoreMessages
     const coreMessages = convertToCoreMessages(messages);
 
-    // Define atmosphere tool for visual mood control
-    const atmosphereTool = tool({
-      description: 'Set the visual atmosphere/mood of the 3D environment based on conversation sentiment',
-      parameters: z.object({
-        mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']).describe(
-          'NEUTRAL: Superficial/boring input. AGITATED: User challenges you or is wrong. ENLIGHTENED: Deep thought/insight. DARK: Dangerous/risky topic'
-        ),
-      }),
-      execute: async ({ mood }) => {
-        return { success: true, mood };
-      },
-    });
-
     // Stream the response (AI SDK 5.0)
     const result = streamText({
       model: openai('gpt-4o-mini'),
@@ -55,7 +42,16 @@ export default async function handler(
       messages: coreMessages,
       temperature: 0.9,
       tools: {
-        setAtmosphere: atmosphereTool,
+        setAtmosphere: tool({
+          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
+          parameters: z.object({
+            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK'])
+              .describe('The target mood based on user input.'),
+          }),
+          execute: async ({ mood }) => {
+            return { mood }; // Just return it so frontend sees the tool call
+          },
+        }),
       },
     });
 
