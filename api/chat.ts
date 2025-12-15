@@ -40,7 +40,7 @@ export default async function handler(
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
       messages: coreMessages,
-      temperature: 0.9,
+      temperature: 0, // CRITICAL: Low temperature for deterministic tool calling
       tools: {
         setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. IMPORTANT: After calling this tool, continue with your text response.',
@@ -49,6 +49,11 @@ export default async function handler(
           }),
           // REMOVED execute - pure client-side tool (UI only)
         },
+      },
+      // CRITICAL: Force exactly ONE tool call
+      toolChoice: {
+        type: 'tool',
+        toolName: 'setAtmosphere',
       },
     });
 
