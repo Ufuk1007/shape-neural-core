@@ -45,11 +45,10 @@ export default async function handler(
         setAtmosphere: tool({
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
           parameters: z.object({
-            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK'])
-              .describe('The target mood based on user input.'),
+            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
           }),
           execute: async ({ mood }: { mood: string }) => {
-            return { mood }; // Just return it so frontend sees the tool call
+            return { mood };
           },
         }),
       },
