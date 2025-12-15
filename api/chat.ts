@@ -41,15 +41,14 @@ export default async function handler(
       system: systemPrompt,
       messages: coreMessages,
       temperature: 0.9,
-      experimental_continueSteps: true, // Enable multi-step tool execution
       tools: {
         setAtmosphere: {
-          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
+          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. IMPORTANT: After calling this tool, continue with your text response.',
           inputSchema: z.object({
             mood: z.string().describe('The target mood. MUST be one of: NEUTRAL, AGITATED, ENLIGHTENED, DARK'),
           }),
           execute: async ({ mood }: { mood: string }) => {
-            return { mood };
+            return { success: true, mood };
           },
         },
       },
