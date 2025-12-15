@@ -39,7 +39,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const lastSpokenMessageId = useRef<string>("");
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
-  const { messages, sendMessage, status, error, addToolResult } = useChat({
+  const { messages, sendMessage, status, error, addToolOutput } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
     maxSteps: 5, // Allow AI to continue after tool calls
     messages: [
@@ -69,16 +69,17 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
           setTimeout(() => setIsGlitching(false), 500);
         }
 
-        // 3) CRITICAL: Return tool result to continue AI generation
-        await addToolResult({
+        // 3) CRITICAL: Return tool output to continue AI generation (AI SDK 5.0)
+        await addToolOutput({
+          tool: toolCall.toolName,
           toolCallId: toolCall.toolCallId,
-          result: {
+          output: {
             success: true,
             mood: newMood
           }
         });
 
-        console.log('✅ Tool result added, AI should continue now...');
+        console.log('✅ Tool output added, AI should continue now...');
       }
     },
     onFinish: (message) => {
