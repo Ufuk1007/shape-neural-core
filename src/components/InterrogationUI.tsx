@@ -37,6 +37,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
   const lastSpokenMessageId = useRef<string>("");
+  const handledToolCallIds = useRef(new Set<string>());
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
   const { messages, sendMessage, status, error, addToolOutput } = useChat({
@@ -53,7 +54,14 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
       console.error('❌ useChat ERROR:', error);
     },
     onToolCall: async ({ toolCall }) => {
-      console.log('🔧 Tool called:', toolCall);
+      console.log('🔧 Raw toolCall event:', toolCall);
+
+      // CRITICAL: Deduplicate tool calls (prevent double execution)
+      if (handledToolCallIds.current.has(toolCall.toolCallId)) {
+        console.log('⚠️ Tool call already handled, skipping:', toolCall.toolCallId);
+        return;
+      }
+      handledToolCallIds.current.add(toolCall.toolCallId);
 
       if (toolCall.toolName === 'setAtmosphere' && toolCall.args?.mood) {
         const newMood = toolCall.args.mood as AtmosphereMood;

@@ -45,11 +45,9 @@ export default async function handler(
         setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. IMPORTANT: After calling this tool, continue with your text response.',
           inputSchema: z.object({
-            mood: z.string().describe('The target mood. MUST be one of: NEUTRAL, AGITATED, ENLIGHTENED, DARK'),
+            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
           }),
-          execute: async ({ mood }: { mood: string }) => {
-            return { success: true, mood };
-          },
+          // REMOVED execute - pure client-side tool (UI only)
         },
       },
     });
@@ -62,23 +60,28 @@ export default async function handler(
       res.setHeader(key, value);
     });
 
-    // Pipe the stream
-    const reader = response.body?.getReader();
-    if (!reader) {
+    // CRITICAL: Simplified streaming - let chunks flow naturally
+    // This ensures tool continuation events are properly streamed
+    if (!response.body) {
       throw new Error('No response body');
     }
 
+    const reader = response.body.getReader();
+
     try {
+      // Stream chunks as they arrive
       while (true) {
         const { done, value } = await reader.read();
-        if (done) break;
+        if (done) {
+          break;
+        }
+        // Write immediately without buffering
         res.write(value);
       }
     } finally {
       reader.releaseLock();
+      res.end();
     }
-
-    res.end();
 
   } catch (error) {
     console.error('Chat API error:', error);
