@@ -42,6 +42,7 @@ export default async function handler(
       messages: coreMessages,
       temperature: 0.9,
       maxSteps: 5, // Allow AI to continue after tool calls
+      experimental_continueSteps: true, // Enable multi-step tool execution
       tools: {
         setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
