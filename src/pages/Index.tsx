@@ -196,13 +196,13 @@ const Index = () => {
                 <span>PROJECTS</span>
               </a>
 
-              {/* AI CHAT */}
+              {/* AI ORACLE (Beta) */}
               <button
                 onClick={handleInterrogationStart}
                 className="group flex items-center gap-3 bg-[#ff0055] border-2 border-[#ff0055] text-white px-6 py-3 hover:bg-[#ff3377] hover:border-[#ff3377] transition-colors min-w-[180px] font-bold tracking-wider"
               >
                 <MessageSquare className="w-5 h-5 fill-current" />
-                <span>AI_CHAT</span>
+                <span>AI_ORACLE (Beta)</span>
               </button>
             </div>
           </div>
