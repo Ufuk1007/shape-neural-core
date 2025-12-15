@@ -1,4 +1,4 @@
-import { streamText, convertToCoreMessages, tool } from 'ai';
+import { streamText, convertToCoreMessages } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
@@ -42,16 +42,15 @@ export default async function handler(
       messages: coreMessages,
       temperature: 0.9,
       tools: {
-        setAtmosphere: tool({
+        setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
           parameters: z.object({
-            mood: z.string()
-              .describe('The target mood. MUST be one of: NEUTRAL, AGITATED, ENLIGHTENED, DARK'),
+            mood: z.string().describe('The target mood. MUST be one of: NEUTRAL, AGITATED, ENLIGHTENED, DARK'),
           }),
-          execute: async ({ mood }) => {
+          execute: async ({ mood }: { mood: string }) => {
             return { mood };
           },
-        }),
+        },
       },
     });
 
