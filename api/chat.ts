@@ -48,7 +48,7 @@ export default async function handler(
             mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK'])
               .describe('The target mood based on user input.'),
           }),
-          execute: async ({ mood }) => {
+          execute: async ({ mood }: { mood: string }) => {
             return { mood }; // Just return it so frontend sees the tool call
           },
         }),
