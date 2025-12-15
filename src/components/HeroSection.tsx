@@ -69,12 +69,12 @@ const HeroSection = () => {
             <Diamond className="h-5 w-5" />
           </a>
 
-          {/* Button 3 - AI_CHAT (Solid Red) */}
+          {/* Button 3 - AI_ORACLE (Beta) (Solid Red) */}
           <a
             href="#chat"
             className="nav-btn-red"
           >
-            <span>AI_CHAT</span>
+            <span>AI_ORACLE (Beta)</span>
             <MessageSquare className="h-5 w-5" />
           </a>
         </div>
