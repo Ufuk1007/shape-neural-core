@@ -39,7 +39,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const lastSpokenMessageId = useRef<string>("");
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
-  const { messages, sendMessage, status, error } = useChat({
+  const { messages, sendMessage, status, error, addToolResult } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
     maxSteps: 5, // Allow AI to continue after tool calls
     messages: [
@@ -52,22 +52,34 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     onError: (error) => {
       console.error('❌ useChat ERROR:', error);
     },
-    onToolCall: ({ toolCall }) => {
+    onToolCall: async ({ toolCall }) => {
       console.log('🔧 Tool called:', toolCall);
+
       if (toolCall.toolName === 'setAtmosphere' && toolCall.args?.mood) {
         const newMood = toolCall.args.mood as AtmosphereMood;
         console.log('🌍 Atmosphere changed:', newMood);
+
+        // 1) Update UI state
         setCurrentMood(newMood);
         onMoodChange?.(newMood);
 
-        // Trigger glitch effect on AGITATED mood
+        // 2) Trigger glitch effect on AGITATED mood
         if (newMood === 'AGITATED') {
           setIsGlitching(true);
           setTimeout(() => setIsGlitching(false), 500);
         }
+
+        // 3) CRITICAL: Return tool result to continue AI generation
+        await addToolResult({
+          toolCallId: toolCall.toolCallId,
+          result: {
+            success: true,
+            mood: newMood
+          }
+        });
+
+        console.log('✅ Tool result added, AI should continue now...');
       }
-      // Return undefined to let AI continue with text generation
-      return undefined;
     },
     onFinish: (message) => {
       console.log('✅ Message finished:', message);
