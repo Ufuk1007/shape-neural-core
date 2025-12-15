@@ -41,7 +41,6 @@ export default async function handler(
       system: systemPrompt,
       messages: coreMessages,
       temperature: 0.9,
-      maxSteps: 5, // Allow AI to continue after tool calls
       experimental_continueSteps: true, // Enable multi-step tool execution
       tools: {
         setAtmosphere: {
