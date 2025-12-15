@@ -32,12 +32,11 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const [isListening, setIsListening] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [sessionEnded, setSessionEnded] = useState(false);
-  const [hasSpokenGreeting, setHasSpokenGreeting] = useState(false);
   const [currentMood, setCurrentMood] = useState<AtmosphereMood>('NEUTRAL');
 
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
-  const lastMessageRef = useRef<string>("");
+  const lastSpokenMessageId = useRef<string>("");
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
   const { messages, sendMessage, status, error } = useChat({
@@ -96,40 +95,34 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Speak greeting once
+  // Speak AI messages ONLY when streaming is complete
   useEffect(() => {
-    if (!hasSpokenGreeting && currentMessage && !isMuted) {
-      setHasSpokenGreeting(true);
-      speakText(currentMessage);
-    }
-  }, [hasSpokenGreeting, isMuted, currentMessage]);
+    // Don't speak while loading or if muted
+    if (isLoading || isMuted) return;
 
-  // Speak new AI responses (but not greeting again)
-  useEffect(() => {
     const latestMessage = messages[messages.length - 1];
-    if (!latestMessage) return;
+    if (!latestMessage || latestMessage.role !== 'assistant') return;
 
-    const latestContent = getMessageText(latestMessage);
+    // Check if we already spoke this message
+    if (lastSpokenMessageId.current === latestMessage.id) return;
 
-    // Only speak assistant messages that are new and not the initial greeting
-    if (
-      latestMessage.role === 'assistant' &&
-      latestContent !== lastMessageRef.current &&
-      hasSpokenGreeting && // Only after greeting has been spoken
-      !isMuted
-    ) {
-      lastMessageRef.current = latestContent;
-      speakText(latestContent);
+    const messageText = getMessageText(latestMessage);
+    if (!messageText) return;
 
-      // Check if session should end
-      if (latestContent.includes('TERMINATED') || latestContent.includes('SESSION END')) {
-        setSessionEnded(true);
-        setTimeout(() => {
-          onExit();
-        }, 3000);
-      }
+    // Mark as spoken BEFORE calling speakText to prevent double calls
+    lastSpokenMessageId.current = latestMessage.id;
+
+    console.log('🔊 Speaking message:', latestMessage.id, messageText.substring(0, 50));
+    speakText(messageText);
+
+    // Check if session should end
+    if (messageText.includes('TERMINATED') || messageText.includes('SESSION END')) {
+      setSessionEnded(true);
+      setTimeout(() => {
+        onExit();
+      }, 3000);
     }
-  }, [messages, isMuted, hasSpokenGreeting, onExit]);
+  }, [messages, isLoading, isMuted, onExit]);
 
   // Initialize Speech Recognition
   useEffect(() => {
