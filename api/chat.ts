@@ -40,21 +40,17 @@ export default async function handler(
       model: openai('gpt-4o-mini'),
       system: systemPrompt,
       messages: coreMessages,
-      temperature: 0, // CRITICAL: Low temperature for deterministic tool calling
+      temperature: 0.3, // Low temperature for more deterministic tool calling, but allow some creativity in responses
       tools: {
         setAtmosphere: {
-          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. IMPORTANT: After calling this tool, continue with your text response.',
+          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. You must call this tool once, then continue with your text response.',
           inputSchema: z.object({
             mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
           }),
           // REMOVED execute - pure client-side tool (UI only)
         },
       },
-      // CRITICAL: Force exactly ONE tool call
-      toolChoice: {
-        type: 'tool',
-        toolName: 'setAtmosphere',
-      },
+      // NOTE: NO toolChoice - let model decide when to call, but temperature keeps it deterministic
     });
 
     // Use toUIMessageStreamResponse for useChat compatibility
