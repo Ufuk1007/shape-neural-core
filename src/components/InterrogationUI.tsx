@@ -41,6 +41,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   // Use Vercel AI SDK's useChat hook (v5.0 API)
   const { messages, sendMessage, status, error } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
+    maxSteps: 5, // Allow AI to continue after tool calls
     messages: [
       {
         id: '0',
@@ -65,6 +66,8 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
           setTimeout(() => setIsGlitching(false), 500);
         }
       }
+      // Return undefined to let AI continue with text generation
+      return undefined;
     },
     onFinish: (message) => {
       console.log('✅ Message finished:', message);
