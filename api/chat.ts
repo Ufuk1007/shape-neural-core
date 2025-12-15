@@ -41,6 +41,7 @@ export default async function handler(
       system: systemPrompt,
       messages: coreMessages,
       temperature: 0.9,
+      maxSteps: 5, // Allow AI to continue after tool calls
       tools: {
         setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment.',
