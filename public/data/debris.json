@@ -1,130 +1,130 @@
 [
   {
-    "id": "youcam_ai_multi_model_generator",
+    "id": "tyler_calkin_ai_creativity_exploration",
     "category": "STR_ART",
-    "headline": "YouCam AI Pro: Multi-Model Art Generator Hub",
-    "summary": "Integrates top models like Flux 1.1 Pro, GPT-Image-1, and Nano Banana Pro for text-to-image and image remixing in one app. Enables artists to switch models seamlessly for style swaps and pro-level visuals, revolutionizing workflow efficiency in generative design.",
-    "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/best-ai-multiple-model-art-generators-in-2025",
+    "headline": "Tyler Calkin on AI as Creative Accelerator",
+    "summary": "Artist Tyler Calkin views generative AI as a tool for rapid visualization and skill expansion in interdisciplinary art. It challenges traditional creativity by introducing 'slop kitsch' aesthetics from model limitations. This perspective reframes AI as subtle enhancer in digital workflows.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "relevance": 92
+  },
+  {
+    "id": "midjourney_v6_artistic_precision",
+    "category": "STR_ART",
+    "headline": "Midjourney V6 Tops 2025 AI Art Rankings",
+    "summary": "Midjourney V6 scores 89/100 for realistic visuals and style control, enabling rapid prototyping like 47 game characters in hours. Its Discord collaboration fosters dynamic creative processes. Ideal for designers seeking painterly, detailed generative art.",
+    "url": "https://www.prompts.ai/ar/blog/top-rated-generative-ai-technologies-tools-2025",
     "relevance": 95
   },
   {
-    "id": "leonardo_ai_custom_models",
+    "id": "adobe_firefly_photoshop_integration",
     "category": "STR_ART",
-    "headline": "Leonardo.ai: Custom Model Training for Artists",
-    "summary": "Offers proprietary models like Alchemy and user-trained customs for precise concept art and character consistency. Empowers fine-tuned control, bridging AI generation with professional artistic workflows.",
-    "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/best-ai-multiple-model-art-generators-in-2025",
-    "relevance": 92
-  },
-  {
-    "id": "nightcafe_community_ai_playground",
-    "category": "STR_ART",
-    "headline": "NightCafe: Vast Model Library for Community Art",
-    "summary": "Supports more AI models than most platforms with daily challenges, fostering collaborative creativity. Ideal for hobbyists and pros exploring diverse generative styles.",
-    "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/best-ai-multiple-model-art-generators-in-2025",
+    "headline": "Adobe Firefly Revolutionizes Photoshop AI Edits",
+    "summary": "Firefly enables object removal, resolution enhancement, and neural filters for expressions in Photoshop. Contextual Task Bar pushes generative actions, boosting pro workflows. Seamlessly expands creative toolkits without learning curves.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 88
   },
   {
-    "id": "freepik_ai_stock_engine",
+    "id": "ai_slop_kitsch_aesthetic_shift",
     "category": "STR_ART",
-    "headline": "Freepik AI: Generates Images, Videos, Music",
-    "summary": "Combines vast stock assets with AI tools for icons, mockups, and music generation. Streamlines design production for commercial creative projects.",
-    "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/best-ai-multiple-model-art-generators-in-2025",
-    "relevance": 90
-  },
-  {
-    "id": "getimg_ai_customizer_toolkit",
-    "category": "STR_ART",
-    "headline": "getimg.ai: 80+ Models for Image/Video Gen",
-    "summary": "Provides extensive Stable Diffusion variants and Flux-like models for deep customization. Perfect for rapid prototyping in visual storytelling and design iteration.",
-    "url": "https://www.perfectcorp.com/consumer/blog/generative-AI/best-ai-multiple-model-art-generators-in-2025",
-    "relevance": 89
-  },
-  {
-    "id": "tyler_calkin_ai_creativity",
-    "category": "STR_ART",
-    "headline": "Tyler Calkin: AI as Rapid Creative Visualizer",
-    "summary": "Explores generative AI for speeding iterations and broadening artist skillsets in interdisciplinary work. Highlights its role in contemporary digital creative processes.",
+    "headline": "Generative AI Births 'Slop Kitsch' Style",
+    "summary": "AI models impose consistent aesthetics across users, flattening variation and creating recognizable 'AI art' looks. This defines new visual culture beyond style imitation. Artists must navigate these limitations for novel designs.",
     "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
     "relevance": 85
   },
   {
-    "id": "ai_slop_kitsch_aesthetic",
+    "id": "dall_e3_detailed_image_gen",
     "category": "STR_ART",
-    "headline": "AI Defines New 'Slop Kitsch' Visual Culture",
-    "summary": "Generative AI creates recognizable stylistic uniformity across models, shaping a novel aesthetic. Challenges artists to navigate AI's computational limitations in visual art.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "headline": "DALL-E 3 Excels in Precise Prompt Images",
+    "summary": "DALL-E 3 generates high-quality images matching intricate descriptions for prototyping and illustrations. Pay-per-use model suits quick creative bursts. Updates keep it leading for non-experts in design workflows.",
+    "url": "https://www.prompts.ai/ar/blog/top-rated-generative-ai-technologies-tools-2025",
     "relevance": 87
   },
   {
-    "id": "midjourney_v6_painterly_art",
-    "category": "STR_ART",
-    "headline": "Midjourney V6: Precision Artistic Control",
-    "summary": "Scores 89/100 for realistic visuals and style mastery, enabling rapid prototyping like 47 characters in 3 hours. Transforms abstract prompts into detailed, painterly designs.",
-    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
-    "relevance": 94
-  },
-  {
-    "id": "dalle3_concept_art_tool",
-    "category": "STR_ART",
-    "headline": "DALL-E 3: Text-to-Detailed Concept Art",
-    "summary": "Excels in intricate image generation for product design and illustration. Supports editing for seamless integration into creative pipelines.",
-    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
-    "relevance": 91
-  },
-  {
-    "id": "midjourney_charades_prompting",
-    "category": "STR_ART",
-    "headline": "Midjourney: Best Textures in AI Art Gen",
-    "summary": "Despite prompt challenges, delivers superior colors and appeal for high-quality art. Stands out in generative tool rankings for visual richness.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 86
-  },
-  {
-    "id": "suno_ai_music_generation",
-    "category": "SONIC",
-    "headline": "Suno: Easy AI Music Composition Tool",
-    "summary": "Enables effortless music generation, expanding sound design possibilities. Integrates into creative audio workflows for rapid sonic experimentation.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 92
-  },
-  {
-    "id": "elevenlabs_ai_voice_library",
-    "category": "SONIC",
-    "headline": "ElevenLabs: Comprehensive AI Voice Synthesis",
-    "summary": "Offers vast voice library for audio processing and voice design. Revolutionizes sound creation with realistic, customizable vocal elements.",
+    "id": "claude_artifacts_web_design",
+    "category": "CX_UX",
+    "headline": "Claude Artifacts for Instant Web Prototypes",
+    "summary": "Claude's Artifacts feature builds interactive dashboards, apps, and games from prompts in real-time. Enables vibe-based coding for UX designers prototyping budgets or physics sims. Transforms chat into accessible design tools.",
     "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 90
-  },
-  {
-    "id": "beautiful_ai_presentation_design",
-    "category": "CX_UX",
-    "headline": "Beautiful.ai: AI-Automated Slide Design",
-    "summary": "Automates presentation elements for intuitive UX in visual communication. Enhances design systems with smart layout and content adaptation.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 85
   },
   {
     "id": "framer_ai_website_builder",
     "category": "CX_UX",
-    "headline": "Framer: AI-Centric Site Building UX",
-    "summary": "Streamlines website creation with AI-driven interaction patterns. Improves accessibility and user experience in digital product design.",
+    "headline": "Framer's AI-Centric Site Building Tools",
+    "summary": "Framer leverages AI for intuitive website creation, streamlining UX patterns and interactions. Supports rapid design system iteration for user-centric experiences. Enhances accessibility in automated builds.",
     "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 88
+    "relevance": 82
   },
   {
-    "id": "adobe_ai_photoshop_integration",
+    "id": "wix_ai_ux_enhancements",
+    "category": "CX_UX",
+    "headline": "Wix AI for Image Resizing and Logos",
+    "summary": "Wix integrates AI for auto image resizing, background removal, and logo generation, creating cohesive UX. Zapier workflows extend to lead enrichment and notifications. Boosts intuitive site-building for designers.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 80
+  },
+  {
+    "id": "beautiful_ai_presentation_automation",
+    "category": "CX_UX",
+    "headline": "Beautiful.ai Automates Design Elements",
+    "summary": "Beautiful.ai handles presentation design automation, ideal for UX showcases and interaction patterns. Speeds up visual storytelling for user research. Frees designers for higher-level creativity.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 78
+  },
+  {
+    "id": "elevenlabs_ai_voice_library",
+    "category": "SONIC",
+    "headline": "ElevenLabs Comprehensive AI Voice Assets",
+    "summary": "ElevenLabs offers versatile text-to-speech with accents and tones for sound design. Enables creative audio prototyping in UX and art. Revolutionizes voice synthesis for immersive experiences.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 89
+  },
+  {
+    "id": "suno_ai_music_generation",
+    "category": "SONIC",
+    "headline": "Suno Simplifies AI Music Creation",
+    "summary": "Suno generates music from prompts, perfect for sound design experiments. Lowers barriers for artists in sonic creativity. Breakthrough for quick audio iterations in multimedia projects.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 91
+  },
+  {
+    "id": "prompt_engineering_depth_debate",
     "category": "STR_ART",
-    "headline": "Adobe Photoshop: Embedded Generative AI",
-    "summary": "Integrates AI via Contextual Task Bar for generative actions, pushing artists toward AI tools. Redefines traditional creative software ecosystems.",
+    "headline": "Prompt Engineering: Art or Low-Skill?",
+    "summary": "Some artists praise iterative prompt crafting as deep creative process; others see it as low-effort. Highlights tension in AI art practices. Informs strategic use in generative design.",
     "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
     "relevance": 84
   },
   {
-    "id": "photoshop_generative_taskbar",
-    "category": "CX_UX",
-    "headline": "Photoshop AI Task Bar Suggests Gen Tools",
-    "summary": "Defaults to generative suggestions, influencing UX in creative apps. Raises questions on AI's role in user interaction patterns.",
+    "id": "intelligent_tools_history",
+    "category": "META",
+    "headline": "AI Evolves from Assistive to Generative",
+    "summary": "Tyler Calkin traces 'intelligent' tools like Photoshop selections to generative AI, broadening creativity definitions. Encourages informed outsourcing in processes. Philosophical shift in human-AI collaboration.",
     "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
-    "relevance": 82
+    "relevance": 86
+  },
+  {
+    "id": "midjourney_collaborative_discord",
+    "category": "STR_ART",
+    "headline": "Midjourney Discord Sparks Team Creativity",
+    "summary": "Discord channels enable real-time review and refinement of AI art, fostering discussions. Enhances collaborative generative workflows. Key for design teams in 2025.",
+    "url": "https://www.prompts.ai/ar/blog/top-rated-generative-ai-technologies-tools-2025",
+    "relevance": 83
+  },
+  {
+    "id": "ai_assistive_evolution_creativity",
+    "category": "META",
+    "headline": "AI Broadens Artist Skillsets Subtly",
+    "summary": "Generative AI extends beyond prompts into all digital creative tools, challenging creativity notions. Artists gain interdisciplinary edges via automation. Provokes rethinking 'intelligence' in art.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "relevance": 88
+  },
+  {
+    "id": "photoshop_contextual_ai_bar",
+    "category": "CX_UX",
+    "headline": "Photoshop AI Task Bar Pushes Generative",
+    "summary": "New Contextual Task Bar defaults to generative suggestions, integrating AI into UX editing flows. Aids rapid iterations for designers. Balances assistance with creative control.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "relevance": 79
   }
 ]
