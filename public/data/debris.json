@@ -1,130 +1,138 @@
 [
   {
-    "id": "tyler_calkin_ai_creativity_exploration",
+    "id": "midjourney_v6_artistic_mastery",
     "category": "STR_ART",
-    "headline": "Tyler Calkin on AI as Creative Accelerator",
-    "summary": "Artist Tyler Calkin views generative AI as a tool for rapid visualization and skill expansion in interdisciplinary art. It challenges traditional creativity by introducing 'slop kitsch' aesthetics from model limitations. This perspective reframes AI as subtle enhancer in digital workflows.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "headline": "Midjourney V6 Scores 89/100 for Artistic Precision",
+    "summary": "Midjourney V6 excels in generating highly realistic yet stylistically nuanced images, with powerful editing tools for precision-driven creativity. Designers leverage it for rapid prototyping, like 47 character designs in 3 hours, enhancing collaborative workflows without replacing human artistry. This elevates generative art by blending AI control with painterly flair.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
     "relevance": 92
   },
   {
-    "id": "midjourney_v6_artistic_precision",
+    "id": "dalle3_detailed_concept_art",
     "category": "STR_ART",
-    "headline": "Midjourney V6 Tops 2025 AI Art Rankings",
-    "summary": "Midjourney V6 scores 89/100 for realistic visuals and style control, enabling rapid prototyping like 47 game characters in hours. Its Discord collaboration fosters dynamic creative processes. Ideal for designers seeking painterly, detailed generative art.",
-    "url": "https://www.prompts.ai/ar/blog/top-rated-generative-ai-technologies-tools-2025",
-    "relevance": 95
-  },
-  {
-    "id": "adobe_firefly_photoshop_integration",
-    "category": "STR_ART",
-    "headline": "Adobe Firefly Revolutionizes Photoshop AI Edits",
-    "summary": "Firefly enables object removal, resolution enhancement, and neural filters for expressions in Photoshop. Contextual Task Bar pushes generative actions, boosting pro workflows. Seamlessly expands creative toolkits without learning curves.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "headline": "DALL-E 3 Powers Concept Art & Product Mockups",
+    "summary": "DALL-E 3 transforms intricate text prompts into detailed images for concept art, illustration, and product design, supporting editing for diverse workflows. Its precision makes it ideal for creative professionals visualizing complex ideas quickly. This tool democratizes high-quality visual ideation in design pipelines.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
     "relevance": 88
   },
   {
-    "id": "ai_slop_kitsch_aesthetic_shift",
+    "id": "nano_banana_2d_to_3d_editing",
     "category": "STR_ART",
-    "headline": "Generative AI Births 'Slop Kitsch' Style",
-    "summary": "AI models impose consistent aesthetics across users, flattening variation and creating recognizable 'AI art' looks. This defines new visual culture beyond style imitation. Artists must navigate these limitations for novel designs.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
-    "relevance": 85
-  },
-  {
-    "id": "dall_e3_detailed_image_gen",
-    "category": "STR_ART",
-    "headline": "DALL-E 3 Excels in Precise Prompt Images",
-    "summary": "DALL-E 3 generates high-quality images matching intricate descriptions for prototyping and illustrations. Pay-per-use model suits quick creative bursts. Updates keep it leading for non-experts in design workflows.",
-    "url": "https://www.prompts.ai/ar/blog/top-rated-generative-ai-technologies-tools-2025",
-    "relevance": 87
-  },
-  {
-    "id": "claude_artifacts_web_design",
-    "category": "CX_UX",
-    "headline": "Claude Artifacts for Instant Web Prototypes",
-    "summary": "Claude's Artifacts feature builds interactive dashboards, apps, and games from prompts in real-time. Enables vibe-based coding for UX designers prototyping budgets or physics sims. Transforms chat into accessible design tools.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "headline": "Nano Banana Enables 2D-to-3D Image Transformations",
+    "summary": "Google's Nano Banana offers real-time editing, 2D-to-3D conversion, and consistency preservation for fast image generation from text. Used in e-commerce and marketing, it empowers non-designers to create striking visuals iteratively. This breakthrough expands experimental design possibilities in product photography.",
+    "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
     "relevance": 90
   },
   {
-    "id": "framer_ai_website_builder",
-    "category": "CX_UX",
-    "headline": "Framer's AI-Centric Site Building Tools",
-    "summary": "Framer leverages AI for intuitive website creation, streamlining UX patterns and interactions. Supports rapid design system iteration for user-centric experiences. Enhances accessibility in automated builds.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "id": "midjourney_discord_collaboration",
+    "category": "STR_ART",
+    "headline": "Midjourney Discord Fosters Real-Time Art Collaboration",
+    "summary": "Operating in Discord, Midjourney enables teams to review, refine, and iterate on AI-generated art in shared channels, sparking dynamic creativity. Examples include unique designs like a futuristic cat teapot becoming mascots. This redefines generative workflows as social, collaborative processes.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
+    "relevance": 85
+  },
+  {
+    "id": "designs_ai_brand_identity",
+    "category": "STR_ART",
+    "headline": "Designs.ai Automates Logos & Brand Kits",
+    "summary": "Designs.ai generates original logos, ads, and full brand identities from text, streamlining creative tasks for startups and agencies. It accelerates branding while maintaining aesthetic consistency. This AI intersection boosts scalable, innovative visual design systems.",
+    "url": "https://www.icertglobal.com/blog/15-powerful-generative-ai-tools-and-applications-for-2025-blog",
     "relevance": 82
   },
   {
-    "id": "wix_ai_ux_enhancements",
+    "id": "synthesia_ai_avatars_ux",
     "category": "CX_UX",
-    "headline": "Wix AI for Image Resizing and Logos",
-    "summary": "Wix integrates AI for auto image resizing, background removal, and logo generation, creating cohesive UX. Zapier workflows extend to lead enrichment and notifications. Boosts intuitive site-building for designers.",
+    "headline": "Synthesia 230+ AI Avatars Enhance UX Training",
+    "summary": "Synthesia's library of lifelike avatars and custom voice cloning creates personalized text-to-video for corporate training and communication. This improves user engagement in interactive experiences and accessibility. AI-driven avatars redefine empathetic, scalable UX design.",
+    "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
+    "relevance": 87
+  },
+  {
+    "id": "beautiful_ai_presentations",
+    "category": "CX_UX",
+    "headline": "Beautiful.ai Automates UX Presentation Design",
+    "summary": "Beautiful.ai generates automated presentation elements, optimizing layouts for clarity and impact in UX research and pitches. It ensures consistent, professional visuals for user experience storytelling. This tool streamlines design system integration for better communication.",
     "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 80
   },
   {
-    "id": "beautiful_ai_presentation_automation",
+    "id": "framer_ai_website_ux",
     "category": "CX_UX",
-    "headline": "Beautiful.ai Automates Design Elements",
-    "summary": "Beautiful.ai handles presentation design automation, ideal for UX showcases and interaction patterns. Speeds up visual storytelling for user research. Frees designers for higher-level creativity.",
+    "headline": "Framer's AI Builds Intuitive UX Websites",
+    "summary": "Framer uses AI for AI-centric website building, focusing on interaction patterns and accessibility in design systems. It accelerates prototyping of user-centered interfaces. This innovation bridges generative AI with seamless UX innovation.",
     "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 78
+    "relevance": 84
   },
   {
-    "id": "elevenlabs_ai_voice_library",
+    "id": "elevenlabs_hyperrealistic_voice",
     "category": "SONIC",
-    "headline": "ElevenLabs Comprehensive AI Voice Assets",
-    "summary": "ElevenLabs offers versatile text-to-speech with accents and tones for sound design. Enables creative audio prototyping in UX and art. Revolutionizes voice synthesis for immersive experiences.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 89
+    "headline": "ElevenLabs Delivers Hyper-Realistic AI Voices",
+    "summary": "ElevenLabs generates voices with diverse accents and tones from text, revolutionizing audio design and soundscapes. Affordable at $5/month, it's ideal for immersive sonic experiences. This advances AI in voice synthesis for creative audio projects.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
+    "relevance": 91
   },
   {
     "id": "suno_ai_music_generation",
     "category": "SONIC",
-    "headline": "Suno Simplifies AI Music Creation",
-    "summary": "Suno generates music from prompts, perfect for sound design experiments. Lowers barriers for artists in sonic creativity. Breakthrough for quick audio iterations in multimedia projects.",
+    "headline": "Suno Simplifies AI Music Composition",
+    "summary": "Suno enables easy-to-use AI music generation, producing tracks from prompts for sound design and media. It lowers barriers for experimental audio creation. This tool sparks novel intersections in generative sonic art.",
     "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 91
+    "relevance": 89
   },
   {
-    "id": "prompt_engineering_depth_debate",
-    "category": "STR_ART",
-    "headline": "Prompt Engineering: Art or Low-Skill?",
-    "summary": "Some artists praise iterative prompt crafting as deep creative process; others see it as low-effort. Highlights tension in AI art practices. Informs strategic use in generative design.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
-    "relevance": 84
+    "id": "dalle2_inpainting_audio_vis",
+    "category": "SONIC",
+    "headline": "DALL-E 2 Inpainting for Audio-Visual Art",
+    "summary": "DALL-E 2's inpainting edits images seamlessly, applicable to visualizing audio waveforms or album art from sound descriptions. Artists use it for original visuals tied to sonic elements. Enhances multimedia design blending art and audio.",
+    "url": "https://www.icertglobal.com/blog/15-powerful-generative-ai-tools-and-applications-for-2025-blog",
+    "relevance": 78
   },
   {
-    "id": "intelligent_tools_history",
-    "category": "META",
-    "headline": "AI Evolves from Assistive to Generative",
-    "summary": "Tyler Calkin traces 'intelligent' tools like Photoshop selections to generative AI, broadening creativity definitions. Encourages informed outsourcing in processes. Philosophical shift in human-AI collaboration.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "id": "midjourney_audio_to_image",
+    "category": "SONIC",
+    "headline": "Midjourney Interprets Audio for Visual Art",
+    "summary": "Midjourney processes audio inputs alongside text to generate corresponding artistic images, opening sonic-to-visual synesthesia. This experimental technique fuels cross-modal creativity in sound design. Pioneers AI-driven audiovisual storytelling.",
+    "url": "https://www.icertglobal.com/blog/15-powerful-generative-ai-tools-and-applications-for-2025-blog",
     "relevance": 86
   },
   {
-    "id": "midjourney_collaborative_discord",
-    "category": "STR_ART",
-    "headline": "Midjourney Discord Sparks Team Creativity",
-    "summary": "Discord channels enable real-time review and refinement of AI art, fostering discussions. Enhances collaborative generative workflows. Key for design teams in 2025.",
-    "url": "https://www.prompts.ai/ar/blog/top-rated-generative-ai-technologies-tools-2025",
+    "id": "ai_voice_library_sonic",
+    "category": "SONIC",
+    "headline": "AI Voice Libraries Expand Sound Design",
+    "summary": "Tools like ElevenLabs provide comprehensive voice libraries for realistic text-to-speech, enhancing audio processing and voice synthesis. Creators build dynamic soundscapes and narratives. Transforms sonic design with expressive AI voices.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 83
   },
   {
-    "id": "ai_assistive_evolution_creativity",
+    "id": "generative_ai_creativity_philosophy",
     "category": "META",
-    "headline": "AI Broadens Artist Skillsets Subtly",
-    "summary": "Generative AI extends beyond prompts into all digital creative tools, challenging creativity notions. Artists gain interdisciplinary edges via automation. Provokes rethinking 'intelligence' in art.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "headline": "AI Enhances Human Creativity Without Replacing It",
+    "summary": "Midjourney prototypes ideas rapidly, as in indie studios creating dozens of designs hourly, sparking discussions on AI as creativity amplifier. Raises questions on authorship in generative art. Provokes philosophical views on collaborative intelligence.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
+    "relevance": 85
+  },
+  {
+    "id": "ai_art_styles_philosophy",
+    "category": "META",
+    "headline": "AI Replicates & Evolves Artistic Movements",
+    "summary": "Generative tools mimic historical styles while enabling new aesthetics, challenging notions of originality and consciousness in creation. Midjourney's flair prompts speculation on AI's role in art evolution. Fuels debates on machine creativity.",
+    "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
     "relevance": 88
   },
   {
-    "id": "photoshop_contextual_ai_bar",
+    "id": "adobe_firefly_ethics",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Integrates Ethical AI Design",
+    "summary": "Adobe Firefly powers generative tools with trained ethical datasets, prioritizing designer workflows in 2025. Ensures commercial safety in creative tools. Balances innovation with responsible AI artistry.",
+    "url": "https://lollypop.design/blog/2025/april/ai-design-tools/",
+    "relevance": 81
+  },
+  {
+    "id": "fontjoy_ai_typography",
     "category": "CX_UX",
-    "headline": "Photoshop AI Task Bar Pushes Generative",
-    "summary": "New Contextual Task Bar defaults to generative suggestions, integrating AI into UX editing flows. Aids rapid iterations for designers. Balances assistance with creative control.",
-    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "headline": "Fontjoy AI Generates Harmonious Type Pairs",
+    "summary": "Fontjoy uses AI to pair fonts intelligently, enhancing UX in design systems and accessibility. Speeds typography decisions for better readability. Revolutionizes subtle interaction design elements.",
+    "url": "https://lollypop.design/blog/2025/april/ai-design-tools/",
     "relevance": 79
   }
 ]
