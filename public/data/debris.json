@@ -1,130 +1,138 @@
 [
   {
-    "id": "nano_banana_gemini_image_gen",
+    "id": "nano_banana_gemini_image_model",
     "category": "STR_ART",
-    "headline": "Nano Banana: Gemini 2.5 Flash Image Model",
-    "summary": "Google's Nano Banana excels in text-to-image generation, real-time editing, and 2D-to-3D conversion, enabling non-designers to create professional visuals. Its consistency preservation revolutionizes iterative design workflows. Ideal for e-commerce and marketing artistry.",
+    "headline": "Nano Banana: Gemini 2.5 Flash for Fast Image Editing",
+    "summary": "Google's Nano Banana excels in text-to-image generation, real-time editing, and 2D-to-3D conversion, enabling non-designers to create professional visuals. This democratizes generative art for e-commerce, marketing, and social media, pushing boundaries in rapid prototyping and style consistency.",
     "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
     "relevance": 95
   },
   {
-    "id": "midjourney_artistic_visuals",
+    "id": "midjourney_artistic_visuals_2025",
     "category": "STR_ART",
-    "headline": "MidJourney's Artistic Prompt-to-Image Magic",
-    "summary": "Transforms short prompts into detailed, creative images across styles from realistic to abstract. Strong creator community fosters shared techniques for novel visual ideas. Powers concept art and branding innovation.",
+    "headline": "MidJourney Leads AI Artistic Image Generation",
+    "summary": "MidJourney transforms short prompts into detailed, creative images across styles, fostering a community for prompt sharing and idea generation. It empowers designers in concept art and branding, enhancing creative iteration without traditional skills.",
     "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
     "relevance": 92
   },
   {
-    "id": "dalle3_chat_edit",
+    "id": "tyler_calkin_ai_creativity",
     "category": "STR_ART",
-    "headline": "DALL·E 3 Chat-to-Edit Precision Refinement",
-    "summary": "Interprets complex prompts with high fidelity, enabling targeted edits via ChatGPT integration. Seamlessly incorporates text in images for marketing visuals. Accelerates precise artistic iteration without restarts.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
-    "relevance": 90
-  },
-  {
-    "id": "adobe_firefly_photoshop_fill",
-    "category": "STR_ART",
-    "headline": "Adobe Firefly's Generative Fill in Photoshop",
-    "summary": "Augments traditional workflows with inpainting and content-aware fills for photo editing. Enhances ideation and moodboarding seamlessly. Bridges AI with pro design tools for hybrid creativity.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
+    "headline": "AI as Rapid Visualization in Creative Process",
+    "summary": "Artist Tyler Calkin views generative AI as a time-saving tool for iterations and skill expansion in interdisciplinary art. It challenges traditional creativity notions, integrating into tools like Photoshop for subtle enhancements.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
     "relevance": 88
   },
   {
-    "id": "canva_magic_switch",
-    "category": "CX_UX",
-    "headline": "Canva Magic Studio's Adaptive Format Switch",
-    "summary": "Automatically converts designs across platforms, saving manual adjustments for SMBs. User-friendly AI tools boost accessible content creation. Streamlines UX for non-experts in marketing workflows.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
+    "id": "ai_slop_kitsch_aesthetic",
+    "category": "STR_ART",
+    "headline": "Generative AI Defines New 'Slop Kitsch' Aesthetic",
+    "summary": "AI tools produce consistent stylistic results across users, creating a recognizable visual culture that flattens variation. This emerges as a novel artistic movement, influencing design beyond pure generation.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "relevance": 90
+  },
+  {
+    "id": "adobe_firefly_photoshop_integration",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Enhances Photoshop with AI Editing",
+    "summary": "Firefly enables object removal, resolution enhancement, and new element generation in Photoshop, boosting creative workflows. Neural Filters add expression adjustments and style transfers, making pro-level edits accessible.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 94
+  },
+  {
+    "id": "claude_artifacts_web_creation",
+    "category": "STR_ART",
+    "headline": "Claude's Artifacts for Real-Time Web Art Apps",
+    "summary": "Claude generates interactive dashboards, web apps, and games via prompts, like physics simulations or budget planners. This blurs coding and art, enabling designers to prototype dynamic visuals instantly.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 85
   },
   {
-    "id": "runway_gen3_alpha_video",
-    "category": "STR_ART",
-    "headline": "Runway Gen-3 Alpha: Text-to-10s Video Clips",
-    "summary": "Generates dynamic videos from text/image inputs with AI editing like motion tracking. Custom model training empowers tailored creative visions. Revolutionizes short-form generative filmmaking.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
-    "relevance": 93
+    "id": "beautiful_ai_presentation_design",
+    "category": "CX_UX",
+    "headline": "Beautiful.ai Automates Presentation UX Design",
+    "summary": "Beautiful.ai uses AI for design automation in slides, optimizing layouts and visuals for better user engagement. It streamlines UX for presentations, focusing on intuitive patterns and accessibility.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 82
   },
   {
-    "id": "synthesia_ai_avatars",
+    "id": "framer_ai_website_builder",
     "category": "CX_UX",
-    "headline": "Synthesia's 230+ Lifelike AI Avatars",
-    "summary": "Custom avatars and voice cloning for personalized video training. Multilingual dubbing enhances global UX. Democratizes professional video production for user engagement.",
-    "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
+    "headline": "Framer's AI-Centric Site Building for UX",
+    "summary": "Framer leverages AI for intuitive website creation, emphasizing interaction patterns and user flows. It innovates UX research by automating responsive designs and accessibility features.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 87
   },
   {
-    "id": "elevenlabs_voice_library",
-    "category": "SONIC",
-    "headline": "ElevenLabs' Vast AI Voice Generation Library",
-    "summary": "Impressive voices for audio overlays, saving royalties in music and sound design. Enables seamless voiceovers for creative audio projects. Transforms sonic storytelling accessibility.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
-    "relevance": 89
+    "id": "synthesia_ai_avatars_ux",
+    "category": "CX_UX",
+    "headline": "Synthesia AI Avatars for Personalized UX Videos",
+    "summary": "Synthesia offers 230+ avatars and custom voice cloning for text-to-video, enhancing training and marketing UX. It creates immersive, brand-consistent interactions for better user retention.",
+    "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
+    "relevance": 80
   },
   {
-    "id": "skywork_multimodal_content",
-    "category": "STR_ART",
-    "headline": "Skywork.ai: Deep-Research Video/Podcast Gen",
-    "summary": "Produces verifiable documents, slides, and videos from online data. Powers strategic content for design scheduling. Blends research with generative multimedia artistry.",
+    "id": "suno_ai_music_generation",
+    "category": "SONIC",
+    "headline": "Suno: Easy AI Music Generation Breakthrough",
+    "summary": "Suno simplifies music creation from prompts, producing full tracks for sound design and audio experiments. It revolutionizes sonic creativity, accessible to non-musicians for novel compositions.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 93
+  },
+  {
+    "id": "elevenlabs_ai_voice_library",
+    "category": "SONIC",
+    "headline": "ElevenLabs Comprehensive AI Voice Assets",
+    "summary": "ElevenLabs provides versatile text-to-speech with accents and tones, ideal for voice synthesis in audio design. It enables realistic soundscapes and narrative audio, expanding creative audio tools.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
+    "relevance": 91
+  },
+  {
+    "id": "skywork_ai_podcasts_videos",
+    "category": "SONIC",
+    "headline": "Skywork.ai Generates AI Podcasts and Videos",
+    "summary": "Skywork creates synchronized audio-visual content like podcasts and videos from research, blending sound design with narrative. It streamlines production for experimental sonic projects.",
     "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
     "relevance": 84
   },
   {
-    "id": "nano_banana_2d3d_convert",
-    "category": "STR_ART",
-    "headline": "Nano Banana's Real-Time 2D-to-3D Transform",
-    "summary": "Instantly converts flat images to realistic 3D for product viz. Maintains edit consistency for immersive designs. Unlocks new dimensions in generative prototyping.",
-    "url": "https://skywork.ai/blog/6-best-generative-ai-tools-in-2025/",
-    "relevance": 91
+    "id": "prompt_engineering_art_debate",
+    "category": "META",
+    "headline": "Prompt Engineering: Art or Low-Effort Skill?",
+    "summary": "Debate rages on whether text-prompt iteration in AI art constitutes deep creativity or simplifies visual output. This philosophical rift questions AI's role in human artistic agency.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "relevance": 89
   },
   {
-    "id": "runway_custom_models",
-    "category": "STR_ART",
-    "headline": "Runway's Trainable Custom AI Models",
-    "summary": "Tailors generative video models to unique creative needs. Asset library accelerates ideation. Fosters experimental video art personalization.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
+    "id": "ai_intelligence_in_creative_tools",
+    "category": "META",
+    "headline": "Evolution of 'Intelligent' Tools in Creativity",
+    "summary": "From face detection to generative AI, tools have long aided art; Photoshop's integrations highlight subtle shifts in creative outsourcing. This speculates on AI's expanding consciousness in design processes.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
     "relevance": 86
   },
   {
-    "id": "synthesia_text_video",
-    "category": "CX_UX",
-    "headline": "Synthesia: Effortless Text-to-Video Pipeline",
-    "summary": "Eliminates hardware needs for high-quality training videos. Template variety optimizes UX for educators. Redefines scalable interactive content design.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
-    "relevance": 82
+    "id": "generative_ai_broader_intelligence",
+    "category": "META",
+    "headline": "AI Broadens Artistic Skillsets and Intelligence",
+    "summary": "Generative AI acts as interdisciplinary expander, challenging traditional creativity definitions. It prompts philosophical inquiry into human-AI collaboration in future art forms.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
+    "relevance": 87
   },
   {
-    "id": "jotform_ai_agents",
-    "category": "CX_UX",
-    "headline": "Jotform AI Agents for Dynamic Forms",
-    "summary": "Instant dynamic agents streamline no-code UX prototyping. Accelerates form-based interaction design. Enhances user-centric AI-driven experiences.",
-    "url": "https://www.jotform.com/ai/generative-ai-tools/",
-    "relevance": 80
-  },
-  {
-    "id": "product_hunt_ai_art_tools",
-    "category": "STR_ART",
-    "headline": "Top Product Hunt AI Generative Art Tools 2025",
-    "summary": "User-rated tools speed multimedia creative projects. Highlights emerging art-tech intersections. Curates experimental design accelerators.",
-    "url": "https://www.steve.ai/blog/the-best-ai-generative-art-tools-on-product-hunt-2025/",
+    "id": "adobe_contextual_task_bar_philosophy",
+    "category": "META",
+    "headline": "Photoshop AI Suggestions Reshape Creativity",
+    "summary": "Adobe's Contextual Task Bar defaults to 'Generative' actions, nudging users toward AI reliance. This raises ethics on tool-induced creativity and autonomy in design.",
+    "url": "https://www.unr.edu/nevada-today/news/2025/atp-ai-generated-art",
     "relevance": 83
   },
   {
-    "id": "zapier_genai_landscape",
-    "category": "META",
-    "headline": "Zapier's 20 Best GenAI Tools Revolutionize Design",
-    "summary": "Overviews AI's shift in content, design, problem-solving. Sparks philosophical views on human-AI creativity synergy. Frames future speculative workflows.",
-    "url": "https://zapier.com/blog/generative-ai-tools/",
-    "relevance": 78
-  },
-  {
-    "id": "envato_nano_banana_watermark_free",
+    "id": "midjourney_prompt_charades_game",
     "category": "STR_ART",
-    "headline": "Envato's Watermark-Free Nano Banana Access",
-    "summary": "Unlocks Gemini image gen without restrictions via Envato. Enables pure artistic experimentation. Boosts generative tool accessibility.",
-    "url": "https://www.youtube.com/watch?v=4Lrtk45hw7k",
+    "headline": "Midjourney Prompts as Creative Charades Game",
+    "summary": "Crafting precise Midjourney prompts feels like charades but yields superior textures and appeal. This iterative play enhances generative design techniques for artists.",
+    "url": "https://zapier.com/blog/generative-ai-tools/",
     "relevance": 81
   }
 ]
