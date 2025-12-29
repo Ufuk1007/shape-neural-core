@@ -2,137 +2,129 @@
   {
     "id": "tensor_art_image_to_image",
     "category": "STR_ART",
-    "headline": "Tensor.art Masters Image-to-Image AI Art",
-    "summary": "Tensor.art excels in training custom image and video models on user uploads, enabling multi-step generative workflows for precise artistic control. This empowers designers to refine concepts iteratively, blending personal style with AI precision. Revolutionizes generative art by democratizing model training.",
+    "headline": "Tensor.art Masters Image-to-Image Art",
+    "summary": "Tensor.art excels in training custom image and video models on user uploads, enabling multi-step generative workflows for designers. This empowers precise artistic transformations, bridging personal style with AI scalability in creative pipelines.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 95
   },
   {
     "id": "midjourney_abstract_animations",
     "category": "STR_ART",
-    "headline": "Midjourney Leads Abstract AI Animations",
-    "summary": "Midjourney offers sliders for stylization, weirdness, and variety, producing surreal, fantastical visuals ideal for experimental art. Designers gain fine-tuned control over abstract expressions, pushing creative boundaries in digital art movements. Key for evolving AI-driven artistic experimentation.",
+    "headline": "Midjourney Leads Abstract Art & Animations",
+    "summary": "Midjourney dominates surreal, fantastical visuals with sliders for stylization and weirdness, ideal for experimental generative design. Artists gain rapid prototyping for animations, fostering innovative visual movements.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 92
   },
   {
     "id": "dream_machine_brainstorming",
     "category": "STR_ART",
-    "headline": "Dream Machine AI for Creative Brainstorming",
-    "summary": "Dream Machine generates iterative suggestions from chat context, streamlining idea exploration in generative design. Artists benefit from contextual, conversational workflows that spark novel visuals. Enhances strategic art by accelerating conceptual phases.",
+    "headline": "Dream Machine Revolutionizes AI Brainstorming",
+    "summary": "Dream Machine offers iterative AI suggestions from chat contexts, streamlining idea generation for artists. This technique accelerates conceptual art development, making abstract ideation more fluid and collaborative.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 88
   },
   {
     "id": "gemini_workspace_art",
     "category": "CX_UX",
-    "headline": "Gemini Integrates AI Art in Workspace Apps",
-    "summary": "Google's Gemini generates images directly in Docs and Slides via prompts referencing Drive files, boosting UX in collaborative design. Seamless integration reduces context-switching, ideal for UX teams embedding AI in workflows. Transforms document-based design processes.",
+    "headline": "Gemini Integrates AI Art into Workspace UX",
+    "summary": "Gemini's seamless image generation within Docs and Slides enhances UX for design teams, referencing Drive files via prompts. This innovation embeds AI creativity directly into professional workflows, boosting productivity.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 90
   },
   {
     "id": "krea_realtime_editing",
     "category": "STR_ART",
-    "headline": "Krea's Realtime Prompt-Based Image Editing",
-    "summary": "Krea's prompt-driven editor and realtime generation randomize style and creativity for dynamic art refinement. Access to premium models fosters painterly outputs, vital for generative design iteration. Elevates AI as a live creative collaborator.",
+    "headline": "Krea's Realtime Prompt-Based Editing",
+    "summary": "Krea's prompt-driven image editor and realtime style randomization unlock dynamic generative techniques. Designers experiment fluidly across premium models, pushing boundaries in interactive art creation.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 94
   },
   {
-    "id": "recraft_vector_ai",
+    "id": "recraft_vector_design",
     "category": "CX_UX",
-    "headline": "Recraft AI for Production-Ready Vectors",
-    "summary": "Recraft generates scalable vector designs, perfect for UX/UI and print-ready assets with precise control. Bridges generative art and professional design systems, ensuring accessibility in vector workflows. Critical for scalable, high-fidelity interfaces.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 89
-  },
-  {
-    "id": "ideogram_text_composition",
-    "category": "STR_ART",
-    "headline": "Ideogram Excels in Text and Composition AI",
-    "summary": "Ideogram handles text in images and precise compositions from minimalist prompts, outperforming peers in detail placement. Revolutionizes social media art and graphic design with reliable spatial control. Pushes AI art toward architectural precision.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 93
-  },
-  {
-    "id": "canva_print_ai_media",
-    "category": "CX_UX",
-    "headline": "Canva's Magic Media for Print AI Design",
-    "summary": "Canva's AI tools create template-based graphics for print like posters, streamlining from idea to physical product. Enhances UX for non-designers in marketing and events. Merges AI generation with accessible design systems.",
+    "headline": "Recraft Optimizes AI for Vectors",
+    "summary": "Recraft generates production-ready vector designs, perfect for scalable UX elements and branding. This tool bridges AI generation with design system needs, ensuring crisp, editable outputs.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 85
   },
   {
-    "id": "promeai_style_suggestions",
+    "id": "raphael_unlimited_generations",
     "category": "STR_ART",
-    "headline": "PromeAI's Guided Art Style Discovery",
-    "summary": "PromeAI offers superior style directories and prompt guidance, easing art history navigation in generation. Designers explore movements effortlessly, fueling creative experimentation. Transforms AI into an art education companion.",
+    "headline": "Raphael AI Offers Unlimited Free Art",
+    "summary": "Raphael provides detail-rich generations without limits, democratizing access to high-fidelity AI art tools. Emerging artists explore extensively, accelerating personal style discovery.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 82
+  },
+  {
+    "id": "ideogram_text_composition",
+    "category": "STR_ART",
+    "headline": "Ideogram Excels in Text & Composition",
+    "summary": "Ideogram's superior text handling and precise object placement advance generative art for graphics. This capability refines minimalist designs, vital for strategic visual storytelling.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 91
+  },
+  {
+    "id": "canva_print_media_ai",
+    "category": "CX_UX",
+    "headline": "Canva's Magic Media for Print UX",
+    "summary": "Canva integrates AI art with templates and print exports, streamlining physical media design. UX designers create cohesive campaigns effortlessly, merging digital ideation with tangible outputs.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 87
   },
   {
+    "id": "promeai_style_suggestions",
+    "category": "STR_ART",
+    "headline": "PromeAI Guides Art Style Discovery",
+    "summary": "PromeAI's intuitive style directories and prompt guidance simplify art history integration in AI. Creatives navigate vast stylistic possibilities, enriching generative experiments.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 89
+  },
+  {
+    "id": "midjourney_v6_precision",
+    "category": "STR_ART",
+    "headline": "Midjourney V6 Scores 89/100 for Realism",
+    "summary": "Midjourney V6 delivers precise control over artistic details, from textures to movements. This elevates generative design to professional precision, inspiring new creative workflows.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
+    "relevance": 93
+  },
+  {
+    "id": "midjourney_collaborative_discord",
+    "category": "CX_UX",
+    "headline": "Midjourney Discord Fuels Team Creativity",
+    "summary": "Midjourney's Discord integration enables real-time collaborative refinement, enhancing UX in design teams. Shared channels spark dynamic ideation, transforming AI into a social creative hub.",
+    "url": "https://www.prompts.ai/en/blog/top-rated-generative-ai-technologies-tools-2025",
+    "relevance": 86
+  },
+  {
     "id": "leonardo_ai_canvas",
     "category": "STR_ART",
-    "headline": "Leonardo AI Canvas for Immersive Editing",
-    "summary": "Leonardo's AI Canvas provides erase, resize, and detail control in one immersive space for alchemical creation. Empowers character design and concept art with pro-level finesse. Redefines generative workflows for strategic artists.",
+    "headline": "Leonardo AI Canvas for Immersive Edits",
+    "summary": "Leonardo's AI Canvas offers erase, resize, and detail control in one immersive tool. Artists alchemize generations into polished works, redefining generative editing paradigms.",
     "url": "https://leonardo.ai",
     "relevance": 96
   },
   {
     "id": "leonardo_3d_textures",
     "category": "STR_ART",
-    "headline": "Leonardo's AI 3D Texture Generation",
-    "summary": "Upload OBJ files to generate contextual textures, supercharging architecture and product design. Avant-garde tool accelerates 3D asset creation for immersive experiences. Pivotal for AI in spatial generative design.",
+    "headline": "Leonardo's 3D Texture Generation Breakthrough",
+    "summary": "Upload OBJ files to generate contextual 3D textures, supercharging asset design. This fuses AI with 3D art, enabling rapid prototyping for immersive experiences.",
     "url": "https://leonardo.ai",
-    "relevance": 91
+    "relevance": 97
   },
   {
-    "id": "moon_valley_video_control",
-    "category": "SONIC",
-    "headline": "Moon Valley AI Video with Precision Control",
-    "summary": "Moon Valley enables precise video generation with confident training data, enhancing audio-visual sync in creative projects. Streamlines music video and sound design production. Boosts AI for controlled sonic narratives.",
-    "url": "https://www.youtube.com/watch?v=4Lrtk45hw7k",
-    "relevance": 86
-  },
-  {
-    "id": "envato_music_voice_gen",
-    "category": "SONIC",
-    "headline": "Envato's AI Music and Voice Generation",
-    "summary": "Envato integrates music gen, voice gen, and graphics in a streamlined suite for creatives. Reduces tool fragmentation in audio workflows, ideal for sound design. Unifies generative audio with visual creativity.",
-    "url": "https://www.youtube.com/watch?v=4Lrtk45hw7k",
-    "relevance": 84
-  },
-  {
-    "id": "nano_banana_character_consistency",
+    "id": "runway_ml_generative_art",
     "category": "STR_ART",
-    "headline": "Nano Banana Ensures AI Character Consistency",
-    "summary": "Nano Banana on Gemini 2.5 Flash maintains character consistency across image generations via Envato. Vital for storytelling in game assets and animations. Advances narrative-driven generative art.",
-    "url": "https://www.youtube.com/watch?v=4Lrtk45hw7k",
+    "headline": "Runway ML Empowers Generative Experiments",
+    "summary": "Runway ML generates images, videos, and animations for bold design exploration. Designers push generative art frontiers, integrating motion into strategic visuals.",
+    "url": "https://raw.studio/blog/top-30-ai-tools-for-designers-in-2025/",
     "relevance": 90
   },
   {
-    "id": "film_pro_ai_storyboarding",
-    "category": "CX_UX",
-    "headline": "Film Pro AI for Script-to-Shot Planning",
-    "summary": "Film Pro organizes scripts, shots, characters, and locations with AI, simplifying UX in film and interactive design. Enhances project management for multimedia teams. Innovates AI-assisted narrative UX flows.",
+    "id": "nano_banana_gemini",
+    "category": "STR_ART",
+    "headline": "Nano Banana Streamlines Gemini Image Gen",
+    "summary": "Nano Banana on Gemini 2.5 Flash offers unlimited streamlined image creation. This technique enhances UX for quick artistic iterations via intuitive interfaces.",
     "url": "https://www.youtube.com/watch?v=4Lrtk45hw7k",
-    "relevance": 82
-  },
-  {
-    "id": "runway_ml_generative_video",
-    "category": "STR_ART",
-    "headline": "Runway ML for AI Video and Animation",
-    "summary": "Runway ML empowers designers with image, video, and animation generation for experimental generative art. Fosters bold stylistic explorations in motion design. Core tool for AI-augmented creative movements.",
-    "url": "https://raw.studio/blog/top-30-ai-tools-for-designers-in-2025/",
-    "relevance": 92
-  },
-  {
-    "id": "raphael_unlimited_generations",
-    "category": "STR_ART",
-    "headline": "Raphael AI Offers Unlimited Free Art Gens",
-    "summary": "Raphael provides unlimited generations with simple textbox controls, democratizing access to high-detail AI art. Lowers barriers for emerging artists in strategic experimentation. Fuels inclusive generative ecosystems.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 80
+    "relevance": 84
   }
 ]
