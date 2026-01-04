@@ -2,8 +2,8 @@
   {
     "id": "imagineart_versatile_generator",
     "category": "STR_ART",
-    "headline": "ImagineArt: Fast AI Image Workflows",
-    "summary": "ImagineArt enables quick text-to-image, image editing, and style transformations via intuitive web tools. It empowers designers to iterate visuals rapidly without software installs, blending AI speed with creative control. This pushes generative art towards professional design pipelines.",
+    "headline": "ImagineArt: Speedy AI Image Workflows",
+    "summary": "ImagineArt enables rapid text-to-image, image editing, and style transfers via intuitive web tools, ideal for designers seeking efficiency. It supports consistent series generation and upscaling, bridging AI speed with creative control. This pushes generative art towards seamless professional integration.",
     "url": "https://www.unite.ai/ai-art-generators/",
     "relevance": 85
   },
@@ -11,128 +11,128 @@
     "id": "artistly_unlimited_art",
     "category": "STR_ART",
     "headline": "Artistly: One-Pay Unlimited AI Art",
-    "summary": "Artistly offers lifetime access to image generation, photo edits, and character design with commercial license. Its inpainting and custom model features suit artists monetizing AI outputs. Redefines accessible generative tools for sustained creative production.",
+    "summary": "Artistly offers lifetime access to text-to-image, photo edits, and character design without subscriptions. Features like inpainting and custom avatars empower artists to experiment freely. It democratizes high-volume generative creation for commercial use.",
     "url": "https://www.unite.ai/ai-art-generators/",
     "relevance": 88
   },
   {
     "id": "dzine_ai_design_suite",
     "category": "STR_ART",
-    "headline": "Dzine: 10x Faster AI Visuals",
-    "summary": "Dzine turns prompts and sketches into pro visuals with generative fill and object removers. It streamlines design from ideation to polish, cutting repetitive tasks. Ideal for creators merging AI generation with hands-on editing.",
+    "headline": "Dzine: Prompt-to-Pro Visuals 10x Faster",
+    "summary": "Dzine transforms sketches and text into editable art with object manipulation and enhancers. Its all-in-one platform cuts designer busywork, fostering fluid ideation. This redefines strategic art pipelines with generative efficiency.",
     "url": "https://www.unite.ai/ai-art-generators/",
     "relevance": 90
   },
   {
     "id": "artbreeder_image_breeding",
     "category": "STR_ART",
-    "headline": "Artbreeder: Morphing AI Art System",
-    "summary": "Artbreeder blends images via machine learning for unexpected artistic variations. It fosters experimental transitions between styles, enhancing exploratory design. Bridges traditional breeding metaphors with AI creativity.",
+    "headline": "Artbreeder: Morphing for Novel Art",
+    "summary": "Artbreeder's breeding system blends images into unexpected originals, sparking artistic exploration. It excels in style transitions and variations, unique for experimental creators. This technique evolves generative design through evolutionary AI.",
     "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 82
+    "relevance": 92
   },
   {
     "id": "adobe_firefly_2026_vision",
     "category": "STR_ART",
-    "headline": "Adobe Firefly: 2026 Creative AI",
-    "summary": "Adobe envisions Firefly powering image-video hybrids and cross-app ideation via Project Moonlight. Creatives remix assets seamlessly for moodboards and storyboards. Signals unified AI ecosystems for pro workflows.",
+    "headline": "Adobe Firefly: 2026 Creative Ecosystem",
+    "summary": "Adobe envisions Firefly integrating image, video, and sound across apps like Photoshop for seamless remixing. It lowers friction in hybrid media workflows, empowering teams. This holistic AI suite shapes future strategic artistry.",
     "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
     "relevance": 95
   },
   {
-    "id": "adobe_graph_infinite_canvas",
-    "category": "STR_ART",
-    "headline": "Adobe Graph: Infinite AI Canvas",
-    "summary": "Graph's infinite canvas mixes compositions and colors with real-time collab. It suits team-based generative design for visuals and narratives. Expands AI from solo tools to collaborative art spaces.",
+    "id": "adobe_project_moonlight",
+    "category": "CX_UX",
+    "headline": "Project Moonlight: Cross-App AI Assistant",
+    "summary": "Adobe's Moonlight enables natural language commands to orchestrate tools across apps, streamlining UX for creatives. It unifies ideation to execution, reducing app-switching. This innovation elevates user-centered design systems.",
     "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
     "relevance": 87
   },
   {
-    "id": "adobe_ai_assistant_moonlight",
-    "category": "CX_UX",
-    "headline": "Project Moonlight: Cross-App AI",
-    "summary": "Adobe's AI assistant orchestrates Photoshop, Illustrator via natural prompts. It streamlines UX for complex creative processes, reducing app-switching. Revolutionizes designer interaction with integrated intelligence.",
+    "id": "adobe_infinite_canvas",
+    "category": "STR_ART",
+    "headline": "Graph: Infinite Canvas for AI Remixing",
+    "summary": "Adobe Graph's infinite canvas allows real-time collab on AI-generated moodboards and storyboards. Mix compositions, colors, and assets fluidly for team creativity. It transforms collaborative generative design.",
     "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
-    "relevance": 92
-  },
-  {
-    "id": "canva_ai_integration",
-    "category": "CX_UX",
-    "headline": "Canva AI: Seamless Design Flow",
-    "summary": "Canva embeds AI art into its toolkit for effortless project visuals. Its user-friendly interface boosts efficiency for non-designers. Transforms UX by democratizing pro-level generative design.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 80
-  },
-  {
-    "id": "limewire_realistic_images",
-    "category": "STR_ART",
-    "headline": "Limewire: Hyper-Real AI Images",
-    "summary": "Limewire generates shockingly realistic images with prompt ideas. It accelerates surreal design experiments for artists. Highlights AI's leap in photorealism for creative provocation.",
-    "url": "https://themehunk.com/best-generative-ai-tools/",
-    "relevance": 84
-  },
-  {
-    "id": "adobe_firefly_ecosystem",
-    "category": "STR_ART",
-    "headline": "Firefly: Unified Creative Suite",
-    "summary": "Adobe's Firefly integrates generative fill across Premiere and apps. It lowers friction for hybrid media creation. Positions AI as core to evolving design ecosystems.",
-    "url": "https://www.azpenpc.com/blogs/news/the-ai-tools-that-will-define-2026-how-to-prompt-create-and-dominate-the-future-of-content",
     "relevance": 89
   },
   {
-    "id": "aiva_virtual_artist",
-    "category": "SONIC",
-    "headline": "AIVA: AI Composer Breakthrough",
-    "summary": "AIVA generates original music as a virtual artist. It aids sound designers in rapid composition prototyping. Opens philosophical doors to AI authorship in audio arts.",
-    "url": "https://www.igmguru.com/blog/generative-ai-tools",
-    "relevance": 85
-  },
-  {
-    "id": "adobe_sound_effects_ai",
-    "category": "SONIC",
-    "headline": "Adobe AI Sound Effects Gen",
-    "summary": "Adobe's Firefly adds AI-generated sound effects to its suite. Enhances audio design in video workflows seamlessly. Merges sonic creativity with visual AI tools.",
-    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
-    "relevance": 83
-  },
-  {
-    "id": "ai_art_therapy_innovation",
-    "category": "META",
-    "headline": "AI Art in Therapy & Healing",
-    "summary": "AI generators enable self-expression in art therapy settings. They expand philosophical views on creativity as therapeutic AI-human collab. Challenges notions of authorship and emotion in design.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 78
-  },
-  {
-    "id": "adobe_copyright_philosophy",
-    "category": "META",
-    "headline": "AI Ownership in Adobe Tools",
-    "summary": "Adobe grapples with copyright in Firefly-trained art. Raises questions on ownership of AI-remixed creations. Sparks design ethics debates on human vs. machine contribution.",
+    "id": "firefly_generative_fill_2026",
+    "category": "STR_ART",
+    "headline": "Firefly Gen Fill: Video-Image Hybrids",
+    "summary": "Adobe's Firefly evolves generative fill for video and image hybrids, staying within familiar tools. It enables background gen to Premiere edits without export friction. This defines 2026's integrated creative playground.",
     "url": "https://www.azpenpc.com/blogs/news/the-ai-tools-that-will-define-2026-how-to-prompt-create-and-dominate-the-future-of-content",
     "relevance": 91
   },
   {
-    "id": "artbreeder_creative_exploration",
-    "category": "STR_ART",
-    "headline": "Artbreeder: Style Transitions",
-    "summary": "Artbreeder visualizes artistic evolutions via morphing. It inspires novel design processes through AI serendipity. Fosters experimental intersections in generative art.",
+    "id": "canva_ai_integration",
+    "category": "CX_UX",
+    "headline": "Canva AI: Seamless Design Toolkit",
+    "summary": "Canva embeds AI art into its vast toolkit for effortless visuals across projects. User-friendly for novices, it boosts efficiency in UX prototyping. This all-in-one UX innovation accelerates design iteration.",
     "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
+    "relevance": 82
+  },
+  {
+    "id": "craiyon_free_styles",
+    "category": "STR_ART",
+    "headline": "Craiyon: Free Diverse AI Styles",
+    "summary": "Craiyon offers robust free text-to-art with vast style experimentation and refinement. It lowers barriers for creative exploration in generative techniques. Ideal for rapid UX mockups and artistic ideation.",
+    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
+    "relevance": 80
+  },
+  {
+    "id": "jasper_art_pro_grade",
+    "category": "STR_ART",
+    "headline": "Jasper Art: High-Res Professional Images",
+    "summary": "Jasper Art delivers sharp, high-res AI images for pro contexts like portfolios. It combines speed with quality for illustrators and NFT creators. Elevates generative art standards in design workflows.",
+    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
+    "relevance": 84
+  },
+  {
+    "id": "starryai_nft_creation",
+    "category": "STR_ART",
+    "headline": "Starry.ai: Custom NFTs with Ownership",
+    "summary": "Starry.ai specializes in customizable AI art for NFTs with full ownership rights. Daily free images support ongoing creative output. It fuels blockchain art movements at AI-design nexus.",
+    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
+    "relevance": 86
+  },
+  {
+    "id": "imagen4_text_prompts",
+    "category": "STR_ART",
+    "headline": "Google Imagen 4: High-Quality Image Gen",
+    "summary": "Imagen 4 generates superior images from text via improved prompts, demoed for creatives. It enhances generative media accessibility. Key for AI-powered strategic visuals in design.",
+    "url": "https://cloudonair.withgoogle.com/events/weeklies-smb-ai-generative-media-ai-powered-creative-is-just-a-prompt-away-january-2026",
+    "relevance": 83
+  },
+  {
+    "id": "adobe_ai_copyright_philosophy",
+    "category": "META",
+    "headline": "AI Copyright Opacity in Creative Tools",
+    "summary": "Adobe's ecosystem raises questions on ownership when AI trains on art for new outputs. It challenges notions of creativity and authorship in design. Provokes philosophical debate on AI-human collaboration.",
+    "url": "https://www.azpenpc.com/blogs/news/the-ai-tools-that-will-define-2026-how-to-prompt-create-and-dominate-the-future-of-content",
+    "relevance": 78
+  },
+  {
+    "id": "chatgpt_ideation_creatives",
+    "category": "CX_UX",
+    "headline": "ChatGPT for Creative Ideation Flows",
+    "summary": "Creatives use ChatGPT to ideate before Adobe AI workflows, integrating LLMs into UX processes. It augments human creativity with prompt-driven starts. Redefines interaction patterns in design systems.",
+    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
     "relevance": 81
   },
   {
-    "id": "craiyon_free_ai_styles",
-    "category": "STR_ART",
-    "headline": "Craiyon: Diverse Free Styles",
-    "summary": "Craiyon offers free exploration of vast AI art styles. Lowers barriers for UX prototyping and ideation. Democratizes generative experimentation for all creators.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 76
+    "id": "adobe_sound_effects_ai",
+    "category": "SONIC",
+    "headline": "Adobe Firefly Sound Effects Model",
+    "summary": "Adobe introduces AI video and sound effects models alongside Firefly image tools. Enables generative audio for multimedia design. Breakthrough for integrated sound design in creative apps.",
+    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
+    "relevance": 90
   },
   {
-    "id": "starry_ai_nft_creation",
-    "category": "STR_ART",
-    "headline": "Starry.ai: Custom NFT Art",
-    "summary": "Starry.ai crafts blockchain-ready art with full ownership. Tailors AI for personalized digital collectibles. Blends generative design with Web3 creativity.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 79
+    "id": "aiva_virtual_artist",
+    "category": "SONIC",
+    "headline": "AIVA: AI Virtual Music Artist",
+    "summary": "AIVA generates original compositions as a virtual artist, advancing AI music creation. It intersects sound design with autonomous creativity. Matters for sonic experimentation in generative art.",
+    "url": "https://www.igmguru.com/blog/generative-ai-tools",
+    "relevance": 85
   }
 ]
