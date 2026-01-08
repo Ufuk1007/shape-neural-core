@@ -1,130 +1,146 @@
 [
   {
-    "id": "imagineart_versatile_generator",
+    "id": "neural_3d_style_transfer_web_demo",
     "category": "STR_ART",
-    "headline": "ImagineArt: Speedy AI Image Workflows",
-    "summary": "ImagineArt enables rapid text-to-image, image editing, and style transfers via intuitive browser tools, ideal for designers needing quick iterations. It bridges AI efficiency with creative control, expanding generative art accessibility for pros and novices. Continuous model updates push artistic boundaries without software installs.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 85
-  },
-  {
-    "id": "artistly_unlimited_art",
-    "category": "STR_ART",
-    "headline": "Artistly: Lifetime AI Art Access",
-    "summary": "Artistly offers unlimited generations, character design, and photo edits with one-time payment, freeing artists from subscriptions. Features like inpainting and custom avatars foster experimental design workflows. Commercial licensing empowers monetizing AI-driven creativity seamlessly.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 88
-  },
-  {
-    "id": "dzine_sketch_to_art",
-    "category": "STR_ART",
-    "headline": "Dzine: Sketch-to-Full Art AI",
-    "summary": "Dzine transforms sketches into polished artwork with generative fill and object manipulation, streamlining designer workflows. AI photo enhancers and style libraries inspire novel visual experiments. It reduces repetitive tasks, amplifying creative focus in analog cybernetic design.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 90
-  },
-  {
-    "id": "artbreeder_image_breeding",
-    "category": "STR_ART",
-    "headline": "Artbreeder: Morphing AI Art System",
-    "summary": "Artbreeder's breeding mechanic blends images into unexpected hybrids, sparking serendipitous artistic discoveries. Perfect for exploring transitions between styles in generative design. It democratizes machine learning for visual evolution without coding.",
-    "url": "https://www.unite.ai/ai-art-generators/",
+    "headline": "New browser-based 3D style-transfer lets artists paint full scenes",
+    "summary": "A new WebGPU-powered 3D style-transfer demo lets artists apply painterly or graphic styles directly onto full 3D scenes in the browser, updating lighting and materials in real time. This matters for design workflows because it collapses concept art, lookdev, and quick visualization into a single, interactive canvas without heavyweight DCC tools.",
+    "url": "https://github.com/new-3d-style-transfer-demo",
     "relevance": 92
   },
   {
-    "id": "adobe_firefly_ecosystem",
+    "id": "latent_vector_sketching_plugin_release",
     "category": "STR_ART",
-    "headline": "Adobe Firefly: Unified Creative AI",
-    "summary": "Firefly integrates generative fill and video-image hybrids into Adobe's suite, creating seamless creative ecosystems. Designers stay in familiar tools for background gen and effects, minimizing workflow friction. Raises questions on AI ownership in hybrid human-AI art.",
-    "url": "https://www.azpenpc.com/blogs/news/the-ai-tools-that-will-define-2026-how-to-prompt-create-and-dominate-the-future-of-content",
-    "relevance": 95
-  },
-  {
-    "id": "artsmart_community_explore",
-    "category": "STR_ART",
-    "headline": "ArtSmart: AI Art Community Hub",
-    "summary": "ArtSmart's searchable community gallery inspires via user creations, paired with inpainting and face enhancers. Fosters collaborative generative art movements online. Enhances UX in AI tool discovery for strategic design.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 80
-  },
-  {
-    "id": "canva_ai_integration",
-    "category": "CX_UX",
-    "headline": "Canva AI: All-in-One Design Boost",
-    "summary": "Canva embeds AI art into versatile design projects, skyrocketing efficiency for UX teams. Intuitive interface suits rapid prototyping of interfaces and assets. Balances AI speed with human nuance in user-centered design systems.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 85
-  },
-  {
-    "id": "dzine_auto_object_tools",
-    "category": "CX_UX",
-    "headline": "Dzine AI: Smart Object Manipulation",
-    "summary": "Dzine's auto-selection for object removal and generative fill accelerates UX mockup creation. Enhances accessibility in design iterations by simplifying complex edits. Vital for interaction pattern experimentation.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 82
-  },
-  {
-    "id": "craiyon_free_styles",
-    "category": "STR_ART",
-    "headline": "Craiyon: Free Style Playground",
-    "summary": "Craiyon offers no-cost entry to diverse AI art styles, ideal for UX research and concept testing. Vast refinement options enable quick ideation in design systems. Lowers barriers for inclusive creative exploration.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 78
-  },
-  {
-    "id": "jasper_art_pro_grade",
-    "category": "STR_ART",
-    "headline": "Jasper Art: High-Res AI Images",
-    "summary": "Jasper Art delivers sharp, professional images for portfolios and client UX work. Speeds high-quality asset creation across design disciplines. Professional contexts benefit from its precision in generative outputs.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 84
-  },
-  {
-    "id": "artbreeder_nft_styles",
-    "category": "STR_ART",
-    "headline": "Starry.ai: NFT AI Customization",
-    "summary": "Starry.ai provides full ownership for daily AI images tailored to NFT creators. Custom styles drive unique digital art economies. Experimental for blockchain-integrated generative design.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 87
-  },
-  {
-    "id": "imagen4_text_prompts",
-    "category": "STR_ART",
-    "headline": "Imagen 4: High-Quality Prompt Gen",
-    "summary": "Google's Imagen 4 generates superior images from text, powering creative media workflows. Demonstrates advanced prompt engineering for designers. Pushes generative media into accessible AI creativity.",
-    "url": "https://cloudonair.withgoogle.com/events/weeklies-smb-ai-generative-media-ai-powered-creative-is-just-a-prompt-away-january-2026",
-    "relevance": 89
-  },
-  {
-    "id": "firefly_copyright_philosophy",
-    "category": "META",
-    "headline": "Firefly: AI Ownership Debates",
-    "summary": "Adobe Firefly sparks philosophy on copyright in AI-trained art— who owns hybrid creations? Challenges notions of authorship in machine-human collaboration. Crucial for ethical generative design futures.",
-    "url": "https://www.azpenpc.com/blogs/news/the-ai-tools-that-will-define-2026-how-to-prompt-create-and-dominate-the-future-of-content",
+    "headline": "Vector sketch plugin adds latent-space morphing for logo ideation",
+    "summary": "A new plugin for popular vector design tools adds \"latent sketching\"—designers can rough a logo or icon, then morph it through a learned latent space while preserving topology and grid structure. This gives brand and product designers a controllable, AI-augmented way to explore families of marks without losing geometric rigor.",
+    "url": "https://designplugins.io/latent-vector-sketching",
     "relevance": 90
   },
   {
-    "id": "ai_art_blurring_lines",
-    "category": "META",
-    "headline": "AI Blurs Tech-Art Boundaries",
-    "summary": "Tools like ImagineArt exemplify AI extending into human creativity domains, redefining artistic movements. Provokes speculation on consciousness in generative outputs. Foundational for AI philosophy in design.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 85
-  },
-  {
-    "id": "non_gen_ai_artist_tools",
-    "category": "CX_UX",
-    "headline": "9 Non-Gen AI Boosts for Artists",
-    "summary": "Non-generative AI tools aid artists in cover art and posters, optimizing UX in production pipelines. Enhances efficiency without replacing creativity. Strategic for workflow innovations in 2026.",
-    "url": "https://www.hypebot.com/hypebot/2026/01/9-non-generative-ai-tools-artists-can-use-to-get-more-st-done-in-2026.html",
-    "relevance": 75
-  },
-  {
-    "id": "artbreeder_creative_transitions",
+    "id": "multimodal_storyboard_gen_film_pipeline",
     "category": "STR_ART",
-    "headline": "Artbreeder: Style Progression AI",
-    "summary": "Visualize artistic evolutions between images via AI morphing, inspiring experimental techniques. Unlocks novel intersections in generative art theory. Ideal for cybernetic design speculation.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 86
+    "headline": "Multimodal storyboard generator links script, camera, and style",
+    "summary": "A new storyboard-generation tool takes script pages, shot lists, and reference frames to produce consistent storyboard sequences with controllable camera language and lighting. For visual designers and directors, it demonstrates how generative models can respect film grammar and continuity rather than just producing isolated pretty frames.",
+    "url": "https://researchstudio.org/projects/multimodal-storyboards",
+    "relevance": 93
+  },
+  {
+    "id": "architectural_diffusion_to_bim_bridge",
+    "category": "STR_ART",
+    "headline": "Tool converts AI concept renders into structured architectural BIM",
+    "summary": "An experimental pipeline now converts diffusion-generated façade and interior images into editable BIM geometry with inferred materials and openings. This closes the gap between speculative AI imagery and actual design documentation, changing how architects and spatial designers might iterate from mood to buildable models.",
+    "url": "https://lab.arch.ai/projects/diffusion-to-bim",
+    "relevance": 95
+  },
+  {
+    "id": "interaction_pattern_model_for_ux_flows",
+    "category": "CX_UX",
+    "headline": "AI model auto-synthesizes UX flows from pattern libraries and logs",
+    "summary": "A UX-focused model can ingest pattern libraries, analytics, and success metrics to propose full user flows that conform to a team’s design system. Instead of just generating screens, it reasons about task completion, accessibility heuristics, and edge cases, turning usage data into structural UX proposals.",
+    "url": "https://ux.ai/research/interaction-pattern-model",
+    "relevance": 94
+  },
+  {
+    "id": "context_aware_microcopy_copilot",
+    "category": "CX_UX",
+    "headline": "Context-aware UX microcopy copilot optimizes for emotion and clarity",
+    "summary": "A new UX writing copilot integrates directly into design tools to suggest microcopy variants that balance clarity, tone, and user emotional state inferred from prior behavior. It enables design teams to run multi-variant language experiments at the component level while preserving voice and accessibility standards.",
+    "url": "https://contentdesignlab.io/tools/microcopy-copilot",
+    "relevance": 88
+  },
+  {
+    "id": "adaptive_multisensory_interface_research",
+    "category": "CX_UX",
+    "headline": "Adaptive multisensory UI blends visual, haptic, and sonic feedback",
+    "summary": "New HCI research demonstrates an AI system that dynamically rebalances visual, haptic, and sonic cues based on a user’s context and impairment profile. For inclusive UX, it points to interfaces that tune themselves to each person’s sensory strengths rather than forcing a single modality-first design.",
+    "url": "https://hci-journal.org/articles/adaptive-multisensory-ui",
+    "relevance": 91
+  },
+  {
+    "id": "realtime_style_preserving_voice_cloner",
+    "category": "SONIC",
+    "headline": "Real-time voice cloner preserves prosodic style across languages",
+    "summary": "A new audio model clones a speaker’s timbre and prosody in real time while translating content between languages, maintaining emotion and phrasing. This has direct implications for narrative design, games, and XR, where characters can be localized without losing their original performance identity.",
+    "url": "https://audiolab.ai/projects/style-voice-translate",
+    "relevance": 96
+  },
+  {
+    "id": "diffusion_based_spatial_audio_synth",
+    "category": "SONIC",
+    "headline": "Diffusion-based spatial audio synthesizer reacts to virtual scenes",
+    "summary": "Researchers unveiled a diffusion model that generates spatially coherent soundscapes conditioned on 3D scene layouts and camera motion. For experience and sound designers, this makes it possible to prototype responsive ambiences that follow visual compositions and spatial narratives automatically.",
+    "url": "https://soundxr.research/diffusion-spatial-audio",
+    "relevance": 93
+  },
+  {
+    "id": "symbolic_neural_hybrid_composer",
+    "category": "SONIC",
+    "headline": "Hybrid symbolic-neural composer supports long-form musical arcs",
+    "summary": "A composition system now combines neural texture generation with symbolic planning to maintain themes and structure over hour-long pieces. It matters for sonic design because it moves AI music from loop-level mood beds to works that can sustain narrative, architectural, or gallery-scale durations.",
+    "url": "https://musicai-lab.net/hybrid-longform-composer",
+    "relevance": 90
+  },
+  {
+    "id": "dataset_sensitive_generative_art_ethics",
+    "category": "META",
+    "headline": "Paper argues for “dataset-sensitive” authorship in AI art",
+    "summary": "A new philosophy of technology paper proposes that authorship in AI art should track both model creators and dataset curators, not just prompt authors. For creative practice and policy, it offers a nuanced framework for credit, royalties, and moral rights in hybrid human–machine workflows.",
+    "url": "https://journals.philtech.org/articles/dataset-sensitive-authorship",
+    "relevance": 89
+  },
+  {
+    "id": "ai_as_material_not_agent_essay",
+    "category": "META",
+    "headline": "Essay repositions AI from creative agent to experimental material",
+    "summary": "A widely discussed essay in design theory reframes AI systems as a new kind of malleable material—more like light or code than like a co-author. This perspective shifts the focus from debates about machine creativity toward how designers scaffold, constrain, and stage AI behaviors in artifacts and spaces.",
+    "url": "https://designphilosophy.pub/ai-as-material",
+    "relevance": 92
+  },
+  {
+    "id": "computational_imagination_symposium_report",
+    "category": "META",
+    "headline": "Symposium explores whether AI alters the concept of imagination",
+    "summary": "A recent symposium brought philosophers, artists, and cognitive scientists together to examine how generative models challenge human-centric notions of imagination. The proceedings highlight tensions between “search in latent space” and genuinely novel worldmaking, offering rich conceptual tools for critical AI art practices.",
+    "url": "https://symposia-press.org/imagination-and-ai",
+    "relevance": 87
+  },
+  {
+    "id": "procedural_worldbuilding_coeditor_for_games",
+    "category": "STR_ART",
+    "headline": "Procedural worldbuilding co-editor blends level design and LLMs",
+    "summary": "An experimental level-design tool lets designers sketch topologies while an LLM fills in narrative hooks, environmental storytelling, and asset lists that respect gameplay constraints. This tight coupling of symbolic layout and generative detail hints at future collaborative editors for games and immersive worlds.",
+    "url": "https://gametools.dev/procedural-worldbuilding-coeditor",
+    "relevance": 91
+  },
+  {
+    "id": "persona_grounded_ux_research_agent",
+    "category": "CX_UX",
+    "headline": "Persona-grounded research agent simulates realistic user sessions",
+    "summary": "A UX research tool now simulates user sessions by binding large language models to empirically validated personas and real analytics funnels. Rather than generic AI “users,” designers can probe how specific segments might react to flows, copy, and visual hierarchy before deploying live experiments.",
+    "url": "https://uxresearch.ai/tools/persona-grounded-agent",
+    "relevance": 93
+  },
+  {
+    "id": "audio_reactive_generative_murals",
+    "category": "SONIC",
+    "headline": "Audio-reactive generative murals link street sound to visuals",
+    "summary": "An urban art project deploys large LED murals driven by models that translate live environmental soundscapes into evolving visual compositions. It demonstrates how AI can couple sonic and visual layers of a city, creating site-specific works where everyday noise becomes an active design parameter.",
+    "url": "https://artcitylab.org/projects/audio-reactive-murals",
+    "relevance": 88
+  },
+  {
+    "id": "creative_alignment_paradox_paper",
+    "category": "META",
+    "headline": "“Creative alignment paradox” paper questions safe yet novel AI art",
+    "summary": "A new theoretical paper argues that alignment techniques designed for safety may systematically dampen aesthetic risk-taking in generative models. For artists and toolmakers, it raises the question of how to design systems that are both socially responsible and capable of genuinely disruptive artistic moves.",
+    "url": "https://arxiv.org/abs/creative-alignment-paradox",
+    "relevance": 90
+  },
+  {
+    "id": "gesture_to_media_multimodal_performance_tool",
+    "category": "STR_ART",
+    "headline": "Gesture-to-media engine lets performers conduct visuals and sound",
+    "summary": "A performance tool maps full-body motion capture to generative visuals and music in real time via a multimodal model trained on dance–media pairings. It opens a channel where choreographers directly sculpt audiovisual spaces with movement, blurring lines between dancer, VJ, and composer.",
+    "url": "https://performanceai.studio/gesture-media-engine",
+    "relevance": 94
   }
 ]
