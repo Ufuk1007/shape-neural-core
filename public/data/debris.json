@@ -1,130 +1,138 @@
 [
   {
-    "id": "runway_style_transfer_video_pipelines",
+    "id": "maxon_mdt_design_ai_backlash",
     "category": "STR_ART",
-    "headline": "Runway’s new style‑transfer pipelines blur line between edit and generation",
-    "summary": "Runway quietly rolled out a beta pipeline that lets artists treat video editing as continuous style transfer, applying evolving painterly or graphic styles across entire sequences instead of frame-by-frame prompts. This matters for design because it pushes generative video toward a true ‘look development’ workflow, where directors iterate on visual language like colorists or production designers rather than prompt engineers.",
-    "url": "https://research.runwayml.com",
-    "relevance": 92
-  },
-  {
-    "id": "magnific_hallucination_upscaler_as_creative_tool",
-    "category": "STR_ART",
-    "headline": "Magnific’s ‘hallucination’ upscaler reframes resolution as invention",
-    "summary": "A recent update to Magnific’s AI upscaler doubles down on ‘hallucinated’ detail, turning upscaling into a generative design stage where texture, micro‑composition, and ornament can be reimagined at high resolution. For visual designers, this shifts sharpening from a technical afterthought into a late‑stage aesthetic decision, enabling new workflows where low‑fidelity sketches become richly detailed concepts in a single pass.",
-    "url": "https://magnific.ai",
-    "relevance": 88
-  },
-  {
-    "id": "touchdesigner_realtime_llm_controlled_visual_systems",
-    "category": "STR_ART",
-    "headline": "TouchDesigner artists fuse LLMs with real‑time generative scenography",
-    "summary": "Media artists have started wiring large language models into TouchDesigner networks to drive live visuals from narrative or audience text prompts, effectively turning stage design into a conversational surface. This is important for creative practice because it prototypes a new class of performances and exhibitions where scenography, typography, and motion graphics continuously adapt to dialogue and crowd input.",
-    "url": "https://derivative.ca/community-post",
-    "relevance": 90
-  },
-  {
-    "id": "blender_geometry_nodes_diffusion_bridge",
-    "category": "STR_ART",
-    "headline": "Experimental Blender node bridge marries 3D parametrics with diffusion",
-    "summary": "An experimental script circulating in the Blender community lets artists feed geometry node outputs into a diffusion model loop, so parametric forms drive image generations that then feed back into material and lighting decisions. For designers, this hints at hybrid pipelines where spatial logic, simulation, and generative texture co‑evolve, tightening the feedback loop between 3D structure and AI‑driven surface.",
-    "url": "https://blenderartists.org",
-    "relevance": 87
-  },
-  {
-    "id": "adobe_firefly_boards_collaborative_ai_moodboarding",
-    "category": "CX_UX",
-    "headline": "Firefly Boards point to AI‑augmented, shared ideation canvases",
-    "summary": "Adobe’s latest wave of Firefly Boards coverage shows teams using an infinite canvas where AI continuously remixes references, palettes, and compositions into new moodboard variants. This matters for UX and design systems because it suggests early‑stage exploration will become less about static boards and more about living, generative spaces that encode style decisions long before formal components are built.",
-    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
+    "headline": "Maxon defends MDT, its new AI design tool, amid artist backlash",
+    "summary": "Maxon publicly clarified the data and intent behind its Maxon Design Tool (MDT), an AI-driven asset generator integrated into its ecosystem, after 3D artists raised concerns about training data and the future of tools like ZBrush and Cinema 4D.[6] This matters for design because it shows how DCC vendors are weaving generative models directly into pro pipelines while being forced to negotiate authorship, dataset consent, and tool trust with power users.[6]",
+    "url": "https://www.80.lv/articles/exclusive-maxon-explains-its-controversial-ai-tool",
     "relevance": 93
   },
   {
-    "id": "agentic_research_copilots_for_ux_studies",
+    "id": "adobe_moonlight_cross_app_ai_assistant",
     "category": "CX_UX",
-    "headline": "Agentic AI copilots emerge as end‑to‑end UX research partners",
-    "summary": "New case studies from UX teams show agentic AI systems that recruit participants, generate test flows, summarize sessions, and draft design recommendations with minimal human orchestration. This is critical for CX because it reframes researchers from manual synthesis engines into curators and ethicists, opening space for more exploratory, longitudinal, and speculative studies with the same time budget.",
-    "url": "https://uxdesign.cc",
-    "relevance": 91
+    "headline": "Adobe previews Moonlight: a cross‑app AI assistant for creatives",
+    "summary": "Adobe discussed Project Moonlight, an AI assistant designed to orchestrate Photoshop, Illustrator, Premiere and other apps from a single conversational interface, effectively letting designers describe outcomes and have the system route work across tools.[4] This reframes UX for creative suites from app-centric to goal-centric, raising new interaction patterns around intent capture, constraint negotiation, and explainable automation in pro workflows.[4]",
+    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
+    "relevance": 96
   },
   {
-    "id": "multi_modal_design_system_linters",
-    "category": "CX_UX",
-    "headline": "Multimodal ‘design linters’ score interfaces for accessibility in real time",
-    "summary": "A new wave of experimental tools plug Figma frames and HTML prototypes into vision‑language models that automatically flag contrast, hierarchy, copy tone, and motion issues against accessibility heuristics. For UX practice, this moves accessibility from late audits to continuous design feedback, making inclusive patterns a generative constraint rather than a downstream checklist.",
-    "url": "https://figma.com/community",
-    "relevance": 89
+    "id": "adobe_firefly_sound_and_video_integration",
+    "category": "SONIC",
+    "headline": "Adobe folds AI sound and video models deeper into Creative Cloud",
+    "summary": "Adobe expanded Firefly-powered tooling with a video model and AI sound effects generation, directly embedded into editing environments rather than as standalone labs experiments.[4] For sound and motion designers, this moves generative audio from \"effect plug‑in\" territory toward integrated story tools, where timing, mood and visual context can all be co‑specified through multimodal prompts.[4]",
+    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
+    "relevance": 90
   },
   {
-    "id": "orchestrated_ai_flows_as_meta_ux",
+    "id": "firefly_graph_design_systems_future",
     "category": "CX_UX",
-    "headline": "AI orchestration frameworks reconfigure app UX around task flows",
-    "summary": "Recent articles on AI orchestration describe end‑user experiences where people specify outcomes (“launch this campaign”) and agent swarms traverse multiple tools and APIs to execute. This is significant for CX because the primary interface becomes a goal‑setting and oversight surface, forcing designers to rethink navigation, progress visibility, and trust around invisible background automations.",
-    "url": "https://futureagi.com/blogs/generative-ai-trends-2026",
+    "headline": "Adobe’s Graph vision hints at AI‑native design systems",
+    "summary": "In the same discussion, Adobe described an internal \"Graph\" concept—an interconnected representation of user assets, styles, and projects that Firefly and assistants can reason over.[4] This points toward AI‑aware design systems where tokens, brand rules, and past work dynamically inform suggestions, changing how UX teams think about component libraries and versioning.[4]",
+    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
+    "relevance": 88
+  },
+  {
+    "id": "chatgpt_as_creative_director_in_adobe_workflows",
+    "category": "META",
+    "headline": "ChatGPT emerges as an ideation layer in pro creative pipelines",
+    "summary": "Adobe highlighted how many creators are already using ChatGPT to ideate, then executing inside tools like Photoshop and Premiere, a pattern the company is now embracing with tighter integrations.[4] This hybrid workflow positions LLMs less as standalone apps and more as ambient creative directors that shape briefs, references, and exploration paths, raising philosophical questions about where \"vision\" resides in co‑created work.[4]",
+    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
     "relevance": 86
   },
   {
-    "id": "neural_performers_realtime_voice_choreography",
-    "category": "SONIC",
-    "headline": "‘Neural performers’ blend live singers with real‑time timbre morphing",
-    "summary": "A recent experimental concert series used on‑stage models that morph a singer’s live voice into multiple synthetic personas controlled via gestural input. For sound design and performance, this turns vocal identity into a playable parameter, enabling character‑driven soundscapes and theatrical experiences where one performer can fluidly inhabit an ensemble of voices.",
-    "url": "https://cdm.link",
-    "relevance": 92
-  },
-  {
-    "id": "local_diffusion_daws_for_sound_texture_generation",
-    "category": "SONIC",
-    "headline": "Local diffusion plug‑ins turn DAWs into texture generators, not just mixers",
-    "summary": "New VST prototypes wrap small diffusion models that generate granular beds, noise fields, and evolving textures directly inside DAWs, with parameters exposed like traditional synth controls. This is impactful because it collapses the workflow gap between ‘offline’ sound generation tools and real‑time composition, letting composers sculpt AI audio as if it were another instrument on the timeline.",
-    "url": "https://github.com/topics/audio-generative",
-    "relevance": 88
-  },
-  {
-    "id": "score_following_models_for_interactive_film_scoring",
-    "category": "SONIC",
-    "headline": "Score‑following AI models enable adaptive film cues from text briefs",
-    "summary": "Researchers recently demoed a system that takes a textual description of a scene and a reference score, then generates variations that adapt tempo and orchestration to real‑time edits using score‑following techniques. For sonic UX and interactive media, this means adaptive soundtracks that respond to pacing and cuts without hand‑authoring every musical branch.",
-    "url": "https://arxiv.org",
-    "relevance": 90
-  },
-  {
-    "id": "ai_voice_scene_layout_for_spatial_audio",
-    "category": "SONIC",
-    "headline": "AI ‘scene layout’ for spatial audio automates narrative sound staging",
-    "summary": "An emerging class of tools lets sound designers describe a scene (“busy station, quiet inner monologue”) and auto‑positions voices and ambiences in 3D space as a starting mix. This is important for immersive design because it treats spatialization as a generative composition problem, freeing designers to focus on narrative nuance and refinement rather than manual panning.",
-    "url": "https://aes.org/e-lib",
-    "relevance": 87
-  },
-  {
-    "id": "human_ai_synergy_as_new_authorship_model",
-    "category": "META",
-    "headline": "Human–AI ‘synergy’ reframes authorship as configuration, not creation",
-    "summary": "Recent essays on 2026 AI art trends argue that creator‑first tools and fine‑tuned private models are shifting creativity toward orchestrating and curating AI behaviors rather than producing every stroke directly. This matters philosophically because it destabilizes traditional ideas of singular authorship and pushes toward a view of artists as system designers who encode taste, constraints, and values into their tools.",
-    "url": "https://www.unite.ai/ai-art-trends-to-watch-in-2026",
-    "relevance": 94
-  },
-  {
-    "id": "ai_as_aesthetic_infrastructure_not_tool",
-    "category": "META",
-    "headline": "Design theorists recast AI from ‘creative tool’ to aesthetic infrastructure",
-    "summary": "A new wave of critical writing describes AI not as a single app but as an ambient infrastructure that shapes which ideas are thinkable by privileging certain training data, aesthetics, and workflows. For creative disciplines, this raises urgent questions about whose visual and sonic histories are being operationalized, and how to design counter‑infrastructures that keep space for minority and experimental practices.",
-    "url": "https://thenewinquiry.com",
-    "relevance": 93
-  },
-  {
-    "id": "speculative_rights_for_model_native_artworks",
-    "category": "META",
-    "headline": "Debate intensifies around rights for ‘model‑native’ artworks",
-    "summary": "Recent legal‑philosophical commentary asks whether works that can only exist inside a closed model’s latent space—never fully exported—constitute a new class of art object with different ownership logics. This matters for designers and artists because it challenges existing IP regimes and suggests futures where access to a model, rather than possession of files, defines what it means to ‘own’ a work.",
-    "url": "https://lawreviewblog.org",
+    "id": "tensor_art_multi_step_image_video_workflows",
+    "category": "STR_ART",
+    "headline": "Tensor.art pushes artist‑trainable, multi‑step AI workflows",
+    "summary": "Tensor.art was spotlighted for letting artists train both image and video models on their own datasets and chain multi‑step generation workflows inside a single interface.[1] This matters for generative art practice because it moves beyond one‑shot prompts toward node‑like procedural pipelines, giving creators finer control over style evolution, iteration, and hybrid image‑to‑video experimentation.[1]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 89
   },
   {
-    "id": "ai_critics_as_part_of_creative_practice",
-    "category": "META",
-    "headline": "AI ‘critics’ enter the studio as continuous aesthetic interlocutors",
-    "summary": "Several studios recently documented using fine‑tuned critique models that give style‑aware feedback on works in progress, from composition balance to narrative coherence. This development is philosophically charged: it positions AI not just as a maker but as an embedded voice in the artist’s internal dialogue, raising questions about dependency, taste homogenization, and how much of our judgment we are willing to externalize.",
-    "url": "https://e-flux.com",
+    "id": "krea_realtime_style_randomization",
+    "category": "STR_ART",
+    "headline": "Krea debuts realtime AI image generation with style randomization",
+    "summary": "Krea’s latest \"Realtime\" generation tool enables live adjustment of style, creativity and other parameters while images continuously morph, rather than regenerating from scratch.[1] For visual artists and interaction designers, this introduces a more tactile, improvisational way of steering models—closer to VJing or live painting—expanding how generative systems can be used in performance and rapid moodboarding.[1]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 92
+  },
+  {
+    "id": "promeai_as_ai_style_paraphraser",
+    "category": "STR_ART",
+    "headline": "PromeAI reframes style search as paraphrasing for visual language",
+    "summary": "PromeAI was noted for its interface that \"paraphrases\" user intent into art‑historical styles and compositional recipes, functioning as a bridge between vague ideas and concrete prompts.[1] This changes how designers learn and navigate visual cultures, turning style exploration into a conversational guide rather than manual reference hunting, and raising questions about how models canonize certain aesthetics.[1]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "ideogram_precision_layout_and_text",
+    "category": "STR_ART",
+    "headline": "Ideogram advances precise layout and in‑image typography",
+    "summary": "Ideogram was highlighted for its unusually reliable text rendering and spatial control, such as placing single objects in exact quadrants without unwanted clutter.[1] For poster, branding, and UI mock work, this upgrades AI from \"vibe sketching\" to something closer to layout‑capable design assistance, collapsing the gap between concept art and production‑ready graphics.[1]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 91
+  },
+  {
+    "id": "recraft_vector_native_ai_generation",
+    "category": "STR_ART",
+    "headline": "Recraft emphasizes native vector output for AI‑generated graphics",
+    "summary": "Recraft was profiled as specializing in generating vector‑native artwork suitable for logos, icons, and production graphics rather than just raster illustrations.[1] This is significant for designers because it aligns AI output with real‑world constraints like scalability and editability, integrating generative methods into brand and interface systems instead of keeping them at the moodboard level.[1]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 88
+  },
+  {
+    "id": "gemini_in_docs_slides_as_embedded_art_agent",
+    "category": "CX_UX",
+    "headline": "Gemini becomes an embedded image agent inside productivity suites",
+    "summary": "Gemini’s image generator is now tightly integrated into Docs, Slides, and other Workspace tools, letting users summon and refine visuals without leaving document contexts.[1][3] This shifts UX from \"go to an art app\" to \"specify imagery in place,\" turning everyday documents into canvases and raising new norms for how teams co‑edit text, layout, and generated art inside the same surface.[1][3]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 90
+  },
+  {
+    "id": "canva_magic_design_ai_print_pipeline",
+    "category": "CX_UX",
+    "headline": "Canva’s Magic Design fuses AI templates with end‑to‑end print",
+    "summary": "Canva’s Magic Design and Magic Media features were described as making it trivial to move from AI‑generated concepts to print‑ready posters, brochures, and ads with templates and integrated printing.[1] For UX and brand teams, this compresses the pipeline from ideation to physical artifact, changing collaboration around approvals, localization, and rapid campaign testing.[1]",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 86
+  },
+  {
+    "id": "futureagi_agentic_ai_for_creative_workflows",
+    "category": "META",
+    "headline": "Agentic AI framed as next phase of creative automation",
+    "summary": "A recent generative AI trends report emphasized \"agentic AI\"—systems that can autonomously decompose goals, orchestrate tools, and iterate—across domains including content and design.[5] For creative practice, this foreshadows AI not just generating assets but managing multi‑step design tasks, forcing new thinking about authorship, oversight, and how to design constraints into autonomous workflows.[5]",
+    "url": "https://futureagi.com/blogs/generative-ai-trends-2026",
+    "relevance": 84
+  },
+  {
+    "id": "futureagi_multimodal_design_reasoning",
+    "category": "META",
+    "headline": "Multimodal reasoning models reshape how we brief creative AIs",
+    "summary": "The same trends analysis pointed to multimodal models that jointly understand text, image, audio, and video as central to 2026 tools.[5] For designers, this means briefs can include sketches, voice notes, reference clips, and copy simultaneously, making AI collaborators that parse and reconcile heterogeneous signals rather than treating each medium in isolation.[5]",
+    "url": "https://futureagi.com/blogs/generative-ai-trends-2026",
+    "relevance": 82
+  },
+  {
+    "id": "genaimasters_creative_toolchain_for_students",
+    "category": "CX_UX",
+    "headline": "Education‑focused guide maps AI tools into creative toolchains",
+    "summary": "A newly updated guide for students outlined how tools like DALL·E, Midjourney, Canva Magic Studio, and Adobe Firefly slot into workflows for logo design, posters, and concept art.[2] Beyond tooling, it sketches a UX blueprint for how non‑experts can move from text prompts to multi‑tool pipelines, hinting at future curricular design where AI literacy is intertwined with visual communication skills.[2]",
+    "url": "https://generativeaimasters.in/best-generative-ai-tools/",
+    "relevance": 80
+  },
+  {
+    "id": "genaimasters_ai_as_creativity_amplifier_non_artists",
+    "category": "META",
+    "headline": "AI reframed as creativity amplifier for non‑artists",
+    "summary": "The same resource explicitly positions generative tools as ways for people who \"can’t draw\" to produce meaningful visuals, treating artistic skill as increasingly about articulation and iteration rather than manual rendering.[2] This reinforces a philosophical shift where design becomes more about curating, prompting, and editing within AI systems, challenging traditional notions of craftsmanship and expertise.[2]",
+    "url": "https://generativeaimasters.in/best-generative-ai-tools/",
+    "relevance": 83
+  },
+  {
+    "id": "igm_top_tools_cross_modal_creativity_stack",
+    "category": "META",
+    "headline": "Updated tool roundups reveal an emergent cross‑modal creativity stack",
+    "summary": "An updated 2026 overview of generative AI tools highlights how text, image, and code generators are increasingly presented as a single creative stack rather than siloed categories.[8] For theorists and system designers, this signals a move toward unified \"computational imagination\" environments where narrative, interface, and visual worlds are all co‑authored through linked models.[8]",
+    "url": "https://www.igmguru.com/blog/generative-ai-tools",
+    "relevance": 78
   }
 ]
