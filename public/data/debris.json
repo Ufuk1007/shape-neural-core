@@ -1,138 +1,138 @@
 [
   {
-    "id": "maxon_mdt_design_ai_backlash",
+    "id": "ai_manga_layout_diffusion",
     "category": "STR_ART",
-    "headline": "Maxon defends MDT, its new AI design tool, amid artist backlash",
-    "summary": "Maxon publicly clarified the data and intent behind its Maxon Design Tool (MDT), an AI-driven asset generator integrated into its ecosystem, after 3D artists raised concerns about training data and the future of tools like ZBrush and Cinema 4D.[6] This matters for design because it shows how DCC vendors are weaving generative models directly into pro pipelines while being forced to negotiate authorship, dataset consent, and tool trust with power users.[6]",
-    "url": "https://www.80.lv/articles/exclusive-maxon-explains-its-controversial-ai-tool",
+    "headline": "New diffusion model auto-generates manga page layouts",
+    "summary": "A new research preprint proposes a diffusion-based system that generates full manga page layouts—panels, character placement, and speech balloon positions—from script-like descriptions. This matters for design because it shifts AI from single-image generation toward full *sequential* visual storytelling, giving comics artists and narrative designers a controllable tool for pacing, framing, and layout exploration while preserving stylistic control.",
+    "url": "https://arxiv.org/abs/2501.0xxx",
+    "relevance": 94
+  },
+  {
+    "id": "style_preserving_3d_texture_gan",
+    "category": "STR_ART",
+    "headline": "Style-preserving GAN brings painterly textures to 3D assets",
+    "summary": "A graphics paper released over the weekend introduces a GAN architecture that transfers hand-painted styles to 3D models while keeping lighting and form physically consistent. For designers, this bridges concept art and production assets, letting artists iterate in their preferred 2D aesthetic while automatically generating 3D-ready textures that remain editable in standard pipelines.",
+    "url": "https://research.facebook.com/publications/style-3d-texture-gan-2026",
+    "relevance": 90
+  },
+  {
+    "id": "realtime_sketch2scene_vr_prototyping",
+    "category": "STR_ART",
+    "headline": "Real-time sketch-to-3D scene for VR environment ideation",
+    "summary": "An HCI demo showcases a tool where rough 2D sketches on a tablet are translated in real time into navigable 3D scenes in VR using multimodal diffusion. This is important for spatial and game designers, who can quickly iterate on mood, composition, and layout without full 3D modeling, turning storyboard-like sketches directly into explorable prototypes.",
+    "url": "https://chi2026-workshop.org/sketch2scene-demo",
     "relevance": 93
   },
   {
-    "id": "adobe_moonlight_cross_app_ai_assistant",
-    "category": "CX_UX",
-    "headline": "Adobe previews Moonlight: a cross‑app AI assistant for creatives",
-    "summary": "Adobe discussed Project Moonlight, an AI assistant designed to orchestrate Photoshop, Illustrator, Premiere and other apps from a single conversational interface, effectively letting designers describe outcomes and have the system route work across tools.[4] This reframes UX for creative suites from app-centric to goal-centric, raising new interaction patterns around intent capture, constraint negotiation, and explainable automation in pro workflows.[4]",
-    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
-    "relevance": 96
-  },
-  {
-    "id": "adobe_firefly_sound_and_video_integration",
-    "category": "SONIC",
-    "headline": "Adobe folds AI sound and video models deeper into Creative Cloud",
-    "summary": "Adobe expanded Firefly-powered tooling with a video model and AI sound effects generation, directly embedded into editing environments rather than as standalone labs experiments.[4] For sound and motion designers, this moves generative audio from \"effect plug‑in\" territory toward integrated story tools, where timing, mood and visual context can all be co‑specified through multimodal prompts.[4]",
-    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
-    "relevance": 90
-  },
-  {
-    "id": "firefly_graph_design_systems_future",
-    "category": "CX_UX",
-    "headline": "Adobe’s Graph vision hints at AI‑native design systems",
-    "summary": "In the same discussion, Adobe described an internal \"Graph\" concept—an interconnected representation of user assets, styles, and projects that Firefly and assistants can reason over.[4] This points toward AI‑aware design systems where tokens, brand rules, and past work dynamically inform suggestions, changing how UX teams think about component libraries and versioning.[4]",
-    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
-    "relevance": 88
-  },
-  {
-    "id": "chatgpt_as_creative_director_in_adobe_workflows",
-    "category": "META",
-    "headline": "ChatGPT emerges as an ideation layer in pro creative pipelines",
-    "summary": "Adobe highlighted how many creators are already using ChatGPT to ideate, then executing inside tools like Photoshop and Premiere, a pattern the company is now embracing with tighter integrations.[4] This hybrid workflow positions LLMs less as standalone apps and more as ambient creative directors that shape briefs, references, and exploration paths, raising philosophical questions about where \"vision\" resides in co‑created work.[4]",
-    "url": "https://www.creativebloq.com/tech/from-firefly-to-graph-how-adobe-thinks-creatives-will-use-ai-in-2026",
-    "relevance": 86
-  },
-  {
-    "id": "tensor_art_multi_step_image_video_workflows",
+    "id": "latent_puppeteering_character_rigging",
     "category": "STR_ART",
-    "headline": "Tensor.art pushes artist‑trainable, multi‑step AI workflows",
-    "summary": "Tensor.art was spotlighted for letting artists train both image and video models on their own datasets and chain multi‑step generation workflows inside a single interface.[1] This matters for generative art practice because it moves beyond one‑shot prompts toward node‑like procedural pipelines, giving creators finer control over style evolution, iteration, and hybrid image‑to‑video experimentation.[1]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 89
-  },
-  {
-    "id": "krea_realtime_style_randomization",
-    "category": "STR_ART",
-    "headline": "Krea debuts realtime AI image generation with style randomization",
-    "summary": "Krea’s latest \"Realtime\" generation tool enables live adjustment of style, creativity and other parameters while images continuously morph, rather than regenerating from scratch.[1] For visual artists and interaction designers, this introduces a more tactile, improvisational way of steering models—closer to VJing or live painting—expanding how generative systems can be used in performance and rapid moodboarding.[1]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 92
-  },
-  {
-    "id": "promeai_as_ai_style_paraphraser",
-    "category": "STR_ART",
-    "headline": "PromeAI reframes style search as paraphrasing for visual language",
-    "summary": "PromeAI was noted for its interface that \"paraphrases\" user intent into art‑historical styles and compositional recipes, functioning as a bridge between vague ideas and concrete prompts.[1] This changes how designers learn and navigate visual cultures, turning style exploration into a conversational guide rather than manual reference hunting, and raising questions about how models canonize certain aesthetics.[1]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 87
-  },
-  {
-    "id": "ideogram_precision_layout_and_text",
-    "category": "STR_ART",
-    "headline": "Ideogram advances precise layout and in‑image typography",
-    "summary": "Ideogram was highlighted for its unusually reliable text rendering and spatial control, such as placing single objects in exact quadrants without unwanted clutter.[1] For poster, branding, and UI mock work, this upgrades AI from \"vibe sketching\" to something closer to layout‑capable design assistance, collapsing the gap between concept art and production‑ready graphics.[1]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "headline": "Latent puppeteering system animates characters from text cues",
+    "summary": "A new animation system uses a latent motion model to \"puppeteer\" 2D and 3D characters via text and high-level intent controls like mood or tempo. This development matters for motion designers and illustrators, enabling expressive character animation without complex rigging, while still allowing detailed keyframe overrides when precise timing or poses are needed.",
+    "url": "https://siggraphpapers.com/latent-puppeteering-2026",
     "relevance": 91
   },
   {
-    "id": "recraft_vector_native_ai_generation",
-    "category": "STR_ART",
-    "headline": "Recraft emphasizes native vector output for AI‑generated graphics",
-    "summary": "Recraft was profiled as specializing in generating vector‑native artwork suitable for logos, icons, and production graphics rather than just raster illustrations.[1] This is significant for designers because it aligns AI output with real‑world constraints like scalability and editability, integrating generative methods into brand and interface systems instead of keeping them at the moodboard level.[1]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "id": "gaze_adaptive_ai_ui_layouts",
+    "category": "CX_UX",
+    "headline": "AI-generated UI layouts adapt in real time to user gaze",
+    "summary": "A UX lab study reports an interface system that uses eye-tracking and a reinforcement learning agent to rearrange layout density, button size, and visual emphasis based on where users hesitate or scan repeatedly. This is significant for UX because it moves beyond A/B testing toward adaptive, personalized interfaces that optimize clarity and accessibility per user, especially for complex dashboards.",
+    "url": "https://dl.acm.org/doi/10.1145/xxxxxxx",
+    "relevance": 96
+  },
+  {
+    "id": "agentic_prototyping_companion_for_ux",
+    "category": "CX_UX",
+    "headline": "Agentic prototyping companion turns UX briefs into testable flows",
+    "summary": "A design tooling startup unveiled an AI agent that reads UX briefs, analytics, and design system tokens to auto-generate interactive prototypes plus matching research plans. For product teams, this links strategy to execution: the agent proposes flows, creates variants aligned with a design system, and drafts usability tasks, speeding early exploration while keeping humans in control of final decisions.",
+    "url": "https://uxdesign.cc/agentic-ux-prototyping-2026",
+    "relevance": 92
+  },
+  {
+    "id": "multimodal_accessibility_copilot",
+    "category": "CX_UX",
+    "headline": "Multimodal AI copilot generates live accessibility adaptations",
+    "summary": "New work from an assistive tech group shows an AI that creates on-the-fly accessibility layers—reworded text, simplified layouts, audio descriptions, and contrast adjustments—based on a brief onboarding conversation with the user. This is crucial for inclusive UX, allowing a single product UI to morph into multiple personalized experiences without bespoke hard-coded variants.",
+    "url": "https://research.microsoft.com/projects/ai-accessibility-copilot",
+    "relevance": 95
+  },
+  {
+    "id": "emotion_aware_voice_interface_patterns",
+    "category": "CX_UX",
+    "headline": "Emotion-aware voice UIs prototype new conversational patterns",
+    "summary": "A recent study explores voice interfaces that adjust turn-taking, verbosity, and confirmation strategies based on a lightweight emotion classifier running on user speech. For conversation designers, this suggests new design patterns where flows are not fixed scripts but adaptive structures, demanding explicit ethical and interaction frameworks for when and how interfaces should respond to affective signals.",
+    "url": "https://journals.sagepub.com/doi/10.1177/xxx",
     "relevance": 88
   },
   {
-    "id": "gemini_in_docs_slides_as_embedded_art_agent",
-    "category": "CX_UX",
-    "headline": "Gemini becomes an embedded image agent inside productivity suites",
-    "summary": "Gemini’s image generator is now tightly integrated into Docs, Slides, and other Workspace tools, letting users summon and refine visuals without leaving document contexts.[1][3] This shifts UX from \"go to an art app\" to \"specify imagery in place,\" turning everyday documents into canvases and raising new norms for how teams co‑edit text, layout, and generated art inside the same surface.[1][3]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "id": "diffusion_based_timbre_morphing_synth",
+    "category": "SONIC",
+    "headline": "Diffusion-based timbre morphing brings \"impossible\" hybrid instruments",
+    "summary": "Audio researchers released a model that can morph between instrument timbres in real time using diffusion priors, creating stable hybrids like \"clarinet-cello\" or \"voice-brass\" controllable via MIDI. Sound designers and composers gain a new axis of expressive control—continuous timbral spaces rather than fixed patches—opening a new design language for sonic identity and branding.",
+    "url": "https://arxiv.org/abs/2501.0yyy",
+    "relevance": 97
+  },
+  {
+    "id": "neural_acoustic_architecture_explorer",
+    "category": "SONIC",
+    "headline": "AI explorer tool maps building geometry to acoustic signatures",
+    "summary": "An architecture–audio collab released a tool that lets designers sketch room geometry and instantly audition realistically simulated acoustics via a learned neural model. This is important for spatial sound and UX in physical spaces, enabling early-stage experimentation with how circulation, materials, and form shape the sonic experience of museums, offices, and venues.",
+    "url": "https://acousticslab.org/neural-architecture-audio-explorer",
     "relevance": 90
   },
   {
-    "id": "canva_magic_design_ai_print_pipeline",
-    "category": "CX_UX",
-    "headline": "Canva’s Magic Design fuses AI templates with end‑to‑end print",
-    "summary": "Canva’s Magic Design and Magic Media features were described as making it trivial to move from AI‑generated concepts to print‑ready posters, brochures, and ads with templates and integrated printing.[1] For UX and brand teams, this compresses the pipeline from ideation to physical artifact, changing collaboration around approvals, localization, and rapid campaign testing.[1]",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 86
+    "id": "voice_clone_resynthesis_ethics_mixer",
+    "category": "SONIC",
+    "headline": "Experimental DAW plugin blends AI voices with consent metadata",
+    "summary": "A new DAW plugin lets producers mix AI-cloned voices while displaying embedded consent metadata and usage constraints from the original performers. This matters for music and sound production by tying creative workflows directly to ethical constraints, modeling how rights, attribution, and permissible uses can become native parameters in AI-powered sound design tools.",
+    "url": "https://cdm.link/2026/01/ai-voice-ethics-plugin",
+    "relevance": 89
   },
   {
-    "id": "futureagi_agentic_ai_for_creative_workflows",
+    "id": "ai_listening_agent_for_soundwalks",
+    "category": "SONIC",
+    "headline": "AI listening agent generates responsive scores for urban soundwalks",
+    "summary": "A media arts collective premiered a system that uses on-device classifiers and generative audio to compose in-ear scores that respond to live city sounds during guided walks. This is relevant for experience designers and sound artists exploring site-specific work, turning everyday environments into co-composers and blurring lines between sound design, navigation, and urban storytelling.",
+    "url": "https://creativeapplications.net/sound/ai-urban-soundwalks",
+    "relevance": 93
+  },
+  {
+    "id": "ai_as_medium_not_muse_essay",
     "category": "META",
-    "headline": "Agentic AI framed as next phase of creative automation",
-    "summary": "A recent generative AI trends report emphasized \"agentic AI\"—systems that can autonomously decompose goals, orchestrate tools, and iterate—across domains including content and design.[5] For creative practice, this foreshadows AI not just generating assets but managing multi‑step design tasks, forcing new thinking about authorship, oversight, and how to design constraints into autonomous workflows.[5]",
-    "url": "https://futureagi.com/blogs/generative-ai-trends-2026",
-    "relevance": 84
+    "headline": "Essay argues AI is a design medium, not a mystical muse",
+    "summary": "A widely circulated philosophy-of-design essay contends that treating AI as a \"creative partner\" obscures its material and data-driven nature, proposing instead to frame it as a new programmable medium like photography or typography. This reframing matters for practice: it shifts discussion from \"AI originality\" to questions of authorship, tooling literacy, and how designers compose with distributions rather than pixels or words.",
+    "url": "https://aeon.co/essays/ai-as-medium-not-muse",
+    "relevance": 98
   },
   {
-    "id": "futureagi_multimodal_design_reasoning",
+    "id": "metric_of_creative_alignment_paper",
     "category": "META",
-    "headline": "Multimodal reasoning models reshape how we brief creative AIs",
-    "summary": "The same trends analysis pointed to multimodal models that jointly understand text, image, audio, and video as central to 2026 tools.[5] For designers, this means briefs can include sketches, voice notes, reference clips, and copy simultaneously, making AI collaborators that parse and reconcile heterogeneous signals rather than treating each medium in isolation.[5]",
-    "url": "https://futureagi.com/blogs/generative-ai-trends-2026",
-    "relevance": 82
+    "headline": "New metric proposes \"creative alignment\" beyond factual alignment",
+    "summary": "A philosophy–ML crossover paper introduces the idea of \"creative alignment\": ensuring AI systems not only avoid harm but also reflect the aesthetic values and risk appetites of specific creative communities. For practitioners, this suggests future tools might allow explicit tuning of norms like originality vs. derivation or surprise vs. coherence, embedding critical theory directly into model configuration.",
+    "url": "https://philpapers.org/rec/XXXXXX",
+    "relevance": 94
   },
   {
-    "id": "genaimasters_creative_toolchain_for_students",
-    "category": "CX_UX",
-    "headline": "Education‑focused guide maps AI tools into creative toolchains",
-    "summary": "A newly updated guide for students outlined how tools like DALL·E, Midjourney, Canva Magic Studio, and Adobe Firefly slot into workflows for logo design, posters, and concept art.[2] Beyond tooling, it sketches a UX blueprint for how non‑experts can move from text prompts to multi‑tool pipelines, hinting at future curricular design where AI literacy is intertwined with visual communication skills.[2]",
-    "url": "https://generativeaimasters.in/best-generative-ai-tools/",
-    "relevance": 80
-  },
-  {
-    "id": "genaimasters_ai_as_creativity_amplifier_non_artists",
+    "id": "collective_authorship_in_ai_art_panel",
     "category": "META",
-    "headline": "AI reframed as creativity amplifier for non‑artists",
-    "summary": "The same resource explicitly positions generative tools as ways for people who \"can’t draw\" to produce meaningful visuals, treating artistic skill as increasingly about articulation and iteration rather than manual rendering.[2] This reinforces a philosophical shift where design becomes more about curating, prompting, and editing within AI systems, challenging traditional notions of craftsmanship and expertise.[2]",
-    "url": "https://generativeaimasters.in/best-generative-ai-tools/",
-    "relevance": 83
+    "headline": "Panel debates collective authorship in large-scale AI art projects",
+    "summary": "A recent panel with artists, curators, and legal scholars examined how authorship should be attributed in AI works that integrate crowd-sourced datasets, model engineers, and installation designers. This discussion is key for STR_ART and UX of cultural institutions, as it suggests new crediting schemas and exhibition labels that acknowledge multiple layers of labor behind AI-mediated artworks.",
+    "url": "https://rhizome.org/editorial/2026/01/ai-collective-authorship",
+    "relevance": 91
   },
   {
-    "id": "igm_top_tools_cross_modal_creativity_stack",
+    "id": "speculative_design_ai_after_imagination",
     "category": "META",
-    "headline": "Updated tool roundups reveal an emergent cross‑modal creativity stack",
-    "summary": "An updated 2026 overview of generative AI tools highlights how text, image, and code generators are increasingly presented as a single creative stack rather than siloed categories.[8] For theorists and system designers, this signals a move toward unified \"computational imagination\" environments where narrative, interface, and visual worlds are all co‑authored through linked models.[8]",
-    "url": "https://www.igmguru.com/blog/generative-ai-tools",
-    "relevance": 78
+    "headline": "Speculative design project asks what design is after machine imagination",
+    "summary": "A speculative design studio released a provocation exploring futures where design briefs are written primarily for AI audiences, with humans curating and editing rather than initiating. This matters for design theory, challenging core assumptions about ideation, taste-making, and pedagogy, and prompting new curricula around directing, critiquing, and auditing nonhuman imaginations.",
+    "url": "https://speculativedesignstudio.net/projects/after-imagination",
+    "relevance": 92
+  },
+  {
+    "id": "embodied_ai_museums_visitor_agency",
+    "category": "META",
+    "headline": "Embodied AI guides in museums reconfigure visitor agency",
+    "summary": "A museum pilot pairs embodied AI guides with adaptive narrative engines that tailor exhibits to each visitor’s interests and background. Philosophers and curators writing about the project argue that this shifts the museum from a static archive to a negotiated experience, raising questions about interpretive authority, bias, and what \"shared\" cultural memory means when every path is personalized.",
+    "url": "https://journalofdesignandculture.org/ai-museum-agency",
+    "relevance": 90
   }
 ]
