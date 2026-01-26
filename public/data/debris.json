@@ -3,136 +3,128 @@
     "id": "tensor_art_image_to_image",
     "category": "STR_ART",
     "headline": "Tensor.art excels in image-to-image AI art",
-    "summary": "Tensor.art stands out for training custom image and video models with multi-step workflows, enabling artists to build personalized generative pipelines. This pushes creative boundaries by blending user data with AI for hyper-specific outputs. Ideal for experimental design in analog cybernetics.",
+    "summary": "Tensor.art stands out for training custom image and video models on user images with multi-step workflows, enabling precise style transfers without steep costs. This empowers artists to build personalized generative pipelines, blending human input with AI precision. Revolutionizes iterative design in analog cybernetics.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 92
   },
   {
+    "id": "krea_realtime_prompt_editing",
+    "category": "STR_ART",
+    "headline": "Krea's realtime AI image editing shines",
+    "summary": "Krea's prompt-based image editor and realtime generation tool allow dynamic style randomization and changes via text descriptions. Artists gain fluid control over AI creativity sliders, fostering experimental design flows. Ideal for cybernetic systems blending real-time adaptation.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "recraft_vector_ai_art",
+    "category": "STR_ART",
+    "headline": "Recraft masters AI vector generation",
+    "summary": "Recraft specializes in vector-based AI art, generating editable sets of similar images for scalable design. This bridges generative AI with professional workflows, enhancing precision in strategic art applications. Crucial for design systems in cybernetic prototyping.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 88
+  },
+  {
+    "id": "promeai_style_suggestions",
+    "category": "STR_ART",
+    "headline": "PromeAI's guided art style prompts",
+    "summary": "PromeAI offers the best interface for AI art style suggestions and guided prompt creation, easing exploration of art history styles. Reduces creative friction for artists, accelerating conceptual ideation. Transforms generative tools into intuitive creative allies.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 85
+  },
+  {
+    "id": "ideogram_text_in_art",
+    "category": "STR_ART",
+    "headline": "Ideogram perfects text-in-image AI",
+    "summary": "Ideogram excels at embedding text in AI-generated images with precise composition control, ideal for minimalist prompts. Enables social media-ready art with exact placements, expanding design possibilities. Key for typography-driven strategic art.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "gemini_workspace_ai_art",
+    "category": "CX_UX",
+    "headline": "Gemini integrates AI art in docs",
+    "summary": "Google's Gemini generates images directly in Workspace apps like Slides and Docs via contextual prompts referencing Drive files. Streamlines UX for collaborative design, embedding AI seamlessly into productivity flows. Enhances user experience in professional creative teams.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 89
+  },
+  {
+    "id": "canva_print_ai_media",
+    "category": "CX_UX",
+    "headline": "Canva's Magic Media for print AI",
+    "summary": "Canva's Magic Media tool generates AI images with templates for print media like posters, integrating export options. Simplifies UX from idea to physical product, boosting accessibility for non-designers. Redefines design systems for hybrid digital-physical outputs.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 84
+  },
+  {
+    "id": "ai_overcome_creative_blocks",
+    "category": "STR_ART",
+    "headline": "Generative AI beats artist blocks",
+    "summary": "Tools like LetsEnhance and Midjourney act as infinite art museums, sparking inspiration to overcome creative blocks. Artists access stylizations and enhancements without specialist skills, speeding concept art iterations. Fosters novel intersections in cybernetic creativity.",
+    "url": "https://letsenhance.io/blog/article/benefits-of-ai-art-for-artists/",
+    "relevance": 91
+  },
+  {
+    "id": "ai_concept_art_iterations",
+    "category": "STR_ART",
+    "headline": "AI accelerates concept art drafts",
+    "summary": "Generative AI rapidly produces design iterations for client approval, cutting weeks to hours in concept phases. Artists refine accepted ideas manually, optimizing workflows for tight deadlines. Transforms strategic art pipelines with AI-human symbiosis.",
+    "url": "https://letsenhance.io/blog/article/benefits-of-ai-art-for-artists/",
+    "relevance": 86
+  },
+  {
+    "id": "ai_static_to_gif_animation",
+    "category": "STR_ART",
+    "headline": "AI animates static art to GIFs",
+    "summary": "AI platforms convert drawn images to animated GIFs, adding lighting and filters without manual animation skills. Enables urgent projects with complex enhancements, expanding artistic expression. Vital for dynamic sound-art integrations.",
+    "url": "https://letsenhance.io/blog/article/benefits-of-ai-art-for-artists/",
+    "relevance": 83
+  },
+  {
+    "id": "rtx_comfyui_generative",
+    "category": "STR_ART",
+    "headline": "ComfyUI on RTX for local AI art",
+    "summary": "NVIDIA's RTX tutorial enables local image/video generation with ComfyUI and LTX-2, offering privacy and speed. Artists run advanced visual AI without cloud dependency, customizing workflows. Empowers experimental cybernetic design garages.",
+    "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-comfyui-tutorial/",
+    "relevance": 95
+  },
+  {
+    "id": "google_ads_ai_images",
+    "category": "CX_UX",
+    "headline": "Google Ads generative image tools",
+    "summary": "Google Ads integrates generative AI for creating image assets, enhancing UX in advertising design. Automates visual content for campaigns, improving interaction patterns. Innovates AI-driven UX for marketing design systems.",
+    "url": "https://jakobnielsenphd.substack.com/p/2026-predictions",
+    "relevance": 82
+  },
+  {
+    "id": "ai_art_therapy_urban_planning",
+    "category": "META",
+    "headline": "AI art redefines therapy & planning",
+    "summary": "AI generators enable art therapy and urban visualizations from text, opening novel creative dimensions. Challenges human nuance while expanding accessibility in philosophy of creativity. Provokes speculation on AI's societal art roles.",
+    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
+    "relevance": 80
+  },
+  {
     "id": "midjourney_abstract_animations",
     "category": "STR_ART",
-    "headline": "Midjourney leads abstract AI images & animations",
-    "summary": "Midjourney's sliders for stylization, weirdness, and variety unlock surreal, fantastical visuals perfect for generative art movements. It redefines artistic exploration through parametric control. Crucial for STR_ART intersections in cybernetic design.",
+    "headline": "Midjourney leads abstract AI anims",
+    "summary": "Midjourney excels in abstract images and animations with stylization sliders for weirdness and variety. Pushes boundaries of generative art techniques, inspiring strategic movements. Core for sonic-visual cybernetic experiments.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 90
   },
   {
     "id": "dream_machine_brainstorming",
-    "category": "STR_ART",
-    "headline": "Dream Machine revolutionizes AI brainstorming",
-    "summary": "Dream Machine offers iterative AI suggestions from chat context, accelerating idea generation for artists and designers. This tool fosters rapid prototyping in creative workflows. Enhances strategic art by merging conversation with visuals.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 88
-  },
-  {
-    "id": "gemini_workspace_art",
     "category": "CX_UX",
-    "headline": "Gemini integrates AI art into Google Workspace",
-    "summary": "Gemini's seamless image generation within Docs and Slides via prompts and Drive references boosts UX in collaborative design. It streamlines interaction patterns for non-artists. Key for AI-driven UX innovations in design systems.",
+    "headline": "Dream Machine AI for ideation",
+    "summary": "Dream Machine provides iterative AI suggestions for brainstorming, integrated into UX workflows. Enhances user experience in creative discovery, with flexible prompting. Advances design system innovations.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 85
-  },
-  {
-    "id": "krea_realtime_editing",
-    "category": "STR_ART",
-    "headline": "Krea's realtime prompt-based image editing",
-    "summary": "Krea's prompt-driven editor and realtime randomization of style/creativity enable fluid artistic iterations. Access to premium models expands generative possibilities. Transformative for experimental STR_ART projects.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 93
-  },
-  {
-    "id": "recraft_vector_ai",
-    "category": "STR_ART",
-    "headline": "Recraft optimizes AI for vector designs",
-    "summary": "Recraft generates production-ready vector art in sets, bridging AI with scalable design needs. Vital for print and digital media in creative tools. Elevates generative design precision.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 87
+    "relevance": 81
   },
   {
     "id": "raphael_unlimited_free_ai",
     "category": "STR_ART",
-    "headline": "Raphael AI offers unlimited free generations",
-    "summary": "Raphael's simple textbox interface delivers detailed AI art without limits, democratizing access for artists. Spurs widespread experimentation in generative techniques. Game-changer for emerging art movements.",
+    "headline": "Raphael AI offers unlimited gens",
+    "summary": "Raphael AI delivers unlimited free generations via simple textbox prompts, democratizing access. Lowers barriers for experimental art, fueling philosophical debates on creativity. Strategic for broad cybernetic adoption.",
     "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 84
-  },
-  {
-    "id": "ideogram_text_composition",
-    "category": "STR_ART",
-    "headline": "Ideogram masters text & composition in AI art",
-    "summary": "Ideogram excels at precise object placement and text rendering, ideal for minimalist social media visuals. Redefines compositional control in generative art. Essential for design-focused creativity.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 91
-  },
-  {
-    "id": "canva_print_ai_media",
-    "category": "CX_UX",
-    "headline": "Canva's Magic Media for print-ready AI art",
-    "summary": "Canva integrates AI generation with templates and print exports, enhancing UX for physical media design. Streamlines workflows from idea to product. Pivotal for user experience in design systems.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 86
-  },
-  {
-    "id": "promeai_style_suggestions",
-    "category": "STR_ART",
-    "headline": "PromeAI's guided art style directories",
-    "summary": "PromeAI's interface for style recommendations and prompt guidance acts as an art history navigator for AI users. Fuels discovery of new aesthetics in generation. Boosts creative tool efficacy.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 89
-  },
-  {
-    "id": "artbreeder_breeding_system",
-    "category": "STR_ART",
-    "headline": "Artbreeder's unique image breeding AI",
-    "summary": "Artbreeder morphs and blends images via a breeding system, yielding unexpected artistic transitions. Encourages evolutionary creativity in digital art. Perfect for novel generative techniques.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 95
-  },
-  {
-    "id": "letsnhance_artist_benefits",
-    "category": "STR_ART",
-    "headline": "Generative AI as infinite art library",
-    "summary": "Tools like LetsEnhance and Midjourney serve as vast style libraries, inspiring painters to explore new techniques. Speeds concept iterations for design teams. Revolutionizes artist workflows.",
-    "url": "https://letsenhance.io/blog/article/benefits-of-ai-art-for-artists/amp/",
-    "relevance": 82
-  },
-  {
-    "id": "ai_static_to_gif",
-    "category": "STR_ART",
-    "headline": "AI animates static art into GIFs",
-    "summary": "AI platforms convert drawn images to animated GIFs, adding lighting and stylizations without manual effort. Enables time-strapped artists to enhance complexity. Key for dynamic generative art.",
-    "url": "https://letsenhance.io/blog/article/benefits-of-ai-art-for-artists/amp/",
-    "relevance": 88
-  },
-  {
-    "id": "ai_concept_iterations",
-    "category": "CX_UX",
-    "headline": "AI accelerates concept art iterations",
-    "summary": "Generative AI produces rapid design variants for client approval, cutting weeks to hours in UX prototyping. Benefits designers and clients with precise outcomes. Innovates interaction in design systems.",
-    "url": "https://letsenhance.io/blog/article/benefits-of-ai-art-for-artists/amp/",
-    "relevance": 90
-  },
-  {
-    "id": "top_jan2026_models",
-    "category": "STR_ART",
-    "headline": "Top 10 AI image models of Jan 2026",
-    "summary": "January 2026 rankings spotlight Midjourney, FLUX, GPT Image, Firefly dominating generative art. Highlights cutting-edge models for artists. Drives forward STR_ART advancements.",
-    "url": "https://www.thepromptbuddy.com/prompts/top-10-ai-image-generation-models-dominating-january-2026",
-    "relevance": 94
-  },
-  {
-    "id": "craiyon_free_styles",
-    "category": "STR_ART",
-    "headline": "Craiyon enables free style experimentation",
-    "summary": "Craiyon's robust free tier offers diverse artistic styles and refinements, lowering barriers for creators. Fosters broad creative exploration. Vital for accessible generative tools.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 80
-  },
-  {
-    "id": "starryai_nft_creation",
-    "category": "STR_ART",
-    "headline": "Starry.ai for customizable NFT art",
-    "summary": "Starry.ai provides daily free images with full ownership for NFTs, blending AI with blockchain art. Empowers unique digital portfolios. Intersects generative design with new economies.",
-    "url": "https://www.futurepedia.io/ai-tools/art-generators/best",
-    "relevance": 83
+    "relevance": 79
   }
 ]
