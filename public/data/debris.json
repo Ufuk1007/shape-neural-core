@@ -1,138 +1,130 @@
 [
   {
-    "id": "leonardo_canvas_editor_ai",
+    "id": "midjourney_v7_artistic_breakthrough",
     "category": "STR_ART",
-    "headline": "Leonardo's AI Canvas Editor Revolutionizes Workflows",
-    "summary": "Leonardo’s canvas editor, prompt enhancement, and model selection enable structured, repeatable AI art production for indie creators. This shifts generative art from chaotic prompting to precise pipelines, vital for design scalability. Free tier accelerates experimentation in professional pipelines.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 92
-  },
-  {
-    "id": "higgsfield_character_consistency",
-    "category": "STR_ART",
-    "headline": "Higgsfield Masters AI Character Reuse",
-    "summary": "Higgsfield acts as a creative hub accessing multiple models focused on character consistency over raw quality. This breakthrough enables seamless narrative art series in design projects. Ideal for storytelling in generative visuals.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 90
-  },
-  {
-    "id": "artlist_multimodal_ecosystem",
-    "category": "STR_ART",
-    "headline": "Artlist Builds AI Creative Ecosystem for Video",
-    "summary": "Artlist integrates AI image, video, voiceover with royalty-free assets under one license. This unifies generative tools for marketers and agencies, streamlining multi-modal design. Transforms isolated generation into cohesive creative flows.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 88
-  },
-  {
-    "id": "freepik_ai_suite_models",
-    "category": "STR_ART",
-    "headline": "Freepik AI Suite Switches Top Models Seamlessly",
-    "summary": "Freepik offers model-switching between Flux, Ideogram, and more for speed vs realism tradeoffs. Creators adapt outputs without platform hops, boosting generative art flexibility. Key for adaptive design experimentation.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 87
-  },
-  {
-    "id": "shutterstock_model_agnostic_gen",
-    "category": "STR_ART",
-    "headline": "Shutterstock's Model-Agnostic AI Generation",
-    "summary": "Shutterstock auto-selects from GPT Image, Imagen 4, Runway for optimal prompts. This democratizes high-end generative art for commercial use. Enhances design workflows with intelligent model choice.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 85
-  },
-  {
-    "id": "picsart_prompt_first_editing",
-    "category": "STR_ART",
-    "headline": "Picsart's Fast AI for Everyday Creators",
-    "summary": "Picsart prioritizes prompt-first, style-driven generation with multi-model support for quick visuals. Popular for social and marketing, it lowers barriers for non-experts in generative design. Practicality trumps perfection.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 84
-  },
-  {
-    "id": "renderforest_ai_ecosystem",
-    "category": "STR_ART",
-    "headline": "Renderforest Flows AI Images to Full Assets",
-    "summary": "Renderforest integrates GPT and Flux models into logos, videos, mockups pipelines. This expands generative art into complete design ecosystems. Versatile for rapid asset creation.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 83
-  },
-  {
-    "id": "figma_semantic_image_edits",
-    "category": "CX_UX",
-    "headline": "Figma's AI Semantic Image Editing in Canvas",
-    "summary": "Figma ships AI erase/isolate/expand tools understanding image semantics like 'cat on sofa'. Drag elements auto-in-paint backgrounds and adjust lighting seamlessly. Replaces Photoshop rerolls with intuitive UX design control.",
-    "url": "https://www.uxtigers.com/post/2026-predictions",
+    "headline": "Midjourney V7 Masters Cinematic Art",
+    "summary": "Midjourney V7 excels in artistic and cinematic images with advanced style control and realism, enabling designers to create handcrafted-like visuals from prompts. This pushes generative art boundaries, offering illustrators unprecedented creative flexibility. Ideal for concept art and NFTs.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
     "relevance": 95
   },
   {
-    "id": "nano_banana_pro_semantics",
-    "category": "CX_UX",
-    "headline": "Nano Banana Pro Enables Semantic Edits",
-    "summary": "Nano Banana Pro powers design tools recognizing distinct image entities for drag-and-drop edits. Vastly superior to random re-prompting, it integrates into canvas workflows. Transforms AI UX from generation to precise manipulation.",
-    "url": "https://www.uxtigers.com/post/2026-predictions",
-    "relevance": 93
-  },
-  {
-    "id": "canva_magic_media_integration",
-    "category": "CX_UX",
-    "headline": "Canva's AI Deeply Integrated into Editor",
-    "summary": "Canva's Magic Media and Dream Lab generate images editable, resizable directly in-platform. No workflow exits for text, filters, publishing. Streamlines UX for everyday creators.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 86
-  },
-  {
-    "id": "midjourney_web_character_consistency",
+    "id": "dalle_4_realistic_commercial",
     "category": "STR_ART",
-    "headline": "Midjourney Web Adds Granular Art Controls",
-    "summary": "Midjourney's web interface offers texture, palette, brush controls with top character consistency. Balances realism and expression for designers. Evolves Discord roots into pro tool.",
-    "url": "https://www.producthunt.com/categories/ai-generative-media",
-    "relevance": 91
+    "headline": "DALL·E 4 Perfects Realistic Images",
+    "summary": "DALL·E 4 delivers hyper-realistic commercial visuals with precise prompt understanding and inpainting tools. Designers benefit from seamless ChatGPT integration for rapid prototyping. Revolutionizes marketing and product mockups.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
+    "relevance": 92
   },
   {
-    "id": "recraft_ideogram_leaderboard_top",
+    "id": "adobe_firefly_brand_integration",
     "category": "STR_ART",
-    "headline": "Recraft & Ideogram Top Text-to-Image Leaderboards",
-    "summary": "Recraft and Ideogram lead AI image generation benchmarks for quality and creativity. Focus on usability pushes generative art frontiers. Essential for experimental design.",
-    "url": "https://www.producthunt.com/categories/ai-generative-media",
-    "relevance": 89
+    "headline": "Adobe Firefly Seamless Brand AI",
+    "summary": "Adobe Firefly integrates deeply with design ecosystems for worry-free brand visuals, grasping emotions and styles. Empowers UX designers with legal-safe, professional assets. Transforms workflow for marketing teams.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
+    "relevance": 90
   },
   {
-    "id": "soundraw_ai_music_tracks",
+    "id": "stable_diffusion_open_source",
+    "category": "STR_ART",
+    "headline": "Stable Diffusion Custom AI Art",
+    "summary": "Stable Diffusion offers open-source flexibility for private, customized generative art in games and research. Artists gain full control over models for unique outputs. Fosters experimental design innovation.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
+    "relevance": 88
+  },
+  {
+    "id": "leonardo_ai_game_assets",
+    "category": "STR_ART",
+    "headline": "Leonardo AI Game Design Power",
+    "summary": "Leonardo AI specializes in consistent characters and fantasy assets for games, speeding concept art. Creative teams produce production-ready visuals efficiently. Bridges AI with interactive design.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
+    "relevance": 87
+  },
+  {
+    "id": "runway_video_motion_graphics",
+    "category": "STR_ART",
+    "headline": "Runway AI Video Editing Magic",
+    "summary": "Runway enables AI-assisted video creation with auto-effects and scene generation. Motion designers automate complex edits, enhancing storytelling. Vital for dynamic generative media.",
+    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "relevance": 85
+  },
+  {
+    "id": "soundraw_ai_music_gen",
     "category": "SONIC",
-    "headline": "Soundraw Generates Custom AI Tracks",
-    "summary": "Soundraw tops generative tools for AI music creation, producing royalty-free tracks. Boosts sound design in video and art projects. Enables rapid audio experimentation.",
+    "headline": "Soundraw Royalty-Free AI Tracks",
+    "summary": "Soundraw generates customizable music by mood and style for videos. Sound designers save production time with instant soundtracks. Democratizes audio creativity for multimedia.",
+    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "relevance": 90
+  },
+  {
+    "id": "synthesia_ai_avatars",
+    "category": "SONIC",
+    "headline": "Synthesia Voiceover Video AI",
+    "summary": "Synthesia creates videos with custom AI avatars and voice synthesis from scripts. Innovates sound design in presentations and training. Blends audio AI with visual UX.",
     "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
     "relevance": 82
   },
   {
-    "id": "artlist_ai_voiceover_sound",
-    "category": "SONIC",
-    "headline": "Artlist AI Voiceover Pairs with Sound Libraries",
-    "summary": "Artlist combines AI voiceover generation with vast music, SFX libraries. One-license multimodal audio transforms creative sound design. Key for integrated media workflows.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
-    "relevance": 80
-  },
-  {
-    "id": "civitai_ai_art_marketplace",
-    "category": "STR_ART",
-    "headline": "CivitAI Emerges as AI Art Model Hub",
-    "summary": "CivitAI specializes in hosting/running open-source AI art models, rivaling Hugging Face. Fuels collaborative generative communities. Drives novel intersections in art experimentation.",
-    "url": "https://www.producthunt.com/categories/ai-generative-media",
-    "relevance": 85
-  },
-  {
-    "id": "deepai_radical_openness",
-    "category": "STR_ART",
-    "headline": "DeepAI's Minimalist Free AI Generation Persists",
-    "summary": "DeepAI offers instant, no-signup AI images with broad rights and API. Radical simplicity aids hobbyist art exploration in 2026. Core utility for pure generative play.",
-    "url": "https://www.template.net/business/best-ai-image-generators-in-2026/",
+    "id": "unc_generative_ai_library",
+    "category": "CX_UX",
+    "headline": "UNC Custom AI Research Tool",
+    "summary": "University Library's generative AI tailors research assistance for students. Enhances UX in academic design workflows with personalized insights. Pioneers AI for educational interfaces.",
+    "url": "https://www.unc.edu/posts/2026/02/04/university-library-unveils-generative-ai-tool-customized-for-tar-heels/",
     "relevance": 78
   },
   {
-    "id": "artbreeder_gan_collaboration",
+    "id": "okhuman_typing_proof",
+    "category": "META",
+    "headline": "OKhuman Proves Human Writing",
+    "summary": "OKhuman monitors typing to certify human authorship against AI. Sparks philosophy on AI creativity authenticity in design. Challenges notions of original art in AI era.",
+    "url": "https://generative-ai-newsroom.com/this-tool-listens-to-you-type-to-prove-your-writing-is-human-da3350fe02e2",
+    "relevance": 85
+  },
+  {
+    "id": "dalle3_high_res_visuals",
     "category": "STR_ART",
-    "headline": "Artbreeder Evolves GAN Collaborative Art",
-    "summary": "Artbreeder uses GANs for user-blended image creation/modification. Fosters communal generative techniques. Timeless for experimental visual philosophy.",
+    "headline": "DALL·E 3 Stunning High-Res Art",
+    "summary": "DALL·E 3 converts prompts to custom-style, high-res visuals. Boosts generative design for social and presentations. Accelerates artistic iteration.",
+    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "relevance": 89
+  },
+  {
+    "id": "midjourney_digital_art",
+    "category": "STR_ART",
+    "headline": "MidJourney Artistic Flexibility",
+    "summary": "MidJourney generates striking digital art with prompt creativity. Designers explore styles effortlessly. Core to modern illustration movements.",
+    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "relevance": 91
+  },
+  {
+    "id": "firefly_professional_ux",
+    "category": "CX_UX",
+    "headline": "Firefly for UI/UX Assets",
+    "summary": "Adobe Firefly generates UI/UX design assets with brand precision. Streamlines interaction pattern creation. Elevates accessibility in AI-driven design.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
+    "relevance": 84
+  },
+  {
+    "id": "notion_ai_productivity",
+    "category": "CX_UX",
+    "headline": "Notion AI Design Workflow Aid",
+    "summary": "Notion AI summarizes and ideates within workspaces. Optimizes UX research and design systems. Enhances collaborative creativity tools.",
+    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "relevance": 76
+  },
+  {
+    "id": "artbreeder_gan_blends",
+    "category": "STR_ART",
+    "headline": "Artbreeder GAN Image Fusion",
+    "summary": "Artbreeder uses GANs for collaborative image blending. Fosters experimental generative techniques. Inspires new artistic movements.",
     "url": "https://www.igmguru.com/blog/generative-ai-tools",
-    "relevance": 79
+    "relevance": 80
+  },
+  {
+    "id": "dalle2_detailed_visuals",
+    "category": "STR_ART",
+    "headline": "DALL-E 2 Creative Outputs",
+    "summary": "DALL-E 2 produces detailed images from text. Enables novel visual storytelling in design. Key for philosophical AI art debates.",
+    "url": "https://www.igmguru.com/blog/generative-ai-tools",
+    "relevance": 82
   }
 ]
