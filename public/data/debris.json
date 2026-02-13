@@ -1,130 +1,138 @@
 [
   {
-    "id": "leonardo_ai_student_generator",
+    "id": "midjourney_v7_artistic_leap",
     "category": "STR_ART",
-    "headline": "Leonardo AI: 150 Free Images Daily for Art Students",
-    "summary": "Offers generous free tier with style presets and personal model training, enabling rapid iteration for concept art and character design. Cloud-based access suits low-spec hardware, exporting ready for Photoshop or Figma. Revolutionizes student workflows by blending flexibility with accessibility.",
-    "url": "https://artdependence.com/articles/ai-image-generator-buying-guide-for-art-students-what-features-matter-in-2026/",
+    "headline": "Midjourney V7 Masters Cinematic Art",
+    "summary": "Midjourney V7 excels in artistic and cinematic images with advanced style control and realism, enabling designers to create handcrafted-looking visuals instantly. This pushes generative art boundaries, blending AI precision with human-like creativity for concept art and NFTs.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
     "relevance": 95
   },
   {
-    "id": "midjourney_cinematic_quality",
+    "id": "adobe_firefly_ux_integration",
+    "category": "CX_UX",
+    "headline": "Adobe Firefly Seamless UX Design Aid",
+    "summary": "Firefly integrates into Adobe Suite for UI/UX assets, offering copyright-safe generation that accelerates professional workflows. Designers gain creative freedom without legal risks, transforming mockups and brand visuals efficiently.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
+    "relevance": 90
+  },
+  {
+    "id": "leonardo_ai_game_assets",
     "category": "STR_ART",
-    "headline": "Midjourney Delivers Cinematic AI Art Quality",
-    "summary": "Produces hand-painted textures and lighting that impress in portfolios, ideal for concept artists seeking professional-grade outputs. Discord interface fosters community remixing, accelerating creative exploration. Elevates generative art from novelty to studio essential.",
-    "url": "https://artdependence.com/articles/ai-image-generator-buying-guide-for-art-students-what-features-matter-in-2026/",
+    "headline": "Leonardo AI Revolutionizes Game Design",
+    "summary": "Leonardo AI specializes in consistent characters and fantasy assets, streamlining production for game devs and artists. Its pre-trained models foster experimental storytelling and 3D inspiration in generative design.",
+    "url": "https://www.nodesure.com/the-5-best-ai-image-generators-in-2026-a-complete-guide-for-creators-businesses/",
     "relevance": 92
   },
   {
-    "id": "dalle3_effortless_ideation",
+    "id": "direct_to_film_ai_workflow",
     "category": "STR_ART",
-    "headline": "DALL-E 3 Enables Conversational Ideation",
-    "summary": "Integrates with ChatGPT for iterative prompting like 'add fireflies at dusk,' speeding storyboarding and poster concepts. Student-friendly pricing bundles text and image gen, streamlining brainstorming. Transforms dialogue into visual assets effortlessly.",
-    "url": "https://artdependence.com/articles/ai-image-generator-buying-guide-for-art-students-what-features-matter-in-2026/",
-    "relevance": 90
-  },
-  {
-    "id": "stable_diffusion_diy_flex",
-    "category": "STR_ART",
-    "headline": "Stable Diffusion: Open-Source Control Mastery",
-    "summary": "Exposes prompt strength, seeds, and ControlNet for precise customization, like a recording console for visuals. Runs locally for unlimited tweaks without paywalls. Empowers designers to hack models for unique artistic visions.",
-    "url": "https://artdependence.com/articles/ai-image-generator-buying-guide-for-art-students-what-features-matter-in-2026/",
+    "headline": "AI Boosts Direct-to-Film Garment Art",
+    "summary": "Designer Julia Saxon combines ChatGPT, Midjourney, and Photoshop for rapid DTF designs, aligning visions with brand values swiftly. This hybrid workflow exemplifies AI's role in scalable, real-world creative production.",
+    "url": "https://members.asicentral.com/news/strategy/february-2026/how-ai-tools-can-help-boost-your-direct-to-film-designs/",
     "relevance": 88
   },
   {
-    "id": "canva_ai_fast_design",
-    "category": "CX_UX",
-    "headline": "Canva AI: Instant Backgrounds for Quick Designs",
-    "summary": "Generates cropped images directly into canvases via side-panel prompts, prioritizing speed for non-designers. Copyright-clean outputs suit classroom and marketing use. Bridges AI gen with intuitive UX for rapid prototyping.",
-    "url": "https://artdependence.com/articles/ai-image-generator-buying-guide-for-art-students-what-features-matter-in-2026/",
+    "id": "stable_diffusion_custom_control",
+    "category": "STR_ART",
+    "headline": "Stable Diffusion Full Designer Control",
+    "summary": "Open-source Stable Diffusion allows local fine-tuning for unlimited image customization, empowering artists to experiment beyond cloud limits. It redefines generative techniques for personalized visual art.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
     "relevance": 85
   },
   {
-    "id": "artbreeder_collaborative",
+    "id": "dalle3_prompt_precision",
     "category": "STR_ART",
-    "headline": "Artbreeder: Slider-Based Image Evolution",
-    "summary": "Real-time crossbreeding of images via GAN sliders creates hybrid portraits and landscapes collaboratively. Feels like a creative jam session, sparking unexpected designs. Fosters communal remixing in art education.",
-    "url": "https://artdependence.com/articles/ai-image-generator-buying-guide-for-art-students-what-features-matter-in-2026/",
+    "headline": "DALL-E 3 Perfects Complex Prompts",
+    "summary": "DALL-E 3 handles intricate text-in-image prompts with accuracy, ideal for mockups and presentations. Integrated in ChatGPT, it democratizes high-fidelity generative design for non-experts.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
     "relevance": 87
   },
   {
-    "id": "adobe_firefly_suite_int",
-    "category": "STR_ART",
-    "headline": "Adobe Firefly Integrates AI into Creative Cloud",
-    "summary": "Trained on licensed content, it assists Photoshop and Illustrator without copyright risks. Free credits for pros streamline workflows. Enhances traditional design tools with ethical generative power.",
+    "id": "canva_ai_beginner_design",
+    "category": "CX_UX",
+    "headline": "Canva AI Empowers Non-Designers",
+    "summary": "Canva's intuitive AI generates pro graphics for social and UX prototypes, bridging skill gaps in user experience design. It accelerates accessible interaction pattern creation for teams.",
     "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 89
-  },
-  {
-    "id": "soundraw_ai_tracks",
-    "category": "SONIC",
-    "headline": "Soundraw Generates Custom AI Music Tracks",
-    "summary": "Produces royalty-free tracks tailored for videos and ads, boosting sonic design efficiency. Featured in 2026 tool rankings for creators. Unlocks accessible audio innovation without composition expertise.",
-    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
-    "relevance": 84
-  },
-  {
-    "id": "midjourney_artistic_edge",
-    "category": "STR_ART",
-    "headline": "Midjourney Tops Artistic Image Generation",
-    "summary": "Yields illustrator-quality outputs for marketing and concept art via Discord. Subscriptions enable high-fidelity creative flexibility. Redefines digital art pipelines for professionals.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 91
-  },
-  {
-    "id": "dalle3_chatgpt_bundle",
-    "category": "STR_ART",
-    "headline": "DALL-E 3: Text-to-Image in ChatGPT Plus",
-    "summary": "Handles complex prompts and in-image text accurately for mockups and visuals. Included in Plus sub, it unifies ideation and generation. Democratizes high-quality visuals for UX and art.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 86
-  },
-  {
-    "id": "stable_diffusion_custom",
-    "category": "STR_ART",
-    "headline": "Stable Diffusion: Full Model Control Free",
-    "summary": "Open-source for local fine-tuning, attracting designers needing unlimited customization. Powers bespoke generative techniques. Foundation for experimental art systems.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 90
-  },
-  {
-    "id": "style_transfer_tools",
-    "category": "STR_ART",
-    "headline": "AI Style Transfer for Unique Creations",
-    "summary": "Applies artistic styles to images or text, inspiring novel designs. Serves as creative spark in 2026 workflows. Expands artistic expression through hybrid aesthetics.",
-    "url": "https://www.almabetter.com/bytes/articles/generative-ai-tools",
     "relevance": 82
   },
   {
-    "id": "artificial_creativity_ai",
-    "category": "META",
-    "headline": "Artificial Creativity Tools Inspire Artists",
-    "summary": "Generates ideas and designs as muse for human creators. Probes boundaries of AI in creative processes philosophically. Matters for rethinking authorship in design.",
+    "id": "artbreeder_gan_collaboration",
+    "category": "STR_ART",
+    "headline": "Artbreeder GANs Fuel Collaborative Art",
+    "summary": "Artbreeder uses GANs for blending user inputs into novel images, sparking communal generative art movements. This technique inspires experimental design collectives and hybrid creativity.",
+    "url": "https://www.igmguru.com/blog/generative-ai-tools",
+    "relevance": 84
+  },
+  {
+    "id": "ai_music_generation_tools",
+    "category": "SONIC",
+    "headline": "Generative AI Composes Music & Audio",
+    "summary": "Tools for music, sound effects, and voice synthesis transform entertainment sound design. AI enables rapid prototyping of sonic experiences, expanding creative audio landscapes.",
     "url": "https://www.almabetter.com/bytes/articles/generative-ai-tools",
     "relevance": 80
   },
   {
-    "id": "artbreeder_gan_blend",
+    "id": "style_transfer_generative_art",
     "category": "STR_ART",
-    "headline": "Artbreeder GANs for Image Blending",
-    "summary": "Collaborative platform modifies images via user inputs and GANs. Enables evolutionary art techniques. Sparks communal creativity in generative design.",
-    "url": "https://www.igmguru.com/blog/generative-ai-tools",
-    "relevance": 83
+    "headline": "AI Style Transfer for Unique Pieces",
+    "summary": "Style transfer tools apply artistic styles to images/text, unlocking novel generative expressions. Designers leverage this for experimental visuals in branding and digital art.",
+    "url": "https://www.almabetter.com/bytes/articles/generative-ai-tools",
+    "relevance": 78
   },
   {
-    "id": "runway_motion_graphics",
-    "category": "STR_ART",
-    "headline": "Runway AI for Video Motion Graphics",
-    "summary": "Transforms static designs into dynamic edits, vital for 2026 multimedia art. Boosts experimental video workflows. Merges gen AI with motion design innovation.",
-    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
-    "relevance": 81
+    "id": "artificial_creativity_ai_tools",
+    "category": "META",
+    "headline": "AI as Creative Inspiration Source",
+    "summary": "Artificial creativity tools generate ideas for artists, probing AI's role in human imagination. This intersection fuels philosophical debates on machine-driven design originality.",
+    "url": "https://www.almabetter.com/bytes/articles/generative-ai-tools",
+    "relevance": 85
   },
   {
-    "id": "synthesia_ai_avatars",
-    "category": "SONIC",
-    "headline": "Synthesia: AI Avatars with Voice Synth",
-    "summary": "Creates video presentations with realistic AI voices, advancing audio-driven UX. Integrates sound design into visual storytelling. Redefines accessible multimedia creation.",
-    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "id": "generative_art_ai_platforms",
+    "category": "STR_ART",
+    "headline": "2026 Top Generative Art AI Tools",
+    "summary": "Curated platforms for generative art highlight evolving techniques in visual creation. They offer designers cutting-edge tools for artistic movements and experimental outputs.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 76
+  },
+  {
+    "id": "okhuman_ai_writing_proof",
+    "category": "META",
+    "headline": "Typing Monitor Proves Human Creativity",
+    "summary": "OKhuman detects AI writing by keystroke patterns, challenging notions of authentic creative output. It raises philosophical questions on verifying human vs. AI authorship in design.",
+    "url": "https://generative-ai-newsroom.com/this-tool-listens-to-you-type-to-prove-your-writing-is-human-da3350fe02e2",
+    "relevance": 90
+  },
+  {
+    "id": "firefly_professional_integration",
+    "category": "CX_UX",
+    "headline": "Firefly Enhances Adobe UX Workflows",
+    "summary": "Adobe Firefly's ecosystem integration boosts UI/UX asset creation without copyright issues. Professionals streamline design systems and accessibility-focused visuals.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 89
+  },
+  {
+    "id": "dalle3_creative_leap",
+    "category": "STR_ART",
+    "headline": "DALL-E 3 Advances Text-to-Image Art",
+    "summary": "Latest DALL-E 3 offers precision in detailed prompts, elevating generative art precision. It empowers intricate visual storytelling for artists and designers.",
+    "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/top-generative-ai-tools",
+    "relevance": 86
+  },
+  {
+    "id": "midjourney_designer_favorite",
+    "category": "STR_ART",
+    "headline": "Midjourney Tops Designer Image Gen",
+    "summary": "Midjourney leads for stunning, artistic outputs favored by illustrators. Its community-driven evolution inspires new generative design paradigms.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 91
+  },
+  {
+    "id": "ai_image_generators_2026_rank",
+    "category": "STR_ART",
+    "headline": "2026's Best AI Image Generators",
+    "summary": "Rankings showcase tools supercharging visual creativity for businesses and artists. Highlights cost-saving, hyper-realistic generative techniques reshaping design.",
+    "url": "https://tech-now.io/en/blogs/top-10-best-ai-image-generator-tools-in-2026",
     "relevance": 79
   }
 ]
