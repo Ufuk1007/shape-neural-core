@@ -1,130 +1,138 @@
 [
   {
-    "id": "google_lyria3_gemini_beta",
-    "category": "SONIC",
-    "headline": "Google Lyria 3 Beta in Gemini: Text-to-30s Songs",
-    "summary": "Generates instrumental tracks or lyrics-based songs from text, images, or videos directly in Gemini app, with auto cover art. Designed for original expression with safeguards against mimicry, expanding AI audio from cloud to consumer tools. Revolutionizes sound design by enabling instant, multilingual music prototyping for creators.",
-    "url": "https://www.marketingprofs.com/opinions/2026/54328/ai-update-february-20-2026-ai-news-and-views-from-the-past-week",
+    "id": "adobe_firefly_evolution_2026",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Evolves in Creative Cloud",
+    "summary": "Adobe Firefly integrates generative AI for images, vectors, and textures directly in Photoshop and Illustrator. Designers use it for early exploration like surface patterns while retaining control. This amplifies ideation without replacing human creativity in professional workflows.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 95
   },
   {
-    "id": "muzli_ai_ux_tools_2026",
+    "id": "canva_magic_studio_integration",
     "category": "CX_UX",
-    "headline": "Muzli's Curated AI Tools for UI/UX in 2026",
-    "summary": "Tested list of production-ready AI design tools for UI/UX designers, filtered for real-world efficacy. Bridges AI with professional workflows, enhancing interaction patterns and accessibility in design systems. Essential for creators seeking reliable generative aids beyond hype.",
-    "url": "https://medium.muz.li/best-ai-design-tools-for-ui-ux-designers-in-2026-54ecd8d8dee2",
+    "headline": "Canva Magic Studio Speeds Content Workflows",
+    "summary": "Magic Design, Edit, and Beat Sync enable rapid layouts, visuals, and video adaptations. Ideal for teams prototyping social and campaign assets with flexibility. Enhances high-volume UX design without deep skills.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 90
+  },
+  {
+    "id": "figma_ai_collaboration_features",
+    "category": "CX_UX",
+    "headline": "Figma AI Boosts Layout and Accessibility",
+    "summary": "Figma's AI offers layout assistance, accessibility suggestions, and copy support via plugins. Streamlines repetitive tasks in collaborative environments while designers control structure. Revolutionizes team-based UX iteration.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 92
   },
   {
-    "id": "adobe_firefly_suite_integration",
+    "id": "midjourney_ideation_tool",
     "category": "STR_ART",
-    "headline": "Adobe Firefly: GenAI in Photoshop & Illustrator",
-    "summary": "Integrates text-to-image, generative fill, and vectors into Creative Cloud using licensed data for safe commercial use. Empowers professional artists with seamless AI assistance without workflow disruption. Redefines generative design by prioritizing ethical, high-fidelity outputs.",
+    "headline": "Midjourney for Conceptual Visuals",
+    "summary": "Generates illustration styles and abstract concepts from text for early ideation. Treated as inspiration source requiring refinement. Empowers artists to explore uncharted visual territories quickly.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 88
+  },
+  {
+    "id": "khroma_color_exploration_ai",
+    "category": "STR_ART",
+    "headline": "Khroma AI Generates Aesthetic Palettes",
+    "summary": "Trains on user-preferred colors to create palettes, gradients, and pairings. Used in branding for discovery, not final decisions. Transforms color theory into dynamic, personalized design processes.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 85
+  },
+  {
+    "id": "mixboard_ai_moodboarding",
+    "category": "STR_ART",
+    "headline": "Mixboard Creates AI Moodboards from Text",
+    "summary": "Generates visual moodboards from natural language descriptions of themes. Supports team alignment in early creative phases. Bridges conceptual thinking to tangible design starting points.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 87
+  },
+  {
+    "id": "nano_banana_sketch_editing",
+    "category": "STR_ART",
+    "headline": "Nano Banana Enables Sketch-Guided Edits",
+    "summary": "Users draw on images with text instructions for AI refinements and resizing. Generates video clips with audio via Veo 3.1. Accelerates iterative design across formats hands-on.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 93
+  },
+  {
+    "id": "recraft_vector_ai_generation",
+    "category": "STR_ART",
+    "headline": "Recraft Produces Editable Vector Graphics",
+    "summary": "Creates scalable icons, illustrations, and motifs for print/digital flexibility. Serves as refined starting points in brand systems. Redefines vector design with AI speed.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 91
+  },
+  {
+    "id": "rgd_ai_ethics_statement",
+    "category": "META",
+    "headline": "RGD Demands AI Transparency for Creatives",
+    "summary": "Association highlights flaws like bias and compensation in generative AI. Encourages tools supporting creativity with accountability. Sparks philosophical debate on ethical AI in design practice.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 94
+  },
+  {
+    "id": "muzli_uiux_ai_tools_2026",
+    "category": "CX_UX",
+    "headline": "Curated AI Tools for Production UI/UX",
+    "summary": "Tested list of AI design tools reliable for real UI/UX workflows in 2026. Filters for production-ready innovations. Guides designers to practical AI enhancements.",
+    "url": "https://medium.muz.li/best-ai-design-tools-for-ui-ux-designers-in-2026-54ecd8d8dee2",
+    "relevance": 89
+  },
+  {
+    "id": "okhuman_typing_authenticity",
+    "category": "META",
+    "headline": "OKhuman Proves Human Writing via Typing",
+    "summary": "Monitors typing patterns to certify non-AI content for editors. Addresses authenticity in AI-saturated creativity. Questions boundaries of human vs. machine authorship philosophically.",
+    "url": "https://generative-ai-newsroom.com/this-tool-listens-to-you-type-to-prove-your-writing-is-human-da3350fe02e2",
+    "relevance": 86
+  },
+  {
+    "id": "stable_diffusion_custom_control",
+    "category": "STR_ART",
+    "headline": "Stable Diffusion Offers Full Model Control",
+    "summary": "Open-source tool for local runs with fine-tuning for designers. Unlimited customization without subscriptions. Empowers experimental generative art techniques.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 84
+  },
+  {
+    "id": "dall_e3_complex_prompts",
+    "category": "STR_ART",
+    "headline": "DALL-E 3 Masters Complex Text in Images",
+    "summary": "Integrated in ChatGPT, excels at nuanced prompts and embedded text. Ideal for mockups and visuals. Advances accessible generative design.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 82
+  },
+  {
+    "id": "firefly_commercially_safe",
+    "category": "CX_UX",
+    "headline": "Adobe Firefly Ensures Copyright-Safe AI",
+    "summary": "Trained on licensed content, integrates seamlessly in Creative Suite. Supports professional UX without legal risks. Sets standard for ethical design tools.",
     "url": "https://generativeailearning.in/generative-ai-tools/",
     "relevance": 90
   },
   {
-    "id": "stable_diffusion_local_control",
-    "category": "STR_ART",
-    "headline": "Stable Diffusion: Open-Source Local Image Gen",
-    "summary": "Free, customizable AI for photorealistic images and art restoration, runnable locally for unlimited fine-tuning. Attracts designers craving control over models without subscriptions. Pioneers accessible, experimental generative art techniques.",
+    "id": "canva_ai_beginners",
+    "category": "CX_UX",
+    "headline": "Canva AI Democratizes Graphic Design",
+    "summary": "Simple interface generates pro graphics from descriptions for non-designers. Free credits enable learning. Transforms UX for small businesses and marketers.",
     "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 88
+    "relevance": 83
   },
   {
-    "id": "midjourney_discord_artistry",
+    "id": "midjourney_artistic_outputs",
     "category": "STR_ART",
-    "headline": "Midjourney: Stunning Text-to-Art via Discord",
-    "summary": "Produces hand-crafted-like images for concept art and marketing, evolving through community feedback on Discord. Transforms strategic art by democratizing high-artistic quality generation. Key for visual movements in AI-driven creativity.",
+    "headline": "Midjourney Delivers Handcrafted-Like Art",
+    "summary": "Produces stunning, detailed images mimicking professional illustrators. Used for concept art and marketing. Elevates generative art quality.",
     "url": "https://generativeailearning.in/generative-ai-tools/",
     "relevance": 87
   },
   {
-    "id": "canva_ai_beginner_design",
-    "category": "CX_UX",
-    "headline": "Canva AI: Effortless Graphics for Non-Designers",
-    "summary": "Simplifies AI image gen in intuitive interface for social graphics and presentations, ideal for UX without skills. Boosts user experience design accessibility for small teams. Matters for inclusive, rapid prototyping in design systems.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 85
-  },
-  {
-    "id": "dalle3_chatgpt_integration",
-    "category": "STR_ART",
-    "headline": "DALL-E 3: Complex Prompts in ChatGPT Plus",
-    "summary": "Handles intricate text-in-image and edits seamlessly within ChatGPT, perfect for mockups and visuals. Elevates generative tools for quick, accurate artistic iteration. Central to hybrid AI-human creative flows.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 86
-  },
-  {
-    "id": "ai_art_beginners_guide_2026",
-    "category": "STR_ART",
-    "headline": "2026 Guide: AI Image Gen for Total Beginners",
-    "summary": "Step-by-step on tools like Midjourney/OpenAI for pro images from prompts, covering styles from photo to oil. Democratizes digital art for bloggers and marketers, predicting real-time/3D futures. Sparks new experimental techniques in strategic art.",
-    "url": "https://www.aitude.com/how-to-make-ai-art-in-2026-the-complete-beginners-guide/",
-    "relevance": 84
-  },
-  {
-    "id": "firefly_commercial_safety",
-    "category": "STR_ART",
-    "headline": "Firefly: Copyright-Safe AI in Adobe Suite",
-    "summary": "Generates images/videos/text/vectors trained on licensed content, integrated across Adobe tools. Ensures ethical generative design for pros avoiding legal risks. Game-changer for commercial art production.",
-    "url": "https://photoshoptrainingchannel.com/best-ai-tools-for-creators-in-2026/",
-    "relevance": 89
-  },
-  {
-    "id": "lyria_original_expression",
-    "category": "SONIC",
-    "headline": "Lyria 3: Safeguarded Music from Multimodal Input",
-    "summary": "Beta in Gemini creates original 30s tracks, filtering against existing artists for novel sound design. Global access in multiple languages expands AI audio creativity. Vital for sonic artists exploring generative music.",
-    "url": "https://www.marketingprofs.com/opinions/2026/54328/ai-update-february-20-2026-ai-news-and-views-from-the-past-week",
-    "relevance": 94
-  },
-  {
-    "id": "style_transfer_ai_tools",
-    "category": "STR_ART",
-    "headline": "AI Style Transfer: Artistic Image/Text Fusion",
-    "summary": "Applies unique styles to visuals/text for creative inspiration in art/entertainment. Fuels experimental generative techniques blending human and AI aesthetics. Key intersection for evolving artistic movements.",
-    "url": "https://www.almabetter.com/bytes/articles/generative-ai-tools",
-    "relevance": 82
-  },
-  {
-    "id": "artificial_creativity_assist",
+    "id": "ai_assist_ideation_philosophy",
     "category": "META",
-    "headline": "AI as Creative Muse: Idea Gen for Artists",
-    "summary": "Tools spark designs/suggestions, probing AI's role in human creativity and consciousness. Challenges philosophical views on authorship in generative art. Provokes deep speculation on collaborative intelligence.",
-    "url": "https://www.almabetter.com/bytes/articles/generative-ai-tools",
-    "relevance": 80
-  },
-  {
-    "id": "craiyon_batch_generation",
-    "category": "STR_ART",
-    "headline": "Craiyon: Quick Batch AI Images from Prompts",
-    "summary": "Google/Hugging Face tool for rapid, low-fi image batches, ideal for ideation. Supports experimental generative workflows despite stylistic limits. Enables volume-based art exploration.",
-    "url": "https://www.techtarget.com/searchenterpriseai/feature/35-AI-content-generators-to-explore-in-2026",
-    "relevance": 78
-  },
-  {
-    "id": "gemini_lyria_multilingual",
-    "category": "SONIC",
-    "headline": "Lyria 3 Global: Songs in Multiple Languages",
-    "summary": "Beta rollout for 18+ users generates music with lyrics/cover art across languages. Promotes diverse sonic expressions via AI. Breakthrough for international sound design innovation.",
-    "url": "https://www.marketingprofs.com/opinions/2026/54328/ai-update-february-20-2026-ai-news-and-views-from-the-past-week",
-    "relevance": 91
-  },
-  {
-    "id": "future_ai_image_3d_ar",
-    "category": "STR_ART",
-    "headline": "Post-2026: AI Real-Time 3D/AR Image Gen",
-    "summary": "Predicts personal style adaptation, interactive edits, and AR integration for visuals. Foresees transformative generative design paradigms. Speculative horizon for strategic art evolution.",
-    "url": "https://www.aitude.com/how-to-make-ai-art-in-2026-the-complete-beginners-guide/",
-    "relevance": 83
-  },
-  {
-    "id": "ux_ai_production_tested",
-    "category": "CX_UX",
-    "headline": "Production AI Tools for UI/UX: Muzli Tested",
-    "summary": "Curated, compared tools holding up in 2026 workflows for designers. Optimizes UX research and patterns with reliable AI. Critical for advancing interaction and accessibility design.",
-    "url": "https://medium.muz.li/best-ai-design-tools-for-ui-ux-designers-in-2026-54ecd8d8dee2",
-    "relevance": 90
+    "headline": "AI as Creativity Amplifier, Not Replacer",
+    "summary": "2026 views position AI for ideation, refinement, not overriding human judgment. RGD emphasizes ethical use amid biases. Reshapes philosophy of design agency.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 96
   }
 ]
