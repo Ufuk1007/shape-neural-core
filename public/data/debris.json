@@ -1,138 +1,130 @@
 [
   {
-    "id": "adobe_firefly_evolution_2026",
+    "id": "gpt_image_1_5_dominance",
     "category": "STR_ART",
-    "headline": "Adobe Firefly Evolves in Creative Cloud",
-    "summary": "Adobe Firefly integrates generative AI for images, vectors, and textures directly in Photoshop and Illustrator. Designers use it for early exploration like surface patterns while retaining control. This amplifies ideation without replacing human creativity in professional workflows.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "GPT Image 1.5 Tops AI Image Gen Leaderboard",
+    "summary": "OpenAI's GPT Image 1.5 scores 1264 on LM Arena, excelling in text rendering, photorealism, and prompt adherence. This breakthrough enables designers to create complex typography and artistic styles seamlessly, revolutionizing generative workflows. Integrated with ChatGPT, it accelerates multimodal creative iteration.",
+    "url": "https://wavespeed.ai/blog/posts/best-ai-image-generators-2026",
+    "relevance": 98
+  },
+  {
+    "id": "gemini_3_pro_image",
+    "category": "STR_ART",
+    "headline": "Gemini 3 Pro Image Masters Multimodal Prompts",
+    "summary": "Google's Gemini 3 Pro Image achieves 1235 score with fast generation and deep ecosystem integration. Designers benefit from conversational prompts and advanced editing, enhancing conceptual exploration in Google Workspace. It pushes boundaries in diverse cultural imagery generation.",
+    "url": "https://wavespeed.ai/blog/posts/best-ai-image-generators-2026",
     "relevance": 95
   },
   {
-    "id": "canva_magic_studio_integration",
-    "category": "CX_UX",
-    "headline": "Canva Magic Studio Speeds Content Workflows",
-    "summary": "Magic Design, Edit, and Beat Sync enable rapid layouts, visuals, and video adaptations. Ideal for teams prototyping social and campaign assets with flexibility. Enhances high-volume UX design without deep skills.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 90
-  },
-  {
-    "id": "figma_ai_collaboration_features",
-    "category": "CX_UX",
-    "headline": "Figma AI Boosts Layout and Accessibility",
-    "summary": "Figma's AI offers layout assistance, accessibility suggestions, and copy support via plugins. Streamlines repetitive tasks in collaborative environments while designers control structure. Revolutionizes team-based UX iteration.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 92
-  },
-  {
-    "id": "midjourney_ideation_tool",
+    "id": "flux_2_max_open_weight",
     "category": "STR_ART",
-    "headline": "Midjourney for Conceptual Visuals",
-    "summary": "Generates illustration styles and abstract concepts from text for early ideation. Treated as inspiration source requiring refinement. Empowers artists to explore uncharted visual territories quickly.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 88
-  },
-  {
-    "id": "khroma_color_exploration_ai",
-    "category": "STR_ART",
-    "headline": "Khroma AI Generates Aesthetic Palettes",
-    "summary": "Trains on user-preferred colors to create palettes, gradients, and pairings. Used in branding for discovery, not final decisions. Transforms color theory into dynamic, personalized design processes.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 85
-  },
-  {
-    "id": "mixboard_ai_moodboarding",
-    "category": "STR_ART",
-    "headline": "Mixboard Creates AI Moodboards from Text",
-    "summary": "Generates visual moodboards from natural language descriptions of themes. Supports team alignment in early creative phases. Bridges conceptual thinking to tangible design starting points.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 87
+    "headline": "Flux 2 Max: Open-Weight Customization Peak",
+    "summary": "Black Forest Labs' Flux 2 Max offers LoRA fine-tuning and local runs, scoring 1168 for ultimate control. Artists gain unparalleled style range from photorealism to abstract, fostering experimental design without vendor lock-in. Open-source community accelerates custom model innovation.",
+    "url": "https://wavespeed.ai/blog/posts/best-ai-image-generators-2026",
+    "relevance": 97
   },
   {
     "id": "nano_banana_sketch_editing",
     "category": "STR_ART",
-    "headline": "Nano Banana Enables Sketch-Guided Edits",
-    "summary": "Users draw on images with text instructions for AI refinements and resizing. Generates video clips with audio via Veo 3.1. Accelerates iterative design across formats hands-on.",
+    "headline": "Nano Banana: Draw-to-Edit AI Innovation",
+    "summary": "Nano Banana lets designers sketch changes directly on images for precise AI refinements and video clips. This hands-on approach bridges intuitive drawing with generative power, ideal for rapid cross-platform iteration. It redefines image editing for creative professionals.",
     "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 93
+    "relevance": 92
   },
   {
-    "id": "recraft_vector_ai_generation",
+    "id": "recraft_vector_ai",
     "category": "STR_ART",
-    "headline": "Recraft Produces Editable Vector Graphics",
-    "summary": "Creates scalable icons, illustrations, and motifs for print/digital flexibility. Serves as refined starting points in brand systems. Redefines vector design with AI speed.",
+    "headline": "Recraft Generates Scalable Vectors",
+    "summary": "Recraft focuses on editable vector icons and illustrations for print-digital flexibility. Designers use it for brand-aligned starting points, enhancing scalability in professional workflows. It complements traditional tools without replacing vector mastery.",
     "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 91
+    "relevance": 90
+  },
+  {
+    "id": "figma_ai_collaboration",
+    "category": "CX_UX",
+    "headline": "Figma AI Streamlines UX Iteration",
+    "summary": "Figma's AI features offer layout assistance, accessibility checks, and copy generation via plugins like FigGPT. UX teams accelerate repetitive tasks while owning interaction decisions, boosting collaborative efficiency. It integrates automation into design systems thoughtfully.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 94
+  },
+  {
+    "id": "canva_magic_studio_ux",
+    "category": "CX_UX",
+    "headline": "Canva Magic Studio Speeds Content UX",
+    "summary": "Magic Design, Edit, and Beat Sync enable quick layouts and adaptations for social campaigns. Non-designers prototype user experiences rapidly, democratizing high-volume UX creation. It prioritizes speed in flexible, multi-format workflows.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 88
+  },
+  {
+    "id": "adobe_firefly_integration",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Evolves in Creative Cloud",
+    "summary": "Firefly generates images, vectors, and textures across Photoshop and Illustrator from multilingual prompts. Designers explore patterns ethically with licensed training data, retaining control in familiar tools. It amplifies early ideation phases.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 93
   },
   {
     "id": "rgd_ai_ethics_statement",
     "category": "META",
     "headline": "RGD Demands AI Transparency for Creatives",
-    "summary": "Association highlights flaws like bias and compensation in generative AI. Encourages tools supporting creativity with accountability. Sparks philosophical debate on ethical AI in design practice.",
+    "summary": "Registered Graphic Designers highlight AI flaws like bias and compensation, urging improvements. This philosophical stance emphasizes human accountability over replacement, guiding ethical design practices. It fosters critical discourse in AI creativity.",
     "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 94
+    "relevance": 96
   },
   {
-    "id": "muzli_uiux_ai_tools_2026",
-    "category": "CX_UX",
-    "headline": "Curated AI Tools for Production UI/UX",
-    "summary": "Tested list of AI design tools reliable for real UI/UX workflows in 2026. Filters for production-ready innovations. Guides designers to practical AI enhancements.",
-    "url": "https://medium.muz.li/best-ai-design-tools-for-ui-ux-designers-in-2026-54ecd8d8dee2",
-    "relevance": 89
+    "id": "lyria_3_song_generation",
+    "category": "SONIC",
+    "headline": "Google Lyria 3 Beta Generates 30s Songs",
+    "summary": "Lyria 3 in Gemini app creates music from text, images, or videos, marking an audio breakthrough. Sound designers explore multimodal composition, expanding sonic creativity beyond traditional tools. Beta access signals rapid evolution in AI music.",
+    "url": "https://www.marketingprofs.com/opinions/2026/54328/ai-update-february-20-2026-ai-news-and-views-from-the-past-week",
+    "relevance": 99
   },
   {
-    "id": "okhuman_typing_authenticity",
-    "category": "META",
-    "headline": "OKhuman Proves Human Writing via Typing",
-    "summary": "Monitors typing patterns to certify non-AI content for editors. Addresses authenticity in AI-saturated creativity. Questions boundaries of human vs. machine authorship philosophically.",
-    "url": "https://generative-ai-newsroom.com/this-tool-listens-to-you-type-to-prove-your-writing-is-human-da3350fe02e2",
-    "relevance": 86
-  },
-  {
-    "id": "stable_diffusion_custom_control",
+    "id": "wavespeedai_unified_platform",
     "category": "STR_ART",
-    "headline": "Stable Diffusion Offers Full Model Control",
-    "summary": "Open-source tool for local runs with fine-tuning for designers. Unlimited customization without subscriptions. Empowers experimental generative art techniques.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 84
-  },
-  {
-    "id": "dall_e3_complex_prompts",
-    "category": "STR_ART",
-    "headline": "DALL-E 3 Masters Complex Text in Images",
-    "summary": "Integrated in ChatGPT, excels at nuanced prompts and embedded text. Ideal for mockups and visuals. Advances accessible generative design.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 82
-  },
-  {
-    "id": "firefly_commercially_safe",
-    "category": "CX_UX",
-    "headline": "Adobe Firefly Ensures Copyright-Safe AI",
-    "summary": "Trained on licensed content, integrates seamlessly in Creative Suite. Supports professional UX without legal risks. Sets standard for ethical design tools.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 90
-  },
-  {
-    "id": "canva_ai_beginners",
-    "category": "CX_UX",
-    "headline": "Canva AI Democratizes Graphic Design",
-    "summary": "Simple interface generates pro graphics from descriptions for non-designers. Free credits enable learning. Transforms UX for small businesses and marketers.",
-    "url": "https://generativeailearning.in/generative-ai-tools/",
-    "relevance": 83
+    "headline": "WaveSpeedAI Unifies Top Image Models",
+    "summary": "Access GPT Image, Gemini, Flux, and more in one platform for comparative workflows. Designers experiment across models without switching, optimizing creative selection. It streamlines generative art exploration.",
+    "url": "https://wavespeed.ai/blog/posts/best-ai-image-generators-2026",
+    "relevance": 91
   },
   {
     "id": "midjourney_artistic_outputs",
     "category": "STR_ART",
-    "headline": "Midjourney Delivers Handcrafted-Like Art",
-    "summary": "Produces stunning, detailed images mimicking professional illustrators. Used for concept art and marketing. Elevates generative art quality.",
+    "headline": "Midjourney for Conceptual Visuals",
+    "summary": "Midjourney produces hand-crafted-like images for ideation and marketing art. Designers refine outputs critically, using it as inspiration in exploratory phases. Its Discord integration suits artistic collaboration.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 85
+  },
+  {
+    "id": "dalle_3_complex_prompts",
+    "category": "STR_ART",
+    "headline": "DALL-E 3 Excels in Text-in-Images",
+    "summary": "Integrated in ChatGPT, DALL-E 3 handles complex prompts and image edits accurately. It supports quick mockups for UX and visuals, enhancing designer productivity. Diffusion tech ensures realistic variations.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 89
+  },
+  {
+    "id": "stable_diffusion_control",
+    "category": "STR_ART",
+    "headline": "Stable Diffusion Offers Full Customization",
+    "summary": "Open-source Stable Diffusion runs locally for unlimited fine-tuning by designers. It fills art gaps and creates photorealism, ideal for hardware-savvy creatives. Community interfaces expand accessibility.",
     "url": "https://generativeailearning.in/generative-ai-tools/",
     "relevance": 87
   },
   {
-    "id": "ai_assist_ideation_philosophy",
-    "category": "META",
-    "headline": "AI as Creativity Amplifier, Not Replacer",
-    "summary": "2026 views position AI for ideation, refinement, not overriding human judgment. RGD emphasizes ethical use amid biases. Reshapes philosophy of design agency.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 96
+    "id": "canva_ai_non_designers",
+    "category": "CX_UX",
+    "headline": "Canva AI Empowers Non-Designers",
+    "summary": "Canva's simple AI generates professional graphics for UX prototyping. Small teams create social experiences fast, broadening design system adoption. Free credits lower entry barriers.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 86
+  },
+  {
+    "id": "adobe_firefly_ethical_training",
+    "category": "STR_ART",
+    "headline": "Firefly's Licensed Data Avoids Copyright",
+    "summary": "Adobe Firefly uses licensed content for safe vector and image generation. Professionals integrate it seamlessly, focusing on refinement. It sets ethical standards in generative design.",
+    "url": "https://generativeailearning.in/generative-ai-tools/",
+    "relevance": 92
   }
 ]
