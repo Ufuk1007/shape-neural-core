@@ -1,138 +1,138 @@
 [
   {
-    "id": "amplifying_creativity_ai_design_2026",
+    "id": "kittl_multi_model_ai_design",
     "category": "STR_ART",
-    "headline": "AI Tools Amplify Designer Creativity in 2026",
-    "summary": "RGD highlights AI integration in workflows like Adobe Firefly for ideation and Runway for motion studies, emphasizing human oversight. This shifts design from replacement to augmentation, fostering ethical exploration in professional practice. Crucial for designers adapting AI without losing creative agency.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "Kittl's Multi-Model AI for Production Design",
+    "summary": "Kittl integrates engines from OpenAI, Black Forest Labs, ByteDance, and others into a browser-based editor with vector generation and Creative Flows for chained workflows. This enables designers to switch models for photorealism or speed without leaving their canvas, revolutionizing production branding and print. Used by Pentagram and Netflix, it bridges AI experimentation with professional pipelines.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 95
   },
   {
-    "id": "adobe_firefly_evolution_2026",
+    "id": "recraft_native_svg_generation",
     "category": "STR_ART",
-    "headline": "Adobe Firefly Evolves for Pro Design Workflows",
-    "summary": "Firefly generates images, vectors, and textures from multilingual prompts within Creative Cloud. Designers use it for early exploration like patterns, retaining control in refinement. Represents seamless AI embedding in industry-standard tools.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "Recraft: Native SVG from AI Prompts",
+    "summary": "Recraft stands alone by generating editable SVG vectors directly, unlike raster outputs from competitors. This fundamental shift allows seamless integration into Illustrator or Figma, empowering graphic designers with scalable, production-ready assets. It redefines AI's role in vector-based workflows critical for logos and illustrations.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
+    "relevance": 98
+  },
+  {
+    "id": "exactly_custom_style_training",
+    "category": "STR_ART",
+    "headline": "Exactly: Train AI on Your Artistic Style",
+    "summary": "Exactly lets artists upload work to train custom models that generate in their unique style, flipping the adaptation dynamic. Free training and downloads make personal aesthetics scalable for new outputs. This preserves artistic fingerprint in generative design, vital for maintaining creator identity.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 92
   },
   {
-    "id": "figma_ai_collaborative_design",
-    "category": "CX_UX",
-    "headline": "Figma AI Streamlines UX Iteration and Accessibility",
-    "summary": "Figma's AI offers layout assistance, accessibility suggestions, and copy support via plugins. Speeds repetitive tasks in collaborative environments while designers control structure. Innovates UX by automating friction points without overriding judgment.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "id": "adobe_firefly_commercial_safety",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly's IP-Safe Generative Engine",
+    "summary": "Firefly powers Photoshop's Generative Fill and Creative Cloud tools using only licensed Adobe Stock data, ensuring commercial viability without IP risks. Embedded in existing workflows, it offers agencies safe, high-fidelity asset generation. This sets a new ethical standard for enterprise AI art tools.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 90
   },
   {
-    "id": "runway_ml_motion_workflows",
+    "id": "leonardo_ai_editing_canvas",
     "category": "STR_ART",
-    "headline": "Runway ML Accelerates Video and Motion Design",
-    "summary": "Runway enables text-to-video, clip transformation, and scene detection for rapid prototyping. Ideal for motion studies and narrative visualization pre-production. Transforms experimental video workflows for creators.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "Leonardo.Ai's AI Canvas for Precise Edits",
+    "summary": "Leonardo.Ai excels with an in-platform AI Canvas for inpainting, selections, and refinements alongside custom model training. Presets like Phoenix and Anime enhance style control without external tools. It optimizes iterative creative processes for concept art and cinematic visuals.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 88
   },
   {
-    "id": "mixboard_ai_moodboarding",
+    "id": "openart_model_variety_hub",
     "category": "STR_ART",
-    "headline": "Mixboard Generates AI Moodboards from Concepts",
-    "summary": "Mixboard creates visual moodboards from natural language descriptions of themes. Supports team alignment in early ideation without locking into specifics. Revolutionizes discovery phase of creative processes.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "OpenArt: 100+ AI Models in One Platform",
+    "summary": "OpenArt provides access to over 100 models under one subscription, alongside Krea's 64+, for unmatched experimentation. Designers can test diverse aesthetics without juggling apps. This variety accelerates style discovery in generative art workflows.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 85
   },
   {
-    "id": "nano_banana_sketch_editing",
+    "id": "ai_2026_real_time_vector_typo",
     "category": "STR_ART",
-    "headline": "Nano Banana Enables Sketch-Guided AI Editing",
-    "summary": "Draw on images or add text for AI-refined edits, resizing without cropping. Generates video clips with Veo 3.1 audio. Hands-on tool for iterative design across formats.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "2026 AI: Native Vectors & Real-Time Typography",
+    "summary": "AI design tools now deliver production-ready vectors, custom style training, and real-time editing fitting seamless workflows. Beyond pretty images, they address budget and output needs for pros. This maturity integrates AI as core infrastructure for graphic design.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 87
   },
   {
-    "id": "recraft_vector_ai_generation",
-    "category": "STR_ART",
-    "headline": "Recraft Produces Editable Vector Graphics",
-    "summary": "Generates scalable icons and illustrations for print/digital flexibility. Serves as starting points for brand system refinement. Bridges AI generation with vector precision.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 89
-  },
-  {
-    "id": "khroma_ai_color_exploration",
-    "category": "STR_ART",
-    "headline": "Khroma AI Personalizes Color Palettes",
-    "summary": "Trains on user preferences to generate palettes, gradients for branding. Discovery tool enhancing aesthetic direction. Elevates color theory in AI-assisted design.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 82
-  },
-  {
-    "id": "doodle_life_ai_artist_impact",
+    "id": "genai_illustrators_report",
     "category": "META",
-    "headline": "GenAI Report Reveals Impact on Artists",
-    "summary": "Illustrators' study shows AI creates jobs but undermines essence of art-making. Critiques false democratization and client complacency. Sparks philosophical debate on creativity's core.",
+    "headline": "Illustrators' Report: GenAI Creates Artist Jobs",
+    "summary": "A creator-led study by Association of Illustrators finds generative AI generates more jobs for human artists, countering replacement fears. It highlights economic impacts on creative work. This challenges narratives, informing design ethics and policy.",
     "url": "https://momokoabe.substack.com/p/doodle-life-february-2026",
     "relevance": 94
   },
   {
-    "id": "aiva_ai_music_composition",
-    "category": "SONIC",
-    "headline": "AIVA Composes Original Tracks for Media",
-    "summary": "AI generates music for commercials, games, films using advanced models. Breakthrough in automated sound design for sonic storytelling. Expands creative audio possibilities.",
-    "url": "https://www.igmguru.com/blog/generative-ai-tools",
-    "relevance": 85
+    "id": "genai_democratizes_art_critique",
+    "category": "META",
+    "headline": "Does GenAI Truly Democratize Art?",
+    "summary": "Critique questions if AI making art 'accessible to everyone' democratizes or commodifies creativity for tech profit. It probes GenAI's origins beyond creative tools. Essential for philosophical debates on AI's societal role in art.",
+    "url": "https://momokoabe.substack.com/p/doodle-life-february-2026",
+    "relevance": 89
   },
   {
-    "id": "artlist_ai_creator_suite",
+    "id": "ai_art_beginners_2026_guide",
     "category": "STR_ART",
-    "headline": "Artlist AI Generates Visuals and Voiceovers",
-    "summary": "Suite creates visuals, video, voiceovers for creators. Assistive tools boost multimedia production efficiency. Integrates AI across creative asset pipelines.",
-    "url": "https://photoshoptrainingchannel.com/best-ai-tools-for-creators-in-2026/",
-    "relevance": 88
+    "headline": "AI Art for Beginners: 2026 Prompt Mastery",
+    "summary": "Exhaustive guide covers tools, prompts, and steps for generating pro-level images via deep learning models emulating any style. Applications span blogging to e-commerce mockups. Lowers barriers, empowering non-designers in creative fields.",
+    "url": "https://www.aitude.com/how-to-make-ai-art-in-2026-the-complete-beginners-guide/",
+    "relevance": 82
   },
   {
-    "id": "gen_media_world_models_2026",
+    "id": "future_ai_images_post_2026",
     "category": "STR_ART",
-    "headline": "World Models Generate Interactive 3D Worlds",
-    "summary": "Marble and Genie 3 create persistent 3D environments from prompts. Revolutionizes gaming, simulation design with explorable AI worlds. Frontier for generative media.",
-    "url": "https://a16z.com/the-state-of-generative-media-2026/",
-    "relevance": 98
+    "headline": "Post-2026: Personal AI Art Styles & 3D",
+    "summary": "Upcoming AI advances include real-time 3D, AR integration, and auto-adapting to user brands for ultra-realistic interactivity. Transforms digital creativity beyond static images. Foreshadows personalized generative design ecosystems.",
+    "url": "https://www.aitude.com/how-to-make-ai-art-in-2026-the-complete-beginners-guide/",
+    "relevance": 86
   },
   {
-    "id": "gen_media_multi_model_workflows",
+    "id": "midjourney_leonardo_workflows",
     "category": "STR_ART",
-    "headline": "Chained AI Models for Polished Assets",
-    "summary": "Workflows combine models for image gen, upscaling, stylization in gaming. Achieves brand-consistent quality beyond single prompts. Redefines asset production scale.",
-    "url": "https://a16z.com/the-state-of-generative-media-2026/",
-    "relevance": 92
-  },
-  {
-    "id": "canva_magic_studio_ai",
-    "category": "CX_UX",
-    "headline": "Canva Magic Studio for Rapid Content UX",
-    "summary": "Magic Design, Edit, Beat Sync speed layouts, video, translations. Prototypes ideas for social/campaigns efficiently. Enhances user-centric high-volume design.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 84
-  },
-  {
-    "id": "midjourney_ideation_tool",
-    "category": "STR_ART",
-    "headline": "Midjourney for Conceptual Visual Ideation",
-    "summary": "Text-to-image for illustration styles, abstracts as inspiration sources. Requires evaluation for refinement. Staple in exploratory generative art.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "Midjourney & Leonardo for 2026 Art Direction",
+    "summary": "Top tools for digital art workflows emphasize visual concepts and sets via generative AI. Ideal for media direction and ideation. Streamlines early-stage creative processes for designers.",
+    "url": "https://phygital.plus/blog/best-ai-tools-for-designers/",
     "relevance": 80
   },
   {
-    "id": "rgd_ai_ethics_statement",
-    "category": "META",
-    "headline": "RGD Demands AI Transparency for Creatives",
-    "summary": "Highlights biases, compensation issues in gen AI, pushes improvements. Supports tools but prioritizes ethics. Philosophical stance on responsible design AI.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "id": "autonomous_ai_tool_chains",
+    "category": "CX_UX",
+    "headline": "AI Chains Tools Autonomously by Context",
+    "summary": "Video demos building systems that select optimal AI tools based on task context, saving hours weekly. Shifts UX from manual selection to intelligent orchestration. Pioneers adaptive design assistants.",
+    "url": "https://www.youtube.com/watch?v=NDsfACJALfY",
+    "relevance": 91
+  },
+  {
+    "id": "firefly_photoshop_generative_fill",
+    "category": "CX_UX",
+    "headline": "Firefly Enhances Photoshop UX Seamlessly",
+    "summary": "Integrated Generative Fill and text-to-image in familiar tools boost workflow efficiency without learning curves. Commercial safety via licensed data ensures pro adoption. Redefines UX in established creative suites.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
+    "relevance": 85
+  },
+  {
+    "id": "kittl_real_time_collaboration",
+    "category": "CX_UX",
+    "headline": "Kittl's Infinite Canvas for Team AI Design",
+    "summary": "Browser-based infinite canvas with real-time collab, vector editing, and multi-AI integration streamlines team branding. Creative Flows automate pipelines, enhancing UX for distributed design teams. Powers workflows at Uber and Ogilvy.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
+    "relevance": 88
+  },
+  {
+    "id": "recraft_vector_editor_integration",
+    "category": "CX_UX",
+    "headline": "Recraft Vectors Edit in Figma/Illustrator",
+    "summary": "SVG-native outputs enable direct editing in standard tools, eliminating raster conversion friction. Improves UX for scalable design iterations. Core for professional graphic pipelines.",
+    "url": "https://www.toools.design/blog-posts/ai-tools-for-graphic-design",
     "relevance": 90
   },
   {
-    "id": "ai_artist_perspective_critique",
-    "category": "META",
-    "headline": "AI Reduces Artists to Content Creators",
-    "summary": "Critiques gen AI for bypassing creative essence like research, composition. Warns of exec/client shift to cheap 'that'll do' outputs. Provokes theory on art's making.",
-    "url": "https://momokoabe.substack.com/p/doodle-life-february-2026",
-    "relevance": 93
+    "id": "ai_image_ux_applications_2026",
+    "category": "CX_UX",
+    "headline": "AI Images Power E-Com & Social UX",
+    "summary": "Synthetic AI visuals create thumbnails, mockups, and ads without shoots, optimizing content UX for YouTube, e-commerce, and marketing. Accelerates visual communication design. Broadens accessible UX prototyping.",
+    "url": "https://www.aitude.com/how-to-make-ai-art-in-2026-the-complete-beginners-guide/",
+    "relevance": 83
   }
 ]
