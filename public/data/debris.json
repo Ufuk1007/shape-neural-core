@@ -1,130 +1,138 @@
 [
   {
-    "id": "adobe_firefly_evolution_2026",
+    "id": "pixelbin_ai_art_generator",
     "category": "STR_ART",
-    "headline": "Adobe Firefly Evolves in Creative Cloud",
-    "summary": "Adobe Firefly integrates generative AI for images, vectors, and textures from text prompts across Adobe tools. Designers use it for early exploration like surface patterns while retaining control. This amplifies ideation without replacing human creativity in professional workflows.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "Pixelbin's Free AI Art Generator No Watermarks",
+    "summary": "Pixelbin enables high-quality visuals from text prompts without watermarks, supporting JPG/PNG formats. This democratizes clean, professional generative art for creators. Boosts experimentation in styles and compositions beyond traditional limits.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
+    "relevance": 85
+  },
+  {
+    "id": "ideogram_text_to_image_power",
+    "category": "STR_ART",
+    "headline": "Ideogram Excels in Text-to-Image Precision",
+    "summary": "Ideogram's user-friendly tool generates impressive artwork from detailed prompts, optimizing for vision alignment. Artists gain rapid iteration on styles and orientations. Revolutionizes prompt-driven creative workflows.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
+    "relevance": 90
+  },
+  {
+    "id": "leonardo_phoenix_model",
+    "category": "STR_ART",
+    "headline": "Leonardo.AI Launches Phoenix Model Suite",
+    "summary": "Leonardo.AI's Phoenix and Flux models offer full production workflows for game devs and concept artists. Includes in/out painting and custom fine-tuning. Transforms generative design from concept to asset.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
     "relevance": 95
   },
   {
-    "id": "canva_magic_studio_integration",
-    "category": "CX_UX",
-    "headline": "Canva Magic Studio Speeds Content Workflows",
-    "summary": "Magic Design, Edit, Beat Sync enable quick layouts, visuals, and video timing adaptations. Ideal for prototyping in social and campaign contexts, enhancing speed and flexibility. Supports high-volume UX design without overriding creative decisions.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 90
-  },
-  {
-    "id": "midjourney_ideation_tool",
+    "id": "deepai_browser_art_tool",
     "category": "STR_ART",
-    "headline": "Midjourney for Conceptual Visuals",
-    "summary": "Generates illustration styles and abstract concepts from text for early ideation. Treated as inspiration source requiring refinement, boosting exploratory design phases. Key for strategic art in 2026 workflows.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 85
-  },
-  {
-    "id": "runway_ml_motion_workflows",
-    "category": "STR_ART",
-    "headline": "Runway ML Advances Video Generation",
-    "summary": "Text-to-video, clip transformation, and scene detection speed motion concepts. Used for early studies and narrative visualization in design. Expands creative possibilities in dynamic media.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 92
-  },
-  {
-    "id": "figma_ai_collaboration",
-    "category": "CX_UX",
-    "headline": "Figma AI Streamlines Collaborative Design",
-    "summary": "Layout assistance, accessibility suggestions, and copy support via plugins like FigGPT. Automates repetitive tasks in team environments while preserving design hierarchy. Enhances UX iteration efficiency.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 88
-  },
-  {
-    "id": "khroma_color_exploration",
-    "category": "STR_ART",
-    "headline": "Khroma AI for Palette Generation",
-    "summary": "Trains on preferred colors to generate palettes, gradients, and pairings. Discovery tool for branding and visual identity, aligning with aesthetic directions. Supports thoughtful color design processes.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "headline": "DeepAI: Browser-Based Image Experimentation",
+    "summary": "Launched in 2016, DeepAI runs text-to-image directly in browsers with varied styles. Ideal for inspiration and commercial ideation. Frees creators from software installs for quick prototyping.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
     "relevance": 80
   },
   {
-    "id": "mixboard_moodboarding",
+    "id": "imagineart_creative_suite",
     "category": "STR_ART",
-    "headline": "Mixboard AI Generates Moodboards",
-    "summary": "Natural language descriptions create visual moodboards for themes and concepts. Aids team alignment in early ideation, keeping processes open-ended. Revolutionizes strategic art alignment.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 87
-  },
-  {
-    "id": "nano_banana_editing",
-    "category": "STR_ART",
-    "headline": "Nano Banana Sketch-Based Editing",
-    "summary": "Draw on images with text instructions for AI-refined edits and video clips. Resizes assets without cropping, ideal for multi-platform iteration. Hands-on tool for rapid creative refinement.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 90
-  },
-  {
-    "id": "recraft_vector_ai",
-    "category": "STR_ART",
-    "headline": "Recraft Produces Editable Vectors",
-    "summary": "Generates scalable icons, illustrations, and motifs for print/digital use. Starting points refined in brand systems, enhancing vector design flexibility. Pivotal for generative art scalability.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 93
-  },
-  {
-    "id": "rgd_ai_ethics_statement",
-    "category": "META",
-    "headline": "RGD Demands AI Improvements for Creatives",
-    "summary": "Highlights flaws like bias, compensation, transparency in generative AI. Encourages discussion and responsible use supporting human judgment. Shapes philosophical approach to AI in design ethics.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 85
-  },
-  {
-    "id": "adobe_firefly_commercial_safe",
-    "category": "STR_ART",
-    "headline": "Firefly Focuses on Safe Content Gen",
-    "summary": "Text-to-image, generative fill, vector creation in Creative Cloud. Commercially safe outputs for professional designers. Ensures ethical integration in art production.",
-    "url": "https://www.techtarget.com/searchenterpriseai/feature/35-AI-content-generators-to-explore-in-2026",
-    "relevance": 82
-  },
-  {
-    "id": "dall_e_image_variations",
-    "category": "STR_ART",
-    "headline": "DALL-E Edits and Varies Images",
-    "summary": "Creates realistic edits, removes elements, generates variations from prompts. Uses diffusion for high-quality art from text. Boosts experimental generative techniques.",
-    "url": "https://www.techtarget.com/searchenterpriseai/feature/35-AI-content-generators-to-explore-in-2026",
+    "headline": "ImagineArt: 50 Free Daily Generations",
+    "summary": "ImagineArt's all-in-one suite handles text-to-image, editing, upscaling for artistic to hyper-real results. Up to 50 free gens daily spur daily creativity. Enhances experimental visual storytelling.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
     "relevance": 88
   },
   {
-    "id": "stable_diffusion_photorealistic",
+    "id": "canva_magic_media_art",
     "category": "STR_ART",
-    "headline": "Stable Diffusion for Photorealism",
-    "summary": "Photorealistic images, art restoration via diffusion. In-browser ease expands access for designers. Key breakthrough in realistic generative art.",
-    "url": "https://www.techtarget.com/searchenterpriseai/feature/35-AI-content-generators-to-explore-in-2026",
-    "relevance": 90
+    "headline": "Canva Magic Media: Text-to-Art No Signup",
+    "summary": "Canva's AI generator turns prompts into styles without signup, integrating with BG remover and animation. Streamlines social graphics and cards. Makes pro art accessible for non-experts.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
+    "relevance": 82
   },
   {
-    "id": "runway_video_effects",
-    "category": "SONIC",
-    "headline": "Runway AI Video with Generative Effects",
-    "summary": "Video generation, editing, background removal with effects. Supports sound-integrated motion design. Advances audio-visual creative tools.",
-    "url": "https://www.techtarget.com/searchenterpriseai/feature/35-AI-content-generators-to-explore-in-2026",
-    "relevance": 85
+    "id": "recraft_v3_vector_gen",
+    "category": "STR_ART",
+    "headline": "Recraft V3: Vector Art from Prompts",
+    "summary": "Recraft V3 crafts photorealism, vectors, sketches with custom styles like doodle or line art. Simple prompt-to-output boosts graphic design efficiency. Ideal for scalable creative assets.",
+    "url": "https://www.pixelbin.io/blog/best-ai-art-generator",
+    "relevance": 92
   },
   {
-    "id": "firefly_audio_vectors",
-    "category": "SONIC",
-    "headline": "Adobe Firefly Generates Audio Effects",
-    "summary": "Creates images, videos, text effects, vectors, and audio. Expands multimodal creativity for sound design. Integrates AI into sonic arts workflows.",
-    "url": "https://photoshoptrainingchannel.com/best-ai-tools-for-creators-in-2026/",
+    "id": "recraft_graphic_design_hub",
+    "category": "STR_ART",
+    "headline": "Recraft: Ultimate Graphic Design AI Tools",
+    "summary": "Recraft excels in mockups, inpainting, collaboration, exporting to Photoshop. Powerful model with workspace redefines AI-assisted design pipelines. Sets new bar for production-ready graphics.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 98
+  },
+  {
+    "id": "gpt4o_image_gen_top",
+    "category": "STR_ART",
+    "headline": "GPT-4o: Best Overall AI Image Generator",
+    "summary": "ChatGPT's GPT-4o leads in versatility, integrating image gen with Pinterest sharing. Handles realistic edits and variations seamlessly. Elevates multimodal creative processes.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 94
+  },
+  {
+    "id": "flux_custom_ai_images",
+    "category": "STR_ART",
+    "headline": "FLUX Model: Unmatched Customization Control",
+    "summary": "FLUX in Leonardo.AI offers precise control over AI images for tailored outputs. Empowers artists with fine-grained generation tweaks. Pushes boundaries of personalized generative art.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 96
+  },
+  {
+    "id": "adobe_firefly_photo_blend",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Integrates AI into Photos",
+    "summary": "Firefly seamlessly blends AI-generated images into existing photos. Enhances Photoshop workflows for hybrid human-AI art. Bridges traditional and generative design paradigms.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 89
+  },
+  {
+    "id": "procreate_no_ai_policy",
+    "category": "STR_ART",
+    "headline": "Procreate Rejects Generative AI Stance",
+    "summary": "Procreate commits to human-driven creation, rejecting AI image gen. Prioritizes fluid brushes for authentic digital art. Sparks debate on AI-free creative sanctuaries.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
+    "relevance": 75
+  },
+  {
+    "id": "clip_studio_ai_cancel",
+    "category": "STR_ART",
+    "headline": "Clip Studio Cancels Planned AI Generator",
+    "summary": "Clip Studio Paint scrapped its image generator per user feedback, keeping control human. Supports illustration without generative overreach. Reinforces artist agency in tools.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
     "relevance": 78
   },
   {
-    "id": "artbreeder_collaborative_gan",
+    "id": "artbreeder_gan_collaborate",
     "category": "STR_ART",
-    "headline": "Artbreeder Blends Images via GANs",
-    "summary": "Collaborative platform modifies images from user inputs using GANs. Fosters communal generative art experiments. Novel technique for creative intersections.",
+    "headline": "Artbreeder GANs for Collaborative Images",
+    "summary": "Artbreeder uses GANs to blend user inputs for image evolution. Fosters communal creativity in generative design. Unlocks novel hybrids impossible solo.",
     "url": "https://www.igmguru.com/blog/generative-ai-tools",
-    "relevance": 84
+    "relevance": 87
+  },
+  {
+    "id": "dalle3_diffusion_edits",
+    "category": "STR_ART",
+    "headline": "DALL-E 3: Diffusion for Realistic Edits",
+    "summary": "DALL-E 3 creates and edits images via diffusion from prompts, integrated with ChatGPT. Generates variations and texture changes. Advances precise AI art manipulation.",
+    "url": "https://www.techtarget.com/searchenterpriseai/feature/35-AI-content-generators-to-explore-in-2026",
+    "relevance": 91
+  },
+  {
+    "id": "recraft_photoreal_logos",
+    "category": "CX_UX",
+    "headline": "Recraft for Photoreal Logos & Mockups",
+    "summary": "Recraft's tools craft logos, mockups with inpainting for UX prototypes. Collaboration features streamline design teams. Revolutionizes iterative UI/graphic workflows.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 85
+  },
+  {
+    "id": "gan_visual_transform",
+    "category": "STR_ART",
+    "headline": "GANs Revolutionize Image Generation",
+    "summary": "GANs enable photorealistic to experimental visuals, transforming design industries. Supports medical and artistic applications alike. Accelerates novel content creation.",
+    "url": "https://hatchworks.com/blog/gen-ai/generative-ai/",
+    "relevance": 83
   }
 ]
