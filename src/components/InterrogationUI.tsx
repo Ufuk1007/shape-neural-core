@@ -42,7 +42,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   // Use Vercel AI SDK's useChat hook (v5.0 API)
   const { messages, sendMessage, status, error, addToolOutput } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
-    maxSteps: 5, // Allow AI to continue after tool calls
+    
     messages: [
       {
         id: '0',
@@ -63,8 +63,8 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
       }
       handledToolCallIds.current.add(toolCall.toolCallId);
 
-      if (toolCall.toolName === 'setAtmosphere' && toolCall.args?.mood) {
-        const newMood = toolCall.args.mood as AtmosphereMood;
+      if (toolCall.toolName === 'setAtmosphere' && (toolCall as any).input?.mood) {
+        const newMood = (toolCall as any).input.mood as AtmosphereMood;
         console.log('🌍 Atmosphere changed:', newMood);
 
         // 1) Update UI state
