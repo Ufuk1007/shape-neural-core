@@ -5,9 +5,6 @@ import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
 import LegalModal from "@/components/LegalModal";
 import BindruneLogo from "@/components/BindruneLogo";
-import ProjectRack from "@/components/ProjectRack";
-import ProfileSection from "@/components/ProfileSection";
-import LegalModal from "@/components/LegalModal";
 
 const Index = () => {
   const [time, setTime] = useState(0);
