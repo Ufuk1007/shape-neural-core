@@ -203,7 +203,7 @@ const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
         {/* Links */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6 sm:mb-8">
           <a
-            href="https://www.linkedin.com/in/ufuk-avci-1346871b/"
+            href="https://www.linkedin.com/company/shapeneural/?viewAsMember=true"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm"
