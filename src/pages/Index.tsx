@@ -101,7 +101,6 @@ const Index = () => {
         <div className="relative z-30 w-full max-w-6xl">
           {/* TOP METADATA ROW */}
           <div className="flex items-center gap-4 mb-6 font-bold tracking-widest text-sm md:text-base">
-            <BindruneLogo size={48} onDark={true} showRed={false} />
             <div className="flex items-center gap-2 text-[#ff0055]">
               <span
                 style={{
