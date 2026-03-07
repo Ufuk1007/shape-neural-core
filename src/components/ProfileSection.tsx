@@ -1,5 +1,6 @@
 import { ExternalLink, FileText } from "lucide-react";
 import profilePortrait from "@/assets/profile-portrait.png";
+import BindruneLogo from "@/components/BindruneLogo";
 
 interface ProfileSectionProps {
   onOpenLegal: () => void;
@@ -172,11 +173,20 @@ const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
         {/* Right Column - Reserved for Animation */}
         <div className="relative order-1 lg:order-2 max-w-sm mx-auto lg:max-w-none">
           {/* TODO: SN → Code transformation animation will be added here */}
-          <div className="relative border-2 border-[#333] p-2 aspect-[3/4] bg-[#0a0a0a] flex items-center justify-center">
-            <div className="text-center font-mono">
-              <div className="text-[#333] text-xs tracking-[0.2em]">[ ANIMATION_SLOT ]</div>
-              <div className="text-[#222] text-xs mt-2">SN → CODE</div>
-            </div>
+          <div
+            className="relative border-2 border-[#333] p-8 aspect-[3/4] bg-[#0a0a0a] flex items-center justify-center"
+            style={{
+              boxShadow: "0 0 40px rgba(0, 255, 0, 0.08), inset 0 0 60px rgba(0, 255, 0, 0.03)",
+            }}
+          >
+            <BindruneLogo size={200} onDark={true} showRed={false} />
+            {/* Scanline overlay */}
+            <div
+              className="absolute inset-0 pointer-events-none opacity-10"
+              style={{
+                backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.15) 3px, rgba(0,0,0,0.15) 4px)",
+              }}
+            />
           </div>
         </div>
       </div>

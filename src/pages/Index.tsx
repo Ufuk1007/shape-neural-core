@@ -4,6 +4,10 @@ import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
 import LegalModal from "@/components/LegalModal";
+import BindruneLogo from "@/components/BindruneLogo";
+import ProjectRack from "@/components/ProjectRack";
+import ProfileSection from "@/components/ProfileSection";
+import LegalModal from "@/components/LegalModal";
 
 const Index = () => {
   const [time, setTime] = useState(0);
@@ -100,6 +104,7 @@ const Index = () => {
         <div className="relative z-30 w-full max-w-6xl">
           {/* TOP METADATA ROW */}
           <div className="flex items-center gap-4 mb-6 font-bold tracking-widest text-sm md:text-base">
+            <BindruneLogo size={48} onDark={true} showRed={false} />
             <div className="flex items-center gap-2 text-[#ff0055]">
               <span
                 style={{
@@ -166,8 +171,13 @@ const Index = () => {
           </div>
 
           {/* SUBTAG */}
-          <div className="inline-block bg-white text-black font-sans font-black text-lg px-4 py-2 -skew-x-12 transform mb-16">
-            DESIGNING INTELLIGENCE
+          <div className="mb-4">
+            <div className="inline-block bg-white text-black font-sans font-black text-lg px-4 py-2 -skew-x-12 transform">
+              DESIGNED INTELLIGENCE.
+            </div>
+          </div>
+          <div className="text-gray-400 font-mono text-sm md:text-base tracking-wider mb-16">
+            AI systems that move people, not just data.
           </div>
 
           {/* BUTTON INTERFACE */}
