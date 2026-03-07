@@ -101,7 +101,6 @@ const Index = () => {
         <div className="relative z-30 w-full max-w-6xl">
           {/* TOP METADATA ROW */}
           <div className="flex items-center gap-4 mb-6 font-bold tracking-widest text-sm md:text-base">
-            <BindruneLogo size={48} onDark={true} showRed={false} />
             <div className="flex items-center gap-2 text-[#ff0055]">
               <span
                 style={{
@@ -120,24 +119,11 @@ const Index = () => {
           <div className="relative mb-8">
             {/* Red Channel */}
             <div
-              className="absolute top-0 left-[-2px] text-red-600 opacity-70 select-none pointer-events-none"
+              className="absolute top-0 left-[-1px] text-red-600 opacity-70 select-none pointer-events-none"
               style={{
                 fontSize: "clamp(4rem, 10vw, 8rem)",
                 lineHeight: 0.85,
-                letterSpacing: "-4px",
-              }}
-            >
-              SHAPE
-              <br />
-              NEURAL_
-            </div>
-            {/* Blue Channel */}
-            <div
-              className="absolute top-0 left-[2px] text-blue-600 opacity-70 select-none pointer-events-none"
-              style={{
-                fontSize: "clamp(4rem, 10vw, 8rem)",
-                lineHeight: 0.85,
-                letterSpacing: "-4px",
+                letterSpacing: "5px",
               }}
             >
               SHAPE
@@ -150,7 +136,7 @@ const Index = () => {
               style={{
                 fontSize: "clamp(4rem, 10vw, 8rem)",
                 lineHeight: 0.85,
-                letterSpacing: "-4px",
+                letterSpacing: "5px",
               }}
             >
               SHAPE
