@@ -43,7 +43,19 @@ export default function handler(req: Request): Response {
   const meta = OG_META[path] || DEFAULT_OG;
   const origin = url.origin;
   const canonicalUrl = `${origin}${path}`;
-  const ogImage = `${origin}/og-image-social.png`;
+
+  // Dynamic OG image for projects and insights, static fallback otherwise
+  const insightMatch = path.match(/^\/insight\/([a-z0-9-]+)$/);
+  const projectMatch = path.match(/^\/project\/([a-z0-9-]+)$/);
+
+  let ogImage: string;
+  if (insightMatch) {
+    ogImage = `${origin}/api/og-image?type=insight&slug=${insightMatch[1]}`;
+  } else if (projectMatch) {
+    ogImage = `${origin}/api/og-image?type=project&slug=${projectMatch[1]}`;
+  } else {
+    ogImage = `${origin}/og-image-social.png`;
+  }
 
   const title = escapeHtml(meta.title);
   const description = escapeHtml(meta.description);
