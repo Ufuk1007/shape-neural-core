@@ -3,6 +3,7 @@ import { useParams, useLocation, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import SubpageShell from "@/components/SubpageShell";
 import InsightCard from "@/components/InsightCard";
+import ProjectHeaderViz from "@/components/ProjectHeaderViz";
 import { findProjectBySlug } from "@/data/projects";
 
 const getStatusColor = (status: string) => {
@@ -89,27 +90,8 @@ const ProjectPage = () => {
             <span>COLLABORATION: {project.collaboration}</span>
           </div>
 
-          {/* Generic header visualization — pulsing scanline */}
-          <div
-            className="w-full h-16 mb-8 relative overflow-hidden"
-            style={{ border: "1px solid #222", backgroundColor: "#0a0a0a" }}
-          >
-            <div
-              className="absolute inset-0"
-              style={{
-                background: `repeating-linear-gradient(90deg, transparent, transparent 4px, ${getStatusColor(project.status)}08 4px, ${getStatusColor(project.status)}08 8px)`,
-              }}
-            />
-            <div
-              className="absolute h-full w-px animate-pulse"
-              style={{
-                backgroundColor: getStatusColor(project.status),
-                boxShadow: `0 0 15px ${getStatusColor(project.status)}`,
-                left: "50%",
-                opacity: 0.6,
-              }}
-            />
-          </div>
+          {/* Per-project header visualization */}
+          <ProjectHeaderViz slug={project.slug} />
 
           {/* Brief */}
           <div className="mb-6">
