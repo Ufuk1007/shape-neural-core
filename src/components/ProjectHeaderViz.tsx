@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState, useMemo } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState, useMemo, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface ProjectHeaderVizProps {
   slug: string;
@@ -21,9 +21,17 @@ const ChainLinkAssembly = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const offset = Math.max(0, blocks.length - 5) * -56;
+
   return (
     <div className="w-full h-full flex items-center overflow-hidden px-4">
-      <div className="flex items-center gap-0 transition-transform duration-700" style={{ transform: `translateX(${Math.max(0, (blocks.length - 5)) * -48}px)` }}>
+      <div
+        className="flex items-center gap-0"
+        style={{
+          transform: `translateX(${offset}px)`,
+          transition: "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+        }}
+      >
         {blocks.map((id, i) => (
           <div key={id} className="flex items-center">
             {i > 0 && (
@@ -31,27 +39,53 @@ const ChainLinkAssembly = () => {
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.3 }}
-                className="w-4 h-px origin-left"
-                style={{ backgroundColor: "#00ff41" }}
-              />
+                className="w-4 h-px origin-left relative"
+              >
+                {/* Connection line with pulse */}
+                <motion.div
+                  className="absolute inset-0"
+                  style={{ backgroundColor: "#00ff41" }}
+                  animate={{ opacity: [0.4, 0.7, 0.4] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                />
+              </motion.div>
             )}
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: i < blocks.length - 3 ? Math.max(0.2, 1 - (blocks.length - 3 - i) * 0.3) : 1, scale: 1 }}
+              animate={{
+                opacity: i < blocks.length - 3 ? Math.max(0.2, 1 - (blocks.length - 3 - i) * 0.3) : 1,
+                scale: 1,
+              }}
               transition={{ duration: 0.4 }}
               className="relative flex-shrink-0"
             >
               <div
-                className="w-10 h-6"
+                className="w-12 h-7 flex items-center justify-center"
                 style={{ border: "1px solid #00ff41", backgroundColor: "transparent" }}
-              />
+              >
+                {/* Hex counter inside block */}
+                <span
+                  style={{
+                    color: "#00ff4180",
+                    fontSize: "8px",
+                    fontFamily: "'Courier New', monospace",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  {(id - 1).toString(16).toUpperCase().padStart(2, "0")}
+                </span>
+              </div>
+              {/* Connection flash */}
               {i === blocks.length - 1 && (
                 <motion.div
                   initial={{ opacity: 1 }}
                   animate={{ opacity: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
                   className="absolute inset-0"
-                  style={{ boxShadow: "0 0 12px #ffffff, 0 0 4px #00ff41", backgroundColor: "#ffffff11" }}
+                  style={{
+                    boxShadow: "0 0 12px #ffffff, 0 0 4px #00ff41",
+                    backgroundColor: "#ffffff11",
+                  }}
                 />
               )}
             </motion.div>
@@ -72,9 +106,24 @@ const BreathingIris = () => {
   ];
 
   return (
-    <div className="w-full h-full flex items-center justify-center relative">
-      {/* Horizontal scan line */}
+    <div
+      className="w-full h-full flex items-center justify-center relative overflow-hidden"
+      style={{
+        maskImage: "radial-gradient(circle, black 55%, transparent 85%)",
+        WebkitMaskImage: "radial-gradient(circle, black 55%, transparent 85%)",
+      }}
+    >
+      {/* Static horizontal scan line */}
       <div className="absolute w-full h-px opacity-20" style={{ backgroundColor: "#00ccff" }} />
+
+      {/* Moving vertical scan line */}
+      <motion.div
+        className="absolute w-full opacity-10"
+        style={{ height: "1px", backgroundColor: "#ff0055" }}
+        animate={{ y: [-50, 50, -50] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+      />
+
       {/* Rings */}
       {rings.map((ring, i) => (
         <motion.div
@@ -99,164 +148,267 @@ const BreathingIris = () => {
           }}
         />
       ))}
+
+      {/* Pupil with micro-jitter */}
+      <motion.div
+        className="absolute rounded-full"
+        style={{
+          width: 6,
+          height: 6,
+          backgroundColor: "#ff0055",
+        }}
+        animate={{
+          x: [0, 1.5, -1, 0.5, -1.5, 0],
+          y: [0, -1, 1.5, -0.5, 1, 0],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
     </div>
   );
 };
 
-// ─── MOD_03: PROBLAIM — Branching Node Tree ───
+// ─── MOD_03: PROBLAIM — Branching Node Tree (REWORKED) ───
 const BranchingNodeTree = () => {
-  const cycleMs = 5000;
+  const totalCycle = 5;
+  const fadeOutStart = 3.5;
+  const fadeOutDur = 0.5;
+  const pauseAfter = 1;
+
+  // Node definitions: { cx, cy, level, delay }
+  const nodes = useMemo(() => [
+    // Root
+    { cx: 40, cy: 40, r: 5, level: 0, delay: 0 },
+    // L1
+    { cx: 120, cy: 15, r: 3.5, level: 1, delay: 0.8 },
+    { cx: 120, cy: 40, r: 3.5, level: 1, delay: 0.9 },
+    { cx: 120, cy: 65, r: 3.5, level: 1, delay: 1.0 },
+    // L2 from top
+    { cx: 200, cy: 8, r: 2.5, level: 2, delay: 1.6 },
+    { cx: 200, cy: 22, r: 2.5, level: 2, delay: 1.7 },
+    // L2 from mid
+    { cx: 200, cy: 35, r: 2.5, level: 2, delay: 1.8 },
+    { cx: 200, cy: 50, r: 2.5, level: 2, delay: 1.9 },
+    // L2 from bottom
+    { cx: 260, cy: 58, r: 2.5, level: 2, delay: 2.0 },
+    { cx: 260, cy: 72, r: 2.5, level: 2, delay: 2.1 },
+  ], []);
+
+  // Paths: 90° angle L-shaped connections
+  const paths = useMemo(() => [
+    // Root to L1
+    { d: "M 44 40 L 44 15 L 116 15", delay: 0.3, level: 1 },
+    { d: "M 44 40 L 116 40", delay: 0.4, level: 1 },
+    { d: "M 44 40 L 44 65 L 116 65", delay: 0.5, level: 1 },
+    // L1-top to L2
+    { d: "M 124 15 L 124 8 L 196 8", delay: 1.2, level: 2 },
+    { d: "M 124 15 L 124 22 L 196 22", delay: 1.3, level: 2 },
+    // L1-mid to L2
+    { d: "M 124 40 L 124 35 L 196 35", delay: 1.4, level: 2 },
+    { d: "M 124 40 L 124 50 L 196 50", delay: 1.5, level: 2 },
+    // L1-bottom to L2
+    { d: "M 124 65 L 124 58 L 256 58", delay: 1.6, level: 2 },
+    { d: "M 124 65 L 124 72 L 256 72", delay: 1.7, level: 2 },
+  ], []);
+
+  const levelOpacity = [1, 0.8, 0.6];
 
   return (
     <div className="w-full h-full flex items-center justify-center">
       <svg viewBox="0 0 300 80" className="w-full h-full max-w-md" preserveAspectRatio="xMidYMid meet">
-        {/* Root */}
-        <motion.circle cx="40" cy="40" r="4" fill="#00ff41"
-          animate={{ opacity: [0, 1, 1, 0] }}
-          transition={{ duration: cycleMs / 1000, times: [0, 0.1, 0.8, 1], repeat: Infinity }}
-        />
-        {/* Level 1 branches */}
-        {[
-          { x: 120, y: 15 },
-          { x: 120, y: 40 },
-          { x: 120, y: 65 },
-        ].map((node, i) => (
-          <g key={`l1-${i}`}>
-            <motion.line x1="44" y1="40" x2="44" y2={node.y} stroke="#00ff41" strokeWidth="1"
-              animate={{ pathLength: [0, 1, 1, 0], opacity: [0, 0.7, 0.7, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.1, 0.25, 0.8, 1], repeat: Infinity }}
-              style={{ opacity: 0 }}
-            />
-            <motion.line x1="44" y1={node.y} x2={node.x} y2={node.y} stroke="#00ff41" strokeWidth="1"
-              animate={{ pathLength: [0, 1, 1, 0], opacity: [0, 0.7, 0.7, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.15, 0.3, 0.8, 1], repeat: Infinity }}
-              style={{ opacity: 0 }}
-            />
-            <motion.circle cx={node.x} cy={node.y} r="3" fill="#00ff41"
-              animate={{ opacity: [0, 0.8, 0.8, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.25, 0.35, 0.8, 1], repeat: Infinity }}
-            />
-          </g>
+        <defs>
+          <filter id="nodeGlow">
+            <feGaussianBlur stdDeviation="2" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+          <filter id="lineGlow">
+            <feGaussianBlur stdDeviation="1" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        {/* Paths */}
+        {paths.map((p, i) => (
+          <motion.path
+            key={`path-${i}`}
+            d={p.d}
+            fill="none"
+            stroke="#00ff41"
+            strokeWidth={1.5}
+            filter="url(#lineGlow)"
+            pathLength={1}
+            strokeDasharray="1"
+            strokeDashoffset={1}
+            animate={{
+              strokeDashoffset: [1, 0, 0, 1],
+              opacity: [0, levelOpacity[p.level], levelOpacity[p.level], 0],
+            }}
+            transition={{
+              duration: totalCycle,
+              times: [
+                p.delay / totalCycle,
+                (p.delay + 0.5) / totalCycle,
+                fadeOutStart / totalCycle,
+                (fadeOutStart + fadeOutDur) / totalCycle,
+              ],
+              repeat: Infinity,
+              repeatDelay: pauseAfter,
+              ease: "easeOut",
+            }}
+          />
         ))}
-        {/* Level 2 branches from top node */}
-        {[
-          { px: 120, py: 15, x: 200, y: 8 },
-          { px: 120, py: 15, x: 200, y: 22 },
-        ].map((node, i) => (
-          <g key={`l2a-${i}`}>
-            <motion.line x1={node.px} y1={node.py} x2={node.x} y2={node.py} stroke="#00ff41" strokeWidth="1"
-              animate={{ pathLength: [0, 1, 1, 0], opacity: [0, 0.5, 0.5, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.35, 0.5, 0.8, 1], repeat: Infinity }}
-              style={{ opacity: 0 }}
-            />
-            <motion.line x1={node.x} y1={node.py} x2={node.x} y2={node.y} stroke="#00ff41" strokeWidth="1"
-              animate={{ pathLength: [0, 1, 1, 0], opacity: [0, 0.5, 0.5, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.4, 0.55, 0.8, 1], repeat: Infinity }}
-              style={{ opacity: 0 }}
-            />
-            <motion.circle cx={node.x} cy={node.y} r="2.5" fill="#00ff41"
-              animate={{ opacity: [0, 0.6, 0.6, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.45, 0.55, 0.8, 1], repeat: Infinity }}
-            />
-          </g>
-        ))}
-        {/* Level 2 from middle node */}
-        {[
-          { px: 120, py: 40, x: 200, y: 35 },
-          { px: 120, py: 40, x: 200, y: 50 },
-        ].map((node, i) => (
-          <g key={`l2b-${i}`}>
-            <motion.line x1={node.px} y1={node.py} x2={node.x} y2={node.py} stroke="#00ff41" strokeWidth="1"
-              animate={{ pathLength: [0, 1, 1, 0], opacity: [0, 0.5, 0.5, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.35, 0.5, 0.8, 1], repeat: Infinity }}
-              style={{ opacity: 0 }}
-            />
-            <motion.line x1={node.x} y1={node.py} x2={node.x} y2={node.y} stroke="#00ff41" strokeWidth="1"
-              animate={{ pathLength: [0, 1, 1, 0], opacity: [0, 0.5, 0.5, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.4, 0.55, 0.8, 1], repeat: Infinity }}
-              style={{ opacity: 0 }}
-            />
-            <motion.circle cx={node.x} cy={node.y} r="2.5" fill="#00ff41"
-              animate={{ opacity: [0, 0.6, 0.6, 0] }}
-              transition={{ duration: cycleMs / 1000, times: [0.45, 0.55, 0.8, 1], repeat: Infinity }}
-            />
-          </g>
+
+        {/* Nodes */}
+        {nodes.map((n, i) => (
+          <motion.circle
+            key={`node-${i}`}
+            cx={n.cx}
+            cy={n.cy}
+            r={n.r}
+            fill="#00ff41"
+            filter="url(#nodeGlow)"
+            animate={{
+              opacity: [0, 0, levelOpacity[n.level], levelOpacity[n.level], 0],
+              scale: [0.5, 0.5, 1.5, 1, 0.8],
+            }}
+            transition={{
+              duration: totalCycle,
+              times: [
+                Math.max(0, (n.delay - 0.1)) / totalCycle,
+                n.delay / totalCycle,
+                (n.delay + 0.15) / totalCycle,
+                fadeOutStart / totalCycle,
+                (fadeOutStart + fadeOutDur) / totalCycle,
+              ],
+              repeat: Infinity,
+              repeatDelay: pauseAfter,
+              ease: "easeOut",
+            }}
+            style={{ transformOrigin: `${n.cx}px ${n.cy}px` }}
+          />
         ))}
       </svg>
     </div>
   );
 };
 
-// ─── MOD_04: HUMANCRYP.TO — Text Cipher Morph ───
+// ─── MOD_04: HUMANCRYP.TO — Text Cipher Morph (REWORKED) ───
 const GLYPHS = "█▓░◊∆ΨΩΣ¥₿#@&%".split("");
 const TARGET_TEXT = "HUMAN ⇌ CRYPTO";
 
 const TextCipherMorph = () => {
   const [chars, setChars] = useState<string[]>(Array(TARGET_TEXT.length).fill("█"));
-  const [phase, setPhase] = useState<"decrypt" | "hold" | "encrypt">("decrypt");
-  const [resolvedCount, setResolvedCount] = useState(0);
+  const [charColors, setCharColors] = useState<string[]>(Array(TARGET_TEXT.length).fill("#666"));
+  const rafRef = useRef<number>(0);
+  const startTimeRef = useRef<number>(0);
+
+  // Timing constants (ms)
+  const DECRYPT_PER_CHAR = 80;
+  const DECRYPT_TOTAL = TARGET_TEXT.length * DECRYPT_PER_CHAR;
+  const HOLD_DECODED = 1500;
+  const ENCRYPT_PER_CHAR = 80;
+  const ENCRYPT_TOTAL = TARGET_TEXT.length * ENCRYPT_PER_CHAR;
+  const HOLD_ENCRYPTED = 1000;
+  const FULL_CYCLE = DECRYPT_TOTAL + HOLD_DECODED + ENCRYPT_TOTAL + HOLD_ENCRYPTED;
+
+  const animate = useCallback((timestamp: number) => {
+    if (!startTimeRef.current) startTimeRef.current = timestamp;
+    const elapsed = (timestamp - startTimeRef.current) % FULL_CYCLE;
+
+    const newChars: string[] = [];
+    const newColors: string[] = [];
+
+    for (let i = 0; i < TARGET_TEXT.length; i++) {
+      if (TARGET_TEXT[i] === " ") {
+        newChars.push(" ");
+        newColors.push("transparent");
+        continue;
+      }
+
+      if (elapsed < DECRYPT_TOTAL) {
+        // Decrypting phase
+        const resolvedAt = i * DECRYPT_PER_CHAR;
+        if (elapsed >= resolvedAt + DECRYPT_PER_CHAR) {
+          // Just resolved — white flash for brief moment
+          const sinceLanded = elapsed - (resolvedAt + DECRYPT_PER_CHAR);
+          newChars.push(TARGET_TEXT[i]);
+          newColors.push(sinceLanded < 40 ? "#ffffff" : "#ff0055");
+        } else {
+          // Still scrambling
+          newChars.push(GLYPHS[Math.floor(Math.random() * GLYPHS.length)]);
+          // Flicker between dark shades
+          newColors.push(Math.random() > 0.5 ? "#888" : "#444");
+        }
+      } else if (elapsed < DECRYPT_TOTAL + HOLD_DECODED) {
+        // Hold decoded
+        newChars.push(TARGET_TEXT[i]);
+        newColors.push("#ff0055");
+      } else if (elapsed < DECRYPT_TOTAL + HOLD_DECODED + ENCRYPT_TOTAL) {
+        // Encrypting phase (right to left)
+        const encryptElapsed = elapsed - DECRYPT_TOTAL - HOLD_DECODED;
+        const encryptIdx = TARGET_TEXT.length - 1 - i;
+        const encryptAt = encryptIdx * ENCRYPT_PER_CHAR;
+        if (encryptElapsed >= encryptAt + ENCRYPT_PER_CHAR) {
+          newChars.push(GLYPHS[Math.floor(Math.random() * GLYPHS.length)]);
+          newColors.push(Math.random() > 0.5 ? "#888" : "#444");
+        } else if (encryptElapsed >= encryptAt) {
+          newChars.push(GLYPHS[Math.floor(Math.random() * GLYPHS.length)]);
+          newColors.push("#666");
+        } else {
+          newChars.push(TARGET_TEXT[i]);
+          newColors.push("#ff0055");
+        }
+      } else {
+        // Hold encrypted
+        if (Math.random() > 0.7) {
+          newChars.push(GLYPHS[Math.floor(Math.random() * GLYPHS.length)]);
+        } else {
+          newChars.push(chars[i] || "█");
+        }
+        newColors.push(Math.random() > 0.5 ? "#888" : "#444");
+      }
+    }
+
+    setChars(newChars);
+    setCharColors(newColors);
+    rafRef.current = requestAnimationFrame(animate);
+  }, []);
 
   useEffect(() => {
-    let frame: number;
-    let idx = 0;
-    let holdTimer: ReturnType<typeof setTimeout>;
-
-    const scrambleInterval = setInterval(() => {
-      setChars((prev) =>
-        prev.map((ch, i) => {
-          if (phase === "decrypt" && i < resolvedCount) return TARGET_TEXT[i];
-          if (phase === "encrypt" && i >= TARGET_TEXT.length - resolvedCount) return GLYPHS[Math.floor(Math.random() * GLYPHS.length)];
-          if (TARGET_TEXT[i] === " ") return " ";
-          return Math.random() > 0.6 ? GLYPHS[Math.floor(Math.random() * GLYPHS.length)] : prev[i];
-        })
-      );
-    }, 60);
-
-    const resolveInterval = setInterval(() => {
-      if (phase === "decrypt") {
-        setResolvedCount((c) => {
-          if (c >= TARGET_TEXT.length) {
-            clearInterval(resolveInterval);
-            holdTimer = setTimeout(() => {
-              setPhase("encrypt");
-              setResolvedCount(0);
-            }, 1500);
-            return c;
-          }
-          return c + 1;
-        });
-      } else if (phase === "encrypt") {
-        setResolvedCount((c) => {
-          if (c >= TARGET_TEXT.length) {
-            clearInterval(resolveInterval);
-            holdTimer = setTimeout(() => {
-              setPhase("decrypt");
-              setResolvedCount(0);
-            }, 1000);
-            return c;
-          }
-          return c + 1;
-        });
-      }
-    }, 80);
-
-    return () => {
-      clearInterval(scrambleInterval);
-      clearInterval(resolveInterval);
-      clearTimeout(holdTimer);
-      if (frame) cancelAnimationFrame(frame);
-    };
-  }, [phase]);
+    rafRef.current = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [animate]);
 
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="flex" style={{ fontFamily: "'Courier New', monospace", letterSpacing: "0.3em", fontSize: "14px" }}>
+    <div className="w-full h-full flex items-center justify-center relative">
+      {/* Scanline behind text */}
+      <div
+        className="absolute w-full opacity-15"
+        style={{ height: "1px", backgroundColor: "#ff0055", top: "50%" }}
+      />
+      <div
+        className="flex"
+        style={{
+          fontFamily: "'Courier New', monospace",
+          letterSpacing: "0.3em",
+          fontSize: "14px",
+        }}
+      >
         {chars.map((ch, i) => (
           <span
             key={i}
             style={{
-              color: phase === "decrypt" && i < resolvedCount ? "#ff0055" : "#666",
-              transition: "color 0.15s",
+              color: charColors[i],
+              transition: "color 0.05s",
               width: "1ch",
               textAlign: "center",
               display: "inline-block",
@@ -270,7 +422,7 @@ const TextCipherMorph = () => {
   );
 };
 
-// ─── MOD_05: SAPIENTSHIFT — Flowing Data Particles ───
+// ─── MOD_05: SAPIENTSHIFT — Flowing Data Particles (REWORKED) ───
 const FlowingDataParticles = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -289,60 +441,119 @@ const FlowingDataParticles = () => {
 
     const w = () => canvas.offsetWidth;
     const h = () => canvas.offsetHeight;
-    const midX = () => w() / 2;
+
+    const LANES = 6;
+    const PARTICLE_COUNT = 55;
 
     interface Particle {
       x: number;
       y: number;
+      lane: number;
       speed: number;
-      size: number;
+      baseSize: number;
       transformed: boolean;
+      trail: { x: number; y: number }[];
     }
 
     const particles: Particle[] = [];
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      const lane = i % LANES;
+      const laneH = h() / LANES;
       particles.push({
         x: Math.random() * w(),
-        y: Math.random() * h(),
-        speed: 0.3 + Math.random() * 0.8,
-        size: 1.5,
+        y: laneH * lane + laneH * 0.5 + (Math.random() - 0.5) * laneH * 0.4,
+        lane,
+        speed: 0.3 + Math.random() * 0.6,
+        baseSize: 1 + Math.random() * 1.5,
         transformed: false,
+        trail: [],
       });
     }
 
     let animId: number;
-    const draw = () => {
-      ctx.clearRect(0, 0, w(), h());
+    let scanY = 0;
+    let scanDir = 1;
 
-      // Transform zone
-      const mx = midX();
+    const draw = () => {
+      const cw = w();
+      const ch = h();
+      ctx.clearRect(0, 0, cw, ch);
+
+      const zoneX = cw / 2;
+      const zoneW = 6;
+
+      // Transform zone strip
+      const grad = ctx.createLinearGradient(zoneX - zoneW, 0, zoneX + zoneW, 0);
+      grad.addColorStop(0, "transparent");
+      grad.addColorStop(0.5, "rgba(0,255,65,0.18)");
+      grad.addColorStop(1, "transparent");
+      ctx.fillStyle = grad;
+      ctx.fillRect(zoneX - zoneW, 0, zoneW * 2, ch);
+
+      // Zone scanline
+      scanY += 0.5 * scanDir;
+      if (scanY > ch || scanY < 0) scanDir *= -1;
       ctx.beginPath();
-      ctx.moveTo(mx, 0);
-      ctx.lineTo(mx, h());
-      ctx.strokeStyle = "#00ff4120";
+      ctx.moveTo(zoneX - zoneW, scanY);
+      ctx.lineTo(zoneX + zoneW, scanY);
+      ctx.strokeStyle = "rgba(0,255,65,0.4)";
       ctx.lineWidth = 1;
       ctx.stroke();
 
       for (const p of particles) {
-        p.x += p.speed;
-        p.transformed = p.x > mx;
+        const wasTransformed = p.transformed;
+        p.transformed = p.x > zoneX;
 
-        if (p.x > w() + 5) {
-          p.x = -5;
-          p.y = Math.random() * h();
-          p.speed = 0.3 + Math.random() * 0.8;
-          p.transformed = false;
+        // Speed up after transform
+        const spd = p.transformed ? p.speed * 1.5 : p.speed;
+        p.x += spd;
+
+        // Store trail for transformed particles
+        if (p.transformed) {
+          p.trail.push({ x: p.x, y: p.y });
+          if (p.trail.length > 4) p.trail.shift();
+        } else {
+          p.trail = [];
         }
 
+        // Reset
+        if (p.x > cw + 5) {
+          const laneH = ch / LANES;
+          p.x = -5;
+          p.y = laneH * p.lane + laneH * 0.5 + (Math.random() - 0.5) * laneH * 0.4;
+          p.speed = 0.3 + Math.random() * 0.6;
+          p.transformed = false;
+          p.trail = [];
+        }
+
+        // Flash white when crossing zone
+        const inZone = Math.abs(p.x - zoneX) < zoneW;
+
+        // Draw trail
+        if (p.trail.length > 1) {
+          for (let t = 0; t < p.trail.length - 1; t++) {
+            const alpha = (t / p.trail.length) * 0.3;
+            ctx.beginPath();
+            ctx.arc(p.trail[t].x, p.trail[t].y, p.baseSize * 0.6, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0,255,65,${alpha})`;
+            ctx.fill();
+          }
+        }
+
+        // Draw particle
+        const size = p.transformed ? p.baseSize * 1.8 : p.baseSize;
+        const color = inZone ? "#ffffff" : p.transformed ? "#00ff41" : "#444";
+
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.transformed ? 2 : 1.5, 0, Math.PI * 2);
-        ctx.fillStyle = p.transformed ? "#00ff41" : "#666";
+        ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+        ctx.fillStyle = color;
         ctx.fill();
 
-        if (p.transformed) {
+        // Glow ring for transformed
+        if (p.transformed && !inZone) {
           ctx.beginPath();
-          ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
-          ctx.fillStyle = "#00ff4110";
+          ctx.arc(p.x, p.y, size + 3, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(0,255,65,0.15)";
           ctx.fill();
         }
       }
@@ -382,11 +593,11 @@ const OscillatingWaveform = () => {
     const h = () => canvas.offsetHeight;
 
     const waves = [
-      { freq: 0.008, amp: 0.35, speed: 0.012, color: "#00ff41", opacity: 0.3 },
-      { freq: 0.015, amp: 0.25, speed: 0.02, color: "#00ccff", opacity: 0.35 },
-      { freq: 0.025, amp: 0.18, speed: 0.035, color: "#00ccff", opacity: 0.25 },
-      { freq: 0.05, amp: 0.1, speed: 0.06, color: "#ff0055", opacity: 0.3 },
-      { freq: 0.08, amp: 0.06, speed: 0.1, color: "#ff0055", opacity: 0.2 },
+      { freq: 0.008, amp: 0.35, speed: 0.012, color: "#00ff41", opacity: 0.3, glow: true },
+      { freq: 0.015, amp: 0.25, speed: 0.02, color: "#00ccff", opacity: 0.35, glow: false },
+      { freq: 0.025, amp: 0.18, speed: 0.035, color: "#00ccff", opacity: 0.25, glow: false },
+      { freq: 0.05, amp: 0.1, speed: 0.06, color: "#ff0055", opacity: 0.3, glow: false },
+      { freq: 0.08, amp: 0.06, speed: 0.1, color: "#ff0055", opacity: 0.2, glow: false },
     ];
 
     let t = 0;
@@ -407,15 +618,42 @@ const OscillatingWaveform = () => {
         ctx.stroke();
       }
 
+      // Center zero line
+      ctx.strokeStyle = "#333";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, ch / 2);
+      ctx.lineTo(cw, ch / 2);
+      ctx.stroke();
+
       // Waves
-      for (const wave of waves) {
+      for (let wi = 0; wi < waves.length; wi++) {
+        const wave = waves[wi];
+        // Amplitude modulation
+        const ampMod = 0.8 + 0.2 * Math.sin(t * 0.001 * (wi + 1));
+
+        // Glow pass for bass wave
+        if (wave.glow) {
+          ctx.beginPath();
+          ctx.strokeStyle = wave.color;
+          ctx.lineWidth = 3;
+          ctx.globalAlpha = wave.opacity * 0.15;
+          for (let x = 0; x < cw; x++) {
+            const y = ch / 2 + Math.sin(x * wave.freq + t * wave.speed) * ch * wave.amp * ampMod;
+            if (x === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+        }
+
+        // Main wave
         ctx.beginPath();
         ctx.strokeStyle = wave.color;
         ctx.lineWidth = 1;
         ctx.globalAlpha = wave.opacity;
 
         for (let x = 0; x < cw; x++) {
-          const y = ch / 2 + Math.sin((x * wave.freq) + (t * wave.speed)) * (ch * wave.amp);
+          const y = ch / 2 + Math.sin(x * wave.freq + t * wave.speed) * ch * wave.amp * ampMod;
           if (x === 0) ctx.moveTo(x, y);
           else ctx.lineTo(x, y);
         }
@@ -435,15 +673,28 @@ const OscillatingWaveform = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="w-full h-full" />;
+  return (
+    <div
+      className="w-full h-full"
+      style={{
+        maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+        WebkitMaskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+      }}
+    >
+      <canvas ref={canvasRef} className="w-full h-full" />
+    </div>
+  );
 };
 
 // ─── Fallback ───
 const GenericViz = () => (
   <div className="w-full h-full relative overflow-hidden">
-    <div className="absolute inset-0" style={{
-      background: "repeating-linear-gradient(90deg, transparent, transparent 4px, #00ff4108 4px, #00ff4108 8px)",
-    }} />
+    <div
+      className="absolute inset-0"
+      style={{
+        background: "repeating-linear-gradient(90deg, transparent, transparent 4px, #00ff4108 4px, #00ff4108 8px)",
+      }}
+    />
     <motion.div
       className="absolute h-full w-px"
       style={{ backgroundColor: "#00ff41", boxShadow: "0 0 15px #00ff41", left: "50%", opacity: 0.6 }}
