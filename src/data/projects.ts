@@ -24,6 +24,7 @@ export interface Project {
   collaborationUrl?: string;
   brief: string;
   techStack: string[];
+  signalTags: string[];
   year: number;
   category: string;
   tags: string[];
@@ -43,8 +44,9 @@ export const PROJECTS: Project[] = [
     status: "LIVE",
     category: "BLOCKCHAIN",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
-    brief: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching – digital archaeology for decentralized potential.",
-    techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Tailwind CSS"],
+    brief: "AI-powered blockchain relevance analysis for the German Mittelstand. The platform ingests a company's profile — via URL crawl or manual input — matches it against 250+ validated use cases across 74 industries, and delivers a data-driven relevance score with concrete recommendations. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
+    signalTags: ["250+ VALIDATED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "REGIONAL INTELLIGENCE", "SELF-REINFORCING DATA FLYWHEEL", "BLOCKCHAIN REALLABOR COLLABORATION"],
+    techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4", "Perplexity", "Pinecone", "RAG", "Tailwind CSS"],
     image: sapientBlockImg,
     url: "https://sapientblock.com",
     insights: [],
@@ -58,8 +60,9 @@ export const PROJECTS: Project[] = [
     status: "BETA",
     category: "BIOMETRIC_AI",
     tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
-    brief: "Multi-modal emotion recognition system that reads facial expressions and eye behaviors separately, generating adaptive music based on true emotional state rather than displayed affect.",
-    techStack: ["React", "TypeScript", "Supabase", "MediaPipe", "Mureka_API"],
+    brief: "A multi-modal emotion recognition system that distinguishes between displayed and experienced emotion — then generates music that responds to what you actually feel, not what you show. The system fuses facial expression analysis, gaze tracking, and pupil dynamics in real-time, entirely within the browser. No server ever sees your biometric data.",
+    signalTags: ["DISPLAYED vs. EXPERIENCED EMOTION", "EMER THEORY", "GAP-AWARE INTELLIGENCE", "SAFETY OVERRIDE LOGIC", "100% BROWSER-BASED BIOMETRICS", "THERAPEUTIC MUSIC GENERATION"],
+    techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
     image: melodeyeImg,
     url: "https://melodeye.com",
     insights: [],
@@ -73,8 +76,9 @@ export const PROJECTS: Project[] = [
     status: "BETA",
     category: "AI_ANALYSIS",
     tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
-    brief: "AI-orchestrated problem decomposition engine. Transforms cognitive noise into crystallized insight pyramids through multi-model synthesis.",
-    techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Perplexity", "Stripe"],
+    brief: "An AI-orchestrated problem decomposition engine that treats complex problems like an experienced consultant would — systematically breaking them down, illuminating them from multiple perspectives, enriching them with external research, and deepening the analysis iteratively over days and weeks. The system runs a multi-LLM pipeline autonomously. You bring the problem. It builds the clarity.",
+    signalTags: ["MULTI-LLM ORCHESTRATION", "INSIGHT PYRAMID", "12 ARCHETYPE PERSPECTIVES", "AUTONOMOUS DAILY ANALYSIS", "4-PHASE PIPELINE", "PROBLEM-SOLUTION CO-EVOLUTION"],
+    techStack: ["React", "TypeScript", "Supabase", "Claude", "GPT-4", "Gemini", "Perplexity", "Stripe", "XYFlow"],
     image: problaimImg,
     url: "https://problaim.com",
     insights: [],
@@ -88,8 +92,9 @@ export const PROJECTS: Project[] = [
     status: "ARCHIVED",
     category: "CRYPTO_EDUCATION",
     tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
-    brief: "Crypto-education platform where cryptocurrencies take human form. Each coin reveals its distinct character through AI-generated personas, transforming complex blockchain concepts into memorable learning journeys.",
-    techStack: ["Wix", "AI Image Generation", "Video Production", "Storytelling"],
+    brief: "A crypto-education platform where digital currencies take human form. Each cryptocurrency is mapped to one of Jung's 12 archetypes, given a personality shaped by the Plutchik emotion model, and brought to life through AI-generated narratives, voice, and video. The result: complex blockchain concepts become memorable characters you can actually relate to.",
+    signalTags: ["JUNGIAN ARCHETYPES", "PLUTCHIK EMOTION MODEL", "AI AVATAR PIPELINE", "AUTOMATED VIDEO PRODUCTION", "CRYPTO AS CHARACTER", "STORY-DRIVEN EDUCATION"],
+    techStack: ["Python", "OpenAI", "ElevenLabs", "D-ID Avatars", "DALL-E", "CoinGecko API", "MoviePy"],
     image: humancryptoImg,
     url: "https://humancryp.to",
     insights: [],
@@ -103,8 +108,9 @@ export const PROJECTS: Project[] = [
     status: "BETA",
     category: "AI_PLATFORM",
     tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
-    brief: "AI-powered potential analysis platform. Analyze your AI potential in 5 minutes – receive tailored use cases, actionable recommendations, and a personal command center for sustainable transformation. From insight to implementation.",
-    techStack: ["React", "TypeScript", "Supabase Edge Functions", "OpenAI", "Perplexity", "DeepSeek", "Tailwind CSS"],
+    brief: "An AI-powered potential analysis platform that translates the abstract promise of artificial intelligence into personalized, actionable insight — for companies, employees, and individuals. Three distinct analysis pipelines, one shared knowledge base of 318 curated AI use cases, and an autonomous Creative Guild of 10 AI agents that generate tailored articles and visuals based on your specific context.",
+    signalTags: ["3 ANALYSIS PIPELINES (B2B / EMPLOYEE / B2C)", "318 CURATED AI USE CASES", "CREATIVE GUILD: 10 AI AGENTS", "PERSONALIZED MAGAZINE", "5-FACTOR READINESS SCORE", "FROM INSIGHT TO ACTION"],
+    techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4o", "Perplexity Sonar", "DeepSeek", "DALL-E 3", "Tailwind CSS"],
     image: sapientshiftImg,
     url: "https://sapientshift.com",
     insights: [],
@@ -118,8 +124,9 @@ export const PROJECTS: Project[] = [
     status: "LIVE",
     category: "GENERATIVE_AI",
     tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
-    brief: "Real-time market sentiment translated into AI-generated soundscapes. Bitcoin's emotional pulse, rendered as ambient music through neural synthesis.",
-    techStack: ["React", "Supabase Edge Functions", "Suno API", "Framer Motion"],
+    brief: "Real-time Bitcoin market data translated into a continuous AI-generated soundscape. The system decomposes market signals across five temporal layers — from monthly macro trends to individual whale transactions — and maps each layer to a distinct musical dimension. The output is a 24/7 livestream where the music genuinely reflects market state: not a gimmick, but an information-dense audio layer that evolves with every trade.",
+    signalTags: ["5 TEMPORAL LAYERS", "MONTHLY→BASS / WEEKLY→BEAT / DAILY→HARMONY / HOURLY→MELODY / REALTIME→TEXTURE", "24/7 GENERATIVE LIVESTREAM", "DUAL AI PROVIDER", "SMART TRACK REUSE", "MARKET SONIFICATION"],
+    techStack: ["Python", "FastAPI", "ACE-Step 1.5", "MiniMax M2.5", "React", "Supabase", "OBS Studio", "Cloudflare Tunnel"],
     url: "https://www.youtube.com/@BitcoinVibesFM",
     insights: [
       {
