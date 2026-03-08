@@ -1,8 +1,8 @@
 {
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/project/:slug", "destination": "/api/og?path=/project/:slug" },
+    { "source": "/insight/:slug", "destination": "/api/og?path=/insight/:slug" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
