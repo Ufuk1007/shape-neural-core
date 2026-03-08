@@ -54,18 +54,18 @@ function BrandHeader() {
           shapeneural.com
         </span>
       </div>
-      <div style={{ borderTop: `1px solid ${DIVIDER}`, width: '100%', marginTop: '20px' }} />
+      <div style={{ borderTop: `1px solid ${DIVIDER}`, width: '100%', marginTop: '16px' }} />
     </div>
   );
 }
 
-function FooterBar({ left, right }: { left: string; right: string }) {
+function FooterBar({ left, right, accentLeft }: { left: string; right: string; accentLeft?: boolean }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
-      <div style={{ borderTop: `1px solid ${DIVIDER}`, width: '100%', marginBottom: '20px' }} />
+      <div style={{ borderTop: `1px solid ${DIVIDER}`, width: '100%', marginBottom: '16px' }} />
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <span style={{ color: MUTED, fontSize: '14px', fontFamily: FONT }}>{left}</span>
-        <span style={{ color: MUTED, fontSize: '14px', fontFamily: FONT }}>{right}</span>
+        <span style={{ color: accentLeft ? '#ff0055' : MUTED, fontSize: '16px', fontFamily: FONT }}>{left}</span>
+        <span style={{ color: MUTED, fontSize: '16px', fontFamily: FONT }}>{right}</span>
       </div>
     </div>
   );
@@ -86,16 +86,18 @@ function renderInsight(meta: any) {
       <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '32px 48px 32px 40px' }}>
         <BrandHeader />
         <div style={{ display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center' }}>
-          <span style={{ color: CYAN, fontSize: '14px', fontFamily: FONT, letterSpacing: '2px', textTransform: 'uppercase' as any }}>
-            {meta.lens}
-          </span>
+          <div style={{ display: 'flex', borderLeft: `3px solid ${CYAN}`, paddingLeft: '8px' }}>
+            <span style={{ color: CYAN, fontSize: '18px', fontFamily: FONT, letterSpacing: '2px', textTransform: 'uppercase' as any }}>
+              {meta.lens}
+            </span>
+          </div>
           <span style={{
-            color: GREEN, fontSize: '28px', fontWeight: 700, lineHeight: 1.3, fontFamily: FONT, marginTop: '8px',
+            color: GREEN, fontSize: '36px', fontWeight: 700, lineHeight: 1.3, fontFamily: FONT, marginTop: '8px',
           }}>
             {title}
           </span>
           <span style={{
-            color: MUTED, fontSize: '16px', lineHeight: 1.5, fontFamily: FONT, marginTop: '12px', maxWidth: '950px',
+            color: TEXT_LIGHT, fontSize: '20px', lineHeight: 1.5, fontFamily: FONT, marginTop: '12px', maxWidth: '950px',
           }}>
             {desc}
           </span>
@@ -103,6 +105,7 @@ function renderInsight(meta: any) {
         <FooterBar
           left={`${meta.projectTitle} [${meta.projectId}]`}
           right={meta.date}
+          accentLeft
         />
       </div>
     </div>
@@ -132,7 +135,7 @@ function renderProject(meta: any) {
             {meta.title}
           </span>
           <span style={{
-            color: MUTED, fontSize: '16px', lineHeight: 1.5, fontFamily: FONT, marginTop: '12px', maxWidth: '950px',
+            color: TEXT_LIGHT, fontSize: '20px', lineHeight: 1.5, fontFamily: FONT, marginTop: '12px', maxWidth: '950px',
           }}>
             {desc}
           </span>
