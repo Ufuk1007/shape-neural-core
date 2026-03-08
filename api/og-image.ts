@@ -82,8 +82,10 @@ function renderInsight(meta: any) {
         backgroundColor: BG,
         padding: '0',
         fontFamily: '"Courier New", monospace',
+        borderTop: `1px solid ${BORDER}`,
+        borderRight: `1px solid ${BORDER}`,
+        borderBottom: `1px solid ${BORDER}`,
         borderLeft: `3px solid ${GREEN}`,
-        border: `1px solid ${BORDER}`,
       }}
     >
       {/* Top padding + scanlines */}
@@ -203,8 +205,10 @@ function renderProject(meta: any) {
         backgroundColor: BG,
         padding: '0',
         fontFamily: '"Courier New", monospace',
+        borderTop: `1px solid ${BORDER}`,
+        borderRight: `1px solid ${BORDER}`,
+        borderBottom: `1px solid ${BORDER}`,
         borderLeft: `3px solid ${GREEN}`,
-        border: `1px solid ${BORDER}`,
       }}
     >
       {/* Top scanlines */}
@@ -281,8 +285,10 @@ function renderDefault() {
         height: '100%',
         backgroundColor: BG,
         fontFamily: '"Courier New", monospace',
+        borderTop: `1px solid ${BORDER}`,
+        borderRight: `1px solid ${BORDER}`,
+        borderBottom: `1px solid ${BORDER}`,
         borderLeft: `3px solid ${GREEN}`,
-        border: `1px solid ${BORDER}`,
         alignItems: 'center',
         justifyContent: 'center',
       }}
