@@ -6,6 +6,7 @@ export interface Project {
   title: string;
   collaboration: string;
   collaborationUrl?: string;
+  year: string;
   status: "LIVE" | "BETA" | "ARCHIVED";
   tags: string[];
   desc: string;
