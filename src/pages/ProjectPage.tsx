@@ -173,10 +173,28 @@ const ProjectPage = () => {
         )}
 
         {sortedInsights.length === 0 && (
-          <div className="border-t pt-8 text-center py-20" style={{ borderColor: "#222" }}>
-            <span className="text-xs tracking-[0.3em]" style={{ color: "#444" }}>
-              {">"} NO_INSIGHTS_AVAILABLE // CHECK_BACK_LATER
-            </span>
+          <div className="border-t pt-8" style={{ borderColor: "#222" }}>
+            <div className="flex items-center gap-4 mb-6">
+              <span className="text-xs tracking-[0.3em] font-bold" style={{ color: "#0f0" }}>
+                INSIGHT_FEED
+              </span>
+              <span className="text-xs tracking-widest" style={{ color: "#666" }}>
+                // INCOMING
+              </span>
+            </div>
+            <div
+              className="py-12 px-6 text-center"
+              style={{ backgroundColor: "#0a0a0a", border: "1px solid #1a1a1a" }}
+            >
+              <div className="space-y-2">
+                <p className="text-xs tracking-[0.2em] font-mono" style={{ color: "#00ff41" }}>
+                  {">"} FIRST_TRANSMISSION_PENDING
+                </p>
+                <p className="text-xs tracking-widest" style={{ color: "#444" }}>
+                  INSIGHTS_WILL_APPEAR_HERE // CHECK_BACK_SOON
+                </p>
+              </div>
+            </div>
           </div>
         )}
       </SubpageShell>
