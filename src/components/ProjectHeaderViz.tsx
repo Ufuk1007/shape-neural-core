@@ -5,7 +5,9 @@ interface ProjectHeaderVizProps {
   slug: string;
 }
 
-// ─── MOD_01: SAPIENTBLOCK — Chain-Link Assembly ───
+// ─── MOD_01: SAPIENTBLOCK — Chain-Link Assembly (Sliding Window) ───
+const MAX_VISIBLE_BLOCKS = 10;
+
 const ChainLinkAssembly = () => {
   const [blocks, setBlocks] = useState<number[]>([]);
   const counterRef = useRef(0);
@@ -15,83 +17,72 @@ const ChainLinkAssembly = () => {
       counterRef.current += 1;
       setBlocks((prev) => {
         const next = [...prev, counterRef.current];
-        return next.length > 8 ? next.slice(1) : next;
+        return next.length > MAX_VISIBLE_BLOCKS ? next.slice(next.length - MAX_VISIBLE_BLOCKS) : next;
       });
     }, 800);
     return () => clearInterval(interval);
   }, []);
 
-  // Use counter to drive continuous scrolling, not array length
-  const offset = Math.max(0, counterRef.current - 5) * -56;
-
   return (
     <div className="w-full h-full flex items-center overflow-hidden px-4">
-      <div
-        className="flex items-center gap-0"
-        style={{
-          transform: `translateX(${offset}px)`,
-          transition: "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
-        }}
-      >
-        {blocks.map((id, i) => (
-          <div key={id} className="flex items-center">
-            {i > 0 && (
-              <motion.div
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 0.3 }}
-                className="w-4 h-px origin-left relative"
-              >
-                {/* Connection line with pulse */}
-                <motion.div
-                  className="absolute inset-0"
-                  style={{ backgroundColor: "#00ff41" }}
-                  animate={{ opacity: [0.4, 0.7, 0.4] }}
-                  transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                />
-              </motion.div>
-            )}
+      <div className="flex items-center gap-0 w-full justify-start">
+        <AnimatePresence mode="popLayout">
+          {blocks.map((id, i) => (
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{
-                opacity: i < blocks.length - 3 ? Math.max(0.2, 1 - (blocks.length - 3 - i) * 0.3) : 1,
-                scale: 1,
-              }}
+              key={id}
+              className="flex items-center"
+              initial={{ opacity: 0, scale: 0.5, width: 0 }}
+              animate={{ opacity: 1, scale: 1, width: "auto" }}
+              exit={{ opacity: 0, scale: 0.5, width: 0 }}
               transition={{ duration: 0.4 }}
-              className="relative flex-shrink-0"
             >
-              <div
-                className="w-12 h-7 flex items-center justify-center"
-                style={{ border: "1px solid #00ff41", backgroundColor: "transparent" }}
-              >
-                {/* Hex counter inside block */}
-                <span
-                  style={{
-                    color: "#00ff4180",
-                    fontSize: "8px",
-                    fontFamily: "'Courier New', monospace",
-                    letterSpacing: "1px",
-                  }}
-                >
-                  {(id - 1).toString(16).toUpperCase().padStart(2, "0")}
-                </span>
-              </div>
-              {/* Connection flash */}
-              {i === blocks.length - 1 && (
+              {i > 0 && (
                 <motion.div
-                  initial={{ opacity: 1 }}
-                  animate={{ opacity: 0 }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  className="absolute inset-0"
-                  style={{
-                    boxShadow: "0 0 12px #ffffff, 0 0 4px #00ff41",
-                    backgroundColor: "#ffffff11",
-                  }}
-                />
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
+                  className="w-4 h-px origin-left relative"
+                >
+                  <motion.div
+                    className="absolute inset-0"
+                    style={{ backgroundColor: "#00ff41" }}
+                    animate={{ opacity: [0.4, 0.7, 0.4] }}
+                    transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                  />
+                </motion.div>
               )}
+              <div className="relative flex-shrink-0">
+                <div
+                  className="w-12 h-7 flex items-center justify-center"
+                  style={{ border: "1px solid #00ff41", backgroundColor: "transparent" }}
+                >
+                  <span
+                    style={{
+                      color: "#00ff4180",
+                      fontSize: "8px",
+                      fontFamily: "'Courier New', monospace",
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    {(id - 1).toString(16).toUpperCase().padStart(2, "0")}
+                  </span>
+                </div>
+                {i === blocks.length - 1 && (
+                  <motion.div
+                    initial={{ opacity: 1 }}
+                    animate={{ opacity: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    className="absolute inset-0"
+                    style={{
+                      boxShadow: "0 0 12px #ffffff, 0 0 4px #00ff41",
+                      backgroundColor: "#ffffff11",
+                    }}
+                  />
+                )}
+              </div>
             </motion.div>
-          </div>
-        ))}
+          ))}
+        </AnimatePresence>
       </div>
     </div>
   );
