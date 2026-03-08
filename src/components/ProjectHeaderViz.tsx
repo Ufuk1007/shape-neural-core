@@ -21,7 +21,8 @@ const ChainLinkAssembly = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const offset = Math.max(0, blocks.length - 5) * -56;
+  // Use counter to drive continuous scrolling, not array length
+  const offset = Math.max(0, counterRef.current - 5) * -56;
 
   return (
     <div className="w-full h-full flex items-center overflow-hidden px-4">
