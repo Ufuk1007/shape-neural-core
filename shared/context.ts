@@ -19,6 +19,7 @@ export const PROJECTS: Project[] = [
     title: "SAPIENTBLOCK",
     collaboration: "BLOCKCHAIN REALLABOR",
     collaborationUrl: "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/",
+    year: "2024",
     status: "LIVE",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
     desc: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching – digital archaeology for decentralized potential.",
