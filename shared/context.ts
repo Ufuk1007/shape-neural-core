@@ -4,8 +4,8 @@
 export interface Project {
   id: string;
   title: string;
-  client: string;
-  year: string;
+  collaboration: string;
+  collaborationUrl?: string;
   status: "LIVE" | "BETA" | "ARCHIVED";
   tags: string[];
   desc: string;
@@ -16,8 +16,8 @@ export const PROJECTS: Project[] = [
   {
     id: "MOD_01",
     title: "SAPIENTBLOCK",
-    client: "CLASSIFIED",
-    year: "2024",
+    collaboration: "BLOCKCHAIN REALLABOR",
+    collaborationUrl: "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/",
     status: "LIVE",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
     desc: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching – digital archaeology for decentralized potential.",
@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
   {
     id: "MOD_02",
     title: "MELODEYE",
-    client: "RESEARCH_PROJECT",
+    collaboration: "EIGENINITIATIVE",
     year: "2024",
     status: "LIVE",
     tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
   {
     id: "MOD_03",
     title: "PROBLAIM",
-    client: "CLASSIFIED",
+    collaboration: "EIGENINITIATIVE",
     year: "2025",
     status: "BETA",
     tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
   {
     id: "MOD_04",
     title: "HUMANCRYP.TO",
-    client: "RESEARCH_PROJECT",
+    collaboration: "EIGENINITIATIVE",
     year: "2023",
     status: "ARCHIVED",
     tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
   {
     id: "MOD_05",
     title: "SAPIENTSHIFT",
-    client: "CLASSIFIED",
+    collaboration: "EIGENINITIATIVE",
     year: "2025",
     status: "LIVE",
     tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
   {
     id: "MOD_06",
     title: "BITCOIN_SOUNDSCAPE",
-    client: "CLASSIFIED",
+    collaboration: "EIGENINITIATIVE",
     year: "2025",
     status: "BETA",
     tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
