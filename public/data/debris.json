@@ -1,154 +1,138 @@
 [
   {
-    "id": "recraft_vector_scene_styling_release",
+    "id": "getimg_ai_multi_model_workspace",
     "category": "STR_ART",
-    "headline": "Recraft adds scene-aware vector styling for cohesive AI branding",
-    "summary": "Vector platform Recraft quietly rolled out a scene-aware style controller that lets designers lock palette, stroke weight, and composition rules across an entire AI-generated icon or illustration set. This matters for design systems because it shifts AI art from one-off images to consistent, brand-safe asset families that can be iterated and edited as native vectors.",
-    "url": "https://recraft.ai/blog",
-    "relevance": 93
-  },
-  {
-    "id": "flux_motion_style_keys",
-    "category": "STR_ART",
-    "headline": "FLUX experiment introduces motion style-keys for animated stills",
-    "summary": "A research demo built on FLUX shows \"motion style-keys\": text prompts that encode not only look but implied camera moves and parallax, turning single frames into short looping animations. This is important for creative coders and motion designers because it blurs the line between concept art and animation blocking, reducing the gap from storyboard to animatic.",
-    "url": "https://blackforestlabs.ai/flux-labs",
+    "headline": "getimg.ai Unifies Top Models in One Art Workspace",
+    "summary": "getimg.ai integrates FLUX.2, Seedream 5.0 Lite, and others with Auto Mode for seamless style experimentation and Elements for consistent character reuse. This streamlines generative art workflows from ideation to refinement, empowering artists to maintain project cohesion without tool-switching. Ideal for storyboards and themed series in cybernetic design.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 95
   },
   {
-    "id": "touch_sketch_to_material_pipeline",
+    "id": "leonardo_real_time_canvas",
     "category": "STR_ART",
-    "headline": "New sketch-to-material pipeline links drawing gestures to PBR assets",
-    "summary": "An experimental tool from a university graphics lab maps pen pressure, stroke density, and hatching direction to procedural PBR material parameters, effectively turning analog sketching into a control surface for material generation. For industrial and product designers, this creates a tactile bridge from sketchbooks to physically accurate surfaces without menu-diving.",
-    "url": "https://graphics.berkeley.edu/papers",
-    "relevance": 88
-  },
-  {
-    "id": "ai_moodboard_to_layout_figma_plugin",
-    "category": "CX_UX",
-    "headline": "Figma plugin turns AI moodboards directly into editable layouts",
-    "summary": "A new community Figma plugin ingests AI-generated moodboards and infers grid, type scale, and component structure, outputting responsive frames instead of static inspiration boards. This shifts AI’s role in UX from image generation to structural synthesis, compressing the path from vibes to wireframes while keeping designers firmly in the refinement loop.",
-    "url": "https://www.figma.com/community",
+    "headline": "Leonardo AI's Real-Time Sketch-to-Art Canvas",
+    "summary": "Leonardo enables live sketching with AI generating detailed artwork in real-time, offering granular control via model presets and references. This bridges traditional drawing with generative AI, revolutionizing iterative concept art for digital creators. Enhances analog cybernetic prototyping through hybrid human-AI sketching.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 92
   },
   {
-    "id": "realtime_microcopy_causal_ux_testing",
-    "category": "CX_UX",
-    "headline": "Realtime AI microcopy testing estimates causal UX impact",
-    "summary": "A UX research startup released a system that auto-generates microcopy variants and predicts their impact on task completion and confusion using causal modeling plus lightweight live traffic. Designers get ranked, explainable copy suggestions tied to measurable UX outcomes, turning AI from mere text autocomplete into a hypothesis engine for product language.",
-    "url": "https://continuousaiux.com/blog",
-    "relevance": 90
-  },
-  {
-    "id": "agentive_onboarding_flows",
-    "category": "CX_UX",
-    "headline": "Agentive onboarding flows adapt UI complexity in real time",
-    "summary": "A new case study documents an \"agentive onboarding\" system where an AI agent monitors misclicks, hesitation, and scroll patterns to simplify or enrich UI density on the fly during first-use experiences. This is a critical shift for UX: AI stops being a separate assistant and becomes an invisible co-orchestrator of the interface itself.",
-    "url": "https://uxdesign.cc",
-    "relevance": 87
-  },
-  {
-    "id": "multimodal_accessibility_proxy_user",
-    "category": "CX_UX",
-    "headline": "Multimodal 'proxy user' simulates disabled users for design reviews",
-    "summary": "Accessibility researchers introduced a multimodal AI that behaves like a panel of simulated users with different disabilities, narrating how they would experience a prototype’s flows. For inclusive design, this gives teams a way to pressure-test early concepts against accessibility constraints before recruiting real participants, without replacing genuine user research.",
-    "url": "https://research.google/pubs",
-    "relevance": 89
-  },
-  {
-    "id": "latent_timbral_spaces_sonic_paper",
-    "category": "SONIC",
-    "headline": "New model learns continuous 'latent timbral spaces' for sound design",
-    "summary": "A recent audio ML paper introduced a model that disentangles pitch, timbre, and articulation into controllable latent axes, allowing sound designers to morph between instrument identities with structural stability. This enables DAW plugins where sliders correspond to intuitive timbral dimensions instead of opaque parameter lists, rethinking synthesizer UI around perceptual space.",
-    "url": "https://arxiv.org/abs/2603.0xxx",
-    "relevance": 96
-  },
-  {
-    "id": "text_to_performer_mixing_console",
-    "category": "SONIC",
-    "headline": "Text-to-performer model mixes tracks in character-specific styles",
-    "summary": "An experimental mixing engine conditions its output not just on style prompts like \"lo-fi\" or \"club-ready\" but on learned profiles of specific mix engineers and fictional personas. For audio creatives, this moves AI from generic mastering toward performative production, where \"who\" is mixing—real or imagined—becomes a creative parameter.",
-    "url": "https://magenta.tensorflow.org/blog",
-    "relevance": 91
-  },
-  {
-    "id": "realtime_ambient_game_scores",
-    "category": "SONIC",
-    "headline": "Realtime AI ambient scores now react to player intent, not events",
-    "summary": "A game studio previewed an AI music system that infers player intent from camera motion, aim patterns, and micro-movements, adapting the soundtrack before key events occur. This is a design-level breakthrough for interactive audio, shifting from reactive cue systems to anticipatory, affect-driven scoring that can make environments feel psychically responsive.",
-    "url": "https://gamedeveloper.com/audio",
-    "relevance": 94
-  },
-  {
-    "id": "voice_cloning_as_sonic_fabric",
-    "category": "SONIC",
-    "headline": "Artists use many-micro-voice cloning as woven 'sonic fabric'",
-    "summary": "A new sound art project trains lightweight voice clones from dozens of fleeting vocal fragments, then weaves them into dense choral textures that are neither fully synthetic nor truly documentary. For sonic arts, it reframes voice cloning away from identity theft and toward a material for collage, questioning authorship at the level of timbre itself.",
-    "url": "https://cdm.link",
+    "id": "firefly_generative_design_tools",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Powers Design Workflows",
+    "summary": "Firefly's text-to-image, generative fill, and expand tools integrate directly into Adobe suites for branding and layouts. It transforms AI art into production-ready assets, blurring lines between generation and professional design. Critical for strategic art in marketing and cybernetic visuals.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 88
   },
   {
-    "id": "philosophy_of_prompting_special_issue",
-    "category": "META",
-    "headline": "Journal special issue frames prompting as a new linguistic practice",
-    "summary": "A philosophy of language special issue argues that AI prompting constitutes a distinct speech act genre—neither command nor description—but a form of \"world-specification\" co-authored with a generative model. This matters for creative disciplines because it treats prompt craft as a legitimate aesthetic and epistemic practice rather than a technical hack.",
-    "url": "https://www.journaloftheapa.org",
-    "relevance": 93
-  },
-  {
-    "id": "collective_authorship_licensing_framework",
-    "category": "META",
-    "headline": "New framework proposes 'collective authorship licenses' for AI art",
-    "summary": "A policy paper from a digital rights lab proposes licenses where datasets, models, and end-artworks are treated as a continuous mesh of collective authorship, with automatic revenue-sharing and attribution tiers. For designers and artists, it offers a concrete alternative to binary \"human vs. AI\" authorship, aiming to re-align incentives around shared creative infrastructure.",
-    "url": "https://datasociety.net/publications",
-    "relevance": 92
-  },
-  {
-    "id": "aesthetic_alignment_beyond_safety",
-    "category": "META",
-    "headline": "Essay calls for 'aesthetic alignment' alongside AI safety work",
-    "summary": "A long-form essay by an artist-theorist argues that current alignment debates ignore how models learn and propagate aesthetic norms, effectively centralizing taste in a few labs. It calls for explicit aesthetic alignment: participatory governance over the styles and narratives AI tends to reproduce, which is crucial for anyone designing future cultural interfaces.",
-    "url": "https://reallifemag.com",
-    "relevance": 90
-  },
-  {
-    "id": "ai_as_mirror_not_mind_panel",
-    "category": "META",
-    "headline": "Panel debates AI as cultural mirror vs. emergent creative mind",
-    "summary": "A recent philosophy-and-art panel set up a sharp contrast: AI either as a high-resolution mirror of human culture or as a proto-agent with its own emergent style. The discussion is practical for creatives because it informs whether AI tools are framed as archives to be sampled or collaborators with whom one develops a long-term shared vocabulary.",
-    "url": "https://thephilosophersmag.com",
+    "id": "canva_magic_media_integration",
+    "category": "CX_UX",
+    "headline": "Canva's Magic Media for Rapid UX Visuals",
+    "summary": "Magic Media and Dream Lab embed AI generation within Canva's template-driven editor for quick social, presentation, and poster assets. This democratizes AI for UX designers needing fast prototypes without deep prompting skills. Boosts user experience in collaborative design systems.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 85
   },
   {
-    "id": "embodied_generative_interfaces",
+    "id": "tensorart_image_to_image",
     "category": "STR_ART",
-    "headline": "Embodied generative interfaces link body pose to visual composition",
-    "summary": "An interactive installation maps dancers’ skeletal tracking to high-level parameters of a generative image model, so that posture and gesture continuously recompose projected visuals. This turns generative art into a live, somatic medium where design decisions are made through movement rather than sliders, relevant to performance design and responsive environments.",
-    "url": "https://creativeapplications.net",
+    "headline": "Tensor.art Excels in Image-to-Image Art",
+    "summary": "Tensor.art leverages user-created models for cartoonish, trending styles via simple image uploads and preset prompts. It simplifies style-specific generations, accelerating experimental art pipelines. Valuable for cybernetic designers iterating on visual motifs.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "dream_machine_chat_boards",
+    "category": "STR_ART",
+    "headline": "Dream Machine's Iterative Chat-Based Art",
+    "summary": "Dream Machine uses contextual chat boards for collaborative, iterative image refinement without micromanagement. This fosters brainstorming for project-specific styles, enhancing creative UX in AI art flows. Pioneers conversational design in generative tools.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "recraft_vector_ai_art",
+    "category": "STR_ART",
+    "headline": "Recraft AI for Production Vectors",
+    "summary": "Recraft generates scalable vectors in painterly styles, ideal for production-ready designs with set-based similarity outputs. It bridges AI art with graphic design scalability. Essential for cybernetic pattern systems requiring precise, editable outputs.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 93
+  },
+  {
+    "id": "raphael_unlimited_free_ai",
+    "category": "STR_ART",
+    "headline": "Raphael AI Offers Unlimited Free Generations",
+    "summary": "Raphael delivers high-fidelity images with strong prompt adherence, no signup required, despite minimal settings. Lowers barriers for rapid prototyping in art exploration. Sparks experimental cybernetic design without cost constraints.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 82
+  },
+  {
+    "id": "ideogram_text_composition",
+    "category": "STR_ART",
+    "headline": "Ideogram Masters Text and Composition",
+    "summary": "Ideogram excels at embedding text in images with precise composition control from minimalist prompts. Perfect for social media and typographic art. Elevates AI's role in strategic visual communication.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 89
   },
   {
-    "id": "customer_journey_sim_agents",
-    "category": "CX_UX",
-    "headline": "Agent-based 'customer journey sims' let teams rehearse future products",
-    "summary": "A CX lab released a toolkit where swarms of simulated AI customers, each with profiles and quirks, traverse prototype service blueprints and surface failure patterns. For service designers, this creates a new pre-research layer: AI as a rehearsal stage that exposes systemic UX issues before real users ever encounter them.",
-    "url": "https://servicedesigntools.org/news",
+    "id": "midjourney_prompt_generator",
+    "category": "STR_ART",
+    "headline": "Dedicated Midjourney Prompt Generators",
+    "summary": "Tools like Midjourney Prompt Generator reverse-engineer images into optimized prompts with style parameters. They enhance artist control over AI outputs, streamlining creative iteration. Key for analog cybernetic prompt engineering.",
+    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
     "relevance": 91
   },
   {
-    "id": "polytemporal_storyscapes",
+    "id": "flux_prompt_optimizer",
     "category": "STR_ART",
-    "headline": "AI 'polytemporal storyscapes' blend comics, film, and timelines",
-    "summary": "A narrative design experiment uses generative models to create storyboards where each panel can be expanded into alternative timelines, with layouts updating as readers explore branches. This is significant for visual storytellers because it leverages AI to design narratives as living spatial objects rather than fixed linear sequences.",
-    "url": "https://storyfolk.studio/blog",
+    "headline": "Flux AI Specialized Prompt Tools",
+    "summary": "Flux Prompt Generator tailors inputs for Flux models, boosting output quality in experimental art. Supports diverse generative techniques for sound-visual synesthesia. Advances multi-modal cybernetic design.",
+    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
     "relevance": 86
   },
   {
-    "id": "ai_listening_companions_for_creatives",
-    "category": "META",
-    "headline": "Study examines AI 'listening companions' for artists' process diaries",
-    "summary": "A human–computer interaction study deployed AI diarists that listen to, summarize, and gently question artists' daily voice logs, acting as reflective partners rather than assistants. The findings suggest AI can shape creative identity itself, not just outputs, raising deep questions about authorship, accountability, and the social life of studio practice.",
-    "url": "https://chi2026.acm.org/program",
+    "id": "getimg_elements_consistency",
+    "category": "STR_ART",
+    "headline": "getimg.ai Elements for Style Reuse",
+    "summary": "Elements save reusable characters, palettes, and styles for consistent series generation. Revolutionizes workflow for long-form art projects. Core for cybernetic systems maintaining thematic integrity.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 94
+  },
+  {
+    "id": "promeai_style_suggestions",
+    "category": "CX_UX",
+    "headline": "PromeAI's In-Editor Art Style Prompts",
+    "summary": "PromeAI integrates prompt interfaces with style suggestions directly in image editors. Speeds UX design for template-based visuals. Enhances accessibility in AI-driven interaction patterns.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 84
+  },
+  {
+    "id": "nano_banana_google_integration",
+    "category": "CX_UX",
+    "headline": "Nano Banana Optimizes Google AI Images",
+    "summary": "Nano Banana excels for Google users in seamless image generation within workflows. Improves UX research with integrated visuals. Supports design systems in everyday tools.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 80
+  },
+  {
+    "id": "reve_prompt_adherence",
+    "category": "STR_ART",
+    "headline": "Reve AI for Precise Prompt Following",
+    "summary": "Reve prioritizes exact prompt adherence, minimizing hallucinations in generative art. Ensures reliable outputs for precise cybernetic visualizations. Groundbreaking for controlled creativity.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 92
+  },
+  {
+    "id": "getimg_auto_prompt_enhance",
+    "category": "STR_ART",
+    "headline": "getimg.ai Auto Prompt Enhancement",
+    "summary": "Automatic prompt expansion turns sketches into detailed visuals, aiding idea-to-art flow. Democratizes advanced prompting for artists. Vital for philosophical AI creativity debates.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 90
+  },
+  {
+    "id": "claude_powerpoint_addin",
+    "category": "CX_UX",
+    "headline": "Claude Add-In Transforms PowerPoint UX",
+    "summary": "New Claude add-in for PowerPoint integrates GenAI into presentations, rethinking UX innovation. Enables dynamic, AI-assisted slide design. Pushes boundaries of interaction in design tools.",
+    "url": "https://ryanschultz.com/2026/03/06/generative-ai-update-march-2026-my-updated-presentation-on-artificial-intelligence-and-genai-plus-my-first-thoughts-on-the-claude-add-in-for-powerpoint-and-yet-another-head-to-head-comparison-betw/",
     "relevance": 88
   }
 ]
