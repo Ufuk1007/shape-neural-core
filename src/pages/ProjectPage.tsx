@@ -103,7 +103,7 @@ const ProjectPage = () => {
           {project.signalTags && project.signalTags.length > 0 && (
             <div className="mb-6">
               <span className="text-xs tracking-widest block mb-3" style={{ color: "#666" }}>SIGNAL_TAGS:</span>
-              <div className="flex flex-wrap gap-2 md:overflow-x-auto md:flex-nowrap md:scrollbar-none">
+              <div className="flex flex-wrap gap-2">
                 {project.signalTags.map((tag) => (
                   <span
                     key={tag}
