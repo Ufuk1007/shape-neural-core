@@ -10,7 +10,8 @@ import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
 interface Project {
   id: string;
   title: string;
-  client: string;
+  collaboration: string;
+  collaborationUrl?: string;
   year: string;
   status: "LIVE" | "BETA" | "ARCHIVED";
   tags: string[];
