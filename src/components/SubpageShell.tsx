@@ -36,7 +36,7 @@ const SubpageShell = ({ children, projectLink, footerMeta }: SubpageShellProps) 
       >
         <div className="flex items-center gap-4">
           <Link
-            to="/"
+            to="/#projects"
             className="flex items-center gap-2 text-xs tracking-[0.3em] hover:opacity-80 transition-opacity"
             style={{ color: "#0f0" }}
           >
@@ -71,7 +71,7 @@ const SubpageShell = ({ children, projectLink, footerMeta }: SubpageShellProps) 
       >
         <div className="flex items-center justify-between text-xs tracking-widest" style={{ color: "#444" }}>
           <Link
-            to="/"
+            to="/#projects"
             className="hover:opacity-80 transition-opacity"
             style={{ color: "#0f0" }}
           >
