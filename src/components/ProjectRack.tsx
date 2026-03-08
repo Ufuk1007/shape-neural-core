@@ -25,7 +25,8 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_01",
     title: "SAPIENTBLOCK",
-    client: "CLASSIFIED",
+    collaboration: "BLOCKCHAIN REALLABOR",
+    collaborationUrl: "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/",
     year: "2024",
     status: "LIVE",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
@@ -37,7 +38,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_02",
     title: "MELODEYE",
-    client: "RESEARCH_PROJECT",
+    collaboration: "EIGENINITIATIVE",
     year: "2024",
     status: "LIVE",
     tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
@@ -49,7 +50,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_03",
     title: "PROBLAIM",
-    client: "CLASSIFIED",
+    collaboration: "EIGENINITIATIVE",
     year: "2025",
     status: "BETA",
     tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
@@ -61,7 +62,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_04",
     title: "HUMANCRYP.TO",
-    client: "RESEARCH_PROJECT",
+    collaboration: "EIGENINITIATIVE",
     year: "2023",
     status: "ARCHIVED",
     tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
@@ -73,7 +74,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_05",
     title: "SAPIENTSHIFT",
-    client: "CLASSIFIED",
+    collaboration: "EIGENINITIATIVE",
     year: "2025",
     status: "LIVE",
     tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
@@ -85,7 +86,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_06",
     title: "BITCOIN_SOUNDSCAPE",
-    client: "CLASSIFIED",
+    collaboration: "EIGENINITIATIVE",
     year: "2025",
     status: "BETA",
     tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
@@ -399,8 +400,20 @@ const ProjectRack = () => {
                         {/* Client + Status */}
                         <div className="flex items-center justify-between">
                           <div>
-                            <span className="text-[#666] text-xs tracking-widest">CLIENT:</span>
-                            <span className="text-[#e0e0e0] ml-2 tracking-wider">{project.client}</span>
+                            <span className="text-[#666] text-xs tracking-widest">COLLABORATION:</span>
+                            {project.collaborationUrl ? (
+                              <a
+                                href={project.collaborationUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="ml-2 tracking-wider underline hover:no-underline"
+                                style={{ color: "#0f0" }}
+                              >
+                                {project.collaboration}
+                              </a>
+                            ) : (
+                              <span className="text-[#e0e0e0] ml-2 tracking-wider">{project.collaboration}</span>
+                            )}
                           </div>
                           <div
                             className="px-3 py-1 text-xs tracking-widest font-bold"
