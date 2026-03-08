@@ -1,99 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus, ExternalLink } from "lucide-react";
-import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
-import melodeyeImg from "@/assets/melodeye-screenshot.png";
-import problaimImg from "@/assets/problaim-screenshot.png";
-import humancryptoImg from "@/assets/humancrypto-screenshot.png";
-import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
-
-interface Project {
-  id: string;
-  title: string;
-  collaboration: string;
-  collaborationUrl?: string;
-  year: string;
-  status: "LIVE" | "BETA" | "ARCHIVED";
-  tags: string[];
-  desc: string;
-  techStack: string[];
-  image?: string;
-  url?: string;
-}
-
-const PROJECTS: Project[] = [
-  {
-    id: "MOD_01",
-    title: "SAPIENTBLOCK",
-    collaboration: "BLOCKCHAIN REALLABOR",
-    collaborationUrl: "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/",
-    year: "2024",
-    status: "LIVE",
-    tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
-    desc: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching – digital archaeology for decentralized potential.",
-    techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Tailwind CSS"],
-    image: sapientBlockImg,
-    url: "https://sapientblock.com",
-  },
-  {
-    id: "MOD_02",
-    title: "MELODEYE",
-    collaboration: "INDEPENDENT",
-    year: "2024",
-    status: "LIVE",
-    tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
-    desc: "Multi-modal emotion recognition system that reads facial expressions and eye behaviors separately, generating adaptive music based on true emotional state rather than displayed affect.",
-    techStack: ["React", "TypeScript", "Supabase", "MediaPipe", "Mureka_API"],
-    image: melodeyeImg,
-    url: "https://melodeye.com",
-  },
-  {
-    id: "MOD_03",
-    title: "PROBLAIM",
-    collaboration: "INDEPENDENT",
-    year: "2025",
-    status: "BETA",
-    tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
-    desc: "AI-orchestrated problem decomposition engine. Transforms cognitive noise into crystallized insight pyramids through multi-model synthesis.",
-    techStack: ["React", "TypeScript", "Supabase", "OpenAI", "Perplexity", "Stripe"],
-    image: problaimImg,
-    url: "https://problaim.com",
-  },
-  {
-    id: "MOD_04",
-    title: "HUMANCRYP.TO",
-    collaboration: "INDEPENDENT",
-    year: "2023",
-    status: "ARCHIVED",
-    tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
-    desc: "Crypto-education platform where cryptocurrencies take human form. Each coin reveals its distinct character through AI-generated personas, transforming complex blockchain concepts into memorable learning journeys.",
-    techStack: ["Wix", "AI Image Generation", "Video Production", "Storytelling"],
-    image: humancryptoImg,
-    url: "https://humancryp.to",
-  },
-  {
-    id: "MOD_05",
-    title: "SAPIENTSHIFT",
-    collaboration: "INDEPENDENT",
-    year: "2025",
-    status: "LIVE",
-    tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
-    desc: "AI-powered potential analysis platform. Analyze your AI potential in 5 minutes – receive tailored use cases, actionable recommendations, and a personal command center for sustainable transformation. From insight to implementation.",
-    techStack: ["React", "TypeScript", "Supabase Edge Functions", "OpenAI", "Perplexity", "DeepSeek", "Tailwind CSS"],
-    image: sapientshiftImg,
-    url: "https://sapientshift.com",
-  },
-  {
-    id: "MOD_06",
-    title: "BITCOIN_SOUNDSCAPE",
-    collaboration: "INDEPENDENT",
-    year: "2025",
-    status: "BETA",
-    tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
-    desc: "Real-time market sentiment translated into AI-generated soundscapes. Bitcoin's emotional pulse, rendered as ambient music through neural synthesis.",
-    techStack: ["React", "Supabase Edge Functions", "Suno API", "Framer Motion"],
-  },
-];
+import { Plus, Minus, ExternalLink, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { PROJECTS, type Project } from "@/data/projects";
 
 const getStatusColor = (status: Project["status"]) => {
   switch (status) {
@@ -453,47 +362,47 @@ const ProjectRack = () => {
                           </div>
                         </div>
 
-                        {/* Action Button */}
-                        {project.url ? (
-                          <motion.a
-                            href={project.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full mt-4 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider group"
-                            style={{
-                              backgroundColor: "#ff0055",
-                              color: "#fff",
-                              border: "2px solid #ff0055",
-                            }}
-                            whileHover={{
-                              backgroundColor: "#ff3377",
-                              borderColor: "#ff3377",
-                            }}
-                            whileTap={{ scale: 0.98 }}
-                          >
-                            <span>{">"} INITIALIZE_CASE_STUDY</span>
-                            <motion.span
-                              animate={{ opacity: [1, 0, 1] }}
-                              transition={{ duration: 0.8, repeat: Infinity }}
+                        {/* Action Buttons */}
+                        <div className="flex flex-col sm:flex-row gap-3 mt-4">
+                          {project.url && (
+                            <motion.a
+                              href={project.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex-1 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider"
+                              style={{
+                                backgroundColor: "#ff0055",
+                                color: "#fff",
+                                border: "2px solid #ff0055",
+                              }}
+                              whileHover={{ backgroundColor: "#ff3377", borderColor: "#ff3377" }}
+                              whileTap={{ scale: 0.98 }}
                             >
-                              _
-                            </motion.span>
-                            <ExternalLink size={16} />
-                          </motion.a>
-                        ) : (
-                          <motion.div
-                            className="w-full mt-4 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider cursor-not-allowed"
+                              <span>{">"} VISIT_PROJECT</span>
+                              <ExternalLink size={16} />
+                            </motion.a>
+                          )}
+                          <Link
+                            to={`/project/${project.slug}`}
+                            className="flex-1 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider transition-colors"
                             style={{
-                              backgroundColor: "#333",
-                              color: "#666",
-                              border: "2px solid #444",
-                              opacity: 0.5,
+                              color: "#0f0",
+                              border: "2px solid #0f0",
+                              backgroundColor: "transparent",
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.backgroundColor = "#0f0";
+                              e.currentTarget.style.color = "#000";
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.backgroundColor = "transparent";
+                              e.currentTarget.style.color = "#0f0";
                             }}
                           >
-                            <span>{">"} CASE_STUDY_UNAVAILABLE</span>
-                            <span>_</span>
-                          </motion.div>
-                        )}
+                            <span>{">"} DEEP_DIVE</span>
+                            <ArrowRight size={16} />
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
