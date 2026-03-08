@@ -99,6 +99,24 @@ const ProjectPage = () => {
             <p className="text-sm leading-relaxed" style={{ color: "#aaa" }}>{project.brief}</p>
           </div>
 
+          {/* Signal Tags */}
+          {project.signalTags && project.signalTags.length > 0 && (
+            <div className="mb-6">
+              <span className="text-xs tracking-widest block mb-3" style={{ color: "#666" }}>SIGNAL_TAGS:</span>
+              <div className="flex flex-wrap gap-2 md:overflow-x-auto md:flex-nowrap md:scrollbar-none">
+                {project.signalTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 text-xs tracking-wider font-mono uppercase whitespace-nowrap"
+                    style={{ color: "#00ccff", backgroundColor: "#00ccff08", border: "1px solid #00ccff33" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Tech stack */}
           <div>
             <span className="text-xs tracking-widest block mb-3" style={{ color: "#666" }}>TECH_STACK:</span>
