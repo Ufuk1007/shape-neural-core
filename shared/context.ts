@@ -110,7 +110,7 @@ export function getSystemPrompt(): string {
   // Format projects for the AI
   const projectsFormatted = PROJECTS.map((p) => {
     return `[${p.id}] ${p.title} (${p.status})
-CLIENT: ${p.client} | YEAR: ${p.year}
+COLLABORATION: ${p.collaboration}${p.collaborationUrl ? ` → ${p.collaborationUrl}` : ''} | YEAR: ${p.year}
 TAGS: ${p.tags.join(", ")}
 DESCRIPTION: ${p.desc}
 TECH_STACK: ${p.techStack.join(", ")}`;
