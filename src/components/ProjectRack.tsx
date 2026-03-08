@@ -339,7 +339,7 @@ const ProjectRack = () => {
                         {/* Description */}
                         <div>
                           <div className="text-[#666] text-xs tracking-widest mb-2">BRIEF:</div>
-                          <p className="text-[#aaa] leading-relaxed text-sm">{project.desc}</p>
+                          <p className="text-[#aaa] leading-relaxed text-sm">{project.brief}</p>
                         </div>
 
                         {/* Tech Stack */}
