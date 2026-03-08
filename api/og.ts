@@ -58,7 +58,12 @@ export default function handler(req: Request): Response {
   }
 
   const title = escapeHtml(meta.title);
-  const description = escapeHtml(meta.description);
+  // Ensure description meets LinkedIn's 100-character minimum
+  let rawDescription = meta.description;
+  if (rawDescription.length < 100) {
+    rawDescription += ` — An insight from the SHAPENEURAL designed intelligence portfolio.`;
+  }
+  const description = escapeHtml(rawDescription);
 
   const html = `<!DOCTYPE html>
 <html lang="en">
