@@ -38,7 +38,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_02",
     title: "MELODEYE",
-    collaboration: "EIGENINITIATIVE",
+    collaboration: "INDEPENDENT",
     year: "2024",
     status: "LIVE",
     tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_03",
     title: "PROBLAIM",
-    collaboration: "EIGENINITIATIVE",
+    collaboration: "INDEPENDENT",
     year: "2025",
     status: "BETA",
     tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
@@ -62,7 +62,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_04",
     title: "HUMANCRYP.TO",
-    collaboration: "EIGENINITIATIVE",
+    collaboration: "INDEPENDENT",
     year: "2023",
     status: "ARCHIVED",
     tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
@@ -74,7 +74,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_05",
     title: "SAPIENTSHIFT",
-    collaboration: "EIGENINITIATIVE",
+    collaboration: "INDEPENDENT",
     year: "2025",
     status: "LIVE",
     tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
@@ -86,7 +86,7 @@ const PROJECTS: Project[] = [
   {
     id: "MOD_06",
     title: "BITCOIN_SOUNDSCAPE",
-    collaboration: "EIGENINITIATIVE",
+    collaboration: "INDEPENDENT",
     year: "2025",
     status: "BETA",
     tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
