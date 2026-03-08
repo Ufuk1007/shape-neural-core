@@ -1,16 +1,15 @@
 import { ImageResponse } from '@vercel/og';
 import { OG_META } from '../shared/og-metadata.js';
 
-export const config = {
-  runtime: 'edge',
-};
+export const config = { runtime: 'edge' };
 
 const BG = '#050505';
 const GREEN = '#00ff41';
 const CYAN = '#00ccff';
 const MUTED = '#888888';
 const BRAND_MUTED = '#666666';
-const BORDER = '#222222';
+const GREEN_60 = '#00ff4199';
+const GREEN_40 = '#00ff4166';
 
 const STATUS_COLORS: Record<string, string> = {
   LIVE: '#00ff41',
@@ -26,164 +25,104 @@ function isProject(meta: any): meta is { id: string; status: string } {
   return 'id' in meta && 'status' in meta;
 }
 
-function scanlineRows(count: number) {
-  const rows = [];
-  for (let i = 0; i < count; i++) {
-    rows.push({
-      type: 'div',
-      props: {
-        key: i,
-        style: {
-          width: '100%',
-          height: '1px',
-          backgroundColor: i % 2 === 0 ? 'rgba(255,255,255,0.03)' : 'transparent',
-        },
-      },
-    });
-  }
-  return rows;
-}
-
-function Scanlines() {
+function ScanlineCluster() {
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      width: '100%',
-      height: '40px',
-      overflow: 'hidden',
-    }}>
-      {Array.from({ length: 20 }).map((_, i) => (
-        <div
-          key={i}
-          style={{
-            width: '100%',
-            height: '2px',
-            backgroundColor: i % 2 === 0 ? 'rgba(255,255,255,0.03)' : 'transparent',
-          }}
-        />
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+      {[1, 2, 3].map((i) => (
+        <div key={i} style={{ width: '100%', height: '1px', backgroundColor: GREEN, opacity: 0.15 }} />
       ))}
     </div>
   );
 }
 
+function TopBar() {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <span style={{ color: GREEN_60, fontSize: '20px', fontWeight: 700, fontFamily: 'Courier New, monospace' }}>SN_</span>
+      <span style={{ color: BRAND_MUTED, fontSize: '16px', fontFamily: 'Courier New, monospace' }}>shapeneural.com</span>
+    </div>
+  );
+}
+
+function BottomBar({ left, right }: { left: string; right: string }) {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <span style={{ color: MUTED, fontSize: '16px', fontFamily: 'Courier New, monospace' }}>{left}</span>
+      <span style={{ color: MUTED, fontSize: '16px', fontFamily: 'Courier New, monospace' }}>{right}</span>
+    </div>
+  );
+}
+
 function renderInsight(meta: any) {
-  const headlineParts = (meta.title as string).split(' // ');
-  const mainTitle = headlineParts[0] || '';
-  const subtitle = headlineParts[1] || '';
+  const parts = (meta.title as string).split(' // ');
+  const main = parts[0] || '';
+  const sub = parts[1] || '';
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        height: '100%',
-        backgroundColor: BG,
-        padding: '0',
-        fontFamily: '"Courier New", monospace',
-        borderTop: `1px solid ${BORDER}`,
-        borderRight: `1px solid ${BORDER}`,
-        borderBottom: `1px solid ${BORDER}`,
-        borderLeft: `3px solid ${GREEN}`,
-      }}
-    >
-      {/* Top padding + scanlines */}
-      <div style={{ display: 'flex', flexDirection: 'column', padding: '30px 40px 0 40px' }}>
-        <Scanlines />
-      </div>
+    <div style={{
+      display: 'flex',
+      width: '100%',
+      height: '100%',
+      backgroundColor: BG,
+      fontFamily: 'Courier New, monospace',
+    }}>
+      {/* Left accent bar */}
+      <div style={{ width: '4px', backgroundColor: GREEN, flexShrink: 0 }} />
 
-      {/* Header row */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '20px 40px 0 40px',
-      }}>
-        <span style={{ color: GREEN, opacity: 0.6, fontSize: '24px', fontWeight: 700 }}>SN_</span>
-        <span style={{ color: BRAND_MUTED, fontSize: '18px', letterSpacing: '3px' }}>shapeneural</span>
-      </div>
-
-      {/* Content block */}
+      {/* Content */}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
-        padding: '30px 40px',
         flex: 1,
-        justifyContent: 'center',
+        padding: '40px 48px',
       }}>
-        {/* Lens tag line */}
-        <div style={{
-          display: 'flex',
-          fontSize: '14px',
-          color: CYAN,
-          letterSpacing: '2px',
-          marginBottom: '12px',
-          textTransform: 'uppercase' as any,
-        }}>
-          ┌─ {meta.lens} ─────────────────────────────
-        </div>
+        <TopBar />
+        <ScanlineCluster />
 
-        {/* Headline */}
+        {/* Center block */}
         <div style={{
           display: 'flex',
-          flexDirection: 'column',
-          padding: '0 0 0 20px',
+          flex: 1,
+          alignItems: 'center',
         }}>
-          <span style={{
-            color: GREEN,
-            fontSize: '42px',
-            fontWeight: 700,
-            lineHeight: 1.1,
-            letterSpacing: '1px',
-            textShadow: '0 0 20px rgba(0,255,65,0.3)',
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            border: `1px solid ${GREEN_40}`,
+            padding: '24px 32px',
+            width: '100%',
           }}>
-            {mainTitle} //
-          </span>
-          {subtitle && (
+            <span style={{ color: CYAN, fontSize: '18px', marginBottom: '16px', fontFamily: 'Courier New, monospace' }}>
+              {meta.lens}
+            </span>
             <span style={{
               color: GREEN,
-              fontSize: '36px',
+              fontSize: '42px',
               fontWeight: 700,
               lineHeight: 1.2,
-              letterSpacing: '1px',
-              textShadow: '0 0 20px rgba(0,255,65,0.3)',
-              marginTop: '4px',
+              fontFamily: 'Courier New, monospace',
             }}>
-              {subtitle}
+              {main} //
             </span>
-          )}
+            {sub && (
+              <span style={{
+                color: GREEN,
+                fontSize: '42px',
+                fontWeight: 700,
+                lineHeight: 1.2,
+                fontFamily: 'Courier New, monospace',
+              }}>
+                {sub}
+              </span>
+            )}
+          </div>
         </div>
 
-        {/* Close bracket */}
-        <div style={{
-          display: 'flex',
-          fontSize: '14px',
-          color: CYAN,
-          letterSpacing: '2px',
-          marginTop: '12px',
-        }}>
-          └──────────────────────────────────────
-        </div>
-      </div>
-
-      {/* Footer */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '0 40px 10px 40px',
-      }}>
-        <span style={{ color: MUTED, fontSize: '16px' }}>
-          FROM: {meta.projectTitle} [{meta.projectId}]
-        </span>
-        <span style={{ color: MUTED, fontSize: '16px' }}>
-          {meta.date}
-        </span>
-      </div>
-
-      {/* Bottom scanlines */}
-      <div style={{ display: 'flex', flexDirection: 'column', padding: '0 40px 30px 40px' }}>
-        <Scanlines />
+        <ScanlineCluster />
+        <BottomBar
+          left={`${meta.projectTitle} [${meta.projectId}]`}
+          right={meta.date}
+        />
       </div>
     </div>
   );
@@ -191,85 +130,65 @@ function renderInsight(meta: any) {
 
 function renderProject(meta: any) {
   const statusColor = STATUS_COLORS[meta.status] || MUTED;
-  // Split title for large display
-  const titleParts = (meta.title as string).replace(/\./g, '.').split('_');
   const firstSentence = (meta.description as string).split('.')[0] + '.';
+  const desc = firstSentence.length > 120 ? firstSentence.slice(0, 117) + '...' : firstSentence;
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        height: '100%',
-        backgroundColor: BG,
-        padding: '0',
-        fontFamily: '"Courier New", monospace',
-        borderTop: `1px solid ${BORDER}`,
-        borderRight: `1px solid ${BORDER}`,
-        borderBottom: `1px solid ${BORDER}`,
-        borderLeft: `3px solid ${GREEN}`,
-      }}
-    >
-      {/* Top scanlines */}
-      <div style={{ display: 'flex', flexDirection: 'column', padding: '30px 40px 0 40px' }}>
-        <Scanlines />
-      </div>
+    <div style={{
+      display: 'flex',
+      width: '100%',
+      height: '100%',
+      backgroundColor: BG,
+      fontFamily: 'Courier New, monospace',
+    }}>
+      <div style={{ width: '4px', backgroundColor: GREEN, flexShrink: 0 }} />
 
-      {/* Header */}
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '20px 40px 0 40px',
-      }}>
-        <span style={{ color: GREEN, opacity: 0.6, fontSize: '24px', fontWeight: 700 }}>SN_</span>
-        <span style={{ color: BRAND_MUTED, fontSize: '18px', letterSpacing: '3px' }}>shapeneural</span>
-      </div>
-
-      {/* Content */}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
-        padding: '30px 40px',
         flex: 1,
-        justifyContent: 'center',
+        padding: '40px 48px',
       }}>
-        {/* Module + Status */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-          <span style={{ color: statusColor, fontSize: '16px' }}>●</span>
-          <span style={{ color: MUTED, fontSize: '16px', letterSpacing: '2px' }}>
-            {meta.id} // {meta.status}
+        <TopBar />
+        <ScanlineCluster />
+
+        <div style={{
+          display: 'flex',
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'center',
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+            <div style={{ width: '10px', height: '10px', borderRadius: '5px', backgroundColor: statusColor }} />
+            <span style={{ color: MUTED, fontSize: '16px', fontFamily: 'Courier New, monospace' }}>
+              [{meta.id}] // {meta.status}
+            </span>
+          </div>
+
+          <span style={{
+            color: GREEN,
+            fontSize: '48px',
+            fontWeight: 700,
+            lineHeight: 1.1,
+            fontFamily: 'Courier New, monospace',
+          }}>
+            {meta.title}
+          </span>
+
+          <span style={{
+            color: MUTED,
+            fontSize: '18px',
+            lineHeight: 1.4,
+            marginTop: '16px',
+            maxWidth: '900px',
+            fontFamily: 'Courier New, monospace',
+          }}>
+            {desc}
           </span>
         </div>
 
-        {/* Title */}
-        <span style={{
-          color: GREEN,
-          fontSize: '56px',
-          fontWeight: 700,
-          lineHeight: 1.05,
-          letterSpacing: '2px',
-          textShadow: '0 0 20px rgba(0,255,65,0.3)',
-        }}>
-          {meta.title}
-        </span>
-
-        {/* Description */}
-        <span style={{
-          color: MUTED,
-          fontSize: '20px',
-          lineHeight: 1.4,
-          marginTop: '20px',
-          maxWidth: '900px',
-        }}>
-          {firstSentence.length > 120 ? firstSentence.slice(0, 117) + '...' : firstSentence}
-        </span>
-      </div>
-
-      {/* Bottom scanlines */}
-      <div style={{ display: 'flex', flexDirection: 'column', padding: '0 40px 30px 40px' }}>
-        <Scanlines />
+        <ScanlineCluster />
+        <BottomBar left="shapeneural.com" right="" />
       </div>
     </div>
   );
@@ -277,28 +196,24 @@ function renderProject(meta: any) {
 
 function renderDefault() {
   return (
-    <div
-      style={{
+    <div style={{
+      display: 'flex',
+      width: '100%',
+      height: '100%',
+      backgroundColor: BG,
+      fontFamily: 'Courier New, monospace',
+    }}>
+      <div style={{ width: '4px', backgroundColor: GREEN, flexShrink: 0 }} />
+      <div style={{
         display: 'flex',
         flexDirection: 'column',
-        width: '100%',
-        height: '100%',
-        backgroundColor: BG,
-        fontFamily: '"Courier New", monospace',
-        borderTop: `1px solid ${BORDER}`,
-        borderRight: `1px solid ${BORDER}`,
-        borderBottom: `1px solid ${BORDER}`,
-        borderLeft: `3px solid ${GREEN}`,
+        flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-      }}
-    >
-      <span style={{ color: GREEN, fontSize: '64px', fontWeight: 700, letterSpacing: '4px', textShadow: '0 0 20px rgba(0,255,65,0.3)' }}>
-        SHAPENEURAL
-      </span>
-      <span style={{ color: MUTED, fontSize: '22px', marginTop: '16px', letterSpacing: '6px' }}>
-        DESIGNED INTELLIGENCE
-      </span>
+      }}>
+        <span style={{ color: GREEN, fontSize: '64px', fontWeight: 700, letterSpacing: '4px' }}>SHAPENEURAL</span>
+        <span style={{ color: MUTED, fontSize: '22px', marginTop: '16px', letterSpacing: '6px' }}>DESIGNED INTELLIGENCE</span>
+      </div>
     </div>
   );
 }
@@ -328,8 +243,6 @@ export default async function handler(req: Request) {
   return new ImageResponse(content, {
     width: 1200,
     height: 630,
-    headers: {
-      'Cache-Control': 'public, max-age=86400, s-maxage=86400',
-    },
+    headers: { 'Cache-Control': 'public, max-age=86400, s-maxage=86400' },
   });
 }
