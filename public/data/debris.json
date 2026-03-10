@@ -2,137 +2,137 @@
   {
     "id": "getimg_ai_multi_model_workspace",
     "category": "STR_ART",
-    "headline": "getimg.ai: Multi-Model AI Art Workspace",
-    "summary": "getimg.ai integrates FLUX.2, GPT Image 1.5, and Seedream 5.0 for diverse art styles in one platform. Auto Mode and Elements ensure consistent character and style reuse, revolutionizing iterative design workflows. Built-in editing boosts artist efficiency without tool-switching.",
+    "headline": "getimg.ai Unifies Multiple AI Models in One Art Workspace",
+    "summary": "getimg.ai integrates FLUX.2, GPT Image 1.5, Nano Banana 2, Seedream 5.0 Lite, and Qwen Image for seamless style experimentation. Features like Auto Mode, prompt enhancement, and reusable Elements enable consistent character and style development across projects. This multi-model approach revolutionizes iterative art workflows for designers and illustrators.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 95
   },
   {
     "id": "getimg_ai_elements_reuse",
     "category": "STR_ART",
-    "headline": "Elements: Reusable AI Art Building Blocks",
-    "summary": "Save characters, styles, and palettes as Elements for consistent series in storyboards or games. This bridges AI generation with traditional art pipelines, enabling scalable creative projects. Artists maintain vision across iterations effortlessly.",
+    "headline": "Elements Feature Saves & Reuses AI Art Building Blocks",
+    "summary": "Artists can save characters, styles, objects, and palettes as Elements for consistent application in storyboards or series. Combined with built-in editing like background replacement and 2x upscaling, it streamlines refinement without restarting. Perfect for maintaining project coherence in game art or campaigns.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 92
   },
   {
-    "id": "getimg_ai_auto_mode",
+    "id": "leonardo_real_time_canvas",
     "category": "STR_ART",
-    "headline": "Auto Mode for Prompt-Based Model Selection",
-    "summary": "Automatically picks optimal models like Nano Banana 2 based on prompt, freeing artists to focus on ideas. Enhances experimentation in painterly or fantasy visuals. Democratizes advanced AI for non-technical creators.",
+    "headline": "Leonardo AI Enables Real-Time Sketch-to-Art Canvas",
+    "summary": "Users sketch directly on canvas while AI generates detailed artwork in real-time, offering high control via generation settings. This bridges traditional drawing with generative AI for experienced creators. Ideal for rapid concept iteration in digital art pipelines.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 90
   },
   {
-    "id": "leonardo_real_time_canvas",
+    "id": "adobe_firefly_design_integration",
     "category": "STR_ART",
-    "headline": "Leonardo AI Real-Time Canvas Sketching",
-    "summary": "Sketch on canvas while AI generates detailed art in real-time, blending human input with generation. Offers fine control for pros in concept art. Transforms static prompts into dynamic, hybrid creation.",
+    "headline": "Adobe Firefly Powers Generative Fill in Design Workflows",
+    "summary": "Integrated into Creative Cloud, Firefly supports text-to-image, generative fill, expand, and style references for marketing and branding. Designers use it for early exploration while refining in familiar tools. Enhances professional workflows without disrupting established processes.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 88
   },
   {
-    "id": "firefly_design_workflows",
-    "category": "STR_ART",
-    "headline": "Adobe Firefly for Integrated Design Flows",
-    "summary": "Generative fill, expand, and style refs embed AI into Photoshop for marketing and branding. Seamlessly incorporates AI art into pro layouts. Accelerates production of polished design assets.",
+    "id": "canva_magic_media_design",
+    "category": "CX_UX",
+    "headline": "Canva Magic Media Generates Images Inside Projects",
+    "summary": "Magic Media and Dream Lab enable quick image generation within layouts for social posts, presentations, and posters. Focuses on templates for fast finished assets, ideal for UX teams prototyping visuals. Streamlines high-volume content creation with AI assistance.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 85
   },
   {
-    "id": "canva_magic_media",
-    "category": "CX_UX",
-    "headline": "Canva Magic Media for Quick Visuals",
-    "summary": "AI generation inside templates speeds social media and presentation design. Ideal for UX teams needing rapid prototypes. Lowers barrier for non-artists in collaborative UX workflows.",
+    "id": "recraft_vector_ai_graphics",
+    "category": "STR_ART",
+    "headline": "Recraft Generates Scalable Vector Icons & Illustrations",
+    "summary": "Produces editable SVG graphics like icons and motifs for print/digital flexibility, serving as starting points for brand systems. Supports style-consistent image sets, inpainting, and mockups with collaboration tools. Extends vector design paradigms with AI efficiency.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 82
-  },
-  {
-    "id": "justbuild_100_art_styles",
-    "category": "STR_ART",
-    "headline": "100+ Specialized AI Art Style Generators",
-    "summary": "Pre-optimized tools for cyberpunk, synthwave, fractal, and Ghibli styles eliminate prompt hacking. Expands artists' stylistic range instantly. Fuels experimental design exploration.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
-    "relevance": 94
-  },
-  {
-    "id": "art_style_identification_ai",
-    "category": "STR_ART",
-    "headline": "AI Art Style and Technique Identifier",
-    "summary": "Analyzes images to reveal styles, movements, and methods, inspiring reverse-engineering. Teaches visual vocabulary for better prompts and hybrids. Essential for evolving artistic practice.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
-    "relevance": 89
-  },
-  {
-    "id": "color_psychology_ai_tool",
-    "category": "STR_ART",
-    "headline": "AI Color Psychology Analyzer",
-    "summary": "Evaluates emotional impact of image colors, guiding evocative designs. Critical for UX and branding where mood drives engagement. Merges science with creative intuition.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
-    "relevance": 87
-  },
-  {
-    "id": "reverse_prompt_generators",
-    "category": "STR_ART",
-    "headline": "Image-to-Prompt Generators for All Models",
-    "summary": "Reverse-engineer refs into Midjourney, Flux, or Stable Diffusion prompts with LoRAs. Unlocks style replication and variation. Supercharges iterative art and design sprints.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
     "relevance": 93
   },
   {
-    "id": "ai_composition_analysis",
-    "category": "CX_UX",
-    "headline": "AI Composition Feedback for Sketches",
-    "summary": "Early analysis fixes layout issues, saving rework in UX wireframes and art. Blends computational critique with human vision. Optimizes design validation loops.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
-    "relevance": 86
-  },
-  {
-    "id": "recraft_product_mockups",
-    "category": "CX_UX",
-    "headline": "Recraft AI for Multi-Element Mockups",
-    "summary": "Combines in-paint, out-paint, and elements for product visuals with Photoshop export. Enhances UX prototyping and collaboration. Streamlines path from concept to asset.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 84
-  },
-  {
-    "id": "nano_banana_google_users",
+    "id": "nano_banana_sketch_editing",
     "category": "STR_ART",
-    "headline": "Nano Banana: Top for Google Ecosystem",
-    "summary": "Optimized image gen for Google users, excelling in prompt adherence. Integrates into broader creative stacks. Pushes accessible AI art frontiers.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 80
-  },
-  {
-    "id": "midjourney_stylized_blends",
-    "category": "STR_ART",
-    "headline": "Midjourney Prompt Blends and Stylize",
-    "summary": "Proprietary models excel in striking, blended styles from short prompts. Powers bold artistic movements. Inspires new generative aesthetics.",
-    "url": "https://themesgrove.com/resources/generative-ai-tools/",
-    "relevance": 83
-  },
-  {
-    "id": "stable_diffusion_latent_paper",
-    "category": "STR_ART",
-    "headline": "Latent Diffusion: Foundation of Styles",
-    "summary": "Core paper enables hundreds of art styles via Stable Diffusion. Underpins modern generative art boom. Guides theoretical design innovation.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
+    "headline": "Nano Banana Allows Sketch-Guided AI Image Editing",
+    "summary": "Draw on images or add text instructions for targeted AI refinements, including resizing without cropping and video clips via Veo 3.1. Hands-on control accelerates iteration across formats. Empowers designers to direct AI with intuitive sketches.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 91
   },
   {
-    "id": "aigc_survey_impact",
+    "id": "figma_ai_collaborative_features",
+    "category": "CX_UX",
+    "headline": "Figma AI Offers Layout & Accessibility Suggestions",
+    "summary": "AI automates repetitive tasks like layout assistance and copy support via plugins like FigGPT in collaborative environments. Streamlines iteration while designers retain control over structure and interactions. Critical for UX teams scaling design systems.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 87
+  },
+  {
+    "id": "canva_magic_studio_sync",
+    "category": "CX_UX",
+    "headline": "Canva Magic Studio Adds Beat Sync for Video Timing",
+    "summary": "Magic Design, Edit, Beat Sync, and Translate generate layouts, visuals, and adapt assets quickly for campaigns. Prioritizes speed in social and presentation contexts. Transforms UX prototyping with multimodal AI integration.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 84
+  },
+  {
+    "id": "rgd_ai_ethics_discussion",
     "category": "META",
-    "headline": "Survey: AI Content's Art Revolution",
-    "summary": "arXiv review of DALL-E, Midjourney, Flux on digital creation. Probes creativity implications philosophically. Frames AI as collaborator in human artistry.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
+    "headline": "RGD Demands Transparency in Generative AI Flaws",
+    "summary": "Highlights biases, compensation issues, and transparency flaws in AI tools, urging improvements for creatives. Encourages ethical integration into design practices. Sparks vital discourse on AI's role in strategic art and design.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 89
+  },
+  {
+    "id": "recraft_svg_design_elements",
+    "category": "STR_ART",
+    "headline": "Recraft Exports AI Images as Editable SVGs",
+    "summary": "Creates matching scalable design elements from prompts, with inpaint/outpaint and background removal. Integrates with Photoshop/Illustrator for pro workflows. Revolutionizes vector-based generative design for creators.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "gpt4o_image_pinterest_zap",
+    "category": "CX_UX",
+    "headline": "GPT-4o Automates AI Images to Pinterest Sharing",
+    "summary": "Zapier workflow generates images via ChatGPT and posts to Pinterest, enhancing social UX automation. Free tier access with Plus for unlimited use. Streamlines creative content distribution for designers.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 82
+  },
+  {
+    "id": "midjourney_stylized_prompts",
+    "category": "STR_ART",
+    "headline": "Midjourney Excels in Stylized Short-Prompt Art",
+    "summary": "Proprietary models produce striking images from blends and references, ideal for conceptual ideation. Community-driven refinement treats it as inspiration source. Core tool for exploratory visual art movements.",
+    "url": "https://themesgrove.com/resources/generative-ai-tools/",
+    "relevance": 86
+  },
+  {
+    "id": "artbreeder_gan_collaboration",
+    "category": "STR_ART",
+    "headline": "Artbreeder Uses GANs for Collaborative Image Blends",
+    "summary": "Blends user inputs via GANs for novel image creation and modification. Fosters community-driven evolution of visuals. Pioneers interactive generative art techniques.",
+    "url": "https://www.igmguru.com/blog/generative-ai-tools",
+    "relevance": 88
+  },
+  {
+    "id": "firefly_multilingual_prompts",
+    "category": "STR_ART",
+    "headline": "Firefly Generates Vectors & Textures in Multiple Languages",
+    "summary": "Embedded in Adobe tools for moodboarding, patterns, and color variations from global prompts. Retains designer control in refinement. Amplifies diverse creative exploration in design.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 85
   },
   {
-    "id": "ai_art_ai_starting_point",
-    "category": "META",
-    "headline": "AI as Artist Starting Point Philosophy",
-    "summary": "Use AI for concepts, refine by hand—hybrid mantra. Retains human artistry amid speed. Redefines creative process paradigms.",
-    "url": "https://justbuildthings.com/blog/ai-tools-for-artists-and-digital-creators",
-    "relevance": 81
+    "id": "nano_banana_veo_video",
+    "category": "SONIC",
+    "headline": "Nano Banana Generates Video Clips with Native Audio",
+    "summary": "Uses Veo 3.1 for short clips with integrated sound from sketch edits. Expands AI into sonic-visual design. Breakthrough for experimental sound design and motion graphics.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 92
+  },
+  {
+    "id": "canva_beat_sync_audio",
+    "category": "SONIC",
+    "headline": "Canva Beat Sync AI Times Videos to Music Beats",
+    "summary": "Automatically aligns video edits to audio rhythms in Magic Studio. Enhances UX for music-driven content creation. Innovates accessible audio-reactive design tools.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 87
   }
 ]
