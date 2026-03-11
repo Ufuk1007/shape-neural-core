@@ -1,8 +1,7 @@
-import { streamText, convertToCoreMessages } from 'ai';
+import { streamText, convertToCoreMessages, jsonSchema } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
-import { z } from 'zod';
 import { checkRateLimit, RATE_LIMITS, getClientIp } from './_rate-limit.js';
 
 export default async function handler(
