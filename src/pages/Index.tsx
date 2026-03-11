@@ -3,13 +3,13 @@ import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
 import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
-import LegalModal from "@/components/LegalModal";
+
 import BindruneLogo from "@/components/BindruneLogo";
 
 const Index = () => {
   const [time, setTime] = useState(0);
   const [blink, setBlink] = useState(true);
-  const [isLegalOpen, setIsLegalOpen] = useState(false);
+  
   const [isInterrogating, setIsInterrogating] = useState(false);
 
   const handleInterrogationStart = () => {
@@ -228,7 +228,7 @@ const Index = () => {
 
       {/* PROFILE & FOOTER SECTION */}
       <div className={`transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <ProfileSection onOpenLegal={() => setIsLegalOpen(true)} />
+        <ProfileSection />
       </div>
 
       {/* EXIT BUTTON - Only visible during interrogation */}
@@ -255,8 +255,6 @@ const Index = () => {
         </button>
       )}
 
-      {/* LEGAL MODAL */}
-      <LegalModal isOpen={isLegalOpen} onClose={() => setIsLegalOpen(false)} />
     </>
   );
 };
