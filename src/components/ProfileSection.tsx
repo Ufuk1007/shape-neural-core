@@ -219,15 +219,15 @@ const ProfileSection = () => {
             <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             <span className="text-gray-600">]</span>
           </a>
-          <button
-            onClick={onOpenLegal}
+          <Link
+            to="/legal"
             className="group flex items-center gap-2 text-gray-500 hover:text-[#ff0055] transition-colors duration-300 text-sm"
           >
             <span className="text-[#ff0055] opacity-60">[</span>
             <span className="tracking-[0.15em]">LEGAL_PROTOCOLS</span>
             <FileText size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
             <span className="text-[#ff0055] opacity-60">]</span>
-          </button>
+          </Link>
         </div>
 
         {/* Copyright */}
