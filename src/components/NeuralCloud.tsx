@@ -303,6 +303,19 @@ const DebrisShard = ({
       meshRef.current.rotation.y += 0.01;
     }
 
+    // Smooth glow transition for highlight
+    const targetGlow = isHighlighted ? 5 : isActive ? 3 : 0.5;
+    glowIntensity.current += (targetGlow - glowIntensity.current) * 0.1;
+
+    const targetScale = isHighlighted ? 2.2 : isActive ? 1.8 : 1;
+    currentScale.current += (targetScale - currentScale.current) * 0.1;
+
+    if (meshRef.current) {
+      meshRef.current.scale.setScalar(currentScale.current);
+      const mat = meshRef.current.material as THREE.MeshStandardMaterial;
+      if (mat) mat.emissiveIntensity = glowIntensity.current;
+    }
+
     // Push debris away when interrogating
     if (groupRef.current) {
       const targetPos: [number, number, number] = isInterrogating
