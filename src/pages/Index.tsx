@@ -255,8 +255,6 @@ const Index = () => {
         </button>
       )}
 
-      {/* LEGAL MODAL */}
-      <LegalModal isOpen={isLegalOpen} onClose={() => setIsLegalOpen(false)} />
     </>
   );
 };
