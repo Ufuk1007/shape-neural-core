@@ -38,10 +38,10 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
   const lastSpokenMessageId = useRef<string>("");
-  const handledToolCallIds = useRef(new Set<string>());
+  const activeToolResultRef = useRef<any>(null);
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
-  const { messages, sendMessage, status, error, addToolOutput } = useChat({
+  const { messages, sendMessage, status, error } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
     
     messages: [
@@ -54,41 +54,20 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     onError: (error) => {
       console.error('❌ useChat ERROR:', error);
     },
-    onToolCall: async ({ toolCall }) => {
+    onToolCall: ({ toolCall }) => {
       console.log('🔧 Raw toolCall event:', toolCall);
-
-      // CRITICAL: Deduplicate tool calls (prevent double execution)
-      if (handledToolCallIds.current.has(toolCall.toolCallId)) {
-        console.log('⚠️ Tool call already handled, skipping:', toolCall.toolCallId);
-        return;
-      }
-      handledToolCallIds.current.add(toolCall.toolCallId);
 
       if (toolCall.toolName === 'setAtmosphere' && (toolCall as any).input?.mood) {
         const newMood = (toolCall as any).input.mood as AtmosphereMood;
         console.log('🌍 Atmosphere changed:', newMood);
 
-        // 1) Update UI state
         setCurrentMood(newMood);
         onMoodChange?.(newMood);
 
-        // 2) Trigger glitch effect on AGITATED mood
         if (newMood === 'AGITATED') {
           setIsGlitching(true);
           setTimeout(() => setIsGlitching(false), 500);
         }
-
-        // 3) CRITICAL: Return tool output to continue AI generation (AI SDK 5.0)
-        await addToolOutput({
-          tool: toolCall.toolName,
-          toolCallId: toolCall.toolCallId,
-          output: {
-            success: true,
-            mood: newMood
-          }
-        });
-
-        console.log('✅ Tool output added, AI should continue now...');
       }
     },
     onFinish: (message) => {
