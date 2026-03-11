@@ -272,6 +272,7 @@ const DebrisShard = ({
   data,
   position,
   isActive,
+  isHighlighted,
   isDecrypted,
   isInterrogating,
   onHover,
@@ -281,6 +282,7 @@ const DebrisShard = ({
   data: DebrisData;
   position: [number, number, number];
   isActive: boolean;
+  isHighlighted: boolean;
   isDecrypted: boolean;
   isInterrogating: boolean;
   onHover: () => void;
