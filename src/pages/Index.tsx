@@ -9,7 +9,7 @@ import BindruneLogo from "@/components/BindruneLogo";
 const Index = () => {
   const [time, setTime] = useState(0);
   const [blink, setBlink] = useState(true);
-  const [isLegalOpen, setIsLegalOpen] = useState(false);
+  
   const [isInterrogating, setIsInterrogating] = useState(false);
 
   const handleInterrogationStart = () => {
