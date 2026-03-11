@@ -253,7 +253,7 @@ const LiquidCore = ({
   });
 
   return (
-    <Sphere ref={meshRef} args={[1.5, 64, 64]}>
+    <Sphere ref={meshRef} args={[1.5, 64, 64]} onClick={handleClick}>
       <MeshDistortMaterial
         ref={materialRef}
         color={color}
