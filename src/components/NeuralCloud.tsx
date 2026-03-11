@@ -272,6 +272,7 @@ const DebrisShard = ({
   data,
   position,
   isActive,
+  isHighlighted,
   isDecrypted,
   isInterrogating,
   onHover,
@@ -281,6 +282,7 @@ const DebrisShard = ({
   data: DebrisData;
   position: [number, number, number];
   isActive: boolean;
+  isHighlighted: boolean;
   isDecrypted: boolean;
   isInterrogating: boolean;
   onHover: () => void;
@@ -290,6 +292,8 @@ const DebrisShard = ({
   const meshRef = useRef<THREE.Mesh>(null);
   const groupRef = useRef<THREE.Group>(null);
   const color = CATEGORY_COLORS[data.category];
+  const glowIntensity = useRef(0.5);
+  const currentScale = useRef(1);
 
   // Current position for smooth lerp
   const currentPos = useRef<[number, number, number]>([...position]);
@@ -298,6 +302,19 @@ const DebrisShard = ({
     if (meshRef.current && !isDecrypted) {
       meshRef.current.rotation.x += 0.01;
       meshRef.current.rotation.y += 0.01;
+    }
+
+    // Smooth glow transition for highlight
+    const targetGlow = isHighlighted ? 5 : isActive ? 3 : 0.5;
+    glowIntensity.current += (targetGlow - glowIntensity.current) * 0.1;
+
+    const targetScale = isHighlighted ? 2.2 : isActive ? 1.8 : 1;
+    currentScale.current += (targetScale - currentScale.current) * 0.1;
+
+    if (meshRef.current) {
+      meshRef.current.scale.setScalar(currentScale.current);
+      const mat = meshRef.current.material as THREE.MeshStandardMaterial;
+      if (mat) mat.emissiveIntensity = glowIntensity.current;
     }
 
     // Push debris away when interrogating
@@ -323,7 +340,6 @@ const DebrisShard = ({
     <group ref={groupRef}>
       <mesh
         ref={meshRef}
-        scale={isActive ? 1.8 : 1}
         onPointerEnter={(e) => { e.stopPropagation(); onHover(); }}
         onPointerLeave={onLeave}
         onClick={(e) => { e.stopPropagation(); onClick(); }}
@@ -332,21 +348,21 @@ const DebrisShard = ({
         <meshStandardMaterial
           color={color}
           emissive={color}
-          emissiveIntensity={isActive ? 3 : 0.5}
-          wireframe={!isActive}
+          emissiveIntensity={0.5}
+          wireframe={!isActive && !isHighlighted}
           transparent
-          opacity={isActive ? 1 : isInterrogating ? 0.3 : 0.6}
+          opacity={isActive || isHighlighted ? 1 : isInterrogating ? 0.3 : 0.6}
         />
       </mesh>
 
-      {/* Data Stream - visible when active or high relevance */}
-      {(isActive || data.relevance > 90) && !isInterrogating && (
+      {/* Data Stream - visible when active, highlighted, or high relevance */}
+      {(isActive || isHighlighted || data.relevance > 90) && !isInterrogating && (
         <Line
           points={[[0, 0, 0], [-currentPos.current[0], -currentPos.current[1], -currentPos.current[2]]]}
-          color={isActive ? "#fff" : color}
-          lineWidth={isActive ? 2 : 1}
+          color={isHighlighted ? "#fff" : isActive ? "#fff" : color}
+          lineWidth={isHighlighted ? 3 : isActive ? 2 : 1}
           transparent
-          opacity={isActive ? 0.8 : 0.5}
+          opacity={isHighlighted ? 1 : isActive ? 0.8 : 0.5}
         />
       )}
     </group>
@@ -588,11 +604,13 @@ const NeuralCloud = ({
 }) => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
+  const [highlightedShard, setHighlightedShard] = useState<DebrisData | null>(null);
   const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [interrogationMood, setInterrogationMood] = useState<AtmosphereMood>('NEUTRAL');
   const isMobile = useIsMobile();
   const coreClickIndex = useRef(-1);
+  const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const isDecrypted = decryptedShard !== null;
 
@@ -748,8 +766,20 @@ const NeuralCloud = ({
           mood={activeMood}
           onClick={() => {
             if (!isInterrogating && debrisPositions.length > 0) {
+              // Clear any pending timer
+              if (highlightTimer.current) clearTimeout(highlightTimer.current);
+              
               coreClickIndex.current = (coreClickIndex.current + 1) % debrisPositions.length;
-              setDecryptedShard(debrisPositions[coreClickIndex.current].data);
+              const targetData = debrisPositions[coreClickIndex.current].data;
+              
+              // Phase 1: Highlight the node (glow + connection)
+              setHighlightedShard(targetData);
+              
+              // Phase 2: After 600ms, open the DecryptionPanel
+              highlightTimer.current = setTimeout(() => {
+                setDecryptedShard(targetData);
+                setHighlightedShard(null);
+              }, 600);
             }
           }}
         />
@@ -761,6 +791,7 @@ const NeuralCloud = ({
             data={data}
             position={position}
             isActive={activeShard?.id === data.id || decryptedShard?.id === data.id}
+            isHighlighted={highlightedShard?.id === data.id}
             isDecrypted={isDecrypted}
             isInterrogating={isInterrogating}
             onHover={() => !isDecrypted && !isInterrogating && setActiveShard(data)}
