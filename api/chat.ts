@@ -1,8 +1,7 @@
-import { streamText, convertToCoreMessages } from 'ai';
+import { streamText, convertToCoreMessages, jsonSchema } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
-import { z } from 'zod';
 import { checkRateLimit, RATE_LIMITS, getClientIp } from './_rate-limit.js';
 
 export default async function handler(
@@ -54,11 +53,17 @@ export default async function handler(
       tools: {
         setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. Call this tool to set the mood, then continue with your text response.',
-          parameters: z.object({
-            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
+          parameters: jsonSchema({
+            type: 'object',
+            properties: {
+              mood: {
+                type: 'string',
+                enum: ['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK'],
+              },
+            },
+            required: ['mood'],
           }),
-          execute: async ({ mood }) => {
-            // Server-side acknowledgment — actual UI update happens client-side via onToolCall
+          execute: async ({ mood }: { mood: string }) => {
             return { success: true, mood };
           },
         },
