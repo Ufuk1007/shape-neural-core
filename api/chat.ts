@@ -49,17 +49,20 @@ export default async function handler(
       model: openai('gpt-4.1'),
       system: systemPrompt,
       messages: coreMessages,
-      temperature: 0.3, // Low temperature for more deterministic tool calling, but allow some creativity in responses
+      temperature: 0.3,
+      maxSteps: 2, // Allow model to continue after tool call
       tools: {
         setAtmosphere: {
-          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. You must call this tool once, then continue with your text response.',
-          inputSchema: z.object({
+          description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. Call this tool to set the mood, then continue with your text response.',
+          parameters: z.object({
             mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
           }),
-          // REMOVED execute - pure client-side tool (UI only)
+          execute: async ({ mood }) => {
+            // Server-side acknowledgment — actual UI update happens client-side via onToolCall
+            return { success: true, mood };
+          },
         },
       },
-      // NOTE: NO toolChoice - let model decide when to call, but temperature keeps it deterministic
     });
 
     // Use toUIMessageStreamResponse for useChat compatibility
