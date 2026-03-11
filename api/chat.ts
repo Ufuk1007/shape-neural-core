@@ -3,6 +3,7 @@ import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
 import { z } from 'zod';
+import { checkRateLimit, RATE_LIMITS, getClientIp } from './_rate-limit.js';
 
 export default async function handler(
   req: VercelRequest,
@@ -11,6 +12,14 @@ export default async function handler(
   // Only allow POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  // Rate limiting
+  const clientIp = getClientIp(req);
+  const rateCheck = checkRateLimit(clientIp, RATE_LIMITS.chat);
+  if (!rateCheck.allowed) {
+    res.setHeader('Retry-After', Math.ceil((rateCheck.retryAfterMs || 1000) / 1000));
+    return res.status(429).json({ error: 'Too many requests. Try again later.' });
   }
 
   try {
@@ -37,7 +46,7 @@ export default async function handler(
 
     // Stream the response (AI SDK 5.0)
     const result = streamText({
-      model: openai('gpt-4o-mini'),
+      model: openai('gpt-4.1'),
       system: systemPrompt,
       messages: coreMessages,
       temperature: 0.3, // Low temperature for more deterministic tool calling, but allow some creativity in responses
