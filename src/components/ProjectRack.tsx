@@ -257,7 +257,7 @@ const ProjectRack = () => {
               {/* Right: Tags + Expand Icon */}
               <div className="flex items-center gap-3 md:gap-6">
                 {/* Tags - Hidden on mobile */}
-                <div className="hidden md:flex gap-2">
+                <div className="hidden lg:flex gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}

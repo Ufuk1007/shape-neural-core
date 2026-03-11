@@ -62,7 +62,7 @@ const Index = () => {
   return (
     <>
       <div
-        className={`relative min-h-screen w-full flex flex-col justify-center px-8 md:px-20 overflow-hidden bg-[#111] transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
+        className={`relative min-h-screen w-full flex flex-col justify-center px-6 md:px-12 lg:px-20 overflow-hidden bg-[#111] transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
         style={{
           fontFamily: "'Courier New', Courier, monospace",
           color: "#0f0",
