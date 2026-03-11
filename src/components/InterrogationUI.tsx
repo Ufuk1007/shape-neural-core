@@ -43,21 +43,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   // Use Vercel AI SDK's useChat hook (v5.0 API)
   const { messages, sendMessage, status, error } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
-    tools: {
-      setAtmosphere: {
-        description: 'Update the visual atmosphere',
-        parameters: jsonSchema({
-          type: 'object',
-          properties: {
-            mood: {
-              type: 'string',
-              enum: ['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK'],
-            },
-          },
-          required: ['mood'],
-        }),
-      },
-    },
+    
     messages: [
       {
         id: '0',
