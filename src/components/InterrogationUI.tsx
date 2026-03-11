@@ -41,7 +41,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const activeToolResultRef = useRef<any>(null);
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
-  const { messages, sendMessage, status, error, addToolOutput } = useChat({
+  const { messages, sendMessage, status, error } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
     
     messages: [
