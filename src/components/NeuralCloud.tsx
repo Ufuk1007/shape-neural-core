@@ -128,12 +128,14 @@ const LiquidCore = ({
   color,
   pulseSpeed,
   isInterrogating,
-  mood = 'NEUTRAL'
+  mood = 'NEUTRAL',
+  onClick
 }: {
   color: string;
   pulseSpeed: number;
   isInterrogating: boolean;
   mood?: AtmosphereMood;
+  onClick?: () => void;
 }) => {
   const materialRef = useRef<any>(null);
   const meshRef = useRef<THREE.Mesh>(null);
