@@ -1,4 +1,4 @@
-import { streamText, convertToCoreMessages, tool } from 'ai';
+import { streamText, convertToCoreMessages, tool, jsonSchema } from 'ai';
 import { openai } from '@ai-sdk/openai';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getSystemPrompt } from '../shared/context.js';
