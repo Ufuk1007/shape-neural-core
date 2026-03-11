@@ -603,11 +603,13 @@ const NeuralCloud = ({
 }) => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
+  const [highlightedShard, setHighlightedShard] = useState<DebrisData | null>(null);
   const [debrisData, setDebrisData] = useState<DebrisData[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [interrogationMood, setInterrogationMood] = useState<AtmosphereMood>('NEUTRAL');
   const isMobile = useIsMobile();
   const coreClickIndex = useRef(-1);
+  const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const isDecrypted = decryptedShard !== null;
 
