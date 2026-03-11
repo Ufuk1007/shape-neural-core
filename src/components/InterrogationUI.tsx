@@ -38,12 +38,15 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
   const lastSpokenMessageId = useRef<string>("");
-  const activeToolResultRef = useRef<any>(null);
+  const lastProcessedMoodRef = useRef<string>("");
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
+  // NOTE: setAtmosphere is a SERVER-SIDE tool (has execute on server).
+  // Server-side tools do NOT trigger onToolCall on the client.
+  // Instead, tool-call parts appear in the streamed message parts.
   const { messages, sendMessage, status, error } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
-    
+
     messages: [
       {
         id: '0',
@@ -54,28 +57,36 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     onError: (error) => {
       console.error('❌ useChat ERROR:', error);
     },
-    onToolCall: ({ toolCall }) => {
-      console.log('🔧 Raw toolCall event:', toolCall);
-
-      if (toolCall.toolName === 'setAtmosphere' && (toolCall as any).input?.mood) {
-        const newMood = (toolCall as any).input.mood as AtmosphereMood;
-        console.log('🌍 Atmosphere changed:', newMood);
-
-        setCurrentMood(newMood);
-        onMoodChange?.(newMood);
-
-        if (newMood === 'AGITATED') {
-          setIsGlitching(true);
-          setTimeout(() => setIsGlitching(false), 500);
-        }
-      }
-    },
     onFinish: (message) => {
       console.log('✅ Message finished:', message);
     },
   });
 
   const isLoading = status === 'streaming' || status === 'submitted';
+
+  // Detect atmosphere tool calls from message parts (server-side tool results)
+  useEffect(() => {
+    for (const msg of messages) {
+      for (const part of msg.parts) {
+        if (part.type === 'tool-invocation' && (part as any).toolName === 'setAtmosphere') {
+          const toolPart = part as any;
+          const mood = toolPart.args?.mood || toolPart.input?.mood;
+          if (mood && mood !== lastProcessedMoodRef.current) {
+            lastProcessedMoodRef.current = mood;
+            console.log('🌍 Atmosphere changed (from message parts):', mood);
+
+            setCurrentMood(mood as AtmosphereMood);
+            onMoodChange?.(mood as AtmosphereMood);
+
+            if (mood === 'AGITATED') {
+              setIsGlitching(true);
+              setTimeout(() => setIsGlitching(false), 500);
+            }
+          }
+        }
+      }
+    }
+  }, [messages, onMoodChange]);
 
   // Log any errors
   useEffect(() => {
