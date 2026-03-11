@@ -128,12 +128,14 @@ const LiquidCore = ({
   color,
   pulseSpeed,
   isInterrogating,
-  mood = 'NEUTRAL'
+  mood = 'NEUTRAL',
+  onClick
 }: {
   color: string;
   pulseSpeed: number;
   isInterrogating: boolean;
   mood?: AtmosphereMood;
+  onClick?: () => void;
 }) => {
   const materialRef = useRef<any>(null);
   const meshRef = useRef<THREE.Mesh>(null);
@@ -143,6 +145,13 @@ const LiquidCore = ({
   const currentSpeed = useRef(1.0);
   const currentEmissiveIntensity = useRef(2.0);
   const currentWireframe = useRef(false);
+  const tapPulse = useRef(0);
+
+  const handleClick = (e: any) => {
+    e.stopPropagation();
+    tapPulse.current = 1.0;
+    onClick?.();
+  };
 
   useFrame((state) => {
     if (materialRef.current) {
@@ -199,9 +208,16 @@ const LiquidCore = ({
       currentSpeed.current += (targetSpeed - currentSpeed.current) * 0.05;
       currentEmissiveIntensity.current += (targetEmissiveIntensity - currentEmissiveIntensity.current) * 0.05;
 
-      // Apply distortion with pulse
+      // Tap pulse decay
+      if (tapPulse.current > 0) {
+        tapPulse.current *= 0.9; // decay over ~20 frames
+        if (tapPulse.current < 0.01) tapPulse.current = 0;
+      }
+
+      // Apply distortion with pulse + tap pulse
       materialRef.current.distort = currentDistort.current +
-        Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2;
+        Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2 +
+        tapPulse.current * 0.8;
       materialRef.current.speed = currentSpeed.current;
 
       // Lerp color
@@ -237,7 +253,7 @@ const LiquidCore = ({
   });
 
   return (
-    <Sphere ref={meshRef} args={[1.5, 64, 64]}>
+    <Sphere ref={meshRef} args={[1.5, 64, 64]} onClick={handleClick}>
       <MeshDistortMaterial
         ref={materialRef}
         color={color}
@@ -576,6 +592,7 @@ const NeuralCloud = ({
   const [isLoading, setIsLoading] = useState(true);
   const [interrogationMood, setInterrogationMood] = useState<AtmosphereMood>('NEUTRAL');
   const isMobile = useIsMobile();
+  const coreClickIndex = useRef(-1);
 
   const isDecrypted = decryptedShard !== null;
 
@@ -724,7 +741,18 @@ const NeuralCloud = ({
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ff0055" />
 
         {/* The Liquid Core */}
-        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} isInterrogating={isInterrogating} mood={activeMood} />
+        <LiquidCore
+          color={dominantColor}
+          pulseSpeed={analysis.pulseSpeed}
+          isInterrogating={isInterrogating}
+          mood={activeMood}
+          onClick={() => {
+            if (!isInterrogating && debrisPositions.length > 0) {
+              coreClickIndex.current = (coreClickIndex.current + 1) % debrisPositions.length;
+              setDecryptedShard(debrisPositions[coreClickIndex.current].data);
+            }
+          }}
+        />
 
         {/* Data Debris */}
         {debrisPositions.map(({ data, position }) => (
