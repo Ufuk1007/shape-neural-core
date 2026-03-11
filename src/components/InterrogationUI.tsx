@@ -37,6 +37,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
 
   const inputRef = useRef<HTMLInputElement>(null);
   const recognitionRef = useRef<any>(null);
+  const lastSpokenMessageId = useRef<string>("");
   const lastProcessedMoodRef = useRef<string>("");
 
   // Use Vercel AI SDK's useChat hook (v5.0 API)
