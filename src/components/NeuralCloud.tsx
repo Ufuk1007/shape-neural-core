@@ -290,7 +290,7 @@ const DebrisShard = ({
   onClick: () => void;
 }) => {
   const meshRef = useRef<THREE.Mesh>(null);
-  const groupRef = useRef<THREE.Group>(null);
+  const color = CATEGORY_COLORS[data.category];
   const glowIntensity = useRef(0.5);
   const currentScale = useRef(1);
 
