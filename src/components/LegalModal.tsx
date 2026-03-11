@@ -35,7 +35,7 @@ const LegalModal = ({ isOpen, onClose }: LegalModalProps) => {
             className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
           >
             <div
-              className="w-full max-w-4xl max-h-[90vh] overflow-y-auto pointer-events-auto"
+              className="w-full max-w-4xl pointer-events-auto"
               style={{
                 fontFamily: "'Courier New', Courier, monospace",
                 border: "2px solid #333",
@@ -166,7 +166,7 @@ const LegalModal = ({ isOpen, onClose }: LegalModalProps) => {
                 {/* Footer Status */}
                 <div className="pt-6 border-t border-[#222] flex justify-between items-center text-xs text-[#444] tracking-wider">
                   <span>PROTOCOL_VERSION: 1.0</span>
-                  <span>LAST_UPDATE: 2025-12-13</span>
+                  <span>LAST_UPDATE: 2026-03-11</span>
                 </div>
               </div>
             </div>
