@@ -208,9 +208,16 @@ const LiquidCore = ({
       currentSpeed.current += (targetSpeed - currentSpeed.current) * 0.05;
       currentEmissiveIntensity.current += (targetEmissiveIntensity - currentEmissiveIntensity.current) * 0.05;
 
-      // Apply distortion with pulse
+      // Tap pulse decay
+      if (tapPulse.current > 0) {
+        tapPulse.current *= 0.9; // decay over ~20 frames
+        if (tapPulse.current < 0.01) tapPulse.current = 0;
+      }
+
+      // Apply distortion with pulse + tap pulse
       materialRef.current.distort = currentDistort.current +
-        Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2;
+        Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2 +
+        tapPulse.current * 0.8;
       materialRef.current.speed = currentSpeed.current;
 
       // Lerp color
