@@ -592,6 +592,7 @@ const NeuralCloud = ({
   const [isLoading, setIsLoading] = useState(true);
   const [interrogationMood, setInterrogationMood] = useState<AtmosphereMood>('NEUTRAL');
   const isMobile = useIsMobile();
+  const coreClickIndex = useRef(-1);
 
   const isDecrypted = decryptedShard !== null;
 
