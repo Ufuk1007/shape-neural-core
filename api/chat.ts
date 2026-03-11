@@ -53,8 +53,8 @@ export default async function handler(
       tools: {
         setAtmosphere: tool({
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. Call this tool to set the mood, then continue with your text response.',
-          parameters: {
-            type: 'object',
+          inputSchema: jsonSchema({
+            type: 'object' as const,
             properties: {
               mood: {
                 type: 'string',
@@ -62,8 +62,9 @@ export default async function handler(
               },
             },
             required: ['mood'],
-          },
-          execute: async ({ mood }: { mood: string }) => {
+          }),
+          execute: async (input: unknown) => {
+            const { mood } = input as { mood: string };
             return { success: true, mood };
           },
         }),
