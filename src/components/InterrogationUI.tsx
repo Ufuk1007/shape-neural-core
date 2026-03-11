@@ -54,26 +54,20 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     onError: (error) => {
       console.error('❌ useChat ERROR:', error);
     },
-    onToolCall: async ({ toolCall }) => {
+    onToolCall: ({ toolCall }) => {
       console.log('🔧 Raw toolCall event:', toolCall);
 
       if (toolCall.toolName === 'setAtmosphere' && (toolCall as any).input?.mood) {
         const newMood = (toolCall as any).input.mood as AtmosphereMood;
         console.log('🌍 Atmosphere changed:', newMood);
 
-        // Update UI state
         setCurrentMood(newMood);
         onMoodChange?.(newMood);
 
-        // Trigger glitch effect on AGITATED mood
         if (newMood === 'AGITATED') {
           setIsGlitching(true);
           setTimeout(() => setIsGlitching(false), 500);
         }
-
-        // CRITICAL: Return the result directly — AI SDK 5.0 expects onToolCall to return
-        console.log('✅ Returning tool result, AI should continue...');
-        return { success: true, mood: newMood };
       }
     },
     onFinish: (message) => {
