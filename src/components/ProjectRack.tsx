@@ -160,7 +160,7 @@ const ProjectRack = () => {
   return (
     <section
       id="projects"
-      className="relative w-full min-h-screen py-20 px-8 md:px-20"
+      className="relative w-full min-h-screen py-20 px-6 md:px-12 lg:px-20"
       style={{
         background: "linear-gradient(180deg, #111 0%, #050505 50%, #111 100%)",
         fontFamily: "'Courier New', Courier, monospace",
