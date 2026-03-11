@@ -53,11 +53,17 @@ export default async function handler(
       tools: {
         setAtmosphere: {
           description: 'Update the visual atmosphere of the 3D world based on conversation sentiment. Call this tool to set the mood, then continue with your text response.',
-          parameters: z.object({
-            mood: z.enum(['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK']),
+          parameters: jsonSchema({
+            type: 'object',
+            properties: {
+              mood: {
+                type: 'string',
+                enum: ['NEUTRAL', 'AGITATED', 'ENLIGHTENED', 'DARK'],
+              },
+            },
+            required: ['mood'],
           }),
-          execute: async ({ mood }) => {
-            // Server-side acknowledgment — actual UI update happens client-side via onToolCall
+          execute: async ({ mood }: { mood: string }) => {
             return { success: true, mood };
           },
         },
