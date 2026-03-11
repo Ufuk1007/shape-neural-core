@@ -228,7 +228,7 @@ const Index = () => {
 
       {/* PROFILE & FOOTER SECTION */}
       <div className={`transition-opacity duration-1000 ${isInterrogating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-        <ProfileSection onOpenLegal={() => setIsLegalOpen(true)} />
+        <ProfileSection />
       </div>
 
       {/* EXIT BUTTON - Only visible during interrogation */}
