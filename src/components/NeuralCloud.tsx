@@ -145,6 +145,13 @@ const LiquidCore = ({
   const currentSpeed = useRef(1.0);
   const currentEmissiveIntensity = useRef(2.0);
   const currentWireframe = useRef(false);
+  const tapPulse = useRef(0);
+
+  const handleClick = (e: any) => {
+    e.stopPropagation();
+    tapPulse.current = 1.0;
+    onClick?.();
+  };
 
   useFrame((state) => {
     if (materialRef.current) {
