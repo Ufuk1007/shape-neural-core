@@ -3,7 +3,7 @@ import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
 import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
-import LegalModal from "@/components/LegalModal";
+
 import BindruneLogo from "@/components/BindruneLogo";
 
 const Index = () => {
