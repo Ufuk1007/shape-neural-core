@@ -741,7 +741,18 @@ const NeuralCloud = ({
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ff0055" />
 
         {/* The Liquid Core */}
-        <LiquidCore color={dominantColor} pulseSpeed={analysis.pulseSpeed} isInterrogating={isInterrogating} mood={activeMood} />
+        <LiquidCore
+          color={dominantColor}
+          pulseSpeed={analysis.pulseSpeed}
+          isInterrogating={isInterrogating}
+          mood={activeMood}
+          onClick={() => {
+            if (!isInterrogating && debrisPositions.length > 0) {
+              coreClickIndex.current = (coreClickIndex.current + 1) % debrisPositions.length;
+              setDecryptedShard(debrisPositions[coreClickIndex.current].data);
+            }
+          }}
+        />
 
         {/* Data Debris */}
         {debrisPositions.map(({ data, position }) => (
