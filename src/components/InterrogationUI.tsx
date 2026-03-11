@@ -57,38 +57,23 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     onToolCall: async ({ toolCall }) => {
       console.log('🔧 Raw toolCall event:', toolCall);
 
-      // CRITICAL: Deduplicate tool calls (prevent double execution)
-      if (handledToolCallIds.current.has(toolCall.toolCallId)) {
-        console.log('⚠️ Tool call already handled, skipping:', toolCall.toolCallId);
-        return;
-      }
-      handledToolCallIds.current.add(toolCall.toolCallId);
-
       if (toolCall.toolName === 'setAtmosphere' && (toolCall as any).input?.mood) {
         const newMood = (toolCall as any).input.mood as AtmosphereMood;
         console.log('🌍 Atmosphere changed:', newMood);
 
-        // 1) Update UI state
+        // Update UI state
         setCurrentMood(newMood);
         onMoodChange?.(newMood);
 
-        // 2) Trigger glitch effect on AGITATED mood
+        // Trigger glitch effect on AGITATED mood
         if (newMood === 'AGITATED') {
           setIsGlitching(true);
           setTimeout(() => setIsGlitching(false), 500);
         }
 
-        // 3) CRITICAL: Return tool output to continue AI generation (AI SDK 5.0)
-        await addToolOutput({
-          tool: toolCall.toolName,
-          toolCallId: toolCall.toolCallId,
-          output: {
-            success: true,
-            mood: newMood
-          }
-        });
-
-        console.log('✅ Tool output added, AI should continue now...');
+        // CRITICAL: Return the result directly — AI SDK 5.0 expects onToolCall to return
+        console.log('✅ Returning tool result, AI should continue...');
+        return { success: true, mood: newMood };
       }
     },
     onFinish: (message) => {
