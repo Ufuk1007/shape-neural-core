@@ -14,6 +14,7 @@ interface InterrogationUIProps {
 declare global {
   interface Window {
     webkitSpeechRecognition: any;
+    SpeechRecognition: any;
   }
 }
 
@@ -148,37 +149,46 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     }
   }, [messages, isLoading, isMuted, onExit]);
 
-  // Initialize Speech Recognition
+  // Detect if native Speech Recognition is available (Chrome, Edge, Safari)
+  const hasNativeSpeechRecognition = typeof window !== 'undefined' &&
+    ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window);
+
+  // MediaRecorder ref for Whisper fallback
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
+
+  // Initialize native Speech Recognition (if available)
   useEffect(() => {
-    if ('webkitSpeechRecognition' in window) {
-      const recognition = new window.webkitSpeechRecognition();
-      recognition.continuous = false;
-      recognition.interimResults = false;
-      recognition.lang = 'en-US';
+    const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognitionAPI) return;
 
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript;
-        setUserInput(transcript);
-        setIsListening(false);
+    const recognition = new SpeechRecognitionAPI();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.lang = 'en-US';
 
-        // Auto-submit after voice input
-        setTimeout(() => {
-          if (transcript.trim()) {
-            handleSendMessage(transcript);
-          }
-        }, 500);
-      };
+    recognition.onresult = (event: any) => {
+      const transcript = event.results[0][0].transcript;
+      setUserInput(transcript);
+      setIsListening(false);
 
-      recognition.onerror = () => {
-        setIsListening(false);
-      };
+      // Auto-submit after voice input
+      setTimeout(() => {
+        if (transcript.trim()) {
+          handleSendMessage(transcript);
+        }
+      }, 500);
+    };
 
-      recognition.onend = () => {
-        setIsListening(false);
-      };
+    recognition.onerror = () => {
+      setIsListening(false);
+    };
 
-      recognitionRef.current = recognition;
-    }
+    recognition.onend = () => {
+      setIsListening(false);
+    };
+
+    recognitionRef.current = recognition;
 
     return () => {
       if (recognitionRef.current) {
@@ -187,94 +197,130 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
     };
   }, []);
 
-  // Text-to-Speech function with ElevenLabs ONLY
+  // Text-to-Speech via server-side OpenAI TTS proxy
+  const ttsAbortRef = useRef<AbortController | null>(null);
+
   const speakText = async (text: string) => {
     if (isMuted) return;
 
-    const elevenlabsKey = import.meta.env.VITE_ELEVENLABS_API_KEY;
-
-    // ONLY use ElevenLabs - NO browser TTS fallback
-    if (!elevenlabsKey || elevenlabsKey === 'your_elevenlabs_key_here') {
-      console.log('ElevenLabs API key not configured. Voice disabled.');
-      return;
-    }
+    // Abort any ongoing TTS request
+    ttsAbortRef.current?.abort();
+    const controller = new AbortController();
+    ttsAbortRef.current = controller;
 
     try {
-      // Use "Adam" voice - deep, authoritative
-      const voiceId = 'pNInz6obpgDQGcFmaJgB';
-
-      console.log('Calling ElevenLabs API...');
-      const response = await fetch(
-        `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`,
-        {
-          method: 'POST',
-          headers: {
-            'xi-api-key': elevenlabsKey,
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            text: text,
-            model_id: 'eleven_multilingual_v2',
-            voice_settings: {
-              stability: 0.5,
-              similarity_boost: 0.8,
-              style: 0.0,
-              use_speaker_boost: true
-            }
-          })
-        }
-      );
-
-      console.log('ElevenLabs response status:', response.status);
+      const response = await fetch('/api/tts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text }),
+        signal: controller.signal,
+      });
 
       if (!response.ok) {
-        const errorText = await response.text();
-        console.error('ElevenLabs API error:', response.status, errorText);
+        console.error('TTS error:', response.status);
         return;
       }
 
       const audioBlob = await response.blob();
-      console.log('Audio blob size:', audioBlob.size);
-
       const audioUrl = URL.createObjectURL(audioBlob);
       const audio = new Audio(audioUrl);
 
-      audio.addEventListener('canplaythrough', () => {
-        console.log('Audio ready to play');
-      });
-
-      audio.addEventListener('error', (e) => {
-        console.error('Audio playback error:', e);
-      });
+      audio.onended = () => URL.revokeObjectURL(audioUrl);
+      audio.onerror = () => URL.revokeObjectURL(audioUrl);
 
       await audio.play();
-      console.log('Audio playing...');
     } catch (error) {
-      console.error('ElevenLabs TTS error:', error);
+      if ((error as Error).name !== 'AbortError') {
+        console.error('TTS error:', error);
+      }
     }
   };
 
-  // Toggle microphone
-  const toggleMicrophone = async () => {
-    if (!recognitionRef.current) {
-      return;
+  // Whisper fallback: stop recording and transcribe via server
+  const stopWhisperRecording = async () => {
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state === 'recording') {
+      mediaRecorderRef.current.stop();
     }
+  };
 
+  // Whisper fallback: start recording with MediaRecorder
+  const startWhisperRecording = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      audioChunksRef.current = [];
+
+      const recorder = new MediaRecorder(stream, { mimeType: 'audio/webm' });
+      mediaRecorderRef.current = recorder;
+
+      recorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(event.data);
+        }
+      };
+
+      recorder.onstop = async () => {
+        // Stop all tracks to release mic
+        stream.getTracks().forEach(t => t.stop());
+        setIsListening(false);
+
+        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+        if (audioBlob.size === 0) return;
+
+        try {
+          const response = await fetch('/api/stt', {
+            method: 'POST',
+            headers: { 'Content-Type': 'audio/webm' },
+            body: audioBlob,
+          });
+
+          if (!response.ok) {
+            console.error('STT error:', response.status);
+            return;
+          }
+
+          const { text: transcript } = await response.json();
+          if (transcript?.trim()) {
+            setUserInput(transcript);
+            setTimeout(() => handleSendMessage(transcript), 500);
+          }
+        } catch (error) {
+          console.error('STT transcription error:', error);
+        }
+      };
+
+      recorder.start();
+      setIsListening(true);
+    } catch (error) {
+      console.error('Microphone permission error:', error);
+      setIsListening(false);
+    }
+  };
+
+  // Toggle microphone — uses native Speech API if available, otherwise Whisper fallback
+  const toggleMicrophone = async () => {
     if (isListening) {
-      recognitionRef.current.stop();
+      // Stop listening
+      if (hasNativeSpeechRecognition && recognitionRef.current) {
+        recognitionRef.current.stop();
+      } else {
+        stopWhisperRecording();
+      }
       setIsListening(false);
     } else {
-      try {
-        // Request microphone permission first (check if API exists)
-        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-          await navigator.mediaDevices.getUserMedia({ audio: true });
+      // Start listening
+      if (hasNativeSpeechRecognition && recognitionRef.current) {
+        try {
+          if (navigator.mediaDevices?.getUserMedia) {
+            await navigator.mediaDevices.getUserMedia({ audio: true });
+          }
+          recognitionRef.current.start();
+          setIsListening(true);
+        } catch (error) {
+          console.error('Microphone permission error:', error);
         }
-
-        // Start speech recognition
-        recognitionRef.current.start();
-        setIsListening(true);
-      } catch (error) {
-        console.error('Microphone permission error:', error);
+      } else {
+        // Fallback: record audio and send to Whisper API
+        await startWhisperRecording();
       }
     }
   };
@@ -383,7 +429,7 @@ const InterrogationUI = ({ onExit, onMoodChange }: InterrogationUIProps) => {
                   onClick={() => {
                     setIsMuted(!isMuted);
                     if (!isMuted) {
-                      window.speechSynthesis.cancel();
+                      ttsAbortRef.current?.abort();
                     }
                   }}
                   className={`p-2 transition-colors ${
