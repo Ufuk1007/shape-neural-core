@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useChat, UIMessage } from "@ai-sdk/react";
-import { DefaultChatTransport, jsonSchema } from "ai";
+import { DefaultChatTransport } from "ai";
 import { Mic, MicOff, Volume2, VolumeX } from "lucide-react";
 
 type AtmosphereMood = 'NEUTRAL' | 'AGITATED' | 'ENLIGHTENED' | 'DARK';
