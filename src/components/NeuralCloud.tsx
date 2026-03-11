@@ -339,7 +339,6 @@ const DebrisShard = ({
     <group ref={groupRef}>
       <mesh
         ref={meshRef}
-        scale={isActive ? 1.8 : 1}
         onPointerEnter={(e) => { e.stopPropagation(); onHover(); }}
         onPointerLeave={onLeave}
         onClick={(e) => { e.stopPropagation(); onClick(); }}
@@ -348,21 +347,21 @@ const DebrisShard = ({
         <meshStandardMaterial
           color={color}
           emissive={color}
-          emissiveIntensity={isActive ? 3 : 0.5}
-          wireframe={!isActive}
+          emissiveIntensity={0.5}
+          wireframe={!isActive && !isHighlighted}
           transparent
-          opacity={isActive ? 1 : isInterrogating ? 0.3 : 0.6}
+          opacity={isActive || isHighlighted ? 1 : isInterrogating ? 0.3 : 0.6}
         />
       </mesh>
 
-      {/* Data Stream - visible when active or high relevance */}
-      {(isActive || data.relevance > 90) && !isInterrogating && (
+      {/* Data Stream - visible when active, highlighted, or high relevance */}
+      {(isActive || isHighlighted || data.relevance > 90) && !isInterrogating && (
         <Line
           points={[[0, 0, 0], [-currentPos.current[0], -currentPos.current[1], -currentPos.current[2]]]}
-          color={isActive ? "#fff" : color}
-          lineWidth={isActive ? 2 : 1}
+          color={isHighlighted ? "#fff" : isActive ? "#fff" : color}
+          lineWidth={isHighlighted ? 3 : isActive ? 2 : 1}
           transparent
-          opacity={isActive ? 0.8 : 0.5}
+          opacity={isHighlighted ? 1 : isActive ? 0.8 : 0.5}
         />
       )}
     </group>
