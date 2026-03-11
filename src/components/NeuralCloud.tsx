@@ -765,8 +765,20 @@ const NeuralCloud = ({
           mood={activeMood}
           onClick={() => {
             if (!isInterrogating && debrisPositions.length > 0) {
+              // Clear any pending timer
+              if (highlightTimer.current) clearTimeout(highlightTimer.current);
+              
               coreClickIndex.current = (coreClickIndex.current + 1) % debrisPositions.length;
-              setDecryptedShard(debrisPositions[coreClickIndex.current].data);
+              const targetData = debrisPositions[coreClickIndex.current].data;
+              
+              // Phase 1: Highlight the node (glow + connection)
+              setHighlightedShard(targetData);
+              
+              // Phase 2: After 600ms, open the DecryptionPanel
+              highlightTimer.current = setTimeout(() => {
+                setDecryptedShard(targetData);
+                setHighlightedShard(null);
+              }, 600);
             }
           }}
         />
@@ -778,6 +790,7 @@ const NeuralCloud = ({
             data={data}
             position={position}
             isActive={activeShard?.id === data.id || decryptedShard?.id === data.id}
+            isHighlighted={highlightedShard?.id === data.id}
             isDecrypted={isDecrypted}
             isInterrogating={isInterrogating}
             onHover={() => !isDecrypted && !isInterrogating && setActiveShard(data)}
