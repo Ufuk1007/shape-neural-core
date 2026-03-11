@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import profilePortrait from "@/assets/profile-portrait.png";
 import BindruneLogo from "@/components/BindruneLogo";
 
-interface ProfileSectionProps {
-  onOpenLegal: () => void;
-}
-
-const ProfileSection = ({ onOpenLegal }: ProfileSectionProps) => {
+const ProfileSection = () => {
   return (
     <section
       className="relative min-h-screen py-20 px-8 md:px-20 overflow-hidden"
