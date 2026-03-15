@@ -1005,6 +1005,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
   const [openStep, setOpenStep] = useState(1);
   const [os, setOs] = useState(null);
   const [showRemove, setShowRemove] = useState(false);
+  const [testRunning, setTestRunning] = useState(false);
+  const [testResult, setTestResult] = useState<{ ok: boolean; phase: string; message: string } | null>(null);
 
   const mark = (n) => { setDone(p => ({ ...p, [n]: true })); setOpenStep(n + 1); };
   const toggle = (n) => setOpenStep(openStep === n ? null : n);
