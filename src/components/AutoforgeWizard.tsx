@@ -864,7 +864,7 @@ function ConfigForm({ preset, config, setConfig }) {
             }}>{f}</button>
           )})}
         </div>
-        <div style={{ fontFamily: mono, fontSize: 10, color: C.dim, marginTop: 8, lineHeight: 1.6 }}>
+        <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 8, lineHeight: 1.7 }}>
           Your script and README will be pre-configured for this cadence.
           The actual scheduling runs on your machine — we'll show you how.
           {(config.frequency === "Biweekly") && (
