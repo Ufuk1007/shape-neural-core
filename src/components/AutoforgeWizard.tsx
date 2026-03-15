@@ -765,11 +765,11 @@ function PresetCard({ id, selected, onClick }) {
       transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : "none",
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-        <span style={{ fontSize: 20, color: on ? C.green : C.dim }}>{p.icon}</span>
-        <span style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: on ? C.green : C.white, letterSpacing: 2 }}>{p.name}</span>
+        <span style={{ fontSize: 22, color: on ? C.green : C.dim }}>{p.icon}</span>
+        <span style={{ fontFamily: mono, fontSize: 15, fontWeight: 600, color: on ? C.green : C.white, letterSpacing: 2 }}>{p.name}</span>
       </div>
-      <div style={{ fontFamily: mono, fontSize: 10, color: C.cyan, marginBottom: 10, letterSpacing: 1 }}>{p.tagline}</div>
-      <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6 }}>{p.desc}</div>
+      <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, marginBottom: 10, letterSpacing: 1 }}>{p.tagline}</div>
+      <div style={{ fontFamily: mono, fontSize: 13, color: C.dim, lineHeight: 1.7 }}>{p.desc}</div>
     </button>
   );
 }
