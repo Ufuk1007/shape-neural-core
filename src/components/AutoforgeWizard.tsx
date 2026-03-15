@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BindruneLogo from "./BindruneLogo";
 
 // ═══════════════════════════════════════════════════════════
 // AUTOFORGE v4 — Content Automation Pipeline Generator
@@ -746,7 +747,7 @@ function StepBar({ step }) {
           <div style={{ height: 3, borderRadius: 2, marginBottom: 8,
             background: i <= step ? C.green : C.border,
             boxShadow: i <= step ? glow(C.green) : "none", transition: "all 0.5s" }} />
-          <span style={{ fontFamily: mono, fontSize: 10, letterSpacing: 3,
+          <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: 3,
             color: i === step ? C.green : i < step ? C.dim : C.border }}>{s}</span>
         </div>
       ))}
@@ -764,11 +765,11 @@ function PresetCard({ id, selected, onClick }) {
       transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : "none",
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-        <span style={{ fontSize: 20, color: on ? C.green : C.dim }}>{p.icon}</span>
-        <span style={{ fontFamily: mono, fontSize: 13, fontWeight: 600, color: on ? C.green : C.white, letterSpacing: 2 }}>{p.name}</span>
+        <span style={{ fontSize: 22, color: on ? C.green : C.dim }}>{p.icon}</span>
+        <span style={{ fontFamily: mono, fontSize: 15, fontWeight: 600, color: on ? C.green : C.white, letterSpacing: 2 }}>{p.name}</span>
       </div>
-      <div style={{ fontFamily: mono, fontSize: 10, color: C.cyan, marginBottom: 10, letterSpacing: 1 }}>{p.tagline}</div>
-      <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6 }}>{p.desc}</div>
+      <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, marginBottom: 10, letterSpacing: 1 }}>{p.tagline}</div>
+      <div style={{ fontFamily: mono, fontSize: 13, color: C.dim, lineHeight: 1.7 }}>{p.desc}</div>
     </button>
   );
 }
@@ -780,7 +781,7 @@ function DeliveryChoice({ value, onChange }) {
   ];
   return (
     <div style={{ marginTop: 4 }}>
-      <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 10 }}>Delivery setup</label>
+      <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 10 }}>Delivery setup</label>
       {opts.map(o => (
         <button key={o.key} onClick={() => onChange(o.key)} style={{
           display: "block", width: "100%", textAlign: "left", padding: "14px 16px",
@@ -796,9 +797,9 @@ function DeliveryChoice({ value, onChange }) {
               background: value === o.key ? C.green : "transparent",
               transition: "all 0.2s",
             }} />
-            <span style={{ fontFamily: mono, fontSize: 12, color: value === o.key ? C.green : C.white }}>{o.label}</span>
+            <span style={{ fontFamily: mono, fontSize: 14, color: value === o.key ? C.green : C.white }}>{o.label}</span>
           </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
         </button>
       ))}
     </div>
@@ -810,24 +811,24 @@ function ConfigForm({ preset, config, setConfig }) {
   const set = (k, v) => setConfig(prev => ({ ...prev, [k]: v }));
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 2 }}>CONFIGURE: {p.name}</div>
-      <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
+      <div style={{ fontFamily: mono, fontSize: 13, color: C.cyan, letterSpacing: 2 }}>CONFIGURE: {p.name}</div>
+      <div style={{ fontFamily: mono, fontSize: 14, color: C.dim, lineHeight: 1.8 }}>
         A few inputs. The system handles sources, infrastructure, and code generation.
       </div>
       {p.fields.map(f => (
         <div key={f.key}>
-          <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 6 }}>{f.label}</label>
+          <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 6 }}>{f.label}</label>
           {f.type === "select" ? (
             <select value={config[f.key] || f.opts[0]} onChange={e => set(f.key, e.target.value)} style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 13, borderRadius: 2, outline: "none",
+              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }}>
               {f.opts.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
           ) : (
             <input value={config[f.key] || ""} onChange={e => set(f.key, e.target.value)} placeholder={f.ph} style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 13, borderRadius: 2, outline: "none",
+              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }} />
           )}
         </div>
@@ -836,20 +837,20 @@ function ConfigForm({ preset, config, setConfig }) {
       {/* Email field — shown when relay is selected */}
       {(config.delivery || "relay") === "relay" && (
         <div>
-          <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 6 }}>Your email address</label>
+          <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 6 }}>Your email address</label>
           <input value={config.email || ""} onChange={e => set("email", e.target.value)} placeholder="you@example.com"
             type="email" style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 13, borderRadius: 2, outline: "none",
+              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }} />
-          <div style={{ fontFamily: mono, fontSize: 10, color: C.dim, marginTop: 6 }}>
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6 }}>
             We deliver results here. Pre-filled in your script.
           </div>
         </div>
       )}
       {/* Frequency selector */}
       <div>
-        <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 8 }}>How often should this run?</label>
+        <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 8 }}>How often should this run?</label>
         <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
           {["Daily", "Weekly", "Every 2 weeks", "Monthly"].map(f => {
             const val = f === "Every 2 weeks" ? "Biweekly" : f;
@@ -858,12 +859,12 @@ function ConfigForm({ preset, config, setConfig }) {
               padding: "10px 18px", background: (config.frequency || "Weekly") === val ? `${C.green}12` : C.surface,
               border: `1px solid ${(config.frequency || "Weekly") === val ? C.green : C.border}`,
               color: (config.frequency || "Weekly") === val ? C.green : C.dim,
-              fontFamily: mono, fontSize: 12, borderRadius: 2, cursor: "pointer", outline: "none",
+              fontFamily: mono, fontSize: 13, borderRadius: 2, cursor: "pointer", outline: "none",
               transition: "all 0.2s",
             }}>{f}</button>
           )})}
         </div>
-        <div style={{ fontFamily: mono, fontSize: 10, color: C.dim, marginTop: 8, lineHeight: 1.6 }}>
+        <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 8, lineHeight: 1.7 }}>
           Your script and README will be pre-configured for this cadence.
           The actual scheduling runs on your machine — we'll show you how.
           {(config.frequency === "Biweekly") && (
@@ -889,14 +890,14 @@ function PipelineViz({ preset, phase, label }) {
               border: `1px solid ${i < phase ? `${C.green}55` : i === phase ? C.magenta : C.border}`,
               borderRadius: 2, textAlign: "center", transition: "all 0.5s",
             }}>
-              <div style={{ fontFamily: mono, fontSize: 9, letterSpacing: 2, color: i <= phase ? C.green : C.dim, marginBottom: 3 }}>{l}</div>
-              <div style={{ fontFamily: mono, fontSize: 10, color: i <= phase ? C.white : C.dim }}>{p.stages[i]}</div>
+              <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: 2, color: i <= phase ? C.green : C.dim, marginBottom: 3 }}>{l}</div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: i <= phase ? C.white : C.dim }}>{p.stages[i]}</div>
             </div>
             {i < 3 && <span style={{ color: i < phase ? C.green : C.border, margin: "0 2px", fontSize: 12 }}>→</span>}
           </div>
         ))}
       </div>
-      {label && <div style={{ fontFamily: mono, fontSize: 11, color: C.magenta, textAlign: "center", animation: "pulse 1.5s infinite" }}>{label}</div>}
+      {label && <div style={{ fontFamily: mono, fontSize: 13, color: C.magenta, textAlign: "center", animation: "pulse 1.5s infinite" }}>{label}</div>}
     </div>
   );
 }
@@ -905,11 +906,11 @@ function SourceList({ sources }) {
   if (!sources?.length) return null;
   return (
     <div style={{ marginTop: 16 }}>
-      <div style={{ fontFamily: mono, fontSize: 10, letterSpacing: 2, color: C.cyan, marginBottom: 8 }}>DISCOVERED SOURCES</div>
+      <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 8 }}>DISCOVERED SOURCES</div>
       {sources.map((s, i) => (
         <div key={i} style={{ padding: "8px 12px", background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2, marginBottom: 4 }}>
-          <span style={{ fontFamily: mono, fontSize: 12, color: C.white }}>{s.name}</span>
-          <span style={{ fontFamily: mono, fontSize: 10, color: C.dim, marginLeft: 10 }}>{s.feed_url || s.url}</span>
+          <span style={{ fontFamily: mono, fontSize: 13, color: C.white }}>{s.name}</span>
+          <span style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginLeft: 10 }}>{s.feed_url || s.url}</span>
         </div>
       ))}
     </div>
@@ -949,7 +950,7 @@ const Btn = ({ children, primary = false, disabled = false, onClick }: { childre
     padding: "12px 28px", border: primary ? "none" : `1px solid ${C.border}`,
     background: primary ? (disabled ? C.border : C.green) : "transparent",
     color: primary ? (disabled ? C.dim : C.bg) : C.dim,
-    fontFamily: mono, fontSize: 12, letterSpacing: 3, fontWeight: primary ? 600 : 400,
+    fontFamily: mono, fontSize: 13, letterSpacing: 3, fontWeight: primary ? 600 : 400,
     cursor: disabled ? "default" : "pointer", borderRadius: 2,
     boxShadow: primary && !disabled ? glow(C.green) : "none", transition: "all 0.3s",
   }}>{children}</button>
@@ -988,7 +989,7 @@ function ActivationStep({ number, title, done, open, onToggle, children }) {
           color: done ? C.bg : C.dim, fontFamily: mono, fontSize: 12, fontWeight: 600,
           transition: "all 0.3s",
         }}>{done ? "✓" : number}</div>
-        <span style={{ fontFamily: mono, fontSize: 13, color: done ? C.green : C.white, flex: 1 }}>{title}</span>
+        <span style={{ fontFamily: mono, fontSize: 14, color: done ? C.green : C.white, flex: 1 }}>{title}</span>
         <span style={{ fontFamily: mono, fontSize: 10, color: C.dim }}>{open ? "▼" : "▶"}</span>
       </button>
       {open && (
@@ -1025,8 +1026,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
   const sched = cronMap[freq] || cronMap["Weekly"];
   const cronLine = `${sched.expr}  cd /path/to/autoforge && python main.py >> autoforge.log 2>&1`;
 
-  const sub = { fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.8 };
-  const hint = { fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6, marginTop: 8 };
+  const sub = { fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.8 };
+  const hint = { fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginTop: 8 };
   const code = (t?: any): React.CSSProperties => ({ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
     padding: "10px 14px", background: "#08080f", border: `1px solid ${C.border}`, borderRadius: 2, marginTop: 8, marginBottom: 4 });
 
@@ -1035,10 +1036,10 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       {/* Header + progress */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
         <div>
-          <div style={{ fontSize: 10, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
+          <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
+          <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
-        <div style={{ fontFamily: mono, fontSize: 11, color: doneCount === 4 ? C.green : C.dim }}>
+        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 4 ? C.green : C.dim }}>
           {doneCount} of 4 complete
         </div>
       </div>
@@ -1100,7 +1101,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           )}
           <div style={{ marginBottom: 10 }}>Then run it to make sure everything works:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>python main.py</span>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
             <CopyBtn text="python main.py" />
           </div>
           <div style={hint}>
@@ -1110,7 +1111,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         </div>
         <button onClick={() => mark(2)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
+          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>It worked →</button>
       </ActivationStep>
 
@@ -1124,7 +1125,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           {/* OS selector */}
           <div style={{ marginBottom: 14 }}>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginBottom: 8 }}>What's your computer?</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 8 }}>What's your computer?</div>
             <div style={{ display: "flex", gap: 6 }}>
               {[{ key: "mac", label: "Mac / Linux" }, { key: "win", label: "Windows" }].map(o => (
                 <button key={o.key} onClick={() => setOs(o.key)} style={{
@@ -1139,23 +1140,23 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           {/* Mac/Linux instructions */}
           {os === "mac" && (<div>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 4 STEPS</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 4 STEPS</div>
 
             <div style={{ ...sub, marginBottom: 6 }}>1. Open Terminal.</div>
             <div style={{ ...sub, marginBottom: 6 }}>2. Type this and press Enter:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>crontab -e</span>
+              <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>crontab -e</span>
               <CopyBtn text="crontab -e" />
             </div>
 
             <div style={{ ...sub, marginBottom: 6, marginTop: 12 }}>3. Paste this line at the bottom:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 11, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
+              <span style={{ fontFamily: mono, fontSize: 12, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
               <CopyBtn text={cronLine} />
             </div>
             <div style={{ marginTop: 8, padding: "10px 12px", background: `${C.magenta}0a`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.magenta, marginBottom: 4 }}>IMPORTANT: Edit the path</div>
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>IMPORTANT: Edit the path</div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
                 Replace <span style={{ color: C.white, background: `${C.magenta}15`, padding: "1px 4px", borderRadius: 2 }}>/path/to/autoforge</span> with your actual folder.
                 <br/>Example on Mac: <span style={{ color: C.text }}>/Users/yourname/Desktop/autoforge</span>
                 <br/>Example on Linux: <span style={{ color: C.text }}>/home/yourname/autoforge</span>
@@ -1168,14 +1169,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
             <div style={{ ...sub, marginTop: 14, marginBottom: 4 }}>Verify it's active:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>crontab -l</span>
+              <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>crontab -l</span>
               <CopyBtn text="crontab -l" />
             </div>
           </div>)}
 
           {/* Windows instructions */}
           {os === "win" && (<div>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>TASK SCHEDULER — 7 STEPS</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>TASK SCHEDULER — 7 STEPS</div>
             {[
               "Press Win+R, type taskschd.msc, press Enter.",
               "In the right panel, click \"Create Basic Task\".",
@@ -1186,25 +1187,25 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               "Add arguments: main.py — Start in: the folder where main.py lives.",
             ].map((txt, i) => (
               <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
-                <span style={{ fontFamily: mono, fontSize: 11, color: C.green, flexShrink: 0, width: 18 }}>{i + 1}.</span>
-                <span style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.6 }}>{txt}</span>
+                <span style={{ fontFamily: mono, fontSize: 12, color: C.green, flexShrink: 0, width: 18 }}>{i + 1}.</span>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.7 }}>{txt}</span>
               </div>
             ))}
             <div style={hint}>Click Finish. Your pipeline will now run {sched.human} automatically.</div>
 
             <div style={{ ...sub, marginTop: 14, marginBottom: 4 }}>Verify it's active:</div>
-            <div style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.6 }}>
+            <div style={{ fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.7 }}>
               Open Task Scheduler → Task Scheduler Library → find "AUTOFORGE" → check Status.
             </div>
           </div>)}
 
           {!os && <div style={hint}>Choose your computer type above to see the setup steps.</div>}
-        </div>
-        {os && (
-          <button onClick={() => mark(3)} style={{
-            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-            color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
-          }}>I've set it up →</button>
+         </div>
+         {os && (
+           <button onClick={() => mark(3)} style={{
+             marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+             color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+           }}>I've set it up →</button>
         )}
       </ActivationStep>
 
@@ -1227,7 +1228,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         </div>
         <button onClick={() => mark(4)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
+          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>All good →</button>
       </ActivationStep>
 
@@ -1383,7 +1384,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       <div style={{ marginTop: 24 }}>
         <button onClick={() => setShowRemove(!showRemove)} style={{
           background: "none", border: "none", cursor: "pointer", outline: "none",
-          fontFamily: mono, fontSize: 11, color: C.dim, display: "flex", alignItems: "center", gap: 6,
+          fontFamily: mono, fontSize: 12, color: C.dim, display: "flex", alignItems: "center", gap: 6,
         }}>
           <span>{showRemove ? "▼" : "▶"}</span>
           <span>Remove automation later</span>
@@ -1391,16 +1392,16 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         {showRemove && (
           <div style={{ padding: "12px 0 0 20px" }}>
             {os === "win" || !os ? (
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.7, marginBottom: os ? 0 : 8 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: os ? 0 : 8 }}>
                 <span style={{ color: C.text }}>Windows:</span> Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → Delete. Or just Disable to pause it.
               </div>
             ) : null}
             {os === "mac" || !os ? (
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
                 <span style={{ color: C.text }}>Mac / Linux:</span> Run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line. Save and close.
               </div>
             ) : null}
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.7 }}>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
               Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
             </div>
           </div>
@@ -1413,8 +1414,10 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       </div>
 
       <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
-        <div style={{ fontSize: 10, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-        <div style={{ fontSize: 10, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+        <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
+          <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+        </a>
       </div>
     </div>
   );
@@ -1512,17 +1515,25 @@ export default function AutoforgeWizard() {
       `}</style>
 
       <div style={{ maxWidth: 840, margin: "0 auto" }}>
+        {/* Logo + Home link */}
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
+          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none", opacity: 0.8, transition: "opacity 0.3s" }} onMouseEnter={e => (e.currentTarget.style.opacity = "1")} onMouseLeave={e => (e.currentTarget.style.opacity = "0.8")}>
+            <BindruneLogo size={36} onDark />
+            <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: 3, color: C.dim }}>SHAPENEURAL.COM</span>
+          </a>
+        </div>
+
         <div style={{ marginBottom: 48, textAlign: "center" }}>
-          <div style={{ fontSize: 9, letterSpacing: 6, color: C.dim, marginBottom: 10 }}>SHAPENEURAL LABS · MOD_07</div>
-          <h1 style={{ fontSize: 34, fontWeight: 300, color: C.green, margin: "0 0 6px", letterSpacing: 6, textShadow: `0 0 30px ${C.green}33` }}>AUTOFORGE</h1>
-          <div style={{ fontSize: 11, color: C.dim, letterSpacing: 2 }}>CONTENT AUTOMATION PIPELINE GENERATOR</div>
-          <div style={{ fontSize: 11, color: C.magenta, marginTop: 12, fontStyle: "italic", letterSpacing: 1 }}>Not content. The machine that makes it.</div>
+          <div style={{ fontSize: 11, letterSpacing: 6, color: C.dim, marginBottom: 10 }}>SHAPENEURAL LABS · MOD_07</div>
+          <h1 style={{ fontSize: 38, fontWeight: 300, color: C.green, margin: "0 0 8px", letterSpacing: 6, textShadow: `0 0 30px ${C.green}33` }}>AUTOFORGE</h1>
+          <div style={{ fontSize: 13, color: C.dim, letterSpacing: 2 }}>CONTENT AUTOMATION PIPELINE GENERATOR</div>
+          <div style={{ fontSize: 13, color: C.magenta, marginTop: 12, fontStyle: "italic", letterSpacing: 1 }}>Not content. The machine that makes it.</div>
         </div>
 
         <StepBar step={step} />
 
         {step === 0 && (<div>
-          <p style={{ fontSize: 12, color: C.dim, marginBottom: 24, lineHeight: 1.7 }}>
+          <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
             Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
             a ready-to-run automation. You download two files. That's it.
           </p>
@@ -1546,7 +1557,7 @@ export default function AutoforgeWizard() {
           <PipelineViz preset={preset} phase={phase} label={loading ? phaseLabel : ""} />
           {sources && <SourceList sources={sources} />}
           {sample && (<div style={{ marginTop: 20 }}>
-            <div style={{ fontSize: 10, letterSpacing: 2, color: C.cyan, marginBottom: 10 }}>SAMPLE OUTPUT — PROOF OF VALUE</div>
+            <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 10 }}>SAMPLE OUTPUT — PROOF OF VALUE</div>
             <div style={{
               background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2,
               padding: 18, fontFamily: mono, fontSize: 12, lineHeight: 1.7,
