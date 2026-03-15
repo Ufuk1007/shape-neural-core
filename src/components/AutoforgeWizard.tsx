@@ -757,21 +757,31 @@ function StepBar({ step }) {
   );
 }
 
-function PresetCard({ id, selected, onClick, disabled = false }: { id: string; selected: any; onClick: any; disabled?: boolean }) {
+function PresetCard({ id, selected, onClick, disabled = false, onDisabledClick }: { id: string; selected: any; onClick: any; disabled?: boolean; onDisabledClick?: () => void }) {
   const p = PRESETS[id], on = selected === id;
+  const [showComingSoon, setShowComingSoon] = useState(false);
   return (
-    <button onClick={disabled ? undefined : onClick} style={{
-      flex: "1 1 240px", background: on ? `${C.green}0a` : C.surface,
-      border: `1px solid ${on ? C.green : disabled ? C.border : C.border}`, borderRadius: 2,
+    <button onClick={() => {
+      if (disabled) {
+        setShowComingSoon(true);
+        onDisabledClick?.();
+        setTimeout(() => setShowComingSoon(false), 2000);
+      } else {
+        onClick();
+      }
+    }} style={{
+      flex: "1 1 240px", background: on ? `${C.green}0a` : showComingSoon ? `${C.magenta}08` : C.surface,
+      border: `1px solid ${on ? C.green : showComingSoon ? C.magenta : C.border}`, borderRadius: 2,
       padding: "24px 20px", textAlign: "left", cursor: disabled ? "not-allowed" : "pointer",
-      transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : "none",
-      opacity: disabled ? 0.45 : 1, position: "relative" as const,
+      transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : showComingSoon ? glow(C.magenta) : "none",
+      opacity: disabled ? (showComingSoon ? 0.7 : 0.45) : 1, position: "relative" as const,
     }}>
       {disabled && (
         <div style={{
           position: "absolute", top: 12, right: 12,
-          padding: "3px 10px", background: `${C.magenta}18`, border: `1px solid ${C.magenta}44`,
+          padding: "3px 10px", background: showComingSoon ? `${C.magenta}30` : `${C.magenta}18`, border: `1px solid ${C.magenta}44`,
           borderRadius: 2, fontFamily: mono, fontSize: 10, letterSpacing: 2, color: C.magenta,
+          transition: "all 0.3s",
         }}>COMING SOON</div>
       )}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
@@ -786,32 +796,35 @@ function PresetCard({ id, selected, onClick, disabled = false }: { id: string; s
 
 function DeliveryChoice({ value, onChange }) {
   const opts = [
-    { key: "relay", label: "AUTOFORGE delivers to your email", sub: "Recommended. We handle delivery — just enter your email address." },
-    { key: "self", label: "I'll set up delivery myself", sub: "For advanced users. Full control, but requires your own email credentials." },
+    { key: "relay", label: "AUTOFORGE delivers to your email", sub: "Recommended. We handle delivery — just enter your email address.", color: C.green },
+    { key: "self", label: "I'll set up delivery myself", sub: "For advanced users. Full control, but requires your own email credentials.", color: C.magenta },
   ];
   return (
     <div style={{ marginTop: 4 }}>
       <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 10 }}>Delivery setup</label>
-      {opts.map(o => (
+      {opts.map(o => {
+        const active = value === o.key;
+        const activeColor = active ? o.color : C.border;
+        return (
         <button key={o.key} onClick={() => onChange(o.key)} style={{
           display: "block", width: "100%", textAlign: "left", padding: "14px 16px",
-          background: value === o.key ? `${C.green}0a` : C.surface,
-          border: `1px solid ${value === o.key ? C.green : C.border}`,
+          background: active ? `${o.color}0a` : C.surface,
+          border: `1px solid ${activeColor}`,
           borderRadius: 2, marginBottom: 6, cursor: "pointer", outline: "none",
           transition: "all 0.2s",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{
               width: 14, height: 14, borderRadius: "50%",
-              border: `2px solid ${value === o.key ? C.green : C.dim}`,
-              background: value === o.key ? C.green : "transparent",
+              border: `2px solid ${active ? o.color : C.dim}`,
+              background: active ? o.color : "transparent",
               transition: "all 0.2s",
             }} />
-            <span style={{ fontFamily: mono, fontSize: 14, color: value === o.key ? C.green : C.white }}>{o.label}</span>
+            <span style={{ fontFamily: mono, fontSize: 14, color: active ? o.color : C.white }}>{o.label}</span>
           </div>
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, color: active && o.key === "self" ? C.magenta : C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
         </button>
-      ))}
+      )})}
     </div>
   );
 }
@@ -854,7 +867,7 @@ function ConfigForm({ preset, config, setConfig }) {
               color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }} />
           <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6 }}>
-            We deliver results here. Pre-filled in your script.
+            We deliver results here. Pre-filled in your script. Your email is not stored or shared — it's only embedded in the script you download.
           </div>
         </div>
       )}
@@ -1182,10 +1195,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN TERMINAL ON MAC</div>
               <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 1:</span> Press <span style={{ color: C.green }}>⌘ Cmd + Space</span> to open Spotlight, type <span style={{ color: C.green }}>Terminal</span>, and press Enter.
-              </div>
-              <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 2:</span> Open Finder → Applications → Utilities → <span style={{ color: C.green }}>Terminal.app</span>
+                Open <span style={{ color: C.green }}>Finder</span> → Applications → Utilities → <span style={{ color: C.green }}>Terminal.app</span>
               </div>
               <div style={hint}>
                 You'll see a window with a blinking cursor — that's your terminal. Keep it open for the next steps.
@@ -1197,10 +1207,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN COMMAND PROMPT ON WINDOWS</div>
               <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 1:</span> Press <span style={{ color: C.green }}>Win + R</span>, type <span style={{ color: C.green }}>cmd</span>, and press Enter.
-              </div>
-              <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 2:</span> Click the Start menu, type <span style={{ color: C.green }}>Command Prompt</span>, and click on it.
+                Press <span style={{ color: C.green }}>Win + R</span>, type <span style={{ color: C.green }}>cmd</span>, and press Enter.
               </div>
               <div style={hint}>
                 You'll see a black window with a blinking cursor — that's your command prompt. Keep it open for the next steps.
@@ -1505,6 +1512,105 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
         </div>
 
+        {/* Test email — only in relay mode */}
+        {!selfHosted && (() => {
+          const buildTestPrompt = () => {
+            if (preset === "radar") return `You are an industry analyst. Generate a brief industry radar briefing for the ${config.industry || "tech"} industry. Focus: ${config.focus || "emerging trends"}. Voice: ${config.voice || "Sharp & Direct"}. Include 3-4 key signals with brief analysis. Keep it concise and actionable. Format with clear headers.`;
+            if (preset === "kpi") return `You are a data storyteller. Generate a sample KPI narrative report. Metrics tracked: ${config.metrics || "revenue, conversion rate"}. Audience: ${config.audience || "leadership team"}. Voice: ${config.voice || "Executive Brief"}. Include trend observations and 2-3 action items. Keep it concise.`;
+            return `You are a content strategist. Generate sample recycled content from a hypothetical source piece. Target formats: ${config.formats || "LinkedIn posts, newsletter"}. Audience: ${config.audience || "marketing professionals"}. Voice: ${config.voice || "Sharp & Direct"}. Generate 2-3 short content pieces. Keep it actionable.`;
+          };
+
+          const runTestPipeline = async () => {
+            setTestRunning(true);
+            setTestResult(null);
+            try {
+              const genRes = await fetch(`${FORGE_API_BASE}/forge-generate`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ prompt: buildTestPrompt(), email: config.email }),
+              });
+              if (!genRes.ok) {
+                const err = await genRes.json().catch(() => ({}));
+                setTestResult({ ok: false, phase: "Generation failed", message: err.error || `Server returned ${genRes.status}` });
+                setTestRunning(false); return;
+              }
+              const genData = await genRes.json();
+              const content = genData.content;
+              if (!content) {
+                setTestResult({ ok: false, phase: "Generation failed", message: "No content returned from LLM." });
+                setTestRunning(false); return;
+              }
+              const delRes = await fetch(`${FORGE_API_BASE}/forge-deliver`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ content, to: config.email, subject: `AUTOFORGE Test Run — ${pr.name}`, email: config.email }),
+              });
+              if (!delRes.ok) {
+                const err = await delRes.json().catch(() => ({}));
+                setTestResult({ ok: false, phase: "Delivery failed", message: err.error || `SMTP returned ${delRes.status}` });
+                setTestRunning(false); return;
+              }
+              setTestResult({ ok: true, phase: "done", message: `Test sent to ${config.email}. Check your inbox.` });
+            } catch (e) {
+              setTestResult({ ok: false, phase: "Network error", message: e instanceof Error ? e.message : "Connection failed. Check your internet." });
+            }
+            setTestRunning(false);
+          };
+
+          return (
+            <div style={{ padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2, marginBottom: 16 }}>
+              <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>
+                PROOF OF DELIVERY
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 14 }}>
+                Run the full pipeline now — generate content and deliver it to your inbox.
+                This verifies generation and delivery. Your recurring runs still happen on your machine.
+              </div>
+              <button
+                onClick={runTestPipeline}
+                disabled={testRunning}
+                style={{
+                  padding: "10px 24px", fontFamily: mono, fontSize: 12, cursor: testRunning ? "wait" : "pointer",
+                  background: testRunning ? `${C.green}10` : "transparent",
+                  border: `2px solid ${testRunning ? C.dim : C.green}`,
+                  color: testRunning ? C.dim : C.green,
+                  borderRadius: 2, letterSpacing: 1, transition: "all 0.3s",
+                  ...(testRunning ? { animation: "pulse 1.5s infinite" } : {}),
+                }}
+              >
+                {testRunning ? "⟳ RUNNING PIPELINE..." : "▶ RUN TEST — DELIVER TO MY INBOX"}
+              </button>
+              {testResult && (
+                <div style={{
+                  marginTop: 14, padding: "12px 16px", borderRadius: 2,
+                  background: testResult.ok ? `${C.green}0a` : `${C.magenta}0a`,
+                  border: `1px solid ${testResult.ok ? C.green : C.magenta}33`,
+                }}>
+                  {testResult.ok ? (
+                    <>
+                      <div style={{ fontFamily: mono, fontSize: 12, color: C.green, marginBottom: 4 }}>✓ Test sent successfully. Check your inbox.</div>
+                      <div style={{ fontFamily: mono, fontSize: 11, color: C.dim }}>This verifies generation and delivery. Your recurring runs still happen on your machine.</div>
+                    </>
+                  ) : (
+                    <>
+                      <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>✗ We couldn't complete the test run.</div>
+                      <div style={{ fontFamily: mono, fontSize: 11, color: C.text, marginBottom: 8 }}>
+                        Reason: <span style={{ color: C.magenta }}>{testResult.phase}</span>
+                        {testResult.message ? ` — ${testResult.message}` : ""}
+                      </div>
+                      <button onClick={runTestPipeline} disabled={testRunning} style={{
+                        padding: "6px 16px", fontFamily: mono, fontSize: 11, cursor: "pointer",
+                        background: "transparent", border: `1px solid ${C.dim}`,
+                        color: C.dim, borderRadius: 2, letterSpacing: 1,
+                      }}>↻ RETRY</button>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
         {/* Verify */}
         <div style={{ ...sub, marginBottom: 16 }}>
           <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>VERIFY</div>
@@ -1540,164 +1646,15 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
           </div>
         </div>
-
-        <button onClick={() => mark(7)} style={{
-          marginTop: 18, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>COMPLETE SETUP →</button>
       </ActivationStep>
 
-      {/* SUCCESS STATE */}
-      {doneCount === totalSteps && (() => {
-        const pr = PRESETS[preset];
-        const selfHosted = config.delivery === "self";
-
-        const buildTestPrompt = () => {
-          if (preset === "radar") return `You are an industry analyst. Generate a brief industry radar briefing for the ${config.industry || "tech"} industry. Focus: ${config.focus || "emerging trends"}. Voice: ${config.voice || "Sharp & Direct"}. Include 3-4 key signals with brief analysis. Keep it concise and actionable. Format with clear headers.`;
-          if (preset === "kpi") return `You are a data storyteller. Generate a sample KPI narrative report. Metrics tracked: ${config.metrics || "revenue, conversion rate"}. Audience: ${config.audience || "leadership team"}. Voice: ${config.voice || "Executive Brief"}. Include trend observations and 2-3 action items. Keep it concise.`;
-          return `You are a content strategist. Generate sample recycled content from a hypothetical source piece. Target formats: ${config.formats || "LinkedIn posts, newsletter"}. Audience: ${config.audience || "marketing professionals"}. Voice: ${config.voice || "Sharp & Direct"}. Generate 2-3 short content pieces. Keep it actionable.`;
-        };
-
-        const presetLabel = preset === "radar" ? "industry-radar" : preset === "kpi" ? "kpi-storyteller" : "content-recycler";
-
-        const runTestPipeline = async () => {
-          setTestRunning(true);
-          setTestResult(null);
-
-          // Phase 1: Generate
-          try {
-            const genRes = await fetch(`${FORGE_API_BASE}/forge-generate`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ prompt: buildTestPrompt(), email: config.email }),
-            });
-            if (!genRes.ok) {
-              const err = await genRes.json().catch(() => ({}));
-              setTestResult({ ok: false, phase: "Generation failed", message: err.error || `Server returned ${genRes.status}` });
-              setTestRunning(false);
-              return;
-            }
-            const genData = await genRes.json();
-            const content = genData.content;
-            if (!content) {
-              setTestResult({ ok: false, phase: "Generation failed", message: "No content returned from LLM." });
-              setTestRunning(false);
-              return;
-            }
-
-            // Phase 2: Deliver
-            const delRes = await fetch(`${FORGE_API_BASE}/forge-deliver`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                content,
-                to: config.email,
-                subject: `AUTOFORGE Test Run — ${pr.name}`,
-                email: config.email,
-              }),
-            });
-            if (!delRes.ok) {
-              const err = await delRes.json().catch(() => ({}));
-              setTestResult({ ok: false, phase: "Delivery failed", message: err.error || `SMTP returned ${delRes.status}` });
-              setTestRunning(false);
-              return;
-            }
-
-            setTestResult({ ok: true, phase: "done", message: `Test sent to ${config.email}. Check your inbox.` });
-          } catch (e) {
-            setTestResult({ ok: false, phase: "Network error", message: e instanceof Error ? e.message : "Connection failed. Check your internet." });
-          }
-          setTestRunning(false);
-        };
-
-        return (
-          <div style={{ marginTop: 20 }}>
-            {/* Test Run — only in relay mode */}
-            {!selfHosted && (
-              <div style={{ padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2 }}>
-                <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>
-                  PROOF OF DELIVERY
-                </div>
-                <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 14 }}>
-                  Run the full pipeline now — generate content and deliver it to your inbox.
-                  This verifies generation and delivery. Your recurring runs still happen on your machine.
-                </div>
-
-                <button
-                  onClick={runTestPipeline}
-                  disabled={testRunning}
-                  style={{
-                    padding: "10px 24px", fontFamily: mono, fontSize: 12, cursor: testRunning ? "wait" : "pointer",
-                    background: testRunning ? `${C.green}10` : "transparent",
-                    border: `2px solid ${testRunning ? C.dim : C.green}`,
-                    color: testRunning ? C.dim : C.green,
-                    borderRadius: 2, letterSpacing: 1, transition: "all 0.3s",
-                    ...(testRunning ? { animation: "pulse 1.5s infinite" } : {}),
-                  }}
-                >
-                  {testRunning ? "⟳ RUNNING PIPELINE..." : "▶ RUN TEST — DELIVER TO MY INBOX"}
-                </button>
-
-                {/* Result feedback */}
-                {testResult && (
-                  <div style={{
-                    marginTop: 14, padding: "12px 16px", borderRadius: 2,
-                    background: testResult.ok ? `${C.green}0a` : `${C.magenta}0a`,
-                    border: `1px solid ${testResult.ok ? C.green : C.magenta}33`,
-                  }}>
-                    {testResult.ok ? (
-                      <>
-                        <div style={{ fontFamily: mono, fontSize: 12, color: C.green, marginBottom: 4 }}>
-                          ✓ Test sent successfully. Check your inbox.
-                        </div>
-                        <div style={{ fontFamily: mono, fontSize: 11, color: C.dim }}>
-                          This verifies generation and delivery. Your recurring runs still happen on your machine.
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>
-                          ✗ We couldn't complete the test run.
-                        </div>
-                        <div style={{ fontFamily: mono, fontSize: 11, color: C.text, marginBottom: 8 }}>
-                          Reason: <span style={{ color: C.magenta }}>{testResult.phase}</span>
-                          {testResult.message ? ` — ${testResult.message}` : ""}
-                        </div>
-                        <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginBottom: 10 }}>
-                          Next step: Check README.md → Troubleshooting, or try again.
-                        </div>
-                        <button
-                          onClick={runTestPipeline}
-                          disabled={testRunning}
-                          style={{
-                            padding: "6px 16px", fontFamily: mono, fontSize: 11, cursor: "pointer",
-                            background: "transparent", border: `1px solid ${C.dim}`,
-                            color: C.dim, borderRadius: 2, letterSpacing: 1,
-                          }}
-                        >
-                          ↻ RETRY
-                        </button>
-                      </>
-                    )}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Build another / footer */}
-            <div style={{ marginTop: 30, display: "flex", gap: 10 }}>
-              <Btn onClick={onReset}>BUILD ANOTHER</Btn>
-            </div>
-
-            <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
-              <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · designed intelligence</div>
-              </a>
-            </div>
-          </div>
-        );
-      })()}
+      {/* Footer */}
+      <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
+        <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim, fontFamily: mono }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
+          <div style={{ fontSize: 11, color: C.dim, marginTop: 5, fontFamily: mono }}>shapeneural.com · designed intelligence</div>
+        </a>
+      </div>
     </div>
   );
 }
@@ -1709,7 +1666,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
 export default function AutoforgeWizard() {
   const [step, setStep] = useState(0);
-  const [preset, setPreset] = useState(null);
+  const [preset, setPreset] = useState("radar");
   const [config, setConfig] = useState<Record<string, string>>({ delivery: "relay", frequency: "Weekly" });
   const [phase, setPhase] = useState(-1);
   const [phaseLabel, setPhaseLabel] = useState("");
@@ -1810,18 +1767,29 @@ export default function AutoforgeWizard() {
 
         <StepBar step={step} />
 
-        {step === 0 && (<div>
-          <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
-            Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
-            a ready-to-run automation. You download two files. That's it.
-          </p>
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} />)}
-          </div>
-          <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
-            <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
-          </div>
-        </div>)}
+        {step === 0 && ((() => {
+          const [comingSoonBtn, setComingSoonBtn] = useState(false);
+          return (<div>
+            <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
+              Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
+              a ready-to-run automation. You download two files. That's it.
+            </p>
+            <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+              {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} onDisabledClick={() => { setComingSoonBtn(true); setTimeout(() => setComingSoonBtn(false), 2000); }} />)}
+            </div>
+            <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
+              {comingSoonBtn ? (
+                <button disabled style={{
+                  padding: "12px 28px", border: "none", background: C.magenta,
+                  color: C.white, fontFamily: mono, fontSize: 13, letterSpacing: 3, fontWeight: 600,
+                  cursor: "default", borderRadius: 2, boxShadow: glow(C.magenta), transition: "all 0.3s",
+                }}>COMING SOON</button>
+              ) : (
+                <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
+              )}
+            </div>
+          </div>);
+        })())}
 
         {step === 1 && preset && (<div>
           <ConfigForm preset={preset} config={config} setConfig={setConfig} />
