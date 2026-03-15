@@ -1271,8 +1271,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         }}>Dependencies installed →</button>
       </ActivationStep>
 
-      {/* STEP 3: Configure + test run */}
-      <ActivationStep number={3} title="Run it once" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
+      {/* STEP 4: Configure + test run */}
+      <ActivationStep number={4} title="Run it once" done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
         <div style={sub}>
           {selfHosted ? (
             <div style={{ marginBottom: 10 }}>
