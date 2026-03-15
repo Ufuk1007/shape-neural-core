@@ -890,8 +890,8 @@ function PipelineViz({ preset, phase, label }) {
               border: `1px solid ${i < phase ? `${C.green}55` : i === phase ? C.magenta : C.border}`,
               borderRadius: 2, textAlign: "center", transition: "all 0.5s",
             }}>
-              <div style={{ fontFamily: mono, fontSize: 9, letterSpacing: 2, color: i <= phase ? C.green : C.dim, marginBottom: 3 }}>{l}</div>
-              <div style={{ fontFamily: mono, fontSize: 10, color: i <= phase ? C.white : C.dim }}>{p.stages[i]}</div>
+              <div style={{ fontFamily: mono, fontSize: 11, letterSpacing: 2, color: i <= phase ? C.green : C.dim, marginBottom: 3 }}>{l}</div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: i <= phase ? C.white : C.dim }}>{p.stages[i]}</div>
             </div>
             {i < 3 && <span style={{ color: i < phase ? C.green : C.border, margin: "0 2px", fontSize: 12 }}>→</span>}
           </div>
