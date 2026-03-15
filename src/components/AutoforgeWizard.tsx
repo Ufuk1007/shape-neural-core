@@ -1333,15 +1333,18 @@ export default function AutoforgeWizard() {
     // Phase 3: Sample
     setPhase(2); setPhaseLabel("Generating sample output...");
     try {
-      const r = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST", headers: { "Content-Type": "application/json" },
+      const r = await fetch("/api/forge-sample", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514", max_tokens: 1000,
-          messages: [{ role: "user", content: `You are AUTOFORGE by ShapeNeural Labs. User configured "${pr.name}": ${ctx}. Show a realistic SAMPLE OUTPUT of one run. 250-350 words. Professional. Don't explain — just show the output.` }],
+          preset: preset,
+          config: Object.fromEntries(
+            Object.entries(config).filter(([k, v]) => v && k !== "delivery")
+          )
         }),
       });
       const d = await r.json();
-      setSample(d.content?.map(b => b.text || "").join("\n") || "Sample generated.");
+      setSample(d.content || "Sample generated.");
     } catch { setSample("Sample unavailable. Scripts work independently."); }
 
     // Phase 4: Package
