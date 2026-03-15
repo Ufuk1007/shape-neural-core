@@ -1076,21 +1076,72 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
           <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
-        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 5 ? C.green : C.dim }}>
-          {doneCount} of 5 complete
+        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 6 ? C.green : C.dim }}>
+          {doneCount} of 6 complete
         </div>
       </div>
 
       {/* Progress bar */}
       <div style={{ display: "flex", gap: 3, marginBottom: 24 }}>
-        {[1,2,3,4,5].map(n => (
+        {[1,2,3,4,5,6].map(n => (
           <div key={n} style={{ flex: 1, height: 3, borderRadius: 2, background: done[n] ? C.green : C.border, transition: "all 0.4s",
             boxShadow: done[n] ? glow(C.green) : "none" }} />
         ))}
       </div>
 
-      {/* STEP 1: Download files */}
-      <ActivationStep number={1} title="Download your files" done={done[1]} open={openStep === 1} onToggle={() => toggle(1)}>
+      {/* STEP 1: System check */}
+      <ActivationStep number={1} title="Check your system" done={done[1]} open={openStep === 1} onToggle={() => toggle(1)}>
+        <div style={sub}>
+          <div style={{ marginBottom: 14 }}>
+            First, let's make sure your computer is compatible. Select your operating system:
+          </div>
+
+          <div style={{ display: "flex", gap: 6, marginBottom: 16 }}>
+            {[{ key: "mac", label: "Mac" }, { key: "win", label: "Windows" }, { key: "linux", label: "Linux" }].map(o => (
+              <button key={o.key} onClick={() => setOs(o.key)} style={{
+                padding: "10px 24px", background: os === o.key ? `${C.green}12` : C.bg,
+                border: `1px solid ${os === o.key ? C.green : C.border}`,
+                color: os === o.key ? C.green : C.dim,
+                fontFamily: mono, fontSize: 13, cursor: "pointer", borderRadius: 2, transition: "all 0.2s",
+              }}>{o.label}</button>
+            ))}
+          </div>
+
+          {os && (
+            <div style={{ padding: "14px 16px", background: `${C.green}08`, border: `1px solid ${C.green}22`, borderRadius: 2 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.green, letterSpacing: 1, marginBottom: 10 }}>
+                ✓ {os === "mac" ? "macOS" : os === "win" ? "WINDOWS" : "LINUX"} — COMPATIBLE
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.8 }}>
+                {os === "mac" && (<>
+                  <div style={{ marginBottom: 4 }}>Minimum: <span style={{ color: C.white }}>macOS 10.15 (Catalina)</span> or newer</div>
+                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
+                  <div>Scheduling uses <span style={{ color: C.white }}>cron</span> (built into macOS)</div>
+                </>)}
+                {os === "win" && (<>
+                  <div style={{ marginBottom: 4 }}>Minimum: <span style={{ color: C.white }}>Windows 10</span> or newer</div>
+                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
+                  <div>Scheduling uses <span style={{ color: C.white }}>Task Scheduler</span> (built into Windows)</div>
+                </>)}
+                {os === "linux" && (<>
+                  <div style={{ marginBottom: 4 }}>Any modern Linux distribution works</div>
+                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
+                  <div>Scheduling uses <span style={{ color: C.white }}>cron</span> (built into Linux)</div>
+                </>)}
+              </div>
+            </div>
+          )}
+        </div>
+        {os && (
+          <button onClick={() => mark(1)} style={{
+            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+            color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+          }}>My system is ready →</button>
+        )}
+      </ActivationStep>
+
+      {/* STEP 2: Download files */}
+      <ActivationStep number={2} title="Download your files" done={done[2]} open={openStep === 2} onToggle={() => toggle(2)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>Download these two files. They contain your complete automation:</div>
           <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
@@ -1109,14 +1160,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
           </div>
         </div>
-        <button onClick={() => mark(1)} style={{
+        <button onClick={() => mark(2)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>Files are on my Desktop →</button>
       </ActivationStep>
 
-      {/* STEP 2: Install Python + dependencies */}
-      <ActivationStep number={2} title="Set up Python" done={done[2]} open={openStep === 2} onToggle={() => toggle(2)}>
+      {/* STEP 3: Install Python + dependencies */}
+      <ActivationStep number={3} title="Set up Python" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             Your automation runs with Python — a free programming language.
@@ -1214,14 +1265,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             These are small helper libraries your automation needs. This only needs to be done once.
           </div>
         </div>
-        <button onClick={() => mark(2)} style={{
+        <button onClick={() => mark(3)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>Dependencies installed →</button>
       </ActivationStep>
 
-      {/* STEP 3: Configure + test run */}
-      <ActivationStep number={3} title="Run it once" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
+      {/* STEP 4: Configure + test run */}
+      <ActivationStep number={4} title="Run it once" done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
         <div style={sub}>
           {selfHosted ? (
             <div style={{ marginBottom: 10 }}>
@@ -1243,7 +1294,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ marginBottom: 10 }}>
             Make sure your virtual environment is active, then run the script:
             <InfoBtn>
-              If you just completed Step 2 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
+              If you just completed Step 3 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
             </InfoBtn>
           </div>
 
@@ -1272,14 +1323,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
           </div>
         </div>
-        <button onClick={() => mark(3)} style={{
+        <button onClick={() => mark(4)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>It worked →</button>
       </ActivationStep>
 
-      {/* STEP 4: Schedule */}
-      <ActivationStep number={4} title={`Turn on ${freq.toLowerCase()} runs`} done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
+      {/* STEP 5: Schedule */}
+      <ActivationStep number={5} title={`Turn on ${freq.toLowerCase()} runs`} done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             AUTOFORGE handles content and delivery. But the recurring execution happens
@@ -1289,23 +1340,10 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </InfoBtn>
           </div>
 
-          {/* OS selector */}
-          <div style={{ marginBottom: 14 }}>
-            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 8 }}>What's your computer?</div>
-            <div style={{ display: "flex", gap: 6 }}>
-              {[{ key: "mac", label: "Mac / Linux" }, { key: "win", label: "Windows" }].map(o => (
-                <button key={o.key} onClick={() => setOs(o.key)} style={{
-                  padding: "10px 20px", background: os === o.key ? `${C.green}12` : C.bg,
-                  border: `1px solid ${os === o.key ? C.green : C.border}`,
-                  color: os === o.key ? C.green : C.dim,
-                  fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2, transition: "all 0.2s",
-                }}>{o.label}</button>
-              ))}
-            </div>
-          </div>
+          {/* OS already selected in Step 1, instructions shown automatically */}
 
           {/* Mac/Linux instructions */}
-          {os === "mac" && (<div>
+          {(os === "mac" || os === "linux") && (<div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 1 COMMAND</div>
 
             <div style={{ ...sub, marginBottom: 8 }}>Copy this single command and paste it into your Terminal. It sets everything up automatically:</div>
@@ -1353,18 +1391,18 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
           </div>)}
 
-          {!os && <div style={hint}>Choose your computer type above to see the setup steps.</div>}
+          {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
          </div>
          {os && (
-           <button onClick={() => mark(4)} style={{
+           <button onClick={() => mark(5)} style={{
              marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
              color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
            }}>I've set it up →</button>
         )}
       </ActivationStep>
 
-      {/* STEP 5: Verify */}
-      <ActivationStep number={5} title="Check that it worked" done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
+      {/* STEP 6: Verify */}
+      <ActivationStep number={6} title="Check that it worked" done={done[6]} open={openStep === 6} onToggle={() => toggle(6)}>
         <div style={sub}>
           <div style={{ marginBottom: 10 }}>
             Wait for the next scheduled run (or wait a minute for daily). Then check:
@@ -1373,21 +1411,21 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             ✓ Did you receive an email with your {pr.name.toLowerCase()} results?
           </div>
           <div style={{ marginBottom: 6 }}>
-            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{os === "mac" ? " (shows terminal output)" : ""}?
+            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{(os === "mac" || os === "linux") ? " (shows terminal output)" : ""}?
           </div>
           <div style={hint}>
             If nothing happened, check that your computer was on at the scheduled time.
-            {os === "mac" ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
+            {(os === "mac" || os === "linux") ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
           </div>
         </div>
-        <button onClick={() => mark(5)} style={{
+        <button onClick={() => mark(6)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>All good →</button>
       </ActivationStep>
 
       {/* SUCCESS STATE */}
-      {doneCount === 5 && (() => {
+      {doneCount === 6 && (() => {
         const pr = PRESETS[preset];
         const selfHosted = config.delivery === "self";
 
@@ -1451,11 +1489,26 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
         return (
           <div style={{ marginTop: 20 }}>
-            {/* Success banner */}
-            <div style={{ padding: 20, background: `${C.green}0a`, border: `1px solid ${C.green}33`, borderRadius: 2, textAlign: "center" }}>
-              <div style={{ fontFamily: mono, fontSize: 14, color: C.green, marginBottom: 6 }}>YOUR AUTOMATION IS LIVE</div>
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim }}>
-                {pr.name} runs {sched.human} on your machine. Results go to your inbox.
+            {/* Celebration banner */}
+            <div style={{
+              padding: "32px 24px", textAlign: "center", borderRadius: 4,
+              background: `linear-gradient(135deg, ${C.green}15, ${C.cyan}10)`,
+              border: `2px solid ${C.green}44`,
+              boxShadow: `0 0 40px ${C.green}15, 0 0 80px ${C.green}08`,
+            }}>
+              <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
+              <div style={{ fontFamily: mono, fontSize: 18, color: C.green, fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>
+                AUTOMATION ACTIVE
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 14, color: C.white, marginBottom: 6 }}>
+                Congratulations — you just built a fully automated content pipeline.
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 13, color: C.dim, lineHeight: 1.7 }}>
+                <span style={{ color: C.green }}>▸</span> {pr.name} runs <span style={{ color: C.white }}>{sched.human}</span> on your machine
+                <br/>
+                <span style={{ color: C.green }}>▸</span> Results are delivered straight to your inbox
+                <br/>
+                <span style={{ color: C.green }}>▸</span> No cloud fees, no subscriptions — it's yours
               </div>
             </div>
 
