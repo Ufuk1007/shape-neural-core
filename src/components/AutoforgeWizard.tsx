@@ -1343,7 +1343,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           {/* OS already selected in Step 1, instructions shown automatically */}
 
           {/* Mac/Linux instructions */}
-          {os === "mac" && (<div>
+          {(os === "mac" || os === "linux") && (<div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 1 COMMAND</div>
 
             <div style={{ ...sub, marginBottom: 8 }}>Copy this single command and paste it into your Terminal. It sets everything up automatically:</div>
