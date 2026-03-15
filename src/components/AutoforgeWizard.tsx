@@ -1502,11 +1502,26 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
         return (
           <div style={{ marginTop: 20 }}>
-            {/* Success banner */}
-            <div style={{ padding: 20, background: `${C.green}0a`, border: `1px solid ${C.green}33`, borderRadius: 2, textAlign: "center" }}>
-              <div style={{ fontFamily: mono, fontSize: 14, color: C.green, marginBottom: 6 }}>YOUR AUTOMATION IS LIVE</div>
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim }}>
-                {pr.name} runs {sched.human} on your machine. Results go to your inbox.
+            {/* Celebration banner */}
+            <div style={{
+              padding: "32px 24px", textAlign: "center", borderRadius: 4,
+              background: `linear-gradient(135deg, ${C.green}15, ${C.cyan}10)`,
+              border: `2px solid ${C.green}44`,
+              boxShadow: `0 0 40px ${C.green}15, 0 0 80px ${C.green}08`,
+            }}>
+              <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
+              <div style={{ fontFamily: mono, fontSize: 18, color: C.green, fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>
+                AUTOMATION ACTIVE
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 14, color: C.white, marginBottom: 6 }}>
+                Congratulations — you just built a fully automated content pipeline.
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 13, color: C.dim, lineHeight: 1.7 }}>
+                <span style={{ color: C.green }}>▸</span> {pr.name} runs <span style={{ color: C.white }}>{sched.human}</span> on your machine
+                <br/>
+                <span style={{ color: C.green }}>▸</span> Results are delivered straight to your inbox
+                <br/>
+                <span style={{ color: C.green }}>▸</span> No cloud fees, no subscriptions — it's yours
               </div>
             </div>
 
