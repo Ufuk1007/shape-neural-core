@@ -680,7 +680,7 @@ Or just **Disable** it to pause without deleting.
 ${selfHosted ? `You chose to run everything on your own infrastructure.
 
 **LLM API:**
-We recommend [MiniMax](https://www.minimaxi.chat) — about $0.002 per run.
+We recommend [MiniMax M2.5](https://www.minimax.io) — about $0.003 per run.
 Also works with [OpenAI](https://platform.openai.com) or any OpenAI-compatible API.
 
 **Email Delivery:**
