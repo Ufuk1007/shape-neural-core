@@ -1316,28 +1316,9 @@ export default function AutoforgeWizard() {
     let disc = [];
     if (preset === "radar") {
       try {
-        const r = await fetch("https://shapeneural.com/api/forge-research", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            industry: (config as any).industry || "B2B SaaS",
-            keywords: (config as any).focus || "AI, automation"
-          }),
-        });
-        const d = await r.json();
-        disc = d.sources || [];
-      } catch { disc = [{ name: "Add your feeds", feed_url: "https://example.com/feed", description: "Replace with real RSS URLs" }]; }
-    }
-    setSources(disc);
-
-    // Phase 2
-    setPhase(1); setPhaseLabel("Configuring analysis...");
-    await new Promise(r => setTimeout(r, 800));
-
-    // Phase 3: Sample
-    setPhase(2); setPhaseLabel("Generating sample output...");
-    try {
-      const r = await fetch("https://shapeneural.com/api/forge-sample", {
+        const r = await fetch(`${FORGE_API_BASE}/forge-research`, {
+...
+      const r = await fetch(`${FORGE_API_BASE}/forge-sample`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
