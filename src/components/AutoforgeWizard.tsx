@@ -781,7 +781,7 @@ function DeliveryChoice({ value, onChange }) {
   ];
   return (
     <div style={{ marginTop: 4 }}>
-      <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 10 }}>Delivery setup</label>
+      <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 10 }}>Delivery setup</label>
       {opts.map(o => (
         <button key={o.key} onClick={() => onChange(o.key)} style={{
           display: "block", width: "100%", textAlign: "left", padding: "14px 16px",
