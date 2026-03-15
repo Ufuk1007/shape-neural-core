@@ -1557,7 +1557,7 @@ export default function AutoforgeWizard() {
           <PipelineViz preset={preset} phase={phase} label={loading ? phaseLabel : ""} />
           {sources && <SourceList sources={sources} />}
           {sample && (<div style={{ marginTop: 20 }}>
-            <div style={{ fontSize: 10, letterSpacing: 2, color: C.cyan, marginBottom: 10 }}>SAMPLE OUTPUT — PROOF OF VALUE</div>
+            <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 10 }}>SAMPLE OUTPUT — PROOF OF VALUE</div>
             <div style={{
               background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2,
               padding: 18, fontFamily: mono, fontSize: 12, lineHeight: 1.7,
