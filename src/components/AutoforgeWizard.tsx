@@ -44,7 +44,7 @@ const PRESETS = {
   recycler: {
     id: "recycler", name: "CONTENT RECYCLER", icon: "◎",
     tagline: "Extract → Decompose → Multiply → Distribute",
-    desc: "One long piece in, a full content series out. Feed it a blog post, whitepaper, or transcript — it extracts core ideas and generates multi-format content.",
+    desc: "Planned: Will take one long piece and produce a full content series. Feed it a blog post, whitepaper, or transcript — it will extract core ideas and generate multi-format content.",
     stages: ["Source Content", "Core Extraction", "Multi-Format Series", "Email Delivery"],
     fields: [
       { key: "formats", label: "What formats do you need?", ph: "e.g. LinkedIn posts, newsletter teasers, tweet threads" },
