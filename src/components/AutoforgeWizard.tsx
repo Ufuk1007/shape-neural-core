@@ -897,7 +897,7 @@ function PipelineViz({ preset, phase, label }) {
           </div>
         ))}
       </div>
-      {label && <div style={{ fontFamily: mono, fontSize: 11, color: C.magenta, textAlign: "center", animation: "pulse 1.5s infinite" }}>{label}</div>}
+      {label && <div style={{ fontFamily: mono, fontSize: 13, color: C.magenta, textAlign: "center", animation: "pulse 1.5s infinite" }}>{label}</div>}
     </div>
   );
 }
