@@ -1156,7 +1156,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
             <div style={{ marginTop: 8, padding: "10px 12px", background: `${C.magenta}0a`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>IMPORTANT: Edit the path</div>
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
                 Replace <span style={{ color: C.white, background: `${C.magenta}15`, padding: "1px 4px", borderRadius: 2 }}>/path/to/autoforge</span> with your actual folder.
                 <br/>Example on Mac: <span style={{ color: C.text }}>/Users/yourname/Desktop/autoforge</span>
                 <br/>Example on Linux: <span style={{ color: C.text }}>/home/yourname/autoforge</span>
