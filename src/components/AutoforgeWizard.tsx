@@ -837,13 +837,13 @@ function ConfigForm({ preset, config, setConfig }) {
       {/* Email field — shown when relay is selected */}
       {(config.delivery || "relay") === "relay" && (
         <div>
-          <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 6 }}>Your email address</label>
+          <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 6 }}>Your email address</label>
           <input value={config.email || ""} onChange={e => set("email", e.target.value)} placeholder="you@example.com"
             type="email" style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 13, borderRadius: 2, outline: "none",
+              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }} />
-          <div style={{ fontFamily: mono, fontSize: 10, color: C.dim, marginTop: 6 }}>
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6 }}>
             We deliver results here. Pre-filled in your script.
           </div>
         </div>
