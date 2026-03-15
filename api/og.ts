@@ -1,4 +1,4 @@
-import { OG_META, DEFAULT_OG } from '../shared/og-metadata.js';
+import { OG_META, DEFAULT_OG, FORGE_OG } from '../shared/og-metadata.js';
 import { SPA_SHELL } from './_spa-shell.js';
 
 export const config = {
@@ -40,7 +40,7 @@ export default function handler(req: Request): Response {
   }
 
   // Crawlers get minimal OG HTML
-  const meta = OG_META[path] || DEFAULT_OG;
+  const meta = path === '/forge' ? FORGE_OG : (OG_META[path] || DEFAULT_OG);
   const origin = url.origin;
   const canonicalUrl = `${origin}${path}`;
 
