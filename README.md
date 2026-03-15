@@ -424,7 +424,7 @@ No background processes, no services, no accounts to close.
 
 - **Frontend:** React + Vite + TypeScript + Tailwind CSS
 - **Backend:** Vercel Serverless Functions
-- **LLM (Relay):** MiniMax-Text-01
+- **LLM (Relay):** MiniMax-M2.5
 - **LLM (Research):** OpenAI GPT-4.1 with web search
 - **Email (Relay):** Namecheap Private Email SMTP
 
