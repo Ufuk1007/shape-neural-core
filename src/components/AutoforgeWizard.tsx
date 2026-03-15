@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BindruneLogo from "./BindruneLogo";
 
 // ═══════════════════════════════════════════════════════════
 // AUTOFORGE v4 — Content Automation Pipeline Generator
