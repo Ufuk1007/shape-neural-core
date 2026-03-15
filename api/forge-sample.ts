@@ -5,34 +5,11 @@ const RATE_LIMIT = { windowMs: 60_000, maxRequests: 10 };
 const MINIMAX_URL = 'https://api.minimaxi.chat/v1/chat/completions';
 const MINIMAX_MODEL = 'MiniMax-Text-01';
 
-const ALLOWED_ORIGINS = [
-  'https://shapeneural.com',
-  'https://www.shapeneural.com',
-  'https://input-output-loom.lovable.app',
-];
-
-function isAllowedOrigin(origin: string | undefined) {
-  if (!origin) return false;
-  if (ALLOWED_ORIGINS.includes(origin)) return true;
-
-  try {
-    const { hostname, protocol } = new URL(origin);
-    const isHttp = protocol === 'http:' || protocol === 'https:';
-    return isHttp && (hostname.endsWith('.lovableproject.com') || hostname.endsWith('.lovable.app'));
-  } catch {
-    return false;
-  }
-}
-
-function corsHeaders(origin: string | undefined) {
-  const allowed = isAllowedOrigin(origin);
-  return {
-    'Access-Control-Allow-Origin': allowed ? origin! : ALLOWED_ORIGINS[0],
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    Vary: 'Origin',
-  };
-}
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version',
+};
 
 const PRESET_PROMPTS: Record<string, (config: Record<string, string>) => string> = {
   'industry-radar': (c) => `You are a senior industry analyst. Write a 250-350 word intelligence briefing for the ${c.industry || 'technology'} industry, targeted at ${c.audience || 'decision-makers'}. Voice: ${c.voice || 'professional and analytical'}. Include: a headline, 2-3 key developments with analysis, and a "So What?" section with actionable takeaways. Format as a polished email newsletter.`,
