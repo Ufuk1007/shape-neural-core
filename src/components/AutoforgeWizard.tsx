@@ -1140,7 +1140,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           {/* Mac/Linux instructions */}
           {os === "mac" && (<div>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 4 STEPS</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 4 STEPS</div>
 
             <div style={{ ...sub, marginBottom: 6 }}>1. Open Terminal.</div>
             <div style={{ ...sub, marginBottom: 6 }}>2. Type this and press Enter:</div>
