@@ -1132,7 +1132,11 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </InfoBtn>
           </div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python --version</span>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 --version</span>
+            <CopyBtn text="python3 --version" />
+          </div>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
+            On Windows, use: <span style={{ color: C.green }}>python --version</span>
             <CopyBtn text="python --version" />
           </div>
           <div style={hint}>
@@ -1141,7 +1145,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           <div style={{ marginTop: 16, padding: "12px 14px", background: `${C.magenta}08`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 6 }}>
-              Got an error like "python not found" or "not recognized"?
+              Got "command not found" or "not recognized"?
             </div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.8 }}>
               That means Python isn't installed yet. Download it here:
@@ -1160,14 +1164,22 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               ⬇ Download Python from python.org
             </a>
             <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 8, lineHeight: 1.7 }}>
-              Install it with default settings. <span style={{ color: C.white }}>On Windows, check "Add Python to PATH"</span> during installation. Then close and reopen your terminal, and try <span style={{ color: C.green }}>python --version</span> again.
+              Install it with default settings. <span style={{ color: C.white }}>On Windows, check "Add Python to PATH"</span> during installation.
+              Then close and reopen your terminal, and try the command again.
+            </div>
+            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 6, lineHeight: 1.7 }}>
+              <span style={{ color: C.white }}>Mac tip:</span> On macOS, Python 3 is usually called <span style={{ color: C.green }}>python3</span>, not <span style={{ color: C.green }}>python</span>. If you installed Python but <span style={{ color: C.green }}>python</span> still doesn't work, always use <span style={{ color: C.green }}>python3</span> instead.
             </div>
           </div>
 
           <div style={{ marginTop: 16, fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>INSTALL DEPENDENCIES</div>
           <div style={{ marginBottom: 6 }}>Once Python works, install the required packages:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip3 install {deps}</span>
+            <CopyBtn text={`pip3 install ${deps}`} />
+          </div>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
+            On Windows, use: <span style={{ color: C.green }}>pip install {deps}</span>
             <CopyBtn text={`pip install ${deps}`} />
           </div>
           <div style={hint}>
