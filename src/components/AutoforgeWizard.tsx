@@ -1415,7 +1415,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
           <div style={hint}>
             If nothing happened, check that your computer was on at the scheduled time.
-            {os === "mac" ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
+            {(os === "mac" || os === "linux") ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
           </div>
         </div>
         <button onClick={() => mark(6)} style={{
