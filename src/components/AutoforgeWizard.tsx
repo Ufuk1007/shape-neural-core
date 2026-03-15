@@ -859,7 +859,7 @@ function ConfigForm({ preset, config, setConfig }) {
               padding: "10px 18px", background: (config.frequency || "Weekly") === val ? `${C.green}12` : C.surface,
               border: `1px solid ${(config.frequency || "Weekly") === val ? C.green : C.border}`,
               color: (config.frequency || "Weekly") === val ? C.green : C.dim,
-              fontFamily: mono, fontSize: 12, borderRadius: 2, cursor: "pointer", outline: "none",
+              fontFamily: mono, fontSize: 13, borderRadius: 2, cursor: "pointer", outline: "none",
               transition: "all 0.2s",
             }}>{f}</button>
           )})}
