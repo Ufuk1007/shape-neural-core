@@ -702,7 +702,7 @@ To switch to your own infrastructure later, open main.py and change:
 
 **No other code changes needed.** The script switches automatically.
 
-Recommended LLM: [MiniMax](https://www.minimaxi.chat) (~$0.002/run)
+Recommended LLM: [MiniMax M2.5](https://www.minimax.io) (~$0.003/run)
 Recommended email: Gmail SMTP ([App Password](https://myaccount.google.com/apppasswords)) or [Resend](https://resend.com)`}
 
 ---
