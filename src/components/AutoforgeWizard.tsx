@@ -817,7 +817,7 @@ function ConfigForm({ preset, config, setConfig }) {
       </div>
       {p.fields.map(f => (
         <div key={f.key}>
-          <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 6 }}>{f.label}</label>
+          <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 6 }}>{f.label}</label>
           {f.type === "select" ? (
             <select value={config[f.key] || f.opts[0]} onChange={e => set(f.key, e.target.value)} style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
