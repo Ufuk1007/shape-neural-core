@@ -8,14 +8,29 @@ const MINIMAX_MODEL = 'MiniMax-Text-01';
 const ALLOWED_ORIGINS = [
   'https://shapeneural.com',
   'https://www.shapeneural.com',
+  'https://input-output-loom.lovable.app',
 ];
 
+function isAllowedOrigin(origin: string | undefined) {
+  if (!origin) return false;
+  if (ALLOWED_ORIGINS.includes(origin)) return true;
+
+  try {
+    const { hostname, protocol } = new URL(origin);
+    const isHttp = protocol === 'http:' || protocol === 'https:';
+    return isHttp && (hostname.endsWith('.lovableproject.com') || hostname.endsWith('.lovable.app'));
+  } catch {
+    return false;
+  }
+}
+
 function corsHeaders(origin: string | undefined) {
-  const allowed = origin && ALLOWED_ORIGINS.some(o => origin.startsWith(o));
+  const allowed = isAllowedOrigin(origin);
   return {
     'Access-Control-Allow-Origin': allowed ? origin! : ALLOWED_ORIGINS[0],
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
+    Vary: 'Origin',
   };
 }
 

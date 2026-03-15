@@ -66,6 +66,10 @@ const VOICE_MAP = {
   "Action-Oriented": "leads with recommendations, minimal preamble, prioritized next steps",
 };
 
+const FORGE_API_BASE =
+  typeof window !== "undefined" && window.location.hostname.endsWith(".lovableproject.com")
+    ? "https://input-output-loom.lovable.app/api"
+    : "/api";
 
 // ═══════════════════════════════════════════════════════════
 // PYTHON SCRIPT GENERATORS
@@ -1312,7 +1316,7 @@ export default function AutoforgeWizard() {
     let disc = [];
     if (preset === "radar") {
       try {
-        const r = await fetch("https://shapeneural.com/api/forge-research", {
+        const r = await fetch(`${FORGE_API_BASE}/forge-research`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -1333,7 +1337,7 @@ export default function AutoforgeWizard() {
     // Phase 3: Sample
     setPhase(2); setPhaseLabel("Generating sample output...");
     try {
-      const r = await fetch("https://shapeneural.com/api/forge-sample", {
+      const r = await fetch(`${FORGE_API_BASE}/forge-sample`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
