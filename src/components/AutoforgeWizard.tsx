@@ -1076,21 +1076,72 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
           <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
-        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 5 ? C.green : C.dim }}>
-          {doneCount} of 5 complete
+        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 6 ? C.green : C.dim }}>
+          {doneCount} of 6 complete
         </div>
       </div>
 
       {/* Progress bar */}
       <div style={{ display: "flex", gap: 3, marginBottom: 24 }}>
-        {[1,2,3,4,5].map(n => (
+        {[1,2,3,4,5,6].map(n => (
           <div key={n} style={{ flex: 1, height: 3, borderRadius: 2, background: done[n] ? C.green : C.border, transition: "all 0.4s",
             boxShadow: done[n] ? glow(C.green) : "none" }} />
         ))}
       </div>
 
-      {/* STEP 1: Download files */}
-      <ActivationStep number={1} title="Download your files" done={done[1]} open={openStep === 1} onToggle={() => toggle(1)}>
+      {/* STEP 1: System check */}
+      <ActivationStep number={1} title="Check your system" done={done[1]} open={openStep === 1} onToggle={() => toggle(1)}>
+        <div style={sub}>
+          <div style={{ marginBottom: 14 }}>
+            First, let's make sure your computer is compatible. Select your operating system:
+          </div>
+
+          <div style={{ display: "flex", gap: 6, marginBottom: 16 }}>
+            {[{ key: "mac", label: "Mac" }, { key: "win", label: "Windows" }, { key: "linux", label: "Linux" }].map(o => (
+              <button key={o.key} onClick={() => setOs(o.key)} style={{
+                padding: "10px 24px", background: os === o.key ? `${C.green}12` : C.bg,
+                border: `1px solid ${os === o.key ? C.green : C.border}`,
+                color: os === o.key ? C.green : C.dim,
+                fontFamily: mono, fontSize: 13, cursor: "pointer", borderRadius: 2, transition: "all 0.2s",
+              }}>{o.label}</button>
+            ))}
+          </div>
+
+          {os && (
+            <div style={{ padding: "14px 16px", background: `${C.green}08`, border: `1px solid ${C.green}22`, borderRadius: 2 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.green, letterSpacing: 1, marginBottom: 10 }}>
+                ✓ {os === "mac" ? "macOS" : os === "win" ? "WINDOWS" : "LINUX"} — COMPATIBLE
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.8 }}>
+                {os === "mac" && (<>
+                  <div style={{ marginBottom: 4 }}>Minimum: <span style={{ color: C.white }}>macOS 10.15 (Catalina)</span> or newer</div>
+                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
+                  <div>Scheduling uses <span style={{ color: C.white }}>cron</span> (built into macOS)</div>
+                </>)}
+                {os === "win" && (<>
+                  <div style={{ marginBottom: 4 }}>Minimum: <span style={{ color: C.white }}>Windows 10</span> or newer</div>
+                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
+                  <div>Scheduling uses <span style={{ color: C.white }}>Task Scheduler</span> (built into Windows)</div>
+                </>)}
+                {os === "linux" && (<>
+                  <div style={{ marginBottom: 4 }}>Any modern Linux distribution works</div>
+                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
+                  <div>Scheduling uses <span style={{ color: C.white }}>cron</span> (built into Linux)</div>
+                </>)}
+              </div>
+            </div>
+          )}
+        </div>
+        {os && (
+          <button onClick={() => mark(1)} style={{
+            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+            color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+          }}>My system is ready →</button>
+        )}
+      </ActivationStep>
+
+      {/* STEP 2: Download files */}
+      <ActivationStep number={2} title="Download your files" done={done[2]} open={openStep === 2} onToggle={() => toggle(2)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>Download these two files. They contain your complete automation:</div>
           <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
@@ -1109,7 +1160,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
           </div>
         </div>
-        <button onClick={() => mark(1)} style={{
+        <button onClick={() => mark(2)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>Files are on my Desktop →</button>
