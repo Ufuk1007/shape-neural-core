@@ -1658,7 +1658,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
     </div>
   );
 }
-
+  const [comingSoonBtn, setComingSoonBtn] = useState(false);
 
 // ═══════════════════════════════════════════════════════════
 // MAIN WIZARD
@@ -1767,9 +1767,7 @@ export default function AutoforgeWizard() {
 
         <StepBar step={step} />
 
-        {step === 0 && ((() => {
-          const [comingSoonBtn, setComingSoonBtn] = useState(false);
-          return (<div>
+        {step === 0 && (<div>
             <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
               Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
               a ready-to-run automation. You download two files. That's it.
@@ -1788,8 +1786,7 @@ export default function AutoforgeWizard() {
                 <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
               )}
             </div>
-          </div>);
-        })())}
+          </div>)}
 
         {step === 1 && preset && (<div>
           <ConfigForm preset={preset} config={config} setConfig={setConfig} />
