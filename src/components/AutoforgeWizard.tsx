@@ -1407,15 +1407,15 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           {!os && <div style={hint}>Choose your computer type above to see the setup steps.</div>}
          </div>
          {os && (
-           <button onClick={() => mark(4)} style={{
+           <button onClick={() => mark(5)} style={{
              marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
              color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
            }}>I've set it up →</button>
         )}
       </ActivationStep>
 
-      {/* STEP 5: Verify */}
-      <ActivationStep number={5} title="Check that it worked" done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
+      {/* STEP 6: Verify */}
+      <ActivationStep number={6} title="Check that it worked" done={done[6]} open={openStep === 6} onToggle={() => toggle(6)}>
         <div style={sub}>
           <div style={{ marginBottom: 10 }}>
             Wait for the next scheduled run (or wait a minute for daily). Then check:
@@ -1431,14 +1431,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             {os === "mac" ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
           </div>
         </div>
-        <button onClick={() => mark(5)} style={{
+        <button onClick={() => mark(6)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>All good →</button>
       </ActivationStep>
 
       {/* SUCCESS STATE */}
-      {doneCount === 5 && (() => {
+      {doneCount === 6 && (() => {
         const pr = PRESETS[preset];
         const selfHosted = config.delivery === "self";
 
