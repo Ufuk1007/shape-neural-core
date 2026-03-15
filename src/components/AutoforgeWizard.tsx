@@ -1320,14 +1320,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               <span style={{ fontFamily: mono, fontSize: 12, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
               <CopyBtn text={cronLine} />
             </div>
-            <div style={{ marginTop: 8, padding: "10px 12px", background: `${C.magenta}0a`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>IMPORTANT: Edit the path</div>
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
-                If your files are on your Desktop, use:
-                <br/>Mac: <span style={{ color: C.text }}>/Users/yourname/Desktop</span>
-                <br/>Linux: <span style={{ color: C.text }}>/home/yourname/Desktop</span>
-                <br/>Not sure? Open Terminal on your Desktop and type <span style={{ color: C.green }}>pwd</span> — that shows the full path.
-              </div>
+            <div style={hint}>
+              This uses the virtual environment you created earlier. If your files are not on the Desktop, adjust the paths accordingly.
             </div>
 
             <div style={{ ...sub, marginBottom: 6, marginTop: 12 }}>4. Save and close the editor.</div>
