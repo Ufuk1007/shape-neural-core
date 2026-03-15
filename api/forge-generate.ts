@@ -1,6 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { checkRateLimit, getClientIp } from './_rate-limit.js';
 
+export const maxDuration = 60;
+
 const RATE_LIMIT = { windowMs: 60_000, maxRequests: 5 };
 const MINIMAX_URL = 'https://api.minimaxi.chat/v1/chat/completions';
 const MINIMAX_MODEL = 'MiniMax-Text-01';
