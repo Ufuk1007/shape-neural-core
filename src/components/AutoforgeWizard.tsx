@@ -1061,7 +1061,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
     "Monthly": { expr: "0 8 1 * *", human: "the 1st of every month at 8:00 AM" },
   };
   const sched = cronMap[freq] || cronMap["Weekly"];
-  const cronLine = `${sched.expr}  cd /path/to/autoforge && python main.py >> autoforge.log 2>&1`;
+  const cronLine = `${sched.expr}  cd ~/Desktop && ~/Desktop/.venv/bin/python main.py >> autoforge.log 2>&1`;
 
   const sub = { fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.8 };
   const hint = { fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginTop: 8 };
