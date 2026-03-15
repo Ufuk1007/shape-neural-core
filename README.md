@@ -218,13 +218,13 @@ RELAY_URL = "https://shapeneural.com/api"
 
 ### Option 2: Direct API (Self-Hosted)
 
-Use your own LLM API key. The script uses `MiniMax-Text-01` by default.
+Use your own LLM API key. The script uses `MiniMax-M2.5` by default.
 
 ```python
 LLM_MODE = "direct"
 LLM_API_KEY = "your-api-key-here"
-LLM_BASE_URL = "https://api.minimaxi.chat/v1"
-LLM_MODEL = "MiniMax-Text-01"
+LLM_BASE_URL = "https://api.minimax.io/v1"
+LLM_MODEL = "MiniMax-M2.5"
 ```
 
 #### Supported LLM Providers
