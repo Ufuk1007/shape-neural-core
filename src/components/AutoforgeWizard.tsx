@@ -943,7 +943,7 @@ function FileCard({ name, content, onDL }) {
   );
 }
 
-const Btn = ({ children, primary, disabled, onClick }) => (
+const Btn = ({ children, primary = false, disabled = false, onClick }: { children: any; primary?: boolean; disabled?: boolean; onClick: any }) => (
   <button disabled={disabled} onClick={onClick} style={{
     padding: "12px 28px", border: primary ? "none" : `1px solid ${C.border}`,
     background: primary ? (disabled ? C.border : C.green) : "transparent",
