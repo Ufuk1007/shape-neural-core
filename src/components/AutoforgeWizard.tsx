@@ -1670,16 +1670,16 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         </button>
         {showRemove && (
           <div style={{ padding: "12px 0 0 20px" }}>
-            {os === "win" || !os ? (
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: os ? 0 : 8 }}>
-                <span style={{ color: C.text }}>Windows:</span> Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → Delete. Or just Disable to pause it.
-              </div>
-            ) : null}
-            {os === "mac" || !os ? (
+            {os === "win" && (
               <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
-                <span style={{ color: C.text }}>Mac / Linux:</span> Run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line. Save and close.
+                Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → Delete. Or just Disable to pause it.
               </div>
-            ) : null}
+            )}
+            {os === "mac" && (
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
+                Run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line. Save and close.
+              </div>
+            )}
             <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
               Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
             </div>
