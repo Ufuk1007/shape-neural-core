@@ -1473,9 +1473,33 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         )}
       </ActivationStep>
 
-      {/* STEP 7: Verify */}
-      <ActivationStep number={7} title="Check that it worked" done={done[7]} open={openStep === 7} onToggle={() => toggle(7)}>
-        <div style={sub}>
+      {/* STEP 7: Automation Active */}
+      <ActivationStep number={7} title="Automation active" done={done[7]} open={openStep === 7} onToggle={() => toggle(7)}>
+        {/* Celebration */}
+        <div style={{
+          padding: "24px 20px", textAlign: "center", borderRadius: 4, marginBottom: 20,
+          background: `linear-gradient(135deg, ${C.green}15, ${C.cyan}10)`,
+          border: `2px solid ${C.green}44`,
+          boxShadow: `0 0 40px ${C.green}15, 0 0 80px ${C.green}08`,
+        }}>
+          <div style={{ fontFamily: mono, fontSize: 18, color: C.green, fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>
+            AUTOMATION ACTIVE
+          </div>
+          <div style={{ fontFamily: mono, fontSize: 14, color: C.white, marginBottom: 6 }}>
+            Your {pr.name.toLowerCase()} pipeline is set up and will run automatically.
+          </div>
+          <div style={{ fontFamily: mono, fontSize: 13, color: C.dim, lineHeight: 1.7 }}>
+            <span style={{ color: C.green }}>▸</span> Runs <span style={{ color: C.white }}>{sched.human}</span> on your machine
+            <br/>
+            <span style={{ color: C.green }}>▸</span> Results delivered straight to your inbox
+            <br/>
+            <span style={{ color: C.green }}>▸</span> No cloud fees, no subscriptions — it's yours
+          </div>
+        </div>
+
+        {/* Verify */}
+        <div style={{ ...sub, marginBottom: 16 }}>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>VERIFY</div>
           <div style={{ marginBottom: 10 }}>
             Wait for the next scheduled run (or wait a minute for daily). Then check:
           </div>
@@ -1483,17 +1507,36 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             ✓ Did you receive an email with your {pr.name.toLowerCase()} results?
           </div>
           <div style={{ marginBottom: 6 }}>
-            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{os === "mac" ? " (shows terminal output)" : ""}?
+            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop?
           </div>
           <div style={hint}>
             If nothing happened, check that your computer was on at the scheduled time.
             {os === "mac" ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
           </div>
         </div>
+
+        {/* Deactivate */}
+        <div style={{ ...sub }}>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>DEACTIVATE</div>
+          {os === "mac" && (
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
+              Run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line. Save and close.
+            </div>
+          )}
+          {os === "win" && (
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
+              Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → Delete. Or just Disable to pause it.
+            </div>
+          )}
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
+            Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
+          </div>
+        </div>
+
         <button onClick={() => mark(7)} style={{
-          marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+          marginTop: 18, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>All good →</button>
+        }}>COMPLETE SETUP →</button>
       </ActivationStep>
 
       {/* SUCCESS STATE */}
