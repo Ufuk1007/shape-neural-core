@@ -1497,7 +1497,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       </ActivationStep>
 
       {/* SUCCESS STATE */}
-      {doneCount === 6 && (() => {
+      {doneCount === totalSteps && (() => {
         const pr = PRESETS[preset];
         const selfHosted = config.delivery === "self";
 
