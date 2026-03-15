@@ -1101,7 +1101,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           )}
           <div style={{ marginBottom: 10 }}>Then run it to make sure everything works:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>python main.py</span>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
             <CopyBtn text="python main.py" />
           </div>
           <div style={hint}>
