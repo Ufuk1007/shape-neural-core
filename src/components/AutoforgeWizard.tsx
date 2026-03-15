@@ -1425,4 +1425,6 @@ export default function AutoforgeWizard() {
       </div>
     </div>
   );
-} AutoforgeWizard component code here
+}
+
+export default AutoforgeWizard;
