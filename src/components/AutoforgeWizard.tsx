@@ -1024,7 +1024,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
   const sub = { fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.8 };
   const hint = { fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6, marginTop: 8 };
-  const code = (t) => ({ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
+  const code = (t?: any): React.CSSProperties => ({ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
     padding: "10px 14px", background: "#08080f", border: `1px solid ${C.border}`, borderRadius: 2, marginTop: 8, marginBottom: 4 });
 
   return (
