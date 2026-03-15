@@ -757,21 +757,31 @@ function StepBar({ step }) {
   );
 }
 
-function PresetCard({ id, selected, onClick, disabled = false }: { id: string; selected: any; onClick: any; disabled?: boolean }) {
+function PresetCard({ id, selected, onClick, disabled = false, onDisabledClick }: { id: string; selected: any; onClick: any; disabled?: boolean; onDisabledClick?: () => void }) {
   const p = PRESETS[id], on = selected === id;
+  const [showComingSoon, setShowComingSoon] = useState(false);
   return (
-    <button onClick={disabled ? undefined : onClick} style={{
-      flex: "1 1 240px", background: on ? `${C.green}0a` : C.surface,
-      border: `1px solid ${on ? C.green : disabled ? C.border : C.border}`, borderRadius: 2,
+    <button onClick={() => {
+      if (disabled) {
+        setShowComingSoon(true);
+        onDisabledClick?.();
+        setTimeout(() => setShowComingSoon(false), 2000);
+      } else {
+        onClick();
+      }
+    }} style={{
+      flex: "1 1 240px", background: on ? `${C.green}0a` : showComingSoon ? `${C.magenta}08` : C.surface,
+      border: `1px solid ${on ? C.green : showComingSoon ? C.magenta : C.border}`, borderRadius: 2,
       padding: "24px 20px", textAlign: "left", cursor: disabled ? "not-allowed" : "pointer",
-      transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : "none",
-      opacity: disabled ? 0.45 : 1, position: "relative" as const,
+      transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : showComingSoon ? glow(C.magenta) : "none",
+      opacity: disabled ? (showComingSoon ? 0.7 : 0.45) : 1, position: "relative" as const,
     }}>
       {disabled && (
         <div style={{
           position: "absolute", top: 12, right: 12,
-          padding: "3px 10px", background: `${C.magenta}18`, border: `1px solid ${C.magenta}44`,
+          padding: "3px 10px", background: showComingSoon ? `${C.magenta}30` : `${C.magenta}18`, border: `1px solid ${C.magenta}44`,
           borderRadius: 2, fontFamily: mono, fontSize: 10, letterSpacing: 2, color: C.magenta,
+          transition: "all 0.3s",
         }}>COMING SOON</div>
       )}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
