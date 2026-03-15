@@ -1817,7 +1817,7 @@ export default function AutoforgeWizard() {
             a ready-to-run automation. You download two files. That's it.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} />)}
+            {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} />)}
           </div>
           <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
             <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
