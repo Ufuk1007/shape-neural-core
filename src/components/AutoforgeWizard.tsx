@@ -1036,8 +1036,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       {/* Header + progress */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
         <div>
-          <div style={{ fontSize: 10, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
+          <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
+          <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
         <div style={{ fontFamily: mono, fontSize: 11, color: doneCount === 4 ? C.green : C.dim }}>
           {doneCount} of 4 complete
