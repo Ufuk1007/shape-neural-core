@@ -1265,7 +1265,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             These are small helper libraries your automation needs. This only needs to be done once.
           </div>
         </div>
-        <button onClick={() => mark(2)} style={{
+        <button onClick={() => mark(3)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>Dependencies installed →</button>
