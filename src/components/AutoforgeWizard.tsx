@@ -1531,7 +1531,7 @@ export default function AutoforgeWizard() {
         <StepBar step={step} />
 
         {step === 0 && (<div>
-          <p style={{ fontSize: 12, color: C.dim, marginBottom: 24, lineHeight: 1.7 }}>
+          <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
             Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
             a ready-to-run automation. You download two files. That's it.
           </p>
