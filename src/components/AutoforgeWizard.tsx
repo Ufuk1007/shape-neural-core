@@ -145,7 +145,7 @@ def _call_llm(prompt):
             print(f"  ! LLM error: {e}"); return f"[Failed: {e}]"
     else:
         try:
-            r = requests.post(f"{RELAY_URL}/autoforge-generate",
+            r = requests.post(f"{RELAY_URL}/forge-generate",
                 json={"prompt": prompt, "email": USER_EMAIL}, timeout=60)
             r.raise_for_status()
             return r.json().get("content", "[No content]")
