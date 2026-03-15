@@ -1187,8 +1187,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               "Add arguments: main.py — Start in: the folder where main.py lives.",
             ].map((txt, i) => (
               <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
-                <span style={{ fontFamily: mono, fontSize: 11, color: C.green, flexShrink: 0, width: 18 }}>{i + 1}.</span>
-                <span style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.6 }}>{txt}</span>
+                <span style={{ fontFamily: mono, fontSize: 12, color: C.green, flexShrink: 0, width: 18 }}>{i + 1}.</span>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.7 }}>{txt}</span>
               </div>
             ))}
             <div style={hint}>Click Finish. Your pipeline will now run {sched.human} automatically.</div>
