@@ -1125,7 +1125,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           {/* OS selector */}
           <div style={{ marginBottom: 14 }}>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginBottom: 8 }}>What's your computer?</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 8 }}>What's your computer?</div>
             <div style={{ display: "flex", gap: 6 }}>
               {[{ key: "mac", label: "Mac / Linux" }, { key: "win", label: "Windows" }].map(o => (
                 <button key={o.key} onClick={() => setOs(o.key)} style={{
