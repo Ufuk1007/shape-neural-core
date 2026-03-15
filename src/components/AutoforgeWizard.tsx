@@ -1391,7 +1391,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
           </div>)}
 
-          {!os && <div style={hint}>Choose your computer type above to see the setup steps.</div>}
+          {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
          </div>
          {os && (
            <button onClick={() => mark(5)} style={{
