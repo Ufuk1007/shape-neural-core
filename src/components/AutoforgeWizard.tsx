@@ -1513,11 +1513,19 @@ export default function AutoforgeWizard() {
       `}</style>
 
       <div style={{ maxWidth: 840, margin: "0 auto" }}>
+        {/* Logo + Home link */}
+        <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
+          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none", opacity: 0.8, transition: "opacity 0.3s" }} onMouseEnter={e => (e.currentTarget.style.opacity = "1")} onMouseLeave={e => (e.currentTarget.style.opacity = "0.8")}>
+            <BindruneLogo size={36} onDark />
+            <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: 3, color: C.dim }}>SHAPENEURAL.COM</span>
+          </a>
+        </div>
+
         <div style={{ marginBottom: 48, textAlign: "center" }}>
-          <div style={{ fontSize: 9, letterSpacing: 6, color: C.dim, marginBottom: 10 }}>SHAPENEURAL LABS · MOD_07</div>
-          <h1 style={{ fontSize: 34, fontWeight: 300, color: C.green, margin: "0 0 6px", letterSpacing: 6, textShadow: `0 0 30px ${C.green}33` }}>AUTOFORGE</h1>
-          <div style={{ fontSize: 11, color: C.dim, letterSpacing: 2 }}>CONTENT AUTOMATION PIPELINE GENERATOR</div>
-          <div style={{ fontSize: 11, color: C.magenta, marginTop: 12, fontStyle: "italic", letterSpacing: 1 }}>Not content. The machine that makes it.</div>
+          <div style={{ fontSize: 11, letterSpacing: 6, color: C.dim, marginBottom: 10 }}>SHAPENEURAL LABS · MOD_07</div>
+          <h1 style={{ fontSize: 38, fontWeight: 300, color: C.green, margin: "0 0 8px", letterSpacing: 6, textShadow: `0 0 30px ${C.green}33` }}>AUTOFORGE</h1>
+          <div style={{ fontSize: 13, color: C.dim, letterSpacing: 2 }}>CONTENT AUTOMATION PIPELINE GENERATOR</div>
+          <div style={{ fontSize: 13, color: C.magenta, marginTop: 12, fontStyle: "italic", letterSpacing: 1 }}>Not content. The machine that makes it.</div>
         </div>
 
         <StepBar step={step} />
