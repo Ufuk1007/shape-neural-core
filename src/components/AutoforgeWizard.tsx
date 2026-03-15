@@ -989,7 +989,7 @@ function ActivationStep({ number, title, done, open, onToggle, children }) {
           color: done ? C.bg : C.dim, fontFamily: mono, fontSize: 12, fontWeight: 600,
           transition: "all 0.3s",
         }}>{done ? "✓" : number}</div>
-        <span style={{ fontFamily: mono, fontSize: 13, color: done ? C.green : C.white, flex: 1 }}>{title}</span>
+        <span style={{ fontFamily: mono, fontSize: 14, color: done ? C.green : C.white, flex: 1 }}>{title}</span>
         <span style={{ fontFamily: mono, fontSize: 10, color: C.dim }}>{open ? "▼" : "▶"}</span>
       </button>
       {open && (
