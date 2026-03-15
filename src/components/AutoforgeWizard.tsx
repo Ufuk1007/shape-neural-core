@@ -1230,12 +1230,15 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         }}>It worked →</button>
       </ActivationStep>
 
-      {/* STEP 3: Schedule */}
-      <ActivationStep number={3} title={`Turn on ${freq.toLowerCase()} runs`} done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
+      {/* STEP 4: Schedule */}
+      <ActivationStep number={4} title={`Turn on ${freq.toLowerCase()} runs`} done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             AUTOFORGE handles content and delivery. But the recurring execution happens
             on your computer — you decide when it runs, and you can turn it off anytime.
+            <InfoBtn>
+              Why does it run on your machine? This keeps you in full control. No cloud subscription needed, no vendor lock-in. Your computer runs the script on a schedule you set, and you can pause or stop it anytime.
+            </InfoBtn>
           </div>
 
           {/* OS selector */}
@@ -1272,10 +1275,10 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div style={{ marginTop: 8, padding: "10px 12px", background: `${C.magenta}0a`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>IMPORTANT: Edit the path</div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
-                Replace <span style={{ color: C.white, background: `${C.magenta}15`, padding: "1px 4px", borderRadius: 2 }}>/path/to/autoforge</span> with your actual folder.
-                <br/>Example on Mac: <span style={{ color: C.text }}>/Users/yourname/Desktop/autoforge</span>
-                <br/>Example on Linux: <span style={{ color: C.text }}>/home/yourname/autoforge</span>
-                <br/>Not sure? Open Terminal in the folder and type <span style={{ color: C.green }}>pwd</span> — that shows the full path.
+                If your files are on your Desktop, use:
+                <br/>Mac: <span style={{ color: C.text }}>/Users/yourname/Desktop</span>
+                <br/>Linux: <span style={{ color: C.text }}>/home/yourname/Desktop</span>
+                <br/>Not sure? Open Terminal on your Desktop and type <span style={{ color: C.green }}>pwd</span> — that shows the full path.
               </div>
             </div>
 
@@ -1299,7 +1302,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               `Trigger: choose ${freq === "Daily" ? "Daily" : freq === "Monthly" ? "Monthly" : "Weekly"}. Set time to 8:00 AM. Click Next.`,
               "Action: choose \"Start a Program\". Click Next.",
               "Program: type python (or the full path like C:\\Python312\\python.exe).",
-              "Add arguments: main.py — Start in: the folder where main.py lives.",
+              "Add arguments: main.py — Start in: C:\\Users\\YourName\\Desktop (where your main.py is).",
             ].map((txt, i) => (
               <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
                 <span style={{ fontFamily: mono, fontSize: 12, color: C.green, flexShrink: 0, width: 18 }}>{i + 1}.</span>
@@ -1317,15 +1320,15 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           {!os && <div style={hint}>Choose your computer type above to see the setup steps.</div>}
          </div>
          {os && (
-           <button onClick={() => mark(3)} style={{
+           <button onClick={() => mark(4)} style={{
              marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
              color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
            }}>I've set it up →</button>
         )}
       </ActivationStep>
 
-      {/* STEP 4: Verify */}
-      <ActivationStep number={4} title="Check that it worked" done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
+      {/* STEP 5: Verify */}
+      <ActivationStep number={5} title="Check that it worked" done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
         <div style={sub}>
           <div style={{ marginBottom: 10 }}>
             Wait for the next scheduled run (or wait a minute for daily). Then check:
@@ -1334,21 +1337,21 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             ✓ Did you receive an email with your {pr.name.toLowerCase()} results?
           </div>
           <div style={{ marginBottom: 6 }}>
-            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file in your folder{os === "mac" ? " (shows terminal output)" : ""}?
+            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{os === "mac" ? " (shows terminal output)" : ""}?
           </div>
           <div style={hint}>
             If nothing happened, check that your computer was on at the scheduled time.
             {os === "mac" ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
           </div>
         </div>
-        <button onClick={() => mark(4)} style={{
+        <button onClick={() => mark(5)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>All good →</button>
       </ActivationStep>
 
       {/* SUCCESS STATE */}
-      {doneCount === 4 && (() => {
+      {doneCount === 5 && (() => {
         const pr = PRESETS[preset];
         const selfHosted = config.delivery === "self";
 
