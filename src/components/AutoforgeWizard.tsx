@@ -1796,9 +1796,8 @@ export default function AutoforgeWizard() {
       <div style={{ maxWidth: 840, margin: "0 auto" }}>
         {/* Logo + Home link */}
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
-          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none", opacity: 0.8, transition: "opacity 0.3s" }} onMouseEnter={e => (e.currentTarget.style.opacity = "1")} onMouseLeave={e => (e.currentTarget.style.opacity = "0.8")}>
+          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", textDecoration: "none", opacity: 0.8, transition: "opacity 0.3s" }} onMouseEnter={e => (e.currentTarget.style.opacity = "1")} onMouseLeave={e => (e.currentTarget.style.opacity = "0.8")}>
             <BindruneLogo size={36} onDark />
-            <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: 3, color: C.dim }}>SHAPENEURAL.COM</span>
           </a>
         </div>
 
