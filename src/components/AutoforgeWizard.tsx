@@ -950,7 +950,7 @@ const Btn = ({ children, primary = false, disabled = false, onClick }: { childre
     padding: "12px 28px", border: primary ? "none" : `1px solid ${C.border}`,
     background: primary ? (disabled ? C.border : C.green) : "transparent",
     color: primary ? (disabled ? C.dim : C.bg) : C.dim,
-    fontFamily: mono, fontSize: 12, letterSpacing: 3, fontWeight: primary ? 600 : 400,
+    fontFamily: mono, fontSize: 13, letterSpacing: 3, fontWeight: primary ? 600 : 400,
     cursor: disabled ? "default" : "pointer", borderRadius: 2,
     boxShadow: primary && !disabled ? glow(C.green) : "none", transition: "all 0.3s",
   }}>{children}</button>
