@@ -1173,13 +1173,41 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
 
           <div style={{ marginTop: 16, fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>INSTALL DEPENDENCIES</div>
-          <div style={{ marginBottom: 6 }}>Once Python works, install the required packages:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip3 install {deps}</span>
-            <CopyBtn text={`pip3 install ${deps}`} />
+          <div style={{ marginBottom: 8 }}>
+            Navigate to your Desktop and set up a Python environment:
+            <InfoBtn>
+              A "virtual environment" (venv) is a private sandbox for your Python project. macOS and some Linux systems block installing packages globally for safety. A venv solves this — it keeps everything contained in one folder. You only need to create it once.
+            </InfoBtn>
           </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
-            On Windows, use: <span style={{ color: C.green }}>pip install {deps}</span>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Mac / Linux — run these 3 commands one by one:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
+            <CopyBtn text="cd ~/Desktop" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 -m venv .venv && source .venv/bin/activate</span>
+            <CopyBtn text="python3 -m venv .venv && source .venv/bin/activate" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
+            <CopyBtn text={`pip install ${deps}`} />
+          </div>
+          <div style={hint}>
+            After <span style={{ color: C.green }}>source .venv/bin/activate</span> you'll see <span style={{ color: C.white }}>(.venv)</span> at the start of your terminal line — that means it's working.
+          </div>
+
+          <div style={{ marginTop: 14, fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Windows — run these 3 commands one by one:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop</span>
+            <CopyBtn text="cd %USERPROFILE%\\Desktop" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python -m venv .venv && .venv\Scripts\activate</span>
+            <CopyBtn text="python -m venv .venv && .venv\\Scripts\\activate" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
             <CopyBtn text={`pip install ${deps}`} />
           </div>
           <div style={hint}>
@@ -1189,7 +1217,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         <button onClick={() => mark(2)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>Python is working →</button>
+        }}>Dependencies installed →</button>
       </ActivationStep>
 
       {/* STEP 3: Configure + test run */}
