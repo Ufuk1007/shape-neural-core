@@ -975,6 +975,41 @@ function CopyBtn({ text }) {
   );
 }
 
+function InfoBtn({ children }: { children: React.ReactNode }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <span style={{ position: "relative", display: "inline-block", verticalAlign: "middle", marginLeft: 6 }}>
+      <button
+        onClick={(e) => { e.stopPropagation(); setOpen(!open); }}
+        style={{
+          width: 18, height: 18, borderRadius: "50%", border: `1px solid ${C.cyan}66`,
+          background: open ? `${C.cyan}15` : "transparent", color: C.cyan,
+          fontFamily: mono, fontSize: 10, fontWeight: 700, cursor: "pointer",
+          display: "inline-flex", alignItems: "center", justifyContent: "center",
+          lineHeight: 1, padding: 0, transition: "all 0.2s",
+        }}
+        title="More info"
+      >?</button>
+      {open && (
+        <div style={{
+          position: "absolute", left: 24, top: -4, zIndex: 20,
+          width: 280, padding: "12px 14px", borderRadius: 4,
+          background: "#0a0a16", border: `1px solid ${C.cyan}33`,
+          boxShadow: `0 4px 20px #00000080`,
+        }}>
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.7 }}>
+            {children}
+          </div>
+          <button onClick={(e) => { e.stopPropagation(); setOpen(false); }} style={{
+            marginTop: 8, background: "none", border: "none", color: C.dim,
+            fontFamily: mono, fontSize: 10, cursor: "pointer", padding: 0,
+          }}>close</button>
+        </div>
+      )}
+    </span>
+  );
+}
+
 function ActivationStep({ number, title, done, open, onToggle, children }) {
   return (
     <div style={{ border: `1px solid ${done ? `${C.green}44` : open ? C.border : C.border}`, borderRadius: 2, marginBottom: 8, transition: "all 0.3s" }}>
