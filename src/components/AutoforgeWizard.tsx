@@ -1709,7 +1709,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
 export default function AutoforgeWizard() {
   const [step, setStep] = useState(0);
-  const [preset, setPreset] = useState(null);
+  const [preset, setPreset] = useState("radar");
   const [config, setConfig] = useState<Record<string, string>>({ delivery: "relay", frequency: "Weekly" });
   const [phase, setPhase] = useState(-1);
   const [phaseLabel, setPhaseLabel] = useState("");
