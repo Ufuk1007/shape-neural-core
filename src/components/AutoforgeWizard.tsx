@@ -1176,7 +1176,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           {/* Windows instructions */}
           {os === "win" && (<div>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>TASK SCHEDULER — 7 STEPS</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>TASK SCHEDULER — 7 STEPS</div>
             {[
               "Press Win+R, type taskschd.msc, press Enter.",
               "In the right panel, click \"Create Basic Task\".",
