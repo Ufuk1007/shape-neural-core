@@ -1151,7 +1151,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
             <div style={{ ...sub, marginBottom: 6, marginTop: 12 }}>3. Paste this line at the bottom:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 11, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
+              <span style={{ fontFamily: mono, fontSize: 12, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
               <CopyBtn text={cronLine} />
             </div>
             <div style={{ marginTop: 8, padding: "10px 12px", background: `${C.magenta}0a`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
