@@ -1820,18 +1820,29 @@ export default function AutoforgeWizard() {
 
         <StepBar step={step} />
 
-        {step === 0 && (<div>
-          <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
-            Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
-            a ready-to-run automation. You download two files. That's it.
-          </p>
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} />)}
-          </div>
-          <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
-            <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
-          </div>
-        </div>)}
+        {step === 0 && ((() => {
+          const [comingSoonBtn, setComingSoonBtn] = useState(false);
+          return (<div>
+            <p style={{ fontSize: 14, color: C.dim, marginBottom: 24, lineHeight: 1.8 }}>
+              Pick a pipeline. AUTOFORGE finds your sources, builds the logic, and generates
+              a ready-to-run automation. You download two files. That's it.
+            </p>
+            <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+              {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} onDisabledClick={() => { setComingSoonBtn(true); setTimeout(() => setComingSoonBtn(false), 2000); }} />)}
+            </div>
+            <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
+              {comingSoonBtn ? (
+                <button disabled style={{
+                  padding: "12px 28px", border: "none", background: C.magenta,
+                  color: C.white, fontFamily: mono, fontSize: 13, letterSpacing: 3, fontWeight: 600,
+                  cursor: "default", borderRadius: 2, boxShadow: glow(C.magenta), transition: "all 0.3s",
+                }}>COMING SOON</button>
+              ) : (
+                <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
+              )}
+            </div>
+          </div>);
+        })())}
 
         {step === 1 && preset && (<div>
           <ConfigForm preset={preset} config={config} setConfig={setConfig} />
