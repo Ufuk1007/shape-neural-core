@@ -811,8 +811,8 @@ function ConfigForm({ preset, config, setConfig }) {
   const set = (k, v) => setConfig(prev => ({ ...prev, [k]: v }));
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-      <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 2 }}>CONFIGURE: {p.name}</div>
-      <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
+      <div style={{ fontFamily: mono, fontSize: 13, color: C.cyan, letterSpacing: 2 }}>CONFIGURE: {p.name}</div>
+      <div style={{ fontFamily: mono, fontSize: 14, color: C.dim, lineHeight: 1.8 }}>
         A few inputs. The system handles sources, infrastructure, and code generation.
       </div>
       {p.fields.map(f => (
