@@ -1688,8 +1688,9 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               </a>
             </div>
           </div>
-        );
+      })()}
     </div>
+  );
   );
 }
 
