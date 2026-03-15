@@ -747,7 +747,7 @@ function StepBar({ step }) {
           <div style={{ height: 3, borderRadius: 2, marginBottom: 8,
             background: i <= step ? C.green : C.border,
             boxShadow: i <= step ? glow(C.green) : "none", transition: "all 0.5s" }} />
-          <span style={{ fontFamily: mono, fontSize: 10, letterSpacing: 3,
+          <span style={{ fontFamily: mono, fontSize: 12, letterSpacing: 3,
             color: i === step ? C.green : i < step ? C.dim : C.border }}>{s}</span>
         </div>
       ))}
