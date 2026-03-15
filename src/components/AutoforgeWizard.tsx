@@ -1,4 +1,4 @@
-// Paste import { useState } from "react";
+import { useState } from "react";
 
 // ═══════════════════════════════════════════════════════════
 // AUTOFORGE v4 — Content Automation Pipeline Generator
