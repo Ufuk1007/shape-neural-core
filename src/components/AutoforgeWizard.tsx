@@ -1384,7 +1384,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       <div style={{ marginTop: 24 }}>
         <button onClick={() => setShowRemove(!showRemove)} style={{
           background: "none", border: "none", cursor: "pointer", outline: "none",
-          fontFamily: mono, fontSize: 11, color: C.dim, display: "flex", alignItems: "center", gap: 6,
+          fontFamily: mono, fontSize: 12, color: C.dim, display: "flex", alignItems: "center", gap: 6,
         }}>
           <span>{showRemove ? "▼" : "▶"}</span>
           <span>Remove automation later</span>
@@ -1392,16 +1392,16 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         {showRemove && (
           <div style={{ padding: "12px 0 0 20px" }}>
             {os === "win" || !os ? (
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.7, marginBottom: os ? 0 : 8 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: os ? 0 : 8 }}>
                 <span style={{ color: C.text }}>Windows:</span> Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → Delete. Or just Disable to pause it.
               </div>
             ) : null}
             {os === "mac" || !os ? (
-              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
                 <span style={{ color: C.text }}>Mac / Linux:</span> Run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line. Save and close.
               </div>
             ) : null}
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.7 }}>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
               Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
             </div>
           </div>
@@ -1414,8 +1414,10 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
       </div>
 
       <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
-        <div style={{ fontSize: 10, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-        <div style={{ fontSize: 10, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+        <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
+          <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+        </a>
       </div>
     </div>
   );
