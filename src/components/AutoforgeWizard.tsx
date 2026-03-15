@@ -1076,52 +1076,116 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
           <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
-        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 4 ? C.green : C.dim }}>
-          {doneCount} of 4 complete
+        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 5 ? C.green : C.dim }}>
+          {doneCount} of 5 complete
         </div>
       </div>
 
       {/* Progress bar */}
       <div style={{ display: "flex", gap: 3, marginBottom: 24 }}>
-        {[1,2,3,4].map(n => (
+        {[1,2,3,4,5].map(n => (
           <div key={n} style={{ flex: 1, height: 3, borderRadius: 2, background: done[n] ? C.green : C.border, transition: "all 0.4s",
             boxShadow: done[n] ? glow(C.green) : "none" }} />
         ))}
       </div>
 
-      {/* STEP 1: Download + Install */}
-      <ActivationStep number={1} title="Download and install" done={done[1]} open={openStep === 1} onToggle={() => toggle(1)}>
+      {/* STEP 1: Download files */}
+      <ActivationStep number={1} title="Download your files" done={done[1]} open={openStep === 1} onToggle={() => toggle(1)}>
         <div style={sub}>
-          <div style={{ marginBottom: 12 }}>First, download your two files:</div>
+          <div style={{ marginBottom: 12 }}>Download these two files. They contain your complete automation:</div>
           <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
             {Object.entries(files).map(([name, content]) => (
               <button key={name} onClick={() => onDownload(name, content)} style={{
                 padding: "8px 16px", background: `${C.green}10`, border: `1px solid ${C.green}44`,
-                color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
-              }}>{name}</button>
+                color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+              }}>⬇ {name}</button>
             ))}
           </div>
-          <div style={{ marginBottom: 10 }}>Then open a terminal and install the dependencies:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>pip install {deps}</span>
-            <CopyBtn text={`pip install ${deps}`} />
-          </div>
-          <div style={hint}>
-            Don't have Python? Download it from <span style={{ color: C.cyan }}>python.org</span> (version 3.9 or newer).
+          <div style={{ padding: "10px 14px", background: `${C.cyan}08`, border: `1px solid ${C.cyan}22`, borderRadius: 2 }}>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, marginBottom: 4 }}>📁 IMPORTANT: Move both files to your Desktop</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
+              After downloading, drag <span style={{ color: C.white }}>main.py</span> and <span style={{ color: C.white }}>README.md</span> to your <span style={{ color: C.white }}>Desktop</span>.
+              This makes the next steps easier — all commands below assume the files are on your Desktop.
+            </div>
           </div>
         </div>
         <button onClick={() => mark(1)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
-        }}>I've done this →</button>
+          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+        }}>Files are on my Desktop →</button>
       </ActivationStep>
 
-      {/* STEP 2: Configure + test run */}
-      <ActivationStep number={2} title="Run it once" done={done[2]} open={openStep === 2} onToggle={() => toggle(2)}>
+      {/* STEP 2: Install Python + dependencies */}
+      <ActivationStep number={2} title="Set up Python" done={done[2]} open={openStep === 2} onToggle={() => toggle(2)}>
+        <div style={sub}>
+          <div style={{ marginBottom: 12 }}>
+            Your automation runs with Python — a free programming language.
+            <InfoBtn>
+              Python is needed because your automation script (main.py) is written in Python. It's like a document reader for code — without it, your computer can't execute the script. Don't worry, you don't need to write any code yourself. You just need Python installed so your computer can run the file.
+            </InfoBtn>
+          </div>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CHECK IF YOU ALREADY HAVE PYTHON</div>
+          <div style={{ marginBottom: 6 }}>Open a terminal and type:
+            <InfoBtn>
+              A terminal (also called "command prompt" on Windows or "console") is a text-based way to talk to your computer. Instead of clicking icons, you type commands. On <strong style={{ color: C.white }}>Mac</strong>: search for "Terminal" in Spotlight (Cmd+Space). On <strong style={{ color: C.white }}>Windows</strong>: search for "Command Prompt" or "PowerShell" in the Start menu.
+            </InfoBtn>
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python --version</span>
+            <CopyBtn text="python --version" />
+          </div>
+          <div style={hint}>
+            If you see something like <span style={{ color: C.white }}>Python 3.9</span> or higher, you're good — click the button below.
+          </div>
+
+          <div style={{ marginTop: 16, padding: "12px 14px", background: `${C.magenta}08`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 6 }}>
+              Got an error like "python not found" or "not recognized"?
+            </div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.8 }}>
+              That means Python isn't installed yet. Download it here:
+            </div>
+            <a
+              href="https://www.python.org/downloads/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block", marginTop: 8, padding: "8px 18px",
+                background: `${C.cyan}10`, border: `1px solid ${C.cyan}44`, borderRadius: 2,
+                color: C.cyan, fontFamily: mono, fontSize: 12, textDecoration: "none",
+                cursor: "pointer",
+              }}
+            >
+              ⬇ Download Python from python.org
+            </a>
+            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 8, lineHeight: 1.7 }}>
+              Install it with default settings. <span style={{ color: C.white }}>On Windows, check "Add Python to PATH"</span> during installation. Then close and reopen your terminal, and try <span style={{ color: C.green }}>python --version</span> again.
+            </div>
+          </div>
+
+          <div style={{ marginTop: 16, fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>INSTALL DEPENDENCIES</div>
+          <div style={{ marginBottom: 6 }}>Once Python works, install the required packages:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
+            <CopyBtn text={`pip install ${deps}`} />
+          </div>
+          <div style={hint}>
+            These are small helper libraries your automation needs. This only needs to be done once.
+          </div>
+        </div>
+        <button onClick={() => mark(2)} style={{
+          marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+        }}>Python is working →</button>
+      </ActivationStep>
+
+      {/* STEP 3: Configure + test run */}
+      <ActivationStep number={3} title="Run it once" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
         <div style={sub}>
           {selfHosted ? (
             <div style={{ marginBottom: 10 }}>
-              Open <span style={{ color: C.cyan }}>main.py</span> in any text editor.
+              Open <span style={{ color: C.cyan }}>main.py</span> in any text editor (right-click → Open With → TextEdit / Notepad).
               Find the <span style={{ color: C.white }}>CONFIGURATION</span> section at the top.
               Fill in your LLM API key and email credentials.
             </div>
@@ -1136,7 +1200,21 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               Find <span style={{ color: C.white }}>USER_EMAIL</span> near the top and enter your email address.
             </div>
           )}
-          <div style={{ marginBottom: 10 }}>Then run it to make sure everything works:</div>
+          <div style={{ marginBottom: 10 }}>
+            Now navigate to your Desktop in the terminal and run the script:
+            <InfoBtn>
+              The <span style={{ color: C.green }}>cd</span> command means "change directory" — it tells the terminal to go to a specific folder. Since you moved the files to your Desktop, we navigate there first so the terminal can find main.py.
+            </InfoBtn>
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
+            <CopyBtn text="cd ~/Desktop" />
+          </div>
+          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 10 }}>
+            On Windows, use: <span style={{ color: C.green }}>cd %USERPROFILE%\Desktop</span>
+            <CopyBtn text="cd %USERPROFILE%\\Desktop" />
+          </div>
+          <div style={{ marginBottom: 6 }}>Then run the script:</div>
           <div style={code()}>
             <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
             <CopyBtn text="python main.py" />
@@ -1146,7 +1224,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
           </div>
         </div>
-        <button onClick={() => mark(2)} style={{
+        <button onClick={() => mark(3)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>It worked →</button>
