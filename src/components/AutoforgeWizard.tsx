@@ -111,7 +111,7 @@ LLM_MODEL = "MiniMax-M2.5"` : `
 # ─── LLM: AUTOFORGE HANDLES IT ──────────────────────────
 # Content generation runs through our relay. No API key needed.
 LLM_MODE = "relay"
-RELAY_URL = "https://shapeneural.com/api"`;
+RELAY_URL = "https://www.shapeneural.com/api"`;
 
   const upgradeHint = !selfHosted ? `
 # ═══════════════════════════════════════════════════════════
