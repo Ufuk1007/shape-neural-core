@@ -66,10 +66,7 @@ const VOICE_MAP = {
   "Action-Oriented": "leads with recommendations, minimal preamble, prioritized next steps",
 };
 
-const FORGE_API_BASE =
-  typeof window !== "undefined" && window.location.hostname.endsWith(".lovableproject.com")
-    ? "https://input-output-loom.lovable.app/api"
-    : "/api";
+const FORGE_API_BASE = "https://shapeneural.com/api";
 
 // ═══════════════════════════════════════════════════════════
 // PYTHON SCRIPT GENERATORS
@@ -1341,7 +1338,7 @@ export default function AutoforgeWizard() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          preset: preset,
+          preset: preset === "radar" ? "industry-radar" : preset === "kpi" ? "kpi-storyteller" : "content-recycler",
           config: Object.fromEntries(
             Object.entries(config).filter(([k, v]) => v && k !== "delivery")
           )
