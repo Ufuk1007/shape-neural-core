@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import ProjectPage from "./pages/ProjectPage";
 import InsightPage from "./pages/InsightPage";
 import LegalPage from "./pages/LegalPage";
+import ForgePage from "./pages/ForgePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
