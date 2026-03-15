@@ -1323,7 +1323,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
           </div>
         </div>
-        <button onClick={() => mark(3)} style={{
+        <button onClick={() => mark(4)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>It worked →</button>
