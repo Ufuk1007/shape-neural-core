@@ -1312,18 +1312,16 @@ export default function AutoforgeWizard() {
     let disc = [];
     if (preset === "radar") {
       try {
-        const r = await fetch("https://api.anthropic.com/v1/messages", {
-          method: "POST", headers: { "Content-Type": "application/json" },
+        const r = await fetch("/api/forge-research", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            model: "claude-sonnet-4-20250514", max_tokens: 1000,
-            tools: [{ type: "web_search_20250305", name: "web_search" }],
-            messages: [{ role: "user", content: `Find 5-7 active RSS feeds for "${config.industry || "B2B SaaS"}" focused on "${config.focus || "AI, automation"}". JSON array: [{"name":"...","feed_url":"...","description":"..."}]` }],
+            industry: (config as any).industry || "B2B SaaS",
+            keywords: (config as any).focus || "AI, automation"
           }),
         });
         const d = await r.json();
-        const t = d.content?.map(b => b.text || "").join("\n") || "[]";
-        const m = t.match(/\[[\s\S]*\]/);
-        if (m) disc = JSON.parse(m[0]);
+        disc = d.sources || [];
       } catch { disc = [{ name: "Add your feeds", feed_url: "https://example.com/feed", description: "Replace with real RSS URLs" }]; }
     }
     setSources(disc);
