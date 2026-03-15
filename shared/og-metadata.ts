@@ -92,6 +92,12 @@ export const OG_META: Record<string, OGMeta> = {
   },
 };
 
+export const FORGE_OG = {
+  title: "AUTOFORGE | Content Automation Pipeline Generator",
+  description: "Not content. The machine that makes it. Build your own automated content pipeline in minutes — monitors your industry, scores relevance, writes and delivers.",
+  type: "website",
+};
+
 export const DEFAULT_OG = {
   title: "SHAPENEURAL | Designed Intelligence",
   description: "AI systems that move people, not just data.",

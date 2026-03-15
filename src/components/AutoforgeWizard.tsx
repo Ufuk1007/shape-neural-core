@@ -568,12 +568,17 @@ function genReadme(p, cfg) {
   const voiceDesc = VOICE_MAP[cfg.voice] || "professional and clear";
   const freq = cfg.frequency || "Weekly";
 
+  // Random offset per user to spread server load (7:00–9:59 AM)
+  const rMin = Math.floor(Math.random() * 60);
+  const rHour = 7 + Math.floor(Math.random() * 3);
+  const timeStr = `${rHour}:${rMin.toString().padStart(2, "0")} AM`;
+
   // Frequency-specific cron expressions and descriptions
   const cronMap = {
-    "Daily": { cron: "0 8 * * *", desc: "every day at 8:00 AM", winDesc: "Daily, at 8:00 AM" },
-    "Weekly": { cron: "0 8 * * 1", desc: "every Monday at 8:00 AM", winDesc: "Weekly, Monday at 8:00 AM" },
-    "Biweekly": { cron: "0 8 * * 1", desc: "every Monday at 8:00 AM (run every second week manually, or keep weekly)", winDesc: "Weekly, Monday at 8:00 AM" },
-    "Monthly": { cron: "0 8 1 * *", desc: "the 1st of every month at 8:00 AM", winDesc: "Monthly, 1st day at 8:00 AM" },
+    "Daily": { cron: `${rMin} ${rHour} * * *`, desc: `every day at ${timeStr}`, winDesc: `Daily, at ${timeStr}` },
+    "Weekly": { cron: `${rMin} ${rHour} * * 1`, desc: `every Monday at ${timeStr}`, winDesc: `Weekly, Monday at ${timeStr}` },
+    "Biweekly": { cron: `${rMin} ${rHour} * * 1`, desc: `every Monday at ${timeStr} (run every second week manually, or keep weekly)`, winDesc: `Weekly, Monday at ${timeStr}` },
+    "Monthly": { cron: `${rMin} ${rHour} 1 * *`, desc: `the 1st of every month at ${timeStr}`, winDesc: `Monthly, 1st day at ${timeStr}` },
   };
   const sched = cronMap[freq] || cronMap["Weekly"];
 
@@ -1075,11 +1080,16 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
   const selfHosted = config.delivery === "self";
   const deps = preset === "radar" ? "requests feedparser" : preset === "recycler" ? "requests beautifulsoup4" : "requests";
 
+  // Random offset per user to spread server load (7:00–9:59 AM)
+  const rMin = Math.floor(Math.random() * 60);
+  const rHour = 7 + Math.floor(Math.random() * 3);
+  const timeStr = `${rHour}:${rMin.toString().padStart(2, "0")} AM`;
+
   const cronMap = {
-    "Daily": { expr: "0 8 * * *", human: "every day at 8:00 AM" },
-    "Weekly": { expr: "0 8 * * 1", human: "every Monday at 8:00 AM" },
-    "Biweekly": { expr: "0 8 * * 1", human: "every Monday at 8:00 AM (skip weeks you don't need)" },
-    "Monthly": { expr: "0 8 1 * *", human: "the 1st of every month at 8:00 AM" },
+    "Daily": { expr: `${rMin} ${rHour} * * *`, human: `every day at ${timeStr}` },
+    "Weekly": { expr: `${rMin} ${rHour} * * 1`, human: `every Monday at ${timeStr}` },
+    "Biweekly": { expr: `${rMin} ${rHour} * * 1`, human: `every Monday at ${timeStr} (skip weeks you don't need)` },
+    "Monthly": { expr: `${rMin} ${rHour} 1 * *`, human: `the 1st of every month at ${timeStr}` },
   };
   const sched = cronMap[freq] || cronMap["Weekly"];
   const cronLine = `${sched.expr}  cd ~/Desktop && ~/Desktop/.venv/bin/python main.py >> autoforge.log 2>&1`;
@@ -1648,13 +1658,6 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         </div>
       </ActivationStep>
 
-      {/* Footer */}
-      <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
-        <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-          <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim, fontFamily: mono }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-          <div style={{ fontSize: 11, color: C.dim, marginTop: 5, fontFamily: mono }}>shapeneural.com · designed intelligence</div>
-        </a>
-      </div>
     </div>
   );
 }
@@ -1817,8 +1820,8 @@ export default function AutoforgeWizard() {
         {/* Footer — always visible */}
         <div style={{ marginTop: 60, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
           <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-            <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim, fontFamily: mono }}>SHAPENEURAL LABS</div>
-            <div style={{ fontSize: 11, color: C.dim, marginTop: 5, fontFamily: mono }}>designed intelligence</div>
+            <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim, fontFamily: mono }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
+            <div style={{ fontSize: 11, color: C.dim, marginTop: 5, fontFamily: mono }}>shapeneural.com · designed intelligence</div>
           </a>
         </div>
       </div>
