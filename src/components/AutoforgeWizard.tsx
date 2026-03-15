@@ -1692,7 +1692,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
               <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                 <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · designed intelligence</div>
               </a>
             </div>
           </div>
