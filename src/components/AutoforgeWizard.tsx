@@ -1411,7 +1411,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             ✓ Did you receive an email with your {pr.name.toLowerCase()} results?
           </div>
           <div style={{ marginBottom: 6 }}>
-            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{os === "mac" ? " (shows terminal output)" : ""}?
+            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{(os === "mac" || os === "linux") ? " (shows terminal output)" : ""}?
           </div>
           <div style={hint}>
             If nothing happened, check that your computer was on at the scheduled time.
