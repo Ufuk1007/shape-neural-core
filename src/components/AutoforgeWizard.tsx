@@ -1061,7 +1061,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
     "Monthly": { expr: "0 8 1 * *", human: "the 1st of every month at 8:00 AM" },
   };
   const sched = cronMap[freq] || cronMap["Weekly"];
-  const cronLine = `${sched.expr}  cd /path/to/autoforge && python main.py >> autoforge.log 2>&1`;
+  const cronLine = `${sched.expr}  cd ~/Desktop && ~/Desktop/.venv/bin/python main.py >> autoforge.log 2>&1`;
 
   const sub = { fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.8 };
   const hint = { fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginTop: 8 };
@@ -1173,13 +1173,41 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
 
           <div style={{ marginTop: 16, fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>INSTALL DEPENDENCIES</div>
-          <div style={{ marginBottom: 6 }}>Once Python works, install the required packages:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip3 install {deps}</span>
-            <CopyBtn text={`pip3 install ${deps}`} />
+          <div style={{ marginBottom: 8 }}>
+            Navigate to your Desktop and set up a Python environment:
+            <InfoBtn>
+              A "virtual environment" (venv) is a private sandbox for your Python project. macOS and some Linux systems block installing packages globally for safety. A venv solves this — it keeps everything contained in one folder. You only need to create it once.
+            </InfoBtn>
           </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
-            On Windows, use: <span style={{ color: C.green }}>pip install {deps}</span>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Mac / Linux — run these 3 commands one by one:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
+            <CopyBtn text="cd ~/Desktop" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 -m venv .venv && source .venv/bin/activate</span>
+            <CopyBtn text="python3 -m venv .venv && source .venv/bin/activate" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
+            <CopyBtn text={`pip install ${deps}`} />
+          </div>
+          <div style={hint}>
+            After <span style={{ color: C.green }}>source .venv/bin/activate</span> you'll see <span style={{ color: C.white }}>(.venv)</span> at the start of your terminal line — that means it's working.
+          </div>
+
+          <div style={{ marginTop: 14, fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Windows — run these 3 commands one by one:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop</span>
+            <CopyBtn text="cd %USERPROFILE%\\Desktop" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python -m venv .venv && .venv\Scripts\activate</span>
+            <CopyBtn text="python -m venv .venv && .venv\\Scripts\\activate" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
             <CopyBtn text={`pip install ${deps}`} />
           </div>
           <div style={hint}>
@@ -1189,7 +1217,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         <button onClick={() => mark(2)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>Python is working →</button>
+        }}>Dependencies installed →</button>
       </ActivationStep>
 
       {/* STEP 3: Configure + test run */}
@@ -1213,28 +1241,32 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
           )}
           <div style={{ marginBottom: 10 }}>
-            Now navigate to your Desktop in the terminal and run the script:
+            Make sure your virtual environment is active, then run the script:
             <InfoBtn>
-              The <span style={{ color: C.green }}>cd</span> command means "change directory" — it tells the terminal to go to a specific folder. Since you moved the files to your Desktop, we navigate there first so the terminal can find main.py.
+              If you just completed Step 2 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
             </InfoBtn>
           </div>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Mac / Linux:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
-            <CopyBtn text="cd ~/Desktop" />
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop && source .venv/bin/activate</span>
+            <CopyBtn text="cd ~/Desktop && source .venv/bin/activate" />
           </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 10 }}>
-            On Windows, use: <span style={{ color: C.green }}>cd %USERPROFILE%\Desktop</span>
-            <CopyBtn text="cd %USERPROFILE%\\Desktop" />
-          </div>
-          <div style={{ marginBottom: 6 }}>Then run the script:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 main.py</span>
-            <CopyBtn text="python3 main.py" />
-          </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
-            On Windows, use: <span style={{ color: C.green }}>python main.py</span>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
             <CopyBtn text="python main.py" />
           </div>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 10, marginBottom: 4 }}>Windows:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop && .venv\Scripts\activate</span>
+            <CopyBtn text="cd %USERPROFILE%\\Desktop && .venv\\Scripts\\activate" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
+            <CopyBtn text="python main.py" />
+          </div>
+
           <div style={hint}>
             This runs the full pipeline once. You should see output in the terminal
             and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
@@ -1288,14 +1320,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               <span style={{ fontFamily: mono, fontSize: 12, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
               <CopyBtn text={cronLine} />
             </div>
-            <div style={{ marginTop: 8, padding: "10px 12px", background: `${C.magenta}0a`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>IMPORTANT: Edit the path</div>
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
-                If your files are on your Desktop, use:
-                <br/>Mac: <span style={{ color: C.text }}>/Users/yourname/Desktop</span>
-                <br/>Linux: <span style={{ color: C.text }}>/home/yourname/Desktop</span>
-                <br/>Not sure? Open Terminal on your Desktop and type <span style={{ color: C.green }}>pwd</span> — that shows the full path.
-              </div>
+            <div style={hint}>
+              This uses the virtual environment you created earlier. If your files are not on the Desktop, adjust the paths accordingly.
             </div>
 
             <div style={{ ...sub, marginBottom: 6, marginTop: 12 }}>4. Save and close the editor.</div>
