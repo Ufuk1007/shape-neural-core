@@ -1777,15 +1777,9 @@ export default function AutoforgeWizard() {
               {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} onDisabledClick={() => { setComingSoonBtn(true); setTimeout(() => setComingSoonBtn(false), 2000); }} />)}
             </div>
             <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
-              {comingSoonBtn ? (
-                <button disabled style={{
-                  padding: "12px 28px", border: "none", background: C.magenta,
-                  color: C.white, fontFamily: mono, fontSize: 13, letterSpacing: 3, fontWeight: 600,
-                  cursor: "default", borderRadius: 2, boxShadow: glow(C.magenta), transition: "all 0.3s",
-                }}>COMING SOON</button>
-              ) : (
-                <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
-              )}
+              <Btn primary disabled={!preset || preset !== "radar" || comingSoonBtn} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>
+                {comingSoonBtn ? "COMING SOON" : "NEXT →"}
+              </Btn>
             </div>
           </div>)}
 
