@@ -1512,6 +1512,105 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
         </div>
 
+        {/* Test email — only in relay mode */}
+        {!selfHosted && (() => {
+          const buildTestPrompt = () => {
+            if (preset === "radar") return `You are an industry analyst. Generate a brief industry radar briefing for the ${config.industry || "tech"} industry. Focus: ${config.focus || "emerging trends"}. Voice: ${config.voice || "Sharp & Direct"}. Include 3-4 key signals with brief analysis. Keep it concise and actionable. Format with clear headers.`;
+            if (preset === "kpi") return `You are a data storyteller. Generate a sample KPI narrative report. Metrics tracked: ${config.metrics || "revenue, conversion rate"}. Audience: ${config.audience || "leadership team"}. Voice: ${config.voice || "Executive Brief"}. Include trend observations and 2-3 action items. Keep it concise.`;
+            return `You are a content strategist. Generate sample recycled content from a hypothetical source piece. Target formats: ${config.formats || "LinkedIn posts, newsletter"}. Audience: ${config.audience || "marketing professionals"}. Voice: ${config.voice || "Sharp & Direct"}. Generate 2-3 short content pieces. Keep it actionable.`;
+          };
+
+          const runTestPipeline = async () => {
+            setTestRunning(true);
+            setTestResult(null);
+            try {
+              const genRes = await fetch(`${FORGE_API_BASE}/forge-generate`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ prompt: buildTestPrompt(), email: config.email }),
+              });
+              if (!genRes.ok) {
+                const err = await genRes.json().catch(() => ({}));
+                setTestResult({ ok: false, phase: "Generation failed", message: err.error || `Server returned ${genRes.status}` });
+                setTestRunning(false); return;
+              }
+              const genData = await genRes.json();
+              const content = genData.content;
+              if (!content) {
+                setTestResult({ ok: false, phase: "Generation failed", message: "No content returned from LLM." });
+                setTestRunning(false); return;
+              }
+              const delRes = await fetch(`${FORGE_API_BASE}/forge-deliver`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ content, to: config.email, subject: `AUTOFORGE Test Run — ${pr.name}`, email: config.email }),
+              });
+              if (!delRes.ok) {
+                const err = await delRes.json().catch(() => ({}));
+                setTestResult({ ok: false, phase: "Delivery failed", message: err.error || `SMTP returned ${delRes.status}` });
+                setTestRunning(false); return;
+              }
+              setTestResult({ ok: true, phase: "done", message: `Test sent to ${config.email}. Check your inbox.` });
+            } catch (e) {
+              setTestResult({ ok: false, phase: "Network error", message: e instanceof Error ? e.message : "Connection failed. Check your internet." });
+            }
+            setTestRunning(false);
+          };
+
+          return (
+            <div style={{ padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2, marginBottom: 16 }}>
+              <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>
+                PROOF OF DELIVERY
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 14 }}>
+                Run the full pipeline now — generate content and deliver it to your inbox.
+                This verifies generation and delivery. Your recurring runs still happen on your machine.
+              </div>
+              <button
+                onClick={runTestPipeline}
+                disabled={testRunning}
+                style={{
+                  padding: "10px 24px", fontFamily: mono, fontSize: 12, cursor: testRunning ? "wait" : "pointer",
+                  background: testRunning ? `${C.green}10` : "transparent",
+                  border: `2px solid ${testRunning ? C.dim : C.green}`,
+                  color: testRunning ? C.dim : C.green,
+                  borderRadius: 2, letterSpacing: 1, transition: "all 0.3s",
+                  ...(testRunning ? { animation: "pulse 1.5s infinite" } : {}),
+                }}
+              >
+                {testRunning ? "⟳ RUNNING PIPELINE..." : "▶ RUN TEST — DELIVER TO MY INBOX"}
+              </button>
+              {testResult && (
+                <div style={{
+                  marginTop: 14, padding: "12px 16px", borderRadius: 2,
+                  background: testResult.ok ? `${C.green}0a` : `${C.magenta}0a`,
+                  border: `1px solid ${testResult.ok ? C.green : C.magenta}33`,
+                }}>
+                  {testResult.ok ? (
+                    <>
+                      <div style={{ fontFamily: mono, fontSize: 12, color: C.green, marginBottom: 4 }}>✓ Test sent successfully. Check your inbox.</div>
+                      <div style={{ fontFamily: mono, fontSize: 11, color: C.dim }}>This verifies generation and delivery. Your recurring runs still happen on your machine.</div>
+                    </>
+                  ) : (
+                    <>
+                      <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>✗ We couldn't complete the test run.</div>
+                      <div style={{ fontFamily: mono, fontSize: 11, color: C.text, marginBottom: 8 }}>
+                        Reason: <span style={{ color: C.magenta }}>{testResult.phase}</span>
+                        {testResult.message ? ` — ${testResult.message}` : ""}
+                      </div>
+                      <button onClick={runTestPipeline} disabled={testRunning} style={{
+                        padding: "6px 16px", fontFamily: mono, fontSize: 11, cursor: "pointer",
+                        background: "transparent", border: `1px solid ${C.dim}`,
+                        color: C.dim, borderRadius: 2, letterSpacing: 1,
+                      }}>↻ RETRY</button>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
         {/* Verify */}
         <div style={{ ...sub, marginBottom: 16 }}>
           <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>VERIFY</div>
@@ -1547,164 +1646,15 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
           </div>
         </div>
-
-        <button onClick={() => mark(7)} style={{
-          marginTop: 18, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>COMPLETE SETUP →</button>
       </ActivationStep>
 
-      {/* SUCCESS STATE */}
-      {doneCount === totalSteps && (() => {
-        const pr = PRESETS[preset];
-        const selfHosted = config.delivery === "self";
-
-        const buildTestPrompt = () => {
-          if (preset === "radar") return `You are an industry analyst. Generate a brief industry radar briefing for the ${config.industry || "tech"} industry. Focus: ${config.focus || "emerging trends"}. Voice: ${config.voice || "Sharp & Direct"}. Include 3-4 key signals with brief analysis. Keep it concise and actionable. Format with clear headers.`;
-          if (preset === "kpi") return `You are a data storyteller. Generate a sample KPI narrative report. Metrics tracked: ${config.metrics || "revenue, conversion rate"}. Audience: ${config.audience || "leadership team"}. Voice: ${config.voice || "Executive Brief"}. Include trend observations and 2-3 action items. Keep it concise.`;
-          return `You are a content strategist. Generate sample recycled content from a hypothetical source piece. Target formats: ${config.formats || "LinkedIn posts, newsletter"}. Audience: ${config.audience || "marketing professionals"}. Voice: ${config.voice || "Sharp & Direct"}. Generate 2-3 short content pieces. Keep it actionable.`;
-        };
-
-        const presetLabel = preset === "radar" ? "industry-radar" : preset === "kpi" ? "kpi-storyteller" : "content-recycler";
-
-        const runTestPipeline = async () => {
-          setTestRunning(true);
-          setTestResult(null);
-
-          // Phase 1: Generate
-          try {
-            const genRes = await fetch(`${FORGE_API_BASE}/forge-generate`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ prompt: buildTestPrompt(), email: config.email }),
-            });
-            if (!genRes.ok) {
-              const err = await genRes.json().catch(() => ({}));
-              setTestResult({ ok: false, phase: "Generation failed", message: err.error || `Server returned ${genRes.status}` });
-              setTestRunning(false);
-              return;
-            }
-            const genData = await genRes.json();
-            const content = genData.content;
-            if (!content) {
-              setTestResult({ ok: false, phase: "Generation failed", message: "No content returned from LLM." });
-              setTestRunning(false);
-              return;
-            }
-
-            // Phase 2: Deliver
-            const delRes = await fetch(`${FORGE_API_BASE}/forge-deliver`, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                content,
-                to: config.email,
-                subject: `AUTOFORGE Test Run — ${pr.name}`,
-                email: config.email,
-              }),
-            });
-            if (!delRes.ok) {
-              const err = await delRes.json().catch(() => ({}));
-              setTestResult({ ok: false, phase: "Delivery failed", message: err.error || `SMTP returned ${delRes.status}` });
-              setTestRunning(false);
-              return;
-            }
-
-            setTestResult({ ok: true, phase: "done", message: `Test sent to ${config.email}. Check your inbox.` });
-          } catch (e) {
-            setTestResult({ ok: false, phase: "Network error", message: e instanceof Error ? e.message : "Connection failed. Check your internet." });
-          }
-          setTestRunning(false);
-        };
-
-        return (
-          <div style={{ marginTop: 20 }}>
-            {/* Test Run — only in relay mode */}
-            {!selfHosted && (
-              <div style={{ padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2 }}>
-                <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>
-                  PROOF OF DELIVERY
-                </div>
-                <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 14 }}>
-                  Run the full pipeline now — generate content and deliver it to your inbox.
-                  This verifies generation and delivery. Your recurring runs still happen on your machine.
-                </div>
-
-                <button
-                  onClick={runTestPipeline}
-                  disabled={testRunning}
-                  style={{
-                    padding: "10px 24px", fontFamily: mono, fontSize: 12, cursor: testRunning ? "wait" : "pointer",
-                    background: testRunning ? `${C.green}10` : "transparent",
-                    border: `2px solid ${testRunning ? C.dim : C.green}`,
-                    color: testRunning ? C.dim : C.green,
-                    borderRadius: 2, letterSpacing: 1, transition: "all 0.3s",
-                    ...(testRunning ? { animation: "pulse 1.5s infinite" } : {}),
-                  }}
-                >
-                  {testRunning ? "⟳ RUNNING PIPELINE..." : "▶ RUN TEST — DELIVER TO MY INBOX"}
-                </button>
-
-                {/* Result feedback */}
-                {testResult && (
-                  <div style={{
-                    marginTop: 14, padding: "12px 16px", borderRadius: 2,
-                    background: testResult.ok ? `${C.green}0a` : `${C.magenta}0a`,
-                    border: `1px solid ${testResult.ok ? C.green : C.magenta}33`,
-                  }}>
-                    {testResult.ok ? (
-                      <>
-                        <div style={{ fontFamily: mono, fontSize: 12, color: C.green, marginBottom: 4 }}>
-                          ✓ Test sent successfully. Check your inbox.
-                        </div>
-                        <div style={{ fontFamily: mono, fontSize: 11, color: C.dim }}>
-                          This verifies generation and delivery. Your recurring runs still happen on your machine.
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 4 }}>
-                          ✗ We couldn't complete the test run.
-                        </div>
-                        <div style={{ fontFamily: mono, fontSize: 11, color: C.text, marginBottom: 8 }}>
-                          Reason: <span style={{ color: C.magenta }}>{testResult.phase}</span>
-                          {testResult.message ? ` — ${testResult.message}` : ""}
-                        </div>
-                        <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginBottom: 10 }}>
-                          Next step: Check README.md → Troubleshooting, or try again.
-                        </div>
-                        <button
-                          onClick={runTestPipeline}
-                          disabled={testRunning}
-                          style={{
-                            padding: "6px 16px", fontFamily: mono, fontSize: 11, cursor: "pointer",
-                            background: "transparent", border: `1px solid ${C.dim}`,
-                            color: C.dim, borderRadius: 2, letterSpacing: 1,
-                          }}
-                        >
-                          ↻ RETRY
-                        </button>
-                      </>
-                    )}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Build another / footer */}
-            <div style={{ marginTop: 30, display: "flex", gap: 10 }}>
-              <Btn onClick={onReset}>BUILD ANOTHER</Btn>
-            </div>
-
-            <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
-              <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · designed intelligence</div>
-              </a>
-            </div>
-          </div>
-        );
-      })()}
+      {/* Footer */}
+      <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
+        <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim, fontFamily: mono }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
+          <div style={{ fontSize: 11, color: C.dim, marginTop: 5, fontFamily: mono }}>shapeneural.com · designed intelligence</div>
+        </a>
+      </div>
     </div>
   );
 }
