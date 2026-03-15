@@ -1195,10 +1195,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN TERMINAL ON MAC</div>
               <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 1:</span> Press <span style={{ color: C.green }}>⌘ Cmd + Space</span> to open Spotlight, type <span style={{ color: C.green }}>Terminal</span>, and press Enter.
-              </div>
-              <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 2:</span> Open Finder → Applications → Utilities → <span style={{ color: C.green }}>Terminal.app</span>
+                Open <span style={{ color: C.green }}>Finder</span> → Applications → Utilities → <span style={{ color: C.green }}>Terminal.app</span>
               </div>
               <div style={hint}>
                 You'll see a window with a blinking cursor — that's your terminal. Keep it open for the next steps.
@@ -1210,10 +1207,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN COMMAND PROMPT ON WINDOWS</div>
               <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 1:</span> Press <span style={{ color: C.green }}>Win + R</span>, type <span style={{ color: C.green }}>cmd</span>, and press Enter.
-              </div>
-              <div style={{ marginBottom: 8 }}>
-                <span style={{ color: C.white }}>Option 2:</span> Click the Start menu, type <span style={{ color: C.green }}>Command Prompt</span>, and click on it.
+                Press <span style={{ color: C.green }}>Win + R</span>, type <span style={{ color: C.green }}>cmd</span>, and press Enter.
               </div>
               <div style={hint}>
                 You'll see a black window with a blinking cursor — that's your command prompt. Keep it open for the next steps.
