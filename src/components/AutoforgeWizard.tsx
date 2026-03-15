@@ -1169,7 +1169,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
             <div style={{ ...sub, marginTop: 14, marginBottom: 4 }}>Verify it's active:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>crontab -l</span>
+              <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>crontab -l</span>
               <CopyBtn text="crontab -l" />
             </div>
           </div>)}
