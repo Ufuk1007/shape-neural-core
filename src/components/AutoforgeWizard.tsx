@@ -906,11 +906,11 @@ function SourceList({ sources }) {
   if (!sources?.length) return null;
   return (
     <div style={{ marginTop: 16 }}>
-      <div style={{ fontFamily: mono, fontSize: 10, letterSpacing: 2, color: C.cyan, marginBottom: 8 }}>DISCOVERED SOURCES</div>
+      <div style={{ fontFamily: mono, fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 8 }}>DISCOVERED SOURCES</div>
       {sources.map((s, i) => (
         <div key={i} style={{ padding: "8px 12px", background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2, marginBottom: 4 }}>
-          <span style={{ fontFamily: mono, fontSize: 12, color: C.white }}>{s.name}</span>
-          <span style={{ fontFamily: mono, fontSize: 10, color: C.dim, marginLeft: 10 }}>{s.feed_url || s.url}</span>
+          <span style={{ fontFamily: mono, fontSize: 13, color: C.white }}>{s.name}</span>
+          <span style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginLeft: 10 }}>{s.feed_url || s.url}</span>
         </div>
       ))}
     </div>
