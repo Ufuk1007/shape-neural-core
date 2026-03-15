@@ -1039,7 +1039,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
           <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
-        <div style={{ fontFamily: mono, fontSize: 11, color: doneCount === 4 ? C.green : C.dim }}>
+        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 4 ? C.green : C.dim }}>
           {doneCount} of 4 complete
         </div>
       </div>
