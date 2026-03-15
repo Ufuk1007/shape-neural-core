@@ -729,7 +729,7 @@ That's it. No background processes, no services, no accounts to close.
 ---
 
 Built with AUTOFORGE by ShapeNeural Labs
-[shapeneural.com](https://shapeneural.com) — comfort is the enemy
+[shapeneural.com](https://shapeneural.com) — designed intelligence
 `;
 }
 
