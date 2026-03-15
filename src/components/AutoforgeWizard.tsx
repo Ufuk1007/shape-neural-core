@@ -1068,6 +1068,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
   const code = (t?: any): React.CSSProperties => ({ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
     padding: "10px 14px", background: "#08080f", border: `1px solid ${C.border}`, borderRadius: 2, marginTop: 8, marginBottom: 4 });
 
+  const totalSteps = 7;
+
   return (
     <div>
       {/* Header + progress */}
@@ -1076,14 +1078,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ fontSize: 12, letterSpacing: 2, color: C.cyan, marginBottom: 4 }}>ACTIVATE YOUR AUTOMATION</div>
           <div style={{ fontFamily: mono, fontSize: 13, color: C.dim }}>{pr.name} — {freq.toLowerCase()} cadence</div>
         </div>
-        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === 6 ? C.green : C.dim }}>
-          {doneCount} of 6 complete
+        <div style={{ fontFamily: mono, fontSize: 13, color: doneCount === totalSteps ? C.green : C.dim }}>
+          {doneCount} of {totalSteps} complete
         </div>
       </div>
 
       {/* Progress bar */}
       <div style={{ display: "flex", gap: 3, marginBottom: 24 }}>
-        {[1,2,3,4,5,6].map(n => (
+        {Array.from({ length: totalSteps }, (_, i) => i + 1).map(n => (
           <div key={n} style={{ flex: 1, height: 3, borderRadius: 2, background: done[n] ? C.green : C.border, transition: "all 0.4s",
             boxShadow: done[n] ? glow(C.green) : "none" }} />
         ))}
@@ -1097,7 +1099,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
 
           <div style={{ display: "flex", gap: 6, marginBottom: 16 }}>
-            {[{ key: "mac", label: "Mac" }, { key: "win", label: "Windows" }, { key: "linux", label: "Linux" }].map(o => (
+            {[{ key: "mac", label: "Mac" }, { key: "win", label: "Windows" }].map(o => (
               <button key={o.key} onClick={() => setOs(o.key)} style={{
                 padding: "10px 24px", background: os === o.key ? `${C.green}12` : C.bg,
                 border: `1px solid ${os === o.key ? C.green : C.border}`,
@@ -1110,7 +1112,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           {os && (
             <div style={{ padding: "14px 16px", background: `${C.green}08`, border: `1px solid ${C.green}22`, borderRadius: 2 }}>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.green, letterSpacing: 1, marginBottom: 10 }}>
-                ✓ {os === "mac" ? "macOS" : os === "win" ? "WINDOWS" : "LINUX"} — COMPATIBLE
+                ✓ {os === "mac" ? "macOS" : "WINDOWS"} — COMPATIBLE
               </div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.8 }}>
                 {os === "mac" && (<>
@@ -1122,11 +1124,6 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
                   <div style={{ marginBottom: 4 }}>Minimum: <span style={{ color: C.white }}>Windows 10</span> or newer</div>
                   <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
                   <div>Scheduling uses <span style={{ color: C.white }}>Task Scheduler</span> (built into Windows)</div>
-                </>)}
-                {os === "linux" && (<>
-                  <div style={{ marginBottom: 4 }}>Any modern Linux distribution works</div>
-                  <div style={{ marginBottom: 4 }}>Python 3.9+ required — we'll check this in a later step</div>
-                  <div>Scheduling uses <span style={{ color: C.white }}>cron</span> (built into Linux)</div>
                 </>)}
               </div>
             </div>
@@ -1166,8 +1163,55 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         }}>Files are on my Desktop →</button>
       </ActivationStep>
 
-      {/* STEP 3: Install Python + dependencies */}
-      <ActivationStep number={3} title="Set up Python" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
+      {/* STEP 3: Open Terminal */}
+      <ActivationStep number={3} title="Open your Terminal" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
+        <div style={sub}>
+          <div style={{ marginBottom: 12 }}>
+            A terminal is a text-based way to talk to your computer. Instead of clicking icons, you type short commands. Don't worry — we'll give you every command to copy & paste.
+          </div>
+
+          {os === "mac" && (
+            <div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN TERMINAL ON MAC</div>
+              <div style={{ marginBottom: 8 }}>
+                <span style={{ color: C.white }}>Option 1:</span> Press <span style={{ color: C.green }}>⌘ Cmd + Space</span> to open Spotlight, type <span style={{ color: C.green }}>Terminal</span>, and press Enter.
+              </div>
+              <div style={{ marginBottom: 8 }}>
+                <span style={{ color: C.white }}>Option 2:</span> Open Finder → Applications → Utilities → <span style={{ color: C.green }}>Terminal.app</span>
+              </div>
+              <div style={hint}>
+                You'll see a window with a blinking cursor — that's your terminal. Keep it open for the next steps.
+              </div>
+            </div>
+          )}
+
+          {os === "win" && (
+            <div>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN COMMAND PROMPT ON WINDOWS</div>
+              <div style={{ marginBottom: 8 }}>
+                <span style={{ color: C.white }}>Option 1:</span> Press <span style={{ color: C.green }}>Win + R</span>, type <span style={{ color: C.green }}>cmd</span>, and press Enter.
+              </div>
+              <div style={{ marginBottom: 8 }}>
+                <span style={{ color: C.white }}>Option 2:</span> Click the Start menu, type <span style={{ color: C.green }}>Command Prompt</span>, and click on it.
+              </div>
+              <div style={hint}>
+                You'll see a black window with a blinking cursor — that's your command prompt. Keep it open for the next steps.
+              </div>
+            </div>
+          )}
+
+          {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
+        </div>
+        {os && (
+          <button onClick={() => mark(3)} style={{
+            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+            color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+          }}>Terminal is open →</button>
+        )}
+      </ActivationStep>
+
+      {/* STEP 4: Install Python + dependencies */}
+      <ActivationStep number={4} title="Set up Python" done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             Your automation runs with Python — a free programming language.
@@ -1177,22 +1221,34 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>
 
           <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CHECK IF YOU ALREADY HAVE PYTHON</div>
-          <div style={{ marginBottom: 6 }}>Open a terminal and type:
-            <InfoBtn>
-              A terminal (also called "command prompt" on Windows or "console") is a text-based way to talk to your computer. Instead of clicking icons, you type commands. On <strong style={{ color: C.white }}>Mac</strong>: search for "Terminal" in Spotlight (Cmd+Space). On <strong style={{ color: C.white }}>Windows</strong>: search for "Command Prompt" or "PowerShell" in the Start menu.
-            </InfoBtn>
+          <div style={{ marginBottom: 6 }}>
+            Type this command in your {os === "mac" ? "Terminal" : "Command Prompt"}:
           </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 --version</span>
-            <CopyBtn text="python3 --version" />
-          </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
-            On Windows, use: <span style={{ color: C.green }}>python --version</span>
-            <CopyBtn text="python --version" />
-          </div>
-          <div style={hint}>
-            If you see something like <span style={{ color: C.white }}>Python 3.9</span> or higher, you're good — click the button below.
-          </div>
+
+          {os === "mac" && (
+            <>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 --version</span>
+                <CopyBtn text="python3 --version" />
+              </div>
+              <div style={hint}>
+                If you see something like <span style={{ color: C.white }}>Python 3.9</span> or higher, you're good.
+                On macOS, Python 3 is always called <span style={{ color: C.green }}>python3</span>, not <span style={{ color: C.green }}>python</span>.
+              </div>
+            </>
+          )}
+
+          {os === "win" && (
+            <>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python --version</span>
+                <CopyBtn text="python --version" />
+              </div>
+              <div style={hint}>
+                If you see something like <span style={{ color: C.white }}>Python 3.9</span> or higher, you're good.
+              </div>
+            </>
+          )}
 
           <div style={{ marginTop: 16, padding: "12px 14px", background: `${C.magenta}08`, border: `1px solid ${C.magenta}22`, borderRadius: 2 }}>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.magenta, marginBottom: 6 }}>
@@ -1215,11 +1271,9 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
               ⬇ Download Python from python.org
             </a>
             <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 8, lineHeight: 1.7 }}>
-              Install it with default settings. <span style={{ color: C.white }}>On Windows, check "Add Python to PATH"</span> during installation.
-              Then close and reopen your terminal, and try the command again.
-            </div>
-            <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 6, lineHeight: 1.7 }}>
-              <span style={{ color: C.white }}>Mac tip:</span> On macOS, Python 3 is usually called <span style={{ color: C.green }}>python3</span>, not <span style={{ color: C.green }}>python</span>. If you installed Python but <span style={{ color: C.green }}>python</span> still doesn't work, always use <span style={{ color: C.green }}>python3</span> instead.
+              Install it with default settings.
+              {os === "win" && <> <span style={{ color: C.white }}>Check "Add Python to PATH"</span> during installation.</>}
+              {" "}Then close and reopen your {os === "mac" ? "Terminal" : "Command Prompt"}, and try the command again.
             </div>
           </div>
 
@@ -1227,56 +1281,68 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ marginBottom: 8 }}>
             Navigate to your Desktop and set up a Python environment:
             <InfoBtn>
-              A "virtual environment" (venv) is a private sandbox for your Python project. macOS and some Linux systems block installing packages globally for safety. A venv solves this — it keeps everything contained in one folder. You only need to create it once.
+              A "virtual environment" (venv) is a private sandbox for your Python project. {os === "mac" ? "macOS blocks installing packages globally for safety. " : ""}A venv solves this — it keeps everything contained in one folder. You only need to create it once.
             </InfoBtn>
           </div>
 
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Mac / Linux — run these 3 commands one by one:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
-            <CopyBtn text="cd ~/Desktop" />
-          </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 -m venv .venv && source .venv/bin/activate</span>
-            <CopyBtn text="python3 -m venv .venv && source .venv/bin/activate" />
-          </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
-            <CopyBtn text={`pip install ${deps}`} />
-          </div>
-          <div style={hint}>
-            After <span style={{ color: C.green }}>source .venv/bin/activate</span> you'll see <span style={{ color: C.white }}>(.venv)</span> at the start of your terminal line — that means it's working.
-          </div>
+          {os === "mac" && (
+            <>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Run these 3 commands one by one:</div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
+                <CopyBtn text="cd ~/Desktop" />
+              </div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 -m venv .venv && source .venv/bin/activate</span>
+                <CopyBtn text="python3 -m venv .venv && source .venv/bin/activate" />
+              </div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
+                <CopyBtn text={`pip install ${deps}`} />
+              </div>
+              <div style={hint}>
+                After <span style={{ color: C.green }}>source .venv/bin/activate</span> you'll see <span style={{ color: C.white }}>(.venv)</span> at the start of your terminal line — that means it's working.
+              </div>
+            </>
+          )}
 
-          <div style={{ marginTop: 14, fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Windows — run these 3 commands one by one:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop</span>
-            <CopyBtn text="cd %USERPROFILE%\\Desktop" />
-          </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python -m venv .venv && .venv\Scripts\activate</span>
-            <CopyBtn text="python -m venv .venv && .venv\\Scripts\\activate" />
-          </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
-            <CopyBtn text={`pip install ${deps}`} />
-          </div>
-          <div style={hint}>
-            These are small helper libraries your automation needs. This only needs to be done once.
-          </div>
+          {os === "win" && (
+            <>
+              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Run these 3 commands one by one:</div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop</span>
+                <CopyBtn text="cd %USERPROFILE%\\Desktop" />
+              </div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python -m venv .venv && .venv\Scripts\activate</span>
+                <CopyBtn text="python -m venv .venv && .venv\\Scripts\\activate" />
+              </div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>pip install {deps}</span>
+                <CopyBtn text={`pip install ${deps}`} />
+              </div>
+              <div style={hint}>
+                These are small helper libraries your automation needs. This only needs to be done once.
+              </div>
+            </>
+          )}
+
+          {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
         </div>
-        <button onClick={() => mark(3)} style={{
-          marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>Dependencies installed →</button>
+        {os && (
+          <button onClick={() => mark(4)} style={{
+            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+            color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+          }}>Dependencies installed →</button>
+        )}
       </ActivationStep>
 
-      {/* STEP 4: Configure + test run */}
-      <ActivationStep number={4} title="Run it once" done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
+      {/* STEP 5: Run it once */}
+      <ActivationStep number={5} title="Run it once" done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
         <div style={sub}>
           {selfHosted ? (
             <div style={{ marginBottom: 10 }}>
-              Open <span style={{ color: C.cyan }}>main.py</span> in any text editor (right-click → Open With → TextEdit / Notepad).
+              Open <span style={{ color: C.cyan }}>main.py</span> in any text editor ({os === "mac" ? "right-click → Open With → TextEdit" : "right-click → Open with → Notepad"}).
               Find the <span style={{ color: C.white }}>CONFIGURATION</span> section at the top.
               Fill in your LLM API key and email credentials.
             </div>
@@ -1294,43 +1360,53 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ marginBottom: 10 }}>
             Make sure your virtual environment is active, then run the script:
             <InfoBtn>
-              If you just completed Step 3 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
+              If you just completed the previous step and your {os === "mac" ? "Terminal" : "Command Prompt"} still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new window, you need to activate the environment again first.
             </InfoBtn>
           </div>
 
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Mac / Linux:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop && source .venv/bin/activate</span>
-            <CopyBtn text="cd ~/Desktop && source .venv/bin/activate" />
-          </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
-            <CopyBtn text="python main.py" />
-          </div>
+          {os === "mac" && (
+            <>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop && source .venv/bin/activate</span>
+                <CopyBtn text="cd ~/Desktop && source .venv/bin/activate" />
+              </div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 main.py</span>
+                <CopyBtn text="python3 main.py" />
+              </div>
+            </>
+          )}
 
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 10, marginBottom: 4 }}>Windows:</div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop && .venv\Scripts\activate</span>
-            <CopyBtn text="cd %USERPROFILE%\\Desktop && .venv\\Scripts\\activate" />
-          </div>
-          <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
-            <CopyBtn text="python main.py" />
-          </div>
+          {os === "win" && (
+            <>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop && .venv\Scripts\activate</span>
+                <CopyBtn text="cd %USERPROFILE%\\Desktop && .venv\\Scripts\\activate" />
+              </div>
+              <div style={code()}>
+                <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
+                <CopyBtn text="python main.py" />
+              </div>
+            </>
+          )}
 
           <div style={hint}>
-            This runs the full pipeline once. You should see output in the terminal
-            and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
+            This runs the full pipeline once. You should see output in the {os === "mac" ? "Terminal" : "Command Prompt"}
+            {" "}and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
           </div>
+
+          {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
         </div>
-        <button onClick={() => mark(4)} style={{
-          marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
-        }}>It worked →</button>
+        {os && (
+          <button onClick={() => mark(5)} style={{
+            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+            color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+          }}>It worked →</button>
+        )}
       </ActivationStep>
 
-      {/* STEP 5: Schedule */}
-      <ActivationStep number={5} title={`Turn on ${freq.toLowerCase()} runs`} done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
+      {/* STEP 6: Schedule */}
+      <ActivationStep number={6} title={`Turn on ${freq.toLowerCase()} runs`} done={done[6]} open={openStep === 6} onToggle={() => toggle(6)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             AUTOFORGE handles content and delivery. But the recurring execution happens
@@ -1340,10 +1416,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </InfoBtn>
           </div>
 
-          {/* OS already selected in Step 1, instructions shown automatically */}
-
-          {/* Mac/Linux instructions */}
-          {(os === "mac" || os === "linux") && (<div>
+          {os === "mac" && (<div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 1 COMMAND</div>
 
             <div style={{ ...sub, marginBottom: 8 }}>Copy this single command and paste it into your Terminal. It sets everything up automatically:</div>
@@ -1366,7 +1439,6 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div style={hint}>You should see the AUTOFORGE line in the output.</div>
           </div>)}
 
-          {/* Windows instructions */}
           {os === "win" && (<div>
             <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>TASK SCHEDULER — 7 STEPS</div>
             {[
@@ -1394,15 +1466,15 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
          </div>
          {os && (
-           <button onClick={() => mark(5)} style={{
+           <button onClick={() => mark(6)} style={{
              marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
              color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
            }}>I've set it up →</button>
         )}
       </ActivationStep>
 
-      {/* STEP 6: Verify */}
-      <ActivationStep number={6} title="Check that it worked" done={done[6]} open={openStep === 6} onToggle={() => toggle(6)}>
+      {/* STEP 7: Verify */}
+      <ActivationStep number={7} title="Check that it worked" done={done[7]} open={openStep === 7} onToggle={() => toggle(7)}>
         <div style={sub}>
           <div style={{ marginBottom: 10 }}>
             Wait for the next scheduled run (or wait a minute for daily). Then check:
@@ -1411,14 +1483,14 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             ✓ Did you receive an email with your {pr.name.toLowerCase()} results?
           </div>
           <div style={{ marginBottom: 6 }}>
-            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{(os === "mac" || os === "linux") ? " (shows terminal output)" : ""}?
+            ✓ Is there an <span style={{ color: C.cyan }}>autoforge.log</span> file on your Desktop{os === "mac" ? " (shows terminal output)" : ""}?
           </div>
           <div style={hint}>
             If nothing happened, check that your computer was on at the scheduled time.
-            {(os === "mac" || os === "linux") ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
+            {os === "mac" ? " Run crontab -l to verify the entry exists." : " Open Task Scheduler and check the task status."}
           </div>
         </div>
-        <button onClick={() => mark(6)} style={{
+        <button onClick={() => mark(7)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
           color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>All good →</button>
