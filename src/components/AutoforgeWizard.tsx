@@ -1111,7 +1111,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         </div>
         <button onClick={() => mark(2)} style={{
           marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-          color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
+          color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
         }}>It worked →</button>
       </ActivationStep>
 
