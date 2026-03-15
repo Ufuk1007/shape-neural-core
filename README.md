@@ -383,7 +383,7 @@ SOURCES = [
 |----------|---------|-----------|
 | `/api/forge-research` | Discovers RSS feeds for your industry (OpenAI GPT-4.1) | 5/min |
 | `/api/forge-sample` | Generates proof-of-value preview (MiniMax) | 10/min |
-| `/api/forge-generate` | LLM proxy for scripts (MiniMax-Text-01) | 5/min |
+| `/api/forge-generate` | LLM proxy for scripts (MiniMax-M2.5) | 5/min |
 | `/api/forge-deliver` | SMTP relay for script email delivery | 3/min |
 
 ### Privacy
