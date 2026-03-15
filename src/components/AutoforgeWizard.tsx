@@ -1200,12 +1200,12 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           </div>)}
 
           {!os && <div style={hint}>Choose your computer type above to see the setup steps.</div>}
-        </div>
-        {os && (
-          <button onClick={() => mark(3)} style={{
-            marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
-            color: C.green, fontFamily: mono, fontSize: 11, cursor: "pointer", borderRadius: 2,
-          }}>I've set it up →</button>
+         </div>
+         {os && (
+           <button onClick={() => mark(3)} style={{
+             marginTop: 14, padding: "8px 20px", background: "transparent", border: `1px solid ${C.green}66`,
+             color: C.green, fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2,
+           }}>I've set it up →</button>
         )}
       </ActivationStep>
 
