@@ -33,7 +33,7 @@ const PRESETS = {
   kpi: {
     id: "kpi", name: "KPI STORYTELLER", icon: "◈",
     tagline: "Ingest → Interpret → Narrate → Send",
-    desc: "Turns your numbers into narrative. Drop a CSV or link a Google Sheet — the system detects trends, flags anomalies, and writes a stakeholder-ready report.",
+    desc: "Planned: Will turn your numbers into narrative. Drop a CSV or link a Google Sheet — the system will detect trends, flag anomalies, and write stakeholder-ready reports.",
     stages: ["Your Data", "Trend Detection", "Narrative Report", "Email Delivery"],
     fields: [
       { key: "metrics", label: "Key metrics you track", ph: "e.g. MQLs, conversion rate, CAC, monthly revenue, churn" },
@@ -44,7 +44,7 @@ const PRESETS = {
   recycler: {
     id: "recycler", name: "CONTENT RECYCLER", icon: "◎",
     tagline: "Extract → Decompose → Multiply → Distribute",
-    desc: "One long piece in, a full content series out. Feed it a blog post, whitepaper, or transcript — it extracts core ideas and generates multi-format content.",
+    desc: "Planned: Will take one long piece and produce a full content series. Feed it a blog post, whitepaper, or transcript — it will extract core ideas and generate multi-format content.",
     stages: ["Source Content", "Core Extraction", "Multi-Format Series", "Email Delivery"],
     fields: [
       { key: "formats", label: "What formats do you need?", ph: "e.g. LinkedIn posts, newsletter teasers, tweet threads" },
@@ -729,7 +729,7 @@ That's it. No background processes, no services, no accounts to close.
 ---
 
 Built with AUTOFORGE by ShapeNeural Labs
-[shapeneural.com](https://shapeneural.com) — comfort is the enemy
+[shapeneural.com](https://shapeneural.com) — designed intelligence
 `;
 }
 
@@ -757,15 +757,23 @@ function StepBar({ step }) {
   );
 }
 
-function PresetCard({ id, selected, onClick }) {
+function PresetCard({ id, selected, onClick, disabled = false }: { id: string; selected: any; onClick: any; disabled?: boolean }) {
   const p = PRESETS[id], on = selected === id;
   return (
-    <button onClick={onClick} style={{
+    <button onClick={disabled ? undefined : onClick} style={{
       flex: "1 1 240px", background: on ? `${C.green}0a` : C.surface,
-      border: `1px solid ${on ? C.green : C.border}`, borderRadius: 2,
-      padding: "24px 20px", textAlign: "left", cursor: "pointer",
+      border: `1px solid ${on ? C.green : disabled ? C.border : C.border}`, borderRadius: 2,
+      padding: "24px 20px", textAlign: "left", cursor: disabled ? "not-allowed" : "pointer",
       transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : "none",
+      opacity: disabled ? 0.45 : 1, position: "relative" as const,
     }}>
+      {disabled && (
+        <div style={{
+          position: "absolute", top: 12, right: 12,
+          padding: "3px 10px", background: `${C.magenta}18`, border: `1px solid ${C.magenta}44`,
+          borderRadius: 2, fontFamily: mono, fontSize: 10, letterSpacing: 2, color: C.magenta,
+        }}>COMING SOON</div>
+      )}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
         <span style={{ fontSize: 22, color: on ? C.green : C.dim }}>{p.icon}</span>
         <span style={{ fontFamily: mono, fontSize: 15, fontWeight: 600, color: on ? C.green : C.white, letterSpacing: 2 }}>{p.name}</span>
@@ -1684,7 +1692,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
               <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                 <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · designed intelligence</div>
               </a>
             </div>
           </div>
@@ -1788,9 +1796,8 @@ export default function AutoforgeWizard() {
       <div style={{ maxWidth: 840, margin: "0 auto" }}>
         {/* Logo + Home link */}
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
-          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 14, textDecoration: "none", opacity: 0.8, transition: "opacity 0.3s" }} onMouseEnter={e => (e.currentTarget.style.opacity = "1")} onMouseLeave={e => (e.currentTarget.style.opacity = "0.8")}>
+          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", textDecoration: "none", opacity: 0.8, transition: "opacity 0.3s" }} onMouseEnter={e => (e.currentTarget.style.opacity = "1")} onMouseLeave={e => (e.currentTarget.style.opacity = "0.8")}>
             <BindruneLogo size={36} onDark />
-            <span style={{ fontFamily: mono, fontSize: 11, letterSpacing: 3, color: C.dim }}>SHAPENEURAL.COM</span>
           </a>
         </div>
 
@@ -1809,7 +1816,7 @@ export default function AutoforgeWizard() {
             a ready-to-run automation. You download two files. That's it.
           </p>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} />)}
+            {Object.keys(PRESETS).map(k => <PresetCard key={k} id={k} selected={preset} onClick={() => setPreset(k)} disabled={k !== "radar"} />)}
           </div>
           <div style={{ marginTop: 30, display: "flex", justifyContent: "flex-end" }}>
             <Btn primary disabled={!preset} onClick={() => { setStep(1); setConfig({ delivery: "relay", frequency: "Weekly" }); }}>NEXT →</Btn>
