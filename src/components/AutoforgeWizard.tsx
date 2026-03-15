@@ -1,4 +1,4 @@
-// Paste import { useState } from "react";
+import { useState } from "react";
 
 // ═══════════════════════════════════════════════════════════
 // AUTOFORGE v4 — Content Automation Pipeline Generator
@@ -107,7 +107,7 @@ LLM_MODEL = "MiniMax-Text-01"` : `
 # ─── LLM: AUTOFORGE HANDLES IT ──────────────────────────
 # Content generation runs through our relay. No API key needed.
 LLM_MODE = "relay"
-RELAY_URL = "https://YOUR_PROJECT.supabase.co/functions/v1"`;
+RELAY_URL = "https://shapeneural.com/api"`;
 
   const upgradeHint = !selfHosted ? `
 # ═══════════════════════════════════════════════════════════
@@ -145,7 +145,7 @@ def _call_llm(prompt):
             print(f"  ! LLM error: {e}"); return f"[Failed: {e}]"
     else:
         try:
-            r = requests.post(f"{RELAY_URL}/autoforge-generate",
+            r = requests.post(f"{RELAY_URL}/forge-generate",
                 json={"prompt": prompt, "email": USER_EMAIL}, timeout=60)
             r.raise_for_status()
             return r.json().get("content", "[No content]")
@@ -166,7 +166,7 @@ def distribute(content, subject="AUTOFORGE Report"):
 
 def _email_relay(content, subject):
     try:
-        r = requests.post(f"{RELAY_URL}/autoforge-deliver",
+        r = requests.post(f"{RELAY_URL}/forge-deliver",
             json={"content": content, "email": USER_EMAIL,
                    "subject": f"{subject} — {datetime.now().strftime('%B %d, %Y')}"}, timeout=15)
         r.raise_for_status(); print(f"  + Sent to {USER_EMAIL}")
@@ -943,7 +943,7 @@ function FileCard({ name, content, onDL }) {
   );
 }
 
-const Btn = ({ children, primary, disabled, onClick }) => (
+const Btn = ({ children, primary = false, disabled = false, onClick }: { children: any; primary?: boolean; disabled?: boolean; onClick: any }) => (
   <button disabled={disabled} onClick={onClick} style={{
     padding: "12px 28px", border: primary ? "none" : `1px solid ${C.border}`,
     background: primary ? (disabled ? C.border : C.green) : "transparent",
@@ -1024,7 +1024,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
   const sub = { fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.8 };
   const hint = { fontFamily: mono, fontSize: 11, color: C.dim, lineHeight: 1.6, marginTop: 8 };
-  const code = (t) => ({ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
+  const code = (t?: any): React.CSSProperties => ({ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10,
     padding: "10px 14px", background: "#08080f", border: `1px solid ${C.border}`, borderRadius: 2, marginTop: 8, marginBottom: 4 });
 
   return (
@@ -1287,7 +1287,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 export default function AutoforgeWizard() {
   const [step, setStep] = useState(0);
   const [preset, setPreset] = useState(null);
-  const [config, setConfig] = useState({ delivery: "relay", frequency: "Weekly" });
+  const [config, setConfig] = useState<Record<string, string>>({ delivery: "relay", frequency: "Weekly" });
   const [phase, setPhase] = useState(-1);
   const [phaseLabel, setPhaseLabel] = useState("");
   const [sources, setSources] = useState(null);
@@ -1312,18 +1312,16 @@ export default function AutoforgeWizard() {
     let disc = [];
     if (preset === "radar") {
       try {
-        const r = await fetch("https://api.anthropic.com/v1/messages", {
-          method: "POST", headers: { "Content-Type": "application/json" },
+        const r = await fetch("/api/forge-research", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            model: "claude-sonnet-4-20250514", max_tokens: 1000,
-            tools: [{ type: "web_search_20250305", name: "web_search" }],
-            messages: [{ role: "user", content: `Find 5-7 active RSS feeds for "${config.industry || "B2B SaaS"}" focused on "${config.focus || "AI, automation"}". JSON array: [{"name":"...","feed_url":"...","description":"..."}]` }],
+            industry: (config as any).industry || "B2B SaaS",
+            keywords: (config as any).focus || "AI, automation"
           }),
         });
         const d = await r.json();
-        const t = d.content?.map(b => b.text || "").join("\n") || "[]";
-        const m = t.match(/\[[\s\S]*\]/);
-        if (m) disc = JSON.parse(m[0]);
+        disc = d.sources || [];
       } catch { disc = [{ name: "Add your feeds", feed_url: "https://example.com/feed", description: "Replace with real RSS URLs" }]; }
     }
     setSources(disc);
@@ -1335,15 +1333,18 @@ export default function AutoforgeWizard() {
     // Phase 3: Sample
     setPhase(2); setPhaseLabel("Generating sample output...");
     try {
-      const r = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST", headers: { "Content-Type": "application/json" },
+      const r = await fetch("/api/forge-sample", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514", max_tokens: 1000,
-          messages: [{ role: "user", content: `You are AUTOFORGE by ShapeNeural Labs. User configured "${pr.name}": ${ctx}. Show a realistic SAMPLE OUTPUT of one run. 250-350 words. Professional. Don't explain — just show the output.` }],
+          preset: preset,
+          config: Object.fromEntries(
+            Object.entries(config).filter(([k, v]) => v && k !== "delivery")
+          )
         }),
       });
       const d = await r.json();
-      setSample(d.content?.map(b => b.text || "").join("\n") || "Sample generated.");
+      setSample(d.content || "Sample generated.");
     } catch { setSample("Sample unavailable. Scripts work independently."); }
 
     // Phase 4: Package
@@ -1425,4 +1426,6 @@ export default function AutoforgeWizard() {
       </div>
     </div>
   );
-} AutoforgeWizard component code here
+}
+
+
