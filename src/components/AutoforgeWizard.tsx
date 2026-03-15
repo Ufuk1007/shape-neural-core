@@ -1306,32 +1306,26 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
           {/* Mac/Linux instructions */}
           {os === "mac" && (<div>
-            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 4 STEPS</div>
+            <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>CRON SETUP — 1 COMMAND</div>
 
-            <div style={{ ...sub, marginBottom: 6 }}>1. Open Terminal.</div>
-            <div style={{ ...sub, marginBottom: 6 }}>2. Type this and press Enter:</div>
+            <div style={{ ...sub, marginBottom: 8 }}>Copy this single command and paste it into your Terminal. It sets everything up automatically:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>crontab -e</span>
-              <CopyBtn text="crontab -e" />
-            </div>
-
-            <div style={{ ...sub, marginBottom: 6, marginTop: 12 }}>3. Paste this line at the bottom:</div>
-            <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 12, color: C.green, wordBreak: "break-all" }}>{cronLine}</span>
-              <CopyBtn text={cronLine} />
+              <span style={{ fontFamily: mono, fontSize: 12, color: C.green, wordBreak: "break-all" }}>{`(crontab -l 2>/dev/null; echo "${cronLine}") | crontab -`}</span>
+              <CopyBtn text={`(crontab -l 2>/dev/null; echo "${cronLine}") | crontab -`} />
             </div>
             <div style={hint}>
-              This uses the virtual environment you created earlier. If your files are not on the Desktop, adjust the paths accordingly.
+              This adds the schedule to your crontab without opening an editor. Your existing cron jobs (if any) are preserved.
+              <InfoBtn>
+                <span style={{ color: C.white }}>What does this do?</span> It reads your current cron schedule, appends the AUTOFORGE line, and saves it — all in one step. No editor needed. If you ever want to remove it, just run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line.
+              </InfoBtn>
             </div>
-
-            <div style={{ ...sub, marginBottom: 6, marginTop: 12 }}>4. Save and close the editor.</div>
-            <div style={hint}>In the default editor (nano): press <span style={{ color: C.white }}>Ctrl+O</span> → Enter → <span style={{ color: C.white }}>Ctrl+X</span></div>
 
             <div style={{ ...sub, marginTop: 14, marginBottom: 4 }}>Verify it's active:</div>
             <div style={code()}>
               <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>crontab -l</span>
               <CopyBtn text="crontab -l" />
             </div>
+            <div style={hint}>You should see the AUTOFORGE line in the output.</div>
           </div>)}
 
           {/* Windows instructions */}
