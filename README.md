@@ -237,7 +237,7 @@ LLM_MODEL = "MiniMax-M2.5"
 
 Any OpenAI-compatible API works. Just change `LLM_BASE_URL` and `LLM_MODEL`.
 
-> **Note:** The relay currently uses `MiniMax-Text-01` as the underlying model.
+> **Note:** The relay currently uses `MiniMax-M2.5` as the underlying model.
 
 ---
 
