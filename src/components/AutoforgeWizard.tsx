@@ -1166,8 +1166,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         }}>Files are on my Desktop →</button>
       </ActivationStep>
 
-      {/* STEP 2: Install Python + dependencies */}
-      <ActivationStep number={2} title="Set up Python" done={done[2]} open={openStep === 2} onToggle={() => toggle(2)}>
+      {/* STEP 3: Install Python + dependencies */}
+      <ActivationStep number={3} title="Set up Python" done={done[3]} open={openStep === 3} onToggle={() => toggle(3)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             Your automation runs with Python — a free programming language.
