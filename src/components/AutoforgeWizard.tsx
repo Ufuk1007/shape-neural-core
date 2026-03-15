@@ -1338,7 +1338,7 @@ export default function AutoforgeWizard() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          preset: preset,
+          preset: preset === "radar" ? "industry-radar" : preset === "kpi" ? "kpi-storyteller" : "content-recycler",
           config: Object.fromEntries(
             Object.entries(config).filter(([k, v]) => v && k !== "delivery")
           )
