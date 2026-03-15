@@ -33,7 +33,7 @@ const PRESETS = {
   kpi: {
     id: "kpi", name: "KPI STORYTELLER", icon: "◈",
     tagline: "Ingest → Interpret → Narrate → Send",
-    desc: "Turns your numbers into narrative. Drop a CSV or link a Google Sheet — the system detects trends, flags anomalies, and writes a stakeholder-ready report.",
+    desc: "Planned: Will turn your numbers into narrative. Drop a CSV or link a Google Sheet — the system will detect trends, flag anomalies, and write stakeholder-ready reports.",
     stages: ["Your Data", "Trend Detection", "Narrative Report", "Email Delivery"],
     fields: [
       { key: "metrics", label: "Key metrics you track", ph: "e.g. MQLs, conversion rate, CAC, monthly revenue, churn" },
