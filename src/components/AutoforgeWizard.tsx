@@ -1194,7 +1194,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div style={hint}>Click Finish. Your pipeline will now run {sched.human} automatically.</div>
 
             <div style={{ ...sub, marginTop: 14, marginBottom: 4 }}>Verify it's active:</div>
-            <div style={{ fontFamily: mono, fontSize: 12, color: C.text, lineHeight: 1.6 }}>
+            <div style={{ fontFamily: mono, fontSize: 13, color: C.text, lineHeight: 1.7 }}>
               Open Task Scheduler → Task Scheduler Library → find "AUTOFORGE" → check Status.
             </div>
           </div>)}
