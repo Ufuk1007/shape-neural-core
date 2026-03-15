@@ -1813,6 +1813,14 @@ export default function AutoforgeWizard() {
           files={files} config={config} preset={preset}
           onDownload={dl} onReset={() => { setStep(0); setPreset(null); setConfig({ delivery: "relay", frequency: "Weekly" }); setFiles(null); setSample(""); setSources(null); setPhase(-1); }}
         />)}
+
+        {/* Footer — always visible */}
+        <div style={{ marginTop: 60, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
+          <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim, fontFamily: mono }}>SHAPENEURAL LABS</div>
+            <div style={{ fontSize: 11, color: C.dim, marginTop: 5, fontFamily: mono }}>designed intelligence</div>
+          </a>
+        </div>
       </div>
     </div>
   );
