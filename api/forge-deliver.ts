@@ -6,7 +6,7 @@ const RATE_LIMIT = { windowMs: 60_000, maxRequests: 3 };
 
 const SMTP_HOST = 'mail.privateemail.com';
 const SMTP_PORT = 587;
-const SMTP_USER = 'autoforge@shapeneural.com';
+const SMTP_USER = 'signal@shapeneural.com';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   // CORS: allow from anywhere (called from user scripts)
