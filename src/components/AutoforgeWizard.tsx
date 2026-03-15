@@ -1658,7 +1658,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
     </div>
   );
 }
-
+  const [comingSoonBtn, setComingSoonBtn] = useState(false);
 
 // ═══════════════════════════════════════════════════════════
 // MAIN WIZARD
