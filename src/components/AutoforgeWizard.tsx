@@ -1241,28 +1241,32 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </div>
           )}
           <div style={{ marginBottom: 10 }}>
-            Now navigate to your Desktop in the terminal and run the script:
+            Make sure your virtual environment is active, then run the script:
             <InfoBtn>
-              The <span style={{ color: C.green }}>cd</span> command means "change directory" — it tells the terminal to go to a specific folder. Since you moved the files to your Desktop, we navigate there first so the terminal can find main.py.
+              If you just completed Step 2 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
             </InfoBtn>
           </div>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 4 }}>Mac / Linux:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop</span>
-            <CopyBtn text="cd ~/Desktop" />
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd ~/Desktop && source .venv/bin/activate</span>
+            <CopyBtn text="cd ~/Desktop && source .venv/bin/activate" />
           </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 10 }}>
-            On Windows, use: <span style={{ color: C.green }}>cd %USERPROFILE%\Desktop</span>
-            <CopyBtn text="cd %USERPROFILE%\\Desktop" />
-          </div>
-          <div style={{ marginBottom: 6 }}>Then run the script:</div>
           <div style={code()}>
-            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python3 main.py</span>
-            <CopyBtn text="python3 main.py" />
-          </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 2, marginBottom: 4 }}>
-            On Windows, use: <span style={{ color: C.green }}>python main.py</span>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
             <CopyBtn text="python main.py" />
           </div>
+
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 10, marginBottom: 4 }}>Windows:</div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>cd %USERPROFILE%\Desktop && .venv\Scripts\activate</span>
+            <CopyBtn text="cd %USERPROFILE%\\Desktop && .venv\\Scripts\\activate" />
+          </div>
+          <div style={code()}>
+            <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>python main.py</span>
+            <CopyBtn text="python main.py" />
+          </div>
+
           <div style={hint}>
             This runs the full pipeline once. You should see output in the terminal
             and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
