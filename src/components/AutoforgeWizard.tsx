@@ -1674,6 +1674,7 @@ export default function AutoforgeWizard() {
   const [sample, setSample] = useState("");
   const [files, setFiles] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [comingSoonBtn, setComingSoonBtn] = useState(false);
 
   const dl = (name, content) => {
     const b = new Blob([content], { type: "text/plain" });
