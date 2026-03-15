@@ -821,14 +821,14 @@ function ConfigForm({ preset, config, setConfig }) {
           {f.type === "select" ? (
             <select value={config[f.key] || f.opts[0]} onChange={e => set(f.key, e.target.value)} style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 13, borderRadius: 2, outline: "none",
+              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }}>
               {f.opts.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
           ) : (
             <input value={config[f.key] || ""} onChange={e => set(f.key, e.target.value)} placeholder={f.ph} style={{
               width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 13, borderRadius: 2, outline: "none",
+              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }} />
           )}
         </div>
