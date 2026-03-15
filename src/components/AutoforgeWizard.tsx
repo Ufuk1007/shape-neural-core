@@ -101,13 +101,13 @@ USER_EMAIL = "${cfg.email || ""}"                 # ← Your email address`;
 
   const llmConfig = selfHosted ? `
 # ─── LLM: SELF-HOSTED ───────────────────────────────────
-# You need your own LLM API key. We recommend MiniMax (~$0.002/run).
-# Sign up: https://www.minimaxi.chat
+# You need your own LLM API key. We recommend MiniMax (~$0.003/run).
+# Sign up: https://www.minimax.io
 # Also works with OpenAI or any OpenAI-compatible API.
 LLM_MODE = "direct"
 LLM_API_KEY = ""                # ← Your API key here
-LLM_BASE_URL = "https://api.minimaxi.chat/v1"
-LLM_MODEL = "MiniMax-Text-01"` : `
+LLM_BASE_URL = "https://api.minimax.io/v1"
+LLM_MODEL = "MiniMax-M2.5"` : `
 # ─── LLM: AUTOFORGE HANDLES IT ──────────────────────────
 # Content generation runs through our relay. No API key needed.
 LLM_MODE = "relay"
@@ -680,7 +680,7 @@ Or just **Disable** it to pause without deleting.
 ${selfHosted ? `You chose to run everything on your own infrastructure.
 
 **LLM API:**
-We recommend [MiniMax](https://www.minimaxi.chat) — about $0.002 per run.
+We recommend [MiniMax M2.5](https://www.minimax.io) — about $0.003 per run.
 Also works with [OpenAI](https://platform.openai.com) or any OpenAI-compatible API.
 
 **Email Delivery:**
@@ -702,7 +702,7 @@ To switch to your own infrastructure later, open main.py and change:
 
 **No other code changes needed.** The script switches automatically.
 
-Recommended LLM: [MiniMax](https://www.minimaxi.chat) (~$0.002/run)
+Recommended LLM: [MiniMax M2.5](https://www.minimax.io) (~$0.003/run)
 Recommended email: Gmail SMTP ([App Password](https://myaccount.google.com/apppasswords)) or [Resend](https://resend.com)`}
 
 ---

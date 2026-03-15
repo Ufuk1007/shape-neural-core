@@ -218,26 +218,26 @@ RELAY_URL = "https://shapeneural.com/api"
 
 ### Option 2: Direct API (Self-Hosted)
 
-Use your own LLM API key. The script uses `MiniMax-Text-01` by default.
+Use your own LLM API key. The script uses `MiniMax-M2.5` by default.
 
 ```python
 LLM_MODE = "direct"
 LLM_API_KEY = "your-api-key-here"
-LLM_BASE_URL = "https://api.minimaxi.chat/v1"
-LLM_MODEL = "MiniMax-Text-01"
+LLM_BASE_URL = "https://api.minimax.io/v1"
+LLM_MODEL = "MiniMax-M2.5"
 ```
 
 #### Supported LLM Providers
 
 | Provider | Base URL | Model | Cost per Run |
 |----------|----------|-------|-------------|
-| **MiniMax** (recommended) | `https://api.minimaxi.chat/v1` | `MiniMax-Text-01` | ~$0.002 |
+| **MiniMax** (recommended) | `https://api.minimax.io/v1` | `MiniMax-M2.5` | ~$0.003 |
 | **OpenAI** | `https://api.openai.com/v1` | `gpt-4o-mini` | ~$0.01 |
 | **OpenRouter** | `https://openrouter.ai/api/v1` | Various | Varies |
 
 Any OpenAI-compatible API works. Just change `LLM_BASE_URL` and `LLM_MODEL`.
 
-> **Note:** The relay currently uses `MiniMax-Text-01` as the underlying model.
+> **Note:** The relay currently uses `MiniMax-M2.5` as the underlying model.
 
 ---
 
@@ -365,7 +365,7 @@ SOURCES = [
           │  RELAY MODE       │   │                 │
           │                   ▼   ▼                 │
           │  shapeneural.com/api                    │
-          │  ├─ forge-generate (MiniMax-Text-01)    │
+          │  ├─ forge-generate (MiniMax-M2.5)       │
           │  └─ forge-deliver  (SMTP relay)         │
           └─────────────────────────────────────────┘
 
@@ -383,7 +383,7 @@ SOURCES = [
 |----------|---------|-----------|
 | `/api/forge-research` | Discovers RSS feeds for your industry (OpenAI GPT-4.1) | 5/min |
 | `/api/forge-sample` | Generates proof-of-value preview (MiniMax) | 10/min |
-| `/api/forge-generate` | LLM proxy for scripts (MiniMax-Text-01) | 5/min |
+| `/api/forge-generate` | LLM proxy for scripts (MiniMax-M2.5) | 5/min |
 | `/api/forge-deliver` | SMTP relay for script email delivery | 3/min |
 
 ### Privacy
@@ -424,7 +424,7 @@ No background processes, no services, no accounts to close.
 
 - **Frontend:** React + Vite + TypeScript + Tailwind CSS
 - **Backend:** Vercel Serverless Functions
-- **LLM (Relay):** MiniMax-Text-01
+- **LLM (Relay):** MiniMax-M2.5
 - **LLM (Research):** OpenAI GPT-4.1 with web search
 - **Email (Relay):** Namecheap Private Email SMTP
 
