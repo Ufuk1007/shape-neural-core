@@ -101,13 +101,13 @@ USER_EMAIL = "${cfg.email || ""}"                 # ← Your email address`;
 
   const llmConfig = selfHosted ? `
 # ─── LLM: SELF-HOSTED ───────────────────────────────────
-# You need your own LLM API key. We recommend MiniMax (~$0.002/run).
-# Sign up: https://www.minimaxi.chat
+# You need your own LLM API key. We recommend MiniMax (~$0.003/run).
+# Sign up: https://www.minimax.io
 # Also works with OpenAI or any OpenAI-compatible API.
 LLM_MODE = "direct"
 LLM_API_KEY = ""                # ← Your API key here
-LLM_BASE_URL = "https://api.minimaxi.chat/v1"
-LLM_MODEL = "MiniMax-Text-01"` : `
+LLM_BASE_URL = "https://api.minimax.io/v1"
+LLM_MODEL = "MiniMax-M2.5"` : `
 # ─── LLM: AUTOFORGE HANDLES IT ──────────────────────────
 # Content generation runs through our relay. No API key needed.
 LLM_MODE = "relay"
