@@ -757,15 +757,23 @@ function StepBar({ step }) {
   );
 }
 
-function PresetCard({ id, selected, onClick }) {
+function PresetCard({ id, selected, onClick, disabled = false }: { id: string; selected: any; onClick: any; disabled?: boolean }) {
   const p = PRESETS[id], on = selected === id;
   return (
-    <button onClick={onClick} style={{
+    <button onClick={disabled ? undefined : onClick} style={{
       flex: "1 1 240px", background: on ? `${C.green}0a` : C.surface,
-      border: `1px solid ${on ? C.green : C.border}`, borderRadius: 2,
-      padding: "24px 20px", textAlign: "left", cursor: "pointer",
+      border: `1px solid ${on ? C.green : disabled ? C.border : C.border}`, borderRadius: 2,
+      padding: "24px 20px", textAlign: "left", cursor: disabled ? "not-allowed" : "pointer",
       transition: "all 0.3s", outline: "none", boxShadow: on ? glow(C.green) : "none",
+      opacity: disabled ? 0.45 : 1, position: "relative" as const,
     }}>
+      {disabled && (
+        <div style={{
+          position: "absolute", top: 12, right: 12,
+          padding: "3px 10px", background: `${C.magenta}18`, border: `1px solid ${C.magenta}44`,
+          borderRadius: 2, fontFamily: mono, fontSize: 10, letterSpacing: 2, color: C.magenta,
+        }}>COMING SOON</div>
+      )}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
         <span style={{ fontSize: 22, color: on ? C.green : C.dim }}>{p.icon}</span>
         <span style={{ fontFamily: mono, fontSize: 15, fontWeight: 600, color: on ? C.green : C.white, letterSpacing: 2 }}>{p.name}</span>
