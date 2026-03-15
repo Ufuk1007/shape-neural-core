@@ -1340,20 +1340,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             </InfoBtn>
           </div>
 
-          {/* OS selector */}
-          <div style={{ marginBottom: 14 }}>
-            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginBottom: 8 }}>What's your computer?</div>
-            <div style={{ display: "flex", gap: 6 }}>
-              {[{ key: "mac", label: "Mac / Linux" }, { key: "win", label: "Windows" }].map(o => (
-                <button key={o.key} onClick={() => setOs(o.key)} style={{
-                  padding: "10px 20px", background: os === o.key ? `${C.green}12` : C.bg,
-                  border: `1px solid ${os === o.key ? C.green : C.border}`,
-                  color: os === o.key ? C.green : C.dim,
-                  fontFamily: mono, fontSize: 12, cursor: "pointer", borderRadius: 2, transition: "all 0.2s",
-                }}>{o.label}</button>
-              ))}
-            </div>
-          </div>
+          {/* OS already selected in Step 1, instructions shown automatically */}
 
           {/* Mac/Linux instructions */}
           {os === "mac" && (<div>
