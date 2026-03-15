@@ -365,7 +365,7 @@ SOURCES = [
           │  RELAY MODE       │   │                 │
           │                   ▼   ▼                 │
           │  shapeneural.com/api                    │
-          │  ├─ forge-generate (MiniMax-Text-01)    │
+          │  ├─ forge-generate (MiniMax-M2.5)       │
           │  └─ forge-deliver  (SMTP relay)         │
           └─────────────────────────────────────────┘
 
