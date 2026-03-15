@@ -1145,7 +1145,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <div style={{ ...sub, marginBottom: 6 }}>1. Open Terminal.</div>
             <div style={{ ...sub, marginBottom: 6 }}>2. Type this and press Enter:</div>
             <div style={code()}>
-              <span style={{ fontFamily: mono, fontSize: 12, color: C.green }}>crontab -e</span>
+              <span style={{ fontFamily: mono, fontSize: 13, color: C.green }}>crontab -e</span>
               <CopyBtn text="crontab -e" />
             </div>
 
