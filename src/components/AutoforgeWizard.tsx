@@ -1294,7 +1294,7 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           <div style={{ marginBottom: 10 }}>
             Make sure your virtual environment is active, then run the script:
             <InfoBtn>
-              If you just completed Step 2 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
+              If you just completed Step 3 and your terminal still shows <span style={{ color: C.white }}>(.venv)</span>, you're ready. If you opened a new terminal window, you need to activate the environment again first.
             </InfoBtn>
           </div>
 
