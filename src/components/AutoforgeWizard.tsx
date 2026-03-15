@@ -796,32 +796,35 @@ function PresetCard({ id, selected, onClick, disabled = false, onDisabledClick }
 
 function DeliveryChoice({ value, onChange }) {
   const opts = [
-    { key: "relay", label: "AUTOFORGE delivers to your email", sub: "Recommended. We handle delivery — just enter your email address." },
-    { key: "self", label: "I'll set up delivery myself", sub: "For advanced users. Full control, but requires your own email credentials." },
+    { key: "relay", label: "AUTOFORGE delivers to your email", sub: "Recommended. We handle delivery — just enter your email address.", color: C.green },
+    { key: "self", label: "I'll set up delivery myself", sub: "For advanced users. Full control, but requires your own email credentials.", color: C.magenta },
   ];
   return (
     <div style={{ marginTop: 4 }}>
       <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 10 }}>Delivery setup</label>
-      {opts.map(o => (
+      {opts.map(o => {
+        const active = value === o.key;
+        const activeColor = active ? o.color : C.border;
+        return (
         <button key={o.key} onClick={() => onChange(o.key)} style={{
           display: "block", width: "100%", textAlign: "left", padding: "14px 16px",
-          background: value === o.key ? `${C.green}0a` : C.surface,
-          border: `1px solid ${value === o.key ? C.green : C.border}`,
+          background: active ? `${o.color}0a` : C.surface,
+          border: `1px solid ${activeColor}`,
           borderRadius: 2, marginBottom: 6, cursor: "pointer", outline: "none",
           transition: "all 0.2s",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <div style={{
               width: 14, height: 14, borderRadius: "50%",
-              border: `2px solid ${value === o.key ? C.green : C.dim}`,
-              background: value === o.key ? C.green : "transparent",
+              border: `2px solid ${active ? o.color : C.dim}`,
+              background: active ? o.color : "transparent",
               transition: "all 0.2s",
             }} />
-            <span style={{ fontFamily: mono, fontSize: 14, color: value === o.key ? C.green : C.white }}>{o.label}</span>
+            <span style={{ fontFamily: mono, fontSize: 14, color: active ? o.color : C.white }}>{o.label}</span>
           </div>
-          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, color: active && o.key === "self" ? C.magenta : C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
         </button>
-      ))}
+      )})}
     </div>
   );
 }
