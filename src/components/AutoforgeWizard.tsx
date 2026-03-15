@@ -850,7 +850,7 @@ function ConfigForm({ preset, config, setConfig }) {
       )}
       {/* Frequency selector */}
       <div>
-        <label style={{ fontFamily: mono, fontSize: 12, color: C.text, display: "block", marginBottom: 8 }}>How often should this run?</label>
+        <label style={{ fontFamily: mono, fontSize: 14, color: C.text, display: "block", marginBottom: 8 }}>How often should this run?</label>
         <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
           {["Daily", "Weekly", "Every 2 weeks", "Monthly"].map(f => {
             const val = f === "Every 2 weeks" ? "Biweekly" : f;
