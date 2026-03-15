@@ -1329,8 +1329,8 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         }}>It worked →</button>
       </ActivationStep>
 
-      {/* STEP 4: Schedule */}
-      <ActivationStep number={4} title={`Turn on ${freq.toLowerCase()} runs`} done={done[4]} open={openStep === 4} onToggle={() => toggle(4)}>
+      {/* STEP 5: Schedule */}
+      <ActivationStep number={5} title={`Turn on ${freq.toLowerCase()} runs`} done={done[5]} open={openStep === 5} onToggle={() => toggle(5)}>
         <div style={sub}>
           <div style={{ marginBottom: 12 }}>
             AUTOFORGE handles content and delivery. But the recurring execution happens
