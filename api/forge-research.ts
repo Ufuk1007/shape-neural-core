@@ -5,39 +5,14 @@ import { checkRateLimit, getClientIp } from './_rate-limit.js';
 
 const RATE_LIMIT = { windowMs: 60_000, maxRequests: 5 };
 
-const ALLOWED_ORIGINS = [
-  'https://shapeneural.com',
-  'https://www.shapeneural.com',
-  'https://input-output-loom.lovable.app',
-];
-
-function isAllowedOrigin(origin: string | undefined) {
-  if (!origin) return false;
-  if (ALLOWED_ORIGINS.includes(origin)) return true;
-
-  try {
-    const { hostname, protocol } = new URL(origin);
-    const isHttp = protocol === 'http:' || protocol === 'https:';
-    return isHttp && (hostname.endsWith('.lovableproject.com') || hostname.endsWith('.lovable.app'));
-  } catch {
-    return false;
-  }
-}
-
-function corsHeaders(origin: string | undefined) {
-  const allowed = isAllowedOrigin(origin);
-  return {
-    'Access-Control-Allow-Origin': allowed ? origin! : ALLOWED_ORIGINS[0],
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    Vary: 'Origin',
-  };
-}
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-supabase-client-platform, x-supabase-client-platform-version, x-supabase-client-runtime, x-supabase-client-runtime-version',
+};
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
-  const origin = req.headers.origin as string | undefined;
-  const headers = corsHeaders(origin);
-  Object.entries(headers).forEach(([k, v]) => res.setHeader(k, v));
+  Object.entries(CORS_HEADERS).forEach(([k, v]) => res.setHeader(k, v));
 
   if (req.method === 'OPTIONS') return res.status(204).end();
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
