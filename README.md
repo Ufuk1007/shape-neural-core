@@ -231,7 +231,7 @@ LLM_MODEL = "MiniMax-M2.5"
 
 | Provider | Base URL | Model | Cost per Run |
 |----------|----------|-------|-------------|
-| **MiniMax** (recommended) | `https://api.minimaxi.chat/v1` | `MiniMax-Text-01` | ~$0.002 |
+| **MiniMax** (recommended) | `https://api.minimax.io/v1` | `MiniMax-M2.5` | ~$0.003 |
 | **OpenAI** | `https://api.openai.com/v1` | `gpt-4o-mini` | ~$0.01 |
 | **OpenRouter** | `https://openrouter.ai/api/v1` | Various | Varies |
 
