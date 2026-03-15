@@ -797,9 +797,9 @@ function DeliveryChoice({ value, onChange }) {
               background: value === o.key ? C.green : "transparent",
               transition: "all 0.2s",
             }} />
-            <span style={{ fontFamily: mono, fontSize: 12, color: value === o.key ? C.green : C.white }}>{o.label}</span>
+            <span style={{ fontFamily: mono, fontSize: 14, color: value === o.key ? C.green : C.white }}>{o.label}</span>
           </div>
-          <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6, marginLeft: 24 }}>{o.sub}</div>
         </button>
       ))}
     </div>
