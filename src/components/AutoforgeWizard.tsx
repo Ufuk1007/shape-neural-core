@@ -1312,7 +1312,7 @@ export default function AutoforgeWizard() {
     let disc = [];
     if (preset === "radar") {
       try {
-        const r = await fetch("/api/forge-research", {
+        const r = await fetch("https://shapeneural.com/api/forge-research", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -1333,7 +1333,7 @@ export default function AutoforgeWizard() {
     // Phase 3: Sample
     setPhase(2); setPhaseLabel("Generating sample output...");
     try {
-      const r = await fetch("/api/forge-sample", {
+      const r = await fetch("https://shapeneural.com/api/forge-sample", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
