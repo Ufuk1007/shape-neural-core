@@ -1312,7 +1312,7 @@ export default function AutoforgeWizard() {
     let disc = [];
     if (preset === "radar") {
       try {
-        const r = await fetch("/api/forge-research", {
+        const r = await fetch("https://shapeneural.com/api/forge-research", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
