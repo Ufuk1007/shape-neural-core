@@ -867,7 +867,7 @@ function ConfigForm({ preset, config, setConfig }) {
               color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
             }} />
           <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, marginTop: 6 }}>
-            We deliver results here. Pre-filled in your script.
+            We deliver results here. Pre-filled in your script. Your email is not stored or shared — it's only embedded in the script you download.
           </div>
         </div>
       )}
