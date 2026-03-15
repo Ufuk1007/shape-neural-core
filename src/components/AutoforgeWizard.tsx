@@ -1604,32 +1604,9 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
 
         return (
           <div style={{ marginTop: 20 }}>
-            {/* Celebration banner */}
-            <div style={{
-              padding: "32px 24px", textAlign: "center", borderRadius: 4,
-              background: `linear-gradient(135deg, ${C.green}15, ${C.cyan}10)`,
-              border: `2px solid ${C.green}44`,
-              boxShadow: `0 0 40px ${C.green}15, 0 0 80px ${C.green}08`,
-            }}>
-              <div style={{ fontSize: 32, marginBottom: 8 }}>🎉</div>
-              <div style={{ fontFamily: mono, fontSize: 18, color: C.green, fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>
-                AUTOMATION ACTIVE
-              </div>
-              <div style={{ fontFamily: mono, fontSize: 14, color: C.white, marginBottom: 6 }}>
-                Congratulations — you just built a fully automated content pipeline.
-              </div>
-              <div style={{ fontFamily: mono, fontSize: 13, color: C.dim, lineHeight: 1.7 }}>
-                <span style={{ color: C.green }}>▸</span> {pr.name} runs <span style={{ color: C.white }}>{sched.human}</span> on your machine
-                <br/>
-                <span style={{ color: C.green }}>▸</span> Results are delivered straight to your inbox
-                <br/>
-                <span style={{ color: C.green }}>▸</span> No cloud fees, no subscriptions — it's yours
-              </div>
-            </div>
-
             {/* Test Run — only in relay mode */}
             {!selfHosted && (
-              <div style={{ marginTop: 16, padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2 }}>
+              <div style={{ padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2 }}>
                 <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>
                   PROOF OF DELIVERY
                 </div>
@@ -1698,49 +1675,20 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
                 )}
               </div>
             )}
-          </div>
-        );
-      })()}
 
-      {/* Remove later */}
-      <div style={{ marginTop: 24 }}>
-        <button onClick={() => setShowRemove(!showRemove)} style={{
-          background: "none", border: "none", cursor: "pointer", outline: "none",
-          fontFamily: mono, fontSize: 12, color: C.dim, display: "flex", alignItems: "center", gap: 6,
-        }}>
-          <span>{showRemove ? "▼" : "▶"}</span>
-          <span>Remove automation later</span>
-        </button>
-        {showRemove && (
-          <div style={{ padding: "12px 0 0 20px" }}>
-            {os === "win" && (
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
-                Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → Delete. Or just Disable to pause it.
-              </div>
-            )}
-            {os === "mac" && (
-              <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 8 }}>
-                Run <span style={{ color: C.green }}>crontab -e</span> and delete the AUTOFORGE line. Save and close.
-              </div>
-            )}
-            <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7 }}>
-              Then delete the folder with main.py. No background services, no accounts, nothing else to clean up.
+            {/* Build another / footer */}
+            <div style={{ marginTop: 30, display: "flex", gap: 10 }}>
+              <Btn onClick={onReset}>BUILD ANOTHER</Btn>
+            </div>
+
+            <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
+              <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
+                <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
+              </a>
             </div>
           </div>
-        )}
-      </div>
-
-      {/* Build another / footer */}
-      <div style={{ marginTop: 30, display: "flex", gap: 10 }}>
-        <Btn onClick={onReset}>BUILD ANOTHER</Btn>
-      </div>
-
-      <div style={{ marginTop: 40, paddingTop: 20, borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
-        <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-          <div style={{ fontSize: 11, letterSpacing: 4, color: C.dim }}>BUILT WITH <span style={{ color: C.green }}>AUTOFORGE</span> BY SHAPENEURAL LABS</div>
-          <div style={{ fontSize: 11, color: C.dim, marginTop: 5 }}>shapeneural.com · comfort is the enemy</div>
-        </a>
-      </div>
+        );
     </div>
   );
 }
