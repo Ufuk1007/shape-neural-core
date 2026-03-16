@@ -303,7 +303,7 @@ def analyze(articles):
     print("[ANALYZE] Scoring relevance...")
     # Split on commas and/or spaces so both "AI, usability" and "AI usability" work
     import re as _re
-    kw = [k.strip().lower() for k in _re.split(r"[,\s]+", FOCUS) if k.strip()]
+    kw = [k.strip().lower() for k in _re.split(r"[,\\s]+", FOCUS) if k.strip()]
     scored = []
     for a in articles:
         txt = f"{a['title']} {a['summary']}".lower()
