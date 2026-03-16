@@ -1666,11 +1666,13 @@ Rules:
           return (
             <div style={{ padding: 20, background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2, marginBottom: 16 }}>
               <div style={{ fontFamily: mono, fontSize: 11, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>
-                PROOF OF DELIVERY
+                TEST EMAIL DELIVERY
               </div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.dim, lineHeight: 1.7, marginBottom: 14 }}>
-                Run the full pipeline now — generate content and deliver it to your inbox.
-                This verifies generation and delivery. Your recurring runs still happen on your machine.
+                Sends a sample briefing to your inbox to verify email delivery is working.
+              </div>
+              <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginBottom: 14, padding: "8px 12px", border: `1px solid ${C.border}`, borderRadius: 2 }}>
+                ⓘ This uses AI-generated sample content — no live sources. Your real pipeline (with actual articles) runs via Terminal in Step 5.
               </div>
               <button
                 onClick={runTestPipeline}
