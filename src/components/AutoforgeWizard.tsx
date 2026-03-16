@@ -321,16 +321,18 @@ Deliver exactly this structure — nothing else:
 
 **INSIGHT:** One contrarian or non-obvious observation that reframes the above signals — 2 sentences max
 
+**DEEP DIVE:** Pick the most important signal and go deeper. 6-8 sentences: explain the structural reason behind it, what most people are missing, and what it means over the next 12 months. This is where the real value is — not just what, but why and what next.
+
 **TO ACTION:**
 - [specific action] — one sentence, immediately executable
 - [specific action] — one sentence, immediately executable
 
-**LINKEDIN POST DRAFTS** (pick one to post this week):
-Draft A: hook + insight + CTA (100-120 words, bold & provocative)
-Draft B: hook + insight + CTA (100-120 words, different angle)
+**LINKEDIN POST:**
+One draft only. Hook + core insight + CTA. 100-120 words. Match the voice setting. Ready to post as-is.
 
 Rules:
-- Total output: 350-450 words
+- Write entirely in English
+- Total output: 380-480 words
 - No filler phrases, no hedging, no meta-commentary
 - Deliver only the final output""")
     return content + sources_footer
