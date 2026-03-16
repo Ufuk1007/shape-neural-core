@@ -2,6 +2,8 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import nodemailer from 'nodemailer';
 import { checkRateLimit, getClientIp } from './_rate-limit.js';
 
+export const maxDuration = 60; // Hobby plan max: 60s — SMTP can be slow
+
 const RATE_LIMIT = { windowMs: 60_000, maxRequests: 3 };
 
 const SMTP_HOST = 'mail.privateemail.com';

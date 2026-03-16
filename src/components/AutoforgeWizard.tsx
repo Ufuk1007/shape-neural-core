@@ -269,7 +269,11 @@ def collect():
         url = src.get("feed_url") or src.get("url", "")
         if not url: continue
         try:
-            feed = feedparser.parse(url)
+            # Use requests with explicit timeout — feedparser.parse(url) has no timeout
+            resp = requests.get(url, timeout=10,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; AutoForge/1.0)"})
+            resp.raise_for_status()
+            feed = feedparser.parse(resp.content)
             name = feed.feed.get("title", src.get("name", url))
             count = 0
             for entry in feed.entries[:15]:
@@ -286,6 +290,8 @@ def collect():
                     "link": entry.get("link", ""), "source": name})
                 count += 1
             print(f"  + {name} ({count} articles)")
+        except requests.exceptions.Timeout:
+            print(f"  ! {url}: timed out after 10s — skipping")
         except Exception as e:
             print(f"  ! {url}: {e}")
     print(f"  = {len(articles)} articles total"); return articles

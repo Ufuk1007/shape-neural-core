@@ -3,6 +3,8 @@ import { openai } from '@ai-sdk/openai';
 import { generateText } from 'ai';
 import { checkRateLimit, getClientIp } from './_rate-limit.js';
 
+export const maxDuration = 60; // Hobby plan max: 60s — GPT-4.1 + 10 parallel feed validations
+
 const RATE_LIMIT = { windowMs: 60_000, maxRequests: 5 };
 
 const CORS_HEADERS = {

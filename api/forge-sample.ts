@@ -1,6 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { checkRateLimit, getClientIp } from './_rate-limit.js';
 
+export const maxDuration = 60; // Hobby plan max: 60s — MiniMax M2.5 reasoning can be slow
+
 const RATE_LIMIT = { windowMs: 60_000, maxRequests: 10 };
 const MINIMAX_URL = 'https://api.minimax.io/v1/chat/completions';
 const MINIMAX_MODEL = 'MiniMax-M2.5';
