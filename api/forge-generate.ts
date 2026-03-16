@@ -50,6 +50,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       body: JSON.stringify({
         model: MINIMAX_MODEL,
         messages: [
+          { role: 'system', content: 'You are a professional content creator. Deliver only the final output — no meta-commentary, no explanations, no preamble.' },
           { role: 'user', content: prompt },
         ],
         temperature: 0.7,
@@ -64,7 +65,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const data = await response.json();
-    const content = data.choices?.[0]?.message?.content || '';
+    const raw = data.choices?.[0]?.message?.content || '';
+    // Strip MiniMax internal reasoning tags
+    const content = raw.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
 
     // Track token usage
     const usage = data.usage;

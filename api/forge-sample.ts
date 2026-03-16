@@ -12,8 +12,21 @@ const CORS_HEADERS = {
 };
 
 const PRESET_PROMPTS: Record<string, (config: Record<string, string>) => string> = {
-  'industry-radar': (c) => `You are writing an industry intelligence briefing for a senior professional in ${c.industry || 'technology'} who reads this in 90 seconds between meetings.
+  'industry-radar': (c) => {
+    const sourcesBlock = c.sources
+      ? (() => {
+          try {
+            const parsed = JSON.parse(c.sources);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              return `\nYou are drawing from these real industry sources:\n${parsed.map((s: any) => `- ${s.name}: ${s.description || ''}`).join('\n')}\n`;
+            }
+          } catch { /* ignore */ }
+          return '';
+        })()
+      : '';
 
+    return `You are writing an industry intelligence briefing for a senior professional in ${c.industry || 'technology'} who reads this in 90 seconds between meetings.
+${sourcesBlock}
 Focus: ${c.focus || 'key trends and developments'}
 Voice: ${c.voice || 'professional and analytical'}
 
@@ -36,7 +49,8 @@ Rules:
 - No filler phrases ("it's important to note", "in today's landscape", "as we navigate")
 - No hedging ("might", "could potentially", "it seems")
 - No meta-commentary about the briefing itself
-- Deliver only the final output`,
+- Deliver only the final output`;
+  },
 
   'kpi-storyteller': (c) => `You are a data storytelling expert. Write a 250-350 word narrative report analyzing hypothetical KPI data for a ${c.industry || 'SaaS'} company. Audience: ${c.audience || 'leadership team'}. Voice: ${c.voice || 'clear and insight-driven'}. Include: an executive summary, 2-3 trend observations with context, and recommended actions. Use specific (fictional but realistic) numbers. Deliver only the final output, no meta-commentary.`,
 

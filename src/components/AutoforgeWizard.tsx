@@ -302,16 +302,38 @@ def analyze(articles):
 def generate(top):
     print("[GENERATE] Creating content...")
     block = "\\n".join(f"{i+1}. {a['title']}\\n   {a['source']} — {a['summary'][:120]}\\n   {a['link']}" for i, a in enumerate(top))
-    return _call_llm(f"""You are a content strategist covering {INDUSTRY}.
+    sources_footer = "\\n\\n---\\nSOURCES:\\n" + "\\n".join(f"- {a['source']}: {a['link']}" for a in top)
+    content = _call_llm(f"""You are writing an industry intelligence briefing for a senior professional in {INDUSTRY} who reads this in 90 seconds between meetings.
+
+Focus: {FOCUS}
 Voice: {VOICE}
 
-Top articles this week:
+You are drawing from these real articles published this week:
 {block}
 
-Generate:
-1. WEEKLY BRIEFING (200-300 words) — key themes, why they matter
-2. Three LINKEDIN POST DRAFTS (100-150 words each) — hook, insight, CTA
-Each post: different angle. Be specific, not generic.""")
+Deliver exactly this structure — nothing else:
+
+**[HEADLINE]** — one punchy line, max 12 words
+
+**SIGNAL 1:** What is happening and why it matters — 2-3 sharp sentences
+**SIGNAL 2:** What is happening and why it matters — 2-3 sharp sentences
+**SIGNAL 3:** What is happening and why it matters — 2-3 sharp sentences
+
+**INSIGHT:** One contrarian or non-obvious observation that reframes the above signals — 2 sentences max
+
+**TO ACTION:**
+- [specific action] — one sentence, immediately executable
+- [specific action] — one sentence, immediately executable
+
+**LINKEDIN POST DRAFTS** (pick one to post this week):
+Draft A: hook + insight + CTA (100-120 words, bold & provocative)
+Draft B: hook + insight + CTA (100-120 words, different angle)
+
+Rules:
+- Total output: 350-450 words
+- No filler phrases, no hedging, no meta-commentary
+- Deliver only the final output""")
+    return content + sources_footer
 
 # ═══════════════════════════════════════════════════════════
 # RUN
@@ -1722,9 +1744,12 @@ export default function AutoforgeWizard() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           preset: preset === "radar" ? "industry-radar" : preset === "kpi" ? "kpi-storyteller" : "content-recycler",
-          config: Object.fromEntries(
-            Object.entries(config).filter(([k, v]) => v && k !== "delivery")
-          )
+          config: {
+            ...Object.fromEntries(
+              Object.entries(config).filter(([k, v]) => v && k !== "delivery")
+            ),
+            ...(disc.length > 0 ? { sources: JSON.stringify(disc) } : {}),
+          }
         }),
       });
       const d = await r.json();
@@ -1804,6 +1829,17 @@ export default function AutoforgeWizard() {
               padding: 18, fontFamily: mono, fontSize: 12, lineHeight: 1.7,
               color: C.text, whiteSpace: "pre-wrap", maxHeight: 360, overflow: "auto",
             }}>{sample}</div>
+            {sources && sources.length > 0 && (
+              <div style={{ marginTop: 12, padding: "12px 16px", background: C.surface, border: `1px solid ${C.border}`, borderRadius: 2 }}>
+                <div style={{ fontSize: 10, letterSpacing: 3, color: C.dim, marginBottom: 8 }}>SOURCES — REAL DATA, NOT HALLUCINATED</div>
+                {sources.map((s: any, i: number) => (
+                  <div key={i} style={{ fontSize: 11, color: C.dim, fontFamily: mono, marginBottom: 4 }}>
+                    <span style={{ color: C.text }}>{s.name}</span>
+                    {s.feed_url && <span style={{ color: C.dim }}> · {s.feed_url}</span>}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>)}
           {files && !loading && (
             <div style={{ marginTop: 24, display: "flex", justifyContent: "flex-end" }}>
