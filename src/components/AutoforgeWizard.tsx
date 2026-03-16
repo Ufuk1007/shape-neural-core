@@ -295,7 +295,9 @@ def collect():
 # ═══════════════════════════════════════════════════════════
 def analyze(articles):
     print("[ANALYZE] Scoring relevance...")
-    kw = [k.strip().lower() for k in FOCUS.split(",")]
+    # Split on commas and/or spaces so both "AI, usability" and "AI usability" work
+    import re as _re
+    kw = [k.strip().lower() for k in _re.split(r"[,\s]+", FOCUS) if k.strip()]
     scored = []
     for a in articles:
         txt = f"{a['title']} {a['summary']}".lower()
@@ -1471,9 +1473,13 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           )}
 
           <div style={hint}>
-            This runs the full pipeline once. You should see output in the {os === "mac" ? "Terminal" : "Command Prompt"}
-            {" "}and receive an email with the results.{selfHosted ? "" : " If the email doesn't arrive, check your spam folder."}
+            This runs the full pipeline once — collecting articles, scoring relevance, generating your briefing, and delivering it.
           </div>
+          {!selfHosted && (
+            <div style={{ marginTop: 10, padding: "10px 14px", background: `${C.green}08`, border: `1px solid ${C.green}22`, borderRadius: 2, fontFamily: mono, fontSize: 12, color: C.green, lineHeight: 1.7 }}>
+              ✓ When it finishes you will receive an email at <span style={{ color: C.white }}>{config.email || "your address"}</span> with the full briefing — HEADLINE, SIGNALS, DEEP DIVE, LINKEDIN POST, and sources. Check your spam folder if it doesn't arrive within 1 minute.
+            </div>
+          )}
 
           {!os && <div style={hint}>Go back to Step 1 and select your operating system first.</div>}
         </div>
@@ -1580,9 +1586,38 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
         {/* Test email — only in relay mode */}
         {!selfHosted && (() => {
           const buildTestPrompt = () => {
-            if (preset === "radar") return `You are an industry analyst. Generate a brief industry radar briefing for the ${config.industry || "tech"} industry. Focus: ${config.focus || "emerging trends"}. Voice: ${config.voice || "Sharp & Direct"}. Include 3-4 key signals with brief analysis. Keep it concise and actionable. Format with clear headers.`;
-            if (preset === "kpi") return `You are a data storyteller. Generate a sample KPI narrative report. Metrics tracked: ${config.metrics || "revenue, conversion rate"}. Audience: ${config.audience || "leadership team"}. Voice: ${config.voice || "Executive Brief"}. Include trend observations and 2-3 action items. Keep it concise.`;
-            return `You are a content strategist. Generate sample recycled content from a hypothetical source piece. Target formats: ${config.formats || "LinkedIn posts, newsletter"}. Audience: ${config.audience || "marketing professionals"}. Voice: ${config.voice || "Sharp & Direct"}. Generate 2-3 short content pieces. Keep it actionable.`;
+            const v = VOICE_MAP[config.voice] || "professional and clear";
+            if (preset === "radar") return `You are writing an industry intelligence briefing for a senior professional in ${config.industry || "technology"} who reads this in 90 seconds between meetings.
+
+Focus: ${config.focus || "key trends and developments"}
+Voice: ${v}
+
+Deliver exactly this structure — nothing else:
+
+**[HEADLINE]** — one punchy line, max 12 words
+
+**SIGNAL 1:** What is happening and why it matters — 2-3 sharp sentences
+**SIGNAL 2:** What is happening and why it matters — 2-3 sharp sentences
+**SIGNAL 3:** What is happening and why it matters — 2-3 sharp sentences
+
+**INSIGHT:** One contrarian or non-obvious observation that reframes the above signals — 2 sentences max
+
+**DEEP DIVE:** Pick the most important signal and go deeper. 6-8 sentences: explain the structural reason behind it, what most people are missing, and what it means over the next 12 months.
+
+**TO ACTION:**
+- [specific action] — one sentence, immediately executable
+- [specific action] — one sentence, immediately executable
+
+**LINKEDIN POST:**
+One draft only. Hook + core insight + CTA. 100-120 words. Match the voice setting. Ready to post as-is.
+
+Rules:
+- Write entirely in English
+- Total output: 380-480 words
+- No filler phrases, no hedging, no meta-commentary
+- Deliver only the final output`;
+            if (preset === "kpi") return `You are a data storyteller. Generate a sample KPI narrative report. Metrics tracked: ${config.metrics || "revenue, conversion rate"}. Audience: ${config.audience || "leadership team"}. Voice: ${v}. Include trend observations and 2-3 action items. Keep it concise.`;
+            return `You are a content strategist. Generate sample recycled content from a hypothetical source piece. Target formats: ${config.formats || "LinkedIn posts, newsletter"}. Audience: ${config.audience || "marketing professionals"}. Voice: ${v}. Generate 2-3 short content pieces. Keep it actionable.`;
           };
 
           const runTestPipeline = async () => {
