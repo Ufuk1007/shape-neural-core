@@ -8,6 +8,7 @@ interface RateLimitConfig {
 }
 
 const requestMap = new Map<string, number[]>();
+const MAX_MAP_SIZE = 5_000; // cap to prevent memory leak in long-running instances
 
 // Cleanup stale entries every 5 minutes
 let lastCleanup = Date.now();
@@ -15,7 +16,10 @@ const CLEANUP_INTERVAL = 5 * 60 * 1000;
 
 function cleanup(windowMs: number) {
   const now = Date.now();
-  if (now - lastCleanup < CLEANUP_INTERVAL) return;
+
+  // If map is growing too large, force immediate cleanup regardless of interval
+  const forceCleanup = requestMap.size > MAX_MAP_SIZE;
+  if (!forceCleanup && now - lastCleanup < CLEANUP_INTERVAL) return;
   lastCleanup = now;
 
   for (const [ip, timestamps] of requestMap.entries()) {
@@ -24,6 +28,17 @@ function cleanup(windowMs: number) {
       requestMap.delete(ip);
     } else {
       requestMap.set(ip, valid);
+    }
+  }
+
+  // If still too large after cleanup, evict oldest entries
+  if (requestMap.size > MAX_MAP_SIZE) {
+    const excess = requestMap.size - MAX_MAP_SIZE;
+    let evicted = 0;
+    for (const key of requestMap.keys()) {
+      if (evicted >= excess) break;
+      requestMap.delete(key);
+      evicted++;
     }
   }
 }

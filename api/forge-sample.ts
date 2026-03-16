@@ -101,7 +101,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           { role: 'user', content: promptBuilder(config) },
         ],
         temperature: 0.7,
-        max_tokens: 1000,
+        max_tokens: 1500, // increased from 1000 — DEEP DIVE section needs ~700 tokens
       }),
     });
 

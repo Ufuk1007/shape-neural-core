@@ -58,7 +58,13 @@ Important: Only include feeds you are highly confident are real and active. Pref
       return res.status(500).json({ error: 'Failed to parse research results' });
     }
 
-    const parsed = JSON.parse(jsonMatch[0]);
+    let parsed: { sources?: Array<{ name: string; feed_url: string; description: string }> };
+    try {
+      parsed = JSON.parse(jsonMatch[0]);
+    } catch {
+      console.error('[forge-research] Failed to parse GPT JSON:', jsonMatch[0].slice(0, 200));
+      return res.status(500).json({ error: 'Failed to parse research results' });
+    }
     const candidates: Array<{ name: string; feed_url: string; description: string }> = parsed.sources || [];
 
     // Validate feeds: fetch each URL and keep only those that return actual entries
