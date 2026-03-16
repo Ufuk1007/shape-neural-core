@@ -31,7 +31,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { industry, keywords } = req.body;
     if (!industry) return res.status(400).json({ error: 'industry is required' });
 
-    const prompt = `Find 5-7 real, currently active RSS feed URLs for the "${industry}" industry${keywords ? ` with focus on: ${keywords}` : ''}.
+    // Ask GPT-4.1 for more candidates than needed so we have room to drop dead feeds
+    const prompt = `Find 10 real, currently active RSS feed URLs for the "${industry}" industry${keywords ? ` with focus on: ${keywords}` : ''}.
 
 For each feed, provide:
 - name: The publication or blog name
@@ -40,7 +41,7 @@ For each feed, provide:
 
 Return ONLY valid JSON: {"sources": [{"name":"...","feed_url":"...","description":"..."}]}
 
-Important: Only include feeds you are confident are real and active. Prefer well-known industry publications, major blogs, and news outlets. Verify the URL format looks correct for an RSS feed.`;
+Important: Only include feeds you are highly confident are real and active. Prefer well-known industry publications, major blogs, and authoritative news outlets. Avoid niche or obscure sources that may have inactive feeds.`;
 
     const result = await generateText({
       model: openai('gpt-4.1'),
@@ -56,7 +57,38 @@ Important: Only include feeds you are confident are real and active. Prefer well
     }
 
     const parsed = JSON.parse(jsonMatch[0]);
-    return res.status(200).json(parsed);
+    const candidates: Array<{ name: string; feed_url: string; description: string }> = parsed.sources || [];
+
+    // Validate feeds: fetch each URL and keep only those that return actual entries
+    const validated: typeof candidates = [];
+    await Promise.allSettled(
+      candidates.map(async (src) => {
+        try {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 5000);
+          const resp = await fetch(src.feed_url, {
+            signal: controller.signal,
+            headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AutoForge/1.0; +https://shapeneural.com)' },
+          });
+          clearTimeout(timeout);
+          if (!resp.ok) return;
+          const body = await resp.text();
+          // Must look like an RSS/Atom feed with at least one item/entry
+          if ((body.includes('<item') || body.includes('<entry')) && body.includes('<title')) {
+            validated.push(src);
+          }
+        } catch {
+          // timeout or network error — skip this feed
+        }
+      })
+    );
+
+    // Keep up to 7 validated feeds; if somehow all fail, fall back to raw GPT list (best effort)
+    const sources = validated.length >= 3 ? validated.slice(0, 7) : candidates.slice(0, 7);
+
+    console.log(`[forge-research] ${industry}: ${candidates.length} candidates → ${validated.length} validated → ${sources.length} returned`);
+
+    return res.status(200).json({ sources });
   } catch (error) {
     console.error('Forge research error:', error);
     return res.status(500).json({

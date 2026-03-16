@@ -271,15 +271,24 @@ def collect():
         try:
             feed = feedparser.parse(url)
             name = feed.feed.get("title", src.get("name", url))
-            for entry in feed.entries[:10]:
+            count = 0
+            for entry in feed.entries[:15]:
                 pub = entry.get("published_parsed")
-                if pub and (datetime.now() - datetime(*pub[:6])).days > 7: continue
-                articles.append({"title": entry.get("title", ""), "summary": entry.get("summary", "")[:400],
+                # Accept articles up to 30 days old, or undated (always include)
+                if pub:
+                    try:
+                        age_days = (datetime.now() - datetime(*pub[:6])).days
+                        if age_days > 30: continue
+                    except Exception: pass
+                title = entry.get("title", "").strip()
+                if not title: continue
+                articles.append({"title": title, "summary": entry.get("summary", "")[:400],
                     "link": entry.get("link", ""), "source": name})
-            print(f"  + {name}")
+                count += 1
+            print(f"  + {name} ({count} articles)")
         except Exception as e:
             print(f"  ! {url}: {e}")
-    print(f"  = {len(articles)} articles"); return articles
+    print(f"  = {len(articles)} articles total"); return articles
 
 # ═══════════════════════════════════════════════════════════
 # STAGE 2: ANALYZE — score by keyword relevance (local)
@@ -291,10 +300,17 @@ def analyze(articles):
     for a in articles:
         txt = f"{a['title']} {a['summary']}".lower()
         sc = sum(2 if k in a["title"].lower() else 1 for k in kw if k in txt)
-        if sc > 0: a["score"] = sc; scored.append(a)
+        a["score"] = sc
+        scored.append(a)
     scored.sort(key=lambda x: x["score"], reverse=True)
-    for i, a in enumerate(scored[:5]): print(f"  {i+1}. [{a['score']}] {a['title'][:65]}")
-    return scored[:5]
+    # Always return top 5 — even if no keyword matches (score=0), we still deliver content
+    top = scored[:5]
+    for i, a in enumerate(top):
+        label = f"[{a['score']}]" if a["score"] > 0 else "[broad]"
+        print(f"  {i+1}. {label} {a['title'][:65]}")
+    if all(a["score"] == 0 for a in top):
+        print("  ! No keyword matches — using most recent articles from your sources")
+    return top
 
 # ═══════════════════════════════════════════════════════════
 # STAGE 3: GENERATE — create briefing + posts via LLM
@@ -343,13 +359,18 @@ Rules:
 if __name__ == "__main__":
     print(f"\\n{'='*50}\\n  AUTOFORGE — Industry Radar\\n  {datetime.now().strftime('%B %d, %Y %H:%M')}\\n{'='*50}\\n")
     arts = collect()
-    if arts:
-        top = analyze(arts)
-        if top:
-            out = generate(top)
-            print(f"\\n--- PREVIEW ---\\n{out[:400]}\\n---\\n")
-            distribute(out, "Industry Radar")
-    else: print("No articles found.")
+    if not arts:
+        print("! No articles collected. Check your internet connection or source URLs.")
+        print("\\nDone.")
+        exit(0)
+    top = analyze(arts)
+    if not top:
+        print("! No articles passed scoring. This should not happen — check analyze().")
+        print("\\nDone.")
+        exit(0)
+    out = generate(top)
+    print(f"\\n--- PREVIEW ---\\n{out[:400]}\\n---\\n")
+    distribute(out, "Industry Radar")
     print("\\nDone.")
 `;
 
