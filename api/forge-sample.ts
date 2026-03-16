@@ -12,11 +12,35 @@ const CORS_HEADERS = {
 };
 
 const PRESET_PROMPTS: Record<string, (config: Record<string, string>) => string> = {
-  'industry-radar': (c) => `You are a senior industry analyst. Write a 250-350 word intelligence briefing for the ${c.industry || 'technology'} industry, targeted at ${c.audience || 'decision-makers'}. Voice: ${c.voice || 'professional and analytical'}. Include: a headline, 2-3 key developments with analysis, and a "So What?" section with actionable takeaways. Format as a polished email newsletter.`,
+  'industry-radar': (c) => `You are writing an industry intelligence briefing for a senior professional in ${c.industry || 'technology'} who reads this in 90 seconds between meetings.
 
-  'kpi-storyteller': (c) => `You are a data storytelling expert. Write a 250-350 word narrative report analyzing hypothetical KPI data for a ${c.industry || 'SaaS'} company. Audience: ${c.audience || 'leadership team'}. Voice: ${c.voice || 'clear and insight-driven'}. Include: an executive summary, 2-3 trend observations with context, and recommended actions. Use specific (fictional but realistic) numbers.`,
+Focus: ${c.focus || 'key trends and developments'}
+Voice: ${c.voice || 'professional and analytical'}
 
-  'content-recycler': (c) => `You are a content strategist. Take this core topic: "${c.topic || 'AI automation in business'}" and create a 250-350 word LinkedIn post. Audience: ${c.audience || 'B2B professionals'}. Voice: ${c.voice || 'thought-provoking and conversational'}. Include a hook, 3-4 key insights, and a call to engagement. Format with line breaks for readability.`,
+Deliver exactly this structure — nothing else:
+
+**[HEADLINE]** — one punchy line, max 12 words
+
+**SIGNAL 1:** What is happening and why it matters — 2-3 sharp sentences
+**SIGNAL 2:** What is happening and why it matters — 2-3 sharp sentences
+**SIGNAL 3:** What is happening and why it matters — 2-3 sharp sentences
+
+**INSIGHT:** One contrarian or non-obvious observation that reframes the above signals — 2 sentences max
+
+**TO ACTION:**
+• [specific action] — one sentence, immediately executable
+• [specific action] — one sentence, immediately executable
+
+Rules:
+- Total output: 220-280 words
+- No filler phrases ("it's important to note", "in today's landscape", "as we navigate")
+- No hedging ("might", "could potentially", "it seems")
+- No meta-commentary about the briefing itself
+- Deliver only the final output`,
+
+  'kpi-storyteller': (c) => `You are a data storytelling expert. Write a 250-350 word narrative report analyzing hypothetical KPI data for a ${c.industry || 'SaaS'} company. Audience: ${c.audience || 'leadership team'}. Voice: ${c.voice || 'clear and insight-driven'}. Include: an executive summary, 2-3 trend observations with context, and recommended actions. Use specific (fictional but realistic) numbers. Deliver only the final output, no meta-commentary.`,
+
+  'content-recycler': (c) => `You are a content strategist. Take this core topic: "${c.topic || 'AI automation in business'}" and create a 250-350 word LinkedIn post. Audience: ${c.audience || 'B2B professionals'}. Voice: ${c.voice || 'thought-provoking and conversational'}. Include a hook, 3-4 key insights, and a call to engagement. Format with line breaks for readability. Deliver only the final output, no meta-commentary.`,
 };
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -66,7 +90,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
     const data = await response.json();
-    const content = data.choices?.[0]?.message?.content || '';
+    const raw = data.choices?.[0]?.message?.content || '';
+    // Strip MiniMax internal reasoning tags before returning
+    const content = raw.replace(/<think>[\s\S]*?<\/think>/g, '').trim();
     return res.status(200).json({ content });
   } catch (error) {
     console.error('Forge sample error:', error);
