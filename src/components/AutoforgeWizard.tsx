@@ -899,10 +899,17 @@ function ConfigForm({ preset, config, setConfig }) {
               {f.opts.map(o => <option key={o} value={o}>{o}</option>)}
             </select>
           ) : (
-            <input value={config[f.key] || ""} onChange={e => set(f.key, e.target.value)} placeholder={f.ph} style={{
-              width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
-              color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
-            }} />
+            <>
+              <input value={config[f.key] || ""} onChange={e => set(f.key, e.target.value)} placeholder={f.ph} style={{
+                width: "100%", padding: "12px 14px", background: C.surface, border: `1px solid ${C.border}`,
+                color: C.white, fontFamily: mono, fontSize: 14, borderRadius: 2, outline: "none",
+              }} />
+              {f.key === "focus" && (
+                <div style={{ fontFamily: mono, fontSize: 11, color: C.dim, marginTop: 5 }}>
+                  Separate multiple keywords with commas — e.g. <span style={{ color: C.cyan }}>AI adoption, privacy, automation</span>
+                </div>
+              )}
+            </>
           )}
         </div>
       ))}
@@ -1249,8 +1256,11 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
           {os === "mac" && (
             <div>
               <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, letterSpacing: 1, marginBottom: 10 }}>HOW TO OPEN TERMINAL ON MAC</div>
-              <div style={{ marginBottom: 8 }}>
-                Open <span style={{ color: C.green }}>Finder</span> → Applications → Utilities → <span style={{ color: C.green }}>Terminal.app</span>
+              <div style={{ marginBottom: 6 }}>
+                <span style={{ color: C.green }}>Option 1 (fastest):</span> Press <span style={{ color: C.white }}>⌘ Space</span>, type <span style={{ color: C.white }}>Terminal</span>, press Enter.
+              </div>
+              <div style={{ marginBottom: 10, color: C.dim }}>
+                Option 2: Finder → Applications → Utilities → <span style={{ color: C.text }}>Terminal.app</span>
               </div>
               <div style={hint}>
                 You'll see a window with a blinking cursor — that's your terminal. Keep it open for the next steps.
