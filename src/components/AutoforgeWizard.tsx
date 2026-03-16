@@ -171,7 +171,7 @@ def distribute(content, subject="AUTOFORGE Report"):
 def _email_relay(content, subject):
     try:
         r = requests.post(f"{RELAY_URL}/forge-deliver",
-            json={"content": content, "email": USER_EMAIL,
+            json={"content": content, "to": USER_EMAIL, "email": USER_EMAIL,
                    "subject": f"{subject} — {datetime.now().strftime('%B %d, %Y')}"}, timeout=15)
         r.raise_for_status(); print(f"  + Sent to {USER_EMAIL}")
     except Exception as e:
