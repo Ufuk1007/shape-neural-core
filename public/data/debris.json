@@ -1,138 +1,154 @@
 [
   {
-    "id": "getimg_ai_multi_model_workspace",
+    "id": "getimg_multi_model_workspace",
     "category": "STR_ART",
-    "headline": "getimg.ai: Multi-Model AI Art Workspace",
-    "summary": "getimg.ai integrates FLUX.2, GPT Image 1.5, Seedream 5.0 Lite for diverse art styles in one platform. Auto Mode selects models, Elements reuse styles for consistent character design. Revolutionizes iterative workflows for concept art and illustrations.",
+    "headline": "Multi-Model Workspace Reshapes Generative Art Workflows",
+    "summary": "getimg.ai's unified platform integrating FLUX.2, GPT Image 1.5, and Seedream 5.0 Lite enables artists to explore divergent aesthetic directions without tool-switching. The Elements feature—allowing reusable character and style components—addresses the persistent challenge of maintaining visual consistency across series work and collaborative projects.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 95
-  },
-  {
-    "id": "getimg_ai_elements_reuse",
-    "category": "STR_ART",
-    "headline": "Elements: Reusable AI Art Building Blocks",
-    "summary": "Save characters, styles, palettes as Elements for consistent series in storyboards or games. Combines with prompt enhancement and editing tools like upscaling. Enables seamless style coherence across projects.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 92
-  },
-  {
-    "id": "leonardo_ai_canvas_editor",
-    "category": "STR_ART",
-    "headline": "Leonardo AI Real-Time Canvas Editor",
-    "summary": "Canvas Editor enables inpainting and sketch-to-art generation for precise character and environment control. Ideal for game devs refining details without restarts. Pushes boundaries of interactive AI art creation.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 90
-  },
-  {
-    "id": "midjourney_vary_region_editor",
-    "category": "STR_ART",
-    "headline": "Midjourney Vary Region for Targeted Edits",
-    "summary": "Pan, Zoom, Remix, Vary Region allow surgical image refinements. Web interface boosts workflow for artistic iterations. Maintains aesthetic excellence in visual storytelling.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 88
-  },
-  {
-    "id": "recraft_vector_ai_generation",
-    "category": "STR_ART",
-    "headline": "Recraft: Vector AI for Scalable Graphics",
-    "summary": "Generates editable icons, illustrations as vectors for print/digital flexibility. Serves as ideation starter for brand systems. Bridges generative AI with professional vector design.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 85
-  },
-  {
-    "id": "adobe_firefly_creative_cloud",
-    "category": "STR_ART",
-    "headline": "Adobe Firefly: Embedded Gen AI in CC",
-    "summary": "Generates images, vectors, textures across Creative Cloud for early exploration. Retains designer control in familiar tools. Amplifies surface patterns and visual directions.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
-    "relevance": 87
-  },
-  {
-    "id": "canva_magic_studio_design",
-    "category": "CX_UX",
-    "headline": "Canva Magic Studio for Rapid Prototyping",
-    "summary": "Magic Design, Edit, Beat Sync speed up layouts, visuals, video for social campaigns. Prioritizes flexibility in high-volume UX workflows. Democratizes AI-assisted design iteration.",
-    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 82
   },
   {
-    "id": "promptsref_sref_library",
-    "category": "STR_ART",
-    "headline": "PromptsRef: Midjourney Style Reference Lib",
-    "summary": "Curated --sref prompts for consistent branding aesthetics. Enables rapid style reproduction in content production. Streamlines generative art for commercial design.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 80
-  },
-  {
-    "id": "colorart_ai_coloring_pages",
-    "category": "STR_ART",
-    "headline": "ColorArt.AI: Prompt-to-Coloring Pages",
-    "summary": "Transforms prompts/photos into printable coloring pages with detail controls. HD exports and background removal aid therapeutic art design. Novel AI for interactive creativity.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "id": "firefly_design_integration_evolution",
+    "category": "CX_UX",
+    "headline": "Adobe Firefly Deepens Creative Cloud Integration for Designer Workflows",
+    "summary": "Firefly's evolution within professional design software represents a shift toward AI as refinement tool rather than replacement. Designers leverage it for early exploration phases—testing surface patterns and visual directions—while maintaining full control over refinement, suggesting a mature UX pattern for AI-assisted creative work.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 78
   },
   {
-    "id": "face_to_3d_converter",
+    "id": "recraft_vector_generation_paradigm",
     "category": "STR_ART",
-    "headline": "Face to 3D: Portrait-to-3D Model AI",
-    "summary": "Converts photos to exportable 3D heads (GLB/OBJ/STL) for character design. Accelerates 3D prototyping in games/animation. Fusion of 2D portraiture with sculptural AI.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "headline": "Vector-First Generative Design Emerges as Production-Ready Alternative",
+    "summary": "Recraft's focus on SVG-exportable vector illustrations rather than raster outputs solves a critical design constraint: scalability across print and digital. This approach positions AI generation as a source-point generator within established brand systems rather than a final-output tool, reshaping how designers conceptualize AI's role in asset creation.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
     "relevance": 85
   },
   {
-    "id": "suno_ai_music_generation",
+    "id": "leonardo_canvas_inpainting_workflows",
+    "category": "CX_UX",
+    "headline": "Real-Time Canvas Editing Transforms Sketch-to-Refinement Workflows",
+    "summary": "Leonardo AI's Canvas Editor and real-time sketch-based generation enable iterative refinement without regeneration cycles. This represents a UX breakthrough for character design and environment art—where traditional prompt-to-image feels limiting—by embedding AI into the artist's native creative gesture language.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 80
+  },
+  {
+    "id": "canva_magic_studio_volume_production",
+    "category": "CX_UX",
+    "headline": "AI Content Adaptation Enables High-Volume Campaign Asset Generation",
+    "summary": "Canva's Magic Studio integration—particularly Beat Sync for video timing and Translate for language variants—automates asset adaptation across formats and channels. This represents a UX paradigm shift: AI as enabler of speed-to-market in content production rather than a creative tool for ideation.",
+    "url": "https://rgd.ca/articles/2026-amplifying-creativity-with-ai-tools-for-designers-in-2026",
+    "relevance": 76
+  },
+  {
+    "id": "suno_ai_music_generation_platform",
     "category": "SONIC",
-    "headline": "Suno AI: Text-to-Music Breakthrough",
-    "summary": "Generates full tracks from prompts, topping generative art tools. Enables sound designers to prototype sonic identities instantly. Redefines AI in music composition.",
+    "headline": "Suno AI Rated 4.9/5 as Top-Tier AI Music Generation Tool",
+    "summary": "Suno AI's high user ratings (156 reviews, 4.9 stars) indicate maturation of AI music generation for content creation workflows. This marks a significant milestone in sonic design accessibility, enabling designers and creators to generate original music assets without specialist audio knowledge.",
     "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 90
+    "relevance": 79
   },
   {
-    "id": "goenhance_ai_video_upscale",
+    "id": "google_veo_text_to_video_emergence",
     "category": "STR_ART",
-    "headline": "GoEnhance AI: Video Stylize & Upscale",
-    "summary": "All-in-one for generating, stylizing, enhancing videos with image tools. Supports motion design experimentation. Elevates AI in dynamic visual storytelling.",
+    "headline": "Google Veo Enters Competitive Text-to-Video Space with 4.9 Rating",
+    "summary": "Google Veo's presence among top-rated generative tools signals mainstream viability of AI video generation. This expands the generative art toolkit beyond static imagery into temporal media, opening new creative possibilities for motion design and visual storytelling at scale.",
     "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 82
+    "relevance": 77
   },
   {
-    "id": "nano_banana_google_ai_art",
+    "id": "luma_dream_machine_photorealism",
     "category": "STR_ART",
-    "headline": "Nano Banana: Google-Optimized Image Gen",
-    "summary": "Tailored for Google ecosystem, excels in prompt adherence for artistic results. Complements getimg.ai's multi-model approach. Advances accessible AI art tools.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 84
+    "headline": "Luma Dream Machine Achieves High Photorealism in Text-to-Video Generation",
+    "summary": "Rated 4.8/5 with 180 reviews, Luma Dream Machine's focus on realistic video generation from text and images represents a significant capability jump in achieving photorealistic temporal media. This has implications for commercial production workflows traditionally requiring live-action shoots or extensive VFX.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 81
   },
   {
-    "id": "flux_ai_image_models",
+    "id": "pika_labs_video_generation_scale",
     "category": "STR_ART",
-    "headline": "Flux.ai Integrated in getimg.ai Platform",
-    "summary": "FLUX.2 model powers high-fidelity illustrations and concepts. Auto-enhanced prompts yield painterly outputs. Core to 2026 multi-model art generation.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 89
+    "headline": "Pika Labs Text-to-Video Platform Gains 152 Verified Reviews",
+    "summary": "Pika Labs' strong user adoption (4.9 rating, 152 reviews) demonstrates market demand for accessible video generation. This indicates a shift in generative art beyond image toward temporal narratives, expanding possibilities for designers creating motion-based content.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 75
   },
   {
-    "id": "seedream_5_lite_art",
+    "id": "midjourney_aesthetic_leadership",
     "category": "STR_ART",
-    "headline": "Seedream 5.0 Lite for Stylized Portraits",
-    "summary": "Specialized model in getimg.ai for fantasy/sci-fi portraits. Supports Elements for series consistency. Innovates character concept workflows.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 86
+    "headline": "Midjourney Maintains Aesthetic Leadership with Proven Fast Iteration",
+    "summary": "Midjourney's continued prominence (4.8/5, 86 reviews) in generative art for design and visual storytelling reflects its refinement of the fast-iteration workflow. Its sustained credibility suggests that aesthetic quality and creative control remain primary differentiators in a crowded market.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 74
   },
   {
-    "id": "qwen_image_model",
-    "category": "STR_ART",
-    "headline": "Qwen Image: Versatile AI Visuals",
-    "summary": "Multi-purpose model expands getimg.ai's style range. Aids mood boards and visual exploration. Broadens experimental art directions.",
+    "id": "flux_open_model_accessibility",
+    "category": "META",
+    "headline": "FLUX Model Proliferation Signals Open-Source Generative Art Momentum",
+    "summary": "FLUX.2's presence across multiple platforms (getimg, Flux.ai) and integration into workflows suggests a shift toward democratized generative capabilities. This represents a philosophical pivot: from closed proprietary systems toward modular, openly-available models that enable independent developers and artists.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 83
   },
   {
-    "id": "ipage_ai_ecommerce_illust",
-    "category": "CX_UX",
-    "headline": "iPage AI for Ecommerce Illustrations",
-    "summary": "Generates tailored visuals for product UX and interfaces. Streamlines design systems with AI. Enhances user-centric visual commerce.",
+    "id": "civitai_community_model_ecosystem",
+    "category": "META",
+    "headline": "Civitai Community Model Sharing Ecosystem Reaches Mainstream Adoption",
+    "summary": "Civitai's 4.8/5 rating (98 reviews) reflects adoption of decentralized AI model communities. This represents a philosophical shift toward artist agency and open-source creation—challenging the narrative of proprietary AI tools by enabling community-driven model development and knowledge sharing.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 86
+  },
+  {
+    "id": "skybox_ai_3d_environment_generation",
+    "category": "STR_ART",
+    "headline": "Skybox AI Extends Generative Art into 3D Environment Design",
+    "summary": "Skybox AI's 4.8 rating (156 reviews) indicates strong adoption for 3D scene generation from prompts. This expands generative art beyond 2D surfaces into immersive spatial design, with implications for game dev, VR/AR, and architectural visualization workflows.",
     "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
     "relevance": 79
+  },
+  {
+    "id": "face_to_3d_portrait_conversion",
+    "category": "STR_ART",
+    "headline": "Face-to-3D Conversion Bridges Photography and 3D Asset Creation",
+    "summary": "Face to 3D's conversion of portrait photos to usable 3D head models (GLB/OBJ/STL exports) represents a novel intersection of AI and spatial design. This tool democratizes 3D asset creation for character design, avatar generation, and digital human applications previously requiring specialized 3D expertise.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 77
+  },
+  {
+    "id": "colorart_ai_printable_content_generation",
+    "category": "STR_ART",
+    "headline": "ColorArt.AI Transforms Prompts into Print-Ready Coloring Pages",
+    "summary": "ColorArt.AI's detail-level controls and HD export for printable coloring content represents AI's expansion into niche creative formats. This demonstrates how generative tools can serve specific production needs—balancing automation with user control over output characteristics for specialized design applications.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 68
+  },
+  {
+    "id": "goenhance_video_upscaling_unification",
+    "category": "STR_ART",
+    "headline": "GoEnhance AI Consolidates Video Generation, Stylization, and Upscaling",
+    "summary": "GoEnhance's all-in-one platform (generation, stylization, enhancement, upscaling) represents a trend toward integrated creative suites. This consolidation reduces workflow friction by embedding post-production refinement within generative workflows—reshaping how creators think about initial output quality versus iterative enhancement.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 72
+  },
+  {
+    "id": "promptsref_style_reproduction_library",
+    "category": "CX_UX",
+    "headline": "PromptsRef Library Enables Consistent Brand Voice in AI Generation",
+    "summary": "PromptsRef's Midjourney-integrated prompt library and style categories (4.7/5, 78 reviews) address a critical UX challenge: reproducing consistent visual identity across multiple generations. This represents maturation of AI tools toward brand-aware production, where consistency and replicability become primary design concerns.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 80
+  },
+  {
+    "id": "lexica_prompt_discovery_interface",
+    "category": "CX_UX",
+    "headline": "Lexica.art Provides Search-Based Prompt Discovery for Generative Art",
+    "summary": "Lexica's 4.7/5 rating reflects growing demand for prompt discovery interfaces rather than prompt engineering. This UX evolution suggests a shift from deep technical prompt knowledge toward intuitive browsing and recombination—democratizing access to generative capabilities by lowering the barrier to effective tool use.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 73
+  },
+  {
+    "id": "ai_prompt_enhancement_semantic_understanding",
+    "category": "META",
+    "headline": "Automatic Prompt Enhancement Reframes AI-Human Semantic Negotiation",
+    "summary": "getimg.ai's automatic prompt enhancement—expanding user shorthand into detailed descriptions—represents a philosophical shift in AI-human collaboration. Rather than requiring users to master technical prompt syntax, AI mediates the translation between human intent and model instruction, suggesting more natural human-AI interaction patterns.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 84
   }
 ]
