@@ -621,9 +621,9 @@ function genReadme(p, cfg) {
   const voiceDesc = VOICE_MAP[cfg.voice] || "professional and clear";
   const freq = cfg.frequency || "Weekly";
 
-  // Random offset per user to spread server load (7:00–9:59 AM)
+  // Random offset per user to spread server load (9:00–10:59 AM)
   const rMin = Math.floor(Math.random() * 60);
-  const rHour = 7 + Math.floor(Math.random() * 3);
+  const rHour = 9 + Math.floor(Math.random() * 2);
   const timeStr = `${rHour}:${rMin.toString().padStart(2, "0")} AM`;
 
   // Frequency-specific cron expressions and descriptions
@@ -644,96 +644,128 @@ function genReadme(p, cfg) {
 
 ## Quick Start
 
-**Step 1 — Install:**
+**Step 1 — Open Terminal and navigate to Desktop:**
+\`\`\`bash
+cd ~/Desktop
 \`\`\`
+
+**Step 2 — Create virtual environment and install dependencies:**
+\`\`\`bash
+python3 -m venv .venv && source .venv/bin/activate
 pip install ${deps}
 \`\`\`
 
-**Step 2 — Configure:**
-Open \`main.py\` and ${selfHosted ? "fill in your API key and email credentials" : (cfg.email ? "verify your email address" : "add your email address")} in the
-CONFIGURATION section at the top.${!selfHosted && cfg.email ? " Your email is already pre-filled." : ""}
-
-**Step 3 — Run:**
-\`\`\`
-python main.py
+**Step 3 — Run the pipeline once:**
+\`\`\`bash
+python3 main.py
 \`\`\`
 
-This runs the pipeline once. To make it fully automatic, see **Scheduling** below.
+You will receive an email with your briefing within ~60 seconds.
+To make it fully automatic, see **Scheduling** below.
 
 ---
 
 ## What Happens When You Run It
 
-| Stage | What | Where |
-|-------|------|-------|
+| Stage | What | Where it runs |
+|-------|------|---------------|
 | 1. COLLECT | ${pr.stages[0]} | Your computer |
 | 2. ANALYZE | ${pr.stages[1]} | Your computer |
 | 3. GENERATE | ${pr.stages[2]} | ${selfHosted ? "Your LLM API" : "ShapeNeural relay"} |
 | 4. DISTRIBUTE | ${pr.stages[3]} | ${selfHosted ? "Your email provider" : "ShapeNeural relay"} |
 
-Your chosen cadence: **${freq}**
+Your configured cadence: **${freq}**
+
+${!selfHosted ? "No data is stored on our servers. The relay generates content and sends it — nothing is logged or retained beyond the request." : ""}
 
 ---
 
 ## Scheduling — Make It Fully Automatic
 
-AUTOFORGE handles content generation and delivery for you. But the recurring
-execution — actually running the script on a schedule — happens on your machine.
-This is by design: you stay in full control of when and how often it runs.
-
-Your configured frequency is **${freq}** (${sched.desc}).
+The script runs on your machine on a schedule you control. AUTOFORGE handles content and delivery — you control when it runs.
 
 ### Mac / Linux — Cron
 
-**Set up:**
+**One-command setup (copy and run):**
 \`\`\`bash
-# Open the cron editor
-crontab -e
-
-# Add this line (runs ${sched.desc}):
-${sched.cron}  cd /path/to/your/autoforge-folder && python main.py >> autoforge.log 2>&1
+(crontab -l 2>/dev/null; echo "${sched.cron}  cd ~/Desktop && ~/Desktop/.venv/bin/python main.py >> ~/Desktop/autoforge.log 2>&1") | crontab -
 \`\`\`
 
-Replace \`/path/to/your/autoforge-folder\` with the actual folder where main.py lives.
-The \`>> autoforge.log\` part saves output to a log file so you can check if it ran.
-
-**Verify it's set up:**
+**Verify it's active:**
 \`\`\`bash
 crontab -l
 \`\`\`
+You should see one line with \`main.py\` in it.
 
-**Remove it later:**
+**Check the log after first run:**
 \`\`\`bash
-# Open the editor and delete the AUTOFORGE line:
+cat ~/Desktop/autoforge.log
+\`\`\`
+
+**Remove the schedule:**
+\`\`\`bash
+# Open editor, find the AUTOFORGE line, delete it, save with :wq
 crontab -e
 
 # Or remove ALL cron jobs (careful — removes everything):
 crontab -r
 \`\`\`
 
+> **Important:** Your Mac must be awake and on at the scheduled time. If it's asleep, the job won't run.
+
+---
+
 ### Windows — Task Scheduler
 
 **Set up:**
-1. Press Win+R, type \`taskschd.msc\`, press Enter
+1. Press \`Win + R\`, type \`taskschd.msc\`, press Enter
 2. Click **Create Basic Task** in the right panel
 3. Name: \`AUTOFORGE\`, click Next
 4. Trigger: **${sched.winDesc}**, click Next
 5. Action: **Start a Program**
 6. Program: \`python\` (or full path like \`C:\\Python312\\python.exe\`)
 7. Arguments: \`main.py\`
-8. Start in: the folder where main.py lives (e.g. \`C:\\Users\\You\\autoforge\`)
+8. Start in: the folder where main.py lives (e.g. \`C:\\Users\\You\\Desktop\`)
 9. Click Finish
 
 **Verify:**
-Open Task Scheduler → Task Scheduler Library → find "AUTOFORGE" → check Status.
+Task Scheduler → Task Scheduler Library → find "AUTOFORGE" → check Status is "Ready".
 
-**Remove it later:**
-Open Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → **Delete**.
-Or just **Disable** it to pause without deleting.
+**Remove it:**
+Task Scheduler → Task Scheduler Library → right-click "AUTOFORGE" → **Delete**
+Or click **Disable** to pause without deleting.
 
 ---
 
-## ${selfHosted ? "Your Infrastructure" : "Switching to Self-Hosted (Optional)"}
+## Troubleshooting
+
+**No email arrived?**
+- Check your spam/junk folder
+- Make sure your email address is correct in \`main.py\` (look for \`USER_EMAIL\`)
+- Run \`python3 main.py\` again and watch the terminal output for errors
+
+**"No articles found" or all scores are \`[broad]\`?**
+- Your sources may be temporarily unavailable — try again in a few hours
+- The script still delivers content even with \`[broad]\` scores — it uses the most recent articles
+
+**"Relay delivery failed"?**
+- Check your internet connection
+- The ShapeNeural relay may be temporarily unavailable — the output is saved locally as \`output_YYYYMMDD_HHMMSS.md\`
+
+**Cron ran but no email?**
+\`\`\`bash
+cat ~/Desktop/autoforge.log
+\`\`\`
+Look for error messages at the bottom of the log.
+
+**Want to test without waiting for the schedule?**
+\`\`\`bash
+cd ~/Desktop && source .venv/bin/activate && python3 main.py
+\`\`\`
+
+---
+
+## Switching to Self-Hosted (Optional)
 
 ${selfHosted ? `You chose to run everything on your own infrastructure.
 
@@ -752,42 +784,56 @@ You need SMTP credentials from your email provider.
 
 Or use [Resend](https://resend.com) (free: 100 emails/day) — set \`EMAIL_MODE = "resend"\` in main.py.`
 
-: `Your script uses ShapeNeural's relay by default. No API keys needed.
+: `Your script uses ShapeNeural's relay by default — no API keys needed.
 
-To switch to your own infrastructure later, open main.py and change:
-- \`LLM_MODE\` from \`"relay"\` to \`"direct"\`, then add your \`LLM_API_KEY\`
-- \`EMAIL_MODE\` from \`"relay"\` to \`"smtp"\` or \`"resend"\`, then add credentials
+To run fully independently, open \`main.py\` and change:
+- \`LLM_MODE\` from \`"relay"\` to \`"direct"\` — add your \`LLM_API_KEY\`, \`LLM_BASE_URL\`, \`LLM_MODEL\`
+- \`EMAIL_MODE\` from \`"relay"\` to \`"smtp"\` or \`"resend"\` — add your credentials
 
-**No other code changes needed.** The script switches automatically.
+No other code changes needed. The script switches automatically.
 
 Recommended LLM: [MiniMax M2.5](https://www.minimax.io) (~$0.003/run)
 Recommended email: Gmail SMTP ([App Password](https://myaccount.google.com/apppasswords)) or [Resend](https://resend.com)`}
 
 ---
 
-## Customization
-
-Your signal character: **${cfg.voice || "Sharp & Direct"}**
-"${voiceDesc}"
-
-To change the voice, edit the \`VOICE\` variable at the top of main.py.
-The prompt templates are in the STAGE 3: GENERATE section.
-
----
-
 ## Uninstall
 
 To completely remove AUTOFORGE:
-1. Remove the scheduled task (see Scheduling section above)
-2. Delete the folder containing main.py
-3. Optionally: \`pip uninstall ${deps.split(" ").join(" ")}\` to remove dependencies
+1. Remove the scheduled task (see Scheduling above)
+2. Delete \`main.py\`, \`README.md\`, and \`autoforge.log\` from your Desktop
+3. Delete the virtual environment: \`rm -rf ~/Desktop/.venv\`
+4. Optionally remove dependencies: \`pip uninstall ${deps}\`
 
-That's it. No background processes, no services, no accounts to close.
+No background processes, no services, no accounts to close. Clean removal in under a minute.
 
 ---
 
-Built with AUTOFORGE by ShapeNeural Labs
+## Privacy & Data
+
+- **What runs on your machine:** article fetching, keyword scoring
+- **What goes to ShapeNeural's relay:** your prompt (industry, focus, voice settings) and email address for delivery
+- **What we do NOT store:** your email address, your prompt, the generated content — nothing is logged or retained after delivery
+- **Your sources:** RSS feeds are fetched directly from their publishers — ShapeNeural never sees the raw feed content
+
+---
+
+## Legal
+
+This software is provided as-is for personal and professional use.
+ShapeNeural Labs makes no guarantees about the accuracy, completeness, or fitness of AI-generated content for any particular purpose.
+Content generated by this pipeline is based on publicly available RSS feeds and AI language models — always verify before publishing.
+You are responsible for how you use the generated content.
+
+---
+
+## Contact & Support
+
+Questions, issues, or feedback:
+**signal@shapeneural.com**
+
 [shapeneural.com](https://shapeneural.com) — designed intelligence
+Built with AUTOFORGE by ShapeNeural Labs
 `;
 }
 
@@ -1140,9 +1186,9 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
   const selfHosted = config.delivery === "self";
   const deps = preset === "radar" ? "requests feedparser" : preset === "recycler" ? "requests beautifulsoup4" : "requests";
 
-  // Random offset per user to spread server load (7:00–9:59 AM)
+  // Random offset per user to spread server load (9:00–10:59 AM)
   const rMin = Math.floor(Math.random() * 60);
-  const rHour = 7 + Math.floor(Math.random() * 3);
+  const rHour = 9 + Math.floor(Math.random() * 2);
   const timeStr = `${rHour}:${rMin.toString().padStart(2, "0")} AM`;
 
   const cronMap = {
@@ -1586,6 +1632,9 @@ function ActivationFlow({ files, config, preset, onDownload, onReset }) {
             <span style={{ color: C.green }}>▸</span> Results delivered straight to your inbox
             <br/>
             <span style={{ color: C.green }}>▸</span> No cloud fees, no subscriptions — it's yours
+          </div>
+          <div style={{ fontFamily: mono, fontSize: 12, color: C.cyan, marginTop: 12, padding: "8px 12px", border: `1px solid ${C.cyan}44`, borderRadius: 4 }}>
+            ⚠ Your computer must be <span style={{ color: C.white }}>on and awake</span> at the scheduled time. If it's asleep, the script won't run.
           </div>
         </div>
 

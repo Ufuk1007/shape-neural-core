@@ -245,19 +245,21 @@ Any OpenAI-compatible API works. Just change `LLM_BASE_URL` and `LLM_MODEL`.
 
 The script runs once when executed. To make it fully automatic, set up a recurring schedule on your machine.
 
+> **Important:** Your computer must be **on and awake** at the scheduled time. If it's asleep or off, the script won't run. Schedule it for a time when your machine is typically in use — the wizard defaults to between 9:00–10:59 AM for this reason.
+
 ### Mac / Linux — Cron
 
 **Set up (one-liner):**
 ```bash
-# Weekly (Monday 8 AM) — adjust the path
-(crontab -l 2>/dev/null; echo "0 8 * * 1 cd ~/Desktop/autoforge && .venv/bin/python main.py >> autoforge.log 2>&1") | crontab -
+# Weekly (Monday 9 AM) — adjust the path
+(crontab -l 2>/dev/null; echo "0 9 * * 1 cd ~/Desktop/autoforge && .venv/bin/python main.py >> autoforge.log 2>&1") | crontab -
 ```
 
 **Common schedules:**
 ```
-0 8 * * *    # Daily at 8:00 AM
-0 8 * * 1    # Weekly, Monday at 8:00 AM
-0 8 1 * *    # Monthly, 1st day at 8:00 AM
+0 9 * * *    # Daily at 9:00 AM
+0 9 * * 1    # Weekly, Monday at 9:00 AM
+0 9 1 * *    # Monthly, 1st day at 9:00 AM
 ```
 
 **Verify:**
