@@ -3,7 +3,7 @@
     "id": "getimg_ai_multi_model_workspace",
     "category": "STR_ART",
     "headline": "getimg.ai: Multi-Model AI Art Workspace",
-    "summary": "getimg.ai integrates FLUX.2, GPT Image 1.5, Nano Banana 2, Seedream 5.0 Lite, and Qwen Image for diverse art styles in one platform. Auto Mode selects optimal models, Elements ensure style consistency, and built-in editing streamlines iterative design. Revolutionizes generative workflows for concept art and illustrations.",
+    "summary": "getimg.ai integrates FLUX.2, GPT Image 1.5, Nano Banana 2, Seedream 5.0 Lite, and Qwen Image for diverse art styles in one platform. Auto Mode selects optimal models, Elements ensure style consistency for storyboards and characters. Revolutionizes iterative design workflows for concept artists.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 95
   },
@@ -11,128 +11,128 @@
     "id": "getimg_ai_elements_reuse",
     "category": "STR_ART",
     "headline": "Elements: Reusable AI Art Building Blocks",
-    "summary": "Save and reuse characters, styles, objects, palettes across generations for consistent storyboards and series. Enables rapid prototyping while maintaining artistic coherence. Transforms AI from one-off generator to scalable design system.",
+    "summary": "Save characters, styles, objects, palettes as Elements for consistent generations across projects. Enables seamless character sheets, themed series without rework. Transforms AI from one-off generator to scalable design system.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 92
   },
   {
-    "id": "leonardo_real_time_canvas",
+    "id": "getimg_ai_auto_prompt_enhancement",
     "category": "STR_ART",
-    "headline": "Leonardo AI: Real-Time Sketch-to-Art Canvas",
-    "summary": "Sketch directly on canvas as AI generates detailed artwork in real-time, blending human input with machine refinement. Offers granular control via model presets and reference images. Bridges traditional drawing with generative AI for intuitive creation.",
+    "headline": "Auto Prompt Enhancement for Richer AI Art",
+    "summary": "Expands simple ideas into detailed prompts automatically, bridging creativity gap for artists. Combined with built-in editing like 2x upscaling and background replacement. Accelerates from sketch to polished concept art.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 90
   },
   {
-    "id": "firefly_design_workflow_integration",
+    "id": "leonardo_ai_canvas_editor",
     "category": "STR_ART",
-    "headline": "Adobe Firefly: Generative Fill for Design",
-    "summary": "Text-to-image, generative fill, expand, and style references integrate seamlessly into Photoshop workflows. Perfect for branding and marketing assets requiring AI-enhanced compositions. Democratizes advanced editing for professional designers.",
+    "headline": "Leonardo AI Canvas: Real-Time Sketch-to-Art",
+    "summary": "Canvas Editor enables inpainting and real-time generation from user sketches for precise character/environment refinement. Ideal for game devs maintaining artistic control. Pushes AI toward collaborative drawing partner.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 88
   },
   {
-    "id": "canva_magic_media",
-    "category": "CX_UX",
-    "headline": "Canva Magic Media: AI in Design Templates",
-    "summary": "Generates images directly in projects via Magic Media and Dream Lab, optimized for social/presentation graphics. Template-driven approach accelerates UX for non-artists creating polished assets. Redefines accessible design systems with embedded AI.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 85
-  },
-  {
-    "id": "rendair_rapid_visualization",
+    "id": "rendair_ai_3d_materials",
     "category": "STR_ART",
-    "headline": "Rendair AI: Sketch-to-Photoreal in 1 Hour",
-    "summary": "Rapid rendering loop: blockout in SketchUp, AI-enhanced lighting/materials, client-feedback inpainting. Creativity Slider balances fidelity vs innovation in architectural viz. Compresses days of rendering into workflow minutes.",
+    "headline": "Rendair AI: PBR Materials from Photos",
+    "summary": "Generates photorealistic PBR materials instantly from reference images for 3D artists. Streamlines texturing workflows in game/film pipelines. Bridges 2D photography to production-ready 3D assets.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
     "relevance": 94
   },
   {
-    "id": "luma_genie_text_to_3d",
+    "id": "rendair_ai_sketch_rendering",
     "category": "STR_ART",
-    "headline": "Luma AI Genie: Text-to-3D Meshes",
-    "summary": "Generates 3D models from text prompts plus NeRF capture from smartphone video for realistic assets. Handles complex lighting/reflections traditional methods miss. Enables immersive environment design from conceptual text.",
-    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
-    "relevance": 93
-  },
-  {
-    "id": "2d_to_3d_asset_gen",
-    "category": "STR_ART",
-    "headline": "AI 2D Sketch to Textured 3D Models",
-    "summary": "Upload sketch/photo → auto UV unwrapping → poly-controlled 3D ready for engines. Accelerates game prop population and scene building. Shifts artists from modeling drudgery to creative direction.",
-    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
-    "relevance": 91
-  },
-  {
-    "id": "rendair_video_from_renders",
-    "category": "STR_ART",
-    "headline": "Static Renders to Cinematic AI Videos",
-    "summary": "Transforms 3D renders into camera-flythrough videos automatically. Enhances client presentations with motion without manual animation. Unlocks dynamic storytelling from static design outputs.",
+    "headline": "AI Rapid Rendering for 3D Client Presos",
+    "summary": "Transforms sketches to rendered presentations instantly, accelerating client feedback loops. Tiered subscriptions suit studio scale. Redefines 3D visualization speed without sacrificing quality.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
     "relevance": 89
   },
   {
-    "id": "midjourney_cinematic_ai",
+    "id": "deep_dream_surreal_networks",
     "category": "STR_ART",
-    "headline": "Midjourney: Cinematic AI Visuals 2026",
-    "summary": "Delivers stunning artistic outputs with unique styles, high-res, strong creative control via parameters. Powers film concept art and mood boards. Evolves AI as cinematic storytelling partner.",
-    "url": "https://scribehow.com/viewer/9_Best_Generative_AI_Tools_for_Creative_Work_Update_march_2026__iSuq6D-STOeaxvunehlDTg",
+    "headline": "Deep Dream Generator: Psychedelic AI Textures",
+    "summary": "Creates surreal visuals via deep neural transformations for experimental digital exhibitions. Perfect for music covers and conceptual art. Revives Google's original dream research for contemporary abstraction.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
+    "relevance": 85
+  },
+  {
+    "id": "peter_bittner_art_ai_call",
+    "category": "STR_ART",
+    "headline": "March 2026: Artists Mastering AI Workflows",
+    "summary": "Peter Bittner reveals how artists streamline production with targeted AI tools. Community call shares practical techniques beyond generation. Empowers traditional creators to hybridize workflows strategically.",
+    "url": "https://www.youtube.com/watch?v=E13RgOfMzl4",
     "relevance": 87
   },
   {
-    "id": "leonardo_custom_models",
+    "id": "runwayml_multimodal_video",
     "category": "STR_ART",
-    "headline": "Leonardo AI: Train Custom Game Assets",
-    "summary": "Custom AI models for game assets with fast rendering and advanced control. Tailors generation to specific art directions. Enables studio-scale asset pipelines for indie creators.",
-    "url": "https://scribehow.com/viewer/9_Best_Generative_AI_Tools_for_Creative_Work_Update_march_2026__iSuq6D-STOeaxvunehlDTg",
-    "relevance": 86
+    "headline": "RunwayML: 15+ Models for Text-to-Video Art",
+    "summary": "Access Google VEO 3, Kling AI, Sora for character-consistent video art with AI Audio Sync. Prompt enhancer ensures narrative coherence. Merges visual art with cinematic motion design.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
+    "relevance": 93
   },
   {
-    "id": "peter_bittner_ai_art_talk",
+    "id": "midjourney_vary_region_edits",
     "category": "STR_ART",
-    "headline": "Art & AI: Streamline Workload Strategies",
-    "summary": "Peter Bittner shares technologist perspective on AI tools enhancing artist productivity. March 2026 community call focuses practical integration. Bridges tech implementation with creative practice.",
-    "url": "https://www.youtube.com/watch?v=E13RgOfMzl4",
-    "relevance": 82
+    "headline": "Midjourney Editor: Targeted AI Image Refinement",
+    "summary": "Pan, Zoom, Remix, Vary Region enable surgical edits on generated art. Web interface boosts professional iteration. Evolves Discord bot into full creative studio.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 86
   },
   {
     "id": "nano_banana_google_ai_art",
     "category": "STR_ART",
     "headline": "Nano Banana: Google-Optimized AI Images",
-    "summary": "Tailored for Google ecosystem, excels in prompt adherence for integrated workflows. Simplifies AI art within productivity suites. Expands accessible generation to enterprise users.",
+    "summary": "Tailored for Google ecosystem users, excels in prompt adherence for integrated design flows. Pairs with productivity suites for seamless art production. Democratizes high-fidelity generation.",
     "url": "https://zapier.com/blog/best-ai-image-generator/",
     "relevance": 84
   },
   {
-    "id": "reve_prompt_adherence",
+    "id": "reve_prompt_adherence_ai",
     "category": "STR_ART",
     "headline": "Reve AI: Perfect Prompt-to-Image Fidelity",
-    "summary": "Superior prompt adherence ensures precise translation of creative intent. Ideal for designers needing exact visual matches. Elevates reliability in professional AI art pipelines.",
+    "summary": "Superior adherence transforms precise instructions into exact visuals. Critical for UX prototyping and brand asset creation. Sets new benchmark for reliable generative control.",
     "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 83
+    "relevance": 91
   },
   {
-    "id": "ltx_studio_filmmaker_tools",
-    "category": "STR_ART",
-    "headline": "LTX Studio: AI for Filmmakers/Designers",
-    "summary": "Professional image generators optimized for marketing, design, film pre-viz. Combines generation with storyboarding capabilities. Structures AI as production pipeline component.",
-    "url": "https://ltx.studio/blog/best-ai-image-generator",
-    "relevance": 81
+    "id": " DallE3_workflow_integration",
+    "category": "CX_UX",
+    "headline": "DALL·E 3: Seamless CMS Image Automation",
+    "summary": "Integrates with WordPress, Mailchimp for auto-publishing AI visuals in UX flows. Precise prompt handling accelerates landing page iteration. Blurs line between ideation and deployment.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
+    "relevance": 82
   },
   {
-    "id": "synthesia_ai_avatars",
-    "category": "SONIC",
-    "headline": "Synthesia: AI Video Avatars with Voice",
-    "summary": "Text-to-video avatars in multiple languages sync visuals with AI-generated speech. Revolutionizes accessible multimedia presentation design. Merges sonic synthesis with visual UX.",
-    "url": "https://scribehow.com/viewer/9_Best_Generative_AI_Tools_for_Creative_Work_Update_march_2026__iSuq6D-STOeaxvunehlDTg",
+    "id": "canva_ai_template_acceleration",
+    "category": "CX_UX",
+    "headline": "Canva AI: Instant Design Asset Templates",
+    "summary": "Combines generation with layout tools for rapid UX mockups and marketing assets. Beginner-friendly path to professional outputs. Optimizes non-designer contribution to design systems.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 80
   },
   {
-    "id": "playground_free_ai_art",
+    "id": "getimg_ai_team_collaboration",
     "category": "CX_UX",
-    "headline": "Playground AI: Free Beginner Image Gen",
-    "summary": "Simple interface, free credits lower barrier for UX prototyping and ideation. Fast results enable rapid concept testing. Democratizes AI experimentation in design sprints.",
-    "url": "https://scribehow.com/viewer/9_Best_Generative_AI_Tools_for_Creative_Work_Update_march_2026__iSuq6D-STOeaxvunehlDTg",
-    "relevance": 78
+    "headline": "AI Art Teams: Shared Visual Workspaces",
+    "summary": "Folders, galleries, team access enable collaborative refinement of AI assets. Perfect for distributed UX/UI design reviews. Fosters collective intelligence in visual ideation.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 83
+  },
+  {
+    "id": "3d_ai_asset_generation",
+    "category": "STR_ART",
+    "headline": "2D-to-3D AI Mesh Conversion Tools",
+    "summary": "Transforms concept sketches into production 3D models via credit-based systems. Accelerates prototyping for XR/AR experiences. Compresses weeks of modeling into minutes.",
+    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "relevance": 90
+  },
+  {
+    "id": "nerf_ai_environment_capture",
+    "category": "STR_ART",
+    "headline": "NeRF AI: Video-to-3D Environment Gen",
+    "summary": "Reality capture creates immersive assets from footage/text prompts. Freemium model suits experimental spatial design. Pioneers AI-native worldbuilding techniques.",
+    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "relevance": 88
   }
 ]
