@@ -212,14 +212,6 @@ const Index = () => {
                 <span>AI_ORACLE (Beta)</span>
               </button>
 
-              {/* PARTNERSCHAFT */}
-              <Link
-                to="/alliance"
-                className="group flex items-center gap-3 border-2 border-[#0f0] px-6 py-3 hover:bg-[#0f0] hover:text-black transition-colors min-w-[180px] font-bold tracking-wider"
-              >
-                <Handshake className="w-5 h-5" />
-                <span>PARTNERSCHAFT</span>
-              </Link>
             </div>
           </div>
         </div>

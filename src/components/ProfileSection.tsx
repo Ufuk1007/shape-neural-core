@@ -220,6 +220,15 @@ const ProfileSection = () => {
             <span className="text-gray-600">]</span>
           </a>
           <Link
+            to="/alliance"
+            className="group flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm"
+          >
+            <span className="text-[#0f0] opacity-60">[</span>
+            <span className="tracking-[0.15em]">ALLIANCE</span>
+            <Handshake size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+            <span className="text-[#0f0] opacity-60">]</span>
+          </Link>
+          <Link
             to="/legal"
             className="group flex items-center gap-2 text-gray-500 hover:text-[#ff0055] transition-colors duration-300 text-sm"
           >
