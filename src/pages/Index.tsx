@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
+import { Grid3x3, Zap, MessageSquare, Terminal, Handshake } from "lucide-react";
+import { Link } from "react-router-dom";
 import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
