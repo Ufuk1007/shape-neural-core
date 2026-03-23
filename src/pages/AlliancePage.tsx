@@ -480,10 +480,7 @@ export default function AlliancePage() {
                 VP Customer Experience bei einer Tier-1-Bank in Frankfurt.
                 Nebenbei: ShapeNeural — ein persönliches Lab, das seit 2024
                 KI-Systeme baut. Der Hintergrund: drei Jahrzehnte an der
-                Schnittstelle von Design, Strategie und Technologie. Angefangen
-                auf der Straße, mit Spraydosen und Buchstaben. Heute mit
-                Prompts und neuronalen Netzen.
-              </p>
+                Schnittstelle von Design, Strategie und Technologie.
               <p
                 style={{
                   fontSize: "1rem",
