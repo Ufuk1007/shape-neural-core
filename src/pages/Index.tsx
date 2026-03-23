@@ -72,13 +72,11 @@ const Index = () => {
         {/* Top-right Alliance link */}
         <Link
           to="/alliance"
-          className="absolute top-8 right-6 md:right-12 lg:right-20 z-30 flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm"
+          className="absolute top-8 right-6 md:right-12 lg:right-20 z-30 flex items-center gap-2 text-[#0f0] hover:text-[#ff0055] transition-colors duration-300 text-sm group"
           style={{ fontFamily: "'Courier New', monospace" }}
         >
-          <span className="text-[#0f0] opacity-60">[</span>
-          <span className="tracking-[0.15em]">ALLIANCE</span>
-          <Handshake size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-          <span className="text-[#0f0] opacity-60">]</span>
+          <Handshake size={14} className="transition-colors duration-300" />
+          <span className="tracking-[0.15em] font-bold">ALLIANCE</span>
         </Link>
         {/* 1. SCANLINE OVERLAY (Direct Port from User Code) */}
         <div
