@@ -528,6 +528,74 @@ export default function AlliancePage() {
         </Reveal>
       </Wrap>
 
+      {/* ═══════ PORTFOLIO TEASER ═══════ */}
+      <Wrap bg={T.bg1}>
+        <Reveal>
+          <div
+            style={{
+              textAlign: "center",
+              padding: "2rem 0",
+            }}
+          >
+            <Label>PORTFOLIO_</Label>
+            <h2
+              style={{
+                fontFamily: T.mono,
+                fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                color: T.dark,
+                marginBottom: "1rem",
+              }}
+            >
+              Was bisher entstanden ist.
+            </h2>
+            <p
+              style={{
+                fontSize: "1rem",
+                color: T.muted,
+                lineHeight: 1.8,
+                maxWidth: "32rem",
+                margin: "0 auto 2.5rem",
+              }}
+            >
+              Projekte an der Schnittstelle von KI, Design und Strategie —
+              von autonomen Content-Pipelines bis zu emotionaler Sensorik
+              im Browser. Alles gebaut, nicht nur gedacht.
+            </p>
+            <a
+              href="https://shapeneural.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-block",
+                fontFamily: T.mono,
+                fontSize: "0.82rem",
+                fontWeight: 700,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                textDecoration: "none",
+                color: "#fff",
+                background: T.dark,
+                padding: "0.9rem 2.2rem",
+                transition: "all 0.3s ease",
+                borderBottom: `3px solid ${T.green}`,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = T.green;
+                e.currentTarget.style.color = T.dark;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = T.dark;
+                e.currentTarget.style.color = "#fff";
+              }}
+            >
+              Portfolio ansehen →
+            </a>
+          </div>
+        </Reveal>
+      </Wrap>
+
       {/* ═══════ SCHREIBEN ═══════ */}
       <Wrap bg={T.bg1} id="kontakt">
         <Label>SCHREIBEN_</Label>
