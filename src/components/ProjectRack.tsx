@@ -364,23 +364,46 @@ const ProjectRack = () => {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-3 mt-4">
-                          {project.url && (
-                            <motion.a
-                              href={project.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex-1 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider"
-                              style={{
-                                backgroundColor: "#ff0055",
-                                color: "#fff",
-                                border: "2px solid #ff0055",
-                              }}
-                              whileHover={{ backgroundColor: "#ff3377", borderColor: "#ff3377" }}
-                              whileTap={{ scale: 0.98 }}
-                            >
-                              <span>{">"} VISIT_PROJECT</span>
-                              <ExternalLink size={16} />
-                            </motion.a>
+                        {project.url && (
+                            project.url.startsWith("/") ? (
+                              <Link
+                                to={project.url}
+                                className="flex-1 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider transition-colors"
+                                style={{
+                                  backgroundColor: "#ff0055",
+                                  color: "#fff",
+                                  border: "2px solid #ff0055",
+                                }}
+                                onMouseEnter={(e) => {
+                                  e.currentTarget.style.backgroundColor = "#ff3377";
+                                  e.currentTarget.style.borderColor = "#ff3377";
+                                }}
+                                onMouseLeave={(e) => {
+                                  e.currentTarget.style.backgroundColor = "#ff0055";
+                                  e.currentTarget.style.borderColor = "#ff0055";
+                                }}
+                              >
+                                <span>{">"} VISIT_PROJECT</span>
+                                <ArrowRight size={16} />
+                              </Link>
+                            ) : (
+                              <motion.a
+                                href={project.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1 py-4 px-6 flex items-center justify-center gap-3 font-bold tracking-wider"
+                                style={{
+                                  backgroundColor: "#ff0055",
+                                  color: "#fff",
+                                  border: "2px solid #ff0055",
+                                }}
+                                whileHover={{ backgroundColor: "#ff3377", borderColor: "#ff3377" }}
+                                whileTap={{ scale: 0.98 }}
+                              >
+                                <span>{">"} VISIT_PROJECT</span>
+                                <ExternalLink size={16} />
+                              </motion.a>
+                            )
                           )}
                           <Link
                             to={`/project/${project.slug}`}

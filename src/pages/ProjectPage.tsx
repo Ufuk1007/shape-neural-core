@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useParams, useLocation, Navigate } from "react-router-dom";
+import { useParams, useLocation, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import SubpageShell from "@/components/SubpageShell";
 import InsightCard from "@/components/InsightCard";
@@ -135,15 +135,25 @@ const ProjectPage = () => {
 
           {/* External link */}
           {project.url && (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-3 text-xs tracking-[0.3em] font-bold hover:opacity-80 transition-opacity"
-              style={{ backgroundColor: "#ff0055", color: "#fff", border: "2px solid #ff0055" }}
-            >
-              {">"} VISIT_PROJECT
-            </a>
+            project.url.startsWith("/") ? (
+              <Link
+                to={project.url}
+                className="inline-block mt-6 px-6 py-3 text-xs tracking-[0.3em] font-bold hover:opacity-80 transition-opacity"
+                style={{ backgroundColor: "#ff0055", color: "#fff", border: "2px solid #ff0055" }}
+              >
+                {">"} VISIT_PROJECT
+              </Link>
+            ) : (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-6 px-6 py-3 text-xs tracking-[0.3em] font-bold hover:opacity-80 transition-opacity"
+                style={{ backgroundColor: "#ff0055", color: "#fff", border: "2px solid #ff0055" }}
+              >
+                {">"} VISIT_PROJECT
+              </a>
+            )
           )}
         </div>
 
