@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, ReactNode, FormEvent } from "react";
+import BindruneLogo from "@/components/BindruneLogo";
 
 const T = {
   green: "#00944a",
