@@ -9,6 +9,7 @@ import ProjectPage from "./pages/ProjectPage";
 import InsightPage from "./pages/InsightPage";
 import LegalPage from "./pages/LegalPage";
 import ForgePage from "./pages/ForgePage";
+import AlliancePage from "./pages/AlliancePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
