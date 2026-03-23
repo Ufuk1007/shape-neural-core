@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Grid3x3, Zap, MessageSquare, Terminal } from "lucide-react";
+import { Grid3x3, Zap, MessageSquare, Terminal, Handshake } from "lucide-react";
 import { Link } from "react-router-dom";
 import NeuralCloud from "@/components/NeuralCloud";
 import ProjectRack from "@/components/ProjectRack";
@@ -69,6 +69,17 @@ const Index = () => {
           color: "#0f0",
         }}
       >
+        {/* Top-right Alliance link */}
+        <Link
+          to="/alliance"
+          className="absolute top-8 right-6 md:right-12 lg:right-20 z-30 flex items-center gap-2 text-gray-500 hover:text-[#0f0] transition-colors duration-300 text-sm"
+          style={{ fontFamily: "'Courier New', monospace" }}
+        >
+          <span className="text-[#0f0] opacity-60">[</span>
+          <span className="tracking-[0.15em]">ALLIANCE</span>
+          <Handshake size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+          <span className="text-[#0f0] opacity-60">]</span>
+        </Link>
         {/* 1. SCANLINE OVERLAY (Direct Port from User Code) */}
         <div
           style={{
