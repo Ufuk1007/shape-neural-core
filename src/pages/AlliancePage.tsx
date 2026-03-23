@@ -481,6 +481,7 @@ export default function AlliancePage() {
                 Nebenbei: ShapeNeural — ein persönliches Lab, das seit 2024
                 KI-Systeme baut. Der Hintergrund: drei Jahrzehnte an der
                 Schnittstelle von Design, Strategie und Technologie.
+              </p>
               <p
                 style={{
                   fontSize: "1rem",
