@@ -93,71 +93,6 @@ function Wrap({
   );
 }
 
-function CountUp({ target, suffix = "" }: { target: number; suffix?: string }) {
-  const [count, setCount] = useState(0);
-  const [ref, vis] = useReveal();
-  useEffect(() => {
-    if (!vis) return;
-    let start = 0;
-    const step = Math.max(1, Math.floor(target / 40));
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) { setCount(target); clearInterval(timer); }
-      else setCount(start);
-    }, 30);
-    return () => clearInterval(timer);
-  }, [vis, target]);
-  return <span ref={ref}>{count}{suffix}</span>;
-}
-
-function PortfolioCounterTeaser() {
-  const stats = [
-    { value: 7, suffix: "", label: "PROJEKTE" },
-    { value: 1600, suffix: "+", label: "ZEILEN CODE" },
-    { value: 6, suffix: "", label: "KI-MODELLE" },
-    { value: 0, suffix: "", label: "MANUELLE SCHRITTE", display: "0" },
-  ];
-  return (
-    <section style={{ background: T.dark, padding: "6rem 1.5rem", position: "relative" }}>
-      <div style={{
-        position: "absolute", inset: 0, opacity: 0.04,
-        backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-        backgroundSize: "80px 80px", pointerEvents: "none",
-      }} />
-      <div style={{ maxWidth: "56rem", margin: "0 auto", position: "relative" }}>
-        <p style={{ fontFamily: T.mono, fontSize: "0.66rem", color: "#555", letterSpacing: "0.2em", marginBottom: "1.5rem" }}>VARIANTE 2 — ZAHLEN-TEASER</p>
-        <Reveal>
-          <p style={{ fontFamily: T.mono, fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.3em", textTransform: "uppercase", color: T.green, marginBottom: "2rem", textAlign: "center" }}>PORTFOLIO_</p>
-        </Reveal>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "1.5rem", textAlign: "center", marginBottom: "3rem" }}>
-          {stats.map((s, i) => (
-            <Reveal key={s.label} delay={i * 0.1}>
-              <div>
-                <p style={{ fontFamily: T.mono, fontSize: "clamp(2rem, 4vw, 3.2rem)", fontWeight: 700, color: T.green, lineHeight: 1 }}>
-                  {s.display !== undefined ? s.display : <CountUp target={s.value} suffix={s.suffix} />}
-                </p>
-                <p style={{ fontFamily: T.mono, fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", color: "#666", marginTop: "0.8rem" }}>{s.label}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-        <Reveal delay={0.5}>
-          <div style={{ textAlign: "center" }}>
-            <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer"
-              style={{
-                fontFamily: T.mono, fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase",
-                textDecoration: "none", color: T.dark, background: T.green, padding: "0.9rem 2.2rem",
-                display: "inline-block", transition: "background 0.25s",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#00b35a"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = T.green; }}
-            >Portfolio ansehen →</a>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
 
 export default function AlliancePage() {
   const [formState, setFormState] = useState<"idle" | "sending" | "sent">("idle");
@@ -598,10 +533,9 @@ export default function AlliancePage() {
         </Reveal>
       </Wrap>
 
-      {/* ═══════ VARIANTE 1 — Projekt-Showcase mit Thumbnails ═══════ */}
+      {/* ═══════ PORTFOLIO ═══════ */}
       <section style={{ background: T.bg1, padding: "6rem 1.5rem" }}>
         <div style={{ maxWidth: "56rem", margin: "0 auto" }}>
-          <p style={{ fontFamily: T.mono, fontSize: "0.66rem", color: T.light, letterSpacing: "0.2em", marginBottom: "1.5rem" }}>VARIANTE 1 — PROJEKT-SHOWCASE</p>
           <Label>PORTFOLIO_</Label>
           <Reveal>
             <h2 style={{ fontFamily: T.mono, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", fontWeight: 700, lineHeight: 1.2, color: T.dark, marginBottom: "1rem" }}>
@@ -611,7 +545,7 @@ export default function AlliancePage() {
               Projekte an der Schnittstelle von KI, Design und Strategie — jedes davon live, jedes davon funktioniert.
             </p>
           </Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.2rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.2rem" }}>
             {[
               { img: sapientBlockImg, name: "SAPIENTBLOCK", desc: "KI-gestützte Blockchain-Analyse", tag: "LIVE" },
               { img: melodeyeImg, name: "MELODEYE", desc: "Emotionserkennung → Musik", tag: "BETA" },
@@ -649,93 +583,29 @@ export default function AlliancePage() {
           </div>
           <Reveal delay={0.4}>
             <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
-              <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer"
-                style={{ fontFamily: T.mono, fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none", color: T.green, borderBottom: `2px solid ${T.green}`, paddingBottom: "0.3rem", transition: "color 0.25s" }}
-              >Alle Projekte ansehen →</a>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ═══════ VARIANTE 2 — Kinetischer Zahlen-Teaser ═══════ */}
-      <PortfolioCounterTeaser />
-
-      {/* ═══════ VARIANTE 3 — Full-Width Visual Statement ═══════ */}
-      <section style={{ background: T.dark, padding: "6rem 1.5rem", position: "relative", overflow: "hidden" }}>
-        <div style={{
-          position: "absolute", inset: 0, opacity: 0.03,
-          backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)",
-          backgroundSize: "32px 32px", pointerEvents: "none",
-        }} />
-        <div style={{ maxWidth: "56rem", margin: "0 auto", position: "relative" }}>
-          <p style={{ fontFamily: T.mono, fontSize: "0.66rem", color: "#555", letterSpacing: "0.2em", marginBottom: "1.5rem" }}>VARIANTE 3 — VISUAL STATEMENT</p>
-          <Reveal>
-            <p style={{ fontFamily: T.mono, fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.3em", textTransform: "uppercase", color: T.green, marginBottom: "2rem" }}>PORTFOLIO_</p>
-            <h2 style={{
-              fontFamily: T.mono, fontSize: "clamp(2rem, 5vw, 3.8rem)", fontWeight: 700, lineHeight: 1.1, color: "#fff", marginBottom: "1.5rem",
-            }}>
-              <span>Systeme, die </span>
-              <span style={{
-                background: `linear-gradient(90deg, ${T.green}, #00cc66)`,
-                WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}>funktionieren</span>.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <p style={{ fontFamily: T.sans, fontSize: "1.15rem", color: "#888", lineHeight: 1.8, maxWidth: "36rem", marginBottom: "3rem" }}>
-              7 Projekte. Jedes davon löst ein echtes Problem — mit KI, die nicht nur beeindruckt, sondern liefert.
-            </p>
-          </Reveal>
-          <Reveal delay={0.3}>
-            <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer"
-              style={{
-                display: "inline-flex", alignItems: "center", gap: "0.8rem",
-                fontFamily: T.mono, fontSize: "0.88rem", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase",
-                textDecoration: "none", color: "#fff", padding: "1rem 2.5rem",
-                border: `2px solid ${T.green}`,
-                transition: "all 0.3s ease",
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = T.green; e.currentTarget.style.color = T.dark; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#fff"; }}
-            >
-              Portfolio ansehen
-              <span style={{ fontSize: "1.2rem", transition: "transform 0.3s" }}>→</span>
-            </a>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ═══════ VARIANTE 4 — Terminal-Style Teaser ═══════ */}
-      <section style={{ background: T.bg2, padding: "6rem 1.5rem" }}>
-        <div style={{ maxWidth: "56rem", margin: "0 auto" }}>
-          <p style={{ fontFamily: T.mono, fontSize: "0.66rem", color: T.light, letterSpacing: "0.2em", marginBottom: "1.5rem" }}>VARIANTE 4 — TERMINAL</p>
-          <Reveal>
-            <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "block" }}>
-              <div
+              <a
+                href="https://shapeneural.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={(e) => { e.currentTarget.style.background = "#00b35a"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = T.green; }}
                 style={{
-                  background: "#0a0a0a", padding: "2.5rem", border: `1px solid #222`,
-                  fontFamily: T.mono, position: "relative", overflow: "hidden",
-                  transition: "border-color 0.3s",
+                  display: "inline-block",
+                  fontFamily: T.mono,
+                  fontSize: "0.82rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  textDecoration: "none",
+                  color: T.dark,
+                  background: T.green,
+                  padding: "0.9rem 2.2rem",
+                  transition: "background 0.25s",
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor = T.green; }}
-                onMouseLeave={(e) => { e.currentTarget.style.borderColor = "#222"; }}
               >
-                <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1.5rem" }}>
-                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#ff5f56" }} />
-                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#ffbd2e" }} />
-                  <span style={{ width: 10, height: 10, borderRadius: "50%", background: "#27c93f" }} />
-                </div>
-                <div style={{ fontSize: "0.85rem", lineHeight: 2.2 }}>
-                  <p style={{ color: "#555" }}>shapeneural@lab:~$ <span style={{ color: T.green }}>ls projects/</span></p>
-                  <p style={{ color: "#777" }}>sapientblock/&nbsp;&nbsp;melodeye/&nbsp;&nbsp;problaim/&nbsp;&nbsp;humancrypto/&nbsp;&nbsp;sapientshift/&nbsp;&nbsp;bitcoin-soundscape/&nbsp;&nbsp;autoforge/</p>
-                  <p style={{ color: "#555", marginTop: "0.5rem" }}>shapeneural@lab:~$ <span style={{ color: T.green }}>echo $STATUS</span></p>
-                  <p style={{ color: "#777" }}>7 systems deployed&nbsp;&nbsp;|&nbsp;&nbsp;3 live&nbsp;&nbsp;|&nbsp;&nbsp;3 beta&nbsp;&nbsp;|&nbsp;&nbsp;1 archived</p>
-                  <p style={{ color: "#555", marginTop: "0.5rem" }}>shapeneural@lab:~$ <span style={{ color: T.green }}>open portfolio</span></p>
-                  <p style={{ color: T.green, marginTop: "0.3rem" }}>→ opening shapeneural.com <span style={{ animation: "sn-pulse 1.5s ease-in-out infinite" }}>▌</span></p>
-                </div>
-              </div>
-            </a>
+                Portfolio ansehen →
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>
