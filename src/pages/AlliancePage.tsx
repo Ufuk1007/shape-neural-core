@@ -153,6 +153,9 @@ export default function AlliancePage() {
         />
 
         <div style={{ maxWidth: "48rem", textAlign: "center", position: "relative" }}>
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
+            <BindruneLogo size={48} onDark={true} />
+          </div>
           <p
             style={{
               fontFamily: T.mono,
