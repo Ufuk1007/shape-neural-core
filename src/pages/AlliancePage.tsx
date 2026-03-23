@@ -819,42 +819,101 @@ export default function AlliancePage() {
       <footer
         style={{
           background: T.dark,
-          padding: "1.3rem 1.5rem",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "0.6rem",
+          padding: "3rem 1.5rem 2rem",
+          fontFamily: T.mono,
         }}
       >
-        <span
-          style={{
-            fontFamily: T.mono,
-            color: "#444",
-            fontSize: "0.68rem",
-          }}
-        >
-          © 2025 SHAPENEURAL
-        </span>
-        <span
-          style={{
-            fontFamily: T.sans,
-            color: "#555",
-            fontSize: "0.72rem",
-          }}
-        >
-          signal@shapeneural.com
-        </span>
-        <span
-          style={{
-            fontFamily: T.mono,
-            color: T.green,
-            fontSize: "0.66rem",
-            letterSpacing: "0.08em",
-          }}
-        >
-          ALLIANCE // OFFEN
-        </span>
+        <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
+          {/* Links */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: "1.5rem",
+              marginBottom: "1.5rem",
+            }}
+          >
+            <a
+              href="https://www.linkedin.com/company/shapeneural/?viewAsMember=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#666",
+                fontSize: "0.78rem",
+                letterSpacing: "0.15em",
+                textDecoration: "none",
+                transition: "color 0.3s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = T.green)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
+            >
+              <span style={{ color: T.green, opacity: 0.6 }}>[</span>
+              LINKEDIN
+              <span style={{ color: T.green, opacity: 0.6 }}>]</span>
+            </a>
+            <a
+              href="mailto:signal@shapeneural.com"
+              style={{
+                color: "#666",
+                fontSize: "0.78rem",
+                letterSpacing: "0.15em",
+                textDecoration: "none",
+                transition: "color 0.3s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
+            >
+              <span style={{ color: "#555", opacity: 0.6 }}>[</span>
+              EMAIL
+              <span style={{ color: "#555", opacity: 0.6 }}>]</span>
+            </a>
+            <a
+              href="/"
+              style={{
+                color: "#666",
+                fontSize: "0.78rem",
+                letterSpacing: "0.15em",
+                textDecoration: "none",
+                transition: "color 0.3s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#0f0")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
+            >
+              <span style={{ color: "#0f0", opacity: 0.6 }}>[</span>
+              MAINFRAME
+              <span style={{ color: "#0f0", opacity: 0.6 }}>]</span>
+            </a>
+            <a
+              href="/legal"
+              style={{
+                color: "#666",
+                fontSize: "0.78rem",
+                letterSpacing: "0.15em",
+                textDecoration: "none",
+                transition: "color 0.3s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#ff0055")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
+            >
+              <span style={{ color: "#ff0055", opacity: 0.6 }}>[</span>
+              LEGAL
+              <span style={{ color: "#ff0055", opacity: 0.6 }}>]</span>
+            </a>
+          </div>
+
+          {/* Copyright */}
+          <div
+            style={{
+              textAlign: "center",
+              color: "#444",
+              fontSize: "0.68rem",
+              letterSpacing: "0.2em",
+            }}
+          >
+            © 2025 SHAPENEURAL // <span style={{ color: T.green }}>SYSTEM_ONLINE</span>
+          </div>
+        </div>
       </footer>
     </div>
   );
