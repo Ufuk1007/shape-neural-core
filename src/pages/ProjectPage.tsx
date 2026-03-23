@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useParams, useLocation, Navigate } from "react-router-dom";
+import { useParams, useLocation, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import SubpageShell from "@/components/SubpageShell";
 import InsightCard from "@/components/InsightCard";
