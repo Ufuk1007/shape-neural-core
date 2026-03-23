@@ -1,4 +1,4 @@
-import { ExternalLink, FileText } from "lucide-react";
+import { ExternalLink, FileText, Handshake } from "lucide-react";
 import { Link } from "react-router-dom";
 import profilePortrait from "@/assets/profile-portrait.png";
 import BindruneLogo from "@/components/BindruneLogo";
