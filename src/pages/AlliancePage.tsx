@@ -93,7 +93,7 @@ const AlliancePage = () => {
             <img
               src="/placeholder.svg"
               alt="Arbeitsplatz mit warmem Licht und fokussierter Atmosphäre"
-              className="w-full object-cover"
+              className="w-full h-full object-cover"
               style={{
                 filter: "grayscale(20%) contrast(1.05)",
                 aspectRatio: "16/9",
