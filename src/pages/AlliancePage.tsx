@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef, ReactNode, FormEvent } from "react";
 import BindruneLogo from "@/components/BindruneLogo";
+import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
+import melodeyeImg from "@/assets/melodeye-screenshot.png";
+import problaimImg from "@/assets/problaim-screenshot.png";
 
 const T = {
   green: "#00944a",
