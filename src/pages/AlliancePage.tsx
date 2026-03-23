@@ -93,6 +93,72 @@ function Wrap({
   );
 }
 
+function CountUp({ target, suffix = "" }: { target: number; suffix?: string }) {
+  const [count, setCount] = useState(0);
+  const [ref, vis] = useReveal();
+  useEffect(() => {
+    if (!vis) return;
+    let start = 0;
+    const step = Math.max(1, Math.floor(target / 40));
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { setCount(target); clearInterval(timer); }
+      else setCount(start);
+    }, 30);
+    return () => clearInterval(timer);
+  }, [vis, target]);
+  return <span ref={ref}>{count}{suffix}</span>;
+}
+
+function PortfolioCounterTeaser() {
+  const stats = [
+    { value: 7, suffix: "", label: "PROJEKTE" },
+    { value: 1600, suffix: "+", label: "ZEILEN CODE" },
+    { value: 6, suffix: "", label: "KI-MODELLE" },
+    { value: 0, suffix: "", label: "MANUELLE SCHRITTE", display: "0" },
+  ];
+  return (
+    <section style={{ background: T.dark, padding: "6rem 1.5rem", position: "relative" }}>
+      <div style={{
+        position: "absolute", inset: 0, opacity: 0.04,
+        backgroundImage: "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+        backgroundSize: "80px 80px", pointerEvents: "none",
+      }} />
+      <div style={{ maxWidth: "56rem", margin: "0 auto", position: "relative" }}>
+        <p style={{ fontFamily: T.mono, fontSize: "0.66rem", color: "#555", letterSpacing: "0.2em", marginBottom: "1.5rem" }}>VARIANTE 2 — ZAHLEN-TEASER</p>
+        <Reveal>
+          <p style={{ fontFamily: T.mono, fontSize: "0.72rem", fontWeight: 700, letterSpacing: "0.3em", textTransform: "uppercase", color: T.green, marginBottom: "2rem", textAlign: "center" }}>PORTFOLIO_</p>
+        </Reveal>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "1.5rem", textAlign: "center", marginBottom: "3rem" }}>
+          {stats.map((s, i) => (
+            <Reveal key={s.label} delay={i * 0.1}>
+              <div>
+                <p style={{ fontFamily: T.mono, fontSize: "clamp(2rem, 4vw, 3.2rem)", fontWeight: 700, color: T.green, lineHeight: 1 }}>
+                  {s.display !== undefined ? s.display : <CountUp target={s.value} suffix={s.suffix} />}
+                </p>
+                <p style={{ fontFamily: T.mono, fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.15em", color: "#666", marginTop: "0.8rem" }}>{s.label}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={0.5}>
+          <div style={{ textAlign: "center" }}>
+            <a href="https://shapeneural.com" target="_blank" rel="noopener noreferrer"
+              style={{
+                fontFamily: T.mono, fontSize: "0.82rem", fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase",
+                textDecoration: "none", color: T.dark, background: T.green, padding: "0.9rem 2.2rem",
+                display: "inline-block", transition: "background 0.25s",
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = "#00b35a"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = T.green; }}
+            >Portfolio ansehen →</a>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 export default function AlliancePage() {
   const [formState, setFormState] = useState<"idle" | "sending" | "sent">("idle");
   const [form, setForm] = useState({ name: "", message: "" });
