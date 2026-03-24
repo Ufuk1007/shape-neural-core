@@ -1,162 +1,138 @@
 [
   {
-    "id": "rendair_creativity_slider",
+    "id": "rendair_ai_sketch_to_render",
     "category": "STR_ART",
-    "headline": "Rendair AI's Creativity Slider Balances Geometric Fidelity with Generative Freedom",
-    "summary": "Rendair AI introduces a novel control mechanism allowing 3D artists to toggle between strict adherence to input geometry and creative generation of design alternatives. This addresses a critical pain point in professional visualization where hallucination-prone generative tools often violate spatial constraints, enabling architects and designers to maintain design intent while exploring variations.",
+    "headline": "Rendair AI: Sketch-to-Photoreal Render Tool",
+    "summary": "Transforms rough sketches or clay models into high-fidelity architectural renders while respecting geometric constraints via ControlNet. Enables rapid iteration for designers with in-painting and video generation features. Revolutionizes professional visualization workflows in architecture and 3D design.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
-    "relevance": 85
+    "relevance": 95
   },
   {
-    "id": "nerf_gaussian_splatting_adoption",
+    "id": "kaedim_2d_to_3d_meshes",
     "category": "STR_ART",
-    "headline": "Neural Radiance Fields and Gaussian Splatting Mature as Professional 3D Capture Standard",
-    "summary": "Luma AI's NeRF and Gaussian Splatting tools capture real-world reflections and lighting with unprecedented fidelity compared to traditional photogrammetry. The technology democratizes high-quality 3D asset creation by allowing smartphone-based capture, fundamentally shifting how environmental and object data enters digital workflows.",
+    "headline": "Kaedim Converts 2D Concepts to 3D Assets",
+    "summary": "Generates textured 3D meshes from sketches or photos with automatic UV unwrapping and poly-count control. Accelerates asset creation for game devs and environment artists. Streamlines populating scenes without manual modeling.",
+    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "relevance": 92
+  },
+  {
+    "id": "luma_ai_genie_text_to_3d",
+    "category": "STR_ART",
+    "headline": "Luma AI Genie: Text-to-3D Generation",
+    "summary": "Creates 3D meshes from text prompts alongside NeRF captures from smartphones for realistic environments. Captures complex lighting traditional methods miss. Empowers artists to build immersive 3D worlds experimentally.",
+    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "relevance": 90
+  },
+  {
+    "id": "wonder_studio_vfx_automation",
+    "category": "STR_ART",
+    "headline": "Wonder Studio Automates VFX Animation",
+    "summary": "Handles character lighting, compositing, and MoCap for animators, saving weeks of rotoscoping. Integrates into Blender pipelines for pro workflows. Boosts creative focus on storytelling over technical tedium.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
     "relevance": 88
   },
   {
-    "id": "sketch_to_3d_mesh_workflow",
+    "id": "adobe_substance_pbr_materials",
     "category": "STR_ART",
-    "headline": "Automated 2D-to-3D with UV Unwrapping Eliminates Manual Asset Preparation",
-    "summary": "Generative tools now convert 2D sketches and photos directly to textured 3D meshes with automatic UV unwrapping and poly-count control, eliminating hours of manual preparation. This compression of the asset pipeline enables game developers and environment artists to populate scenes at unprecedented velocity.",
+    "headline": "Adobe Substance: AI PBR Material Gen",
+    "summary": "Generates photorealistic PBR materials from photos for 3D texturing. Enhances high-end pipelines in Unreal and Maya. Enables designers to achieve realism with minimal input.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "relevance": 85
+  },
+  {
+    "id": "promptsref_midjourney_sref",
+    "category": "STR_ART",
+    "headline": "PromptsRef: Midjourney Style Reference Lib",
+    "summary": "Curates --sref prompts for consistent branding in generative art. Speeds reproducible aesthetics across projects. Ideal for designers scaling visual identities.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 87
+  },
+  {
+    "id": "recraft_ai_mockups_editing",
+    "category": "STR_ART",
+    "headline": "Recraft: AI Product Mockups & Inpainting",
+    "summary": "Combines elements for mockups, inpaints/outpaints, and exports to Photoshop. Offers collaboration and workspace for design teams. Extends creative control in professional illustration.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 89
+  },
+  {
+    "id": "krea_all_in_one_creative",
+    "category": "STR_ART",
+    "headline": "Krea: AI Suite for Images, Video, 3D",
+    "summary": "Generates, enhances, edits across modalities with top models. Unifies workflow for experimental multimedia art. Pushes boundaries of hybrid generative design.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 86
+  },
+  {
+    "id": "face_to_3d_portrait_converter",
+    "category": "STR_ART",
+    "headline": "Face to 3D: Portrait-to-3D Head Models",
+    "summary": "Converts photos to exportable 3D heads in GLB/OBJ/STL. Enables character design from references. Transforms 2D portraits into sculptural assets.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
+    "relevance": 84
+  },
+  {
+    "id": "colorart_ai_coloring_pages",
+    "category": "STR_ART",
+    "headline": "ColorArt.AI: Prompt-to-Coloring Pages",
+    "summary": "Creates printable coloring pages from prompts with detail controls. Removes backgrounds for clean exports. Sparks therapeutic, interactive generative art experiences.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
     "relevance": 82
   },
   {
-    "id": "video_generation_from_renders",
-    "category": "STR_ART",
-    "headline": "AI Video Generation Transforms Static 3D Renders into Cinematic Sequences",
-    "summary": "Rendair AI and Luma Dream Machine enable conversion of static architectural renders and concept images into cinematic camera movements and video backplates. This capability accelerates client presentations and concept communication while reducing reliance on traditional motion graphics expertise.",
+    "id": "rendair_creativity_slider",
+    "category": "CX_UX",
+    "headline": "Rendair's Creativity Slider for UX Control",
+    "summary": "Balances strict model adherence with design alternatives in renders. Improves UX in iterative client feedback loops. Enhances designer-AI collaboration precision.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
     "relevance": 80
   },
   {
     "id": "suno_ai_music_generation",
     "category": "SONIC",
-    "headline": "Suno AI Reaches 4.9-Star Maturity in AI Music Generation Ecosystem",
-    "summary": "Suno AI achieves high user satisfaction ratings (4.9/5 from 156 reviews) as a production-ready AI music and content creation platform. The tool's adoption signals that generative audio has moved beyond experimental novelty into practical creative workflows for commercial content production.",
+    "headline": "Suno AI: Advanced Music Creation Tool",
+    "summary": "Generates full tracks from prompts for sound design. Integrates into creative audio workflows. Democratizes music experimentation for artists.",
     "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 78
+    "relevance": 91
   },
   {
-    "id": "google_veo_text_video",
-    "category": "STR_ART",
-    "headline": "Google Veo Enters Text-to-Video Market with Enterprise-Grade Performance",
-    "summary": "Google Veo achieves 4.9-star ratings as a text-to-video tool, indicating competitive parity with Pika Labs and Luma Dream Machine in the video generation space. Google's entry signals consolidation of generative video as a core creative technology rather than experimental category.",
+    "id": "luma_dream_machine_video",
+    "category": "SONIC",
+    "headline": "Luma Dream Machine: Text-to-Video Audio",
+    "summary": "Produces realistic videos with synced audio from prompts. Useful for sound-reactive visuals in design. Bridges generative video and immersive audio.",
     "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 75
+    "relevance": 85
   },
   {
-    "id": "flux_ai_image_generation",
-    "category": "STR_ART",
-    "headline": "Flux.ai Emerges as Specialized Image and Illustration Generation Platform",
-    "summary": "Flux.ai enters the competitive generative art landscape with 4.8-star ratings, focusing specifically on image generation and illustration. Its emergence indicates market fragmentation toward specialized tools optimized for particular creative disciplines rather than monolithic general-purpose generators.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 72
-  },
-  {
-    "id": "recraft_vector_generation",
-    "category": "STR_ART",
-    "headline": "Recraft Specializes in AI-Generated Vector Graphics and Illustration",
-    "summary": "Recraft achieves 4.8-star adoption (120 reviews) as a dedicated tool for image generation and illustration, suggesting designers require specialized tools for vector work and scalable graphics. This niche focus reflects the maturation of the generative art ecosystem into domain-specific tooling.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 74
-  },
-  {
-    "id": "skybox_ai_environment",
-    "category": "STR_ART",
-    "headline": "Skybox AI Generates Immersive 360° Environments from Text and Images",
-    "summary": "Skybox AI (4.8-star rating, 156 reviews) specializes in procedural generation of complete 3D environments and skyboxes. The tool's popularity with game developers and VR creators indicates AI's capability to generate spatially coherent, full-scene environments rather than isolated assets.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 80
-  },
-  {
-    "id": "face_to_3d_biometric",
-    "category": "STR_ART",
-    "headline": "Face-to-3D Converts Portrait Photos into Production-Ready Head Models",
-    "summary": "Face to 3D (4.7-star rating) automates conversion of 2D portrait photography into usable 3D head models with GLB/OBJ/STL export capability. This addresses a critical bottleneck in character creation pipelines for games, film, and digital humans, reducing facial asset production time dramatically.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 79
-  },
-  {
-    "id": "krea_multimodal_suite",
-    "category": "STR_ART",
-    "headline": "Krea Consolidates Image, Video, and 3D Generation into Unified Creative Suite",
-    "summary": "Krea (4.7-star rating, 82 reviews) positions itself as an all-in-one platform integrating image generation, enhancement, video editing, and 3D object creation. This consolidation reflects a market trend toward integrated workflows that reduce context-switching and toolchain fragmentation.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 76
-  },
-  {
-    "id": "goenhance_video_upscaling",
-    "category": "STR_ART",
-    "headline": "GoEnhance Combines Video Generation with Upscaling and Image Enhancement",
-    "summary": "GoEnhance AI (4.7-star rating, 86 reviews) bridges generative and post-production workflows by bundling video generation with upscaling and stylization tools. This integration acknowledges that modern creative pipelines require both generation and refinement within unified platforms.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 71
-  },
-  {
-    "id": "colorart_procedural_patterns",
-    "category": "STR_ART",
-    "headline": "ColorArt.AI Generates Procedural Coloring Pages with Controllable Detail Hierarchy",
-    "summary": "ColorArt.AI (4.7-star rating, 68 reviews) demonstrates AI's capability to generate structured, hierarchical creative outputs with user-controlled complexity. The tool's focus on detail-level controls and printable outputs represents a niche but growing category of AI-assisted creative workflows.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 65
-  },
-  {
-    "id": "getimg_inpainting_workflow",
+    "id": "gpt4o_image_gen_ux",
     "category": "CX_UX",
-    "headline": "Getimg.ai Emphasizes Inpainting and Iterative Refinement Over Pure Generation",
-    "summary": "Getimg.ai (4.7-star rating, 92 reviews) positions image generation, variation, inpainting, and upscaling as a unified editing workflow. This UX pattern prioritizes iterative refinement over single-prompt generation, reflecting how professional designers actually work with generative tools.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 73
+    "headline": "GPT-4o: Top AI Image Gen for UX Design",
+    "summary": "Best overall for prompt adherence in image creation. Integrates into workflows for rapid prototyping. Optimizes UX research with visual ideation.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 83
   },
   {
-    "id": "promptsref_style_consistency",
-    "category": "CX_UX",
-    "headline": "PromptsRef Solves Generative Art Consistency Problem Through Prompt Library Curation",
-    "summary": "PromptsRef (4.7-star rating, 78 reviews) addresses a critical UX challenge in generative art: reproducible stylistic consistency across projects. By curating a library of proven Midjourney prompts organized by style category, the tool reduces trial-and-error and accelerates brand coherence in AI-generated content.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 77
+    "id": "midjourney_artistic_results",
+    "category": "STR_ART",
+    "headline": "Midjourney: Artistic AI Image Mastery",
+    "summary": "Delivers stunning aesthetics for visual storytelling. Fast iterations enhance design exploration. Core tool for strategic generative art movements.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 94
   },
   {
-    "id": "rapid_visualization_workflow",
-    "category": "CX_UX",
-    "headline": "Sub-Hour Client Proposal Workflow Emerges via AI-Assisted Visualization Pipeline",
-    "summary": "The documented workflow (SketchUp blockout → Rendair AI render → iterative in-painting) demonstrates a new UX pattern where architects compress concept-to-proposal time from hours to under 60 minutes. This workflow represents a significant shift in how designers interact with clients and iterate on spatial ideas.",
-    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "id": "skybox_ai_environment_gen",
+    "category": "STR_ART",
+    "headline": "Skybox AI: VR/AR Environment Creator",
+    "summary": "Generates immersive skyboxes and scenes for design. Supports experimental spatial art. Elevates meta-verse prototyping.",
+    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
     "relevance": 81
   },
   {
-    "id": "adobe_firefly_integration",
-    "category": "CX_UX",
-    "headline": "Adobe Firefly Achieves 4.9-Star Rating as Native Generative Component",
-    "summary": "Adobe Firefly (4.9-star rating, 56 reviews) integrates AI image generation directly into Creative Cloud workflows, indicating that generative tools are becoming embedded features rather than standalone applications. This integration pattern reduces UX friction for designers already invested in Adobe's ecosystem.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 74
-  },
-  {
-    "id": "leonardo_custom_models",
-    "category": "CX_UX",
-    "headline": "Leonardo AI Prioritizes Custom Model Training for Brand-Specific Generative Control",
-    "summary": "Leonardo AI (4.9-star rating, 101 reviews) emphasizes custom AI model training and fine-tuning capabilities rather than relying solely on base models. This UX philosophy acknowledges that professional designers require control over generative behavior to maintain brand identity and stylistic coherence.",
+    "id": "flux_ai_illustration",
+    "category": "STR_ART",
+    "headline": "Flux.ai: High-Fidelity Illustrations",
+    "summary": "Specializes in precise image generation for illustrators. Advances creative production standards. Key for philosophical AI art debates.",
     "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
     "relevance": 79
-  },
-  {
-    "id": "midjourney_aesthetic_dominance",
-    "category": "META",
-    "headline": "Midjourney Maintains Aesthetic Leadership Despite Competitive Proliferation",
-    "summary": "Midjourney (4.8-star rating, 86 reviews) remains the reference standard for 'stunning artistic outputs and unique styles' despite market saturation with alternatives. Its sustained leadership suggests that generative art quality remains dependent on training data, architectural choices, and aesthetic tuning rather than mere algorithm commoditization.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 76
-  },
-  {
-    "id": "civitai_community_models",
-    "category": "META",
-    "headline": "Civitai Democratizes Generative Art Through Community-Created Model Marketplace",
-    "summary": "Civitai (4.8-star rating, 98 reviews) represents a paradigm shift toward decentralized generative model distribution, enabling artists to publish, discover, and fine-tune community-created models outside corporate platforms. This infrastructure has philosophical implications for creative ownership and algorithmic pluralism.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 77
   }
 ]
