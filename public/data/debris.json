@@ -1,122 +1,130 @@
 [
   {
-    "id": "gpt4o_image_gen_leadership",
+    "id": "procreate_no_ai_policy_2026",
     "category": "STR_ART",
-    "headline": "GPT-4o Tops AI Image Generators in 2026",
-    "summary": "GPT-4o excels as the best overall AI image generator, blending seamless text-to-image with conversational refinement for artists. This positions it as a core tool for iterative creative workflows in generative design. Designers gain unprecedented control over visuals without switching apps.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 95
-  },
-  {
-    "id": "nano_banana_google_art",
-    "category": "STR_ART",
-    "headline": "Nano Banana Optimizes AI Art for Google",
-    "summary": "Tailored for Google ecosystem, Nano Banana delivers fast, integrated generative art ideal for UX mockups and branding. It streamlines workflows for designers embedded in Google Workspace. Enables rapid prototyping with consistent stylistic outputs.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 88
-  },
-  {
-    "id": "midjourney_artistic_edge",
-    "category": "STR_ART",
-    "headline": "Midjourney Dominates Artistic AI Results",
-    "summary": "Midjourney leads for stunning artistic outputs, empowering illustrators with remixable styles and high-fidelity renders. Crucial for strategic art movements exploring AI-human collaboration. Fosters experimental visual storytelling in design portfolios.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 92
-  },
-  {
-    "id": "reve_prompt_adherence",
-    "category": "STR_ART",
-    "headline": "Reve Masters AI Prompt Precision",
-    "summary": "Reve's superior prompt adherence allows precise control over generative art, vital for branded content and UX visualization. Reduces iteration cycles for designers seeking exact outputs. Transforms abstract ideas into faithful digital assets.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 90
-  },
-  {
-    "id": "ideogram_text_accuracy",
-    "category": "STR_ART",
-    "headline": "Ideogram Excels in Text-Rendering Art",
-    "summary": "Ideogram's accurate text integration revolutionizes poster design and infographics via AI. Essential for typography-focused generative art. Bridges gap between conceptual sketches and production-ready visuals.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "headline": "Procreate Rejects Generative AI in 2026",
+    "summary": "Procreate upholds its no-AI policy, prioritizing human-driven creativity with fluid brushes and precise controls. This artist-first stance counters AI proliferation, offering a pure digital illustration space. Essential for designers seeking authentic toolsets amid AI dominance.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
     "relevance": 85
   },
   {
-    "id": "flux_custom_control",
+    "id": "artrage_ai_free_drawing",
     "category": "STR_ART",
-    "headline": "FLUX Offers Deep AI Image Customization",
-    "summary": "FLUX provides granular control for tailored generative images, ideal for 3D texturing and concept art. Empowers artists with parameter tweaks beyond basic prompts. Accelerates professional pipelines in strategic visual design.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 87
+    "headline": "ArtRage: AI-Free Canvas for Artists",
+    "summary": "ArtRage provides natural media simulation without generative AI, favored for fun, hands-on artwork. It stands out as AI tools saturate the market, preserving traditional digital painting joy. Designers value its commitment to pure creative control.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
+    "relevance": 80
   },
   {
-    "id": "adobe_firefly_integration",
+    "id": "iamag_no_ai_suite_kickstarter",
     "category": "STR_ART",
-    "headline": "Adobe Firefly Blends AI into Photoshop",
-    "summary": "Firefly's seamless Photoshop integration enables hybrid AI-traditional workflows for image compositing and editing. Critical for UX designers merging generative elements with photos. Redefines collaborative creative suites.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 93
+    "headline": "IAMAG No-AI Creative Suite Launches",
+    "summary": "Kickstarter for IAMAG's No-AI suite creates a safe space amid growing AI integration challenges. It addresses artists' need for AI-free environments in 2026. Revolutionizes design by fostering human-centric creative ecosystems.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
+    "relevance": 90
   },
   {
-    "id": "recraft_product_mockups",
-    "category": "CX_UX",
-    "headline": "Recraft AI for Dynamic Product Mockups",
-    "summary": "Recraft combines inpainting, outpainting, and multi-element synthesis for UX prototype mockups. Enhances interaction pattern testing with editable AI visuals. Boosts designer efficiency in client presentations and iterations.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 91
+    "id": "clip_studio_ai_cancelled",
+    "category": "STR_ART",
+    "headline": "Clip Studio Cancels AI Image Generator",
+    "summary": "Clip Studio Paint scrapped its generative AI plans due to user backlash, keeping creativity human-led. AI limited to support roles only, empowering artists' decisions. Pivotal for design workflows emphasizing control over automation.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
+    "relevance": 88
   },
   {
-    "id": "promptsref_style_library",
+    "id": "rendair_ai_3d_visualization",
     "category": "STR_ART",
-    "headline": "PromptsRef Midjourney Style Reference Hub",
-    "summary": "PromptsRef curates --sref prompts for consistent Midjourney branding and content styles. Streamlines generative art production for series work. Vital for artists building cohesive visual identities.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 82
-  },
-  {
-    "id": "colorart_ai_coloring_pages",
-    "category": "STR_ART",
-    "headline": "ColorArt.AI Generates Printable Coloring Art",
-    "summary": "Transforms prompts into customizable coloring pages with detail controls and HD exports. Opens new avenues in therapeutic and educational generative design. Appeals to UX for accessible interactive art experiences.",
-    "url": "https://comparateur-ia.com/en/ai-categories/ia/generative-art",
-    "relevance": 78
-  },
-  {
-    "id": "rendair_archviz_precision",
-    "category": "STR_ART",
-    "headline": "Rendair AI Respects Geometric Constraints",
-    "summary": "Rendair converts rough 3D models to photorealistic renders without hallucination, perfect for architectural design. Bridges strategic art and professional visualization. Ensures fidelity in AI-assisted spatial creativity.",
+    "headline": "Rendair AI Bridges 3D Models to Realism",
+    "summary": "Rendair respects geometric constraints for photorealistic renders from rough models, unlike hallucinatory tools. Ideal for architects and 3D designers in professional workflows. Transforms strategic art in visualization pipelines.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
-    "relevance": 96
+    "relevance": 92
   },
   {
     "id": "luma_ai_nerf_genie",
     "category": "STR_ART",
-    "headline": "Luma AI Genie Enables Text-to-3D",
-    "summary": "Luma's Genie generates 3D meshes from text, complemented by NeRF for real-world captures. Revolutionizes soundstage and immersive art design. Powers experimental 3D generative pipelines.",
+    "headline": "Luma AI's Genie: Text-to-3D Breakthrough",
+    "summary": "Luma's Genie generates 3D meshes from text, with NeRF capturing real-world assets via smartphone. Enhances interactive scenes with true reflections. Game-changer for generative 3D art and asset creation.",
     "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
-    "relevance": 94
+    "relevance": 95
   },
   {
-    "id": "artbreeder_gan_collaboration",
+    "id": "dalle3_photorealistic_gen",
     "category": "STR_ART",
-    "headline": "Artbreeder GANs Fuel Collaborative Art",
-    "summary": "Artbreeder's GAN blending of user images fosters communal generative art communities. Sparks philosophical debates on collective AI creativity. Enhances UX through shared design evolution.",
-    "url": "https://www.igmguru.com/blog/generative-ai-tools",
+    "headline": "DALL·E 3 Masters Photorealistic Scenes",
+    "summary": "DALL·E 3 uses advanced neural nets for high-quality visuals from text, spanning photorealism to illustrations. Powers design from marketing to concepts. Core tool for 2026 generative art evolution.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
+    "relevance": 85
+  },
+  {
+    "id": "dream_wombo_prompt_art",
+    "category": "STR_ART",
+    "headline": "Dream by Wombo: Simple Psychedelic Art",
+    "summary": "Dream by Wombo generates imaginative, colorful art from basic prompts in various styles. Inspired by Google research for abstract effects. Democratizes experimental visual design for creators.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
+    "relevance": 82
+  },
+  {
+    "id": "artbreeder_image_blending",
+    "category": "STR_ART",
+    "headline": "Artbreeder Revolutionizes Character Design",
+    "summary": "Artbreeder blends images for character design in community-driven platform. Fuels collaborative generative art techniques. Vital for strategic narrative visuals in design.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
+    "relevance": 87
+  },
+  {
+    "id": "deep_dream_neural_style",
+    "category": "STR_ART",
+    "headline": "Deep Dream Generator for Abstract Art",
+    "summary": "Deep Dream applies neural styles for psychedelic textures and abstracts. Rooted in Google research, enhances creative digital experimentation. Key for avant-garde sound-visual synesthesia designs.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
     "relevance": 84
   },
   {
-    "id": "midjourney_designers_choice",
+    "id": "runwayml_multimedia_ai",
     "category": "STR_ART",
-    "headline": "Midjourney Powers Designer Illustrations",
-    "summary": "Midjourney's creative flexibility suits illustrators for striking digital art in marketing and UX. Drives artistic movements in prompt-engineered visuals. Central to 2026 design toolkits.",
-    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "headline": "RunwayML: AI Video and Image Fusion",
+    "summary": "RunwayML generates multimedia for creators, blending image and video AI. Supports complex storytelling visuals. Expands generative design into dynamic art forms.",
+    "url": "https://www.appypieautomate.ai/blog/best-ai-art-generators",
     "relevance": 89
   },
   {
-    "id": "dalle3_visual_content",
-    "category": "CX_UX",
-    "headline": "DALL·E 3 for High-Res UX Visuals",
-    "summary": "DALL·E 3's custom styles and resolutions ideal for social media and presentation prototypes. Accelerates UX innovation in interaction pattern visualization. Core for rapid ideation in design systems.",
-    "url": "https://www.startdesigns.com/blog/top-generative-ai-tools-2026/",
+    "id": "veo_sora_flux_video_ai",
+    "category": "STR_ART",
+    "headline": "Veo, Sora, Flux Lead 2026 Video Gen",
+    "summary": "Google Veo, OpenAI Sora, Flux 2.0 Pro tested for superior image/video from prompts. Handles diverse styles step-by-step. Breakthrough for generative motion art and design prototypes.",
+    "url": "https://www.youtube.com/watch?v=y9KsqtDoFkI",
+    "relevance": 94
+  },
+  {
+    "id": "no_ai_artist_movement",
+    "category": "META",
+    "headline": "Rise of No-AI Artist Movement in 2026",
+    "summary": "Apps like Procreate and IAMAG spark backlash against AI ubiquity, valuing human creativity. Questions AI's role in art authenticity. Philosophical shift redefining design ethics.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
+    "relevance": 91
+  },
+  {
+    "id": "rendair_geometric_ai_limit",
+    "category": "META",
+    "headline": "Rendair AI Respects Design Constraints",
+    "summary": "Unlike hallucinating tools, Rendair enforces professional geometric rules. Probes AI's balance of creativity and precision. Influences philosophy of constrained generative systems.",
+    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
     "relevance": 86
+  },
+  {
+    "id": "luma_nerf_real_world_ai",
+    "category": "META",
+    "headline": "Luma NeRF Blurs Real vs AI Worlds",
+    "summary": "NeRF captures real lighting/reflections into AI assets, challenging reality boundaries. Speculates on AI's perceptual future. Deepens philosophical discourse on synthetic creativity.",
+    "url": "https://rendair.ai/blog/tools-top-ai-tools-for-3d-artists-in-2026",
+    "relevance": 93
+  },
+  {
+    "id": "clip_studio_user_ai_reject",
+    "category": "META",
+    "headline": "User Power Cancels AI in Clip Studio",
+    "summary": "Artist feedback halts generative features, highlighting community over corporate AI push. Explores ethics of user-driven tool evolution. Key perspective on AI in creative agency.",
+    "url": "https://www.creativebloq.com/art/digital-art/5-ai-free-apps-every-artist-needs-to-try-in-2026",
+    "relevance": 89
   }
 ]
