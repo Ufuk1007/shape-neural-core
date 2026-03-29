@@ -1,136 +1,174 @@
-import { useState, useEffect, useRef, ReactNode, FormEvent } from "react";
+import { useState, FormEvent } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import BindruneLogo from "@/components/BindruneLogo";
-import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
-import melodeyeImg from "@/assets/melodeye-screenshot.png";
-import problaimImg from "@/assets/problaim-screenshot.png";
+import { PROJECTS } from "@/data/projects";
 
-const T = {
-  green: "#00944a",
-  dark: "#111",
-  muted: "#666",
-  light: "#999",
-  bg1: "#f7f7f5",
-  bg2: "#fff",
-  border: "#e2e2e0",
-  mono: "'Courier New', Courier, monospace",
-  sans: "'DM Sans', 'Avenir Next', system-ui, -apple-system, sans-serif",
+/* ── Design Tokens ── */
+const C = {
+  dark: "#0a0a0a",
+  light: "#f5f4f0",
+  green: "#00ff41",
+  greenDim: "rgba(0, 255, 65, 0.10)",
+  cta: "#ff0055",
+  textOnLight: "#1a1a1a",
+  textOnLightSec: "rgba(0,0,0,0.55)",
+  textOnLightMuted: "rgba(0,0,0,0.35)",
+  textOnDark: "rgba(255,255,255,0.92)",
+  textOnDarkSec: "rgba(255,255,255,0.65)",
+  textOnDarkMuted: "rgba(255,255,255,0.4)",
+  mono: "'IBM Plex Mono', 'Courier New', monospace",
+  sans: "'DM Sans', system-ui, sans-serif",
 };
 
-function useReveal(threshold = 0.12): [React.RefObject<HTMLDivElement>, boolean] {
-  const ref = useRef<HTMLDivElement>(null);
-  const [vis, setVis] = useState(false);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([e]) => {
-        if (e.isIntersecting) {
-          setVis(true);
-          obs.disconnect();
-        }
-      },
-      { threshold }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [threshold]);
-  return [ref, vis];
-}
+/* ── Animation variants ── */
+const fadeUp = {
+  hidden: { opacity: 0, y: 28 },
+  visible: (delay: number = 0) => ({
+    opacity: 1, y: 0,
+    transition: { duration: 0.7, ease: "easeOut", delay },
+  }),
+};
 
-function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
-  const [ref, vis] = useReveal();
-  return (
-    <div
-      ref={ref}
-      style={{
-        opacity: vis ? 1 : 0,
-        transform: vis ? "translateY(0)" : "translateY(28px)",
-        transition: `opacity 0.7s ease ${delay}s, transform 0.7s ease ${delay}s`,
-      }}
-    >
-      {children}
-    </div>
-  );
-}
+const slideLeft = {
+  hidden: { opacity: 0, x: -20 },
+  visible: (delay: number = 0) => ({
+    opacity: 1, x: 0,
+    transition: { duration: 0.6, ease: "easeOut", delay },
+  }),
+};
 
-function Label({ children }: { children: ReactNode }) {
+/* ── Section Label ── */
+function SectionLabel({ children, onDark = false }: { children: string; onDark?: boolean }) {
   return (
-    <p
+    <motion.p
+      variants={slideLeft}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-60px" }}
+      custom={0}
       style={{
-        fontFamily: T.mono,
-        fontSize: "0.72rem",
-        fontWeight: 700,
-        letterSpacing: "0.3em",
+        fontFamily: C.mono,
+        fontSize: "11px",
+        fontWeight: 600,
+        letterSpacing: "0.13em",
         textTransform: "uppercase",
-        color: T.green,
-        marginBottom: "1rem",
+        color: C.green,
+        marginBottom: "1.5rem",
       }}
+    >
+      {">"} {children}_
+    </motion.p>
+  );
+}
+
+/* ── Motion wrapper ── */
+function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
+  return (
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-60px" }}
+      custom={delay}
+      className={className}
     >
       {children}
-    </p>
+    </motion.div>
   );
 }
 
-function Wrap({
-  children,
-  bg = T.bg1,
-  id,
-}: {
-  children: ReactNode;
-  bg?: string;
-  id?: string;
-}) {
-  return (
-    <section
-      id={id}
-      style={{
-        background: bg,
-        padding: "6rem 1.5rem",
-      }}
-    >
-      <div style={{ maxWidth: "56rem", margin: "0 auto" }}>{children}</div>
-    </section>
-  );
-}
+/* ── Projects to show (all with images) ── */
+const SHOWCASE_PROJECTS = PROJECTS.filter(p => p.image);
 
+/* ── Andocken scenarios ── */
+const SCENARIOS = [
+  {
+    label: "SPRECHEN",
+    text: "Events, Panels, Vorträge — über KI-Systeme, die gebaut werden. Keine Keynote-Slides mit Stock-Fotos. Echte Architektur, echte Fehler, echte Ergebnisse.",
+  },
+  {
+    label: "VERMITTELN",
+    text: "Schulen, Hochschulen, Weiterbildung — KI greifbar machen. Nicht als Theorie, sondern als Werkzeug, das man anfassen und benutzen kann.",
+  },
+  {
+    label: "BAUEN",
+    text: "Ein Problem, eine Idee, ein Prototyp. Zusammen etwas bauen, das vorher nicht existiert hat. Tage, nicht Monate.",
+  },
+  {
+    label: "DENKEN",
+    text: "Sparring, Perspektivwechsel, Domänen kreuzen. Wenn ein Gedanke einen Gegenpart braucht.",
+  },
+  {
+    label: "FORSCHEN",
+    text: "Interdisziplinäre Kollaboration — Emotion und KI, Blockchain und Mittelstand, Musik und Marktdaten. Die interessantesten Ergebnisse entstehen an den Rändern.",
+  },
+];
+
+/* ── Contact situation options ── */
+const SITUATIONS = [
+  "Ich habe eine Idee und suche einen Sparringspartner.",
+  "Wir suchen einen Speaker / Workshop-Leiter.",
+  "Wir wollen KI in unserer Organisation greifbar machen.",
+  "Ich baue selbst und suche Austausch.",
+  "Etwas anderes.",
+];
 
 export default function AlliancePage() {
-  const [formState, setFormState] = useState<"idle" | "sending" | "sent">("idle");
-  const [form, setForm] = useState({ name: "", message: "" });
-  const [hoverCta, setHoverCta] = useState(false);
-  const [hoverSend, setHoverSend] = useState(false);
-  const set = (k: "name" | "message") => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-    setForm({ ...form, [k]: e.target.value });
+  const [formState, setFormState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [form, setForm] = useState({ name: "", email: "", situation: "", message: "" });
 
-  const handleSubmit = (e: FormEvent) => {
+  const set = (k: keyof typeof form) => (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => setForm({ ...form, [k]: e.target.value });
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!form.message.trim()) return;
     setFormState("sending");
-    const subject = encodeURIComponent(
-      "Alliance — " + (form.name || "Nachricht")
-    );
-    const body = encodeURIComponent(
-      `${form.name ? "Von: " + form.name + "\n\n" : ""}${form.message}`
-    );
-    window.location.href = `mailto:signal@shapeneural.com?subject=${subject}&body=${body}`;
-    setTimeout(() => setFormState("sent"), 800);
+
+    try {
+      const res = await fetch("/api/forge-deliver", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: "signal@shapeneural.com",
+          subject: `Alliance — ${form.name || "Nachricht"}${form.situation ? ` [${form.situation}]` : ""}`,
+          content: [
+            form.name && `Name: ${form.name}`,
+            form.email && `Email: ${form.email}`,
+            form.situation && `Situation: ${form.situation}`,
+            "",
+            form.message,
+          ].filter(Boolean).join("\n"),
+          email: form.email || undefined,
+        }),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      setFormState("sent");
+    } catch {
+      // Fallback to mailto
+      const subject = encodeURIComponent(`Alliance — ${form.name || "Nachricht"}`);
+      const body = encodeURIComponent(
+        [form.name && `Von: ${form.name}`, form.situation && `Kontext: ${form.situation}`, "", form.message]
+          .filter(Boolean).join("\n")
+      );
+      window.location.href = `mailto:signal@shapeneural.com?subject=${subject}&body=${body}`;
+      setFormState("sent");
+    }
   };
 
-  useEffect(() => {
-    if (!document.getElementById("sn-a-styles")) {
-      const s = document.createElement("style");
-      s.id = "sn-a-styles";
-      s.textContent = `
-        @keyframes sn-pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
-      `;
-      document.head.appendChild(s);
-    }
-  }, []);
-
   return (
-    <div style={{ fontFamily: T.sans, color: T.dark, background: T.bg1 }}>
-      {/* ═══════ HERO ═══════ */}
+    <div style={{ fontFamily: C.sans, color: C.textOnLight }}>
+      <Helmet>
+        <title>Alliance — ShapeNeural</title>
+        <meta name="description" content="ShapeNeural ist ein unabhängiges KI-Lab. Sieben Systeme, eine offene Tür." />
+      </Helmet>
+
+      {/* ═══════════════════════════════════════════
+          HERO — Dark
+      ═══════════════════════════════════════════ */}
       <section
         style={{
           position: "relative",
@@ -138,693 +176,746 @@ export default function AlliancePage() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: T.dark,
+          background: C.dark,
           padding: "6rem 1.5rem",
           overflow: "hidden",
         }}
       >
-        {/* Subtle grid overlay */}
+        {/* Subtle grid */}
         <div
           style={{
             position: "absolute",
             inset: 0,
-            opacity: 0.04,
+            opacity: 0.03,
             backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+              "linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
             pointerEvents: "none",
           }}
         />
 
-        <div style={{ maxWidth: "48rem", textAlign: "center", position: "relative" }}>
-          <div style={{ display: "flex", justifyContent: "center", marginBottom: "2rem" }}>
-            <BindruneLogo size={48} onDark={true} />
-          </div>
-          <p
+        <div style={{ maxWidth: "52rem", position: "relative" }}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            style={{ marginBottom: "2.5rem" }}
+          >
+            <BindruneLogo size={40} onDark={true} />
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             style={{
-              fontFamily: T.mono,
-              fontSize: "0.72rem",
-              fontWeight: 700,
-              letterSpacing: "0.3em",
+              fontFamily: C.mono,
+              fontSize: "11px",
+              fontWeight: 600,
+              letterSpacing: "0.13em",
               textTransform: "uppercase",
-              color: T.green,
+              color: C.green,
               marginBottom: "2rem",
             }}
           >
-            SHAPENEURAL ALLIANCE
-          </p>
-          <Reveal>
-            <h1
-              style={{
-                fontFamily: T.mono,
-                fontSize: "clamp(2rem, 5vw, 3.6rem)",
-                fontWeight: 700,
-                lineHeight: 1.15,
-                color: "#fff",
-              }}
-            >
-              Ein Lab.
-              <br />
-              Offene Türen.
-              <br />
-              KI als gemeinsame Sprache.
-            </h1>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <p
-              style={{
-                fontFamily: T.sans,
-                fontSize: "1.1rem",
-                color: T.light,
-                lineHeight: 1.75,
-                maxWidth: "36rem",
-                margin: "2rem auto 0",
-              }}
-            >
-              ShapeNeural ist ein unabhängiges Lab an der Schnittstelle von KI,
-              Design und Strategie. Offen für Zusammenarbeit mit allen, die
-              Neues ausprobieren wollen — egal ob Organisation, Team oder
-              Einzelperson.
-            </p>
-          </Reveal>
-          <Reveal delay={0.3}>
+            {">"} SHAPENEURAL // ALLIANCE_
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+            style={{
+              fontFamily: C.mono,
+              fontSize: "clamp(2rem, 5vw, 3.4rem)",
+              fontWeight: 700,
+              lineHeight: 1.15,
+              color: C.textOnDark,
+              marginBottom: "2rem",
+            }}
+          >
+            Sieben KI-Systeme.
+            <br />
+            Ein Lab.
+            <br />
+            <span style={{ color: C.green }}>Eine offene Tür.</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            style={{
+              fontFamily: C.sans,
+              fontSize: "1.05rem",
+              color: C.textOnDarkSec,
+              lineHeight: 1.8,
+              maxWidth: "38rem",
+              marginBottom: "3rem",
+            }}
+          >
+            ShapeNeural baut KI-Systeme — von Blockchain-Analyse über Emotionserkennung
+            bis zu generativen Soundscapes. Unabhängig, eigenfinanziert, in Kollaboration
+            mit Fraunhofer FIT.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}
+          >
             <a
               href="#kontakt"
-              onMouseEnter={() => setHoverCta(true)}
-              onMouseLeave={() => setHoverCta(false)}
               style={{
-                display: "inline-block",
-                marginTop: "2.5rem",
-                fontFamily: T.mono,
-                fontSize: "0.82rem",
-                fontWeight: 700,
-                letterSpacing: "0.12em",
+                fontFamily: C.mono,
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 textDecoration: "none",
-                color: T.dark,
-                background: hoverCta ? "#00b35a" : T.green,
-                padding: "0.9rem 2.2rem",
-                transition: "background 0.25s",
+                padding: "0.85rem 2rem",
+                background: C.cta,
+                color: "#fff",
+                transition: "opacity 0.25s",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
+              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+            >
+              Signal senden
+            </a>
+            <a
+              href="#projekte"
+              style={{
+                fontFamily: C.mono,
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                textDecoration: "none",
+                padding: "0.85rem 2rem",
+                border: `1px solid ${C.green}`,
+                color: C.green,
+                transition: "all 0.25s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = C.green;
+                e.currentTarget.style.color = C.dark;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = C.green;
               }}
             >
-              Lass uns reden
+              Was hier gebaut wird
             </a>
-          </Reveal>
+          </motion.div>
         </div>
       </section>
 
-      {/* ═══════ WAS UNS ANTREIBT ═══════ */}
-      <Wrap bg={T.bg2}>
-        <Label>WAS UNS ANTREIBT_</Label>
-        <Reveal>
-          <h2
-            style={{
-              fontFamily: T.mono,
-              fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
-              fontWeight: 700,
-              lineHeight: 1.2,
-              color: T.dark,
-              marginBottom: "1rem",
-            }}
-          >
-            Herausfinden, wo KI
-            <br />
-            echten Unterschied macht.
-          </h2>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p
-            style={{
-              fontSize: "1rem",
-              color: T.muted,
-              lineHeight: 1.8,
-              maxWidth: "38rem",
-              marginBottom: "3rem",
-            }}
-          >
-            Nicht jedes Problem braucht KI. Aber manche Ideen werden erst durch
-            KI möglich. Uns interessiert genau diese Grenze — und die besten
-            Ergebnisse entstehen, wenn unterschiedliche Perspektiven
-            aufeinandertreffen. Deshalb suchen wir den Austausch: mit Menschen,
-            die in ihrer Welt tief drin stecken, und mit uns, die wissen, was
-            die Technologie kann.
-          </p>
-        </Reveal>
+      {/* ═══════════════════════════════════════════
+          KONTEXT — Dark
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: C.dark, padding: "7rem 1.5rem", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+        <div style={{ maxWidth: "52rem", margin: "0 auto" }}>
+          <SectionLabel onDark>KONTEXT</SectionLabel>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
-          {[
-            {
-              title: "Neugier vor Methodik",
-              text: "Wir starten nicht mit Frameworks, sondern mit Fragen. Was wäre möglich, wenn...? Daraus entstehen die interessantesten Projekte.",
-            },
-            {
-              title: "Prototypen statt Strategiepapiere",
-              text: "Wenn eine Idee gut ist, bauen wir etwas. Nicht planen, nicht präsentieren — bauen. Ob es funktioniert, sieht man schnell.",
-            },
-            {
-              title: "Wissen teilen, nicht hüten",
-              text: "Jede Zusammenarbeit hat das Ziel, dass am Ende alle mehr können als vorher. Kein Lock-in, keine Abhängigkeit.",
-            },
-          ].map((item, i) => (
-            <Reveal key={item.title} delay={i * 0.12}>
-              <div
-                style={{
-                  display: "flex",
-                  gap: "1rem",
-                  alignItems: "flex-start",
-                }}
-              >
-                <div
-                  style={{
-                    width: "3px",
-                    minHeight: "100%",
-                    background: T.green,
-                    borderRadius: "2px",
-                    flexShrink: 0,
-                  }}
-                />
-                <div>
-                  <h3
-                    style={{
-                      fontFamily: T.mono,
-                      fontSize: "0.9rem",
-                      fontWeight: 700,
-                      letterSpacing: "0.05em",
-                      color: T.dark,
-                      marginBottom: "0.5rem",
-                    }}
-                  >
-                    {item.title}
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: "0.92rem",
-                      color: T.muted,
-                      lineHeight: 1.7,
-                    }}
-                  >
-                    {item.text}
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Wrap>
+          <FadeIn>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                gap: "2.5rem",
+                marginBottom: "3rem",
+              }}
+            >
+              {[
+                { num: "7", label: "KI-Systeme gebaut" },
+                { num: "250+", label: "Validierte Use Cases" },
+                { num: "1", label: "Fraunhofer-Kollaboration" },
+                { num: "2024–", label: "Lab aktiv seit" },
+              ].map((item, i) => (
+                <FadeIn key={item.label} delay={i * 0.1}>
+                  <div>
+                    <span
+                      style={{
+                        fontFamily: C.mono,
+                        fontSize: "clamp(2rem, 4vw, 2.8rem)",
+                        fontWeight: 700,
+                        color: C.green,
+                        display: "block",
+                        marginBottom: "0.4rem",
+                      }}
+                    >
+                      {item.num}
+                    </span>
+                    <span
+                      style={{
+                        fontFamily: C.mono,
+                        fontSize: "11px",
+                        letterSpacing: "0.08em",
+                        textTransform: "uppercase",
+                        color: C.textOnDarkMuted,
+                      }}
+                    >
+                      {item.label}
+                    </span>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </FadeIn>
 
-      {/* ═══════ WOMIT WIR ARBEITEN ═══════ */}
-      <Wrap bg={T.bg1}>
-        <Label>WOMIT WIR ARBEITEN_</Label>
-        <Reveal>
-          <h2
-            style={{
-              fontFamily: T.mono,
-              fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
-              fontWeight: 700,
-              lineHeight: 1.2,
-              color: T.dark,
-              marginBottom: "1rem",
-            }}
-          >
-            Themen, Technologien,
-            <br />
-            Denkweisen.
-          </h2>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p
-            style={{
-              fontSize: "1rem",
-              color: T.muted,
-              lineHeight: 1.8,
-              maxWidth: "38rem",
-              marginBottom: "3rem",
-            }}
-          >
-            Kein festes Produktportfolio. Stattdessen: ein wachsendes Feld aus
-            Technologien und Ansätzen, die wir verstehen, anwenden und
-            weiterentwickeln.
-          </p>
-        </Reveal>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1rem",
-          }}
-        >
-          {[
-            {
-              label: "Generative KI",
-              text: "Large Language Models, Bild- und Musikgenerierung, Prompt Engineering. Nicht als Spielerei — als Werkzeug für echte Anwendungen.",
-            },
-            {
-              label: "Multi-Agent-Systeme",
-              text: "Mehrere KI-Modelle, die zusammenarbeiten. Unterschiedliche Stärken, ein Ergebnis. So löst man komplexe Aufgaben, die ein einzelnes Modell nicht schafft.",
-            },
-            {
-              label: "Emotion & Sensorik",
-              text: "Gesichtserkennung, Stimmungsanalyse, biometrische Signale — alles browserbasiert, ohne Cloud-Abhängigkeit. KI, die Menschen liest, nicht überwacht.",
-            },
-            {
-              label: "KI-Strategie & Integration",
-              text: "Wo macht KI Sinn, wo nicht? Wie führt man sie ein, ohne dass das Team abgehängt wird? Die Fragen vor der Technologie.",
-            },
-            {
-              label: "Rapid Prototyping",
-              text: "Von der Idee zum funktionierenden System in Tagen, nicht Monaten. React, Python, APIs — was gebraucht wird, wird gebaut.",
-            },
-            {
-              label: "Human-Centered Design",
-              text: "Drei Jahrzehnte Erfahrung darin, Dinge zu gestalten, die Menschen bewegen. Von Graffiti über Interfaces bis zu KI-Systemen — der rote Faden ist immer der Mensch.",
-            },
-          ].map((t, i) => (
-            <Reveal key={t.label} delay={i * 0.08}>
-              <div
-                style={{
-                  padding: "1.4rem",
-                  border: `1px solid ${T.border}`,
-                  background: T.bg2,
-                  transition: "border-color 0.3s",
-                  cursor: "default",
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.borderColor = T.green)
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.borderColor = T.border)
-                }
-              >
-                <h3
-                  style={{
-                    fontFamily: T.mono,
-                    fontSize: "0.82rem",
-                    fontWeight: 700,
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: T.dark,
-                    marginBottom: "0.6rem",
-                  }}
-                >
-                  {t.label}
-                </h3>
-                <p
-                  style={{
-                    fontSize: "0.88rem",
-                    color: T.muted,
-                    lineHeight: 1.7,
-                  }}
-                >
-                  {t.text}
-                </p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </Wrap>
-
-      {/* ═══════ WER ═══════ */}
-      <Wrap bg={T.bg2}>
-        <Label>WER_</Label>
-        <Reveal>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "1.5rem",
-            }}
-          >
-            <div>
-              <h2
-                style={{
-                  fontFamily: T.mono,
-                  fontSize: "1.6rem",
-                  fontWeight: 700,
-                  color: T.dark,
-                  marginBottom: "1.2rem",
-                }}
-              >
-                Ufuk Avci
-              </h2>
+          <FadeIn delay={0.3}>
+            <div
+              style={{
+                borderLeft: `2px solid ${C.green}`,
+                paddingLeft: "1.5rem",
+                maxWidth: "40rem",
+              }}
+            >
               <p
                 style={{
+                  fontFamily: C.sans,
                   fontSize: "1rem",
-                  color: T.muted,
+                  color: C.textOnDarkSec,
                   lineHeight: 1.8,
                   marginBottom: "1rem",
                 }}
               >
-                VP Customer Experience bei einer Tier-1-Bank in Frankfurt.
-                Nebenbei: ShapeNeural — ein persönliches Lab, das seit 2024
-                KI-Systeme baut. Der Hintergrund: drei Jahrzehnte an der
-                Schnittstelle von Design, Strategie und Technologie.
+                SAPIENTBLOCK — das Flaggschiff-Projekt — entstand in Kollaboration mit dem
+                Blockchain Reallabor (Fraunhofer FIT, BMWK-gefördert, RWTH Aachen). Es analysiert
+                Blockchain-Relevanz für den deutschen Mittelstand über 74 Branchen hinweg.
+              </p>
+              <a
+                href="https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontFamily: C.mono,
+                  fontSize: "11px",
+                  letterSpacing: "0.08em",
+                  color: C.green,
+                  textDecoration: "none",
+                  opacity: 0.7,
+                  transition: "opacity 0.25s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.7")}
+              >
+                → BLOCKCHAIN REALLABOR
+              </a>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          WER — Light
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: C.light, padding: "7rem 1.5rem" }}>
+        <div style={{ maxWidth: "52rem", margin: "0 auto" }}>
+          <SectionLabel>WER</SectionLabel>
+
+          <FadeIn>
+            <h2
+              style={{
+                fontFamily: C.mono,
+                fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                color: C.textOnLight,
+                marginBottom: "2rem",
+              }}
+            >
+              Ufuk Avci
+            </h2>
+          </FadeIn>
+
+          <FadeIn delay={0.1}>
+            <div style={{ maxWidth: "40rem" }}>
+              <p
+                style={{
+                  fontSize: "1rem",
+                  color: C.textOnLightSec,
+                  lineHeight: 1.85,
+                  marginBottom: "1.2rem",
+                }}
+              >
+                VP Customer Experience bei einer Tier-1-Bank in Frankfurt. Drei Jahrzehnte
+                an der Schnittstelle von Design, Strategie und Technologie — von
+                Interface-Design über digitale Transformation bis zu KI-Architektur.
               </p>
               <p
                 style={{
                   fontSize: "1rem",
-                  color: T.muted,
-                  lineHeight: 1.8,
+                  color: C.textOnLightSec,
+                  lineHeight: 1.85,
+                  marginBottom: "1.5rem",
                 }}
               >
-                Was mich antreibt: herausfinden, wo KI echten Unterschied
-                macht — und wo sie nur Lärm erzeugt. Das geht am besten im
-                Gespräch mit Leuten, die eine ähnliche Frage haben.
+                ShapeNeural ist das Lab, in dem abends und am Wochenende gebaut wird.
+                Nicht im Auftrag — aus Überzeugung. Sieben Systeme in 18 Monaten,
+                jedes davon ein eigenständiges Produkt.
               </p>
-            </div>
 
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "0.8rem",
-                marginTop: "0.5rem",
-              }}
-            >
-              <div
-                style={{
-                  width: "8px",
-                  height: "8px",
-                  borderRadius: "50%",
-                  background: T.green,
-                  animation: "sn-pulse 2.5s ease-in-out infinite",
-                }}
-              />
-              <span
-                style={{
-                  fontFamily: T.mono,
-                  fontSize: "0.72rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color: T.green,
-                }}
-              >
-                OFFEN FÜR AUSTAUSCH
-              </span>
+              {/* Credential tags */}
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
+                {[
+                  "VP CX — TIER-1 BANK",
+                  "FRAUNHOFER FIT KOLLABORATION",
+                  "BMWK-GEFÖRDERT",
+                  "RWTH AACHEN",
+                  "30 JAHRE DESIGN & TECH",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    style={{
+                      fontFamily: C.mono,
+                      fontSize: "10px",
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      padding: "0.35rem 0.7rem",
+                      background: C.greenDim,
+                      color: C.textOnLight,
+                      border: "1px solid rgba(0, 255, 65, 0.15)",
+                    }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        </Reveal>
-      </Wrap>
-
-      {/* ═══════ PORTFOLIO ═══════ */}
-      <section style={{ background: T.bg1, padding: "6rem 1.5rem" }}>
-        <div style={{ maxWidth: "56rem", margin: "0 auto" }}>
-          <Label>PORTFOLIO_</Label>
-          <Reveal>
-            <h2 style={{ fontFamily: T.mono, fontSize: "clamp(1.5rem, 3vw, 2.2rem)", fontWeight: 700, lineHeight: 1.2, color: T.dark, marginBottom: "1rem" }}>
-              Gebaut, nicht nur gedacht.
-            </h2>
-            <p style={{ fontSize: "1rem", color: T.muted, lineHeight: 1.8, maxWidth: "36rem", marginBottom: "3rem" }}>
-              Projekte an der Schnittstelle von KI, Design und Strategie — jedes davon live, jedes davon funktioniert.
-            </p>
-          </Reveal>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.2rem" }}>
-            {[
-              { img: sapientBlockImg, name: "SAPIENTBLOCK", desc: "KI-gestützte Blockchain-Analyse", tag: "LIVE" },
-              { img: melodeyeImg, name: "MELODEYE", desc: "Emotionserkennung → Musik", tag: "BETA" },
-              { img: problaimImg, name: "PROBLAIM", desc: "KI-Problemdekomposition", tag: "BETA" },
-            ].map((p, i) => (
-              <Reveal key={p.name} delay={i * 0.12}>
-                <div
-                  style={{
-                    background: T.bg2,
-                    border: `1px solid ${T.border}`,
-                    overflow: "hidden",
-                    transition: "border-color 0.3s, transform 0.3s",
-                    cursor: "pointer",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = T.green; e.currentTarget.style.transform = "translateY(-4px)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = T.border; e.currentTarget.style.transform = "translateY(0)"; }}
-                >
-                  <div style={{ position: "relative", aspectRatio: "16/10", overflow: "hidden", background: "#1a1a1a" }}>
-                    <img src={p.img} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9, transition: "opacity 0.3s" }} loading="lazy" />
-                    <span style={{
-                      position: "absolute", top: "0.6rem", right: "0.6rem",
-                      fontFamily: T.mono, fontSize: "0.6rem", fontWeight: 700,
-                      letterSpacing: "0.1em", padding: "0.2rem 0.5rem",
-                      background: p.tag === "LIVE" ? T.green : T.dark,
-                      color: p.tag === "LIVE" ? T.dark : T.green,
-                    }}>{p.tag}</span>
-                  </div>
-                  <div style={{ padding: "1rem" }}>
-                    <h3 style={{ fontFamily: T.mono, fontSize: "0.78rem", fontWeight: 700, letterSpacing: "0.08em", color: T.dark, marginBottom: "0.3rem" }}>{p.name}</h3>
-                    <p style={{ fontSize: "0.82rem", color: T.muted, lineHeight: 1.5 }}>{p.desc}</p>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal delay={0.4}>
-            <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
-              <a
-                href="https://shapeneural.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#00b35a"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = T.green; }}
-                style={{
-                  display: "inline-block",
-                  fontFamily: T.mono,
-                  fontSize: "0.82rem",
-                  fontWeight: 700,
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                  color: T.dark,
-                  background: T.green,
-                  padding: "0.9rem 2.2rem",
-                  transition: "background 0.25s",
-                }}
-              >
-                Portfolio ansehen →
-              </a>
-            </div>
-          </Reveal>
+          </FadeIn>
         </div>
       </section>
 
-      {/* ═══════ SCHREIBEN ═══════ */}
-      <Wrap bg={T.bg1} id="kontakt">
-        <Label>SCHREIBEN_</Label>
-        <Reveal>
-          <h2
-            style={{
-              fontFamily: T.mono,
-              fontSize: "clamp(1.5rem, 3vw, 2.2rem)",
-              fontWeight: 700,
-              lineHeight: 1.2,
-              color: T.dark,
-              marginBottom: "1rem",
-            }}
-          >
-            Kein Formular.
-            <br />
-            Ein Anfang.
-          </h2>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p
-            style={{
-              fontSize: "1rem",
-              color: T.muted,
-              lineHeight: 1.8,
-              maxWidth: "38rem",
-              marginBottom: "2.5rem",
-            }}
-          >
-            Wenn etwas auf dieser Seite resoniert hat — oder wenn Sie an etwas
-            arbeiten, bei dem ein Austausch Sinn machen könnte — schreiben Sie
-            einfach. Ein Satz reicht.
-          </p>
-        </Reveal>
+      {/* ═══════════════════════════════════════════
+          PROJEKTE — Light
+      ═══════════════════════════════════════════ */}
+      <section id="projekte" style={{ background: C.light, padding: "7rem 1.5rem", borderTop: `1px solid rgba(0,0,0,0.06)` }}>
+        <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
+          <SectionLabel>PROJEKTE</SectionLabel>
 
-        {formState === "sent" ? (
-          <Reveal>
-            <div style={{ textAlign: "center", padding: "3rem 0" }}>
-              <div
-                style={{
-                  width: "48px",
-                  height: "48px",
-                  margin: "0 auto 1.5rem",
-                  borderRadius: "50%",
-                  background: `${T.green}18`,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke={T.green}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polyline points="4 10 8 14 16 6" />
-                </svg>
-              </div>
-              <h3
-                style={{
-                  fontFamily: T.mono,
-                  fontSize: "1.1rem",
-                  fontWeight: 700,
-                  color: T.dark,
-                  marginBottom: "0.5rem",
-                }}
-              >
-                Ist angekommen.
-              </h3>
-              <p style={{ fontSize: "0.92rem", color: T.muted }}>
-                Ich melde mich. Meistens innerhalb von ein, zwei Tagen.
-              </p>
-              <button
-                onClick={() => {
-                  setFormState("idle");
-                  setForm({ name: "", message: "" });
-                }}
-                style={{
-                  fontFamily: T.mono,
-                  color: T.green,
-                  fontSize: "0.72rem",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  marginTop: "1.5rem",
-                  letterSpacing: "0.05em",
-                }}
-              >
-                ← Zurück
-              </button>
-            </div>
-          </Reveal>
-        ) : (
-          <Reveal delay={0.15}>
-            <form
-              onSubmit={handleSubmit}
+          <FadeIn>
+            <h2
               style={{
-                maxWidth: "32rem",
-                display: "flex",
-                flexDirection: "column",
-                gap: "1.2rem",
+                fontFamily: C.mono,
+                fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                color: C.textOnLight,
+                marginBottom: "0.8rem",
               }}
             >
-              <div>
-                <label
-                  style={{
-                    fontFamily: T.mono,
-                    fontSize: "0.72rem",
-                    fontWeight: 700,
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: T.muted,
-                    display: "block",
-                    marginBottom: "0.5rem",
-                  }}
+              Gebaut. Nicht geplant.
+            </h2>
+            <p
+              style={{
+                fontSize: "1rem",
+                color: C.textOnLightSec,
+                lineHeight: 1.8,
+                maxWidth: "36rem",
+                marginBottom: "3rem",
+              }}
+            >
+              Jedes System ist eigenständig, funktioniert, und löst ein konkretes Problem.
+            </p>
+          </FadeIn>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+              gap: "1.2rem",
+            }}
+          >
+            {SHOWCASE_PROJECTS.map((p, i) => (
+              <FadeIn key={p.id} delay={i * 0.08}>
+                <Link
+                  to={`/project/${p.slug}`}
+                  style={{ textDecoration: "none", color: "inherit", display: "block" }}
                 >
-                  Name (optional)
-                </label>
-                <input
-                  type="text"
-                  value={form.name}
-                  onChange={set("name")}
-                  style={{
-                    width: "100%",
-                    fontFamily: T.sans,
-                    fontSize: "0.95rem",
-                    padding: "0.75rem 0.9rem",
-                    border: `1px solid ${T.border}`,
-                    background: T.bg2,
-                    outline: "none",
-                    transition: "border-color 0.25s",
-                    boxSizing: "border-box",
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = T.green)}
-                  onBlur={(e) => (e.target.style.borderColor = T.border)}
-                />
-              </div>
-              <div>
-                <label
-                  style={{
-                    fontFamily: T.mono,
-                    fontSize: "0.72rem",
-                    fontWeight: 700,
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: T.muted,
-                    display: "block",
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  Ihre Nachricht
-                </label>
-                <textarea
-                  value={form.message}
-                  onChange={set("message")}
-                  rows={5}
-                  style={{
-                    width: "100%",
-                    fontFamily: T.sans,
-                    fontSize: "0.95rem",
-                    padding: "0.75rem 0.9rem",
-                    border: `1px solid ${T.border}`,
-                    background: T.bg2,
-                    outline: "none",
-                    resize: "vertical",
-                    transition: "border-color 0.25s",
-                    boxSizing: "border-box",
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = T.green)}
-                  onBlur={(e) => (e.target.style.borderColor = T.border)}
-                />
-              </div>
-              <button
-                type="submit"
-                disabled={formState === "sending"}
-                onMouseEnter={() => setHoverSend(true)}
-                onMouseLeave={() => setHoverSend(false)}
+                  <div
+                    style={{
+                      background: "#fff",
+                      border: "1px solid rgba(0,0,0,0.08)",
+                      overflow: "hidden",
+                      transition: "border-color 0.3s, transform 0.3s",
+                      cursor: "pointer",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.borderColor = C.green;
+                      e.currentTarget.style.transform = "translateY(-3px)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.borderColor = "rgba(0,0,0,0.08)";
+                      e.currentTarget.style.transform = "translateY(0)";
+                    }}
+                  >
+                    <div style={{ position: "relative", aspectRatio: "16/10", overflow: "hidden", background: "#111" }}>
+                      <img
+                        src={p.image}
+                        alt={p.title}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9 }}
+                        loading="lazy"
+                      />
+                      <span
+                        style={{
+                          position: "absolute",
+                          top: "0.5rem",
+                          right: "0.5rem",
+                          fontFamily: C.mono,
+                          fontSize: "9px",
+                          fontWeight: 700,
+                          letterSpacing: "0.1em",
+                          padding: "0.2rem 0.5rem",
+                          background: p.status === "LIVE" ? C.green : C.dark,
+                          color: p.status === "LIVE" ? C.dark : C.green,
+                        }}
+                      >
+                        {p.status}
+                      </span>
+                    </div>
+                    <div style={{ padding: "1rem 1rem 1.2rem" }}>
+                      <h3
+                        style={{
+                          fontFamily: C.mono,
+                          fontSize: "12px",
+                          fontWeight: 700,
+                          letterSpacing: "0.08em",
+                          color: C.textOnLight,
+                          marginBottom: "0.4rem",
+                        }}
+                      >
+                        {p.title}
+                      </h3>
+                      <p
+                        style={{
+                          fontSize: "13px",
+                          color: C.textOnLightSec,
+                          lineHeight: 1.6,
+                        }}
+                      >
+                        {p.brief.length > 120 ? p.brief.slice(0, 120) + "…" : p.brief}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+
+          <FadeIn delay={0.4}>
+            <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+              <Link
+                to="/#projects"
                 style={{
-                  width: "100%",
-                  fontFamily: T.mono,
-                  fontWeight: 700,
-                  fontSize: "0.82rem",
+                  fontFamily: C.mono,
+                  fontSize: "12px",
+                  fontWeight: 600,
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
-                  cursor: "pointer",
-                  border: "none",
-                  padding: "0.9rem",
-                  color: hoverSend ? T.dark : "#fff",
-                  background: hoverSend ? T.green : T.dark,
-                  transition: "all 0.25s ease",
-                  opacity: formState === "sending" ? 0.6 : 1,
+                  textDecoration: "none",
+                  color: C.green,
+                  transition: "opacity 0.25s",
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
               >
-                {formState === "sending" ? "..." : "Abschicken"}
-              </button>
-            </form>
-          </Reveal>
-        )}
-      </Wrap>
+                → Alle Projekte im Detail
+              </Link>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
 
-      {/* ═══════ FOOTER ═══════ */}
-      <footer
-        style={{
-          background: T.dark,
-          padding: "3rem 1.5rem 2rem",
-          fontFamily: T.mono,
-        }}
-      >
+      {/* ═══════════════════════════════════════════
+          ANDOCKEN — Light
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: C.light, padding: "7rem 1.5rem", borderTop: "1px solid rgba(0,0,0,0.06)" }}>
+        <div style={{ maxWidth: "52rem", margin: "0 auto" }}>
+          <SectionLabel>ANDOCKEN</SectionLabel>
+
+          <FadeIn>
+            <h2
+              style={{
+                fontFamily: C.mono,
+                fontSize: "clamp(1.4rem, 3vw, 2rem)",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                color: C.textOnLight,
+                marginBottom: "0.8rem",
+              }}
+            >
+              Fünf Arten, hier anzudocken.
+            </h2>
+            <p
+              style={{
+                fontSize: "1rem",
+                color: C.textOnLightSec,
+                lineHeight: 1.8,
+                maxWidth: "36rem",
+                marginBottom: "3rem",
+              }}
+            >
+              Keine Personas. Keine Zielgruppen. Aktivitäten.
+            </p>
+          </FadeIn>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+            {SCENARIOS.map((s, i) => (
+              <FadeIn key={s.label} delay={i * 0.08}>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "1.2rem",
+                    alignItems: "flex-start",
+                    padding: "1.2rem 0",
+                    borderBottom: "1px solid rgba(0,0,0,0.06)",
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: C.mono,
+                      fontSize: "11px",
+                      fontWeight: 700,
+                      letterSpacing: "0.1em",
+                      textTransform: "uppercase",
+                      color: C.green,
+                      minWidth: "6rem",
+                      paddingTop: "0.15rem",
+                      flexShrink: 0,
+                    }}
+                  >
+                    {s.label}
+                  </span>
+                  <p
+                    style={{
+                      fontSize: "0.95rem",
+                      color: C.textOnLightSec,
+                      lineHeight: 1.75,
+                    }}
+                  >
+                    {s.text}
+                  </p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          ABLAUF — Dark strip
+      ═══════════════════════════════════════════ */}
+      <section style={{ background: C.dark, padding: "4rem 1.5rem" }}>
+        <div
+          style={{
+            maxWidth: "52rem",
+            margin: "0 auto",
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "3rem",
+            justifyContent: "space-between",
+          }}
+        >
+          {[
+            { step: "01", text: "Schreiben." },
+            { step: "02", text: "Gespräch. 30 Minuten." },
+            { step: "03", text: "Entscheiden." },
+          ].map((item, i) => (
+            <FadeIn key={item.step} delay={i * 0.12}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "0.8rem" }}>
+                <span
+                  style={{
+                    fontFamily: C.mono,
+                    fontSize: "11px",
+                    color: C.green,
+                    opacity: 0.5,
+                  }}
+                >
+                  {item.step}
+                </span>
+                <span
+                  style={{
+                    fontFamily: C.mono,
+                    fontSize: "14px",
+                    fontWeight: 600,
+                    letterSpacing: "0.05em",
+                    color: C.textOnDark,
+                  }}
+                >
+                  {item.text}
+                </span>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          KONTAKT — Light
+      ═══════════════════════════════════════════ */}
+      <section id="kontakt" style={{ background: C.light, padding: "7rem 1.5rem" }}>
+        <div style={{ maxWidth: "36rem", margin: "0 auto" }}>
+          <SectionLabel>SIGNAL</SectionLabel>
+
+          {formState === "sent" ? (
+            <FadeIn>
+              <div style={{ textAlign: "center", padding: "3rem 0" }}>
+                <div
+                  style={{
+                    width: "48px",
+                    height: "48px",
+                    margin: "0 auto 1.5rem",
+                    background: C.greenDim,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke={C.green} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="4 10 8 14 16 6" />
+                  </svg>
+                </div>
+                <h3
+                  style={{
+                    fontFamily: C.mono,
+                    fontSize: "1rem",
+                    fontWeight: 700,
+                    color: C.textOnLight,
+                    marginBottom: "0.5rem",
+                  }}
+                >
+                  Signal angekommen.
+                </h3>
+                <p style={{ fontSize: "0.92rem", color: C.textOnLightSec, marginBottom: "1.5rem" }}>
+                  Antwort folgt. Meistens innerhalb von ein, zwei Tagen.
+                </p>
+                <button
+                  onClick={() => { setFormState("idle"); setForm({ name: "", email: "", situation: "", message: "" }); }}
+                  style={{
+                    fontFamily: C.mono,
+                    fontSize: "11px",
+                    letterSpacing: "0.05em",
+                    color: C.green,
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                >
+                  ← Neue Nachricht
+                </button>
+              </div>
+            </FadeIn>
+          ) : (
+            <>
+              <FadeIn>
+                <h2
+                  style={{
+                    fontFamily: C.mono,
+                    fontSize: "clamp(1.4rem, 3vw, 1.8rem)",
+                    fontWeight: 700,
+                    lineHeight: 1.2,
+                    color: C.textOnLight,
+                    marginBottom: "2.5rem",
+                  }}
+                >
+                  Ein Satz reicht.
+                </h2>
+              </FadeIn>
+
+              <FadeIn delay={0.1}>
+                <form
+                  onSubmit={handleSubmit}
+                  style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}
+                >
+                  {/* Situation select */}
+                  <div>
+                    <label style={labelStyle}>Was beschreibt Ihre Situation?</label>
+                    <select
+                      value={form.situation}
+                      onChange={set("situation")}
+                      style={{
+                        ...inputStyle,
+                        color: form.situation ? C.textOnLight : C.textOnLightMuted,
+                        cursor: "pointer",
+                      }}
+                    >
+                      <option value="" disabled>Bitte auswählen…</option>
+                      {SITUATIONS.map((s) => (
+                        <option key={s} value={s}>{s}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* Name */}
+                  <div>
+                    <label style={labelStyle}>Name (optional)</label>
+                    <input type="text" value={form.name} onChange={set("name")} style={inputStyle} />
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <label style={labelStyle}>Email (optional — für Rückantwort)</label>
+                    <input type="email" value={form.email} onChange={set("email")} style={inputStyle} />
+                  </div>
+
+                  {/* Message */}
+                  <div>
+                    <label style={labelStyle}>Nachricht</label>
+                    <textarea
+                      value={form.message}
+                      onChange={set("message")}
+                      rows={5}
+                      required
+                      style={{ ...inputStyle, resize: "vertical" }}
+                    />
+                  </div>
+
+                  {/* Submit */}
+                  <button
+                    type="submit"
+                    disabled={formState === "sending"}
+                    style={{
+                      width: "100%",
+                      fontFamily: C.mono,
+                      fontWeight: 700,
+                      fontSize: "12px",
+                      letterSpacing: "0.1em",
+                      textTransform: "uppercase",
+                      cursor: "pointer",
+                      border: "none",
+                      padding: "0.9rem",
+                      color: "#fff",
+                      background: C.cta,
+                      transition: "opacity 0.25s",
+                      opacity: formState === "sending" ? 0.6 : 1,
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
+                    onMouseLeave={(e) => (e.currentTarget.style.opacity = formState === "sending" ? "0.6" : "1")}
+                  >
+                    {formState === "sending" ? "Wird gesendet…" : "Signal senden"}
+                  </button>
+
+                  {formState === "error" && (
+                    <p style={{ fontFamily: C.mono, fontSize: "11px", color: C.cta }}>
+                      Etwas ist schiefgelaufen. Versuche es nochmal.
+                    </p>
+                  )}
+                </form>
+              </FadeIn>
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          FOOTER — Dark
+      ═══════════════════════════════════════════ */}
+      <footer style={{ background: C.dark, padding: "3rem 1.5rem 2rem", fontFamily: C.mono }}>
         <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
-          {/* Links */}
           <div
             style={{
               display: "flex",
@@ -834,87 +925,70 @@ export default function AlliancePage() {
               marginBottom: "1.5rem",
             }}
           >
-            <a
-              href="https://www.linkedin.com/company/shapeneural/?viewAsMember=true"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#666",
-                fontSize: "0.78rem",
-                letterSpacing: "0.15em",
-                textDecoration: "none",
-                transition: "color 0.3s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = T.green)}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
-            >
-              <span style={{ color: T.green, opacity: 0.6 }}>[</span>
-              LINKEDIN
-              <span style={{ color: T.green, opacity: 0.6 }}>]</span>
-            </a>
-            <a
-              href="mailto:signal@shapeneural.com"
-              style={{
-                color: "#666",
-                fontSize: "0.78rem",
-                letterSpacing: "0.15em",
-                textDecoration: "none",
-                transition: "color 0.3s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
-            >
-              <span style={{ color: "#555", opacity: 0.6 }}>[</span>
-              EMAIL
-              <span style={{ color: "#555", opacity: 0.6 }}>]</span>
-            </a>
-            <a
-              href="/"
-              style={{
-                color: "#666",
-                fontSize: "0.78rem",
-                letterSpacing: "0.15em",
-                textDecoration: "none",
-                transition: "color 0.3s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#0f0")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
-            >
-              <span style={{ color: "#0f0", opacity: 0.6 }}>[</span>
-              MAINFRAME
-              <span style={{ color: "#0f0", opacity: 0.6 }}>]</span>
-            </a>
-            <a
-              href="/legal"
-              style={{
-                color: "#666",
-                fontSize: "0.78rem",
-                letterSpacing: "0.15em",
-                textDecoration: "none",
-                transition: "color 0.3s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#ff0055")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
-            >
-              <span style={{ color: "#ff0055", opacity: 0.6 }}>[</span>
-              LEGAL
-              <span style={{ color: "#ff0055", opacity: 0.6 }}>]</span>
-            </a>
+            {[
+              { label: "LINKEDIN", href: "https://www.linkedin.com/company/shapeneural/?viewAsMember=true", color: C.green },
+              { label: "EMAIL", href: "mailto:signal@shapeneural.com", color: C.textOnDarkMuted },
+              { label: "MAINFRAME", href: "/", color: C.green },
+              { label: "LEGAL", href: "/legal", color: C.cta },
+            ].map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                style={{
+                  color: C.textOnDarkMuted,
+                  fontSize: "11px",
+                  letterSpacing: "0.15em",
+                  textDecoration: "none",
+                  transition: "color 0.3s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = link.color)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = C.textOnDarkMuted)}
+              >
+                <span style={{ color: link.color, opacity: 0.5 }}>[</span>
+                {link.label}
+                <span style={{ color: link.color, opacity: 0.5 }}>]</span>
+              </a>
+            ))}
           </div>
 
-          {/* Copyright */}
           <div
             style={{
               textAlign: "center",
-              color: "#444",
-              fontSize: "0.68rem",
+              color: C.textOnDarkMuted,
+              fontSize: "10px",
               letterSpacing: "0.2em",
             }}
           >
-            © 2025 SHAPENEURAL // <span style={{ color: T.green }}>SYSTEM_ONLINE</span>
+            © 2025 SHAPENEURAL // <span style={{ color: C.green }}>DESIGNED_INTELLIGENCE</span>
           </div>
         </div>
       </footer>
     </div>
   );
 }
+
+/* ── Shared form styles ── */
+const labelStyle: React.CSSProperties = {
+  fontFamily: C.mono,
+  fontSize: "11px",
+  fontWeight: 600,
+  letterSpacing: "0.08em",
+  textTransform: "uppercase",
+  color: C.textOnLightSec,
+  display: "block",
+  marginBottom: "0.5rem",
+};
+
+const inputStyle: React.CSSProperties = {
+  width: "100%",
+  fontFamily: C.sans,
+  fontSize: "0.95rem",
+  padding: "0.75rem 0.9rem",
+  border: "1px solid rgba(0,0,0,0.1)",
+  background: "#fff",
+  outline: "none",
+  boxSizing: "border-box",
+  color: "#1a1a1a",
+};
