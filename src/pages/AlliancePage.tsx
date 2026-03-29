@@ -2,6 +2,9 @@ import { useState, useEffect, useRef, ReactNode, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import BindruneLogo from "@/components/BindruneLogo";
+import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
+import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
+import melodeyeImg from "@/assets/melodeye-screenshot.png";
 
 /* ── Design Tokens ── */
 const C = {
@@ -76,48 +79,6 @@ function FL({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   );
 }
 
-/* ── Simulated Screen Chrome ── */
-function ScreenChrome({ lineWidths }: { lineWidths: string[] }) {
-  return (
-    <div style={{
-      width: "82%", height: "72%",
-      border: "1px solid rgba(0,255,65,0.12)",
-      borderRadius: "2px",
-      position: "relative",
-      overflow: "hidden",
-    }}>
-      {/* Title bar */}
-      <div style={{
-        height: "22px",
-        background: "rgba(0,255,65,0.05)",
-        borderBottom: "1px solid rgba(0,255,65,0.08)",
-        display: "flex", alignItems: "center", padding: "0 10px", gap: "5px",
-      }}>
-        <div style={{ width: 5, height: 5, borderRadius: "50%", background: "rgba(0,255,65,0.15)" }} />
-        <div style={{ width: 5, height: 5, borderRadius: "50%", background: "rgba(0,255,65,0.15)" }} />
-        <div style={{ width: 5, height: 5, borderRadius: "50%", background: "rgba(0,255,65,0.15)" }} />
-      </div>
-      {/* Body lines */}
-      <div style={{ padding: "14px", display: "flex", flexDirection: "column", gap: "6px" }}>
-        {lineWidths.map((w, i) => (
-          <div key={i} style={{
-            height: "3px",
-            width: w,
-            background: i === 0 ? "rgba(0,255,65,0.2)" : "rgba(0,255,65,0.08)",
-            borderRadius: "1px",
-          }} />
-        ))}
-        <div style={{
-          width: "100%", height: "40px", marginTop: "6px",
-          background: "rgba(0,255,65,0.04)",
-          border: "1px solid rgba(0,255,65,0.06)",
-          borderRadius: "1px",
-        }} />
-      </div>
-    </div>
-  );
-}
-
 /* ── Project Data ── */
 const FEATURED_PROJECTS = [
   {
@@ -130,8 +91,7 @@ const FEATURED_PROJECTS = [
       { num: "74", label: "Branchen" },
       { num: "RAG", label: "Multi-LLM Pipeline" },
     ],
-    visualBg: "linear-gradient(160deg, #050a06 0%, #0a1a0e 40%, #071209 100%)",
-    lines: ["60%", "80%", "45%", "70%", "60%"],
+    image: sapientBlockImg,
   },
   {
     title: "SAPIENTSHIFT",
@@ -143,8 +103,7 @@ const FEATURED_PROJECTS = [
       { num: "3", label: "Analyse-Pipelines" },
       { num: "10", label: "KI-Agenten" },
     ],
-    visualBg: "linear-gradient(160deg, #050608 0%, #0a0e1a 40%, #070912 100%)",
-    lines: ["70%", "45%", "80%", "60%", "50%"],
+    image: sapientshiftImg,
     reverse: true,
   },
   {
@@ -157,8 +116,7 @@ const FEATURED_PROJECTS = [
       { num: "100%", label: "Browser-basiert" },
       { num: "0", label: "Server-Uploads" },
     ],
-    visualBg: "linear-gradient(160deg, #0a0608 0%, #1a0a14 40%, #12070d 100%)",
-    lines: ["45%", "70%", "60%", "80%", "55%"],
+    image: melodeyeImg,
   },
 ];
 
@@ -276,6 +234,18 @@ export default function AlliancePage() {
     }
   }, []);
 
+  /* ── Section label color helper ── */
+  const sectionLabel = (text: string, onDark: boolean) => (
+    <p style={{
+      fontFamily: C.mono, fontSize: 11, fontWeight: 400,
+      letterSpacing: "0.13em", textTransform: "uppercase",
+      color: onDark ? C.green : C.textDark,
+      marginBottom: 48,
+    }}>
+      {">"} {text}
+    </p>
+  );
+
   return (
     <div style={{ fontFamily: C.sans, color: C.textDark, background: C.bgDark, WebkitFontSmoothing: "antialiased" }}>
       <Helmet>
@@ -300,8 +270,8 @@ export default function AlliancePage() {
           backgroundSize: "60px 60px",
         }} />
 
-        <div style={{ position: "relative" }}>
-          <div className="hero-logo" style={{
+        <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div style={{
             marginBottom: 28, opacity: 0,
             animation: "allianceFadeIn 0.5s ease 0.2s forwards",
           }}>
@@ -320,9 +290,13 @@ export default function AlliancePage() {
             fontFamily: C.mono,
             fontSize: "clamp(24px, 3.2vw, 34px)",
             fontWeight: 400, lineHeight: 1.6,
-            color: C.textLight, maxWidth: 640,
+            color: C.textLight, maxWidth: 680,
           }}>
-            {["Sieben KI-Systeme. Alle gebaut.", "Manche allein, manche mit anderen.", "Hier entsteht das nächste."].map((line, i) => (
+            {[
+              "Strategie, Design und Technologie —",
+              "verbunden durch KI.",
+              "Gebaut in Frankfurt. Offen für Resonanz.",
+            ].map((line, i) => (
               <span key={i} style={{
                 display: "block",
                 opacity: 0,
@@ -336,10 +310,10 @@ export default function AlliancePage() {
           <p style={{
             fontFamily: C.sans, fontSize: 16,
             color: C.textLightSub, marginTop: 40,
-            maxWidth: 420, lineHeight: 1.6,
+            maxWidth: 460, lineHeight: 1.6,
             opacity: 0, animation: "allianceFadeIn 0.6s ease 1.4s forwards",
           }}>
-            Ein unabhängiges Lab in Frankfurt. KI-Systeme an der Schnittstelle von Strategie, Design und Technologie — seit 2024.
+            Ein unabhängiges KI-Lab an der Schnittstelle von Konzernverständnis und kreativem Experiment — seit 2024.
           </p>
         </div>
 
@@ -356,7 +330,7 @@ export default function AlliancePage() {
         </div>
       </section>
 
-      {/* ═══════ SIGNAL STRIP ═══════ */}
+      {/* ═══════ SIGNAL STRIP — 3 Proof Points ═══════ */}
       <div style={{
         background: C.bgDarkAlt,
         borderTop: "1px solid rgba(0,255,65,0.08)",
@@ -368,10 +342,9 @@ export default function AlliancePage() {
           gap: 40, flexWrap: "wrap", padding: "0 24px",
         }}>
           {[
-            "FRAUNHOFER FIT KOLLABORATION",
-            "BMWK-GEFÖRDERT",
+            "FRAUNHOFER FIT COMMUNITY",
             "7 LIVE-SYSTEME",
-            "BLOCKCHAIN REALLABOR · RWTH AACHEN",
+            "15+ KI-TECHNOLOGIEN IM EINSATZ",
           ].map((item, i) => (
             <span key={item} style={{ display: "contents" }}>
               {i > 0 && <span style={{ width: 4, height: 4, background: C.green, borderRadius: "50%", opacity: 0.4, flexShrink: 0 }} />}
@@ -389,11 +362,7 @@ export default function AlliancePage() {
       {/* ═══════ PROJEKTE ═══════ */}
       <section style={{ background: C.bgLight, padding: "120px 0 100px" }}>
         <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 40px" }}>
-          <FL><p style={{
-            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
-            letterSpacing: "0.13em", textTransform: "uppercase",
-            color: C.green, marginBottom: 48,
-          }}>{">"} PROJEKTE_</p></FL>
+          <FL>{sectionLabel("PROJEKTE_", false)}</FL>
 
           {/* Project cards */}
           <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -412,14 +381,22 @@ export default function AlliancePage() {
                   onMouseLeave={e => (e.currentTarget.style.boxShadow = "none")}
                   className="project-card"
                 >
-                  {/* Visual */}
+                  {/* Visual — real screenshot */}
                   <div style={{
                     aspectRatio: "4 / 3",
-                    background: p.visualBg,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    overflow: "hidden", direction: "ltr",
+                    background: "#0a0a0a",
+                    overflow: "hidden",
+                    direction: "ltr",
                   }}>
-                    <ScreenChrome lineWidths={p.lines} />
+                    <img
+                      src={p.image}
+                      alt={`${p.title} Screenshot`}
+                      style={{
+                        width: "100%", height: "100%",
+                        objectFit: "cover",
+                        objectPosition: "top center",
+                      }}
+                    />
                   </div>
 
                   {/* Content */}
@@ -484,10 +461,10 @@ export default function AlliancePage() {
           <FI delay={0.3}>
             <div style={{ marginTop: 48 }}>
               <Link to="/#projects" style={{
-                fontFamily: C.mono, fontSize: 13, color: C.green,
+                fontFamily: C.mono, fontSize: 13, color: C.textDarkSub,
                 textDecoration: "none", letterSpacing: "0.04em",
-                borderBottom: `1px solid ${C.greenLine}`,
-                paddingBottom: 2, transition: "border-color 0.2s",
+                borderBottom: `1px solid ${C.textDarkMuted}`,
+                paddingBottom: 2, transition: "color 0.2s, border-color 0.2s",
               }}>
                 + 4 weitere Projekte auf shapeneural.com →
               </Link>
@@ -508,11 +485,7 @@ export default function AlliancePage() {
         }} />
 
         <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 40px", position: "relative" }}>
-          <FL><p style={{
-            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
-            letterSpacing: "0.13em", textTransform: "uppercase",
-            color: C.green, marginBottom: 48,
-          }}>{">"} KONTEXT_</p></FL>
+          <FL>{sectionLabel("KONTEXT_", true)}</FL>
 
           <div style={{
             display: "grid",
@@ -578,11 +551,7 @@ export default function AlliancePage() {
       {/* ═══════ ANDOCKEN ═══════ */}
       <section style={{ background: C.bgLight, padding: "120px 0" }}>
         <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 40px" }}>
-          <FL><p style={{
-            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
-            letterSpacing: "0.13em", textTransform: "uppercase",
-            color: C.green, marginBottom: 48,
-          }}>{">"} ANDOCKEN_</p></FL>
+          <FL>{sectionLabel("ANDOCKEN_", false)}</FL>
 
           <div style={{
             display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2,
@@ -672,11 +641,7 @@ export default function AlliancePage() {
       {/* ═══════ KONTAKT ═══════ */}
       <section id="kontakt" style={{ background: C.bgLight, padding: "120px 0" }}>
         <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 40px" }}>
-          <FL><p style={{
-            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
-            letterSpacing: "0.13em", textTransform: "uppercase",
-            color: C.green, marginBottom: 48,
-          }}>{">"} SIGNAL_</p></FL>
+          <FL>{sectionLabel("SIGNAL_", false)}</FL>
 
           {formState === "sent" ? (
             <FI>
