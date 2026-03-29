@@ -1,10 +1,8 @@
-import { useState, useEffect, useRef, ReactNode, FormEvent } from "react";
+import { useState, useEffect, useRef, useCallback, ReactNode, FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import BindruneLogo from "@/components/BindruneLogo";
-import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
-import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
-import melodeyeImg from "@/assets/melodeye-screenshot.png";
+import btcRadioImg from "@/assets/btc-radio-screenshot.png";
 
 /* ── Design Tokens ── */
 const C = {
