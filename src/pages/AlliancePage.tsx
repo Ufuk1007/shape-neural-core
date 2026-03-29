@@ -199,7 +199,7 @@ export default function AlliancePage() {
     if (!form.message.trim()) return;
     setFormState("sending");
     try {
-      const res = await fetch("/api/forge-deliver", {
+      const res = await fetch("https://shapeneural.com/api/forge-deliver", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -293,9 +293,9 @@ export default function AlliancePage() {
             color: C.textLight, maxWidth: 680,
           }}>
             {[
-              "Strategie, Design und Technologie —",
-              "verbunden durch KI.",
-              "Gebaut in Frankfurt. Offen für Resonanz.",
+              "Verstehen, was entsteht.",
+              "Bauen, was sinnvoll ist.",
+              "Systeme und Perspektiven entwickeln sich gemeinsam.",
             ].map((line, i) => (
               <span key={i} style={{
                 display: "block",
@@ -313,7 +313,7 @@ export default function AlliancePage() {
             maxWidth: 460, lineHeight: 1.6,
             opacity: 0, animation: "allianceFadeIn 0.6s ease 1.4s forwards",
           }}>
-            Ein unabhängiges KI-Lab an der Schnittstelle von Konzernverständnis und kreativem Experiment — seit 2024.
+            Ein unabhängiges KI-Lab in Frankfurt. Seit 2024.
           </p>
         </div>
 
@@ -647,7 +647,7 @@ export default function AlliancePage() {
             <FI>
               <div>
                 <p style={{
-                  fontFamily: C.mono, fontSize: 16, color: C.green,
+                  fontFamily: C.mono, fontSize: 16, color: C.textDark,
                 }}>
                   Ist angekommen. Ich melde mich.
                 </p>
