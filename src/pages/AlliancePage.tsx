@@ -1,994 +1,859 @@
-import { useState, FormEvent } from "react";
+import { useState, useEffect, useRef, ReactNode, FormEvent } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import BindruneLogo from "@/components/BindruneLogo";
-import { PROJECTS } from "@/data/projects";
 
 /* ── Design Tokens ── */
 const C = {
-  dark: "#0a0a0a",
-  light: "#f5f4f0",
+  bgDark: "#0a0a0a",
+  bgDarkAlt: "#111111",
+  bgLight: "#f5f4f0",
+  bgAlt: "#eceae4",
   green: "#00ff41",
+  greenMid: "rgba(0, 255, 65, 0.45)",
   greenDim: "rgba(0, 255, 65, 0.10)",
-  cta: "#ff0055",
-  textOnLight: "#1a1a1a",
-  textOnLightSec: "rgba(0,0,0,0.55)",
-  textOnLightMuted: "rgba(0,0,0,0.35)",
-  textOnDark: "rgba(255,255,255,0.92)",
-  textOnDarkSec: "rgba(255,255,255,0.65)",
-  textOnDarkMuted: "rgba(255,255,255,0.4)",
+  greenLine: "rgba(0, 255, 65, 0.20)",
+  magenta: "#ff0055",
+  textDark: "#1a1a1a",
+  textDarkSub: "rgba(0, 0, 0, 0.55)",
+  textDarkMuted: "rgba(0, 0, 0, 0.35)",
+  textLight: "rgba(255, 255, 255, 0.92)",
+  textLightMid: "rgba(255, 255, 255, 0.65)",
+  textLightSub: "rgba(255, 255, 255, 0.4)",
+  textLightMuted: "rgba(255, 255, 255, 0.18)",
   mono: "'IBM Plex Mono', 'Courier New', monospace",
   sans: "'DM Sans', system-ui, sans-serif",
 };
 
-/* ── Animation variants ── */
-const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  visible: (delay: number = 0) => ({
-    opacity: 1, y: 0,
-    transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const, delay },
-  }),
-};
+/* ── Intersection Observer hook ── */
+function useReveal(threshold = 0.12): [React.RefObject<HTMLDivElement>, boolean] {
+  const ref = useRef<HTMLDivElement>(null);
+  const [vis, setVis] = useState(false);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setVis(true); obs.disconnect(); } },
+      { threshold }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [threshold]);
+  return [ref, vis];
+}
 
-const slideLeft = {
-  hidden: { opacity: 0, x: -20 },
-  visible: (delay: number = 0) => ({
-    opacity: 1, x: 0,
-    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] as const, delay },
-  }),
-};
-
-/* ── Section Label ── */
-function SectionLabel({ children, onDark = false }: { children: string; onDark?: boolean }) {
+/* ── Fade-in from bottom ── */
+function FI({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
+  const [ref, vis] = useReveal();
   return (
-    <motion.p
-      variants={slideLeft}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
-      custom={0}
+    <div
+      ref={ref}
       style={{
-        fontFamily: C.mono,
-        fontSize: "11px",
-        fontWeight: 600,
-        letterSpacing: "0.13em",
-        textTransform: "uppercase",
-        color: C.green,
-        marginBottom: "1.5rem",
+        opacity: vis ? 1 : 0,
+        transform: vis ? "translateY(0)" : "translateY(28px)",
+        transition: `opacity 0.7s ease ${delay}s, transform 0.7s ease ${delay}s`,
       }}
     >
-      {">"} {children}_
-    </motion.p>
+      {children}
+    </div>
   );
 }
 
-/* ── Motion wrapper ── */
-function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
+/* ── Fade-in from left ── */
+function FL({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
+  const [ref, vis] = useReveal();
   return (
-    <motion.div
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
-      custom={delay}
-      className={className}
+    <div
+      ref={ref}
+      style={{
+        opacity: vis ? 1 : 0,
+        transform: vis ? "translateX(0)" : "translateX(-24px)",
+        transition: `opacity 0.5s ease ${delay}s, transform 0.5s ease ${delay}s`,
+      }}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
-/* ── Projects to show (all with images) ── */
-const SHOWCASE_PROJECTS = PROJECTS.filter(p => p.image);
+/* ── Simulated Screen Chrome ── */
+function ScreenChrome({ lineWidths }: { lineWidths: string[] }) {
+  return (
+    <div style={{
+      width: "82%", height: "72%",
+      border: "1px solid rgba(0,255,65,0.12)",
+      borderRadius: "2px",
+      position: "relative",
+      overflow: "hidden",
+    }}>
+      {/* Title bar */}
+      <div style={{
+        height: "22px",
+        background: "rgba(0,255,65,0.05)",
+        borderBottom: "1px solid rgba(0,255,65,0.08)",
+        display: "flex", alignItems: "center", padding: "0 10px", gap: "5px",
+      }}>
+        <div style={{ width: 5, height: 5, borderRadius: "50%", background: "rgba(0,255,65,0.15)" }} />
+        <div style={{ width: 5, height: 5, borderRadius: "50%", background: "rgba(0,255,65,0.15)" }} />
+        <div style={{ width: 5, height: 5, borderRadius: "50%", background: "rgba(0,255,65,0.15)" }} />
+      </div>
+      {/* Body lines */}
+      <div style={{ padding: "14px", display: "flex", flexDirection: "column", gap: "6px" }}>
+        {lineWidths.map((w, i) => (
+          <div key={i} style={{
+            height: "3px",
+            width: w,
+            background: i === 0 ? "rgba(0,255,65,0.2)" : "rgba(0,255,65,0.08)",
+            borderRadius: "1px",
+          }} />
+        ))}
+        <div style={{
+          width: "100%", height: "40px", marginTop: "6px",
+          background: "rgba(0,255,65,0.04)",
+          border: "1px solid rgba(0,255,65,0.06)",
+          borderRadius: "1px",
+        }} />
+      </div>
+    </div>
+  );
+}
 
-/* ── Andocken scenarios ── */
-const SCENARIOS = [
+/* ── Project Data ── */
+const FEATURED_PROJECTS = [
   {
-    label: "SPRECHEN",
-    text: "Events, Panels, Vorträge — über KI-Systeme, die gebaut werden. Keine Keynote-Slides mit Stock-Fotos. Echte Architektur, echte Fehler, echte Ergebnisse.",
+    title: "SAPIENTBLOCK",
+    status: "LIVE" as const,
+    collab: "Blockchain Reallabor · Fraunhofer FIT · Prof. Wolfgang Prinz · RWTH Aachen",
+    brief: "KI-gestützte Blockchain-Relevanzanalyse für den deutschen Mittelstand. Die Plattform nimmt ein Unternehmensprofil auf, gleicht es gegen validierte Use Cases ab und liefert einen datengetriebenen Relevanz-Score mit konkreten Empfehlungen.",
+    stats: [
+      { num: "250+", label: "Validierte Use Cases" },
+      { num: "74", label: "Branchen" },
+      { num: "RAG", label: "Multi-LLM Pipeline" },
+    ],
+    visualBg: "linear-gradient(160deg, #050a06 0%, #0a1a0e 40%, #071209 100%)",
+    lines: ["60%", "80%", "45%", "70%", "60%"],
   },
   {
-    label: "VERMITTELN",
-    text: "Schulen, Hochschulen, Weiterbildung — KI greifbar machen. Nicht als Theorie, sondern als Werkzeug, das man anfassen und benutzen kann.",
+    title: "SAPIENTSHIFT",
+    status: "LIVE" as const,
+    collab: "",
+    brief: "KI-Potenzialanalyse, die das abstrakte Versprechen von KI in personalisierte, handlungsrelevante Einblicke übersetzt. Drei Analyse-Pipelines für Unternehmen, Teams und Einzelpersonen — plus eine autonome Creative Guild aus 10 KI-Agenten, die kontextbezogene Inhalte generiert.",
+    stats: [
+      { num: "318", label: "Kuratierte Use Cases" },
+      { num: "3", label: "Analyse-Pipelines" },
+      { num: "10", label: "KI-Agenten" },
+    ],
+    visualBg: "linear-gradient(160deg, #050608 0%, #0a0e1a 40%, #070912 100%)",
+    lines: ["70%", "45%", "80%", "60%", "50%"],
+    reverse: true,
   },
   {
-    label: "BAUEN",
-    text: "Ein Problem, eine Idee, ein Prototyp. Zusammen etwas bauen, das vorher nicht existiert hat. Tage, nicht Monate.",
-  },
-  {
-    label: "DENKEN",
-    text: "Sparring, Perspektivwechsel, Domänen kreuzen. Wenn ein Gedanke einen Gegenpart braucht.",
-  },
-  {
-    label: "FORSCHEN",
-    text: "Interdisziplinäre Kollaboration — Emotion und KI, Blockchain und Mittelstand, Musik und Marktdaten. Die interessantesten Ergebnisse entstehen an den Rändern.",
+    title: "MELODEYE",
+    status: "BETA" as const,
+    collab: "",
+    brief: "Multimodale Emotionserkennung, die zwischen gezeigter und erlebter Emotion unterscheidet — und Musik generiert, die auf das reagiert, was man wirklich fühlt. Gesichtserkennung, Blickverfolgung und Pupillendynamik in Echtzeit, vollständig im Browser. Kein Server sieht biometrische Daten.",
+    stats: [
+      { num: "EMER", label: "Emotionstheorie" },
+      { num: "100%", label: "Browser-basiert" },
+      { num: "0", label: "Server-Uploads" },
+    ],
+    visualBg: "linear-gradient(160deg, #0a0608 0%, #1a0a14 40%, #12070d 100%)",
+    lines: ["45%", "70%", "60%", "80%", "55%"],
   },
 ];
 
-/* ── Contact situation options ── */
-const SITUATIONS = [
-  "Ich habe eine Idee und suche einen Sparringspartner.",
-  "Wir suchen einen Speaker / Workshop-Leiter.",
-  "Wir wollen KI in unserer Organisation greifbar machen.",
-  "Ich baue selbst und suche Austausch.",
-  "Etwas anderes.",
+const DOCK_CARDS = [
+  {
+    title: "Vortrag oder Workshop",
+    desc: "Wie KI tatsächlich funktioniert — nicht als Folie, sondern mit dem, was hier gebaut wird. Hands-on, mit laufenden Systemen, auf dem Niveau des Publikums.",
+    examples: ["Schulen & Hochschulen", "Events & Konferenzen", "Unternehmensteams", "IHKs & Verbände"],
+  },
+  {
+    title: "Gemeinsam bauen",
+    desc: "Eine Idee, die allein nicht geht. Zwei Perspektiven, die zusammen etwas Neues ergeben. Kein Auftrag — ein gemeinsames Projekt, an dem beide wachsen.",
+    examples: ["KI-Prototypen", "Multi-LLM-Architekturen", "Daten × Design", "Forschungskooperationen"],
+  },
+  {
+    title: "Sparring",
+    desc: "Jemand baut etwas und will eine ehrliche Meinung. Oder denkt über etwas nach und braucht einen zweiten Kopf. Ein Gespräch, mehr nicht.",
+    examples: ["Produktstrategie", "KI-Integration", "CX & Kundenstrategie", "Technische Architektur"],
+  },
+  {
+    title: "Forschung und Experiment",
+    desc: "Ein Thema, das untersucht werden will. Eine Frage, die noch keine Antwort hat. Das Lab als Ort, an dem man sie suchen kann — mit echten Werkzeugen und echten Daten.",
+    examples: ["Emotionserkennung", "Generative Musik", "KI-Agentensysteme", "Data Sonification"],
+  },
 ];
 
+const TIMELINE = [
+  { year: "SEIT 1996", text: "Graffiti. Visuelle Kommunikation ohne Erlaubnis. Der Ursprung von SN." },
+  { year: "2000er", text: "Design, Marke, digitale Transformation. Agenturen, Konzerne, Systeme." },
+  { year: "2010er", text: "CX-Strategie im Bankensektor. Kundenerfahrung als Systemdesign." },
+  { year: "2024 →", text: "ShapeNeural. KI-Systeme, die funktionieren. Sieben und es werden mehr." },
+];
+
+/* ── Scroll-to-top button ── */
+function ScrollTop() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShow(window.scrollY > 600);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="Nach oben"
+      style={{
+        position: "fixed", bottom: 28, right: 28,
+        width: 38, height: 38,
+        background: "rgba(10,10,10,0.85)",
+        border: `1px solid ${C.greenLine}`,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        cursor: "pointer",
+        opacity: show ? 1 : 0,
+        pointerEvents: show ? "auto" : "none",
+        transition: "opacity 0.3s, background 0.2s",
+        zIndex: 100,
+        backdropFilter: "blur(8px)",
+      }}
+      onMouseEnter={e => (e.currentTarget.style.background = "rgba(0,255,65,0.12)")}
+      onMouseLeave={e => (e.currentTarget.style.background = "rgba(10,10,10,0.85)")}
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={C.green} strokeWidth="2" strokeLinecap="round">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+  );
+}
+
+/* ══════════════════════════════════════════════
+   MAIN COMPONENT
+   ══════════════════════════════════════════════ */
 export default function AlliancePage() {
-  const [formState, setFormState] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [form, setForm] = useState({ name: "", email: "", situation: "", message: "" });
-
-  const set = (k: keyof typeof form) => (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => setForm({ ...form, [k]: e.target.value });
+  const [formState, setFormState] = useState<"idle" | "sending" | "sent">("idle");
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    setForm({ ...form, [k]: e.target.value });
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!form.message.trim()) return;
     setFormState("sending");
-
     try {
       const res = await fetch("/api/forge-deliver", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           to: "signal@shapeneural.com",
-          subject: `Alliance — ${form.name || "Nachricht"}${form.situation ? ` [${form.situation}]` : ""}`,
+          subject: `Alliance — ${form.name || "Nachricht"}`,
           content: [
             form.name && `Name: ${form.name}`,
             form.email && `Email: ${form.email}`,
-            form.situation && `Situation: ${form.situation}`,
-            "",
-            form.message,
+            "", form.message,
           ].filter(Boolean).join("\n"),
           email: form.email || undefined,
         }),
       });
-      if (!res.ok) throw new Error("Send failed");
+      if (!res.ok) throw new Error();
       setFormState("sent");
     } catch {
-      // Fallback to mailto
       const subject = encodeURIComponent(`Alliance — ${form.name || "Nachricht"}`);
-      const body = encodeURIComponent(
-        [form.name && `Von: ${form.name}`, form.situation && `Kontext: ${form.situation}`, "", form.message]
-          .filter(Boolean).join("\n")
-      );
+      const body = encodeURIComponent(form.message);
       window.location.href = `mailto:signal@shapeneural.com?subject=${subject}&body=${body}`;
       setFormState("sent");
     }
   };
 
+  // Load fonts
+  useEffect(() => {
+    if (!document.getElementById("alliance-fonts")) {
+      const link = document.createElement("link");
+      link.id = "alliance-fonts";
+      link.rel = "stylesheet";
+      link.href = "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap";
+      document.head.appendChild(link);
+    }
+  }, []);
+
   return (
-    <div style={{ fontFamily: C.sans, color: C.textOnLight }}>
+    <div style={{ fontFamily: C.sans, color: C.textDark, background: C.bgDark, WebkitFontSmoothing: "antialiased" }}>
       <Helmet>
         <title>Alliance — ShapeNeural</title>
         <meta name="description" content="ShapeNeural ist ein unabhängiges KI-Lab. Sieben Systeme, eine offene Tür." />
       </Helmet>
 
-      {/* ═══════════════════════════════════════════
-          HERO — Dark
-      ═══════════════════════════════════════════ */}
-      <section
-        style={{
-          position: "relative",
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: C.dark,
-          padding: "6rem 1.5rem",
-          overflow: "hidden",
-        }}
-      >
-        {/* Subtle grid */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            opacity: 0.03,
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-            pointerEvents: "none",
-          }}
-        />
+      {/* ═══════ HERO ═══════ */}
+      <section style={{
+        background: C.bgDark,
+        minHeight: "80vh",
+        display: "flex", flexDirection: "column",
+        alignItems: "center", justifyContent: "center",
+        textAlign: "center",
+        padding: "100px 40px 80px",
+        position: "relative", overflow: "hidden",
+      }}>
+        {/* Grid texture */}
+        <div style={{
+          position: "absolute", inset: 0, pointerEvents: "none",
+          backgroundImage: "linear-gradient(rgba(0,255,65,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,255,65,0.03) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }} />
 
-        <div style={{ maxWidth: "52rem", position: "relative" }}>
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            style={{ marginBottom: "2.5rem" }}
-          >
+        <div style={{ position: "relative" }}>
+          <div className="hero-logo" style={{
+            marginBottom: 28, opacity: 0,
+            animation: "allianceFadeIn 0.5s ease 0.2s forwards",
+          }}>
             <BindruneLogo size={40} onDark={true} />
-          </motion.div>
+          </div>
 
-          <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            style={{
-              fontFamily: C.mono,
-              fontSize: "11px",
-              fontWeight: 600,
-              letterSpacing: "0.13em",
-              textTransform: "uppercase",
-              color: C.green,
-              marginBottom: "2rem",
-            }}
-          >
-            {">"} SHAPENEURAL // ALLIANCE_
-          </motion.p>
+          <p style={{
+            fontFamily: C.mono, fontSize: 11, letterSpacing: "0.14em",
+            color: C.green, marginBottom: 56,
+            opacity: 0, animation: "allianceFadeIn 0.5s ease 0.4s forwards",
+          }}>
+            {">"} SHAPENEURAL_ALLIANCE
+          </p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            style={{
-              fontFamily: C.mono,
-              fontSize: "clamp(2rem, 5vw, 3.4rem)",
-              fontWeight: 700,
-              lineHeight: 1.15,
-              color: C.textOnDark,
-              marginBottom: "2rem",
-            }}
-          >
-            Sieben KI-Systeme.
-            <br />
-            Ein Lab.
-            <br />
-            <span style={{ color: C.green }}>Eine offene Tür.</span>
-          </motion.h1>
+          <h1 style={{
+            fontFamily: C.mono,
+            fontSize: "clamp(24px, 3.2vw, 34px)",
+            fontWeight: 400, lineHeight: 1.6,
+            color: C.textLight, maxWidth: 640,
+          }}>
+            {["Sieben KI-Systeme. Alle gebaut.", "Manche allein, manche mit anderen.", "Hier entsteht das nächste."].map((line, i) => (
+              <span key={i} style={{
+                display: "block",
+                opacity: 0,
+                animation: `allianceSlideUp 0.65s ease ${0.6 + i * 0.2}s forwards`,
+              }}>
+                {line}
+              </span>
+            ))}
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            style={{
-              fontFamily: C.sans,
-              fontSize: "1.05rem",
-              color: C.textOnDarkSec,
-              lineHeight: 1.8,
-              maxWidth: "38rem",
-              marginBottom: "3rem",
-            }}
-          >
-            ShapeNeural baut KI-Systeme — von Blockchain-Analyse über Emotionserkennung
-            bis zu generativen Soundscapes. Unabhängig, eigenfinanziert, in Kollaboration
-            mit Fraunhofer FIT.
-          </motion.p>
+          <p style={{
+            fontFamily: C.sans, fontSize: 16,
+            color: C.textLightSub, marginTop: 40,
+            maxWidth: 420, lineHeight: 1.6,
+            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.4s forwards",
+          }}>
+            Ein unabhängiges Lab in Frankfurt. KI-Systeme an der Schnittstelle von Strategie, Design und Technologie — seit 2024.
+          </p>
+        </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}
-          >
-            <a
-              href="#kontakt"
-              style={{
-                fontFamily: C.mono,
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                textDecoration: "none",
-                padding: "0.85rem 2rem",
-                background: C.cta,
-                color: "#fff",
-                transition: "opacity 0.25s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-            >
-              Signal senden
-            </a>
-            <a
-              href="#projekte"
-              style={{
-                fontFamily: C.mono,
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                textDecoration: "none",
-                padding: "0.85rem 2rem",
-                border: `1px solid ${C.green}`,
-                color: C.green,
-                transition: "all 0.25s",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = C.green;
-                e.currentTarget.style.color = C.dark;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = "transparent";
-                e.currentTarget.style.color = C.green;
-              }}
-            >
-              Was hier gebaut wird
-            </a>
-          </motion.div>
+        {/* Scroll indicator */}
+        <div style={{
+          position: "absolute", bottom: 36, left: "50%", transform: "translateX(-50%)",
+          opacity: 0, animation: "allianceFadeIn 0.5s ease 1.8s forwards",
+        }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="rgba(255,255,255,0.15)" strokeWidth="2" strokeLinecap="round"
+            style={{ animation: "allianceBob 2.8s ease-in-out infinite" }}>
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          KONTEXT — Dark
-      ═══════════════════════════════════════════ */}
-      <section style={{ background: C.dark, padding: "7rem 1.5rem", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-        <div style={{ maxWidth: "52rem", margin: "0 auto" }}>
-          <SectionLabel onDark>KONTEXT</SectionLabel>
-
-          <FadeIn>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-                gap: "2.5rem",
-                marginBottom: "3rem",
-              }}
-            >
-              {[
-                { num: "7", label: "KI-Systeme gebaut" },
-                { num: "250+", label: "Validierte Use Cases" },
-                { num: "1", label: "Fraunhofer-Kollaboration" },
-                { num: "2024–", label: "Lab aktiv seit" },
-              ].map((item, i) => (
-                <FadeIn key={item.label} delay={i * 0.1}>
-                  <div>
-                    <span
-                      style={{
-                        fontFamily: C.mono,
-                        fontSize: "clamp(2rem, 4vw, 2.8rem)",
-                        fontWeight: 700,
-                        color: C.green,
-                        display: "block",
-                        marginBottom: "0.4rem",
-                      }}
-                    >
-                      {item.num}
-                    </span>
-                    <span
-                      style={{
-                        fontFamily: C.mono,
-                        fontSize: "11px",
-                        letterSpacing: "0.08em",
-                        textTransform: "uppercase",
-                        color: C.textOnDarkMuted,
-                      }}
-                    >
-                      {item.label}
-                    </span>
-                  </div>
-                </FadeIn>
-              ))}
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.3}>
-            <div
-              style={{
-                borderLeft: `2px solid ${C.green}`,
-                paddingLeft: "1.5rem",
-                maxWidth: "40rem",
-              }}
-            >
-              <p
-                style={{
-                  fontFamily: C.sans,
-                  fontSize: "1rem",
-                  color: C.textOnDarkSec,
-                  lineHeight: 1.8,
-                  marginBottom: "1rem",
-                }}
-              >
-                SAPIENTBLOCK — das Flaggschiff-Projekt — entstand in Kollaboration mit dem
-                Blockchain Reallabor (Fraunhofer FIT, BMWK-gefördert, RWTH Aachen). Es analysiert
-                Blockchain-Relevanz für den deutschen Mittelstand über 74 Branchen hinweg.
-              </p>
-              <a
-                href="https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  fontFamily: C.mono,
-                  fontSize: "11px",
-                  letterSpacing: "0.08em",
-                  color: C.green,
-                  textDecoration: "none",
-                  opacity: 0.7,
-                  transition: "opacity 0.25s",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.opacity = "1")}
-                onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.7")}
-              >
-                → BLOCKCHAIN REALLABOR
-              </a>
-            </div>
-          </FadeIn>
+      {/* ═══════ SIGNAL STRIP ═══════ */}
+      <div style={{
+        background: C.bgDarkAlt,
+        borderTop: "1px solid rgba(0,255,65,0.08)",
+        borderBottom: "1px solid rgba(0,255,65,0.08)",
+        padding: "28px 0", overflow: "hidden",
+      }}>
+        <div style={{
+          display: "flex", alignItems: "center", justifyContent: "center",
+          gap: 40, flexWrap: "wrap", padding: "0 24px",
+        }}>
+          {[
+            "FRAUNHOFER FIT KOLLABORATION",
+            "BMWK-GEFÖRDERT",
+            "7 LIVE-SYSTEME",
+            "BLOCKCHAIN REALLABOR · RWTH AACHEN",
+          ].map((item, i) => (
+            <span key={item} style={{ display: "contents" }}>
+              {i > 0 && <span style={{ width: 4, height: 4, background: C.green, borderRadius: "50%", opacity: 0.4, flexShrink: 0 }} />}
+              <span style={{
+                fontFamily: C.mono, fontSize: 11, letterSpacing: "0.08em",
+                color: C.textLightSub, whiteSpace: "nowrap",
+              }}>
+                {item}
+              </span>
+            </span>
+          ))}
         </div>
-      </section>
+      </div>
 
-      {/* ═══════════════════════════════════════════
-          WER — Light
-      ═══════════════════════════════════════════ */}
-      <section style={{ background: C.light, padding: "7rem 1.5rem" }}>
-        <div style={{ maxWidth: "52rem", margin: "0 auto" }}>
-          <SectionLabel>WER</SectionLabel>
+      {/* ═══════ PROJEKTE ═══════ */}
+      <section style={{ background: C.bgLight, padding: "120px 0 100px" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 40px" }}>
+          <FL><p style={{
+            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
+            letterSpacing: "0.13em", textTransform: "uppercase",
+            color: C.green, marginBottom: 48,
+          }}>{">"} PROJEKTE_</p></FL>
 
-          <FadeIn>
-            <h2
-              style={{
-                fontFamily: C.mono,
-                fontSize: "clamp(1.4rem, 3vw, 2rem)",
-                fontWeight: 700,
-                lineHeight: 1.2,
-                color: C.textOnLight,
-                marginBottom: "2rem",
-              }}
-            >
-              Ufuk Avci
-            </h2>
-          </FadeIn>
-
-          <FadeIn delay={0.1}>
-            <div style={{ maxWidth: "40rem" }}>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  color: C.textOnLightSec,
-                  lineHeight: 1.85,
-                  marginBottom: "1.2rem",
+          {/* Project cards */}
+          <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            {FEATURED_PROJECTS.map((p, idx) => (
+              <FI key={p.title} delay={idx * 0.1}>
+                <div style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  background: "white",
+                  border: "1px solid rgba(0,0,0,0.06)",
+                  overflow: "hidden",
+                  transition: "box-shadow 0.3s ease",
+                  direction: p.reverse ? "rtl" : "ltr",
                 }}
-              >
-                VP Customer Experience bei einer Tier-1-Bank in Frankfurt. Drei Jahrzehnte
-                an der Schnittstelle von Design, Strategie und Technologie — von
-                Interface-Design über digitale Transformation bis zu KI-Architektur.
-              </p>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  color: C.textOnLightSec,
-                  lineHeight: 1.85,
-                  marginBottom: "1.5rem",
-                }}
-              >
-                ShapeNeural ist das Lab, in dem abends und am Wochenende gebaut wird.
-                Nicht im Auftrag — aus Überzeugung. Sieben Systeme in 18 Monaten,
-                jedes davon ein eigenständiges Produkt.
-              </p>
-
-              {/* Credential tags */}
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
-                {[
-                  "VP CX — TIER-1 BANK",
-                  "FRAUNHOFER FIT KOLLABORATION",
-                  "BMWK-GEFÖRDERT",
-                  "RWTH AACHEN",
-                  "30 JAHRE DESIGN & TECH",
-                ].map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      fontFamily: C.mono,
-                      fontSize: "10px",
-                      letterSpacing: "0.08em",
-                      textTransform: "uppercase",
-                      padding: "0.35rem 0.7rem",
-                      background: C.greenDim,
-                      color: C.textOnLight,
-                      border: "1px solid rgba(0, 255, 65, 0.15)",
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════
-          PROJEKTE — Light
-      ═══════════════════════════════════════════ */}
-      <section id="projekte" style={{ background: C.light, padding: "7rem 1.5rem", borderTop: `1px solid rgba(0,0,0,0.06)` }}>
-        <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
-          <SectionLabel>PROJEKTE</SectionLabel>
-
-          <FadeIn>
-            <h2
-              style={{
-                fontFamily: C.mono,
-                fontSize: "clamp(1.4rem, 3vw, 2rem)",
-                fontWeight: 700,
-                lineHeight: 1.2,
-                color: C.textOnLight,
-                marginBottom: "0.8rem",
-              }}
-            >
-              Gebaut. Nicht geplant.
-            </h2>
-            <p
-              style={{
-                fontSize: "1rem",
-                color: C.textOnLightSec,
-                lineHeight: 1.8,
-                maxWidth: "36rem",
-                marginBottom: "3rem",
-              }}
-            >
-              Jedes System ist eigenständig, funktioniert, und löst ein konkretes Problem.
-            </p>
-          </FadeIn>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-              gap: "1.2rem",
-            }}
-          >
-            {SHOWCASE_PROJECTS.map((p, i) => (
-              <FadeIn key={p.id} delay={i * 0.08}>
-                <Link
-                  to={`/project/${p.slug}`}
-                  style={{ textDecoration: "none", color: "inherit", display: "block" }}
+                  onMouseEnter={e => (e.currentTarget.style.boxShadow = "0 8px 40px rgba(0,0,0,0.06)")}
+                  onMouseLeave={e => (e.currentTarget.style.boxShadow = "none")}
+                  className="project-card"
                 >
-                  <div
-                    style={{
-                      background: "#fff",
-                      border: "1px solid rgba(0,0,0,0.08)",
-                      overflow: "hidden",
-                      transition: "border-color 0.3s, transform 0.3s",
-                      cursor: "pointer",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.borderColor = C.green;
-                      e.currentTarget.style.transform = "translateY(-3px)";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.borderColor = "rgba(0,0,0,0.08)";
-                      e.currentTarget.style.transform = "translateY(0)";
-                    }}
-                  >
-                    <div style={{ position: "relative", aspectRatio: "16/10", overflow: "hidden", background: "#111" }}>
-                      <img
-                        src={p.image}
-                        alt={p.title}
-                        style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9 }}
-                        loading="lazy"
-                      />
-                      <span
-                        style={{
-                          position: "absolute",
-                          top: "0.5rem",
-                          right: "0.5rem",
-                          fontFamily: C.mono,
-                          fontSize: "9px",
-                          fontWeight: 700,
-                          letterSpacing: "0.1em",
-                          padding: "0.2rem 0.5rem",
-                          background: p.status === "LIVE" ? C.green : C.dark,
-                          color: p.status === "LIVE" ? C.dark : C.green,
-                        }}
-                      >
+                  {/* Visual */}
+                  <div style={{
+                    aspectRatio: "4 / 3",
+                    background: p.visualBg,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    overflow: "hidden", direction: "ltr",
+                  }}>
+                    <ScreenChrome lineWidths={p.lines} />
+                  </div>
+
+                  {/* Content */}
+                  <div style={{
+                    padding: "48px 44px",
+                    display: "flex", flexDirection: "column", justifyContent: "center",
+                    direction: "ltr",
+                  }}>
+                    <div style={{ display: "flex", alignItems: "baseline", gap: 12, marginBottom: 4 }}>
+                      <span style={{ fontFamily: C.mono, fontSize: 20, fontWeight: 500, color: C.textDark }}>
+                        {p.title}
+                      </span>
+                      <span style={{
+                        fontFamily: C.mono, fontSize: 10, letterSpacing: "0.1em",
+                        padding: "2px 8px", borderRadius: 1,
+                        color: p.status === "LIVE" ? C.green : "rgba(0,180,60,0.7)",
+                        background: p.status === "LIVE" ? C.greenDim : "rgba(0,180,60,0.08)",
+                      }}>
                         {p.status}
                       </span>
                     </div>
-                    <div style={{ padding: "1rem 1rem 1.2rem" }}>
-                      <h3
-                        style={{
-                          fontFamily: C.mono,
-                          fontSize: "12px",
-                          fontWeight: 700,
-                          letterSpacing: "0.08em",
-                          color: C.textOnLight,
-                          marginBottom: "0.4rem",
-                        }}
-                      >
-                        {p.title}
-                      </h3>
-                      <p
-                        style={{
-                          fontSize: "13px",
-                          color: C.textOnLightSec,
-                          lineHeight: 1.6,
-                        }}
-                      >
-                        {p.brief.length > 120 ? p.brief.slice(0, 120) + "…" : p.brief}
+
+                    {p.collab && (
+                      <p style={{
+                        fontFamily: C.mono, fontSize: 11,
+                        color: C.textDarkMuted, marginTop: 6, marginBottom: 20,
+                      }}>
+                        {p.collab}
                       </p>
+                    )}
+                    {!p.collab && <div style={{ marginBottom: 20 }} />}
+
+                    <p style={{ fontSize: 15, lineHeight: 1.7, color: C.textDarkSub, marginBottom: 28 }}>
+                      {p.brief}
+                    </p>
+
+                    <div style={{ display: "flex", gap: 28, flexWrap: "wrap" }}>
+                      {p.stats.map(s => (
+                        <div key={s.label} style={{ display: "flex", flexDirection: "column" }}>
+                          <span style={{
+                            fontFamily: C.mono, fontSize: 22, fontWeight: 500,
+                            color: C.textDark, lineHeight: 1,
+                          }}>
+                            {s.num}
+                          </span>
+                          <span style={{
+                            fontFamily: C.mono, fontSize: 10, color: C.textDarkMuted,
+                            letterSpacing: "0.06em", marginTop: 6, textTransform: "uppercase",
+                          }}>
+                            {s.label}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                </Link>
-              </FadeIn>
+                </div>
+              </FI>
             ))}
           </div>
 
-          <FadeIn delay={0.4}>
-            <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
-              <Link
-                to="/#projects"
-                style={{
-                  fontFamily: C.mono,
-                  fontSize: "12px",
-                  fontWeight: 600,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                  color: C.green,
-                  transition: "opacity 0.25s",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.7")}
-                onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
-              >
-                → Alle Projekte im Detail
+          {/* More link */}
+          <FI delay={0.3}>
+            <div style={{ marginTop: 48 }}>
+              <Link to="/#projects" style={{
+                fontFamily: C.mono, fontSize: 13, color: C.green,
+                textDecoration: "none", letterSpacing: "0.04em",
+                borderBottom: `1px solid ${C.greenLine}`,
+                paddingBottom: 2, transition: "border-color 0.2s",
+              }}>
+                + 4 weitere Projekte auf shapeneural.com →
               </Link>
             </div>
-          </FadeIn>
+          </FI>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          ANDOCKEN — Light
-      ═══════════════════════════════════════════ */}
-      <section style={{ background: C.light, padding: "7rem 1.5rem", borderTop: "1px solid rgba(0,0,0,0.06)" }}>
-        <div style={{ maxWidth: "52rem", margin: "0 auto" }}>
-          <SectionLabel>ANDOCKEN</SectionLabel>
+      {/* ═══════ KONTEXT ═══════ */}
+      <section style={{
+        background: C.bgDark, padding: "120px 0", position: "relative",
+      }}>
+        {/* Subtle glow */}
+        <div style={{
+          position: "absolute", top: 0, right: 0, width: "40%", height: "100%",
+          background: "radial-gradient(ellipse at 80% 50%, rgba(0,255,65,0.02) 0%, transparent 70%)",
+          pointerEvents: "none",
+        }} />
 
-          <FadeIn>
-            <h2
-              style={{
-                fontFamily: C.mono,
-                fontSize: "clamp(1.4rem, 3vw, 2rem)",
-                fontWeight: 700,
-                lineHeight: 1.2,
-                color: C.textOnLight,
-                marginBottom: "0.8rem",
-              }}
-            >
-              Fünf Arten, hier anzudocken.
-            </h2>
-            <p
-              style={{
-                fontSize: "1rem",
-                color: C.textOnLightSec,
-                lineHeight: 1.8,
-                maxWidth: "36rem",
-                marginBottom: "3rem",
-              }}
-            >
-              Keine Personas. Keine Zielgruppen. Aktivitäten.
-            </p>
-          </FadeIn>
+        <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 40px", position: "relative" }}>
+          <FL><p style={{
+            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
+            letterSpacing: "0.13em", textTransform: "uppercase",
+            color: C.green, marginBottom: 48,
+          }}>{">"} KONTEXT_</p></FL>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-            {SCENARIOS.map((s, i) => (
-              <FadeIn key={s.label} delay={i * 0.08}>
-                <div
-                  style={{
-                    display: "flex",
-                    gap: "1.2rem",
-                    alignItems: "flex-start",
-                    padding: "1.2rem 0",
-                    borderBottom: "1px solid rgba(0,0,0,0.06)",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontFamily: C.mono,
-                      fontSize: "11px",
-                      fontWeight: 700,
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      color: C.green,
-                      minWidth: "6rem",
-                      paddingTop: "0.15rem",
-                      flexShrink: 0,
-                    }}
-                  >
-                    {s.label}
-                  </span>
-                  <p
-                    style={{
-                      fontSize: "0.95rem",
-                      color: C.textOnLightSec,
-                      lineHeight: 1.75,
-                    }}
-                  >
-                    {s.text}
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 320px",
+            gap: 80, alignItems: "start",
+          }} className="kontext-grid">
+            {/* Bio */}
+            <FI>
+              <div>
+                <h2 style={{
+                  fontFamily: C.mono, fontSize: 28, fontWeight: 500,
+                  color: C.textLight, marginBottom: 36,
+                }}>
+                  Ufuk Avci
+                </h2>
+                <div style={{ fontSize: 17, lineHeight: 1.8, color: C.textLightMid }}>
+                  <p style={{ marginBottom: 20 }}>
+                    Tagsüber VP Customer Experience bei einer Tier-1-Bank in Frankfurt — verantwortlich für Kundenstrategie, Segmentierung und die Integration von KI in bestehende Prozesse. Der Rest der Zeit gehört diesem Lab.
+                  </p>
+                  <p>
+                    ShapeNeural ist kein Nebenprojekt im klassischen Sinn. Es ist der Ort, an dem Ideen gebaut werden, die in einem Konzern nicht entstehen können — aber von einem Konzernverständnis profitieren. Drei Jahrzehnte Erfahrung an der Schnittstelle von Design, Strategie und Technologie. Seit 2024 als eigenständiges Lab.
                   </p>
                 </div>
-              </FadeIn>
+              </div>
+            </FI>
+
+            {/* Timeline */}
+            <FI delay={0.2}>
+              <div style={{
+                borderLeft: `1px solid ${C.greenLine}`,
+                paddingLeft: 24,
+                display: "flex", flexDirection: "column",
+              }}>
+                {TIMELINE.map((era, i) => (
+                  <div key={era.year} style={{
+                    padding: "16px 0", position: "relative",
+                  }}>
+                    <div style={{
+                      position: "absolute", left: -28.5, top: 22,
+                      width: 7, height: 7, background: C.green,
+                      borderRadius: "50%", opacity: i === TIMELINE.length - 1 ? 1 : 0.5,
+                    }} />
+                    <p style={{
+                      fontFamily: C.mono, fontSize: 11, color: C.green,
+                      opacity: 0.7, letterSpacing: "0.08em", marginBottom: 6,
+                    }}>
+                      {era.year}
+                    </p>
+                    <p style={{
+                      fontFamily: C.sans, fontSize: 14,
+                      color: C.textLightSub, lineHeight: 1.5,
+                    }}>
+                      {era.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </FI>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════ ANDOCKEN ═══════ */}
+      <section style={{ background: C.bgLight, padding: "120px 0" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 40px" }}>
+          <FL><p style={{
+            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
+            letterSpacing: "0.13em", textTransform: "uppercase",
+            color: C.green, marginBottom: 48,
+          }}>{">"} ANDOCKEN_</p></FL>
+
+          <div style={{
+            display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2,
+          }} className="andocken-grid">
+            {DOCK_CARDS.map((card, i) => (
+              <FI key={card.title} delay={i * 0.08}>
+                <div
+                  style={{
+                    background: "white",
+                    padding: "44px 40px",
+                    position: "relative",
+                    transition: "background 0.25s ease",
+                    height: "100%",
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.background = "rgba(0,255,65,0.02)";
+                    const bar = e.currentTarget.querySelector("[data-bar]") as HTMLElement;
+                    if (bar) bar.style.opacity = "0.6";
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.background = "white";
+                    const bar = e.currentTarget.querySelector("[data-bar]") as HTMLElement;
+                    if (bar) bar.style.opacity = "0.25";
+                  }}
+                >
+                  {/* Left accent bar */}
+                  <div data-bar style={{
+                    position: "absolute", top: 0, left: 0,
+                    width: 3, height: "100%",
+                    background: C.green, opacity: 0.25,
+                    transition: "opacity 0.3s",
+                  }} />
+
+                  <h3 style={{
+                    fontFamily: C.mono, fontSize: 15, fontWeight: 500,
+                    color: C.textDark, marginBottom: 14,
+                  }}>
+                    {card.title}
+                  </h3>
+                  <p style={{
+                    fontSize: 15, lineHeight: 1.65,
+                    color: C.textDarkSub, marginBottom: 20,
+                  }}>
+                    {card.desc}
+                  </p>
+                  <div style={{
+                    fontFamily: C.mono, fontSize: 11,
+                    color: C.textDarkMuted, lineHeight: 1.8,
+                    letterSpacing: "0.02em",
+                  }}>
+                    {card.examples.map(ex => (
+                      <span key={ex} style={{
+                        display: "inline-block",
+                        background: C.greenDim,
+                        padding: "2px 8px",
+                        margin: "2px 4px 2px 0",
+                        borderRadius: 1,
+                      }}>
+                        {ex}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </FI>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          ABLAUF — Dark strip
-      ═══════════════════════════════════════════ */}
-      <section style={{ background: C.dark, padding: "4rem 1.5rem" }}>
-        <div
-          style={{
-            maxWidth: "52rem",
-            margin: "0 auto",
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "3rem",
-            justifyContent: "space-between",
-          }}
-        >
-          {[
-            { step: "01", text: "Schreiben." },
-            { step: "02", text: "Gespräch. 30 Minuten." },
-            { step: "03", text: "Entscheiden." },
-          ].map((item, i) => (
-            <FadeIn key={item.step} delay={i * 0.12}>
-              <div style={{ display: "flex", alignItems: "baseline", gap: "0.8rem" }}>
-                <span
-                  style={{
-                    fontFamily: C.mono,
-                    fontSize: "11px",
-                    color: C.green,
-                    opacity: 0.5,
-                  }}
-                >
-                  {item.step}
-                </span>
-                <span
-                  style={{
-                    fontFamily: C.mono,
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    letterSpacing: "0.05em",
-                    color: C.textOnDark,
-                  }}
-                >
-                  {item.text}
-                </span>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
+      {/* ═══════ ABLAUF ═══════ */}
+      <section style={{
+        background: C.bgDark, padding: "80px 0",
+        textAlign: "center",
+        borderTop: "1px solid rgba(0,255,65,0.06)",
+        borderBottom: "1px solid rgba(0,255,65,0.06)",
+      }}>
+        <FI>
+          <p style={{
+            fontFamily: C.mono, fontSize: 20, fontWeight: 300,
+            color: C.textLight, letterSpacing: "0.05em",
+          }}>
+            Schreiben. Reden. Sehen, was draus wird.
+          </p>
+        </FI>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          KONTAKT — Light
-      ═══════════════════════════════════════════ */}
-      <section id="kontakt" style={{ background: C.light, padding: "7rem 1.5rem" }}>
-        <div style={{ maxWidth: "36rem", margin: "0 auto" }}>
-          <SectionLabel>SIGNAL</SectionLabel>
+      {/* ═══════ KONTAKT ═══════ */}
+      <section id="kontakt" style={{ background: C.bgLight, padding: "120px 0" }}>
+        <div style={{ maxWidth: 720, margin: "0 auto", padding: "0 40px" }}>
+          <FL><p style={{
+            fontFamily: C.mono, fontSize: 11, fontWeight: 400,
+            letterSpacing: "0.13em", textTransform: "uppercase",
+            color: C.green, marginBottom: 48,
+          }}>{">"} SIGNAL_</p></FL>
 
           {formState === "sent" ? (
-            <FadeIn>
-              <div style={{ textAlign: "center", padding: "3rem 0" }}>
-                <div
-                  style={{
-                    width: "48px",
-                    height: "48px",
-                    margin: "0 auto 1.5rem",
-                    background: C.greenDim,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke={C.green} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="4 10 8 14 16 6" />
-                  </svg>
-                </div>
-                <h3
-                  style={{
-                    fontFamily: C.mono,
-                    fontSize: "1rem",
-                    fontWeight: 700,
-                    color: C.textOnLight,
-                    marginBottom: "0.5rem",
-                  }}
-                >
-                  Signal angekommen.
-                </h3>
-                <p style={{ fontSize: "0.92rem", color: C.textOnLightSec, marginBottom: "1.5rem" }}>
-                  Antwort folgt. Meistens innerhalb von ein, zwei Tagen.
+            <FI>
+              <div>
+                <p style={{
+                  fontFamily: C.mono, fontSize: 16, color: C.green,
+                }}>
+                  Ist angekommen. Ich melde mich.
                 </p>
                 <button
-                  onClick={() => { setFormState("idle"); setForm({ name: "", email: "", situation: "", message: "" }); }}
+                  onClick={() => { setFormState("idle"); setForm({ name: "", email: "", message: "" }); }}
                   style={{
-                    fontFamily: C.mono,
-                    fontSize: "11px",
-                    letterSpacing: "0.05em",
-                    color: C.green,
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
+                    display: "inline-block", marginTop: 20,
+                    fontFamily: C.mono, fontSize: 13, color: C.textDarkMuted,
+                    textDecoration: "none", background: "none", border: "none",
+                    cursor: "pointer", padding: 0,
                   }}
+                  onMouseEnter={e => (e.currentTarget.style.color = C.green)}
+                  onMouseLeave={e => (e.currentTarget.style.color = C.textDarkMuted)}
                 >
-                  ← Neue Nachricht
+                  ← Zurück
                 </button>
               </div>
-            </FadeIn>
+            </FI>
           ) : (
             <>
-              <FadeIn>
-                <h2
-                  style={{
-                    fontFamily: C.mono,
-                    fontSize: "clamp(1.4rem, 3vw, 1.8rem)",
-                    fontWeight: 700,
-                    lineHeight: 1.2,
-                    color: C.textOnLight,
-                    marginBottom: "2.5rem",
-                  }}
-                >
+              <FI>
+                <h2 style={{
+                  fontFamily: C.mono, fontSize: 22, fontWeight: 400,
+                  color: C.textDark, marginBottom: 12,
+                }}>
                   Ein Satz reicht.
                 </h2>
-              </FadeIn>
+                <p style={{
+                  fontSize: 15, color: C.textDarkSub,
+                  marginBottom: 44, maxWidth: 400, lineHeight: 1.6,
+                }}>
+                  Wenn etwas auf dieser Seite resoniert hat — oder wenn Sie an etwas arbeiten, bei dem ein Austausch Sinn machen könnte.
+                </p>
+              </FI>
 
-              <FadeIn delay={0.1}>
-                <form
-                  onSubmit={handleSubmit}
-                  style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}
-                >
-                  {/* Situation select */}
-                  <div>
-                    <label style={labelStyle}>Was beschreibt Ihre Situation?</label>
-                    <select
-                      value={form.situation}
-                      onChange={set("situation")}
+              <FI delay={0.1}>
+                <form onSubmit={handleSubmit} style={{
+                  maxWidth: 520, display: "flex", flexDirection: "column", gap: 16,
+                }}>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    value={form.name}
+                    onChange={set("name")}
+                    style={inputStyle}
+                    onFocus={e => (e.target.style.borderColor = C.green)}
+                    onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.1)")}
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    value={form.email}
+                    onChange={set("email")}
+                    style={inputStyle}
+                    onFocus={e => (e.target.style.borderColor = C.green)}
+                    onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.1)")}
+                  />
+                  <textarea
+                    placeholder="Nachricht"
+                    value={form.message}
+                    onChange={set("message")}
+                    required
+                    style={{ ...inputStyle, minHeight: 130, resize: "vertical" as const }}
+                    onFocus={e => (e.target.style.borderColor = C.green)}
+                    onBlur={e => (e.target.style.borderColor = "rgba(0,0,0,0.1)")}
+                  />
+
+                  <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 4 }}>
+                    <button
+                      type="submit"
+                      disabled={formState === "sending"}
                       style={{
-                        ...inputStyle,
-                        color: form.situation ? C.textOnLight : C.textOnLightMuted,
+                        fontFamily: C.mono, fontSize: 12, fontWeight: 500,
+                        letterSpacing: "0.1em", textTransform: "uppercase",
+                        padding: "14px 40px",
+                        border: `1px solid ${C.magenta}`,
+                        background: "transparent", color: C.magenta,
                         cursor: "pointer",
+                        transition: "background 0.25s, color 0.25s",
+                        opacity: formState === "sending" ? 0.6 : 1,
                       }}
+                      onMouseEnter={e => { e.currentTarget.style.background = C.magenta; e.currentTarget.style.color = "#fff"; }}
+                      onMouseLeave={e => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = C.magenta; }}
                     >
-                      <option value="" disabled>Bitte auswählen…</option>
-                      {SITUATIONS.map((s) => (
-                        <option key={s} value={s}>{s}</option>
-                      ))}
-                    </select>
+                      {formState === "sending" ? "..." : "ABSENDEN"}
+                    </button>
+                    <span style={{ fontFamily: C.mono, fontSize: 12, color: C.textDarkMuted }}>
+                      oder{" "}
+                      <a href="mailto:signal@shapeneural.com" style={{
+                        color: C.textDarkMuted, textDecoration: "none",
+                        borderBottom: "1px solid rgba(0,0,0,0.12)",
+                        transition: "color 0.2s, border-color 0.2s",
+                      }}
+                        onMouseEnter={e => { e.currentTarget.style.color = C.green; e.currentTarget.style.borderColor = C.green; }}
+                        onMouseLeave={e => { e.currentTarget.style.color = C.textDarkMuted; e.currentTarget.style.borderColor = "rgba(0,0,0,0.12)"; }}
+                      >
+                        signal@shapeneural.com
+                      </a>
+                    </span>
                   </div>
-
-                  {/* Name */}
-                  <div>
-                    <label style={labelStyle}>Name (optional)</label>
-                    <input type="text" value={form.name} onChange={set("name")} style={inputStyle} />
-                  </div>
-
-                  {/* Email */}
-                  <div>
-                    <label style={labelStyle}>Email (optional — für Rückantwort)</label>
-                    <input type="email" value={form.email} onChange={set("email")} style={inputStyle} />
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label style={labelStyle}>Nachricht</label>
-                    <textarea
-                      value={form.message}
-                      onChange={set("message")}
-                      rows={5}
-                      required
-                      style={{ ...inputStyle, resize: "vertical" }}
-                    />
-                  </div>
-
-                  {/* Submit */}
-                  <button
-                    type="submit"
-                    disabled={formState === "sending"}
-                    style={{
-                      width: "100%",
-                      fontFamily: C.mono,
-                      fontWeight: 700,
-                      fontSize: "12px",
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                      cursor: "pointer",
-                      border: "none",
-                      padding: "0.9rem",
-                      color: "#fff",
-                      background: C.cta,
-                      transition: "opacity 0.25s",
-                      opacity: formState === "sending" ? 0.6 : 1,
-                    }}
-                    onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
-                    onMouseLeave={(e) => (e.currentTarget.style.opacity = formState === "sending" ? "0.6" : "1")}
-                  >
-                    {formState === "sending" ? "Wird gesendet…" : "Signal senden"}
-                  </button>
-
-                  {formState === "error" && (
-                    <p style={{ fontFamily: C.mono, fontSize: "11px", color: C.cta }}>
-                      Etwas ist schiefgelaufen. Versuche es nochmal.
-                    </p>
-                  )}
                 </form>
-              </FadeIn>
+              </FI>
             </>
           )}
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════
-          FOOTER — Dark
-      ═══════════════════════════════════════════ */}
-      <footer style={{ background: C.dark, padding: "3rem 1.5rem 2rem", fontFamily: C.mono }}>
-        <div style={{ maxWidth: "64rem", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              gap: "1.5rem",
-              marginBottom: "1.5rem",
-            }}
-          >
-            {[
-              { label: "LINKEDIN", href: "https://www.linkedin.com/company/shapeneural/?viewAsMember=true", color: C.green },
-              { label: "EMAIL", href: "mailto:signal@shapeneural.com", color: C.textOnDarkMuted },
-              { label: "MAINFRAME", href: "/", color: C.green },
-              { label: "LEGAL", href: "/legal", color: C.cta },
-            ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                style={{
-                  color: C.textOnDarkMuted,
-                  fontSize: "11px",
-                  letterSpacing: "0.15em",
-                  textDecoration: "none",
-                  transition: "color 0.3s",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = link.color)}
-                onMouseLeave={(e) => (e.currentTarget.style.color = C.textOnDarkMuted)}
-              >
-                <span style={{ color: link.color, opacity: 0.5 }}>[</span>
-                {link.label}
-                <span style={{ color: link.color, opacity: 0.5 }}>]</span>
-              </a>
-            ))}
-          </div>
-
-          <div
-            style={{
-              textAlign: "center",
-              color: C.textOnDarkMuted,
-              fontSize: "10px",
-              letterSpacing: "0.2em",
-            }}
-          >
-            © 2025 SHAPENEURAL // <span style={{ color: C.green }}>DESIGNED_INTELLIGENCE</span>
-          </div>
+      {/* ═══════ FOOTER ═══════ */}
+      <footer style={{ background: C.bgDark, padding: "52px 0", textAlign: "center" }}>
+        <div style={{
+          display: "flex", justifyContent: "center", gap: 36,
+          marginBottom: 24, flexWrap: "wrap",
+        }}>
+          {[
+            { label: "LINKEDIN", href: "https://www.linkedin.com/company/shapeneural/?viewAsMember=true" },
+            { label: "EMAIL", href: "mailto:signal@shapeneural.com" },
+            { label: "MAINFRAME →", href: "/" },
+            { label: "LEGAL", href: "/legal" },
+          ].map(link => (
+            <a
+              key={link.label}
+              href={link.href}
+              target={link.href.startsWith("http") ? "_blank" : undefined}
+              rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+              style={{
+                fontFamily: C.mono, fontSize: 11, letterSpacing: "0.08em",
+                color: C.textLightSub, textDecoration: "none",
+                transition: "color 0.2s",
+              }}
+              onMouseEnter={e => (e.currentTarget.style.color = C.green)}
+              onMouseLeave={e => (e.currentTarget.style.color = C.textLightSub)}
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
+        <p style={{ fontFamily: C.mono, fontSize: 11, color: C.textLightMuted }}>
+          © 2025 SHAPENEURAL
+        </p>
       </footer>
+
+      <ScrollTop />
+
+      {/* Keyframe animations */}
+      <style>{`
+        @keyframes allianceFadeIn { to { opacity: 1; } }
+        @keyframes allianceSlideUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes allianceBob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(7px); } }
+        @media (max-width: 900px) {
+          .project-card { grid-template-columns: 1fr !important; }
+          .project-card > div:first-child { aspect-ratio: 16 / 9 !important; }
+          .kontext-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+          .andocken-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 640px) {
+          .project-card > div:last-child { padding: 32px 24px !important; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          * { animation-duration: 0s !important; transition-duration: 0s !important; }
+        }
+      `}</style>
     </div>
   );
 }
 
-/* ── Shared form styles ── */
-const labelStyle: React.CSSProperties = {
-  fontFamily: C.mono,
-  fontSize: "11px",
-  fontWeight: 600,
-  letterSpacing: "0.08em",
-  textTransform: "uppercase",
-  color: C.textOnLightSec,
-  display: "block",
-  marginBottom: "0.5rem",
-};
-
+/* ── Shared input style ── */
 const inputStyle: React.CSSProperties = {
-  width: "100%",
-  fontFamily: C.sans,
-  fontSize: "0.95rem",
-  padding: "0.75rem 0.9rem",
+  fontFamily: "'DM Sans', system-ui, sans-serif",
+  fontSize: 15, padding: "14px 16px",
   border: "1px solid rgba(0,0,0,0.1)",
-  background: "#fff",
-  outline: "none",
-  boxSizing: "border-box",
-  color: "#1a1a1a",
+  background: "white", color: "#1a1a1a",
+  outline: "none", transition: "border-color 0.25s",
+  width: "100%", boxSizing: "border-box",
 };
