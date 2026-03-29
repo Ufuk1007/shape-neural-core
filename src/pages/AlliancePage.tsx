@@ -223,7 +223,7 @@ function ProjectCarousel() {
                 overflow: "hidden",
               }}>
                 {/* Video / Image — full width, no crop */}
-                <div style={{ background: "#0a0a0a", width: "100%" }}>
+                <div style={{ width: "100%", aspectRatio: "16/9", overflow: "hidden" }}>
                   {proj.video ? (
                     <video
                       src={proj.video}
@@ -233,10 +233,9 @@ function ProjectCarousel() {
                       playsInline
                       style={{
                         width: "100%",
+                        height: "100%",
                         display: "block",
-                        maxHeight: 520,
-                        objectFit: "contain",
-                        background: "#0a0a0a",
+                        objectFit: "cover",
                       }}
                     />
                   ) : proj.image ? (
@@ -245,10 +244,9 @@ function ProjectCarousel() {
                       alt={proj.title}
                       style={{
                         width: "100%",
+                        height: "100%",
                         display: "block",
-                        maxHeight: 520,
-                        objectFit: "contain",
-                        background: "#0a0a0a",
+                        objectFit: "cover",
                       }}
                     />
                   ) : null}
