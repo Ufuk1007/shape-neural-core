@@ -319,7 +319,7 @@ const ProjectRack = () => {
                   <div className="px-4 pb-8 pt-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                       {/* Left: Media with Signal Loss Effect */}
-                      <SignalLossMedia image={project.image} />
+                      <SignalLossMedia image={project.image} video={project.video} />
 
                       {/* Right: Data Panel */}
                       <div className="space-y-6">
