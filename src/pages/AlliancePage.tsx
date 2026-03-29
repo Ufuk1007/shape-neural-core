@@ -293,9 +293,8 @@ export default function AlliancePage() {
             color: C.textLight, maxWidth: 680,
           }}>
             {[
-              "Verstehen, was entsteht.",
-              "Bauen, was sinnvoll ist.",
-              "Systeme und Perspektiven entwickeln sich gemeinsam.",
+              "ShapeNeural Alliance.",
+              "Gedanken, Perspektiven, KI-Systeme.",
             ].map((line, i) => (
               <span key={i} style={{
                 display: "block",
@@ -311,9 +310,9 @@ export default function AlliancePage() {
             fontFamily: C.sans, fontSize: 16,
             color: C.textLightSub, marginTop: 40,
             maxWidth: 460, lineHeight: 1.6,
-            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.4s forwards",
+            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.0s forwards",
           }}>
-            Ein unabhängiges KI-Lab in Frankfurt. Seit 2024.
+            Manches entsteht im Austausch. Manches im Bau. Frankfurt. Seit 2024.
           </p>
         </div>
 
