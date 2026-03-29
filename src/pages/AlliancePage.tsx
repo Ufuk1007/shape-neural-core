@@ -286,32 +286,48 @@ export default function AlliancePage() {
             SHAPENEURAL LABS
           </p>
 
+          {/* Title */}
           <h1 style={{
             fontFamily: C.mono,
-            fontSize: "clamp(24px, 3.2vw, 34px)",
-            fontWeight: 400, lineHeight: 1.6,
-            color: C.textLight, maxWidth: 680,
+            fontSize: "clamp(28px, 4vw, 48px)",
+            fontWeight: 500, lineHeight: 1.15,
+            color: C.textLight, letterSpacing: "-0.01em",
+            opacity: 0, animation: "allianceSlideUp 0.65s ease 0.6s forwards",
           }}>
-            {[
-              "ShapeNeural Alliance.",
-              "Gedanken. Perspektiven. KI-Systeme.",
-              "Gemeinsam gedacht. Gemeinsam gebaut.",
-            ].map((line, i) => (
-              <span key={i} style={{
-                display: "block",
-                opacity: 0,
-                animation: `allianceSlideUp 0.65s ease ${0.6 + i * 0.2}s forwards`,
-              }}>
-                {line}
-              </span>
-            ))}
+            ShapeNeural Alliance.
           </h1>
 
+          {/* Tagline */}
           <p style={{
-            fontFamily: C.sans, fontSize: 16,
-            color: C.textLightMid, marginTop: 40,
-            maxWidth: 520, lineHeight: 1.7,
-            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.2s forwards",
+            fontFamily: C.mono,
+            fontSize: "clamp(14px, 1.6vw, 18px)",
+            fontWeight: 300, lineHeight: 1.5,
+            color: C.textLightMid, letterSpacing: "0.06em",
+            textTransform: "uppercase",
+            marginTop: 28,
+            opacity: 0, animation: "allianceSlideUp 0.65s ease 0.85s forwards",
+          }}>
+            Gedanken. Perspektiven. KI-Systeme.
+          </p>
+
+          {/* Claim */}
+          <p style={{
+            fontFamily: C.sans,
+            fontSize: "clamp(18px, 2.2vw, 26px)",
+            fontWeight: 400, fontStyle: "italic",
+            lineHeight: 1.4,
+            color: C.textLight, marginTop: 32,
+            opacity: 0, animation: "allianceSlideUp 0.65s ease 1.05s forwards",
+          }}>
+            Gemeinsam gedacht. Gemeinsam gebaut.
+          </p>
+
+          {/* Subtext */}
+          <p style={{
+            fontFamily: C.sans, fontSize: 15,
+            color: C.textLightMid, marginTop: 48,
+            maxWidth: 480, lineHeight: 1.75,
+            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.3s forwards",
           }}>
             ShapeNeural ist ein unabhängiges KI-Lab in Frankfurt.<br />
             Seit 2024 entstehen hier Systeme — und die Gedanken, die dahinterstehen.<br />
