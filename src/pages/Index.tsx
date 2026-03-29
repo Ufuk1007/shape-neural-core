@@ -267,6 +267,7 @@ const Index = () => {
         </button>
       )}
 
+      <SignalBar isInterrogating={isInterrogating} onAskOracle={handleInterrogationStart} />
     </>
   );
 };
