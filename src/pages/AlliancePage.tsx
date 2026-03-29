@@ -283,7 +283,7 @@ export default function AlliancePage() {
             color: C.green, marginBottom: 56,
             opacity: 0, animation: "allianceFadeIn 0.5s ease 0.4s forwards",
           }}>
-            {">"} SHAPENEURAL_ALLIANCE
+            SHAPENEURAL LABS
           </p>
 
           <h1 style={{
@@ -294,7 +294,8 @@ export default function AlliancePage() {
           }}>
             {[
               "ShapeNeural Alliance.",
-              "Gedanken, Perspektiven, KI-Systeme.",
+              "Gedanken. Perspektiven. KI-Systeme.",
+              "Gemeinsam gedacht. Gemeinsam gebaut.",
             ].map((line, i) => (
               <span key={i} style={{
                 display: "block",
@@ -308,11 +309,13 @@ export default function AlliancePage() {
 
           <p style={{
             fontFamily: C.sans, fontSize: 16,
-            color: C.textLightSub, marginTop: 40,
-            maxWidth: 460, lineHeight: 1.6,
-            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.0s forwards",
+            color: C.textLightMid, marginTop: 40,
+            maxWidth: 520, lineHeight: 1.7,
+            opacity: 0, animation: "allianceFadeIn 0.6s ease 1.2s forwards",
           }}>
-            Manches entsteht im Austausch. Manches im Bau. Frankfurt. Seit 2024.
+            ShapeNeural ist ein unabhängiges KI-Lab in Frankfurt.<br />
+            Seit 2024 entstehen hier Systeme — und die Gedanken, die dahinterstehen.<br />
+            Allianzen entstehen, wenn sie passen.
           </p>
         </div>
 
