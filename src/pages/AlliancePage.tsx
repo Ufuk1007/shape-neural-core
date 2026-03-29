@@ -92,6 +92,7 @@ const FEATURED_PROJECTS = [
       { num: "RAG", label: "Multi-LLM Pipeline" },
     ],
     image: sapientBlockImg,
+    video: "/videos/sapientblock.mp4",
   },
   {
     title: "SAPIENTSHIFT",
@@ -104,6 +105,7 @@ const FEATURED_PROJECTS = [
       { num: "10", label: "KI-Agenten" },
     ],
     image: sapientshiftImg,
+    video: "/videos/sapientshift.mp4",
     reverse: true,
   },
   {
@@ -117,6 +119,7 @@ const FEATURED_PROJECTS = [
       { num: "0", label: "Server-Uploads" },
     ],
     image: melodeyeImg,
+    video: "/videos/melodeye.mp4",
   },
 ];
 
