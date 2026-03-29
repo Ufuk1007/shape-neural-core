@@ -437,8 +437,15 @@ function ProjectCarousel() {
   );
 }
 
+      {/* ═══════ PROJEKTE ═══════ */}
+      <section style={{ background: C.bgLight, padding: "120px 0 100px" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 40px" }}>
+          <FL>{sectionLabel("PROJEKTE_", false)}</FL>
+          <ProjectCarousel />
+        </div>
+      </section>
 
-      {/* ═══════ KONTEXT ═══════ */}
+
       <section style={{
         background: C.bgDark, padding: "120px 0", position: "relative",
       }}>
