@@ -27,12 +27,13 @@ const getStatusGlow = (status: Project["status"]) => {
 };
 
 // Signal Loss Component for glitch effect
-const SignalLossMedia = ({ image }: { image?: string }) => {
+const SignalLossMedia = ({ image, video }: { image?: string; video?: string }) => {
   const [showSignal, setShowSignal] = useState(true);
   const [glitching, setGlitching] = useState(false);
+  const hasMedia = !!(image || video);
 
   useEffect(() => {
-    if (!image) return;
+    if (!hasMedia) return;
 
     // Random signal loss intervals
     const triggerGlitch = () => {
@@ -63,7 +64,7 @@ const SignalLossMedia = ({ image }: { image?: string }) => {
     };
 
     triggerGlitch();
-  }, [image]);
+  }, [hasMedia]);
 
   return (
     <div
@@ -73,8 +74,24 @@ const SignalLossMedia = ({ image }: { image?: string }) => {
         border: "1px solid #333",
       }}
     >
-      {/* Image Layer */}
-      {image && showSignal && (
+      {/* Video Layer */}
+      {video && showSignal && (
+        <video
+          src={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover object-top transition-opacity"
+          style={{
+            opacity: glitching ? 0.3 : 1,
+            filter: glitching ? "brightness(2) contrast(2) hue-rotate(90deg)" : "none",
+          }}
+        />
+      )}
+
+      {/* Image Layer (fallback if no video) */}
+      {!video && image && showSignal && (
         <img
           src={image}
           alt="Project screenshot"
@@ -105,8 +122,8 @@ const SignalLossMedia = ({ image }: { image?: string }) => {
         </div>
       )}
 
-      {/* NO_SIGNAL Placeholder - shown when no image or signal lost */}
-      {(!image || !showSignal) && !glitching && (
+      {/* NO_SIGNAL Placeholder - shown when no media or signal lost */}
+      {(!hasMedia || !showSignal) && !glitching && (
         <>
           {/* Glitch Lines */}
           <div className="absolute inset-0 opacity-20">
