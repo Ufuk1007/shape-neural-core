@@ -199,7 +199,7 @@ export default function AlliancePage() {
     if (!form.message.trim()) return;
     setFormState("sending");
     try {
-      const res = await fetch("https://shapeneural.com/api/forge-deliver", {
+      const res = await fetch("/api/forge-deliver", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
