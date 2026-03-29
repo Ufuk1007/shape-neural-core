@@ -92,6 +92,7 @@ const FEATURED_PROJECTS = [
       { num: "RAG", label: "Multi-LLM Pipeline" },
     ],
     image: sapientBlockImg,
+    video: "/videos/sapientblock.mp4",
   },
   {
     title: "SAPIENTSHIFT",
@@ -104,6 +105,7 @@ const FEATURED_PROJECTS = [
       { num: "10", label: "KI-Agenten" },
     ],
     image: sapientshiftImg,
+    video: "/videos/sapientshift.mp4",
     reverse: true,
   },
   {
@@ -117,6 +119,7 @@ const FEATURED_PROJECTS = [
       { num: "0", label: "Server-Uploads" },
     ],
     image: melodeyeImg,
+    video: "/videos/melodeye.mp4",
   },
 ];
 
@@ -399,22 +402,37 @@ export default function AlliancePage() {
                   onMouseLeave={e => (e.currentTarget.style.boxShadow = "none")}
                   className="project-card"
                 >
-                  {/* Visual — real screenshot */}
+                  {/* Visual — video or screenshot */}
                   <div style={{
                     aspectRatio: "4 / 3",
                     background: "#0a0a0a",
                     overflow: "hidden",
                     direction: "ltr",
                   }}>
-                    <img
-                      src={p.image}
-                      alt={`${p.title} Screenshot`}
-                      style={{
-                        width: "100%", height: "100%",
-                        objectFit: "cover",
-                        objectPosition: "top center",
-                      }}
-                    />
+                    {p.video ? (
+                      <video
+                        src={p.video}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{
+                          width: "100%", height: "100%",
+                          objectFit: "cover",
+                          objectPosition: "top center",
+                        }}
+                      />
+                    ) : (
+                      <img
+                        src={p.image}
+                        alt={`${p.title} Screenshot`}
+                        style={{
+                          width: "100%", height: "100%",
+                          objectFit: "cover",
+                          objectPosition: "top center",
+                        }}
+                      />
+                    )}
                   </div>
 
                   {/* Content */}

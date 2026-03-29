@@ -3,6 +3,7 @@ import melodeyeImg from "@/assets/melodeye-screenshot.png";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
+import btcRadioImg from "@/assets/btc-radio-screenshot.png";
 
 export interface Insight {
   id: string;
@@ -29,6 +30,7 @@ export interface Project {
   category: string;
   tags: string[];
   image?: string;
+  video?: string;
   url?: string;
   insights: Insight[];
 }
@@ -48,6 +50,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["250+ VALIDATED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "REGIONAL INTELLIGENCE", "SELF-REINFORCING DATA FLYWHEEL", "BLOCKCHAIN REALLABOR COLLABORATION"],
     techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4", "Perplexity", "Pinecone", "RAG", "Tailwind CSS"],
     image: sapientBlockImg,
+    video: "/videos/sapientblock.mp4",
     url: "https://sapientblock.com",
     insights: [],
   },
@@ -64,6 +67,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["DISPLAYED vs. EXPERIENCED EMOTION", "EMER THEORY", "GAP-AWARE INTELLIGENCE", "SAFETY OVERRIDE LOGIC", "100% BROWSER-BASED BIOMETRICS", "THERAPEUTIC MUSIC GENERATION"],
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
     image: melodeyeImg,
+    video: "/videos/melodeye.mp4",
     url: "https://melodeye.com",
     insights: [],
   },
@@ -80,6 +84,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["MULTI-LLM ORCHESTRATION", "INSIGHT PYRAMID", "12 ARCHETYPE PERSPECTIVES", "AUTONOMOUS DAILY ANALYSIS", "4-PHASE PIPELINE", "PROBLEM-SOLUTION CO-EVOLUTION"],
     techStack: ["React", "TypeScript", "Supabase", "Claude", "GPT-4", "Gemini", "Perplexity", "Stripe", "XYFlow"],
     image: problaimImg,
+    video: "/videos/problaim.mp4",
     url: "https://problaim.com",
     insights: [],
   },
@@ -96,6 +101,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["JUNGIAN ARCHETYPES", "PLUTCHIK EMOTION MODEL", "AI AVATAR PIPELINE", "AUTOMATED VIDEO PRODUCTION", "CRYPTO AS CHARACTER", "STORY-DRIVEN EDUCATION"],
     techStack: ["Python", "OpenAI", "ElevenLabs", "D-ID Avatars", "DALL-E", "CoinGecko API", "MoviePy"],
     image: humancryptoImg,
+    video: "/videos/humancrypto.mp4",
     url: "https://humancryp.to",
     insights: [],
   },
@@ -112,6 +118,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["3 ANALYSIS PIPELINES (B2B / EMPLOYEE / B2C)", "318 CURATED AI USE CASES", "CREATIVE GUILD: 10 AI AGENTS", "PERSONALIZED MAGAZINE", "5-FACTOR READINESS SCORE", "FROM INSIGHT TO ACTION"],
     techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4o", "Perplexity Sonar", "DeepSeek", "DALL-E 3", "Tailwind CSS"],
     image: sapientshiftImg,
+    video: "/videos/sapientshift.mp4",
     url: "https://sapientshift.com",
     insights: [],
   },
@@ -127,6 +134,7 @@ export const PROJECTS: Project[] = [
     brief: "A machine that builds your automation machine. Answer 3 questions about your industry, audience, and voice — AUTOFORGE generates a tailored content automation pipeline. Local execution, no platform dependency, no subscription. Copy. Paste. Done.",
     signalTags: ["PIPELINE GENERATOR", "LOCAL EXECUTION", "ZERO VENDOR LOCK-IN", "3-QUESTION ONBOARDING", "MULTI-LLM ORCHESTRATION", "COPY.PASTE.DONE"],
     techStack: ["React", "TypeScript", "Python", "OpenAI GPT-4", "Perplexity", "FastAPI", "Vercel Serverless"],
+    video: "/videos/autoforge.mp4",
     url: "/forge",
     insights: [],
   },
@@ -142,6 +150,7 @@ export const PROJECTS: Project[] = [
     brief: "Real-time Bitcoin market data translated into a continuous AI-generated soundscape. The system decomposes market signals across five temporal layers — from monthly macro trends to individual whale transactions — and maps each layer to a distinct musical dimension. The output is a 24/7 livestream where the music genuinely reflects market state: not a gimmick, but an information-dense audio layer that evolves with every trade.",
     signalTags: ["5 TEMPORAL LAYERS", "MONTHLY→BASS / WEEKLY→BEAT / DAILY→HARMONY / HOURLY→MELODY / REALTIME→TEXTURE", "24/7 GENERATIVE LIVESTREAM", "DUAL AI PROVIDER", "SMART TRACK REUSE", "MARKET SONIFICATION"],
     techStack: ["Python", "FastAPI", "ACE-Step 1.5", "MiniMax M2.5", "React", "Supabase", "OBS Studio", "Cloudflare Tunnel"],
+    image: btcRadioImg,
     url: "https://www.youtube.com/@BitcoinVibesFM",
     insights: [
       {
