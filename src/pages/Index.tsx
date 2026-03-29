@@ -6,6 +6,7 @@ import ProjectRack from "@/components/ProjectRack";
 import ProfileSection from "@/components/ProfileSection";
 
 import BindruneLogo from "@/components/BindruneLogo";
+import SignalBar from "@/components/SignalBar";
 
 const Index = () => {
   const [time, setTime] = useState(0);
@@ -266,6 +267,7 @@ const Index = () => {
         </button>
       )}
 
+      <SignalBar isInterrogating={isInterrogating} onAskOracle={handleInterrogationStart} />
     </>
   );
 };
