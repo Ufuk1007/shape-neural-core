@@ -1,138 +1,138 @@
 [
   {
-    "id": "refik_anadol_dataland_museum",
+    "id": "recraft_ai_for_designers",
     "category": "STR_ART",
-    "headline": "Refik Anadol Builds AI Art Museum DATALAND",
-    "summary": "Anadol's 20,000 sq ft LA museum uses AI to generate immersive visuals from massive datasets, with scent-emitting devices and biometric feedback for real-time art adaptation. This pushes cybernetic design by merging visitor physiology with generative environments. Revolutionizes strategic art as participatory, data-driven experiences.",
+    "headline": "Recraft: AI Art for Pro Graphic Designers",
+    "summary": "Recraft tailors AI generation for professional workflows, enabling precise vector outputs and design iterations. This bridges generative AI with practical design systems, revolutionizing strategic art production. High relevance for SHAPENEURAL's analog cybernetic aesthetics.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 85
+  },
+  {
+    "id": "deep_dream_flux_integration",
+    "category": "STR_ART",
+    "headline": "Deep Dream Adds FLUX.2 & Custom SD Models",
+    "summary": "Veteran tool Deep Dream Generator incorporates cutting-edge FLUX.2 and Nano Banana models for surreal stylization. It evolves classic DeepDream into hybrid generative techniques, inspiring experimental visual art. Key for sonic-visual synesthesia in design.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "refik_anadol_unsupervised_moma",
+    "category": "STR_ART",
+    "headline": "Refik Anadol's AI Reimagines 200 Years of Art",
+    "summary": "Anadol's 'Unsupervised' uses museum metadata to morph artifacts into novel forms via AI algorithms. This data-driven evolution challenges traditional art boundaries, fostering philosophical design inquiries. Pioneers immersive STR_ART experiences.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 95
+  },
+  {
+    "id": "dataland_ai_museum_launch",
+    "category": "STR_ART",
+    "headline": "DATALAND: 20K sq ft AI Art Museum by Anadol",
+    "summary": "Anadol's DATALAND integrates AI visuals with scent generation and biometric feedback for real-time adaptation. Multisensory cybernetic environments redefine visitor experience in art spaces. Groundbreaking for META-infused STR_ART.",
     "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
     "relevance": 98
   },
   {
-    "id": "eufymake_ai_oil_painting_printer",
+    "id": "ganbreeder_image_breeding",
     "category": "STR_ART",
-    "headline": "EufyMake AI Transforms Photos to $500 Oil Prints",
-    "summary": "EufyMake's UV printer software uses AI to stylize photos into textured oil paintings sellable at premium prices, tested on pet portraits for gallery-quality output. Enables analog cybernetic printing with AI-driven fine art replication. Bridges digital generation and physical craft.",
-    "url": "https://www.youtube.com/watch?v=hsARhucTXoQ",
-    "relevance": 95
-  },
-  {
-    "id": "deep_dream_generator_flux_integration",
-    "category": "STR_ART",
-    "headline": "Deep Dream Adds FLUX.2 and Nano Banana Models",
-    "summary": "Veteran AI art tool Deep Dream Generator integrates modern FLUX.2, Nano Banana, and custom Stable Diffusion for enhanced stylization from Google's original DeepDream. Offers experimental hybrid techniques for surreal, never-before-seen visuals. Core for generative art evolution.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 92
-  },
-  {
-    "id": "openart_ai_album_art_presets",
-    "category": "STR_ART",
-    "headline": "OpenArt AI's Hand-Drawn Anime Album Art Presets",
-    "summary": "OpenArt provides vast high-quality presets mimicking hand-drawn anime for album covers, outperforming Midjourney in detail and uniqueness. Accelerates creative iteration in music-visual synergy. Ideal for cybernetic design in sonic-strategic intersections.",
-    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
-    "relevance": 90
-  },
-  {
-    "id": "nightcafe_all_models_hub",
-    "category": "STR_ART",
-    "headline": "NightCafe Unifies Best AI Art Models in One App",
-    "summary": "NightCafe aggregates top AI models for fast, free generative art, fostering a creator community around experimental outputs. Democratizes access to cutting-edge techniques. Enhances strategic art workflows with seamless model switching.",
-    "url": "https://creator.nightcafe.studio",
+    "headline": "GANBreeder (ArtBreeder) Evolves Hybrids",
+    "summary": "Merging images via GANs creates unprecedented forms, now enhanced in ArtBreeder platform. This technique fuels generative design evolution, perfect for cybernetic pattern exploration. Essential for strategic art morphogenesis.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
     "relevance": 88
   },
   {
-    "id": "123rf_hd_ai_art_variations",
+    "id": "magenta_ml_creative_process",
     "category": "STR_ART",
-    "headline": "123RF AI Generates 4096x4096 Print-Ready Art",
-    "summary": "123RF's generator produces multiple HD variations per prompt at print resolutions, rivaling DALL-E for artifact-free physical outputs. Speeds discovery in generative design. Key for scalable cybernetic art production.",
-    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
-    "relevance": 87
-  },
-  {
-    "id": "refik_unsupervised_moma_reimagine",
-    "category": "STR_ART",
-    "headline": "Anadol's 'Unsupervised' Reimagines 200 Years of MoMA Art",
-    "summary": "Trained on MoMA's metadata, Anadol's AI creates dynamic visuals from 200 years of art history, using a 'thinking brush' for immersive reinterpretations. Exemplifies AI as aesthetic synthesizer. Pushes philosophical boundaries in art curation.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 96
-  },
-  {
-    "id": "ganbreeder_hybrid_creations",
-    "category": "STR_ART",
-    "headline": "GANbreeder (ArtBreeder) Merges for Wild Hybrids",
-    "summary": "Evolved from GANbreeder, ArtBreeder fuses images into unprecedented forms and hybrid portraits via GANs. Fuels experimental morphology in generative design. Essential for cybernetic evolution simulations.",
+    "headline": "Magenta: ML as Creative Process Tool",
+    "summary": "Google's open-source Magenta probes machine learning in artistry, requiring code for custom tools. It empowers coders to craft novel generative systems, intersecting AI with philosophical creativity. High design potential.",
     "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 89
+    "relevance": 92
   },
   {
     "id": "deepart_io_style_transfer",
     "category": "STR_ART",
     "headline": "DeepArt.io Applies Master Styles to Photos",
-    "summary": "DeepArt.io neural transfers famous art styles to user photos, creating AI portraits and stylizations. Democratizes neural style transfer for personal cybernetic art. Timeless technique for design inspiration.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 85
-  },
-  {
-    "id": "autodraw_sketch_to_clipart",
-    "category": "STR_ART",
-    "headline": "AutoDraw AI Refines Sketches to Vector Art",
-    "summary": "Google's AutoDraw guesses and polishes rough sketches into clean clip art using neural nets. Bridges hand-drawing with AI precision for UX icons and graphics. Core for iterative cybernetic sketching.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 84
-  },
-  {
-    "id": "deep_angel_inpainting_mit",
-    "category": "STR_ART",
-    "headline": "MIT's Deep Angel Erases Objects from Images",
-    "summary": "Deep Angel automatically removes people/objects via inpainting, enabling seamless AI photo editing. From MIT, advances ethical design tools for privacy in visuals. Strategic for generative composition.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 86
-  },
-  {
-    "id": "visionist_ios_abstract_filters",
-    "category": "STR_ART",
-    "headline": "Visionist iOS App for AI Photo Abstraction",
-    "summary": "Visionist applies abstract AI filters, cutouts, and styles to mobile photos. Portable cybernetic stylization for on-the-go artists. Expands accessible generative pipelines.",
+    "summary": "Transform photos into artistic masterpieces with neural style transfer, including portrait modes. Democratizes high-art techniques for UX-driven visual experiments. Advances accessible STR_ART tooling.",
     "url": "https://aiartists.org/ai-generated-art-tools",
     "relevance": 82
   },
   {
-    "id": "goart_famous_painting_effects",
+    "id": "grok_aurora_photoreal_edit",
     "category": "STR_ART",
-    "headline": "GoArt Turns Photos into Famous Paintings",
-    "summary": "Fotor's GoArt creates portrait-like effects mimicking iconic paintings across web/mobile. Popularizes neural style transfer for consumer creativity. Influences mass cybernetic art adoption.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 81
+    "headline": "Grok's Aurora: Precise Photoreal Edits",
+    "summary": "Grok's autoregressive Aurora excels in prompt adherence for detailed visuals without distortions. Natural-language editing suits music visualizers and covers, less censored than rivals. Revolutionizes album art design.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 87
   },
   {
-    "id": "quick_draw_neural_guessing",
+    "id": "openart_album_art_presets",
     "category": "STR_ART",
-    "headline": "Quick, Draw! AI Guesses Live Sketches",
-    "summary": "Google's game pits neural nets against user drawings in real-time guessing. Trains intuition on AI perception limits. Gamified tool for UX pattern recognition.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
+    "headline": "OpenArt AI's Vast Preset Library for Albums",
+    "summary": "OpenArt rivals Midjourney with extensive high-quality presets, ideal for standout anime album art. Streamlines creative iteration in music visuals. Key SONIC-STR_ART crossover.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 84
+  },
+  {
+    "id": "123rf_hd_ai_variations",
+    "category": "STR_ART",
+    "headline": "123RF: 4K AI Art with Prompt Variations",
+    "summary": "Generates HD 4096x4096 variations per prompt, print-ready without artifacts. Accelerates discovery in generative design workflows. Boosts professional STR_ART output.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
     "relevance": 80
   },
   {
-    "id": "ai_painter_abstract_generator",
-    "category": "STR_ART",
-    "headline": "AI Painter Creates Neural Abstract Art",
-    "summary": "AI Painter transforms photos or generates pure abstracts via neural networks. Focuses on non-representational cybernetic expressions. Vital for sonic-visual synesthesia designs.",
+    "id": "autodraw_sketch_to_clip",
+    "category": "CX_UX",
+    "headline": "AutoDraw: AI Guesses & Refines Sketches",
+    "summary": "Transforms rough sketches into polished clip art via neural recognition. Enhances UX for quick ideation in design systems. Improves accessibility in creative tools.",
     "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 83
+    "relevance": 78
   },
   {
-    "id": "zapier_2026_ai_generators_list",
-    "category": "STR_ART",
-    "headline": "Zapier Ranks 20+ Top AI Art Generators 2026",
-    "summary": "Comprehensive 2026 roundup covers ChatGPT, Ideogram, Leonardo.Ai, and niche tools like Reve and Recraft. Benchmarks text-to-image frontiers for designers. Curates strategic toolchains.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 91
+    "id": "quick_draw_neural_game",
+    "category": "CX_UX",
+    "headline": "Quick, Draw! AI Drawing Guessing Game",
+    "summary": "Neural net guesses user drawings in real-time, fostering intuitive interaction. Gamifies AI learning for UX pattern discovery. Innovative for interaction design research.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 75
   },
   {
-    "id": "luma_dream_machine_photon",
+    "id": "deep_angel_object_removal",
+    "category": "CX_UX",
+    "headline": "Deep Angel: AI Inpainting from MIT",
+    "summary": "MIT's tool auto-removes objects/people from images seamlessly. Streamlines UX editing workflows with intelligent fills. Advances accessible design corrections.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 76
+  },
+  {
+    "id": "eufymake_ai_oil_paintings",
     "category": "STR_ART",
-    "headline": "Luma's Dream Machine Photon for Video Art",
-    "summary": "Luma Photon in Zapier's list advances text-to-video generative art. Enables fluid cybernetic motion design. Breakthrough for immersive STR_ART narratives.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 93
+    "headline": "EufyMake AI Turns Photos to Oil Paintings",
+    "summary": "AI feature converts photos into UV-printed $500 oil-style paintings. Blends digital generation with physical analog output. Perfect for cybernetic design artifacts.",
+    "url": "https://www.youtube.com/watch?v=hsARhucTXoQ",
+    "relevance": 89
+  },
+  {
+    "id": "thinking_brush_refik",
+    "category": "META",
+    "headline": "Anadol's 'Thinking Brush' AI Philosophy",
+    "summary": "Refik Anadol redefines artistry via data-AI symbiosis, beyond prompt generation. Questions human-AI creative agency in immersive realms. Provokes deep META discussions.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 96
+  },
+  {
+    "id": "ai_artist_reclaim_hours",
+    "category": "CX_UX",
+    "headline": "AI Tools Reclaim 10+ Hours Weekly for Creators",
+    "summary": "Top 8 AI tools automate workflows, freeing artists for pure creativity. Optimizes UX in design pipelines. Strategic for SHAPENEURAL efficiency.",
+    "url": "https://www.youtube.com/watch?v=TEDOVh0cUUA",
+    "relevance": 70
+  },
+  {
+    "id": "visionist_ios_art_filters",
+    "category": "STR_ART",
+    "headline": "Visionist: Mobile AI Abstract Filters",
+    "summary": "iOS app applies AI styles like abstracts and cutouts to photos. Mobile-first generative art enhances on-device UX. Portable STR_ART innovation.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 72
   }
 ]
