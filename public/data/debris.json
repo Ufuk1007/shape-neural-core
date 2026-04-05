@@ -1,1 +1,130 @@
-[]
+[
+  {
+    "id": "tensor_art_image_to_image",
+    "category": "STR_ART",
+    "headline": "Tensor.art excels in image-to-image AI art",
+    "summary": "Tensor.art leads 2026 rankings for prompt-based editing and creative upscaling in image-to-image generation, enabling artists to refine visuals with cartoonish, trending styles. This tool democratizes advanced generative techniques for strategic art workflows. User-generated models add endless creative variety.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 85
+  },
+  {
+    "id": "midjourney_abstract_animations",
+    "category": "STR_ART",
+    "headline": "Midjourney tops for surreal AI animations",
+    "summary": "Midjourney dominates abstract images and animations with sliders for stylization and weirdness, producing fantastical visuals ideal for experimental design. Artists gain precise control over generative outputs, pushing boundaries in strategic art movements. Pro plan unlocks higher resolutions.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "dream_machine_brainstorming",
+    "category": "STR_ART",
+    "headline": "Dream Machine AI for iterative design",
+    "summary": "Dream Machine facilitates brainstorming via chat-context generations and iterative suggestions, perfect for rapid prototyping in generative art. This fosters collaborative creativity between human designers and AI. Free tier offers 50 daily credits.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 82
+  },
+  {
+    "id": "krea_premium_models",
+    "category": "STR_ART",
+    "headline": "Krea unlocks painterly AI styles",
+    "summary": "Krea provides access to all premium models for painterly, classical styles with model-hopping freedom, revolutionizing fine art simulation. Designers experiment across top architectures seamlessly. Enhances strategic art with historical influences.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 88
+  },
+  {
+    "id": "recraft_vector_ai",
+    "category": "STR_ART",
+    "headline": "Recraft AI for production vectors",
+    "summary": "Recraft specializes in vector-based generations with sets of similar images, ideal for scalable design systems in strategic art. Production-ready outputs streamline workflows from concept to print. Supports professional creative pipelines.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "raphael_unlimited_free_ai",
+    "category": "STR_ART",
+    "headline": "Raphael AI offers unlimited gens",
+    "summary": "Raphael AI delivers detail-rich images via simple textbox prompts, with unlimited free generations lowering barriers for artists. This empowers experimental generative art without cost constraints. Focuses on high-detail outputs.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 80
+  },
+  {
+    "id": "ideogram_social_media_art",
+    "category": "STR_ART",
+    "headline": "Ideogram perfects AI text composition",
+    "summary": "Ideogram excels in composition, text integration, and color palettes for social media visuals, advancing accessible generative design. Strategic artists leverage it for viral, polished outputs. Affordable starting at $8/month.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 78
+  },
+  {
+    "id": "recraft_ai_zapier_vectors",
+    "category": "STR_ART",
+    "headline": "Recraft vectors in top 20 AI gens",
+    "summary": "Featured in Zapier's 2026 top AI art list, Recraft emphasizes vector workflows for design scalability. Complements STR_ART by enabling precise, editable generative assets. Integrates with broader creative tools.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 75
+  },
+  {
+    "id": "deep_dream_generator_flux",
+    "category": "STR_ART",
+    "headline": "Deep Dream adds FLUX.2 models",
+    "summary": "Veteran Deep Dream Generator incorporates FLUX.2 and custom Stable Diffusion, evolving classic AI art techniques. Artists blend historical deep dream with modern text-to-image for novel hybrids. Pioneers experimental styles.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 84
+  },
+  {
+    "id": "openart_album_art_ai",
+    "category": "STR_ART",
+    "headline": "OpenArt AI for anime album covers",
+    "summary": "OpenArt's Album Art Creator offers hand-drawn-like anime presets, rivaling Midjourney for music-visual synergy. Strategic art benefits from unusual, detailed styles for release stores. Widest high-quality preset selection.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 86
+  },
+  {
+    "id": "refik_anadol_unsupervised",
+    "category": "STR_ART",
+    "headline": "Anadol's AI reimagines 200 yrs art",
+    "summary": "Refik Anadol trains AI on museum metadata to create 'Unsupervised,' immersive visuals from 200 years of art history. This thinking brush blurs data and creativity, inspiring philosophical design. Showcased globally.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 95
+  },
+  {
+    "id": "ganbreeder_hybrid_images",
+    "category": "STR_ART",
+    "headline": "GANbreeder (ArtBreeder) hybrids",
+    "summary": "GANbreeder evolves into ArtBreeder for breeding images into novel forms, fostering evolutionary generative art. Strategic designers create unseen hybrids, advancing AI artistic movements. Open creative manipulation.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 83
+  },
+  {
+    "id": "magenta_ml_creative",
+    "category": "STR_ART",
+    "headline": "Magenta explores ML in creativity",
+    "summary": "Google's Magenta project uses machine learning for creative processes, requiring coding for custom tools. Empowers coders in STR_ART with research-grade generative techniques. Open source innovation.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 81
+  },
+  {
+    "id": "deep_angel_inpainting",
+    "category": "STR_ART",
+    "headline": "MIT Deep Angel removes objects",
+    "summary": "Deep Angel from MIT auto-removes objects from images, enhancing AI editing for clean generative art. Strategic use in compositing and restoration workflows. Precise inpainting tool.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 79
+  },
+  {
+    "id": "gemini_workplace_ai_art",
+    "category": "CX_UX",
+    "headline": "Gemini integrates AI art in docs",
+    "summary": "Gemini excels at text-handling AI art within workplace documents, streamlining UX design ideation. Enhances collaborative CX_UX by embedding generative visuals directly in tools. Accessible integration.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 76
+  },
+  {
+    "id": "canva_print_media_ai",
+    "category": "CX_UX",
+    "headline": "Canva AI for template designs",
+    "summary": "Canva's prompt interface inside image editors suits print media UX, with template-based designs. Boosts user experience in rapid prototyping for design systems. Ideal for accessible workflows.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 74
+  }
+]
