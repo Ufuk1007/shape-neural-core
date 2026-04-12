@@ -617,37 +617,50 @@ const NeuralCloud = ({
   // When interrogating, use interrogationMood; otherwise use currentMood
   const activeMood = isInterrogating ? interrogationMood : currentMood;
   
-  // Fetch external data from GitHub Raw URL
+  // Fetch debris data: try local first, then GitHub, then fallback to mock
   useEffect(() => {
     const fetchDebrisData = async () => {
+      const LOCAL_URL = '/data/debris.json';
       const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/Ufuk1007/shape-neural-core/main/public/data/debris.json';
-      
-      console.log('[NEURAL_CLOUD] Fetching from GitHub:', GITHUB_RAW_URL);
-      
+
+      // Try local file first
       try {
+        console.log('[NEURAL_CLOUD] Trying local:', LOCAL_URL);
+        const localRes = await fetch(LOCAL_URL);
+        if (localRes.ok) {
+          const data = await localRes.json();
+          if (Array.isArray(data) && data.length > 0) {
+            console.log('[NEURAL_CLOUD] ✓ Local data loaded:', data.length, 'items');
+            setDebrisData(data);
+            setIsLoading(false);
+            return;
+          }
+        }
+      } catch (e) {
+        console.warn('[NEURAL_CLOUD] Local fetch failed, trying GitHub...');
+      }
+
+      // Fallback to GitHub
+      try {
+        console.log('[NEURAL_CLOUD] Trying GitHub:', GITHUB_RAW_URL);
         const response = await fetch(GITHUB_RAW_URL);
-        console.log('[NEURAL_CLOUD] Response:', {
-          status: response.status,
-          ok: response.ok,
-          statusText: response.statusText
-        });
-        
         if (response.ok) {
           const data = await response.json();
-          console.log('[NEURAL_CLOUD] ✓ Live data loaded:', data.length, 'items');
-          console.log('[NEURAL_CLOUD] Data preview:', data.slice(0, 2));
-          setDebrisData(data);
-        } else {
-          console.warn('[NEURAL_CLOUD] ✗ GitHub fetch failed, using fallback');
-          setDebrisData(MOCK_DEBRIS);
+          if (Array.isArray(data) && data.length > 0) {
+            console.log('[NEURAL_CLOUD] ✓ GitHub data loaded:', data.length, 'items');
+            setDebrisData(data);
+            setIsLoading(false);
+            return;
+          }
         }
       } catch (error) {
-        console.error('[NEURAL_CLOUD] ✗ Network error:', error);
-        console.log('[NEURAL_CLOUD] Using MOCK_DEBRIS fallback');
-        setDebrisData(MOCK_DEBRIS);
-      } finally {
-        setIsLoading(false);
+        console.error('[NEURAL_CLOUD] ✗ GitHub fetch failed:', error);
       }
+
+      // Final fallback
+      console.log('[NEURAL_CLOUD] Using MOCK_DEBRIS fallback');
+      setDebrisData(MOCK_DEBRIS);
+      setIsLoading(false);
     };
 
     fetchDebrisData();
