@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "getimg_ai_multi_model_workspace",
+    "category": "STR_ART",
+    "headline": "getimg.ai Unifies Top AI Art Models in One Workspace",
+    "summary": "getimg.ai integrates FLUX.2, GPT Image 1.5, Nano Banana 2, Seedream 5.0 Lite, and Qwen Image for seamless experimentation across styles. Artists gain auto-prompt enhancement, reusable elements, and team collaboration without tool-switching. This redefines generative workflows for concept art and illustrations.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 95
+  },
+  {
+    "id": "nano_banana_ai_art_model",
+    "category": "STR_ART",
+    "headline": "Nano Banana Emerges as Versatile AI Art Generator",
+    "summary": "Nano Banana supports custom-trained models and open architectures for painterly and stylized outputs. Featured in getimg.ai and Deep Dream Generator, it enables rapid iteration on fantasy illustrations. Boosts accessibility for experimental visual design.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 90
+  },
+  {
+    "id": "seedream_5_lite_model",
+    "category": "STR_ART",
+    "headline": "Seedream 5.0 Lite Powers Next-Gen AI Stylized Portraits",
+    "summary": "Seedream 5.0 Lite in getimg.ai excels at character concepts and visual directions from prompts. Offers model flexibility for artists exploring beyond single aesthetics. Transforms creative tools into hybrid digital ateliers.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 88
+  },
+  {
+    "id": "midjourney_stylized_cinematic",
+    "category": "STR_ART",
+    "headline": "Midjourney Leads in Cinematic AI Art Styles",
+    "summary": "Midjourney delivers highly stylized, imaginative visuals with advanced mimicry despite learning curve. Ideal for dreamers pushing realism boundaries in digital art. Highlights AI's role in elevating artistic expressiveness.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 85
+  },
+  {
+    "id": "deep_dream_flux_integration",
+    "category": "STR_ART",
+    "headline": "Deep Dream Generator Adds FLUX.2 and Nano Banana",
+    "summary": "Deep Dream evolves with FLUX.2, Nano Banana, and custom Stable Diffusion for subconscious-inspired art. Bridges old DeepDream algorithms with modern text-to-image. Fosters experimental hybrid forms in AI painting.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "leonardo_ai_concept_workflows",
+    "category": "STR_ART",
+    "headline": "Leonardo AI Optimizes Concept Art Pipelines",
+    "summary": "Leonardo AI streamlines design-ready assets and iteration for illustrators. Combines prompt reliability with aesthetic control in multi-model access. Accelerates professional generative design processes.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 82
+  },
+  {
+    "id": "adobe_firefly_design_assets",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly Focuses on Production-Ready AI Art",
+    "summary": "Adobe Firefly prioritizes workflows for design assets and refinements. Integrates seamlessly for artists in creative suites. Enhances UX in professional visual creation.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 80
+  },
+  {
+    "id": "recraft_ai_editing_tools",
+    "category": "STR_ART",
+    "headline": "Recraft Boosts AI Art with Built-in Editing",
+    "summary": "Recraft offers style control and organization for iterative image refinement. Supports team-based generative projects. Makes AI art tools more collaborative for strategic design.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 78
+  },
+  {
+    "id": "refik_anadol_thinking_brush",
+    "category": "STR_ART",
+    "headline": "Refik Anadol's AI 'Thinking Brush' Transforms Data",
+    "summary": "Anadol uses massive datasets and AI for immersive, evolving visuals like 'Unsupervised' reimagining 200 years of art. Paints with metadata-trained systems for non-traditional artistry. Pioneers data-driven strategic art movements.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 92
+  },
+  {
+    "id": "ganbreeder_hybrid_forms",
+    "category": "STR_ART",
+    "headline": "GANbreeder (ArtBreeder) Merges for Novel Hybrids",
+    "summary": "GANbreeder creates unseen forms by merging images into hybrid AI portraits. Evolved into ArtBreeder for wild experimentation. Core technique for generative art evolution.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 85
+  },
+  {
+    "id": "deep_angel_object_removal",
+    "category": "STR_ART",
+    "headline": "Deep Angel Enables Seamless AI Image Editing",
+    "summary": "MIT's Deep Angel auto-removes objects/people from images. Enhances post-generation refinement in AI art pipelines. Vital for clean, intentional generative compositions.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 75
+  },
+  {
+    "id": "ideogram_ai_platform",
+    "category": "STR_ART",
+    "headline": "Ideogram Tops Zapier's AI Art Generator List",
+    "summary": "Ideogram leverages machine learning for stunning text-to-image results. Part of 20+ tools emphasizing prompt-to-visual innovation. Drives accessible creative experimentation.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 80
+  },
+  {
+    "id": "qwen_image_model_access",
+    "category": "STR_ART",
+    "headline": "Qwen Image Model Democratizes Stylized AI Art",
+    "summary": "Qwen Image via getimg.ai supports diverse visual explorations like portraits and concepts. Enables multi-model switching for broader creativity. Shifts paradigms in tool-based art generation.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 82
+  },
+  {
+    "id": "gpt_image_1_5_integration",
+    "category": "STR_ART",
+    "headline": "GPT Image 1.5 Enhances Prompt-Driven Art",
+    "summary": "GPT Image 1.5 in multi-platforms improves understanding for reliable outputs. Facilitates iteration in fantasy and realistic renders. Key for AI-assisted design systems.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 79
+  },
+  {
+    "id": "canva_ai_template_creation",
+    "category": "CX_UX",
+    "headline": "Canva's AI Templates Streamline UX Design",
+    "summary": "Canva integrates AI for template-based image generation, aiding UX prototyping. Reduces friction in interaction pattern creation. Innovates design systems with accessible AI tools.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 70
+  },
+  {
+    "id": "artlist_ai_image_video_hub",
+    "category": "STR_ART",
+    "headline": "Artlist Consolidates Cutting-Edge AI Models",
+    "summary": "Artlist provides all latest AI image/video models in one platform, saving artist time. Supports generative video for dynamic art. Revolutionizes multimedia creative workflows.",
+    "url": "https://www.youtube.com/watch?v=NDsfACJALfY",
+    "relevance": 85
+  },
+  {
+    "id": "ai_tools_for_artists_2025",
+    "category": "STR_ART",
+    "headline": "2025 AI Tools Target Artists' Workflows",
+    "summary": "Curated AI generators for artwork and lyric videos optimize content creation. Includes specialized tools for musicians and visual artists. Bridges STR_ART and SONIC domains creatively.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 72
+  }
+]
