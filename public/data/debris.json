@@ -1,138 +1,130 @@
 [
   {
-    "id": "gpt_image_1_5_nightcafe_integration",
+    "id": "recraft_ai_for_designers",
     "category": "STR_ART",
-    "headline": "NightCafe Integrates GPT Image 1.5 for Advanced Art Gen",
-    "summary": "NightCafe now bundles GPT Image 1.5 with FLUX.2 and Nano Banana, enabling artists to fine-tune styles and experiment across obscure models in one platform. This multi-model access revolutionizes generative workflows, fostering hybrid aesthetics without tool-switching. Designers gain unprecedented creative fluidity for concept iteration.",
+    "headline": "Recraft: AI Art for Professional Designers",
+    "summary": "Recraft tailors AI generation for graphic design workflows, enabling precise control over styles and assets. This bridges generative AI with professional tools, enhancing creative efficiency without sacrificing intent. Designers gain rapid prototyping for client-ready visuals.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 85
   },
   {
-    "id": "nano_banana_ai_art_model",
+    "id": "nightcafe_multi_model_hub",
     "category": "STR_ART",
-    "headline": "Nano Banana Emerges as Top AI Art Model in 2026",
-    "summary": "Nano Banana 2 powers next-gen stylized visuals in tools like getimg.ai and NightCafe, excelling in painterly compositions and fantasy illustrations. Its integration allows seamless exploration of character concepts and portraits. This advances AI's role in pushing artistic boundaries beyond single-model limits.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "headline": "NightCafe Integrates FLUX.2 and Nano Banana",
+    "summary": "NightCafe aggregates top models like FLUX.2, Nano Banana, and GPT Image 1.5 with community features for challenges and fine-tuning. It fosters experimental art communities, turning solo generation into collaborative evolution. Artists explore hybrid aesthetics seamlessly.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 90
   },
   {
-    "id": "getimg_ai_multi_model_workspace",
+    "id": "openart_custom_models",
     "category": "STR_ART",
-    "headline": "getimg.ai Unifies FLUX.2, Seedream in Single Workspace",
-    "summary": "getimg.ai offers FLUX.2, GPT Image 1.5, Nano Banana 2, Seedream 5.0 Lite, and Qwen Image with auto-prompt enhancement and editing tools. Artists iterate illustrations and concept art efficiently in team-collaborative environments. It redefines design systems by centralizing model experimentation.",
+    "headline": "OpenArt's Custom-Trained AI Models",
+    "summary": "OpenArt offers Nano Banana, GPT Image 1.5, and user-trained models for personalized art pipelines. This empowers niche stylistic experimentation, vital for emerging artistic movements. It democratizes advanced model training for creators.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 88
+  },
+  {
+    "id": "deep_dream_flux_integration",
+    "category": "STR_ART",
+    "headline": "Deep Dream Adds FLUX.2 and Nano Banana",
+    "summary": "The veteran Deep Dream Generator incorporates modern FLUX.2 and custom Stable Diffusion, evolving from DeepDream roots. This revival sustains psychedelic, subconscious art techniques with cutting-edge fidelity. It preserves historical AI art while advancing surrealism.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 82
+  },
+  {
+    "id": "getimg_multi_model_workspace",
+    "category": "STR_ART",
+    "headline": "getimg.ai: Multi-Model Art Workspace",
+    "summary": "getimg.ai unifies FLUX.2, GPT Image 1.5, Nano Banana 2, Seedream 5.0 Lite, and Qwen Image in one platform with editing tools. Artists iterate across aesthetics without tool-switching, revolutionizing concept art workflows. Team collaboration amplifies design scalability.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 95
   },
   {
-    "id": "seedream_5_0_lite_getimg",
+    "id": "midjourney_cinematic_styling",
     "category": "STR_ART",
-    "headline": "Seedream 5.0 Lite Boosts Stylized Portraits in getimg.ai",
-    "summary": "Seedream 5.0 Lite in getimg.ai handles complex visual tasks like detailed portraits and fantasy scenes with superior prompt adherence. This enables rapid prototyping for generative design pipelines. Creative tools now support nuanced artistic directions effortlessly.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 88
-  },
-  {
-    "id": "recraft_ai_design_assets",
-    "category": "STR_ART",
-    "headline": "Recraft Focuses on Design-Ready AI Assets",
-    "summary": "Recraft excels in generating template-based, production-ready visuals for UX and branding, bridging AI art with practical design systems. Its workflow emphasizes style control and iteration. This innovation streamlines creative production for digital artists.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 82
-  },
-  {
-    "id": "nightcafe_flux_2_model",
-    "category": "STR_ART",
-    "headline": "FLUX.2 Powers NightCafe's Creative Community",
-    "summary": "NightCafe leverages FLUX.2 alongside DALL-E 3 and Stable Diffusion for community-driven art generation. Features like model fine-tuning enhance expressive outputs. It democratizes advanced generative techniques for experimental artists.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 87
-  },
-  {
-    "id": "leonardo_ai_concept_art",
-    "category": "STR_ART",
-    "headline": "Leonardo AI Optimizes Concept Art Workflows",
-    "summary": "Leonardo AI targets concept art with reliable prompt understanding and refinement tools, ideal for game and film design. It supports cinematic stylization in iterative pipelines. AI now accelerates strategic art development.",
-    "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 84
-  },
-  {
-    "id": "refik_anadol_thinking_brush",
-    "category": "STR_ART",
-    "headline": "Refik Anadol's AI 'Thinking Brush' Transforms Data Art",
-    "summary": "Refik Anadol uses massive datasets and AI for immersive, evolving visuals, redefining installation art. His machine intelligence approach merges data with aesthetics. This pioneers philosophical intersections in generative design.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 92
-  },
-  {
-    "id": "seedream_4_0_editing_tool",
-    "category": "STR_ART",
-    "headline": "Seedream 4.0 Enables In-App AI Image Editing",
-    "summary": "Seedream 4.0 allows creation and editing in one interface, mastering complex visual prompts for strategic art. It enhances UX in generative tools. Artists gain efficiency for experimental compositions.",
-    "url": "https://substack.com/home/post/p-180089543",
-    "relevance": 86
-  },
-  {
-    "id": "adobe_firefly_design_integration",
-    "category": "CX_UX",
-    "headline": "Adobe Firefly Enhances UX Design Asset Creation",
-    "summary": "Adobe Firefly integrates into design workflows for accessible, prompt-driven assets, improving UX prototyping speed. Its ethical training data supports inclusive design systems. This elevates AI's role in user-centered innovation.",
+    "headline": "Midjourney Excels in Cinematic AI Art",
+    "summary": "Midjourney leads for stylized, cinematic outputs with superior prompt adherence. It inspires narrative-driven generative art, influencing digital filmmaking and illustration. Creators achieve filmic depth unattainable in traditional media.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
     "relevance": 80
   },
   {
-    "id": "canva_ai_ux_templates",
-    "category": "CX_UX",
-    "headline": "Canva's AI Speeds Template-Based UX Prototyping",
-    "summary": "Canva's generative AI focuses on user-friendly templates for interaction patterns and accessibility. It streamlines design system collaboration. AI now optimizes customer experience workflows.",
+    "id": "leonardo_concept_art_focus",
+    "category": "STR_ART",
+    "headline": "Leonardo AI Optimizes Concept Art",
+    "summary": "Leonardo AI streamlines workflows for design-ready concept assets, blending iteration speed with precision. This accelerates game and product design pipelines, merging AI with human refinement. It redefines pre-production creativity.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 78
+    "relevance": 87
   },
   {
-    "id": "ai_art_philosophy_collaboration",
-    "category": "META",
-    "headline": "AI Art Tools Advocate Human-AI Collaboration Ethos",
-    "summary": "Platforms like Midjourney and Deep Dream emphasize computational assistance elevating human creativity, sparking philosophy on AI as co-creator. This shifts views on authorship in art. It provokes debates on consciousness in generative systems.",
-    "url": "https://www.pass4sure.com/blog/unleashing-creativity-15-best-ai-art-tools-to-try-in-2025/",
-    "relevance": 89
-  },
-  {
-    "id": "deep_dream_subconscious_art",
+    "id": "adobe_firefly_design_assets",
     "category": "STR_ART",
-    "headline": "Deep Dream Conjures Subconscious AI Visions",
-    "summary": "Deep Dream Generator peers into AI's 'subconscious' for surreal, expressive art, inspiring new movements. It enables stylistic emulation without traditional skills. Designers explore psyche-like patterns innovatively.",
-    "url": "https://www.pass4sure.com/blog/unleashing-creativity-15-best-ai-art-tools-to-try-in-2025/",
-    "relevance": 91
-  },
-  {
-    "id": "ganbreeder_hybrid_forms",
-    "category": "STR_ART",
-    "headline": "ArtBreeder (ex-GANbreeder) Creates Hybrid AI Forms",
-    "summary": "ArtBreeder merges images into novel hybrids, generating unseen forms for experimental design. This fosters evolutionary art techniques. It transforms generative art into a breeding ground for creativity.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 93
-  },
-  {
-    "id": "ideogram_text_to_art",
-    "category": "STR_ART",
-    "headline": "Ideogram Leads Text-to-Art Precision in 2026",
-    "summary": "Ideogram excels in prompt fidelity for stunning, design-ready images, powering creative tools. It supports artistic movements via accessible generation. AI art becomes more intentional and strategic.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 83
-  },
-  {
-    "id": "qwen_image_model_diversity",
-    "category": "STR_ART",
-    "headline": "Qwen Image Diversifies getimg.ai Aesthetics",
-    "summary": "Qwen Image in getimg.ai expands visual directions for illustrations and concepts. It enables diverse stylistic experiments. This enriches AI's palette for global design narratives.",
+    "headline": "Adobe Firefly for Design-Ready Outputs",
+    "summary": "Firefly generates commercially safe, editable assets integrated into Adobe ecosystems. It elevates AI from novelty to production tool in branding and advertising. Ethical training data ensures professional reliability.",
     "url": "https://getimg.ai/blog/best-ai-art-generator",
-    "relevance": 81
+    "relevance": 85
+  },
+  {
+    "id": "refik_anadol_unsupervised_moma",
+    "category": "STR_ART",
+    "headline": "Refik Anadol's AI-Reimagined MoMA Art",
+    "summary": "Anadol's 'Unsupervised' trains AI on 200 years of MoMA metadata to generate immersive, evolving visuals. This 'thinking brush' fuses data and aesthetics, pioneering machine muse concepts. It challenges notions of authorship in institutional art.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 98
   },
   {
     "id": "nightcafe_community_models",
     "category": "STR_ART",
-    "headline": "NightCafe Community Drives Obscure AI Model Use",
-    "summary": "NightCafe's aggregation of rare models like Nano Banana fuels collaborative creativity. Users fine-tune for unique outputs. It builds a hub for emergent artistic practices.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
+    "headline": "NightCafe: Flux, DALL-E, Imagen Hub",
+    "summary": "NightCafe centralizes Flux, DALL-E 3, Imagen, and Stable Diffusion for instant artworks and community sharing. Its model variety sparks cross-pollination in generative styles. Creators build movements through shared galleries.",
+    "url": "https://creator.nightcafe.studio",
+    "relevance": 92
+  },
+  {
+    "id": "ganbreeder_hybrid_forms",
+    "category": "STR_ART",
+    "headline": "ArtBreeder Merges for Hybrid AI Art",
+    "summary": "Former GANbreeder (ArtBreeder) blends images into unseen hybrids and portals. This evolutionary approach drives biomorphic design explorations. It embodies AI as co-creator in organic form invention.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 78
+  },
+  {
+    "id": "deep_angel_inpainting_tool",
+    "category": "STR_ART",
+    "headline": "Deep Angel: AI Object Removal Editor",
+    "summary": "MIT's Deep Angel erases objects seamlessly from images via deep learning inpainting. This empowers post-generative refinement, crucial for polished AI art. It extends creative control in surreal compositions.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 75
+  },
+  {
+    "id": "canva_ai_template_creation",
+    "category": "CX_UX",
+    "headline": "Canva's AI for UX Template Generation",
+    "summary": "Canva integrates AI for rapid template-based designs, streamlining UX prototyping. Non-designers access interaction patterns instantly, boosting accessibility. It transforms AI into inclusive design systems.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 80
+  },
+  {
+    "id": "getimg_team_collaboration",
+    "category": "CX_UX",
+    "headline": "getimg.ai Enables AI Design Teams",
+    "summary": "Built-in collaboration and reusable Elements in getimg.ai optimize shared UX research workflows. Teams refine AI outputs collectively, enhancing pattern discovery. This scales empathetic design practices.",
+    "url": "https://getimg.ai/blog/best-ai-art-generator",
+    "relevance": 82
+  },
+  {
+    "id": "refik_anadol_philosophy_data_brush",
+    "category": "META",
+    "headline": "Anadol's 'Thinking Brush' AI Philosophy",
+    "summary": "Refik Anadol redefines artistry via AI trained on cultural datasets, questioning human-machine creativity boundaries. His immersive works speculate on data as new medium. This fuels debates on AI consciousness in art.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 95
+  },
+  {
+    "id": "ai_art_collaboration_ethos",
+    "category": "META",
+    "headline": "AI Art as Human-Machine Collaboration",
+    "summary": "Platforms like Midjourney and Deep Dream advocate computational assistance elevating creativity. They sketch paradigms of expressiveness over replacement. This perspective shapes ethical AI integration in design.",
+    "url": "https://www.pass4sure.com/blog/unleashing-creativity-15-best-ai-art-tools-to-try-in-2025/",
     "relevance": 85
   }
 ]
