@@ -1,138 +1,130 @@
 [
   {
-    "id": "ideogram_ai_art_powerhouse",
+    "id": "top_ai_art_generators_2026",
     "category": "STR_ART",
-    "headline": "Ideogram Tops 2026 AI Art Generators",
-    "summary": "Ideogram excels in blending AI-generated and real elements for professional designs, pushing boundaries in hybrid creativity. This tool empowers artists to craft intricate visuals beyond pure generation. Vital for strategic art exploring human-AI collaboration.",
+    "headline": "Zapier ranks 20+ top AI art generators for 2026",
+    "summary": "Comprehensive review highlights tools like OpenArt with FLUX.2 and Seedream for precise control and bulk generation. Enables designers to experiment with open models, pushing generative art boundaries beyond chatbots.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 95
   },
   {
-    "id": "recraft_pro_graphic_ai",
+    "id": "openart_flux_seedream_tools",
     "category": "STR_ART",
-    "headline": "Recraft: AI for Professional Designers",
-    "summary": "Tailored for graphic designers, Recraft leverages advanced models for precise, production-ready art. It bridges generative AI with practical design workflows. Enhances creative efficiency in visual arts.",
+    "headline": "OpenArt unlocks FLUX.2 and Seedream 4.5 models",
+    "summary": "Offers superior image control with bulk generators and extras, ideal for strategic art workflows. Designers gain production-ready outputs from powerful open models.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 92
   },
   {
-    "id": "openart_flux_control",
+    "id": "deep_dream_generator_evolution",
     "category": "STR_ART",
-    "headline": "OpenArt Unlocks FLUX.2 with Bulk Gen",
-    "summary": "OpenArt provides superior control over FLUX.2 and Seedream models, including bulk generation features. Ideal for artists scaling experimental projects. Revolutionizes generative art techniques.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 90
-  },
-  {
-    "id": "deep_dream_flux_update",
-    "category": "STR_ART",
-    "headline": "Deep Dream Adds FLUX.2 & Custom SD",
-    "summary": "Veteran tool Deep Dream Generator integrates modern FLUX.2 and custom Stable Diffusion. Evolves from DeepDream roots to contemporary text-to-image. Key for historical AI art continuity.",
+    "headline": "Deep Dream Generator adds FLUX.2, Nano Banana",
+    "summary": "Oldest AI art tool evolves with modern text-to-image models and custom Stable Diffusion. Bridges legacy deep dream aesthetics with current generative techniques.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 88
   },
   {
-    "id": "luma_photon_dream_machine",
+    "id": "grok_imagine_fastest_tool",
     "category": "STR_ART",
-    "headline": "Luma Photon Powers Dream Machine",
-    "summary": "Dream Machine via Luma Photon supports multi-model generation including GPT Image 1.5. Enables dynamic, video-like art explorations. Transforms static prompts into fluid designs.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 87
+    "headline": "Grok Imagine: Fastest AI for images and videos",
+    "summary": "Live demo shows real-time Pinterest boards, infinite scroll, and one-click video from images. Revolutionizes ideation for artists with speed and creative flow.",
+    "url": "https://www.youtube.com/watch?v=xRx7yKg0n-U",
+    "relevance": 97
   },
   {
-    "id": "nightcafe_multi_model_hub",
+    "id": "playform_sketch_refine_tools",
     "category": "STR_ART",
-    "headline": "NightCafe: All Best Models in One",
-    "summary": "NightCafe aggregates top AI models with prompt-to-edit and fusion tools. Fosters community-driven creativity in generative art. Essential platform for artistic experimentation.",
-    "url": "https://creator.nightcafe.studio",
-    "relevance": 85
-  },
-  {
-    "id": "playform_sketch_refine",
-    "category": "STR_ART",
-    "headline": "Playform: Sketch-to-AI Generation",
-    "summary": "Playform offers unlimited free generation with sketch guidance and model training. Keeps professional workflows private and refined. Redefines artist-AI interaction in design.",
+    "headline": "Playform: Sketch-guided AI art with private models",
+    "summary": "Professional tools for guiding generation via sketches, masks, and custom training. Empowers creators with private, production-ready AI art pipelines.",
     "url": "https://playform.io",
-    "relevance": 94
-  },
-  {
-    "id": "canva_magic_media_dreamlab",
-    "category": "STR_ART",
-    "headline": "Canva Dream Lab for Unique Styles",
-    "summary": "Canva's Dream Lab generates AI art from references or prompts in custom styles. Integrates seamlessly into UX design pipelines. Democratizes advanced generative tools.",
-    "url": "https://www.canva.com/ai-art-generator/",
-    "relevance": 82
-  },
-  {
-    "id": "anadol_dataland_museum",
-    "category": "STR_ART",
-    "headline": "DATALAND: 20K sq ft AI Art Museum",
-    "summary": "Refik Anadol's DATALAND museum dedicates space to AI arts in LA. Signals institutional embrace of machine creativity. Pivotal for strategic art movements.",
-    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
     "relevance": 96
   },
   {
-    "id": "magenta_ml_creative",
+    "id": "imagineart_creative_suite",
     "category": "STR_ART",
-    "headline": "Magenta: ML for Creative Processes",
-    "summary": "Google's Magenta project uses ML in art and music creation. Open-source for coders to innovate. Foundational for AI in artistic movements.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 80
+    "headline": "ImagineArt: AI suite for images, videos, voice",
+    "summary": "Text-to-multimodal generation with advanced editing unifies creative workflows. Designers explore hybrid art forms across visuals and audio.",
+    "url": "https://www.imagine.art",
+    "relevance": 94
   },
   {
-    "id": "artbreeder_gan_breeding",
+    "id": "grok_aurora_photorealistic",
     "category": "STR_ART",
-    "headline": "Artbreeder Evolves GAN Breeding",
-    "summary": "Former GANBreeder now Artbreeder merges images into novel forms. Sparks hybrid AI art techniques. Core to generative design evolution.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 85
+    "headline": "Grok's Aurora excels in unrestricted photorealism",
+    "summary": "Natural-language editing for lighting, objects without distortions suits album covers and visualizers. Lowers barriers for precise artistic tweaks.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 93
   },
   {
-    "id": "autodraw_sketch_ai",
+    "id": "openart_wide_presets_2025",
     "category": "STR_ART",
-    "headline": "AutoDraw Turns Sketches to Clip Art",
-    "summary": "Google's AutoDraw enhances rough sketches with AI. Bridges hand-drawing and digital polish. Innovates UX in creative tools.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 78
+    "headline": "OpenArt boasts widest high-quality presets",
+    "summary": "Inpaint, remove, stylize tools rival Midjourney for album art and portraits. Streamlines iterative design in music visuals.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 90
   },
   {
-    "id": "sketch_rnn_collab",
+    "id": "123rf_hd_ai_artwork",
     "category": "STR_ART",
-    "headline": "Sketch-RNN: Draw with Neural Nets",
-    "summary": "Collaborative drawing with recurrent neural networks. Enables real-time AI-human sketching. Advances interactive generative art.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 83
+    "headline": "123RF delivers 4096x4096 HD AI variations",
+    "summary": "Print-ready resolutions with prompt variations enable physical art from digital gens. Bridges generative design to tangible outputs.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 89
   },
   {
-    "id": "canva_pro_ai_ux",
-    "category": "CX_UX",
-    "headline": "Canva Pro Unleashes AI Creativity",
-    "summary": "Canva Pro's Magic Media integrates AI into design systems for UX pros. Streamlines interaction patterns with generated assets. Boosts accessibility in visual design.",
+    "id": "ai_art_big_business_auctions",
+    "category": "STR_ART",
+    "headline": "AI art surges in auctions, museums, DATALAND",
+    "summary": "Despite critics, AI creations thrive in top houses; Anadol's 20k sq ft AI museum redefines artistic legitimacy. Signals shift in strategic art ecosystems.",
+    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
+    "relevance": 98
+  },
+  {
+    "id": "canva_magic_media_generator",
+    "category": "STR_ART",
+    "headline": "Canva's Magic Media: Free text-to-art styles",
+    "summary": "Dream Lab powers accessible generation for UX designers. Democratizes stylistic experimentation in visual design systems.",
     "url": "https://www.canva.com/ai-art-generator/",
     "relevance": 85
   },
   {
-    "id": "recraft_designer_ux",
-    "category": "CX_UX",
-    "headline": "Recraft Optimizes Graphic UX",
-    "summary": "Recraft targets UX with precise AI generation for interfaces. Enhances design system scalability. Critical for AI-driven user experiences.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 88
+    "id": "magenta_ml_creative_process",
+    "category": "STR_ART",
+    "headline": "Magenta: ML as open-source creative tool",
+    "summary": "Google's project integrates machine learning into artistry via code. Fosters experimental generative techniques for sound-art hybrids.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 87
   },
   {
-    "id": "deep_angel_inpainting_ux",
+    "id": "grok_less_restrictive_editing",
     "category": "CX_UX",
-    "headline": "Deep Angel for Seamless Edits",
-    "summary": "MIT's Deep Angel removes objects from images effortlessly. Improves UX prototyping by cleaning visuals. Key AI tool for interaction design.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 75
+    "headline": "Grok enables natural-language image UX tweaks",
+    "summary": "On-the-fly edits without complex tools improve designer-artist interactions. Enhances UX in iterative creative platforms.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 82
+  },
+  {
+    "id": "playform_private_production",
+    "category": "CX_UX",
+    "headline": "Playform prioritizes private AI workflows",
+    "summary": "Mask refining and custom models boost secure UX for pros. Redefines collaborative design systems with privacy.",
+    "url": "https://playform.io",
+    "relevance": 84
   },
   {
     "id": "ai_art_auction_philosophy",
     "category": "META",
-    "headline": "AI Art Enters Top Auctions Amid Debate",
-    "summary": "Despite critics, AI art thrives in auctions and museums, questioning creativity's essence. Sparks philosophical discourse on machine authorship. Shapes future AI ethics in art.",
+    "headline": "AI art's critics vs. big business legitimacy",
+    "summary": "60 Minutes probes philosophical tensions in AI creativity amid market rise. Questions authorship and value in machine-generated strategic art.",
     "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
-    "relevance": 92
+    "relevance": 95
+  },
+  {
+    "id": "dataland_ai_museum_vision",
+    "category": "META",
+    "headline": "DATALAND: 20k sq ft AI arts museum opens",
+    "summary": "Anadol's massive canvas speculates on AI's cultural role. Provokes theory on machine consciousness in immersive design spaces.",
+    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
+    "relevance": 97
   }
 ]
