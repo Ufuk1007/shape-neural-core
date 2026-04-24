@@ -1,130 +1,130 @@
 [
   {
-    "id": "top_ai_art_generators_2026",
+    "id": "ideogram_ai_art_powerhouse",
     "category": "STR_ART",
-    "headline": "Zapier ranks 20+ top AI art generators for 2026",
-    "summary": "Comprehensive review highlights tools like OpenArt with FLUX.2 and Seedream for precise control and bulk generation. Enables designers to experiment with open models, pushing generative art boundaries beyond chatbots.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 95
-  },
-  {
-    "id": "openart_flux_seedream_tools",
-    "category": "STR_ART",
-    "headline": "OpenArt unlocks FLUX.2 and Seedream 4.5 models",
-    "summary": "Offers superior image control with bulk generators and extras, ideal for strategic art workflows. Designers gain production-ready outputs from powerful open models.",
+    "headline": "Ideogram: Pro AI Art for Hybrid Designs",
+    "summary": "Ideogram empowers professionals to blend AI-generated elements with real images for intricate designs. Its advanced capabilities push generative art into practical creative workflows. Ideal for strategic art exploring human-AI collaboration.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 92
   },
   {
-    "id": "deep_dream_generator_evolution",
+    "id": "recraft_graphic_design_ai",
     "category": "STR_ART",
-    "headline": "Deep Dream Generator adds FLUX.2, Nano Banana",
-    "summary": "Oldest AI art tool evolves with modern text-to-image models and custom Stable Diffusion. Bridges legacy deep dream aesthetics with current generative techniques.",
+    "headline": "Recraft: AI for Professional Graphics",
+    "summary": "Tailored for graphic designers, Recraft generates precise visuals from prompts, enhancing design precision. It bridges AI generation with professional tools, revolutionizing visual workflows. Key for STR_ART in commercial creativity.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "openart_flux_control",
+    "category": "STR_ART",
+    "headline": "OpenArt: FLUX.2 with Bulk Generation",
+    "summary": "OpenArt offers control via open models like FLUX.2, plus bulk generation for iterative art. This enables rapid experimentation in generative techniques. Advances STR_ART through accessible power tools.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 88
   },
   {
-    "id": "grok_imagine_fastest_tool",
+    "id": "deep_dream_flux_update",
     "category": "STR_ART",
-    "headline": "Grok Imagine: Fastest AI for images and videos",
-    "summary": "Live demo shows real-time Pinterest boards, infinite scroll, and one-click video from images. Revolutionizes ideation for artists with speed and creative flow.",
+    "headline": "Deep Dream Adds FLUX.2 & Custom SD",
+    "summary": "Veteran Deep Dream Generator integrates modern models like FLUX.2 and custom Stable Diffusion. Evolves classic deep art into contemporary generative platforms. Matters for historical continuity in AI art evolution.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 85
+  },
+  {
+    "id": "grok_imagine_fast_ideation",
+    "category": "STR_ART",
+    "headline": "Grok Imagine: Real-Time Art Boards",
+    "summary": "Grok Imagine delivers Pinterest-style infinite image boards and one-click video from images. Speeds up ideation for artists with speed vs quality modes. Transforms creative brainstorming in STR_ART.",
     "url": "https://www.youtube.com/watch?v=xRx7yKg0n-U",
-    "relevance": 97
+    "relevance": 95
   },
   {
-    "id": "playform_sketch_refine_tools",
+    "id": "grok_aurora_photoreal",
     "category": "STR_ART",
-    "headline": "Playform: Sketch-guided AI art with private models",
-    "summary": "Professional tools for guiding generation via sketches, masks, and custom training. Empowers creators with private, production-ready AI art pipelines.",
-    "url": "https://playform.io",
-    "relevance": 96
-  },
-  {
-    "id": "imagineart_creative_suite",
-    "category": "STR_ART",
-    "headline": "ImagineArt: AI suite for images, videos, voice",
-    "summary": "Text-to-multimodal generation with advanced editing unifies creative workflows. Designers explore hybrid art forms across visuals and audio.",
-    "url": "https://www.imagine.art",
-    "relevance": 94
-  },
-  {
-    "id": "grok_aurora_photorealistic",
-    "category": "STR_ART",
-    "headline": "Grok's Aurora excels in unrestricted photorealism",
-    "summary": "Natural-language editing for lighting, objects without distortions suits album covers and visualizers. Lowers barriers for precise artistic tweaks.",
+    "headline": "Grok Aurora: Unrestricted Photorealism",
+    "summary": "Grok's Aurora model excels in detailed, prompt-precise visuals without restrictions. Natural-language editing simplifies tweaks for album covers and visualizers. Redefines accessible high-fidelity generative art.",
     "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
     "relevance": 93
   },
   {
-    "id": "openart_wide_presets_2025",
+    "id": "playform_unlimited_free",
     "category": "STR_ART",
-    "headline": "OpenArt boasts widest high-quality presets",
-    "summary": "Inpaint, remove, stylize tools rival Midjourney for album art and portraits. Streamlines iterative design in music visuals.",
-    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
-    "relevance": 90
-  },
-  {
-    "id": "123rf_hd_ai_artwork",
-    "category": "STR_ART",
-    "headline": "123RF delivers 4096x4096 HD AI variations",
-    "summary": "Print-ready resolutions with prompt variations enable physical art from digital gens. Bridges generative design to tangible outputs.",
-    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
-    "relevance": 89
-  },
-  {
-    "id": "ai_art_big_business_auctions",
-    "category": "STR_ART",
-    "headline": "AI art surges in auctions, museums, DATALAND",
-    "summary": "Despite critics, AI creations thrive in top houses; Anadol's 20k sq ft AI museum redefines artistic legitimacy. Signals shift in strategic art ecosystems.",
-    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
-    "relevance": 98
-  },
-  {
-    "id": "canva_magic_media_generator",
-    "category": "STR_ART",
-    "headline": "Canva's Magic Media: Free text-to-art styles",
-    "summary": "Dream Lab powers accessible generation for UX designers. Democratizes stylistic experimentation in visual design systems.",
-    "url": "https://www.canva.com/ai-art-generator/",
-    "relevance": 85
-  },
-  {
-    "id": "magenta_ml_creative_process",
-    "category": "STR_ART",
-    "headline": "Magenta: ML as open-source creative tool",
-    "summary": "Google's project integrates machine learning into artistry via code. Fosters experimental generative techniques for sound-art hybrids.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
+    "headline": "Playform: Unlimited Free AI Images",
+    "summary": "Playform provides endless AI image generation with specialized tools for creatives. Removes barriers to experimentation in generative design. Catalyzes STR_ART through democratized access.",
+    "url": "https://playform.io",
     "relevance": 87
   },
   {
-    "id": "grok_less_restrictive_editing",
+    "id": "imagineart_creative_suite",
+    "category": "STR_ART",
+    "headline": "ImagineArt: Images, Videos, Voice AI",
+    "summary": "Comprehensive suite generates multimodal content from text with advanced editing. Unifies creative pipelines for artists. Pivotal for holistic STR_ART explorations.",
+    "url": "https://www.imagine.art",
+    "relevance": 91
+  },
+  {
+    "id": "nano_banana_pro_model",
+    "category": "STR_ART",
+    "headline": "Nano Banana Pro: New Art Model Wave",
+    "summary": "Nano Banana 2 and Pro power multiple top generators for stunning text-to-image. Signals rapid model iteration in generative tools. Essential for tracking STR_ART advancements.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 89
+  },
+  {
+    "id": "luma_photon_dream_machine",
+    "category": "STR_ART",
+    "headline": "Luma Photon: Multi-Model Video Gen",
+    "summary": "Dream Machine via Luma Photon combines models for image-to-video creation. Expands generative art into motion design. Breakthrough for dynamic STR_ART narratives.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 94
+  },
+  {
+    "id": "anadol_dataland_museum",
+    "category": "STR_ART",
+    "headline": "DATALAND: 20K sq ft AI Art Museum",
+    "summary": "Refik Anadol's DATALAND dedicates massive space to AI arts in LA. Institutionalizes AI-generated works amid critics. Marks cultural shift in STR_ART legitimacy.",
+    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
+    "relevance": 96
+  },
+  {
+    "id": "openart_inpaint_tools",
     "category": "CX_UX",
-    "headline": "Grok enables natural-language image UX tweaks",
-    "summary": "On-the-fly edits without complex tools improve designer-artist interactions. Enhances UX in iterative creative platforms.",
+    "headline": "OpenArt Inpaint for UX Prototyping",
+    "summary": "Inpaint, remove, and stylize tools enable precise UI element edits in AI images. Streamlines UX design iteration from concepts. Innovates CX_UX with generative precision.",
     "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
     "relevance": 82
   },
   {
-    "id": "playform_private_production",
+    "id": "recraft_pro_design_ux",
     "category": "CX_UX",
-    "headline": "Playform prioritizes private AI workflows",
-    "summary": "Mask refining and custom models boost secure UX for pros. Redefines collaborative design systems with privacy.",
-    "url": "https://playform.io",
+    "headline": "Recraft Boosts UX Graphic Workflows",
+    "summary": "Designed for pros, Recraft integrates AI into graphic design systems. Enhances interaction pattern creation and accessibility visuals. Key AI-CX_UX intersection.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 84
+  },
+  {
+    "id": "grok_natural_edit_ux",
+    "category": "CX_UX",
+    "headline": "Grok's NLP Editing for UX Tweaks",
+    "summary": "Natural-language edits adjust lighting and objects without complex tools. Simplifies UX prototyping and design system refinements. Advances intuitive CX_UX innovation.",
+    "url": "https://www.benjamingroff.com/best-ai-tools-for-artists/",
+    "relevance": 80
   },
   {
     "id": "ai_art_auction_philosophy",
     "category": "META",
-    "headline": "AI art's critics vs. big business legitimacy",
-    "summary": "60 Minutes probes philosophical tensions in AI creativity amid market rise. Questions authorship and value in machine-generated strategic art.",
-    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
-    "relevance": 95
-  },
-  {
-    "id": "dataland_ai_museum_vision",
-    "category": "META",
-    "headline": "DATALAND: 20k sq ft AI arts museum opens",
-    "summary": "Anadol's massive canvas speculates on AI's cultural role. Provokes theory on machine consciousness in immersive design spaces.",
+    "headline": "AI Art: Critics vs Big Auction Biz",
+    "summary": "Despite fierce critics, AI art thrives in top auctions and museums. Probes philosophical debates on creativity and authorship. Crucial META perspective on AI's artistic validity.",
     "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
     "relevance": 97
+  },
+  {
+    "id": "magenta_ml_creative_role",
+    "category": "META",
+    "headline": "Magenta: ML in Creative Processes",
+    "summary": "Google's Magenta explores machine learning's role in creativity via open research. Challenges notions of AI consciousness in art. Foundational META for philosophical AI design.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 86
   }
 ]
