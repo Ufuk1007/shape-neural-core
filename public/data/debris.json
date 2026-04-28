@@ -1,138 +1,138 @@
 [
   {
-    "id": "zapier_top_ai_art_generators_2026",
+    "id": "ideogram_ai_art_powerhouse",
     "category": "STR_ART",
-    "headline": "Zapier ranks 20+ AI art generators for 2026",
-    "summary": "Comprehensive review highlights new models like Nano Banana, FLUX.2, and Seedream in tools such as OpenArt and Deep Dream Generator. Offers designers access to advanced open-source models with bulk generation and fine control. Matters for strategic art by enabling rapid experimentation with cutting-edge diffusion tech.",
+    "headline": "Ideogram: Pro AI Art for Hybrid Designs",
+    "summary": "Ideogram enables professionals to blend AI-generated and real elements into stunning designs, pushing generative art boundaries. This tool matters for designers seeking precise control in creative workflows. It highlights AI's evolution for professional graphic applications.",
     "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 85
+    "relevance": 95
   },
   {
-    "id": "openart_flux_seedream_integration",
+    "id": "recraft_graphic_design_ai",
     "category": "STR_ART",
-    "headline": "OpenArt integrates FLUX.2 and Seedream 4.5",
-    "summary": "Provides superior control over image specifics beyond chatbots, including bulk generation features. Empowers artists to harness powerful open models for precise generative design. Key for creative workflows needing scalability and customization.",
+    "headline": "Recraft: AI for Professional Graphics",
+    "summary": "Tailored for graphic designers, Recraft generates high-fidelity images with fine control over styles and elements. It transforms AI from novelty to production tool in design pipelines. Essential for strategic art integrating machine learning seamlessly.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 92
+  },
+  {
+    "id": "nano_banana_image_model",
+    "category": "STR_ART",
+    "headline": "Nano Banana 2: Compact Powerhouse Model",
+    "summary": "Nano Banana 2 and Pro deliver efficient, high-quality text-to-image generation across platforms like OpenArt and Playground. This compact model advances accessible generative tools for artists. It democratizes advanced AI art creation.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 90
   },
   {
-    "id": "deep_dream_generator_evolution",
+    "id": "flux2_open_model_control",
     "category": "STR_ART",
-    "headline": "Deep Dream adds FLUX.2 and Nano Banana",
-    "summary": "Evolves from Google's DeepDream to support modern text-to-image models and custom Stable Diffusion. Allows stylization of images with historical and new AI techniques. Bridges legacy deep art with contemporary generative tools for hybrid aesthetics.",
+    "headline": "FLUX.2: Open Model with Expert Control",
+    "summary": "FLUX.2 in OpenArt and NightCafe offers superior image specificity and bulk generation features. It empowers artists with open-source precision in generative workflows. Key for experimental art pushing AI capabilities.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 93
+  },
+  {
+    "id": "deep_dream_flux_integration",
+    "category": "STR_ART",
+    "headline": "Deep Dream Adds FLUX.2 & Custom SD",
+    "summary": "Veteran Deep Dream Generator now supports FLUX.2, Nano Banana, and custom Stable Diffusion models. This evolution bridges classic AI dream effects with modern text-to-image tech. Vital for surrealistic generative art techniques.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 88
   },
   {
-    "id": "grok_imagine_fastest_ai_tool",
-    "category": "STR_ART",
-    "headline": "Grok Imagine: Fastest AI for images/videos",
-    "summary": "Live demo shows real-time Pinterest-style boards, infinite scroll, and one-click video from images. Ideal ideation tool for artists with speed vs quality modes. Revolutionizes creative prototyping in visual arts.",
-    "url": "https://www.youtube.com/watch?v=xRx7yKg0n-U",
-    "relevance": 95
-  },
-  {
-    "id": "playform_ai_art_platform",
-    "category": "STR_ART",
-    "headline": "Playform: Sketch-guided AI generation",
-    "summary": "Unlimited free generation with tools for sketches, masks, and custom model training, keeping work private. Tailored for professional creators in generative design. Enables precise control over AI outputs for production art.",
-    "url": "https://playform.io",
-    "relevance": 92
-  },
-  {
-    "id": "imagineart_creative_suite",
-    "category": "STR_ART",
-    "headline": "ImagineArt: AI for images, videos, voice",
-    "summary": "Generates multimedia from text with advanced editing tools. Supports multimodal creativity in one platform. Crucial for artists exploring AI-driven cross-media design.",
-    "url": "https://www.imagine.art",
-    "relevance": 87
-  },
-  {
-    "id": "nano_banana_ai_model_rise",
-    "category": "STR_ART",
-    "headline": "Nano Banana emerges in multiple generators",
-    "summary": "Featured across Zapier-listed tools like Reve, OpenArt, and Deep Dream. Signals new efficient model for high-quality art generation. Impacts design by lowering barriers to advanced AI visuals.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 82
-  },
-  {
     "id": "luma_photon_dream_machine",
     "category": "STR_ART",
-    "headline": "Luma Photon in Dream Machine tool",
-    "summary": "Combines with GPT Image 1.5 and Seedream for web-based generation. Enhances video-capable AI art pipelines. Valuable for dynamic, motion-integrated strategic art.",
+    "headline": "Luma Photon in Dream Machine",
+    "summary": "Dream Machine leverages Luma Photon, GPT Image 1.5, and Seedream for dynamic AI visuals. It expands generative design into motion and hybrid realities. Crucial for next-gen strategic art experiments.",
     "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 84
-  },
-  {
-    "id": "ai_artists_org_tool_list",
-    "category": "STR_ART",
-    "headline": "41 AI tools from GANBreeder to Magenta",
-    "summary": "Curated list includes Deep Dream, ArtBreeder for image breeding and stylization. Explores ML in creative processes, some coding-required. Foundational for experimental generative art techniques.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 80
-  },
-  {
-    "id": "refik_anadol_dataland_museum",
-    "category": "STR_ART",
-    "headline": "DATALAND: 20k sq ft AI arts museum",
-    "summary": "Refik Anadol's project turns AI into massive canvases despite critics. Big business in auctions and museums. Redefines strategic art as institutional AI-driven installations.",
-    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
     "relevance": 91
   },
   {
-    "id": "canva_magic_media_ai",
+    "id": "magenta_open_creative_ml",
     "category": "STR_ART",
-    "headline": "Canva's Magic Media text-to-art tool",
-    "summary": "Free generator with style selection for quick artwork from prompts. Integrates into design workflows seamlessly. Boosts UX for non-artists in creative production.",
-    "url": "https://www.canva.com/ai-art-generator/",
-    "relevance": 78
-  },
-  {
-    "id": "instasd_deepart_io",
-    "category": "STR_ART",
-    "headline": "DeepArt.io neural style transfer revival",
-    "summary": "Transforms photos into art via deep learning, unlocking artist potential. Pairs with tools like DALL-E for detailed generations. Essential for photo-based generative techniques.",
-    "url": "https://www.instasd.com/post/5-powerful-ai-image-generation-tools-to-explore",
-    "relevance": 79
-  },
-  {
-    "id": "magenta_ml_creative_project",
-    "category": "SONIC",
-    "headline": "Magenta: ML for music and art creation",
-    "summary": "Open-source project uses machine learning in creative processes, including sound. Requires coding for custom tools. Pioneers AI intersections in sonic and visual design.",
+    "headline": "Magenta: ML for Creative Processes",
+    "summary": "Magenta explores machine learning's role in art via open-source tools for visuals and sound. It invites coders and artists to build custom generative systems. Foundational for AI-driven artistic movements.",
     "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 75
-  },
-  {
-    "id": "imagineart_voice_synthesis",
-    "category": "SONIC",
-    "headline": "ImagineArt AI voice from text prompts",
-    "summary": "Part of suite generating voice alongside images/videos. Advances sound design integration in multimedia AI. Key for immersive creative experiences.",
-    "url": "https://www.imagine.art",
-    "relevance": 83
-  },
-  {
-    "id": "grok_imagine_video_sound",
-    "category": "SONIC",
-    "headline": "Grok Imagine one-click image-to-video",
-    "summary": "Fast video generation implies audio potential for creatives. Speeds sonic-visual ideation. Transforms sound design prototyping.",
-    "url": "https://www.youtube.com/watch?v=xRx7yKg0n-U",
-    "relevance": 76
-  },
-  {
-    "id": "ai_art_critics_philosophy",
-    "category": "META",
-    "headline": "AI art critics vs big business debate",
-    "summary": "Fierce opposition yet thriving in auctions/museums questions creativity essence. Anadol's DATALAND embodies philosophical tension. Provokes theory on AI authorship.",
-    "url": "https://www.cbsnews.com/news/ai-art-faces-critics-but-big-business-in-top-auction-houses-museums-60-minutes-transcript/",
     "relevance": 89
   },
   {
-    "id": "playform_private_model_training",
-    "category": "CX_UX",
-    "headline": "Playform private AI model training UX",
-    "summary": "Tools for guiding generation with sketches/masks prioritize creator privacy. Enhances UX in professional design systems. Sets standard for ethical AI interactions.",
-    "url": "https://playform.io",
-    "relevance": 81
+    "id": "ml5js_artist_accessible_ai",
+    "category": "STR_ART",
+    "headline": "ml5.js: Web ML for Artists",
+    "summary": "ml5.js makes machine learning approachable for artists and creative coders via browser-based tools. It lowers barriers to AI in visual arts and interactive design. Perfect for generative web art projects.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 87
+  },
+  {
+    "id": "ganbreeder_image_breeding",
+    "category": "STR_ART",
+    "headline": "ArtBreeder: Evolve Images via GANs",
+    "summary": "Former GANBreeder (now ArtBreeder) breeds images to spawn novel forms and hybrids. This technique fosters evolutionary generative art methodologies. Inspires endless creative mutations in design.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 94
+  },
+  {
+    "id": "magenta_studio_music_plugins",
+    "category": "SONIC",
+    "headline": "Magenta Studio: AI Music Plugins",
+    "summary": "Magenta Studio provides plugins using open models for music generation and manipulation. It integrates AI seamlessly into DAWs for sound designers. Revolutionizes collaborative human-AI composition.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 96
+  },
+  {
+    "id": "ai_duet_piano_improv",
+    "category": "SONIC",
+    "headline": "AI Duet: Responsive Piano Partner",
+    "summary": "AI Duet creates an interactive piano that improvises in real-time with users. This breakthrough in live AI audio interaction enhances sound design practices. Bridges performers with machine creativity.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 92
+  },
+  {
+    "id": "nsynth_hybrid_instruments",
+    "category": "SONIC",
+    "headline": "NSynth: AI Hybrid Sound Maker",
+    "summary": "NSynth Sound Maker generates novel instruments by blending sound timbres via neural synthesis. It opens new sonic palettes for audio artists. Pivotal for experimental sound design.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 95
+  },
+  {
+    "id": "musenet_multi_style_comp",
+    "category": "SONIC",
+    "headline": "MuseNet: 4-Min AI Compositions",
+    "summary": "MuseNet crafts multi-instrument pieces fusing styles from country to classical. This demonstrates AI's prowess in complex music generation. Transforms sound art with programmable creativity.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 93
+  },
+  {
+    "id": "seedance_2_upcoming_model",
+    "category": "STR_ART",
+    "headline": "Seedance 2.0: Next-Gen Video AI",
+    "summary": "Seedance 2.0 promises advanced AI image and video models in one platform via Artlist. It streamlines generative video for content creators. Game-changer for dynamic art and design.",
+    "url": "https://www.youtube.com/watch?v=NDsfACJALfY",
+    "relevance": 90
+  },
+  {
+    "id": "leonardo_ai_text_image",
+    "category": "STR_ART",
+    "headline": "Leonardo.ai: Prompt-to-Art Power",
+    "summary": "Leonardo.ai converts text and images into detailed artwork with web accessibility. Free tier enables rapid prototyping in generative design. Accelerates UX and art ideation cycles.",
+    "url": "https://pub.towardsai.net/6-free-ai-art-tools-that-turn-imagination-into-reality-3ac6ea09ef6b",
+    "relevance": 85
+  },
+  {
+    "id": "deep_angel_inpainting",
+    "category": "STR_ART",
+    "headline": "Deep Angel: AI Object Removal",
+    "summary": "MIT's Deep Angel erases objects from images automatically, aiding precise editing. Enhances post-generation refinement in AI art pipelines. Critical for clean, intentional designs.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 86
+  },
+  {
+    "id": "sketch_rnn_collab_drawing",
+    "category": "STR_ART",
+    "headline": "Sketch-RNN: Draw with Neural Nets",
+    "summary": "Sketch-RNN enables collaborative drawing with AI, predicting and extending strokes. Fosters interactive generative sketching techniques. Innovates UX in digital art creation.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 88
   }
 ]
