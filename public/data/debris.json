@@ -1,138 +1,138 @@
 [
   {
-    "id": "refik_anadol_dataland_museum",
+    "id": "nano_banana_ai_art_model",
     "category": "STR_ART",
-    "headline": "Refik Anadol's DATALAND: AI Art Museum with Scent & Biofeedback",
-    "summary": "Refik Anadol is constructing a 20,000 sq ft AI art museum in LA using massive datasets for immersive, real-time visuals. Visitors wear devices emitting AI-generated scents and monitoring vitals to dynamically alter art. This fuses AI with multi-sensory design, redefining interactive creativity.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 98
-  },
-  {
-    "id": "zapier_top_ai_art_generators_2026",
-    "category": "STR_ART",
-    "headline": "2026's Top AI Art Generators: FLUX.2 & Nano Banana Dominate",
-    "summary": "Zapier ranks 20+ AI art tools like OpenArt, NightCafe, and Deep Dream Generator with models including FLUX.2, Seedream 4.5, and custom Stable Diffusion. These enable precise control, bulk generation, and hybrid styles for experimental artists. Revolutionizes generative workflows with open models.",
+    "headline": "Nano Banana 2 Revolutionizes AI Art Gen",
+    "summary": "Nano Banana 2 and Pro models power multiple top generators like NightCafe and OpenArt, offering superior text-to-image quality. This enables artists to blend advanced diffusion techniques with custom fine-tuning for novel visuals. Marks a leap in accessible, high-fidelity generative design.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 95
   },
   {
-    "id": "nightcafe_multi_model_generator",
+    "id": "recraft_ai_vector_design",
     "category": "STR_ART",
-    "headline": "NightCafe: All Best AI Models in One Creative Hub",
-    "summary": "NightCafe aggregates top AI art models like OpenAI's latest for prompt-to-edit and multi-image fusion. Designed for artists and enthusiasts, it fosters community-driven creativity. Streamlines access to cutting-edge generative techniques.",
-    "url": "https://creator.nightcafe.studio",
+    "headline": "Recraft Tailors AI for Pro Graphic Vectors",
+    "summary": "Recraft specializes in vector-based AI art for designers, integrating models like FLUX.2 for scalable graphics. It bridges generative AI with professional workflows, enhancing precision in branding and UI design. Critical for strategic art in commercial contexts.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 92
   },
   {
-    "id": "openart_flux_seedream_control",
+    "id": "nightcafe_flux_integration",
     "category": "STR_ART",
-    "headline": "OpenArt's FLUX.2 & Seedream for Precise AI Art Control",
-    "summary": "OpenArt offers FLUX.2, Nano Banana, and Seedream with bulk generation and fine-tuned controls beyond chatbots. Ideal for strategic art experiments requiring specificity. Enhances designer agency in AI visuals.",
+    "headline": "NightCafe Aggregates FLUX.2 & Obscure Models",
+    "summary": "NightCafe combines FLUX.2, Nano Banana, and rare models with style fine-tuning for experimental art. Artists gain a hub for hybrid creations, pushing boundaries of AI-driven movements. Fosters emergent creative processes in generative art.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 90
   },
   {
-    "id": "deep_dream_generator_evolution",
+    "id": "openart_bulk_generator",
     "category": "STR_ART",
-    "headline": "Deep Dream Generator Evolves with FLUX.2 & Custom SD",
-    "summary": "Originally Google's DeepDream, now integrates FLUX.2, Nano Banana, and custom-trained models for stylization. Provides hundreds of images monthly on basic plans. Bridges legacy neural art with modern generative power.",
+    "headline": "OpenArt's Bulk Gen Boosts Creative Iteration",
+    "summary": "OpenArt leverages FLUX.2 and Seedream 4.5 with bulk generation for rapid prototyping. This accelerates design exploration, vital for artists iterating on concepts. Enhances efficiency in AI art pipelines.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 88
   },
   {
-    "id": "artlist_seedance_2_video_ai",
+    "id": "deep_dream_flux_upgrade",
     "category": "STR_ART",
-    "headline": "Seedance 2.0: Cutting-Edge AI Video Model on Artlist",
-    "summary": "Artlist integrates Seedance 2.0 for image/video generation, saving creators hours weekly. Upcoming release promises advanced motion synthesis. Transforms design pipelines for dynamic visual art.",
-    "url": "https://artlist.io/ai/models/seedance-2-0",
-    "relevance": 87
-  },
-  {
-    "id": "ai_artists_org_ganbreeder",
-    "category": "STR_ART",
-    "headline": "GANBreeder (ArtBreeder): Image Breeding for Novel Forms",
-    "summary": "Evolved from GANBreeder, ArtBreeder merges images to spawn unseen hybrids using GANs. Sparks experimental portrait and form generation. Core tool for evolutionary AI art techniques.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
+    "headline": "Deep Dream Evolves with Custom FLUX Models",
+    "summary": "Deep Dream Generator upgrades from Google DeepDream to FLUX.2 and custom Stable Diffusion. It allows deep stylization and training, reviving neural dream aesthetics in modern tools. Pivotal for historical AI art continuity.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 85
   },
   {
-    "id": "magenta_ml_creative_process",
+    "id": "tensorart_image_to_image",
     "category": "STR_ART",
-    "headline": "Magenta: Open-Source ML for Creative Processes",
-    "summary": "Google's Magenta explores machine learning in art via coding-accessible tools. Enables custom generative music and visuals. Philosophical foundation for AI-assisted design experimentation.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 84
-  },
-  {
-    "id": "suno_ai_music_generation",
-    "category": "SONIC",
-    "headline": "Suno: AI Music Tool Saving Hours in Content Creation",
-    "summary": "Featured in 2026 workflows, Suno generates full tracks from prompts, integrated in video/podcast pipelines. Democratizes sound design for creators. Breakthrough in accessible audio AI.",
-    "url": "https://suno.com/",
+    "headline": "Tensor.art Excels in Image-to-Image AI Art",
+    "summary": "Tensor.art leads in transforming existing images via advanced models, ideal for remixing art. Designers use it for iterative evolution of visuals, blending human and AI creativity. Transforms static art into dynamic processes.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 93
   },
   {
-    "id": "elevenlabs_voice_synthesis_2026",
-    "category": "SONIC",
-    "headline": "ElevenLabs: AI Voice Cloning for Daily Creator Workflows",
-    "summary": "ElevenLabs clones voices for podcasts and videos, slashing editing time. Used in 2026 AI toolkits for realistic audio synthesis. Redefines sonic UX in multimedia design.",
-    "url": "#",
+    "id": "krea_premium_models_access",
+    "category": "STR_ART",
+    "headline": "Krea Unlocks All Premium AI Art Models",
+    "summary": "Krea provides access to top-tier models for unrestricted experimentation. This democratizes cutting-edge generative tools for artists. Sparks innovative intersections in strategic visual design.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "midjourney_abstract_anim",
+    "category": "STR_ART",
+    "headline": "Midjourney Masters Abstract AI Animations",
+    "summary": "Midjourney tops for abstract images and animations, fueling new artistic movements. Creators produce fluid, dreamlike sequences via Discord. Redefines motion in generative art narratives.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 91
   },
   {
-    "id": "descript_ai_audio_editing",
-    "category": "SONIC",
-    "headline": "Descript: AI-Powered Audio/Video Editing Revolution",
-    "summary": "Descript automates editing for YouTube/podcasts via text-based AI, saving hours weekly. Transforms raw audio into polished sound design. Essential for sonic UX innovation.",
-    "url": "https://www.descript.com/",
-    "relevance": 89
-  },
-  {
-    "id": "heygen_ai_avatars_ux",
-    "category": "CX_UX",
-    "headline": "HeyGen: AI Avatars for Immersive Interaction Design",
-    "summary": "HeyGen creates customizable AI avatars for video content, enhancing UX in education and marketing. Clones user likeness for personalized experiences. Pushes boundaries of AI-driven interfaces.",
-    "url": "https://heygen.com/?sid=rewardful&via=futurepedia",
+    "id": "dream_machine_brainstorm",
+    "category": "STR_ART",
+    "headline": "Dream Machine AI for Rapid Ideation",
+    "summary": "Dream Machine (Luma Photon) excels in brainstorming visuals from prompts. It accelerates conceptual design phases for artists. Vital tool for UX and strategic art prototyping.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 86
   },
   {
-    "id": "ai_app_no_code_48hours",
+    "id": "recraft_vector_ux",
     "category": "CX_UX",
-    "headline": "No-Code AI App Built in 48 Hours with Bolt & Make",
-    "summary": "Demo showcases rapid prototyping of AI apps using Bolt.new and Make, no coding needed. Accelerates UX design iteration for interactive tools. Highlights no-code AI's role in agile design systems.",
-    "url": "https://www.youtube.com/watch?v=D0eWr7rO3nY",
+    "headline": "Recraft Vectors Advance AI UX Design",
+    "summary": "Recraft's vector focus suits scalable UI elements and design systems. Enhances accessibility and consistency in AI-assisted interfaces. Key for innovative user experience patterns.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 89
+  },
+  {
+    "id": "ideogram_social_ux",
+    "category": "CX_UX",
+    "headline": "Ideogram Optimizes AI for Social Media UX",
+    "summary": "Ideogram crafts visuals tailored for social posts, improving engagement metrics. Designers leverage it for intuitive, shareable content flows. Innovates interaction in digital experiences.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 82
   },
   {
-    "id": "refik_anadol_unsupervised_moma",
-    "category": "META",
-    "headline": "Anadol's 'Unsupervised': AI Reimagines 200 Years of Art",
-    "summary": "Trained on MoMA's metadata, Anadol's AI work reinterprets art history fluidly. Questions authorship and machine creativity philosophically. Provokes discourse on AI in cultural heritage.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 96
+    "id": "canva_print_ux",
+    "category": "CX_UX",
+    "headline": "Canva AI Streamlines Print Media Workflows",
+    "summary": "Canva's AI generator targets print-ready designs with Magic Media. Bridges digital UX to physical products seamlessly. Revolutionizes hybrid design systems.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 84
   },
   {
-    "id": "anatol_thinking_brush_philosophy",
-    "category": "META",
-    "headline": "Refik Anadol's 'Thinking Brush': AI as Artistic Medium",
-    "summary": "Anadol views AI as a 'thinking brush' merging data, computation, and immersion. Challenges traditional artistry with machine intelligence. Sparks philosophical debate on creative agency.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 94
+    "id": "playform_unlimited_free",
+    "category": "STR_ART",
+    "headline": "Playform Offers Unlimited Free AI Art Gen",
+    "summary": "Playform provides boundless image generation with specialized tools for creatives. Lowers barriers for experimental design play. Catalyzes grassroots AI art movements.",
+    "url": "https://playform.io",
+    "relevance": 80
   },
   {
-    "id": "deepdream_philosophical_origins",
-    "category": "META",
-    "headline": "Google DeepDream's Legacy in AI Art Philosophy",
-    "summary": "From neural net visualizations to modern tools, DeepDream embodies AI's hallucinatory creativity. Influences theories on machine perception and aesthetics. Foundational for AI art discourse.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
+    "id": "mai_image_bing_innov",
+    "category": "STR_ART",
+    "headline": "Bing's MAI-Image-1 Pushes In-House AI Art",
+    "summary": "Bing Image Creator integrates new MAI-Image-1 alongside DALL·E 3 for fresh outputs. Enables accessible innovation in everyday generative tasks. Expands AI art to broader users.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 83
   },
   {
-    "id": "sketch_rnn_collab_drawing",
+    "id": "promeai_style_suggest",
     "category": "STR_ART",
-    "headline": "Sketch-RNN: Human-AI Collaborative Drawing Demos",
-    "summary": "Neural networks complete user sketches in real-time, blending human input with AI prediction. Explores co-creation dynamics in generative design. Timeless experiment in interactive art.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
+    "headline": "PromeAI Suggests Art Styles Dynamically",
+    "summary": "PromeAI auto-suggests styles for enhanced creative direction. Artists discover hybrid aesthetics effortlessly. Fuels philosophical shifts in AI-human collaboration.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
     "relevance": 81
+  },
+  {
+    "id": "raphael_unlimited_free",
+    "category": "STR_ART",
+    "headline": "Raphael AI Delivers Unlimited Free Gens",
+    "summary": "Raphael AI offers boundless generations, empowering indie creators. Democratizes access to high-end tools. Questions traditional art economics philosophically.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 79
+  },
+  {
+    "id": "deep_angel_inpainting",
+    "category": "STR_ART",
+    "headline": "Deep Angel Erases Objects in AI Edits",
+    "summary": "MIT's Deep Angel removes elements from images seamlessly. Enhances post-generation refinement for precise art. Core technique for advanced design control.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 78
   }
 ]
