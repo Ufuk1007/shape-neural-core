@@ -1,138 +1,146 @@
 [
   {
-    "id": "refik_anadol_machine_mind_landscapes",
+    "id": "ai_sanctuary_ai_art_movements_landscape",
     "category": "STR_ART",
-    "headline": "Refik Anadol’s ‘mind of a machine’ landscapes push data as pigment",
-    "summary": "Refik Anadol’s process—turning hundreds of millions of images into latent 'data pigments'—is a mature template for AI-native visual practice. For designers, his multidimensional mapping of color, texture, and shape shows how training datasets themselves can be treated as primary design material, not just a backend technical detail.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 96
-  },
-  {
-    "id": "canva_magic_media_ai_design_system",
-    "category": "CX_UX",
-    "headline": "Canva’s Magic Media folds text-to-image into mainstream design flows",
-    "summary": "Canva’s Magic Media integrates text-to-image directly into a template-based editor, letting non-experts move from prompt to layout without leaving the canvas. This tight coupling of generation and composition is a key UX pattern for future creative tools, where AI becomes a contextual control inside the design system rather than a separate app.",
-    "url": "https://www.canva.com/ai-art-generator/",
-    "relevance": 88
-  },
-  {
-    "id": "nightcafe_multi_model_creative_hub",
-    "category": "STR_ART",
-    "headline": "NightCafe as a multi-model playground for AI art communities",
-    "summary": "NightCafe aggregates multiple image models behind a single creative UI, wrapped in a social layer of prompts, challenges, and remixing. This multi-model, community-first approach points toward future 'art operating systems' where designers can fluidly move between engines while preserving shared workflows and critique culture.",
-    "url": "https://creator.nightcafe.studio",
-    "relevance": 85
-  },
-  {
-    "id": "openart_unified_image_video_audio_generation",
-    "category": "STR_ART",
-    "headline": "OpenArt unifies image, video, and audio models for multimodal making",
-    "summary": "OpenArt’s browser-based studio offers over 100 models spanning image, video, and music in one interface. For creative technologists, this hints at a near-term standard: multimodal pipelines where a single prompt can drive visual identity, motion design, and sonic branding in a cohesive loop.",
-    "url": "https://openart.ai",
-    "relevance": 89
-  },
-  {
-    "id": "playform_unlimited_exploratory_image_generation",
-    "category": "STR_ART",
-    "headline": "Playform’s unlimited AI image tools favor exploration over scarcity",
-    "summary": "Playform positions AI image generation as 'unlimited' and experimentation-heavy, with a range of specialized tools rather than one monolithic model. This changes the creative economics of iteration: instead of paying per render, artists can treat generation like sketching, opening room for more speculative and process-driven workflows.",
-    "url": "https://playform.io",
-    "relevance": 82
-  },
-  {
-    "id": "ai_art_newbie_guide_as_ux_playbook",
-    "category": "CX_UX",
-    "headline": "Beginner AI art guides double as UX spec for creative tools",
-    "summary": "The Cyberwise primer on AI art tools (DALL·E, Runway, Artbreeder, etc.) unintentionally reads like a requirements document for accessible creative AI: clear text-to-image flows, style play, iterative refinement, and post-editing. For UX designers, it highlights patterns that lower intimidation and frame AI as collaborator rather than replacement.",
-    "url": "https://www.cyberwise.org/post/unveiling-ai-and-art-tools-and-techniques-for-newbies",
-    "relevance": 80
-  },
-  {
-    "id": "print_on_demand_ai_toolchain_ecosystem",
-    "category": "STR_ART",
-    "headline": "Print-on-demand creators assemble modular AI art toolchains",
-    "summary": "The YouTube breakdown of 12 AI art tools for print-on-demand shows creators chaining Midjourney, Canva, Firefly, and more into an ad‑hoc design pipeline. This ecosystem approach—mixing prompt engines, layout tools, and style refiners—foreshadows how designers will curate their own AI stacks instead of relying on single monolithic platforms.",
-    "url": "https://www.youtube.com/watch?v=KIhH89GxNRQ",
-    "relevance": 83
-  },
-  {
-    "id": "ai_style_transfer_as_personal_visual_identity",
-    "category": "STR_ART",
-    "headline": "Style transfer matures into a tool for personal visual identity",
-    "summary": "The Cyberwise overview of DeepArt and related tools frames style transfer as a way to continuously restyle selfies and photos. Beyond novelty, this suggests a design future where individuals maintain evolving 'style profiles' that can be applied across media, making visual identity more fluid and computationally mediated.",
-    "url": "https://www.cyberwise.org/post/unveiling-ai-and-art-tools-and-techniques-for-newbies",
-    "relevance": 78
-  },
-  {
-    "id": "iterative_prompting_as_core_creative_literacy",
-    "category": "META",
-    "headline": "Iterative prompting reframes authorship as dialogic search",
-    "summary": "Advice in beginner AI art guides to 'refine and repeat' until results feel right emphasizes the role of iteration and prompt-tuning as a creative act. Philosophically, this shifts authorship from single decisive gestures toward ongoing dialogue with a model, blurring boundaries between searching, editing, and composing.",
-    "url": "https://www.cyberwise.org/post/unveiling-ai-and-art-tools-and-techniques-for-newbies",
-    "relevance": 84
-  },
-  {
-    "id": "ai_as_creative_partner_not_replacement",
-    "category": "META",
-    "headline": "Educational AI art content frames models as co-creators",
-    "summary": "Cyberwise explicitly positions AI as a 'collaborator but not replacement' for artistry, encouraging users to sketch, generate, then refine by hand. This pedagogical framing matters: it normalizes hybrid workflows where human judgment and taste remain central while AI handles exploration and technical polish.",
-    "url": "https://www.cyberwise.org/post/unveiling-ai-and-art-tools-and-techniques-for-newbies",
+    "headline": "Survey maps evolving styles, tools, and movements in AI art",
+    "summary": "The AI Sanctuary publishes a broad survey of AI art styles—from neural style transfer to GAN portraiture and text-to-image surrealism—situated within a history of generative and computational art. For designers, it reads like a map of emerging visual grammars and workflows, showing how tools like DALL·E, Midjourney, and StyleGAN are coalescing into recognizable movements with their own aesthetics and communities.",
+    "url": "https://theaisanctuary.org/blog/art/exploring-ai-art-styles-tools-and-movements/",
     "relevance": 86
   },
   {
-    "id": "ai_design_tools_democratization_vs_depth",
-    "category": "CX_UX",
-    "headline": "From Midjourney to Canva: tension between power and approachability",
-    "summary": "The print‑on‑demand tool roundup contrasts advanced prompt-based engines (Midjourney, Leonardo) with integrated, template-driven platforms (Canva, Kittl). This illustrates an emerging UX tension: powerful but opaque models versus approachable, opinionated interfaces—raising design questions about how much control to expose to non-expert creators.",
-    "url": "https://www.youtube.com/watch?v=KIhH89GxNRQ",
-    "relevance": 81
+    "id": "ai_sanctuary_immersive_ai_installations",
+    "category": "STR_ART",
+    "headline": "AI art extends from static images to immersive XR installations",
+    "summary": "Beyond still images, the same piece emphasizes AI-driven installations in VR and AR that respond dynamically to viewers. This shift from single images to responsive environments is crucial for spatial and interaction designers exploring how generative models can drive room-scale experiences, adaptive atmospheres, and narrative spaces.",
+    "url": "https://theaisanctuary.org/blog/art/exploring-ai-art-styles-tools-and-movements/",
+    "relevance": 82
   },
   {
-    "id": "ai_creative_quotas_and_temporal_frictions",
+    "id": "ai_sanctuary_prompt_practice_ethics",
     "category": "META",
-    "headline": "Usage caps turn AI creativity into a rationed resource",
-    "summary": "Several tools in the video (Copilot, Firefly, Canva) impose daily or monthly 'boosts' or render limits, effectively metering access to experimentation. This introduces a new design and ethical dimension: time- and token-based constraints subtly shape which ideas get explored, privileging certain users and workflows over others.",
-    "url": "https://www.youtube.com/watch?v=KIhH89GxNRQ",
-    "relevance": 79
+    "headline": "Prompt craft meets ethics in emerging AI art practices",
+    "summary": "The AI Sanctuary guide frames prompt-writing as both a craft and an ethical practice, urging artists to reflect on training data, cultural context, and attribution. This highlights a philosophical shift: treating AI systems not just as tools, but as collaborators embedded in socio-technical histories, raising questions about authorship and creative responsibility.",
+    "url": "https://theaisanctuary.org/blog/art/exploring-ai-art-styles-tools-and-movements/",
+    "relevance": 78
   },
   {
-    "id": "ai_image_generators_as_ux_pattern_labs",
+    "id": "zapier_landscape_2026_ai_art_generators",
+    "category": "STR_ART",
+    "headline": "Landscape of 20+ AI art generators reveals new creative workflows",
+    "summary": "Zapier’s 2026 roundup of AI art generators compares tools like GPT Image models, Ideogram, Leonardo, Dream Machine, and more, with a focus on practical usage. For creative technologists, it’s a snapshot of how text-to-image and video tools are being integrated into production pipelines, from moodboarding and concept art to rapid brand explorations.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 80
+  },
+  {
+    "id": "zapier_multimodal_image_ecosystem",
     "category": "CX_UX",
-    "headline": "AI art platforms double as live labs for interaction patterns",
-    "summary": "Interfaces like Canva’s Magic Media, NightCafe, and OpenArt expose sliders, presets, and prompt histories that teach users how models behave. For UX practitioners, these platforms function as large-scale experiments in explainability and control—testing how visual affordances can make high-dimensional model behavior feel graspable.",
-    "url": "https://creator.nightcafe.studio",
-    "relevance": 90
-  },
-  {
-    "id": "latent_space_as_new_aesthetic_field",
-    "category": "META",
-    "headline": "Anadol’s 'mind of a machine' frames latent space as aesthetic terrain",
-    "summary": "Refik Anadol’s comment that his images 'only exist in the mind of a machine' foregrounds the ontological status of AI art: works born in high-dimensional latent spaces and only partially projected into human perception. This invites designers and theorists to treat latent space navigation itself as an aesthetic and philosophical practice.",
-    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
-    "relevance": 97
-  },
-  {
-    "id": "ai_for_rapid_ux_visualization_and_mockups",
-    "category": "CX_UX",
-    "headline": "Text-to-image becomes a rapid visualization layer for UX teams",
-    "summary": "Beginner guides highlight using AI image generation for quick mockups and ideation before detailed work. In UX practice, this points to AI as an early-stage visualization layer—instantly sketching atmospheres, UI metaphors, or narrative scenes—freeing designers to spend more time on interaction logic and user research.",
-    "url": "https://www.cyberwise.org/post/unveiling-ai-and-art-tools-and-techniques-for-newbies",
-    "relevance": 83
-  },
-  {
-    "id": "consumer_ai_tools_as_sonic_design_on_ramp",
-    "category": "SONIC",
-    "headline": "Emerging multimodal studios hint at low-friction AI sound design",
-    "summary": "Platforms like OpenArt, which already bundle image and music models, foreshadow everyday interfaces where visual and sonic generation live side by side. For sound designers and motion teams, this convergence enables tightly coupled experimentation with audio-visual identity from a single prompt-driven workspace.",
-    "url": "https://openart.ai",
+    "headline": "AI image tools converge into multimodal design ecosystems",
+    "summary": "The same Zapier overview underscores how image models are now bundled with chat, search, and productivity interfaces—e.g., GPT Image models fully integrated into conversational UX. This convergence matters for UX designers: image generation becomes a native interaction primitive, not a separate app, reshaping how users ideate, customize, and co-create visuals in everyday tools.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 77
   },
   {
-    "id": "community_driven_ai_art_critique_loops",
+    "id": "futuresmart_midjourney_dalle_sd_comparison",
     "category": "STR_ART",
-    "headline": "AI art communities institutionalize critique around prompts",
-    "summary": "NightCafe and similar platforms encourage sharing not just finished images but prompts and parameter settings. This reorients critique from solely visual outcomes to the underlying 'spell' that summoned the work, seeding new norms around reproducibility, forkability, and collective authorship in AI-assisted art.",
-    "url": "https://creator.nightcafe.studio",
-    "relevance": 87
+    "headline": "Comparative guide decodes aesthetics of major image models",
+    "summary": "FutureSmart’s review of Midjourney, DALL·E, Stable Diffusion, and niche tools like PicSo and Dream by Wombo focuses on their characteristic styles and strengths. For art directors and visual designers, this comparative lens is useful: it frames models as different ‘brushes’ with distinct visual biases, helping teams select engines according to brand tone, fidelity, and flexibility.",
+    "url": "https://blog.futuresmart.ai/8-best-ai-art-tools-revolutionizing-the-art-world",
+    "relevance": 74
+  },
+  {
+    "id": "futuresmart_prompt_hero_practice_sharing",
+    "category": "META",
+    "headline": "PromptHero highlights prompt-sharing as emerging creative literacy",
+    "summary": "The mention of PromptHero within the FutureSmart piece illustrates how communities are openly sharing exact prompts and model settings to reproduce or remix AI artworks. This practice turns prompt-writing into a vernacular design language, raising philosophical questions about originality and whether creativity resides in the dataset, the model, or the human-authored ‘spell’ that invokes them.",
+    "url": "https://blog.futuresmart.ai/8-best-ai-art-tools-revolutionizing-the-art-world",
+    "relevance": 72
+  },
+  {
+    "id": "aiartists_catalog_of_ai_image_tools",
+    "category": "STR_ART",
+    "headline": "AIArtists.org catalogs 40+ creative AI tools across media",
+    "summary": "AIArtists.org maintains an extensive catalog of AI image tools, from Deep Dream Generator and ArtBreeder to Quick, Draw! and AI Painter, emphasizing experimentation and play. This serves as a design research resource, showing how artists mix classification, translation, and generative models to create hybrids like morphing portraits, abstract form searches, and interactive drawing companions.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 88
+  },
+  {
+    "id": "aiartists_ai_duet_and_magenta_studio",
+    "category": "SONIC",
+    "headline": "Magenta Studio and AI Duet push human–AI musical co-creation",
+    "summary": "Within the AIArtists list, Magenta Studio plugins and the AI Duet piano demonstrate how ML models can respond in real time to human musical input. For composers and sound designers, these tools foreground call-and-response workflows where the model improvises with you, reconfiguring authorship and suggesting new ways to prototype harmonies, textures, and rhythmic structures.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 85
+  },
+  {
+    "id": "aiartists_scribbling_speech_expressive_interfaces",
+    "category": "CX_UX",
+    "headline": "Scribbling Speech turns voice into live drawing for new interfaces",
+    "summary": "The Scribbling Speech experiment converts real-time speech into animated drawings, effectively making language a gestural, visual control stream. This points to novel UX patterns where users can ‘speak’ interfaces into being—useful for accessibility, live visualisation in performance, or speculative interfaces that translate tone and semantics into dynamic graphics.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 83
+  },
+  {
+    "id": "aiartists_thing_translator_and_visual_linguistic_play",
+    "category": "CX_UX",
+    "headline": "Thing Translator explores object recognition as playful UX",
+    "summary": "Thing Translator links computer vision with language by letting users photograph objects to hear their names in different languages. As a micro-interaction, it hints at how AI can embed ambient learning and cultural translation into everyday camera UX, blending education, tourism, and playful exploration rather than just utility-focused recognition.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 70
+  },
+  {
+    "id": "youtube_midjourney_toolchain_video_to_vector",
+    "category": "STR_ART",
+    "headline": "Designer toolchains emerge around Midjourney with video and vector",
+    "summary": "A recent YouTube walkthrough shows artists piping Midjourney outputs through tools like Cling AI or Runway for short AI-animated clips, then into Vectorizer and Illustrator’s ‘Generate Vectors’ feature for scalable artwork. This demonstrates how AI art is leaving the “cool image” phase and entering robust design pipelines where bitmap generations become motion assets, icons, and brand-ready vectors.",
+    "url": "https://www.youtube.com/watch?v=XY8t4I0FxHY",
+    "relevance": 82
+  },
+  {
+    "id": "youtube_ai_motion_from_stills",
+    "category": "STR_ART",
+    "headline": "Image-to-video AI turns static concept art into motion studies",
+    "summary": "The same video highlights drag-and-drop tools that create 5-second animated sequences from single AI-generated images using text prompts as motion direction. For motion designers and storyboard artists, this blurs the line between style frames and animatics, enabling ultra-fast iteration on camera movement, mood, and narrative beats directly from generative stills.",
+    "url": "https://www.youtube.com/watch?v=XY8t4I0FxHY",
+    "relevance": 79
+  },
+  {
+    "id": "canva_global_trends_ai_image_generation",
+    "category": "CX_UX",
+    "headline": "Canva reports global trends in everyday AI image creation",
+    "summary": "Canva’s analysis of global AI image generation trends reveals how non-experts across regions use generative models for social content, presentations, and small business branding. From a UX perspective, it shows AI art tools moving into mainstream design systems and raises questions about default aesthetics, template cultures, and how interface choices shape what ‘good’ AI-generated design looks like.",
+    "url": "https://www.canva.com/ai-art-generator/global-trends/",
+    "relevance": 84
+  },
+  {
+    "id": "fiu_library_ai_art_ethics_controversy",
+    "category": "META",
+    "headline": "University guide frames AI art as site of copyright and labor conflict",
+    "summary": "Florida International University’s AI & Art news guide summarizes ongoing controversies around AI image generators, including copyright, training data consent, and the economic impact on illustrators. It reflects a growing institutional recognition that AI aesthetics are inseparable from questions of labor, ownership, and the legitimacy of “style mimicry” as a design practice.",
+    "url": "https://library.fiu.edu/ai-art/news",
+    "relevance": 76
+  },
+  {
+    "id": "duke_artpi_api_for_art_historical_search",
+    "category": "CX_UX",
+    "headline": "ArtPI offers art-optimized API for AI-powered visual search",
+    "summary": "Duke’s research guide highlights ArtPI, an API trained specifically on artworks, enabling nuanced image similarity, metadata, and style analysis for cultural collections. For museum technologists and product designers, ArtPI is a building block for interfaces that let users browse art by visual motif, composition, or style rather than only by text, suggesting richer exploratory UX in archives and galleries.",
+    "url": "https://guides.library.duke.edu/c.php?g=289265&p=11075683",
+    "relevance": 81
+  },
+  {
+    "id": "digitalocean_ai_design_tools_workflow",
+    "category": "CX_UX",
+    "headline": "AI design tools reshape end-to-end creative workflows",
+    "summary": "DigitalOcean’s overview of AI design tools shows how layout suggestion, asset generation, and copy assistance are being embedded into design software used by professionals. This is central for UX teams: AI is moving from standalone novelty to invisible infrastructure inside Figma-like environments, altering how wireframes, design systems, and content variants are produced and iterated.",
+    "url": "https://www.digitalocean.com/resources/articles/ai-design-tools",
+    "relevance": 78
+  },
+  {
+    "id": "aiartists_quickdraw_and_sketchrnn_playful_co_creation",
+    "category": "META",
+    "headline": "Quick, Draw! and Sketch-RNN probe boundaries of human–AI play",
+    "summary": "Projects like Quick, Draw! and Sketch-RNN, cited on AIArtists.org, use user sketches to train and then interactively collaborate with drawing models. Philosophically, they act as laboratories for understanding how humans adapt to machine expectations, and how creativity emerges in feedback loops where the system both learns from and guides human gesture.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 83
   }
 ]
