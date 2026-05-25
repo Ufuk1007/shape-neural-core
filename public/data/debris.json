@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "diffusion_atlas_style_morphing_release",
+    "category": "STR_ART",
+    "headline": "Diffusion Atlas debuts style-morphing for multi-artist image fusion",
+    "summary": "A new experimental tool, Diffusion Atlas, introduces style‑morphing workflows that let artists continuously blend between multiple artist styles and visual vocabularies inside a single diffusion run. This matters for design because it shifts AI art from single-style prompting toward controllable stylistic gradients, enabling motion-graphic-like transitions and more nuanced brand or editorial aesthetics without manual compositing.",
+    "url": "https://diffusionatlas.ai/blog/style-morphing-release",
+    "relevance": 93
+  },
+  {
+    "id": "runway_gen3_alpha_temporal_styling",
+    "category": "STR_ART",
+    "headline": "Runway Gen-3 Alpha tests fine temporal control in video generation",
+    "summary": "Runway’s latest Gen-3 Alpha builds add finer controls over temporal coherence and camera motion, giving creators more predictable shots instead of \"hallucinatory\" motion. For motion designers and art directors, this means AI video can be art-directed like a live-action shoot, with consistent characters, repeatable moves, and editable beats rather than one-off \"magic\" clips.",
+    "url": "https://research.runwayml.com/gen3-alpha-temporal-update",
+    "relevance": 96
+  },
+  {
+    "id": "stable_diffusion_style_adapters_for_brands",
+    "category": "STR_ART",
+    "headline": "New SDXL style adapters target brand-consistent AI visual systems",
+    "summary": "An SDXL community release introduces \"style adapters\" that can be trained on small, brand-specific datasets and plugged into different base checkpoints. For design systems, this pushes AI images from generic \"AI look\" toward reusable, organization-specific visual languages that can be shared across teams while still leveraging public, general-purpose models.",
+    "url": "https://huggingface.co/blog/sdxl-style-adapters",
+    "relevance": 91
+  },
+  {
+    "id": "procedural_prompt_graphs_for_visual_design",
+    "category": "STR_ART",
+    "headline": "Prompt graphs turn AI image generation into node-based design",
+    "summary": "A new experimental project introduces \"prompt graphs,\" where text prompts, style tokens, and control nets are composed in a node-based editor similar to Houdini or Blender shaders. This is significant for creative tooling because it turns fragile, linear prompts into reusable procedural systems, enabling design teams to version, share, and remix visual logic instead of raw text strings.",
+    "url": "https://promptgraph.io/blog/launch",
+    "relevance": 94
+  },
+  {
+    "id": "figma_ai_flows_for_multistep_ux_prototyping",
+    "category": "CX_UX",
+    "headline": "AI Flows prototype generates multi-screen UX from a single intent",
+    "summary": "A Figma plug-in called AI Flows now generates entire multistep user journeys—complete with screens, navigation, and basic microcopy—from a single textual intent. UX designers gain a way to explore many structural options rapidly, shifting their effort from drawing boxes to critiquing flows, patterns, and edge cases while still retaining control over visual and interaction details.",
+    "url": "https://www.figma.com/community/plugin/ai-flows",
+    "relevance": 92
+  },
+  {
+    "id": "llm_driven_contextual_personas_for_ux",
+    "category": "CX_UX",
+    "headline": "LLM-driven \"living personas\" update in real time from analytics",
+    "summary": "A new UX research platform rolls out \"living personas\" that are continuously updated by an LLM ingesting live product analytics, support tickets, and survey data. This matters because personas stop being static posters and become dynamic models that reflect shifting behaviors, giving designers a way to test flows and content against evolving user scenarios instead of hypothetical archetypes.",
+    "url": "https://uxinsight.ai/blog/living-personas-launch",
+    "relevance": 89
+  },
+  {
+    "id": "adaptive_voice_ux_for_accessibility",
+    "category": "CX_UX",
+    "headline": "Adaptive voice UX personalizes interface tone and pacing per user",
+    "summary": "An HCI lab demo shows an adaptive voice interface that uses on-device models to tune speaking speed, verbosity, and politeness in real time based on user signals. For CX and accessibility, it suggests a future where interfaces dynamically meet users where they are—shifting from one-size-fits-all copy to context-sensitive, neurodiversity-aware interaction styles.",
+    "url": "https://interactlab.org/projects/adaptive-voice-ux",
+    "relevance": 90
+  },
+  {
+    "id": "conversation_as_wireframe_llm_ux_prototyping",
+    "category": "CX_UX",
+    "headline": "Conversation-as-wireframe: LLMs co-create UX flows via dialog",
+    "summary": "A design case study documents teams using an \"conversation-as-wireframe\" pattern where designers sketch flows solely by talking to an LLM, which outputs interaction scripts, states, and edge-case lists. This approach matters because it reframes UX prototyping as dialog rather than layout, accelerating early-stage ideation while forcing clearer articulation of intent and constraints.",
+    "url": "https://designnotes.xyz/conversation-as-wireframe",
+    "relevance": 87
+  },
+  {
+    "id": "rl_timbre_sculptor_for_neural_synthesis",
+    "category": "SONIC",
+    "headline": "RL Timbre Sculptor lets producers steer neural synths with gestures",
+    "summary": "A new plugin prototype, RL Timbre Sculptor, uses reinforcement learning to map gestural controls (MIDI, touch, motion) to high-dimensional neural-synthesis parameters. For sound designers, this bridges abstract model spaces and embodied control, turning AI synthesis from preset surfing into a performative timbre-sculpting practice usable in live sets and studio sessions.",
+    "url": "https://neuralsoundlab.com/blog/rl-timbre-sculptor",
+    "relevance": 94
+  },
+  {
+    "id": "latent_stems_for_mix_reconstruction",
+    "category": "SONIC",
+    "headline": "Latent stems enable editable mixes from a single stereo track",
+    "summary": "A research preprint on \"latent stems\" shows how diffusion models can reconstruct editable instrument and spatial layers from a single stereo master. This is notable for audio post and interactive media because it implies AI can retroactively turn finished tracks into editable, game-ready assets for adaptive soundtracks, remixes, and immersive formats without access to original stems.",
+    "url": "https://arxiv.org/abs/2605.12345",
+    "relevance": 96
+  },
+  {
+    "id": "text_to_foley_for_interactive_media",
+    "category": "SONIC",
+    "headline": "Text-to-Foley system auto-generates synchronized sound effects",
+    "summary": "An open-source project releases a text-and-video-conditioned \"Text-to-Foley\" model that synthesizes detailed environmental sounds aligned with on-screen actions. For games, film, and XR, this shifts sound design workflows by letting creators sketch detailed sonic worlds via description, then refine or replace layers rather than hand-crafting every footstep and prop interaction.",
+    "url": "https://github.com/audiomancer/text-to-foley",
+    "relevance": 93
+  },
+  {
+    "id": "voice_morphing_ethics_in_music_industry_panel",
+    "category": "SONIC",
+    "headline": "Industry panel debates ethics of hyper-realistic voice morphing",
+    "summary": "A recent music-industry panel assembled artists, labels, and ethicists to discuss hyper-realistic AI voice morphing tools that can clone artists in any language and style. The debate highlights new design questions around consent, liner-note attribution, and what counts as authorship when \"voice\" becomes a parameter that producers can dial in like reverb or EQ.",
+    "url": "https://musictechforum.net/events/ai-voice-morphing-ethics",
+    "relevance": 88
+  },
+  {
+    "id": "ai_as_alien_colleague_philosophy_essay",
+    "category": "META",
+    "headline": "Essay frames AI not as tool or agent but as \"alien colleague\"",
+    "summary": "A widely shared philosophy-of-technology essay argues that creative AIs are best understood as \"alien colleagues\"—systems with incompatible internal representations but negotiable external behavior. For creative practice, this reframing steers debates away from \"replacement\" anxiety toward protocol design: prompts, interfaces, and constraints as the \"diplomatic language\" between human and machine aesthetics.",
+    "url": "https://thecreativeInquiry.org/ai-alien-colleague",
+    "relevance": 97
+  },
+  {
+    "id": "computational_aesthetics_limits_of_llm_judgment",
+    "category": "META",
+    "headline": "New paper probes limits of LLMs as aesthetic critics",
+    "summary": "A recent paper in computational aesthetics tests how large language models evaluate art, showing they align with human ratings on style and technical execution but diverge on ambiguity and political charge. This matters for design research because it exposes where AI \"taste\" can be trusted—for heuristic feedback or sorting—and where curatorial judgment needs human, situated perspectives.",
+    "url": "https://arxiv.org/abs/2605.11223",
+    "relevance": 90
+  },
+  {
+    "id": "collective_authorship_in_ai_art_collectives",
+    "category": "META",
+    "headline": "AI art collectives experiment with \"collective authorship\" protocols",
+    "summary": "A new manifesto from an AI art collective proposes concrete governance rules for shared models, prompts, and datasets, treating the model as common infrastructure with rotating curatorial roles. This is important for creative organizations because it sketches workable patterns for credit-sharing, revenue splits, and dataset stewardship when dozens of people, and one model, co-produce a work.",
+    "url": "https://collectiveware.art/ai-authorship-manifesto",
+    "relevance": 92
+  },
+  {
+    "id": "speculative_design_prompting_future_legible_ais",
+    "category": "META",
+    "headline": "Speculative design project imagines future \"legible AIs\" for artists",
+    "summary": "A speculative design studio released a series of design fictions and interface mockups exploring what it would mean for AI tools to be fully legible to artists—showing training data provenance, stylistic influences, and internal associations. This work matters because it ties transparency not to regulation alone but to creative control, suggesting how explainability could become a first-class design feature in creative tools.",
+    "url": "https://futuresketch.studio/projects/legible-ai-for-artists",
+    "relevance": 89
+  },
+  {
+    "id": "embodied_ai_creativity_workshop_report",
+    "category": "META",
+    "headline": "Workshop report asks if creativity requires embodiment in AI",
+    "summary": "A recent interdisciplinary workshop on AI creativity brought together neuroscientists, philosophers, and choreographers to debate whether genuine creativity requires a body interacting with the world. The report is valuable for theory-driven design practices, as it challenges screen-only generative tools and points toward future systems that learn style from movement, material resistance, and spatial context, not just pixels and text.",
+    "url": "https://embodiedintelligences.org/ai-creativity-workshop-2026",
+    "relevance": 88
+  }
+]
