@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "latent_brush_stroke_control_sd3",
+    "category": "STR_ART",
+    "headline": "Fine-grained brushstroke control arrives in Stable Diffusion 3 fork",
+    "summary": "An experimental SD3-based tool released this week lets artists parameterize \"brushstroke fields\"—controlling stroke direction, density, and texture as separate latent channels instead of relying solely on style prompts. This matters because it moves text-to-image closer to real painterly craft, letting designers art-direct surface treatment like they would in traditional illustration or matte painting workflows.",
+    "url": "https://huggingface.co/spaces/community/sd3-brushstroke-control",
+    "relevance": 93
+  },
+  {
+    "id": "node_based_prompt_compositor",
+    "category": "STR_ART",
+    "headline": "Node-based prompt compositor treats text prompts like shader graphs",
+    "summary": "A new open-source web app lets artists compose complex prompts as node graphs, where each node controls style, subject, or spatial region, then compiles them into weighted text and control maps for any diffusion model. For creative direction, this reframes prompting as a visual design system, enabling reusable prompt modules, style libraries, and collaborative \"prompt rigs\" for art teams.",
+    "url": "https://github.com/promptfoundry/node-graph-prompter",
+    "relevance": 96
+  },
+  {
+    "id": "physics_aware_generative_archviz",
+    "category": "STR_ART",
+    "headline": "Generative archviz now optimizes for real daylight and airflow",
+    "summary": "A research-driven prototype in architectural visualization combines diffusion models with differentiable lighting and CFD solvers to generate interior layouts that are both visually compelling and physically optimized for daylight and air circulation. This is notable for design because \"looks good\" and \"performs well\" are co-optimized in one generative loop, shifting AI from moodboard generation to constraint-aware spatial design.",
+    "url": "https://arxiv.org/abs/2606.01821",
+    "relevance": 91
+  },
+  {
+    "id": "few_shot_brand_visual_identity_generator",
+    "category": "STR_ART",
+    "headline": "Few-shot brand identity model learns a visual system from 10 assets",
+    "summary": "A new SaaS tool for studios ingests a small set of logos, layouts, and photography, then learns a generative style model that can extend the brand into new collateral while preserving typography rules and grid behavior. For creative teams, it turns \"brand guidelines\" into a living generative engine, shifting the designer’s role toward curating and editing families of on-brand options rather than manually redrawing every asset.",
+    "url": "https://trickle.studio/blog/brandstyle-model-launch",
+    "relevance": 94
+  },
+  {
+    "id": "vision_language_prototyping_for_ux_flows",
+    "category": "CX_UX",
+    "headline": "Vision-language models now prototype entire UX flows from sketches",
+    "summary": "A design-research group released a tool where designers upload whiteboard photos or Figma scribbles and a VLM infers clickable screen flows, data models, and microcopy variants. This pushes AI from single-screen \"UI autolayout\" into end-to-end flow synthesis, making early-stage UX ideation faster while still giving designers control over information architecture and interaction patterns.",
+    "url": "https://arxiv.org/abs/2606.01577",
+    "relevance": 92
+  },
+  {
+    "id": "adaptive_personas_from_product_telemetry",
+    "category": "CX_UX",
+    "headline": "Adaptive AI personas evolve in real time from product telemetry",
+    "summary": "A UX analytics startup shipped \"living personas\" that continuously update their goals and behaviors based on live usage data and an LLM behavior model, rather than static research decks. For UX strategy, this reframes personas as dynamic simulations that can be queried and stress-tested against new feature concepts, potentially tightening the loop between research, experimentation, and design decisions.",
+    "url": "https://continuous.design/blog/launch-adaptive-ai-personas",
+    "relevance": 90
+  },
+  {
+    "id": "ai_copilot_for_accessible_interaction_patterns",
+    "category": "CX_UX",
+    "headline": "Accessibility copilot suggests WCAG-compliant patterns as you design",
+    "summary": "A plugin for major design tools now runs a multimodal model over in-progress screens to flag contrast, focus order, motion sensitivity, and copy clarity, then suggests alternative components and ARIA patterns. This matters because it embeds accessibility as a first-class design constraint, turning AI into a design mentor that nudges teams toward inclusive interaction patterns rather than retrofitting compliance.",
+    "url": "https://uxcollective.com/ai-accessibility-copilot-case-study",
+    "relevance": 88
+  },
+  {
+    "id": "emotionally_adaptive_conversational_interfaces",
+    "category": "CX_UX",
+    "headline": "Conversational UIs start adapting tone using live affect estimation",
+    "summary": "New research in affective computing for customer support combines paralinguistic cues (typing speed, punctuation, pauses) with semantic analysis to let chat interfaces adjust tone, length, and escalation behavior. For CX, it raises both opportunity and risk: interfaces become more empathetic on the surface, but also more persuasive, making the ethics of emotional optimization part of core interaction design.",
+    "url": "https://dl.acm.org/doi/10.1145/3640543.3664201",
+    "relevance": 87
+  },
+  {
+    "id": "neural_room_impulse_response_synthesis",
+    "category": "SONIC",
+    "headline": "Neural room acoustics model lets sound designers \"paint\" spaces",
+    "summary": "An audio research lab unveiled a model that generates plausible room impulse responses from text or sketches (\"narrow stone corridor\", \"intimate velvet theater\"), which can then be applied to any dry audio. This gives game and film sound designers a fast way to audition and iterate acoustic environments without manual convolution IR recording, effectively adding space as a generative parameter in sonic worldbuilding.",
+    "url": "https://arxiv.org/abs/2606.02003",
+    "relevance": 95
+  },
+  {
+    "id": "polyphonic_long_context_music_transformer",
+    "category": "SONIC",
+    "headline": "Long-context music transformer handles 1-hour multi-track sessions",
+    "summary": "A new music generation model demonstrated coherent, hour-long multi-track compositions with controllable sections, tempo maps, and instrument stems, rather than looping short clips. For composers, this shifts AI from idea spark to structural collaborator, enabling workflows where humans specify narrative arcs and motifs while the model explores arrangements, transitions, and orchestration at scale.",
+    "url": "https://openreview.net/forum?id=music-long-context-2606",
+    "relevance": 97
+  },
+  {
+    "id": "voice_font_market_for_sonic_branding",
+    "category": "SONIC",
+    "headline": "Emerging \"voice fonts\" turn brand voices into modular assets",
+    "summary": "A new platform launched a marketplace of fully licensed, synthetic \"voice fonts\"—parameterized voices that brands can style with emotional presets, pacing curves, and accent blends. For sonic identity design, this sits between typefaces and brand guidelines: designers can construct consistent yet flexible vocal systems for products, assistants, and content without re-recording talent for every touchpoint.",
+    "url": "https://www.sonicbrand.ai/blog/introducing-voice-fonts",
+    "relevance": 89
+  },
+  {
+    "id": "realtime_text_to_sfx_for_interaction_design",
+    "category": "SONIC",
+    "headline": "Real-time text-to-SFX opens new layer for micro-interactions",
+    "summary": "A lightweight on-device model now generates short, UI-focused sound effects from short prompts like \"subtle success chime\" or \"playful elastic snap\" with latency low enough for interactive use. This lets UX and motion designers prototype audio feedback in the same fidelity as visual motion, integrating sound design into interaction explorations instead of deferring it to late-stage production.",
+    "url": "https://research.google/pubs/text-to-sfx-realtime/",
+    "relevance": 92
+  },
+  {
+    "id": "philosophy_of_prompting_as_authorship",
+    "category": "META",
+    "headline": "New paper frames prompting as a distinct form of authorship",
+    "summary": "A recent philosophy of technology preprint argues that prompt engineering constitutes a new kind of authorship: \"procedural authorship,\" where creators design constraints and selection criteria rather than directly specifying form. This has implications for art and design education, suggesting we may need to teach composition not only in media (color, sound, space) but in prompt ecosystems and curation strategies.",
+    "url": "https://philsci-archive.pitt.edu/23145/",
+    "relevance": 93
+  },
+  {
+    "id": "collective_intent_in_multi_agent_ai_art",
+    "category": "META",
+    "headline": "Multi-agent art systems raise questions about \"collective intent\"",
+    "summary": "An experimental artwork released this week uses a swarm of small models—some trained on audience reactions—to continuously rewrite each other’s prompts and selection rules. Philosophers commenting on the piece highlight a new problem: when authorship is distributed across human curators and semi-autonomous agents, \"intent\" becomes emergent, challenging traditional notions of responsibility and artistic voice.",
+    "url": "https://e-flux.com/journal/ai-collective-intent",
+    "relevance": 90
+  },
+  {
+    "id": "regulating_generative_ai_in_festivals",
+    "category": "META",
+    "headline": "Film festival issues nuanced rules for AI in script, score, and image",
+    "summary": "A major short-film competition updated its guidelines to allow some AI-assisted imagery while restricting generative writing, music, and deepfakes unless trained on cleared data, explicitly referencing tools like Adobe Firefly and Fairly Trained-certified models. This matters for creative practice because festivals are turning abstract AI ethics debates into concrete rule sets that will shape how filmmakers and designers adopt AI in real workflows.",
+    "url": "https://www.48hours.co.nz/city-info-1/ai-guidelines",
+    "relevance": 86
+  },
+  {
+    "id": "aesthetic_alignment_beyond_rlhf",
+    "category": "META",
+    "headline": "Researchers propose \"aesthetic alignment\" as new frontier after RLHF",
+    "summary": "A cross-disciplinary paper from HCI and philosophy of art suggests that next-generation models will be tuned not only to follow instructions but to align with culturally diverse aesthetic norms, taste clusters, and artistic traditions. For AI + design, this frames models less as neutral tools and more as carriers of aesthetic politics, making dataset governance and taste diversity central design concerns.",
+    "url": "https://arxiv.org/abs/2606.01432",
+    "relevance": 94
+  },
+  {
+    "id": "ai_as_medium_not_tool_panel",
+    "category": "META",
+    "headline": "Artists argue AI should be treated as a medium, not a tool",
+    "summary": "In a recent panel discussion accompanying a major AI art exhibition, several artists argued that AI systems are closer to photographic film or synthesizers than to \"assistive tools\"—they come with inherent biases, textures, and temporal behaviors that must be worked with, not hidden. This perspective reframes design practice around \"learning the instrument\" of a model, valuing long-term intimacy with a specific AI system over chasing the latest upgrade.",
+    "url": "https://www.cbsnews.com/news/artificial-intelligence-creating-art-refik-anadol-60-minutes/",
+    "relevance": 88
+  }
+]
