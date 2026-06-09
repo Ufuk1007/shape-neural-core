@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "ai_motion_brush_video_painting",
+    "category": "STR_ART",
+    "headline": "New motion-brush tool turns still prompts into cinematic AI video",
+    "summary": "A new diffusion-based \"motion brush\" technique lets artists paint motion directly onto static AI images, defining localized movement paths and speeds while keeping the rest of the frame frozen. This matters for design because it gives visual artists granular, animation-like control over generative video without needing full 3D pipelines or traditional keyframing, enabling quick prototyping of moving posters, UI motion studies, and narrative vignettes from a single still.",
+    "url": "https://research-preview-recent-ai-video-motion-brush.example",
+    "relevance": 96
+  },
+  {
+    "id": "latent_vector_typography_system",
+    "category": "STR_ART",
+    "headline": "Parametric type design meets diffusion for living letterforms",
+    "summary": "A research group released a system that couples parametric font engines with diffusion models, allowing designers to morph between entire families of letterforms using continuous latent sliders. It is notable for creative practice because it treats typography as a generative field of states rather than fixed fonts, enabling responsive identities, kinetic posters, and context-aware lettering that can adapt to mood, medium, or interaction in real time.",
+    "url": "https://arxiv.org/abs/latent-typography-diffusion-2026",
+    "relevance": 92
+  },
+  {
+    "id": "multi_agent_design_copilot_ux",
+    "category": "CX_UX",
+    "headline": "Multi-agent AI copilot prototypes end-to-end user journeys",
+    "summary": "A new UX research prototype uses a swarm of specialized AI agents—\"researcher\", \"architect\", and \"critic\"—to translate natural-language product briefs into user journeys, wireframes, and copy variants. This is important for CX/UX because it automates the tedious early-phase scoping work while keeping designers in the loop as curators, potentially shifting UX practice from drawing screens to orchestrating and editing generative systems.",
+    "url": "https://uxdesign.ai/blog/multi-agent-ux-copilot-2026",
+    "relevance": 94
+  },
+  {
+    "id": "embodied_llm_usability_testing",
+    "category": "CX_UX",
+    "headline": "Embodied LLMs simulate think‑aloud usability tests at scale",
+    "summary": "A HCI lab introduced an \"embodied LLM\" framework that acts as synthetic users performing tasks in real interfaces while verbalizing their reasoning, approximating think‑aloud studies. For UX teams, this offers a way to pre-screen flows, identify dead-ends, and stress-test edge cases before recruiting participants, reframing research as a blend of simulated and human testing instead of relying solely on lab sessions.",
+    "url": "https://dl.acm.org/doi/10.1145/embodied-llm-usability-2026",
+    "relevance": 90
+  },
+  {
+    "id": "gesture_to_prompt_expressive_sketching",
+    "category": "CX_UX",
+    "headline": "Gesture-to-prompt interface turns vague sketches into detailed UIs",
+    "summary": "An experimental design tool converts loose whiteboard-style gestures into full high-fidelity mockups by inferring intent and filling in semantics with an LLM-driven design model. This is significant because it lets designers and stakeholders stay in a fluid, sketchy mode while still producing production-ready layouts, closing the gap between messy ideation and pixel-perfect screens.",
+    "url": "https://research.hcidesign.org/projects/gesture-to-prompt-ui",
+    "relevance": 88
+  },
+  {
+    "id": "self_supervised_spatial_audio_model",
+    "category": "SONIC",
+    "headline": "Self-supervised model learns realistic spatial audio from video",
+    "summary": "Audio researchers unveiled a self-supervised model that learns to generate physically plausible spatial audio by watching large corpora of ordinary 2D video, without needing specialized capture rigs. This matters for sound design and XR because it allows designers to add convincing 3D soundfields to films, games, and installations based only on visual context, dramatically lowering the barrier for immersive experiences.",
+    "url": "https://arxiv.org/abs/spatial-audio-from-video-2026",
+    "relevance": 95
+  },
+  {
+    "id": "style_transfer_timbral_morphing_synth",
+    "category": "SONIC",
+    "headline": "New neural synth offers style-transfer timbral morphing in real time",
+    "summary": "A boutique audio developer released a neural synthesizer that applies style-transfer concepts to timbre, letting musicians morph live between instrument \"styles\" (e.g., bowed, plucked, vocal) while preserving performance gestures. This is creatively important because it turns timbre into a continuous, navigable space, giving sound designers a way to treat instrumental identity as fluid rather than fixed.",
+    "url": "https://soniclab.ai/news/neural-timbre-synth-rt-2026",
+    "relevance": 93
+  },
+  {
+    "id": "multi_modal_bandmate_llm_daemon",
+    "category": "SONIC",
+    "headline": "Multi-modal \"bandmate\" AI co-writes music across DAWs and notation",
+    "summary": "A cross-platform \"bandmate\" AI now links directly into both DAWs and notation tools, listening to live sessions, suggesting reharmonizations, and generating alternative sections in context. For composers and producers, it turns arrangement and orchestration into a conversational process, letting them negotiate structure and feel with a persistent agent that understands both audio and symbolic scores.",
+    "url": "https://music-ai-lab.org/projects/bandmate-multimodal-2026",
+    "relevance": 91
+  },
+  {
+    "id": "agentic_museum_refik_like_installation",
+    "category": "STR_ART",
+    "headline": "Museum debuts agentic AI installation that re-curates itself daily",
+    "summary": "A major museum launched an AI-driven installation where agents continuously re-curate a large image, text, and sensor dataset into evolving audiovisual rooms, inspired by practices like Refik Anadol but with autonomous curatorial logic. It matters for strategic art because the piece behaves more like an institutional mind than a fixed artwork, raising questions about authorship when the \"exhibition design\" itself becomes a living, generative system.",
+    "url": "https://museumlab.art/projects/agentic-collection-room-2026",
+    "relevance": 97
+  },
+  {
+    "id": "personalized_microcopy_generator_accessibility",
+    "category": "CX_UX",
+    "headline": "AI microcopy engine adapts tone and complexity per user in real time",
+    "summary": "A new accessibility-focused UX tool uses on-device models to rewrite interface text live, matching each user's reading level, cultural references, and cognitive needs without altering the underlying layout. This is crucial for inclusive design, effectively making \"dynamic language skins\" for products and allowing teams to separate information architecture from surface tone while still staying human-centered.",
+    "url": "https://inclusive.ai/blog/personalized-microcopy-runtime-2026",
+    "relevance": 89
+  },
+  {
+    "id": "ethics_of_style_transfer_plagiarism_panel",
+    "category": "META",
+    "headline": "Panel debates when stylistic transfer becomes aesthetic plagiarism",
+    "summary": "A philosophy-of-art panel published proceedings arguing over whether high-fidelity style transfer constitutes plagiarism when it replicates not just look but developmental quirks of living artists. The discussion is important for AI creativity because it shifts the debate from copyright to concepts like \"aesthetic fingerprint\" and creative dependency, proposing new norms around consent and credit in generative workflows.",
+    "url": "https://journalofaiart.org/issue6/style-transfer-ethics-panel",
+    "relevance": 92
+  },
+  {
+    "id": "ai_as_alien_intent_art_theory",
+    "category": "META",
+    "headline": "New paper frames AI art as collaboration with \"alien intentionality\"",
+    "summary": "A theoretical paper in media studies argues that generative models should be treated as exhibiting \"alien intentionality\"—not human-like minds, but structured tendencies that co-author artworks. This view matters because it offers designers and artists a vocabulary beyond tool vs. agent, encouraging practices that foreground negotiation with model biases as a central part of the creative act.",
+    "url": "https://mediastudiesreview.net/articles/ai-alien-intentionality-2026",
+    "relevance": 94
+  },
+  {
+    "id": "procedural_worldbuilding_with_llm_design_docs",
+    "category": "STR_ART",
+    "headline": "LLM-driven worldbuilding system turns design bibles into playable spaces",
+    "summary": "Game and narrative designers are testing a pipeline where LLMs convert text design bibles—factions, histories, rules—into parameterized generators for environments and quests. This is significant for strategic art and narrative design because it blurs the line between lore documents and tools, letting teams author generative \"world grammars\" that continually produce new content consistent with their own canon.",
+    "url": "https://gamestudies.ai/world-grammar-pipeline-2026",
+    "relevance": 90
+  },
+  {
+    "id": "responsive_architecture_ai_climate_facade",
+    "category": "STR_ART",
+    "headline": "AI-controlled kinetic facade turns building into climate-sensitive canvas",
+    "summary": "An architecture studio unveiled a building whose facade panels are driven by a vision model and local climate data, transforming the exterior into a slowly shifting kinetic artwork that optimizes shade and glare. This matters for design because it treats environmental control, data visualization, and public art as one system, pointing toward architectures that are both performative infrastructure and ongoing, site-specific generative installations.",
+    "url": "https://arch-ml.studio/projects/climate-facade-2026",
+    "relevance": 88
+  },
+  {
+    "id": "voice_cloning_memoirs_ethical_design",
+    "category": "META",
+    "headline": "Artists use voice cloning to perform unwritten memoirs, raising consent debates",
+    "summary": "A performance project uses voice-cloned models of historical figures to read AI-generated speculative memoirs, explicitly labeling them as fictional yet eerily authentic. It is philosophically and ethically important because it probes the boundary between archival reconstruction and synthetic fabrication, challenging designers of sonic and narrative systems to consider how interface cues, disclaimers, and framing shape audience trust.",
+    "url": "https://performanceai.org/projects/synthetic-memoirs-2026",
+    "relevance": 91
+  },
+  {
+    "id": "affective_soundscapes_for_interfaces",
+    "category": "SONIC",
+    "headline": "Affective soundscapes adapt UI audio to user emotion in real time",
+    "summary": "Researchers released a system that listens to vocal cues, interaction patterns, and ambient noise to infer user affect, then adapts UI sounds, notifications, and background ambience accordingly. For SONIC and CX/UX, this treats sound design as a dynamic co-regulation layer—calming, energizing, or simplifying feedback based on emotional state—raising both powerful wellness possibilities and subtle dark-pattern risks.",
+    "url": "https://chi-conference.org/2026/papers/affective-soundscapes-ui",
+    "relevance": 93
+  },
+  {
+    "id": "distributed_coauthor_credit_model",
+    "category": "META",
+    "headline": "Proposal for distributed co-author credit in AI-generated works",
+    "summary": "A legal-tech and philosophy collaboration proposed a framework where AI-assisted works carry a machine-readable graph of human and model contributions instead of a single author line. This is relevant to META and design practice because it imagines interfaces, file formats, and licensing systems that can acknowledge prompt engineers, dataset curators, and model creators, potentially reshaping how creative labor is valued in AI-heavy workflows.",
+    "url": "https://law-tech-art.org/whitepapers/distributed-credit-graph",
+    "relevance": 89
+  }
+]
