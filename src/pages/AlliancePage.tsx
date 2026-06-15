@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import BindruneLogo from "@/components/BindruneLogo";
 import btcRadioImg from "@/assets/btc-radio-screenshot.png";
+import sapientBlockAsset from "@/assets/sapient-block-screenshot.png.asset.json";
+import melodeyeAsset from "@/assets/melodeye-screenshot.png.asset.json";
 
 /* ── Design Tokens ── */
 const C = {
@@ -89,7 +91,7 @@ const ALL_PROJECTS = [
       { num: "74", label: "Branchen" },
       { num: "RAG", label: "Multi-LLM Pipeline" },
     ],
-    video: "/videos/sapientblock.mp4",
+    image: sapientBlockAsset.url,
   },
   {
     title: "PROBLAIM",
@@ -125,7 +127,7 @@ const ALL_PROJECTS = [
       { num: "100%", label: "Browser-basiert" },
       { num: "0", label: "Server-Uploads" },
     ],
-    video: "/videos/melodeye.mp4",
+    image: melodeyeAsset.url,
   },
   {
     title: "AUTOFORGE",
