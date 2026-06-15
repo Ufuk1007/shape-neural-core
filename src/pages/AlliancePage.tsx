@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import BindruneLogo from "@/components/BindruneLogo";
 import btcRadioImg from "@/assets/btc-radio-screenshot.png";
+import sapientBlockAsset from "@/assets/sapient-block-screenshot.png.asset.json";
+import melodeyeAsset from "@/assets/melodeye-screenshot.png.asset.json";
 
 /* ── Design Tokens ── */
 const C = {
