@@ -1,4 +1,4 @@
-import sapientBlockImg from "@/assets/sapient-block-screenshot.png";
+import sapientBlockImg from "@/assets/sapient-block-screenshot.png.asset.json";
 import melodeyeImg from "@/assets/melodeye-screenshot.png";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
