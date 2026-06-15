@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["250+ VALIDATED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "REGIONAL INTELLIGENCE", "SELF-REINFORCING DATA FLYWHEEL", "BLOCKCHAIN REALLABOR COLLABORATION"],
     techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4", "Perplexity", "Pinecone", "RAG", "Tailwind CSS"],
     image: sapientBlockAsset.url,
-    video: "/videos/sapientblock.mp4",
+    // video removed — using updated screenshot instead
     url: "https://sapientblock.com",
     insights: [],
   },
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["DISPLAYED vs. EXPERIENCED EMOTION", "EMER THEORY", "GAP-AWARE INTELLIGENCE", "SAFETY OVERRIDE LOGIC", "100% BROWSER-BASED BIOMETRICS", "THERAPEUTIC MUSIC GENERATION"],
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
     image: melodeyeAsset.url,
-    video: "/videos/melodeye.mp4",
+    // video removed — using updated screenshot instead
     // url removed — site under construction
     insights: [],
   },
