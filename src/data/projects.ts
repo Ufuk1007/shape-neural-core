@@ -1,4 +1,4 @@
-import sapientBlockImg from "@/assets/sapient-block-screenshot.png.asset.json";
+import sapientBlockAsset from "@/assets/sapient-block-screenshot.png.asset.json";
 import melodeyeImg from "@/assets/melodeye-screenshot.png";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     brief: "AI-powered blockchain relevance analysis for the German Mittelstand. The platform ingests a company's profile — via URL crawl or manual input — matches it against 250+ validated use cases across 74 industries, and delivers a data-driven relevance score with concrete recommendations. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
     signalTags: ["250+ VALIDATED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "REGIONAL INTELLIGENCE", "SELF-REINFORCING DATA FLYWHEEL", "BLOCKCHAIN REALLABOR COLLABORATION"],
     techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4", "Perplexity", "Pinecone", "RAG", "Tailwind CSS"],
-    image: sapientBlockImg,
+    image: sapientBlockAsset.url,
     video: "/videos/sapientblock.mp4",
     url: "https://sapientblock.com",
     insights: [],
