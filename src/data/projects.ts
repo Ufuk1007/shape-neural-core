@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
     image: melodeyeImg,
     video: "/videos/melodeye.mp4",
-    url: "https://melodeye.com",
+    // url removed — site under construction
     insights: [],
   },
   {
