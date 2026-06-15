@@ -91,7 +91,7 @@ const ALL_PROJECTS = [
       { num: "74", label: "Branchen" },
       { num: "RAG", label: "Multi-LLM Pipeline" },
     ],
-    video: "/videos/sapientblock.mp4",
+    image: sapientBlockAsset.url,
   },
   {
     title: "PROBLAIM",
