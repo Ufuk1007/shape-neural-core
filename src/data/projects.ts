@@ -1,5 +1,5 @@
 import sapientBlockAsset from "@/assets/sapient-block-screenshot.png.asset.json";
-import melodeyeImg from "@/assets/melodeye-screenshot.png";
+import melodeyeAsset from "@/assets/melodeye-screenshot.png.asset.json";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
     brief: "A multi-modal emotion recognition system that distinguishes between displayed and experienced emotion — then generates music that responds to what you actually feel, not what you show. The system fuses facial expression analysis, gaze tracking, and pupil dynamics in real-time, entirely within the browser. No server ever sees your biometric data.",
     signalTags: ["DISPLAYED vs. EXPERIENCED EMOTION", "EMER THEORY", "GAP-AWARE INTELLIGENCE", "SAFETY OVERRIDE LOGIC", "100% BROWSER-BASED BIOMETRICS", "THERAPEUTIC MUSIC GENERATION"],
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
-    image: melodeyeImg,
+    image: melodeyeAsset.url,
     video: "/videos/melodeye.mp4",
     // url removed — site under construction
     insights: [],
