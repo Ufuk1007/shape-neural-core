@@ -127,7 +127,7 @@ const ALL_PROJECTS = [
       { num: "100%", label: "Browser-basiert" },
       { num: "0", label: "Server-Uploads" },
     ],
-    video: "/videos/melodeye.mp4",
+    image: melodeyeAsset.url,
   },
   {
     title: "AUTOFORGE",
