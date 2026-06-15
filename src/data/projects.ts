@@ -151,7 +151,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["5 TEMPORAL LAYERS", "MONTHLY→BASS / WEEKLY→BEAT / DAILY→HARMONY / HOURLY→MELODY / REALTIME→TEXTURE", "24/7 GENERATIVE LIVESTREAM", "DUAL AI PROVIDER", "SMART TRACK REUSE", "MARKET SONIFICATION"],
     techStack: ["Python", "FastAPI", "ACE-Step 1.5", "MiniMax M2.5", "React", "Supabase", "OBS Studio", "Cloudflare Tunnel"],
     image: btcRadioImg,
-    url: "https://www.youtube.com/@BitcoinVibesFM",
+    url: "https://radio.shapeneural.com/",
     insights: [
       {
         id: "signal-layers",
