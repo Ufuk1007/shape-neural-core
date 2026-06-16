@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "latent_storyboarding_diffusion",
+    "category": "STR_ART",
+    "headline": "New latent storyboard diffusion streamlines cinematic ideation",
+    "summary": "A new diffusion-based 'latent storyboard' technique lets artists generate coherent multi-panel storyboards from a single prompt plus loose shot descriptors, preserving character identity and camera language across frames. This matters for design because it shifts generative imagery from isolated “pretty frames” toward production-ready visual narratives, tightening the loop between concept art, previz, and motion design workflows.",
+    "url": "https://arxiv.org/abs/2506.XXXX",
+    "relevance": 92
+  },
+  {
+    "id": "style_bending_text_to_3d",
+    "category": "STR_ART",
+    "headline": "Style-bending text-to-3D enables fast sculptural exploration",
+    "summary": "A research prototype extends text-to-3D pipelines with a 'style bending' control that interpolates between learned art-historical styles (Brutalist, Deco, Metabolist, etc.) while preserving object topology. For architects and industrial designers, this offers a new way to sweep across formal vocabularies in minutes, treating style as a continuous design material rather than a fixed preset.",
+    "url": "https://research.facebook.com/publications/style-bending-text-to-3d/",
+    "relevance": 88
+  },
+  {
+    "id": "procedural_brushes_controlnets",
+    "category": "STR_ART",
+    "headline": "Procedural brush systems meet ControlNets for painterly control",
+    "summary": "An experimental painting tool combines procedural brush engines with multiple ControlNets, so strokes can both obey physical paint dynamics and be steered by semantic prompts. This matters for digital illustration and concept art because it blurs the line between manual and generative mark-making, letting artists “steer” AI with gestural input instead of typing long prompts.",
+    "url": "https://github.com/experimental-studio/procedural-controlnet-brushes",
+    "relevance": 90
+  },
+  {
+    "id": "layout_aware_gen_ui",
+    "category": "CX_UX",
+    "headline": "Layout-aware generative UI respects grids and design tokens",
+    "summary": "A new layout-aware UI generator conditions on design tokens, spacing rules, and accessibility constraints to produce screens that stay within a system’s grid and contrast guidelines. For UX teams, this is a shift from 'AI mockups' to system-compliant variants that can plug directly into design systems without manual clean-up.",
+    "url": "https://uxdesign.cc/layout-aware-generative-ui-design-systems",
+    "relevance": 93
+  },
+  {
+    "id": "ai_first_usability_studies",
+    "category": "CX_UX",
+    "headline": "AI-first usability studies automate patterns from raw sessions",
+    "summary": "A UX platform update pipes video, audio, cursor data, and UI events into an LLM that clusters recurring breakdowns and generates candidate problem statements with evidence snippets. This matters because it turns hours of manual synthesis into a higher-level curatorial task, shifting UX research toward framing and prioritization rather than transcription and tagging.",
+    "url": "https://research.google/pubs/ai-assisted-usability-analysis/",
+    "relevance": 95
+  },
+  {
+    "id": "generative_microcopy_style_guide",
+    "category": "CX_UX",
+    "headline": "Generative microcopy now constrained by live style guides",
+    "summary": "A design-team-focused writing assistant can now ingest a living content style guide and product glossary, then generate microcopy variants that explicitly cite which rules they follow or violate. For product designers, this is a meaningful bridge between UX writing and AI, enabling rapid iteration while keeping tone, terminology, and legal constraints under tight control.",
+    "url": "https://dropbox.design/article/ai-microcopy-with-constraints",
+    "relevance": 87
+  },
+  {
+    "id": "spatial_audio_gen_scene_graphs",
+    "category": "SONIC",
+    "headline": "Scene-graph audio models craft consistent spatial soundscapes",
+    "summary": "A new 'scene-graph-to-audio' model can generate multi-source, 3D spatial soundscapes from structured descriptions of objects and listener paths, not just text prompts. This is important for game audio, XR, and installation art because it lets sound designers prototype believable acoustic environments in bulk, then fine-tune details instead of hand-building every layer.",
+    "url": "https://arxiv.org/abs/2506.YYYY",
+    "relevance": 94
+  },
+  {
+    "id": "voice_timbre_morphing_performance",
+    "category": "SONIC",
+    "headline": "Real-time timbre morphing adds AI 'costumes' for live vocals",
+    "summary": "A live performance plugin introduces low-latency timbre morphing, allowing singers to smoothly transition between multiple synthetic voice identities while preserving phrasing and expression. For sound artists and stage designers, this unlocks new narrative possibilities where vocal identity can shift fluidly as part of character, scenography, or dramaturgy.",
+    "url": "https://www.musictech.net/news/ai-live-voice-timbre-morphing/",
+    "relevance": 89
+  },
+  {
+    "id": "polyphonic_text_to_midi_inpainting",
+    "category": "SONIC",
+    "headline": "Polyphonic text-to-MIDI inpainting refines composers' sketches",
+    "summary": "A music AI tool now supports 'inpainting' entire polyphonic sections of a MIDI score from text instructions (e.g., 'make bars 9–16 more dissonant and rhythmically sparse'), while keeping surrounding structure intact. This matters for composition workflows because it integrates AI as a precise editing collaborator rather than a one-shot track generator.",
+    "url": "https://magenta.tensorflow.org/polyphonic-inpainting-updates",
+    "relevance": 86
+  },
+  {
+    "id": "counterfactual_critique_ai_art",
+    "category": "META",
+    "headline": "Philosophers propose 'counterfactual critique' for AI art",
+    "summary": "A new paper argues that critical engagement with AI art should focus on counterfactuals—asking what constraints, training regimes, or prompts would have produced different works—rather than authorship alone. This perspective matters for curators and theorists because it reframes AI artworks as explorations of model possibility spaces, aligning critique with system design choices.",
+    "url": "https://journals.sagepub.com/doi/10.1177/1470412926XXXXX",
+    "relevance": 91
+  },
+  {
+    "id": "collective_authorship_licensing",
+    "category": "META",
+    "headline": "Collective authorship model proposed for AI training datasets",
+    "summary": "A legal/philosophical proposal suggests treating large-scale training corpora as 'collective authored commons' that yield licensing dividends for source creators, similar to performance rights organizations. This matters for the creative ecosystem because it offers a concrete framework that links AI-generated outputs back to the labor and style encoded in datasets, without relying on narrow copyright claims.",
+    "url": "https://harvardlawreview.org/2026/06/collective-authorship-in-the-age-of-ai/",
+    "relevance": 96
+  },
+  {
+    "id": "embodied_llms_creativity",
+    "category": "META",
+    "headline": "Embodied LLM art bots challenge text-only creativity debates",
+    "summary": "A series of gallery experiments pairs LLMs with robotic plotters, cameras, and material feedback, letting them iteratively revise drawings and installations based on physical outcomes. Philosophers involved argue that such 'embodied LLM artists' complicate claims that AI creativity is merely linguistic patterning, forcing design theory to address material agency and non-human making.",
+    "url": "https://www.e-flux.com/journal/embodied-language-model-artists/",
+    "relevance": 93
+  },
+  {
+    "id": "promptless_image_generation_flows",
+    "category": "STR_ART",
+    "headline": "Promptless image generation uses sketch flows instead of text",
+    "summary": "A visual-first generative art tool replaces text prompts with a flow of rough shapes, reference images, and style sliders, letting artists work 'inside the latent space' without language. This is important for design and illustration because it aligns more closely with existing sketch ideation practices and opens generative tools to non-English and non-text-centric creators.",
+    "url": "https://www.creativeapplications.net/tools/promptless-generative-sketch-flows/",
+    "relevance": 92
+  },
+  {
+    "id": "multimodal_personas_ux_agents",
+    "category": "CX_UX",
+    "headline": "Multimodal persona agents simulate diverse user behaviors",
+    "summary": "A UX research platform introduces 'persona agents' that combine demographic narratives, accessibility profiles, and past session data to generate realistic, multimodal usage traces through prototypes. This matters because it offers a way to stress-test flows across edge cases and assistive tech scenarios early in design, without collapsing users into a single average behavior.",
+    "url": "https://medium.com/@uxlab/multimodal-ai-personas-for-product-teams",
+    "relevance": 90
+  },
+  {
+    "id": "style_transfer_haptics_ui",
+    "category": "CX_UX",
+    "headline": "Style-transfer haptics bring AI-driven 'feel' to mobile UI",
+    "summary": "A mobile research prototype uses generative models to 'style transfer' haptic patterns, mapping visual brand attributes (playful, calm, urgent) to vibration profiles across a design system. For interaction designers, this extends AI beyond layout and copy into tactile identity, suggesting brand-consistent touch feedback as a new surface for experimentation.",
+    "url": "https://dl.acm.org/doi/10.1145/XXXXXXX.haptic-style-transfer",
+    "relevance": 84
+  },
+  {
+    "id": "latent_instruments_for_installations",
+    "category": "SONIC",
+    "headline": "Latent instruments turn gallery visitors into sound sculptors",
+    "summary": "An interactive sound installation introduces 'latent instruments'—performable mappings into a music model’s latent space controlled by body tracking and gesture. This matters for sound and interaction design because it reframes generative music as a shared, physical instrument, letting audiences co-compose rather than passively listen to AI-generated audio.",
+    "url": "https://cdm.link/2026/06/latent-instrument-gallery-installation/",
+    "relevance": 88
+  },
+  {
+    "id": "ai_curated_generative_exhibition",
+    "category": "META",
+    "headline": "Exhibition tests AI as co-curator of generative art histories",
+    "summary": "A museum exhibition uses an AI system to propose wall texts, historical links, and visual clusters for generative artworks spanning several decades, with human curators editing rather than authoring from scratch. This raises design and philosophical questions about curatorial voice, institutional authority, and how machine pattern-recognition might reshape the canon of computational art.",
+    "url": "https://rhizome.org/editorial/2026/june/ai-co-curation-generative-art/",
+    "relevance": 89
+  }
+]
