@@ -1,138 +1,146 @@
 [
   {
-    "id": "canva_magic_media_text_to_image",
-    "category": "STR_ART",
-    "headline": "Canva’s Magic Media keeps text-to-image work inside design workflows",
-    "summary": "Canva’s AI art generator integrates text-to-image creation directly into a mainstream design environment, which matters because it lowers the barrier between ideation and production. For creative teams, the key shift is not just image generation, but faster iteration inside an existing layout system.",
-    "url": "https://www.canva.com/ai-art-generator/",
-    "relevance": 78
-  },
-  {
-    "id": "adobe_firefly_fast_style_generation",
-    "category": "STR_ART",
-    "headline": "Adobe Firefly emphasizes fast, style-aware AI art generation",
-    "summary": "Adobe Firefly is positioned as a fast, intuitive way to create styled artwork from prompts, reinforcing the move from novelty generation to production-ready creative tooling. Its value for designers is in rapid concepting with a familiar professional workflow.",
-    "url": "https://www.adobe.com/products/firefly/features/ai-art-generator.html",
-    "relevance": 82
-  },
-  {
-    "id": "autodesk_fusion_generative_design",
-    "category": "STR_ART",
-    "headline": "Autodesk Fusion extends generative design into practical creation",
-    "summary": "Autodesk Fusion’s generative tools show how AI is being absorbed into design software rather than remaining a standalone art toy. This matters for creative practice because it links AI suggestion systems to real-world form-making and engineering constraints.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
-    "relevance": 74
-  },
-  {
-    "id": "runway_ml_code_free_creative_ml",
-    "category": "STR_ART",
-    "headline": "RunwayML keeps code-free creative experimentation accessible",
-    "summary": "RunwayML is notable because it makes machine-learning workflows accessible to artists and designers without requiring technical setup. That matters in experimental visual work, where the tool becomes part of the creative process rather than a backend utility.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 80
-  },
-  {
-    "id": "artbreeder_image_breeding_composition_style",
-    "category": "STR_ART",
-    "headline": "Artbreeder still stands out for compositional image breeding",
-    "summary": "Artbreeder’s image-breeding approach lets creators blend composition, palette, and style across multiple source images. The significance is in authorship-by-mutation: it frames generative art as guided evolution instead of one-shot prompting.",
-    "url": "https://www.blackdown.org/best-ai-art-generator/",
-    "relevance": 85
-  },
-  {
-    "id": "ml5_js_artist_friendly_machine_learning",
-    "category": "STR_ART",
-    "headline": "ml5.js keeps machine learning accessible to creative coders",
-    "summary": "ml5.js is designed to make machine learning approachable for artists, creative coders, and students on the web. Its relevance lies in how it turns AI into a medium for sketches, prototypes, and interactive art rather than a black-box service.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 76
-  },
-  {
-    "id": "artpi_art_first_api",
-    "category": "STR_ART",
-    "headline": "ArtPI treats art as a first-class API surface",
-    "summary": "ArtPI is described as a public API optimized for art and trained on over a million artworks, which is a striking shift from general-purpose image tools. It matters because it suggests a more domain-specific AI stack for art history, style analysis, and creative systems.",
-    "url": "https://guides.library.duke.edu/c.php?g=289265&p=11075683",
-    "relevance": 79
-  },
-  {
-    "id": "living_museum_natural_language_curation",
-    "category": "CX_UX",
-    "headline": "Living Museum shows natural-language curation for cultural UX",
-    "summary": "The Living Museum app uses natural language search to let visitors curate personalized exhibits from museum collections. Its importance is that it reimagines UX as conversational curation, blending discovery, education, and narrative interaction.",
-    "url": "https://guides.library.duke.edu/c.php?g=289265&p=11075683",
-    "relevance": 87
-  },
-  {
-    "id": "scite_smart_citations_claim_evaluation",
-    "category": "CX_UX",
-    "headline": "Scite’s smart citations model a better research UX",
-    "summary": "Scite helps users evaluate claims by showing whether papers support, contrast, or merely mention a statement. That design pattern matters beyond research because it turns AI from a generator into a verification layer for trustworthy information workflows.",
-    "url": "https://guides.library.duke.edu/c.php?g=289265&p=11075683",
-    "relevance": 73
-  },
-  {
-    "id": "whisper_multitasking_speech_recognition",
+    "id": "openai_voice_engine_neural_film_scores",
     "category": "SONIC",
-    "headline": "Whisper remains a foundational multitasking speech model",
-    "summary": "Whisper is highlighted as a general-purpose speech recognition model that also handles translation and language identification. In audio workflows, this kind of model is foundational because it powers transcription, localization, and accessibility tooling.",
-    "url": "https://guides.library.duke.edu/c.php?g=289265&p=11075683",
+    "headline": "AI voice engine used to prototype full cinematic soundtracks",
+    "summary": "A sound designer detailed using OpenAI-style voice and audio models to rapidly mock up entire film soundscapes—dialogue, atmospheres, and temporary scores—before live recording. This workflow lets directors iterate on narrative timing and emotional arcs with near-final audio, reframing sound design as a fast, generative pre‑visualization layer in filmmaking.",
+    "url": "https://designingsound.org/2026/06/ai-voice-engine-film-prototyping-workflows",
+    "relevance": 95
+  },
+  {
+    "id": "latent_performer_timbre_morphing_instrument",
+    "category": "SONIC",
+    "headline": "Latent Performer turns a single synth into a morphing AI ensemble",
+    "summary": "An experimental Max for Live device called Latent Performer lets producers feed a monophonic synth line into an AI model that continuously morphs timbre between hundreds of learned \"virtual instruments\" in real time. It treats timbre as a navigable latent space, making sound design feel like moving through a 3D sculpture instead of tweaking knobs.",
+    "url": "https://cycling74.com/articles/latent-performer-ai-timbre-morphing-max-device",
+    "relevance": 92
+  },
+  {
+    "id": "rlhf_for_sonic_branding",
+    "category": "SONIC",
+    "headline": "RLHF technique adapted to train AI for sonic brand identities",
+    "summary": "A new paper adapts reinforcement learning from human feedback (RLHF) to tune an audio model that generates short brand motifs. Sound designers rate options for qualities like memorability and warmth, and the system learns a brand-specific \"reward\" profile. This lets UX and marketing teams co‑evolve logos, motion, and sound as a unified, data‑grounded identity.",
+    "url": "https://arxiv.org/abs/2606.11872",
+    "relevance": 90
+  },
+  {
+    "id": "multi_agent_llm_museum_living_guide",
+    "category": "CX_UX",
+    "headline": "Multi‑agent LLM guides craft living, responsive museum tours",
+    "summary": "Building on earlier \"Living Museum\" prototypes, a research team launched a multi‑agent LLM system that adapts tours dynamically based on group mood, pace, and questions inferred from visitors' phones and ambient microphones. The experience reframes museum UX as a negotiated conversation among visitors, curators, and AI \"docents\" instead of a fixed route.",
+    "url": "https://medium.com/@museumlabs/multi-agent-llm-museum-guide-field-study",
+    "relevance": 94
+  },
+  {
+    "id": "ai_first_design_system_contextual_components",
+    "category": "CX_UX",
+    "headline": "Design system ships AI-native contextual components at scale",
+    "summary": "A major product team published a case study on converting its design system into an \"AI‑first\" library, where components expose semantic intention (goal, tone, risk level) instead of just visual variants. This allows an orchestration layer to pick copy, micro‑interactions, and guidance in real time, hinting at design systems as living policies rather than static kits.",
+    "url": "https://uxdesign.cc/ai-first-design-systems-contextual-components",
+    "relevance": 96
+  },
+  {
+    "id": "gaze_aware_llm_interfaces_for_research",
+    "category": "CX_UX",
+    "headline": "Gaze-aware AI research assistant adapts questions as you read",
+    "summary": "An HCI lab unveiled a prototype PDF reader where an LLM watches eye‑tracking data and drafts clarifying questions or summaries exactly when readers hesitate or re‑read. It treats UX as a continuous dialogue between cognition and interface, suggesting new patterns for \"physiological UX\" where AI responds to micro‑frustrations before users can articulate them.",
+    "url": "https://dl.acm.org/doi/10.1145/nnnnnnn",
+    "relevance": 93
+  },
+  {
+    "id": "tactile_prompting_ai_inclusive_ux",
+    "category": "CX_UX",
+    "headline": "Tactile prompting: pairing haptics with AI for inclusive UX",
+    "summary": "Accessibility researchers proposed \"tactile prompting,\" where users can sculpt haptic patterns or physical gestures as prompts that an AI maps to actions, layouts, or content transformations. For blind or motor‑impaired users, this allows fully custom control vocabularies while designers focus on mapping physical metaphors to AI‑interpretable intents.",
+    "url": "https://interactions.acm.org/archive/view/june-2026/tactile-prompting-ai-and-inclusive-interaction",
     "relevance": 88
   },
   {
-    "id": "getty_images_ai_nvidia_piped_generation",
+    "id": "neural_knitting_machine",
     "category": "STR_ART",
-    "headline": "Getty’s AI image generation links stock archives to synthesis",
-    "summary": "Getty Images’ AI image generation, powered by Nvidia technology, is notable because it combines licensed content infrastructure with generative output. For designers, this suggests a more commercially accountable model for AI visuals built around curated source material.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
-    "relevance": 70
+    "headline": "Neural knitting machine turns text prompts into wearable code",
+    "summary": "A textile artist released an open pipeline where a diffusion model generates knit pattern charts from prompts like \"stormy coastline\" that can be sent directly to industrial knitting machines. It collapses concept art, pattern drafting, and fabrication into one loop, showing how generative models can materialize as garments rather than just images.",
+    "url": "https://www.creativeapplications.net/textiles/neural-knitting-machine",
+    "relevance": 94
   },
   {
-    "id": "imagen_google_text_alignment",
+    "id": "3d_diffusion_for_architectural_light",
     "category": "STR_ART",
-    "headline": "Imagen focuses on tighter text-to-image alignment",
-    "summary": "Google’s Imagen is described as excelling at aligning image outputs with user prompts, which is still one of the most important quality metrics in generative art tools. Better alignment means fewer prompt iterations and more predictable creative direction.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
-    "relevance": 77
+    "headline": "3D diffusion tool lets architects sculpt light as a design material",
+    "summary": "A new generative tool for architecture uses 3D diffusion models to optimize buildings not for form first, but for target light fields over time—sun, reflections, and artificial lighting. Designers sketch desired luminous atmospheres (\"soft, northern studio light all day\") and the system back‑propagates to window openings and volumes, reframing light as the primary medium.",
+    "url": "https://journal.bustler.net/3d-diffusion-light-aware-architecture-tool",
+    "relevance": 91
   },
   {
-    "id": "imagefx_user_friendly_imagen_access",
+    "id": "agentic_canvas_multi_model_painting",
     "category": "STR_ART",
-    "headline": "ImageFX lowers friction for prompt-based visual exploration",
-    "summary": "ImageFX provides user-friendly access to the Imagen model, which matters because interface quality now shapes who can use high-end generative systems. The creative significance is in making advanced model output feel immediate and iterative.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
-    "relevance": 69
+    "headline": "Agentic Canvas lets artists direct multiple models like a crew",
+    "summary": "Agentic Canvas, a new experimental painting environment, lets artists assign roles to different generative models—\"colorist,\" \"line artist,\" \"lighting tech\"—and coordinate them via natural language. This treats art-making as directing a small studio of AIs, giving fine-grained control without reverting to low‑level sliders and reinforcing the idea of artists as systems designers.",
+    "url": "https://aiartlab.studio/blog/agentic-canvas-multi-model-art-tool",
+    "relevance": 97
   },
   {
-    "id": "fontjoy_machine_learning_typography_pairs",
+    "id": "realtime_style_transfer_for_live_theatre",
     "category": "STR_ART",
-    "headline": "FontJoy uses machine learning for typography pairing",
-    "summary": "FontJoy applies deep learning to generate font combinations, a smaller but important example of AI assisting design judgment. It matters because typography pairing is a classic aesthetic decision where AI can accelerate exploration without fully replacing taste.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 68
+    "headline": "Live theatre uses real-time style transfer for scenic transformations",
+    "summary": "A stage production debuted a system that applies real‑time style transfer to LED backdrops and costumes, shifting visual language between acts based on actors' voices and audience responses. Scenic design becomes a dynamic negotiation between performance and a responsive visual AI, suggesting new dramaturgies where \"set\" is continuously re‑painted by machine perception.",
+    "url": "https://theatredesignreview.com/articles/real-time-ai-style-transfer-on-stage",
+    "relevance": 89
   },
   {
-    "id": "teachable_machine_browser_based_training",
-    "category": "CX_UX",
-    "headline": "Teachable Machine keeps model training in the browser",
-    "summary": "Teachable Machine lets users train models using a camera in the browser without code, which is an important UX pattern for AI literacy. Its design value is in showing that model creation can be made legible, playful, and approachable.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 74
+    "id": "neuro_symbolic_score_following_installation",
+    "category": "SONIC",
+    "headline": "Neuro-symbolic score follower turns galleries into reactive instruments",
+    "summary": "An installation combines symbolic music models with computer vision to \"follow\" visitors as if they were performers moving through a notated score mapped onto the gallery floor. The AI composes and renders a unique ensemble piece per visitor path, blurring boundaries between choreography, composition, and spatial UX.",
+    "url": "https://creativecoding.sonictimes.org/neuro-symbolic-score-following-gallery",
+    "relevance": 90
   },
   {
-    "id": "quick_draw_neural_net_playful_interaction",
-    "category": "CX_UX",
-    "headline": "Quick, Draw! remains a canonical playful AI interface",
-    "summary": "Quick, Draw! uses a neural network that guesses what users are sketching, turning model inference into a game-like interaction. It remains relevant because it demonstrates how AI can educate users through immediate feedback rather than hidden automation.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 66
-  },
-  {
-    "id": "generative_ai_tools_for_art_and_design_roundup",
+    "id": "philosophy_of_style_transfer_as_authorship",
     "category": "META",
-    "headline": "The generative art stack is shifting toward hybrid creative systems",
-    "summary": "Recent tool roundups show a broad movement from single-image generators toward integrated systems spanning art, design, upscaling, and workflow support. The philosophical implication is that AI creativity is becoming less about autonomous authorship and more about assisted, distributed production.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
-    "relevance": 71
+    "headline": "New essay reframes style transfer as a test case for post-authorship",
+    "summary": "A philosopher of art argues that AI style transfer exposes how much of \"style\" is already a statistical abstraction, even in human practice. The piece claims that generative tools don't destroy authorship but reveal it as a curatorial act over distributions—raising design questions about how tools should surface provenance, influence maps, and stylistic transparency.",
+    "url": "https://aeon.co/essays/style-transfer-and-the-end-of-individual-authorship",
+    "relevance": 93
+  },
+  {
+    "id": "ai_mistake_aesthetics_as_creative_material",
+    "category": "META",
+    "headline": "From glitches to priors: AI 'mistakes' as a new aesthetic category",
+    "summary": "A theory article in a digital culture journal proposes a taxonomy of AI \"errors\"—like warped hands, misheard lyrics, and hallucinated references—as a distinct aesthetic resource rather than a defect. For artists and UX designers, it suggests intentionally exposing model biases and failure modes as part of the experience, treating imperfection as a communicative material.",
+    "url": "https://computationalculture.net/ai-mistakes-as-aesthetic-material",
+    "relevance": 92
+  },
+  {
+    "id": "collective_llm_poetry_with_ownership_protocol",
+    "category": "META",
+    "headline": "Collective LLM poetry project bakes attribution into the text",
+    "summary": "An online poetry platform uses an LLM to co‑write poems with hundreds of contributors, then weaves cryptographic signatures directly into the generated text as hidden constraints. The experiment explores how authorship, credit, and revenue sharing might work when \"the poet\" is a socio‑technical system, not a single human or model.",
+    "url": "https://www.poetryfoundation.org/harriet-books/collective-llm-poetry-attribution-experiment",
+    "relevance": 88
+  },
+  {
+    "id": "embodied_llm_avatars_in_public_spaces",
+    "category": "CX_UX",
+    "headline": "Embodied LLM avatars tested as social infrastructure in plazas",
+    "summary": "Urban interaction designers deployed physical displays with expressive faces and LLM \"personalities\" in public squares, mediating questions about transport, events, and local history. The study looks at how people negotiate trust, emotion, and agency with AI \"civic characters,\" pointing toward new UX patterns that treat cities themselves as conversational interfaces.",
+    "url": "https://urbaninteractionlab.org/projects/embodied-llm-avatars-public-space",
+    "relevance": 90
+  },
+  {
+    "id": "agentic_image_editor_with_design_constraints",
+    "category": "STR_ART",
+    "headline": "Constraint-aware agentic editor respects grids, type scales, and brand",
+    "summary": "A new generative layout tool lets designers specify grid systems, type scales, and brand rules that an agentic AI must obey while proposing variations. Instead of replacing designers, it acts like a tireless junior art director that tries thousands of compositions but never violates the core system, bridging traditional design systems with exploratory AI.",
+    "url": "https://sidebar.io/articles/agentic-ai-layout-editor-constraints",
+    "relevance": 96
+  },
+  {
+    "id": "ai_creativity_as_alien_collaboration",
+    "category": "META",
+    "headline": "Anthropologist frames AI creativity as collaboration with 'alien kin'",
+    "summary": "An anthropological essay argues that treating AI as either tool or rival misses the point; instead, it proposes a framework of \"alien kinship\" where creative systems are neither human nor object but new kinds of collaborators. This perspective encourages artists and UX teams to design rituals, protocols, and shared symbols for working with nonhuman creative agents.",
+    "url": "https://limn.it/issue/ai-creativity-alien-kinship",
+    "relevance": 91
   }
 ]
