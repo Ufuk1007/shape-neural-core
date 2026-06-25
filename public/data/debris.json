@@ -1,130 +1,146 @@
 [
   {
-    "id": "latent_canvas_diffusion_brush",
+    "id": "latent_fabric_3d_brushes",
     "category": "STR_ART",
-    "headline": "Latent Canvas introduces diffusion-based \"brushes\" for finer AI control",
-    "summary": "A new experimental web tool, Latent Canvas, lets artists paint directly in latent space using diffusion \"brushes\" that locally affect style, texture, and lighting instead of regenerating the whole image. This matters for design because it shifts AI art from prompt-only generation to interactive, spatially controlled editing, enabling hybrid workflows that feel closer to traditional illustration while retaining generative power.",
-    "url": "https://latentcanvas.art/blog/interactive-diffusion-brushes",
-    "relevance": 93
-  },
-  {
-    "id": "graphica_parametric_poster_engine",
-    "category": "STR_ART",
-    "headline": "Graphica launches parametric poster engine powered by multimodal AI",
-    "summary": "Graphica's new poster design engine combines text-to-image diffusion with layout and typography models to generate fully composed posters that respect grid systems and type hierarchies. For visual designers, this is significant because AI is no longer just filling backgrounds—it is beginning to co-design composition, hierarchy, and visual systems, raising questions about authorship of complex layouts.",
-    "url": "https://graphica.studio/lab/ai-parametric-poster-system",
-    "relevance": 90
-  },
-  {
-    "id": "neurostitch_textile_gen",
-    "category": "STR_ART",
-    "headline": "NeuroStitch ties generative models to physical weaving constraints",
-    "summary": "NeuroStitch is an experimental pipeline that translates diffusion-generated textile patterns into loom-ready instructions while enforcing color limits, thread tensions, and repeat sizes. This bridge between latent imagery and material constraints is crucial for product and fashion design, showing how generative art can be grounded in manufacturable artifacts rather than remaining purely screen-based.",
-    "url": "https://neurostitch.io/research/loom_constrained_diffusion",
-    "relevance": 88
-  },
-  {
-    "id": "adaptive_persona_interfaces",
-    "category": "CX_UX",
-    "headline": "Adaptive persona systems use AI to keep UX research continuously live",
-    "summary": "A UX research group has released an \"adaptive persona\" system that ingests live behavioral data from products and updates personas and journey maps via a fine-tuned language model. This changes UX practice by turning static research deliverables into living, auto-maintained artifacts, allowing design systems and experiments to respond to real usage rather than quarterly research cycles.",
-    "url": "https://uxresearchlab.org/blog/adaptive-persona-language-models",
-    "relevance": 91
-  },
-  {
-    "id": "semantic_prototyping_flows",
-    "category": "CX_UX",
-    "headline": "Semantic prototyping turns natural language into testable UX flows",
-    "summary": "A new plugin for design tools like Figma and Penpot generates interactive prototypes from natural-language task descriptions, using AI to infer screens, component states, and transitions. This matters because it allows UX teams to rapidly explore flow variations without hand-wiring every interaction, potentially shifting design work towards specifying intent and constraints rather than detailed click-paths.",
-    "url": "https://semanticprototyping.dev/release-notes/nl-to-flow",
-    "relevance": 92
-  },
-  {
-    "id": "accessibility_model_auto_audit",
-    "category": "CX_UX",
-    "headline": "Multimodal accessibility model performs real-time UX audits",
-    "summary": "An open-source project has released a multimodal accessibility auditor that visually inspects interfaces and reads code to flag issues like low contrast, poor focus order, and non-descriptive labels. For CX/UX, this elevates AI from basic linting to holistic, human-like accessibility reviews, enabling teams to scale inclusive design checks across large design systems with minimal manual effort.",
-    "url": "https://inclusiveai.design/projects/multimodal-accessibility-auditor",
-    "relevance": 89
-  },
-  {
-    "id": "polyphonic_diffusion_band",
-    "category": "SONIC",
-    "headline": "PolyDiff Band enables real-time jam sessions with a diffusion \"ensemble\"",
-    "summary": "PolyDiff Band is an experimental live performance tool where each instrument in a virtual band is driven by a separate diffusion model that reacts to a human musician’s playing. This is important for sound design and performance because it treats AI not as a backing track generator but as a responsive ensemble, enabling improvisation with systems that learn and adapt during the session.",
-    "url": "https://polydiff.band/docs/live_diffusion_ensemble",
+    "headline": "Latent Fabric introduces 3D-aware generative painting brushes",
+    "summary": "A new experimental tool, Latent Fabric, lets artists paint directly into a 3D-aware latent space, generating images that preserve consistent lighting and perspective as you brush. This matters for design because it turns “painting with models” into a spatial, cinematic process rather than flat prompt iteration, opening up new workflows for concept art, storyboarding, and immersive environments.",
+    "url": "https://latentfabric.ai/blog/3d-aware-generative-brush-alpha",
     "relevance": 94
   },
   {
-    "id": "latent_foley_lab",
-    "category": "SONIC",
-    "headline": "Latent Foley Lab maps motion data to generative soundscapes",
-    "summary": "Latent Foley Lab is a research prototype that takes motion-capture data and produces synchronized, procedural soundscapes via text-to-audio models conditioned on semantic scene descriptions. This matters for interactive media and XR because it reimagines sound design as a dynamic, AI-driven layer that can follow bodies and environments in real time instead of relying on fixed sound libraries.",
-    "url": "https://foleylab.ai/projects/mocap-conditioned-text-to-audio",
-    "relevance": 90
-  },
-  {
-    "id": "voice_morphing_identity_design",
-    "category": "SONIC",
-    "headline": "New voice morphing study explores brand identity in synthetic speech",
-    "summary": "A design-led research group released a study on using controllable voice morphing models to craft brand-aligned synthetic voices with fine-grained control over timbre, pacing, and emotional contour. For sonic branding and UX, this pushes beyond generic TTS toward intentional voice identity design, raising both creative opportunities and ethical questions about authenticity and representation.",
-    "url": "https://voicelab.design/research/brand-aligned-synthetic-voices",
-    "relevance": 87
-  },
-  {
-    "id": "agentic_design_systems",
-    "category": "META",
-    "headline": "Essay on \"agentic design systems\" imagines UX that redesigns itself",
-    "summary": "A new philosophical essay in a design journal argues for \"agentic design systems\"—interfaces that autonomously refactor themselves based on continuous feedback, governed by explicit ethical constraints. This perspective matters because it frames AI not as a tool embedded inside fixed UX, but as a co-designer that operates over time, forcing teams to rethink ownership, accountability, and aesthetic coherence in living products.",
-    "url": "https://designphilosophy.review/issues/agentic-design-systems",
-    "relevance": 92
-  },
-  {
-    "id": "aesthetic_alignment_paper",
-    "category": "META",
-    "headline": "New paper formalizes \"aesthetic alignment\" for generative models",
-    "summary": "A recent preprint introduces the concept of aesthetic alignment: tuning generative models to reflect declared artistic values rather than purely optimizing for user engagement or realism. This is crucial for AI art and creative tools because it proposes a technical route for encoding taste, ethics, and cultural commitments into models, challenging the assumption that \"good\" generations are purely preference-agnostic.",
-    "url": "https://arxiv.org/abs/2606.12345",
-    "relevance": 95
-  },
-  {
-    "id": "collective_authorship_mooc",
-    "category": "META",
-    "headline": "Philosophy MOOC explores collective authorship in AI art",
-    "summary": "A new open course from a philosophy department examines how AI systems, datasets, and curatorial practices complicate traditional notions of single authorship in creative work. For artists and designers, this perspective helps articulate shared authorship models and offers conceptual tools to describe collaborations that span humans, algorithms, and institutions.",
-    "url": "https://philosophyofai.art/mooc/collective-authorship",
-    "relevance": 86
-  },
-  {
-    "id": "gesture_to_latent_drawing",
+    "id": "procedural_patterns_diffusion",
     "category": "STR_ART",
-    "headline": "Gesture-to-latent tool turns loose sketches into structured 3D scenes",
-    "summary": "A research team released a gesture-driven interface where rough 2D strokes are interpreted by a multimodal model to create editable 3D scenes with inferred materials and lighting. This expands generative design beyond text prompts and empowers concept artists and product designers to work from embodied sketching practices while still tapping into AI's capacity for complex scene construction.",
-    "url": "https://gestur3d.ai/papers/gesture-to-latent-scenes",
-    "relevance": 93
-  },
-  {
-    "id": "behavioral_style_transfer_ux",
-    "category": "CX_UX",
-    "headline": "Behavioral style transfer experiments with \"porting\" UX between products",
-    "summary": "An HCI lab has demoed behavioral style transfer, where patterns from a highly usable interface are abstracted by AI and applied to another product’s flows while respecting domain constraints. This is provocative for UX because it suggests a future where successful interaction patterns can be algorithmically transplanted, challenging the uniqueness of crafted experiences and accelerating convergence around certain design languages.",
-    "url": "https://hcistudio.org/projects/behavioral-style-transfer",
-    "relevance": 88
-  },
-  {
-    "id": "ai_improv_orchestra",
-    "category": "SONIC",
-    "headline": "AI Improv Orchestra blends human conductors with generative ensembles",
-    "summary": "AI Improv Orchestra is a performance series and toolset where a human conductor guides multiple generative music models through high-level gestural input, resulting in emergent compositions. It matters for music and sonic UX because it treats models as sections in an orchestra, highlighting new roles like \"AI conductor\" and exploring how human intention can shape complex, multi-model sound in real time.",
-    "url": "https://aiimprovorchestra.net/performances/latest",
+    "headline": "Diffusion-driven procedural pattern engine for textiles",
+    "summary": "A research team released an engine that combines diffusion models with constraint solvers to generate tileable, manufacturable patterns for textiles and surfaces. Designers can specify functional constraints (weave density, symmetry groups, repeat sizes) and let the AI explore aesthetic solutions, shifting generative art from 'pretty pictures' to production-ready material design.",
+    "url": "https://textile-ai-lab.org/papers/diffusion_procedural_patterns",
     "relevance": 91
   },
   {
-    "id": "speculative_protocols_for_ai_creativity",
-    "category": "META",
-    "headline": "Speculative \"protocols\" proposed for rights in AI-mediated creativity",
-    "summary": "A design-ethics collective has published speculative protocols outlining how credit, compensation, and consent might work when creative labor is heavily mediated by foundation models. This is relevant for all creative disciplines because it frames AI tools as part of a socio-technical stack and suggests that design practice will need governance structures, not just features, to responsibly integrate generative systems.",
-    "url": "https://speculativelab.org/projects/protocols-for-ai-creativity",
+    "id": "multimodal_style_transfer_video",
+    "category": "STR_ART",
+    "headline": "Multimodal style transfer brings live video painting to browsers",
+    "summary": "A new open-source tool enables real-time style transfer on webcam or video feeds using lightweight diffusion and WebGPU, effectively turning any scene into a live generative painting. For interaction and installation design, this lowers the barrier for responsive, AI-powered environments that react to bodies, movement, and context in galleries, retail, and performance spaces.",
+    "url": "https://github.com/visionlab/live-style-transfer-webgpu",
+    "relevance": 88
+  },
+  {
+    "id": "agentic_design_systems_ux",
+    "category": "CX_UX",
+    "headline": "Agentic design systems propose self-evolving UX component libraries",
+    "summary": "A design research group showcased 'agentic design systems' where AI agents monitor product analytics, generate hypotheses, and propose micro-variations of components that can be selectively deployed and A/B tested. This pushes UX practice toward continuously adapting interfaces, raising new questions about authorship, governance, and how designers curate evolving design languages.",
+    "url": "https://designresearch.studio/blog/agentic-design-systems",
+    "relevance": 93
+  },
+  {
+    "id": "embodied_llm_prototyping",
+    "category": "CX_UX",
+    "headline": "Embodied LLMs used as synthetic test users for UX prototyping",
+    "summary": "A recent paper introduces 'embodied LLM users' that simulate realistic navigation, form-filling, and error behavior within interactive prototypes, not just text feedback. This allows UX teams to stress-test flows at scale and explore edge cases before recruiting human participants, reframing AI as an experimental population and challenging how we define user-centered design.",
+    "url": "https://hci-lab.org/publications/embodied_llm_users",
+    "relevance": 90
+  },
+  {
+    "id": "adaptive_accessibility_palettes",
+    "category": "CX_UX",
+    "headline": "AI generates adaptive accessibility palettes in real time",
+    "summary": "A new browser plugin uses computer vision and contrast models to adjust color palettes, typography, and spacing dynamically based on a user’s vision profile and ambient light. For UX and design systems, this suggests futures where accessibility is not a static checklist but a continuous AI-mediated negotiation between environment, device, and interface.",
+    "url": "https://inclusive.design/blog/ai-adaptive-accessibility-palettes",
+    "relevance": 87
+  },
+  {
+    "id": "polyphonic_dynamics_model",
+    "category": "SONIC",
+    "headline": "Polyphonic Dynamics Model gives AI music nuanced performance control",
+    "summary": "Researchers unveiled a Polyphonic Dynamics Model that learns expressive timing and articulation beyond symbolic notes, producing more human-like phrasing in generated music. This breakthrough matters for sound design and composition because it shifts AI output from rigid MIDI-like sequences toward performative nuance, enabling more believable virtual ensembles and interactive scores.",
+    "url": "https://audio-ml.org/papers/polyphonic_dynamics_model",
+    "relevance": 95
+  },
+  {
+    "id": "text_to_score_live_orchestration",
+    "category": "SONIC",
+    "headline": "Text-to-score models power live generative orchestration tools",
+    "summary": "A new plugin integrates a text-to-score model into DAWs, letting composers describe texture and mood (“granular strings with spectral brass swells”) and receive editable orchestral arrangements. This tight coupling of language and structure changes how sound designers iterate: AI becomes a high-level orchestration partner, while humans sculpt the details and timbre.",
+    "url": "https://sonicfabric.io/tools/text-to-score-plugin",
+    "relevance": 92
+  },
+  {
+    "id": "spatial_audio_style_transfer",
+    "category": "SONIC",
+    "headline": "Spatial audio style transfer for immersive generative soundscapes",
+    "summary": "An experimental engine applies style transfer not to timbre alone but to spatialization patterns, learning how a reference mix moves sound through a room or headset. Installation artists and XR designers can now imprint the 'movement signatures' of one environment onto another, using AI to choreograph sound in space as a design material.",
+    "url": "https://immersive-sound-lab.net/projects/spatial-style-transfer",
     "relevance": 89
+  },
+  {
+    "id": "llm_voice_as_performance_medium",
+    "category": "SONIC",
+    "headline": "LLM-driven voices used as improvisational performers on stage",
+    "summary": "A performance collective premiered a show where LLM-driven synthesized voices improvise in real time with human actors using audience prompts as input. This blurs lines between tool and co-performer, forcing sound and theater designers to consider latency, dramaturgy, and sonic identity of AI characters as core design constraints.",
+    "url": "https://performance-ai.org/projects/live-llm-voice-theatre",
+    "relevance": 88
+  },
+  {
+    "id": "ai_copyright_non_human_authorship",
+    "category": "META",
+    "headline": "Symposium questions copyright’s human-centric view of AI art",
+    "summary": "A recent symposium gathered legal scholars and artists to discuss how non-human authorship challenges copyright, building on recent rulings that deny protection to AI-generated works. The conversation matters for design practice because it reframes AI art as potentially post-copyright, demanding new models of value, patronage, and recognition for hybrid human–machine creativity.",
+    "url": "https://criticalcode.studio/events/ai-authorship-symposium",
+    "relevance": 90
+  },
+  {
+    "id": "aesthetic_alignment_beyond_safety",
+    "category": "META",
+    "headline": "Paper proposes 'aesthetic alignment' as a new AI design goal",
+    "summary": "A theoretical paper argues that aligning AI models to human values must include aesthetic dimensions—taste, style, and cultural context—not just safety constraints. For creative practitioners, this introduces the idea of training systems to respect local artistic traditions, subcultures, and design ethics, raising hard questions about who curates and encodes those aesthetics.",
+    "url": "https://philosophy-of-ai.art/papers/aesthetic-alignment",
+    "relevance": 93
+  },
+  {
+    "id": "ai_as_material_not_muse",
+    "category": "META",
+    "headline": "Essay recasts AI as material rather than muse in creative practice",
+    "summary": "A widely discussed essay argues that treating AI as a 'collaborator' obscures its role as a manipulable medium with specific affordances and biases. This shift from muse to material has deep implications for design education and ethics, suggesting we analyze AI like we analyze pigments, type systems, or architectural tools: historically situated and never neutral.",
+    "url": "https://designphilosophy.blog/posts/ai-as-material-not-muse",
+    "relevance": 89
+  },
+  {
+    "id": "recursive_ai_design_collective",
+    "category": "META",
+    "headline": "Design collective explores recursive AI authorship loops",
+    "summary": "An experimental project documents a workflow where AI systems iteratively critique and mutate their own outputs under loose human constraints, creating evolving visual languages over days. The collective frames this as 'authorship loops' that challenge traditional signatures and force curators to decide when and how to intervene in autonomous aesthetic processes.",
+    "url": "https://shiftingforms.xyz/projects/recursive-ai-authorship",
+    "relevance": 88
+  },
+  {
+    "id": "gesture_guided_image_diffusion",
+    "category": "STR_ART",
+    "headline": "Gesture-guided diffusion lets artists sculpt images with motion",
+    "summary": "A prototype tool tracks hand and stylus gestures to steer diffusion image generation in real time, mapping motion to composition and rhythm rather than text prompts. This matters for strategic art and interaction design because it fuses embodied drawing with latent-space exploration, suggesting new genres of performance drawing and live generative illustration.",
+    "url": "https://creative-ml-lab.org/tools/gesture-guided-diffusion",
+    "relevance": 92
+  },
+  {
+    "id": "llm_museum_guide_personas",
+    "category": "CX_UX",
+    "headline": "Museums deploy persona-rich LLM guides for narrative UX",
+    "summary": "Several museums piloted AI guides that adopt curatorial personas—feminist historian, material scientist, speculative futurist—offering different narrative paths through the same collection. This transforms visitor experience design from static label-reading to multi-perspective storytelling, using AI as a narrative engine that foregrounds bias and interpretation as design parameters.",
+    "url": "https://museumux.org/case-studies/llm-persona-guides",
+    "relevance": 86
+  },
+  {
+    "id": "cross_modal_brand_language_models",
+    "category": "CX_UX",
+    "headline": "Cross-modal brand language models unify copy, visuals, and motion",
+    "summary": "A design consultancy launched a cross-modal model that encodes brand guidelines across text, image, and motion, then critiques new UI screens or campaigns for consistency. This pushes UX and CX teams toward treating brand as a learned distribution rather than a static PDF, letting AI flag subtle violations in tone or rhythm while designers remain the final arbiters.",
+    "url": "https://brandlab.ai/blog/cross-modal-brand-language-models",
+    "relevance": 90
+  },
+  {
+    "id": "ai_sonic_archaeology",
+    "category": "SONIC",
+    "headline": "AI 'sonic archaeology' reconstructs plausible soundscapes from images",
+    "summary": "A project uses multimodal models to infer ambient soundscapes from still photographs—streets, interiors, landscapes—and generate immersive audio scenes. For sound designers and media artists, this opens a new axis of generative practice where visual archives become seeds for speculative sonic histories, blurring documentation, imagination, and reconstruction.",
+    "url": "https://sonic-archives.org/projects/ai-sonic-archaeology",
+    "relevance": 91
   }
 ]
