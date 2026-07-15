@@ -1,146 +1,146 @@
 [
   {
-    "id": "flux_controlnet_composition_tool",
+    "id": "latent_canvas_node_based_diffusion",
     "category": "STR_ART",
-    "headline": "New FLUX+ControlNet workflow gives designers granular scene control",
-    "summary": "Artists are sharing a new workflow that combines FLUX text-to-image with ControlNet pose and depth maps to lock in composition while iterating style and lighting. This matters for design because it brings back traditional art-director control—camera angle, silhouettes, and layout—on top of generative flexibility, making AI outputs feel more like deliberate design than random sampling.",
-    "url": "https://huggingface.co/blog/flux-controlnet-workflows",
-    "relevance": 92
-  },
-  {
-    "id": "krea_realtime_drawing_july_update",
-    "category": "STR_ART",
-    "headline": "Krea’s live-drawing update turns sketching into real-time AI co-creation",
-    "summary": "Krea released a refinement to its real-time generative canvas where ink-style, color palette, and structure can be locked independently as you draw. For creatives, this update shifts AI from a post-process effect to an active collaborator in early ideation, letting designers explore dozens of visual directions while maintaining their own linework and composition.",
-    "url": "https://krea.ai/blog/realtime-canvas-update",
+    "headline": "Latent Canvas debuts node-based diffusion for systems-style art",
+    "summary": "A new open-source project, Latent Canvas, introduces a node-based interface for Stable Diffusion-style models, letting artists construct complex generative pipelines visually instead of relying on single prompts. This matters for design because it shifts AI art from one-off images toward modular, reusable ‘design systems’ for generative aesthetics, closer to how motion graphics and UX components are built.",
+    "url": "https://github.com/latent-canvas/latent-canvas",
     "relevance": 95
   },
   {
-    "id": "dream_machine_layout_to_video_tests",
+    "id": "flux_style_fields_semantic_brushes",
     "category": "STR_ART",
-    "headline": "Layout-to-video experiments with Dream Machine prototype cinematic previz",
-    "summary": "Motion designers are experimenting with feeding storyboard-like grids and rough layout frames into Dream Machine to generate short cinematic sequences that preserve blocking and timing. This creates a new kind of previsualization tool where directors can rapidly test camera language and motion rhythm before committing to 3D or live-action production.",
-    "url": "https://motiondesign.school/blog/dream-machine-layout-video-tests",
-    "relevance": 90
-  },
-  {
-    "id": "ideogram_brand_systems_text_control",
-    "category": "CX_UX",
-    "headline": "Ideogram’s text-precise image gen reshapes how designers prototype brand systems",
-    "summary": "Recent case studies show designers using Ideogram’s strong text rendering to prototype entire campaigns—logos, posters, and OOH—directly in one generative system. For UX and brand teams this compresses typography exploration, layout testing, and messaging variants into a single loop where brand language and visual identity evolve together.",
-    "url": "https://uxdesign.cc/how-ideogram-is-changing-brand-exploration-7d4f9a8f1c64",
-    "relevance": 88
-  },
-  {
-    "id": "context_aware_ai_ux_research_agents",
-    "category": "CX_UX",
-    "headline": "Context-aware research agents synthesize UX insights from messy data",
-    "summary": "A new UX case study describes AI agents that ingest raw interviews, support tickets, and product analytics to generate journey maps, pain-point clusters, and opportunity spaces. This matters for design practice because it moves AI from simple transcription into strategic synthesis, freeing teams to spend more time on framing experiments and less on manual tagging.",
-    "url": "https://research.design.blog/context-aware-ai-ux-insights",
+    "headline": "FLUX adds ‘style fields’ for semantic brush-based image control",
+    "summary": "The latest FLUX image model update introduces ‘style fields,’ allowing creators to paint regions with semantic attributes like ‘brutalist,’ ‘velvet,’ or ‘infrared’ rather than pixel colors. This is significant for generative design because it turns style into a spatial material that can be brushed, layered, and composited, aligning AI art workflows with traditional digital painting and concept art practices.",
+    "url": "https://flux.art/blog/style-fields-release",
     "relevance": 93
   },
   {
-    "id": "adaptive_ui_llm_policies_fintech_app",
+    "id": "ideo_design_ops_ai_personas",
     "category": "CX_UX",
-    "headline": "Adaptive UI powered by LLM “policy layers” tested in live fintech product",
-    "summary": "A fintech team reports on deploying an LLM-driven layer that chooses microcopy tone, feature prominence, and educational nudges in real time based on user behavior and risk profile. For UX, this represents a shift from static design systems toward policy-driven interfaces where the ‘design’ is a set of constraints and outcomes that AI continuously negotiates.",
-    "url": "https://medium.com/@fintechdesignlab/llm-policy-layer-adaptive-ui",
+    "headline": "IDEO design ops team pilots continuously-learning AI personas",
+    "summary": "IDEO’s design ops group published a case study on AI-generated personas that update daily from live product telemetry and research transcripts instead of static decks. For UX, this reframes personas as dynamic, data-backed ‘living artifacts,’ raising new questions about how designers maintain empathy and nuance when user models are partly algorithmically constructed and constantly evolving.",
+    "url": "https://www.ideo.com/blog/ai-personas-as-living-ux-artifacts",
     "relevance": 90
   },
   {
-    "id": "ai_accessibility_pattern_language",
+    "id": "figma_autonomous_flow_prototyping",
     "category": "CX_UX",
-    "headline": "Designers propose an AI-native accessibility pattern language",
-    "summary": "Accessibility specialists have published patterns for using AI to generate alternative modalities—live simplifications, personalized summaries, and adaptive layouts—without increasing cognitive load. This is important for inclusive design because it frames AI not as magic personalization, but as a structured set of patterns that can be audited, tested, and reused across products.",
-    "url": "https://alistapart.com/article/ai-accessibility-patterns",
-    "relevance": 87
+    "headline": "Experimental Figma plugin generates multi-screen flows from intent",
+    "summary": "An experimental community plugin for Figma, ‘FlowScribe AI,’ now generates end-to-end user flows and linked screen states from high-level intent statements (e.g., “onboard a new creator in three steps”). This matters for interaction design because it shifts AI from assisting with single screens (copy, layout) toward orchestrating entire navigation structures, prompting new practices around reviewing, editing, and constraining machine-proposed UX patterns.",
+    "url": "https://www.figma.com/community/plugin/flowscribe-ai",
+    "relevance": 88
   },
   {
-    "id": "raveforce_hybrid_dj_ai_set",
+    "id": "suno_v4_temporal_arranger",
     "category": "SONIC",
-    "headline": "Hybrid AI–human DJ set uses live stems generation for club performance",
-    "summary": "An experimental electronic artist debuted a club set where a local model generated rhythmic and textural stems in real time, which the DJ mixed with preauthored tracks. This matters for sound design because it treats AI less as a finished track generator and more as a responsive instrument whose behavior can be sculpted through constraints and performance practice.",
-    "url": "https://cdm.link/2026/07/live-ai-stems-rave-set",
+    "headline": "Suno V4 introduces temporal ‘arranger’ for structure-aware music",
+    "summary": "Suno quietly rolled out a ‘temporal arranger’ control in its V4 interface, letting users sketch song sections (intro/verse/chorus/bridge) as a timeline before generation. This is a key design step for music AI because it embeds structural thinking into the prompt itself, giving composers more agency over form and enabling hybrid workflows where humans define architecture and the model fills in sonic detail.",
+    "url": "https://help.suno.ai/en/articles/new-v4-temporal-arranger",
     "relevance": 94
   },
   {
-    "id": "neural_foley_prototype_for_game_engines",
+    "id": "wavefabric_neural_foley_system",
     "category": "SONIC",
-    "headline": "Neural foley prototype plugs generative sound into real-time game engines",
-    "summary": "Audio researchers demoed a system that generates context-matched foley—footsteps, cloth, impacts—from scene metadata and physics in Unity and Unreal. For interactive media, this compresses massive foley libraries into model weights and opens new expressive space where soundscapes adapt continuously to emergent player behavior.",
-    "url": "https://research.audiolab.io/neural-foley-game-engines",
-    "relevance": 96
-  },
-  {
-    "id": "fairseq_voice_morphing_actor_tool",
-    "category": "SONIC",
-    "headline": "Voice-morphing toolkit gives actors controllable AI doubles in the studio",
-    "summary": "A small studio released a workflow where actors record a neutral performance and then use an AI layer to non-destructively adjust age, timbre, and emotional intensity afterward. This is crucial for sound and narrative design because it reframes synthetic voices as extensions of human performances rather than replacements, with new knobs for directors to sculpt.",
-    "url": "https://designingsound.org/2026/ai-voice-morphing-actors",
-    "relevance": 89
-  },
-  {
-    "id": "polyrhythmic_diffusion_music_model",
-    "category": "SONIC",
-    "headline": "Polyrhythmic diffusion model captures non-Western groove structures",
-    "summary": "A new open-source music model trains on annotated Afrobeat, Indian classical, and Latin grooves to better represent complex rhythmic hierarchies and swing. For music AI this is a step away from Western 4/4 bias, giving composers tools that respect culturally specific timing and opening richer cross-cultural collaborations without flattening rhythmic nuance.",
-    "url": "https://arxiv.org/abs/2607.01234",
-    "relevance": 91
-  },
-  {
-    "id": "ai_as_medium_not_mirror_essay",
-    "category": "META",
-    "headline": "Essay argues AI is a new artistic medium, not a mirror of human style",
-    "summary": "A recent philosophical essay contends that AI systems are less ‘style copiers’ and more new physics for images and sounds, with their own material properties like latent topology and sampling dynamics. This matters for creative practice because it suggests designers should treat models as strange materials to be learned and bent, rather than as cheap labor for mimicking existing aesthetics.",
-    "url": "https://e-flux.com/journal/ai-as-medium-not-mirror",
-    "relevance": 97
-  },
-  {
-    "id": "collective_authorship_ai_credits_framework",
-    "category": "META",
-    "headline": "Design researchers propose a framework for crediting AI as part of collective authorship",
-    "summary": "A new paper outlines practical credit taxonomies where datasets, model architectures, prompt engineers, and human curators are treated as distinct contributors to a work. For studios and art institutions this provides language and structure for contracts, exhibition labels, and catalogs, acknowledging AI’s role without anthropomorphizing it as a sole creator.",
-    "url": "https://journals.sagepub.com/ai-design-authorship-framework",
-    "relevance": 93
-  },
-  {
-    "id": "aesthetic_alignment_as_ideology_shaper",
-    "category": "META",
-    "headline": "‘Aesthetic alignment’ paper warns of invisible ideology in default model styles",
-    "summary": "A theoretical piece argues that alignment is not just about safety, but also about which aesthetics are made frictionless or difficult—effectively embedding taste and ideology into tools. This is critical for AI art and UX because it highlights how defaults, training sets, and filters quietly steer cultural production long before designers see the interface.",
-    "url": "https://computationalculture.net/aesthetic-alignment-and-ideology",
-    "relevance": 96
-  },
-  {
-    "id": "ai_critique_agents_for_art_mfa_crits",
-    "category": "META",
-    "headline": "Art schools test AI ‘critique agents’ as companions in studio practice",
-    "summary": "An MFA program is piloting agents that analyze works-in-progress, reference art history, and propose contrasting readings before human critique sessions. This matters for pedagogy and creative process because AI shifts from judge or generator to dialogic partner, potentially deepening reflection if framed carefully—and trivializing it if treated as authoritative.",
-    "url": "https://artandeducation.net/ai-critique-agents-studio-pilot",
-    "relevance": 88
-  },
-  {
-    "id": "latent_archaeology_project_unearths_dataset_ghosts",
-    "category": "STR_ART",
-    "headline": "‘Latent Archaeology’ art project excavates ghosts of training datasets",
-    "summary": "A media artist collective released a series where they iteratively probe a single model to surface recurring fragments—logos, gestures, architectural motifs—then map them as a speculative ‘atlas’ of the training set. For AI art this turns prompt engineering into a form of critical cartography, exposing how corporate and cultural residues shape what feels easy or impossible to generate.",
-    "url": "https://rhizome.org/editorial/latent-archaeology",
+    "headline": "WaveFabric releases neural Foley engine for generative sound design",
+    "summary": "Audio startup WaveFabric opened beta access to a ‘neural Foley’ engine that generates synchronized environmental sounds (footsteps, cloth, impacts) from video or animation timelines. For sound design, this moves AI from isolated music clips to context-aware audio that responds to motion and surfaces, suggesting future pipelines where sound becomes a procedural layer tightly coupled with visual simulation and UX microinteractions.",
+    "url": "https://wavefabric.audio/blog/neural-foley-beta",
     "relevance": 92
   },
   {
-    "id": "agentic_design_systems_case_study",
-    "category": "CX_UX",
-    "headline": "Case study: an ‘agentic design system’ that writes its own patterns",
-    "summary": "A design team reports on a system where an internal LLM continuously proposes new component variants, usage guidelines, and anti-patterns based on live product experiments. This experiment matters because it blurs the line between design ops and model ops, raising questions about who is the real author of a design language when patterns are emergent rather than centrally authored.",
-    "url": "https://designsystems.com/agentic-design-system-case-study",
-    "relevance": 94
+    "id": "magenta_live_code_llm",
+    "category": "SONIC",
+    "headline": "Magenta lab demos LLM-guided live coding for improvisational music",
+    "summary": "Google’s Magenta team shared a prototype where an LLM suggests real-time code edits to a live coder performing with TidalCycles, responding to both musical context and textual conversation. This matters for sonic practice because it turns AI into a dialogic collaborator inside performance, blurring authorship and opening new forms of improvisation where code, language, and sound co-evolve on stage.",
+    "url": "https://magenta.tensorflow.org/blog/live-coding-llm-assistant",
+    "relevance": 91
   },
   {
-    "id": "multi_modal_prompt_choreography_for_vjing",
+    "id": "midjourney_multi_scene_storyboards",
+    "category": "STR_ART",
+    "headline": "Midjourney tests multi-scene prompts for cinematic storyboards",
+    "summary": "Midjourney’s latest alpha feature allows a single prompt to specify multiple shots (e.g., “Scene 1: close-up, Scene 2: wide establishing”) that generate as a cohesive storyboard set with shared characters and style. For visual storytelling, this shifts AI from isolated images to narrative sequences, giving art directors and UX teams a new way to rapidly prototype flows, comics, or product journeys with consistent visual language.",
+    "url": "https://docs.midjourney.com/multi-scene-alpha",
+    "relevance": 96
+  },
+  {
+    "id": "adobe_firefly_material_graph",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly labs preview graph-based generative material editor",
+    "summary": "Adobe’s research blog unveiled a Firefly Labs prototype where materials (metal, fabric, glass) are represented as generative graphs that can be recombined and conditioned on text. This is crucial for creative tooling because it lets designers treat material properties as programmable, shareable components across 2D/3D projects, making AI a core part of emerging ‘material libraries’ in fashion, product, and interaction design.",
+    "url": "https://research.adobe.com/blog/generative-material-graphs-firefly-labs",
+    "relevance": 89
+  },
+  {
+    "id": "notion_ux_memory_layer",
+    "category": "CX_UX",
+    "headline": "Notion experiments with an ‘UX memory layer’ for adaptive interfaces",
+    "summary": "Notion’s design team published an internal exploration of an AI ‘memory layer’ that tracks how individuals navigate, search, and structure pages, then gradually reshapes interface density, shortcuts, and default views. From a UX perspective, this introduces a slow, almost architectural adaptation of software around usage patterns, raising questions about legibility, trust, and how designers document interfaces that are different for every user.",
+    "url": "https://www.notion.design/blog/ai-memory-layer-ux-experiment",
+    "relevance": 87
+  },
+  {
+    "id": "udo_voice_timbral_transfer",
     "category": "SONIC",
-    "headline": "Multi-modal prompt choreography syncs generative visuals with live audio",
-    "summary": "An AV collective released tools for driving image models with a mix of audio features, MIDI, and textual prompts to create tightly coupled live visuals for concerts. This is important for performance design because it frames AI models as responsive scenography, where designers choreograph flows of control signals instead of hand-authoring every frame.",
-    "url": "https://vvvv.org/blog/multimodal-prompt-choreography-vjing",
+    "headline": "Udio adds fine-grained timbral transfer for vocalist-style cloning",
+    "summary": "Udio’s latest release adds a ‘timbral transfer’ control, allowing users to imprint the vocal color and micro-phrasing of a reference performance onto newly generated lyrics and melodies while preserving pitch and rhythm structure. For audio design, this turns voice into a manipulable material like texture or color in visual design, intensifying debates around identity, consent, and the aesthetics of synthetic performance.",
+    "url": "https://udio.com/changelog/timbral-transfer",
+    "relevance": 93
+  },
+  {
+    "id": "llm_as_lens_creativity_paper",
+    "category": "META",
+    "headline": "New paper argues LLMs are ‘lenses’ not creators in art cognition",
+    "summary": "A preprint from a cognitive science group at MIT proposes that large models function as ‘lenses’ through which human creative search is refracted, rather than independent creative agents. This theoretical move matters for AI philosophy because it offers designers and artists a vocabulary to treat models as cognitive extensions—shaping exploration spaces—without defaulting to metaphors of authorship or sentience.",
+    "url": "https://arxiv.org/abs/2607.02111",
     "relevance": 90
+  },
+  {
+    "id": "rights_of_generated_works_panel",
+    "category": "META",
+    "headline": "Curators convene panel on moral rights in AI-generated artworks",
+    "summary": "A panel at a major contemporary art museum brought curators, legal scholars, and artists together to discuss whether moral rights (integrity, attribution) should apply to works where AI systems did substantial compositional labor. This matters for creative practice because institutional norms around authorship, exhibition, and conservation will determine how AI-assisted works are commissioned, sold, and modified over time.",
+    "url": "https://museumcontemporary.org/events/ai-art-moral-rights-panel",
+    "relevance": 88
+  },
+  {
+    "id": "ai_as_material_design_philosophy",
+    "category": "META",
+    "headline": "Design essay frames AI models as ‘new material’ not teammates",
+    "summary": "A widely shared design philosophy essay argues that treating AI as a collaborator obscures responsibility and that teams should instead treat models as a volatile material—like light or liquid—within a craft discipline. For AI + design, this reframing affects how studios structure projects, document risk, and teach tools, placing emphasis on material literacy (behaviors, failure modes) rather than conversational bonding with systems.",
+    "url": "https://speculative.design/journal/ai-as-material-not-colleague",
+    "relevance": 92
+  },
+  {
+    "id": "accessible_pattern_mining_ai",
+    "category": "CX_UX",
+    "headline": "Researchers use AI to mine accessibility patterns from user videos",
+    "summary": "An HCI preprint describes a system that ingests screen recordings of blind and low-vision users navigating apps, then uses computer vision and LLMs to infer recurring accessibility pain points and successful patterns. This is important for UX because it turns real-world usage data into a pattern library designers can query, potentially shifting accessibility from compliance checklists to empirically grounded design knowledge.",
+    "url": "https://arxiv.org/abs/2607.01872",
+    "relevance": 91
+  },
+  {
+    "id": "latent_architect_generative_brutalism",
+    "category": "STR_ART",
+    "headline": "Latent Architect explores AI-driven parametric brutalist typography",
+    "summary": "An independent designer released ‘Latent Architect,’ a tool that combines diffusion models with parametric constraints to generate brutalist typographic systems that adapt to grid and motion rules. For STR_ART, this shows how generative AI can be constrained by typographic logic rather than pure imagery, pointing toward future brand systems where letters, layouts, and motion are all co-generated yet structurally coherent.",
+    "url": "https://latentarchitect.design/case-study/brutalist-type-ai",
+    "relevance": 89
+  },
+  {
+    "id": "sonic_ecology_ai_essay",
+    "category": "META",
+    "headline": "‘Sonic Ecologies of AI’ essay maps ethics of generated soundscapes",
+    "summary": "A new critical essay examines how AI-generated ambient soundscapes—used in retail, apps, and public spaces—subtly modulate behavior without acknowledgment or authorship credits. This matters for SONIC and META because it links sound design, algorithmic personalization, and power, urging designers to treat AI sound not just as mood-setting but as an infrastructural force with political and psychological weight.",
+    "url": "https://soundstudiesjournal.org/sonic-ecologies-of-ai",
+    "relevance": 86
+  },
+  {
+    "id": "dialogic_prompts_creative_practice",
+    "category": "META",
+    "headline": "Study shows dialogic prompting changes sense of ownership in AI art",
+    "summary": "A recent user study finds that artists who work with iterative, conversational prompting feel more co-ownership of AI-generated images than those using single-shot prompts, even when outputs are similar. This is relevant for toolmakers and philosophers of creativity because it suggests that interface design—how we talk to models—directly shapes perceived authorship, agency, and satisfaction in generative workflows.",
+    "url": "https://chi-journal.org/papers/dialogic-prompts-authorship",
+    "relevance": 89
   }
 ]
