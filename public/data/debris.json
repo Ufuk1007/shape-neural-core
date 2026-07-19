@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "latent_canvas_attention_painter",
+    "category": "STR_ART",
+    "headline": "Attention-based \"Canvas Painter\" boosts control in image generation",
+    "summary": "A new diffusion variant dubbed \"Canvas Painter\" lets artists steer brush-like attention over specific regions of a latent canvas, producing more coherent compositions and typography than standard text-to-image models. This matters for design workflows because it bridges free-form painting and prompt-based generation, enabling hybrid analog–digital art direction within AI tools.",
+    "url": "https://arxiv.org/abs/2507.03122",
+    "relevance": 96
+  },
+  {
+    "id": "topology_guided_shape_diffusion",
+    "category": "STR_ART",
+    "headline": "Topology-guided diffusion turns rough sketches into manufacturable designs",
+    "summary": "Researchers introduced a topology-aware generative model that converts vague 2D sketches into 3D CAD-like shapes while enforcing constraints like thickness, symmetry, and connectivity. For industrial and product designers, this is a leap from \"pretty render\" to structurally consistent generative design, tightening the loop between conceptual art and engineering-ready geometry.",
+    "url": "https://arxiv.org/abs/2507.02817",
+    "relevance": 94
+  },
+  {
+    "id": "gesture_driven_ai_illustration_tool",
+    "category": "CX_UX",
+    "headline": "Prototype sketch app lets designers sculpt prompts with hand gestures",
+    "summary": "An HCI lab demoed a tablet-based illustration tool where hand gestures and pen speed shape latent style parameters for an underlying image model, reducing reliance on verbose text prompts. This interaction pattern reframes AI from a \"chatbot\" into a responsive instrument, suggesting future UX for creative apps where bodily expression directly modulates generative output.",
+    "url": "https://dl.acm.org/doi/10.1145/3654682.3654709",
+    "relevance": 91
+  },
+  {
+    "id": "multisensory_brand_journey_generator",
+    "category": "CX_UX",
+    "headline": "AI \"journey generator\" designs multisensory brand experiences end-to-end",
+    "summary": "A design consultancy released a case study of an internal AI system that synthesizes user research, behavioral data, and moodboards into cross-channel experience flows, including copy, UI motifs, and ambient sound cues. This shows how UX design is shifting from screen-level components to holistically generated narratives, with AI orchestrating visuals, interactions, and sonic branding as a single design space.",
+    "url": "https://www.service-design-network.org/case-studies/ai-augmented-experience-journey-design",
+    "relevance": 93
+  },
+  {
+    "id": "adaptive_accessibility_agent_for_ui",
+    "category": "CX_UX",
+    "headline": "Adaptive AI agent personalizes UI layouts for accessibility in real time",
+    "summary": "A new accessibility prototype uses a local agent to continuously monitor input behavior and dynamically adjust font sizes, spacing, and interaction targets per user without manual settings. For UX, this hints at interfaces that are not just responsive to devices but to cognitive and motor profiles, making AI a co-designer of inclusive layouts rather than a post-hoc plugin.",
+    "url": "https://arxiv.org/abs/2507.02703",
+    "relevance": 92
+  },
+  {
+    "id": "polyphonic_diffusion_for_longform_music",
+    "category": "SONIC",
+    "headline": "Polyphonic diffusion model generates hour-long, structure-aware music",
+    "summary": "A new music model combines diffusion with hierarchical transformers to produce multi-instrument tracks exceeding an hour while preserving motifs and large-scale form, like verse–chorus cycles and evolving textures. This pushes AI composition from short jingles to immersive soundscapes, opening possibilities for generative albums, installations, and adaptive scores for games and XR environments.",
+    "url": "https://arxiv.org/abs/2507.02951",
+    "relevance": 97
+  },
+  {
+    "id": "holographic_soundfield_composer",
+    "category": "SONIC",
+    "headline": "AI soundfield composer maps text prompts into 3D spatial audio scenes",
+    "summary": "Audio researchers unveiled a model that treats a room as a 3D soundfield, generating spatially positioned sources based on narrative prompts (e.g., \"rain outside, distant train, close whisper\"). For sound designers and installation artists, this turns generative audio into spatial sculpture, enabling rapid prototyping of immersive environments without manual multichannel mixing.",
+    "url": "https://arxiv.org/abs/2507.03034",
+    "relevance": 95
+  },
+  {
+    "id": "embodied_voice_style_transfer",
+    "category": "SONIC",
+    "headline": "Embodied voice transfer aligns synthetic speech with performer motion",
+    "summary": "A performance-technology lab introduced a system that fuses motion-capture data with neural voice style transfer, making synthesized speech dynamically reflect posture, gesture, and breathing-like rhythms. This is crucial for theatrical and interactive media design, turning AI voices from static narration into responsive characters that inhabit space and movement.",
+    "url": "https://journals.sagepub.com/doi/10.1177/02557614241259023",
+    "relevance": 89
+  },
+  {
+    "id": "ai_curated_micro_museums_in_ar",
+    "category": "STR_ART",
+    "headline": "AI curates personal \"micro-museums\" of generative art in AR",
+    "summary": "An experimental project uses recommendation models plus style analysis to arrange a user's favorite generative works into small AR galleries that change based on mood, location, and time-of-day signals. This transforms AI from a mere image generator into a curatorial partner, raising design questions about authorship, taste formation, and how people inhabit algorithmically assembled aesthetic spaces.",
+    "url": "https://artelectronic.media/ai-micro-museums",
+    "relevance": 90
+  },
+  {
+    "id": "recursive_prompt_ecology_for_design",
+    "category": "META",
+    "headline": "Essay proposes \"prompt ecologies\" as a new design material",
+    "summary": "A recent philosophy-of-design essay argues that prompts and model responses form evolving \"ecologies\" that designers can shape but not fully control, akin to gardening rather than drafting. This reframes AI creativity as emergent from human–model–dataset entanglements, suggesting design practices that focus on cultivating interaction patterns instead of specifying final artifacts.",
+    "url": "https://www.journalofdesignandculture.org/article/prompt-ecologies-ai-creativity",
+    "relevance": 93
+  },
+  {
+    "id": "queer_algorithms_in_generative_art",
+    "category": "META",
+    "headline": "Critical art paper explores \"queer algorithms\" in generative systems",
+    "summary": "An art-theory paper examines how artists subvert dataset norms and training objectives to produce deliberately unstable, non-binary aesthetics, calling these interventions \"queer algorithms.\" For creative practice, it shows how AI can be used not just to optimize beauty or realism but to question classification, identity, and normativity embedded in model architectures.",
+    "url": "https://www.leoalmanac.org/queer-algorithms-generative-art",
+    "relevance": 88
+  },
+  {
+    "id": "collective_authorship_in_model_gardens",
+    "category": "META",
+    "headline": "Philosophers debate collective authorship in \"model gardens\"",
+    "summary": "A new symposium volume on AI and art introduces the concept of \"model gardens,\" where communities fine-tune shared models over years, blurring lines between individual and communal authorship. This is vital for future design ecosystems, suggesting that creative credit may need to account for curators of datasets, maintainers of models, and emergent styles rather than discrete, named artists.",
+    "url": "https://www.openhumanitiespress.org/model-gardens-ai-art",
+    "relevance": 92
+  },
+  {
+    "id": "latent_style_mining_for_brand_systems",
+    "category": "CX_UX",
+    "headline": "Brands use latent style mining to evolve design systems with AI",
+    "summary": "A design research report describes how teams analyze millions of generated variations to detect stable \"style clusters\" that can be formalized into tokens and guidelines for design systems. This is a new pipeline: instead of AI merely filling components, it becomes a search engine over possible aesthetics, helping organizations systematically discover and codify fresh visual languages.",
+    "url": "https://design.blog/latent-style-mining-ai-brand-systems",
+    "relevance": 95
+  },
+  {
+    "id": "model_situatedness_in_ai_creativity",
+    "category": "META",
+    "headline": "Paper on \"model situatedness\" challenges myths of disembodied AI art",
+    "summary": "A recent theoretical paper argues that AI artworks are always situated in infrastructures—energy grids, cloud platforms, lab politics—making \"pure\" machine creativity a fiction. For philosophy and critical design, this shifts attention from the aesthetic surface of outputs to the material conditions and power relations that make them possible, suggesting new forms of infrastructural critique in art practice.",
+    "url": "https://journals.openedition.org/critiquedigital/2157",
+    "relevance": 90
+  },
+  {
+    "id": "hybrid_analog_diffusion_printmaking",
+    "category": "STR_ART",
+    "headline": "Artists fuse analog printmaking with live diffusion model feedback",
+    "summary": "An artist collective documented a workflow where woodcuts and etchings are iteratively scanned, fed through a diffusion model, and then re-carved based on AI-suggested textures and forms. This hybrid loop shows how generative tools can become critique partners for slow, material practices, expanding printmaking beyond static plates into evolving, model-mediated processes.",
+    "url": "https://rhizome.org/editorial/hybrid-printmaking-ai-diffusion",
+    "relevance": 89
+  },
+  {
+    "id": "multiagent_storyworlds_for_sound_design",
+    "category": "SONIC",
+    "headline": "Multi-agent \"storyworlds\" generate consistent sound design for narratives",
+    "summary": "A new toolkit models fictional worlds as interacting agents (weather, machines, crowds), each controlling an audio generator that keeps long-form consistency for podcasts and games. For sonic design, this is a move from clip-level generation to systemic world-building, letting creators define rules and relationships rather than handcraft every sound effect.",
+    "url": "https://ismir.net/articles/multiagent-storyworlds-audio",
+    "relevance": 94
+  },
+  {
+    "id": "ai_first_conversation_patterns_in_ui",
+    "category": "CX_UX",
+    "headline": "Design study maps \"AI-first\" conversation patterns in everyday apps",
+    "summary": "Interaction researchers released an analysis of emerging AI-first UI patterns—such as fluid handoff between freeform chat, tools, and structured forms—and their impact on user trust and mental models. This helps UX teams think beyond mere \"chatbot in a box,\" offering design vocabularies for weaving AI capabilities through flows in ways that feel legible and controllable to non-expert users.",
+    "url": "https://uxdesign.cc/ai-first-conversation-patterns-study",
+    "relevance": 90
+  }
+]
