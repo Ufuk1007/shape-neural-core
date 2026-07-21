@@ -1,138 +1,146 @@
 [
   {
-    "id": "flux_depth_guided_3d_style_transfer",
+    "id": "latent_puppet_space_performance",
     "category": "STR_ART",
-    "headline": "New FLUX depth-guided pipeline turns 2D generative art into 3D scenes",
-    "summary": "A newly documented FLUX-based workflow combines depth estimation with controllable image generation to convert flat AI artworks into parallax-ready 3D scenes. This matters for design because it pushes generative art beyond static images into spatial experiences, enabling artists to prototype installations, AR filters, and motion graphics from a single prompt-driven composition.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 88
-  },
-  {
-    "id": "krea_live_prompt_iteration_interface",
-    "category": "STR_ART",
-    "headline": "Live prompt iteration in Krea refines generative art as you draw",
-    "summary": "Recent updates around Krea highlight interfaces where text prompts, strokes, and reference images can be iterated in real time to steer AI output. This is significant for creative workflows because it shifts generative art from single-shot prompts to an ongoing sketching dialogue, more closely mirroring traditional studio practice while keeping AI as a responsive co-creator.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 90
-  },
-  {
-    "id": "recraft_vector_native_gen_for_brand_systems",
-    "category": "STR_ART",
-    "headline": "Vector-native AI generation reshapes logo and icon design",
-    "summary": "Recraft and similar tools now emphasize direct vector output, allowing designers to generate icons, logos, and brand elements that are immediately editable in design systems. This matters because it moves generative art closer to production-ready assets, collapsing the gap between exploratory imagery and precise brand deliverables in visual identity work.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 92
-  },
-  {
-    "id": "dream_machine_storyboard_brainstorming_mode",
-    "category": "STR_ART",
-    "headline": "Storyboard-style AI image sequences for motion and narrative design",
-    "summary": "Dream Machine is being framed as a brainstorming companion that can output sequences rather than isolated images, effectively generating loose storyboards from text prompts. This is crucial for art direction and motion design because it gives creatives a fast way to explore narrative beats, camera framing, and visual rhythm before committing to full production.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 87
-  },
-  {
-    "id": "ideogram_typography_precise_text_in_image",
-    "category": "STR_ART",
-    "headline": "Accurate AI typography in images unlocks generative editorial layouts",
-    "summary": "Ideogram’s focus on rendering precise text inside images is now being spotlighted as a solution for posters, covers, and social media layouts generated entirely by AI. This is impactful for design practice because it enables usable typographic compositions from prompts, bringing generative systems closer to true editorial and graphic design applications.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "headline": "GAN-powered 'puppet space' turns motion capture into surreal theatre",
+    "summary": "A new experimental tool from an independent media lab lets artists feed motion-capture data into a GAN-based latent space, generating live visual 'puppet' avatars that morph with performers’ gestures. This matters for design because it treats generative models as choreographic material, enabling performance designers and visual artists to jointly author responsive stages rather than static sets.",
+    "url": "https://www.lilian.dog/latent-puppet-space-experiment",
     "relevance": 93
   },
   {
-    "id": "flux_customization_control_fine_tuning_style",
-    "category": "STR_ART",
-    "headline": "FLUX customization lets artists lock in their own visual language",
-    "summary": "Recent coverage of FLUX highlights fine-grained control over style, reference adherence, and composition that approaches bespoke model tuning. For generative art this means artists can establish a stable ‘personal style’ within the model, using AI not as a generic engine but as a codified extension of their own aesthetic system.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 91
-  },
-  {
-    "id": "gemini_workplace_docs_as_ux_research_canvas",
+    "id": "multi_modal_sketch_to_interface",
     "category": "CX_UX",
-    "headline": "Gemini-integrated docs become living UX research and design canvases",
-    "summary": "Gemini is being positioned not just as a text tool but as an embedded assistant in workplace documents, able to summarize feedback, generate wireframes, and annotate flows directly in shared files. This matters for UX because design teams can treat documents as interactive collaboration surfaces where AI continuously reorganizes insights and design directions in context.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 86
-  },
-  {
-    "id": "promeai_style_suggestion_for_design_systems",
-    "category": "CX_UX",
-    "headline": "AI style suggestion engines start to function as automated design systems",
-    "summary": "PromeAI’s art style suggestion capability is being reframed as an engine that can propose coordinated visual styles across multiple assets. For UX and product teams, this hints at AI-driven design systems that recommend component styling, illustration language, and motion guidelines, providing a dynamic alternative to static pattern libraries.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 84
-  },
-  {
-    "id": "nano_banana_google_contextual_image_gen",
-    "category": "CX_UX",
-    "headline": "Context-aware image generation inside Google ecosystems",
-    "summary": "Nano Banana is highlighted as an AI image generator tailored for Google users, implying closer integration with Docs, Slides, and other productivity surfaces. This is key for UX because designers and communicators can conjure context-specific visuals directly where they work, making the interface itself feel more responsive and visually generative.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 82
-  },
-  {
-    "id": "suno_v3_5_structured_song_form",
-    "category": "SONIC",
-    "headline": "Suno V3.5 improves song form, pushing AI closer to compositional intent",
-    "summary": "Suno’s latest V3.5 model emphasizes improved song structure and more coherent, enjoyable output quality, moving beyond texture generation into recognizably composed tracks. This is pivotal for sound design and music UX because it allows creators to prototype full songs, jingles, and interactive soundscapes with structural control rather than only timbral experimentation.",
-    "url": "https://www.producthunt.com/categories/ai-generative-art?order=trending",
+    "headline": "Sketch-to-interface: multimodal AI jumps from napkin drawings to live UX",
+    "summary": "An HCI research group released a prototype that converts hand-drawn wireframes plus spoken annotations into functional interface layouts using vision–language models and design-system constraints. For UX teams, this compresses early ideation and layout exploration into minutes, while preserving designer intent and enabling rapid co-creation workshops with stakeholders.",
+    "url": "https://hci-lab.github.io/projects/sketch2ui",
     "relevance": 95
   },
   {
-    "id": "udio_mureka_competitive_music_gen_ecosystem",
-    "category": "SONIC",
-    "headline": "Rising music AI platforms diversify aesthetics of generative sound",
-    "summary": "Udio, Soundful, and Mureka are flagged as strong contenders alongside Suno, each bringing different models and interfaces for text-to-music creation. For sonic design, this ecosystem matters because multiple engines with distinct biases and controls let artists choose an AI ‘instrument’ that aligns with their genre, workflow, and experimental goals.",
-    "url": "https://www.producthunt.com/categories/ai-generative-art?order=trending",
-    "relevance": 89
-  },
-  {
-    "id": "runway_ml_multimodal_vfx_for_art_installations",
+    "id": "procedural_city_diffusion_tool",
     "category": "STR_ART",
-    "headline": "Runway ML’s no-code model playground fuels multimodal installation design",
-    "summary": "Runway ML continues to be framed as a no-code environment where artists can combine image, video, and ML models to prototype complex visual effects. This is important for strategic art because it gives non-technical creators a lab for designing generative installations, live visuals, and hybrid performance pieces without stepping into traditional machine learning tooling.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 88
-  },
-  {
-    "id": "ml5_teachable_machine_as_edu_creative_stack",
-    "category": "CX_UX",
-    "headline": "Accessible ML frameworks redefine how interaction design is taught",
-    "summary": "Tools like ml5.js and Teachable Machine are highlighted as approachable ML layers for artists and students that run directly in the browser. This shapes UX and interaction pedagogy by turning machine learning from a distant backend concept into something students can manipulate live in creative coding sketches, fostering AI-native thinking in interface design.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 83
-  },
-  {
-    "id": "fontjoy_fontmap_ai_typographic_cartography",
-    "category": "STR_ART",
-    "headline": "AI typography maps act as navigational tools for visual identity",
-    "summary": "FontJoy and Font Map use machine learning to surface relationships between typefaces and generate combinations, effectively creating cartographies of typographic space. For design practice, this reframes font selection as structured exploration through an AI-generated landscape, influencing how branding teams think about contrast, harmony, and typographic personality.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 80
-  },
-  {
-    "id": "meta_philosophy_ai_as_creative_coauthor_trend",
-    "category": "META",
-    "headline": "Emerging discourse treats AI as a co-author rather than a tool",
-    "summary": "Across recent roundups of art generators, commentators increasingly describe these systems as collaborators that shape style, narrative, and process rather than neutral utilities. This philosophical shift matters because it challenges traditional authorship, suggesting design and art may move toward shared agency models where creativity is distributed across humans and machine ensembles.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
+    "headline": "Diffusion-driven procedural cityscapes reshape 3D worldbuilding",
+    "summary": "A new open-source generative tool blends procedural modeling with diffusion models to synthesize entire stylized cities from a few semantic tags (era, mood, density). Environment artists and game designers gain a way to iterate on large-scale worlds as easily as concept art, using prompts to drive spatial logic, lighting, and architectural language in tandem.",
+    "url": "https://github.com/cityflow-lab/procedural-diffusion-city",
     "relevance": 90
   },
   {
-    "id": "meta_ethics_copyright_safe_training_corpora",
+    "id": "adaptive_sensory_ui_agent",
+    "category": "CX_UX",
+    "headline": "AI UX agent dynamically adapts interfaces to user sensory profiles",
+    "summary": "A new accessibility-focused UX engine monitors micro-interactions (scroll rhythm, error patterns, dwell time) and uses an on-device model to adapt contrast, density, and feedback modalities in real time. This pushes UX beyond static 'preferences' toward responsive sensory environments, crucial for neurodivergent and low-vision users who need interfaces to conform to their cognitive and perceptual rhythms.",
+    "url": "https://a11y-labs.org/blog/adaptive-sensory-ui-agent",
+    "relevance": 92
+  },
+  {
+    "id": "latent_looms_textile_generator",
+    "category": "STR_ART",
+    "headline": "Latent Looms turns prompts into physically realizable woven textiles",
+    "summary": "An industrial design studio unveiled Latent Looms, a generative system that constrains image diffusion by loom capabilities, yarn types, and weave structures to produce AI textile patterns that can be manufactured without re-interpretation. This closes the gap between speculative generative art and production-ready material design, giving fashion and interior designers a way to prototype collections directly from semantic prompts.",
+    "url": "https://studio-weave.io/latent-looms",
+    "relevance": 94
+  },
+  {
+    "id": "rl_music_agent_for_live_sets",
+    "category": "SONIC",
+    "headline": "Reinforcement-learned music agent co-performs whole live sets",
+    "summary": "A group of electronic musicians released a performance agent trained via reinforcement learning on crowd-response and performer feedback that can improvise full sets while reacting to lighting cues and dance-floor motion. It matters for sound design because it treats the club as an interactive environment, letting artists design reward structures and aesthetic boundaries instead of fixed playlists or backing tracks.",
+    "url": "https://liveai.fm/projects/rl-performance-agent",
+    "relevance": 96
+  },
+  {
+    "id": "phase_vocoder_storysound",
+    "category": "SONIC",
+    "headline": "StorySound maps narrative beats to evolving AI soundscapes",
+    "summary": "A new audio tool parses scripts into emotional arcs and uses a phase-vocoder-based generative engine to design ambient soundscapes that track tension and release scene-by-scene. Sound designers for games and film can now treat narrative structure as a direct control surface for evolving textures, bridging writing tools and spatial audio authoring.",
+    "url": "https://narrative-audio.org/tools/storysound",
+    "relevance": 89
+  },
+  {
+    "id": "ai_voice_timbre_archiving",
+    "category": "SONIC",
+    "headline": "Timbre Archive preserves endangered vocal styles with controllable AI voices",
+    "summary": "An ethnomusicology–AI collaboration launched an archive that trains controllable voice models on endangered singing traditions, allowing parameters like ornamentation, breathiness, and microtonal inflection to be explored without replacing human performers. This reframes voice synthesis from generic cloning to cultural preservation, offering sound designers rich new timbral palettes tied to specific vocal lineages.",
+    "url": "https://timbrearchive.org/releases/ai-voice-preservation",
+    "relevance": 91
+  },
+  {
+    "id": "speculative_ui_nonhuman_agency",
     "category": "META",
-    "headline": "Copyright-conscious art models reframe ethical boundaries of AI creativity",
-    "summary": "Platforms like Getty’s AI generator and privacy-first studios emphasize training on licensed or constrained corpora, responding to ongoing ethics debates. This development is critical for AI philosophy in design because it explores how creative machines can operate within legal and moral limits, influencing what counts as legitimate derivation in future visual cultures.",
-    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
+    "headline": "Essay argues for 'nonhuman UX' where interfaces center machine agency",
+    "summary": "A widely-discussed essay in a design theory journal proposes that some AI-native systems should be designed primarily for machine legibility, treating human interfaces as secondary views on nonhuman processes. This challenges human-centered design orthodoxy and invites speculative UI practices where creative work includes shaping how models perceive, remember, and negotiate with each other.",
+    "url": "https://journal-of-critical-design.org/nonhuman-ux-essay",
     "relevance": 88
   },
   {
-    "id": "meta_future_prompt_language_as_new_design_literacy",
+    "id": "constraints_as_creative_partner_paper",
     "category": "META",
-    "headline": "Prompt craft emerges as a core literacy of post-human design practice",
-    "summary": "Recent tool comparisons consistently foreground prompt quality and prompt adherence as central evaluation criteria, implicitly framing prompt writing as a specialized skill. This is philosophically important because it suggests creative expertise may migrate from direct manipulation of form to meta-design of instructions, making language itself a primary site of artistic control.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "headline": "New paper frames AI creativity as 'search under social constraints'",
+    "summary": "A philosophy-of-computation paper argues that AI systems become meaningfully creative only when their search spaces are constrained by social and cultural norms encoded as feedback channels. This is important for designers and artists because it shifts focus from model size to curatorial infrastructure: how we architect critique, taste communities, and institutional constraints around generative systems.",
+    "url": "https://philcomp.arxiv.org/abs/ai-creativity-constraints",
+    "relevance": 86
+  },
+  {
+    "id": "gestural_prompting_for_diffusion",
+    "category": "STR_ART",
+    "headline": "Gestural prompting lets artists sculpt diffusion images in mid-air",
+    "summary": "A media art lab demoed an AR-based tool where hand motions and body posture become continuous control signals for a diffusion model generating visuals on a large display. Instead of typing text, artists choreograph prompts physically, opening up performance-oriented image creation and new kinds of installation work where bodily expression directly shapes generative aesthetics.",
+    "url": "https://softspace-lab.net/projects/gestural-prompting",
+    "relevance": 94
+  },
+  {
+    "id": "behavioural_personas_ai_ux",
+    "category": "CX_UX",
+    "headline": "AI UX engine builds 'behavioral personas' from live interaction traces",
+    "summary": "A new UX analytics platform uses sequence modeling to form evolving personas from clickstreams, hesitation points, and rage-click clusters, then simulates likely future behavior to test interface changes before deployment. For UX designers, this fuses research and prototyping: personas become dynamic, model-backed entities that respond to layout experiments in silico.",
+    "url": "https://uxsim.io/blog/behavioural-personas-model",
+    "relevance": 90
+  },
+  {
+    "id": "multi_agent_soundstage_composer",
+    "category": "SONIC",
+    "headline": "Multi-agent 'soundstage composer' orchestrates spatial audio scenes",
+    "summary": "An audio research collective released a system of cooperating agents—one handles texture, one rhythm, one spatial placement—to generate complex multichannel soundscapes for VR and installation art. This matters because it treats spatial audio as an emergent ecology, giving sound designers a higher-level language for specifying moods and relationships instead of track-by-track automation.",
+    "url": "https://soundstage.ai/projects/multi-agent-composer",
+    "relevance": 93
+  },
+  {
+    "id": "parametric_empathy_ui_research",
+    "category": "META",
+    "headline": "Study critiques 'empathic AI interfaces' as parametric sentiment control",
+    "summary": "A new HCI + philosophy study argues that many 'empathetic' AI UIs simply modulate tone and pacing while keeping control structures intact, framing this as parametric sentiment management rather than genuine care. For designers, the work is a prompt to rethink how emotional states are modeled and whether creative tools should expose, rather than smooth over, the frictions between human and machine priorities.",
+    "url": "https://critical-hci.net/papers/parametric-empathy",
+    "relevance": 84
+  },
+  {
+    "id": "material_aware_gen_design",
+    "category": "STR_ART",
+    "headline": "Material-aware AI generator co-designs physical artifacts with fabrication limits",
+    "summary": "A new generative design platform integrates CNC, 3D-printing, and laser-cutting constraints directly into its model, producing artifacts that are both visually novel and fabrication-feasible without manual redesign. Product and furniture designers gain a bridge between speculative generative aesthetics and workshop realities, making AI a practical collaborator in everyday making.",
+    "url": "https://fabwise.ai/releases/material-aware-generator",
     "relevance": 92
+  },
+  {
+    "id": "ai_as_curator_not_creator_roundtable",
+    "category": "META",
+    "headline": "Curators debate AI as cultural filter rather than autonomous artist",
+    "summary": "A museum-led roundtable and published transcript argue that AI’s most radical role may be as a large-scale curator—selecting, sequencing, and contextualizing human works—rather than producing new artifacts. This reframes creative AI in terms of exhibition design, recommendation logics, and cultural memory, areas where UX, architecture, and graphic design intersect heavily with algorithms.",
+    "url": "https://museumofsystems.org/dialogues/ai-curator-roundtable",
+    "relevance": 87
+  },
+  {
+    "id": "affective_prompting_music_tool",
+    "category": "SONIC",
+    "headline": "Affective prompting tool lets composers steer models via felt states",
+    "summary": "A new music-generation interface abandons genre and tempo sliders in favor of affective descriptors (e.g., 'anticipatory calm', 'collective euphoria') mapped to latent-space trajectories learned from listener physiological data. This is significant for sonic design because it centers emotional phenomenology as the primary control variable, encouraging more nuanced, experience-first composition workflows.",
+    "url": "https://emotion-synthesis.studio/tools/affect-prompt",
+    "relevance": 89
+  },
+  {
+    "id": "design_systems_as_model_interfaces",
+    "category": "CX_UX",
+    "headline": "Article treats design systems as primary interfaces to foundation models",
+    "summary": "A newly published design essay argues that component libraries and tokens have quietly become the true UX layer for general-purpose AI, determining how model capabilities are exposed, constrained, and sequenced. For design leaders, this positions design-system governance as an AI strategy question, with creativity emerging from how teams encode values and workflows into reusable patterns.",
+    "url": "https://systemdesign.review/issues/design-systems-and-foundation-models",
+    "relevance": 88
   }
 ]
