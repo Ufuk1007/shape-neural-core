@@ -1,1 +1,138 @@
-[]
+[
+  {
+    "id": "dream_machine_v4_cinematic_motion",
+    "category": "STR_ART",
+    "headline": "Luma’s Dream Machine v4 pushes cinematic generative motion",
+    "summary": "Luma’s latest Dream Machine update, trending across design communities, tightens control over camera movement, scene consistency, and cinematic lighting for text-to-video generation. This matters for designers and artists because it shifts AI video from ‘cool clips’ toward usable motion studies, storyboards, and atmospheric visual narratives that can sit inside real production pipelines.",
+    "url": "https://www.producthunt.com/posts/dream-machine-by-luma-photon",
+    "relevance": 95
+  },
+  {
+    "id": "krea_live_ai_design_canvas",
+    "category": "STR_ART",
+    "headline": "Krea’s live AI canvas blurs drawing and model steering",
+    "summary": "A recent Krea update popular with generative artists allows live, iterative image generation where every brushstroke becomes conditioning for the model. Designers can sculpt compositions in real time instead of issuing static text prompts, pointing toward hybrid workflows where human spatial intuition and model texture/style are fused into a single design loop.",
+    "url": "https://www.producthunt.com/posts/krea-ai",
+    "relevance": 93
+  },
+  {
+    "id": "recraft_vector_aware_diffusion",
+    "category": "STR_ART",
+    "headline": "Recraft brings vector-native control to generative imagery",
+    "summary": "Recraft’s recent traction among brand and UI designers comes from treating text-to-image as vector graphics from the start, not raster images to be traced later. This vector-aware generation enables logo, icon, and layout assets that are immediately editable, signaling a move from ‘AI art’ toward production-ready design systems that can be refactored like code.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 90
+  },
+  {
+    "id": "tensor_art_style_locked_img2img",
+    "category": "STR_ART",
+    "headline": "Tensor.art refines style-locked image-to-image workflows",
+    "summary": "Recent updates highlighted in 2026 generator roundups position Tensor.art as a go-to tool for preserving composition while swapping styles via fine-tuned diffusion. For concept artists and architects, this enables rigorous variation studies—holding structure constant while letting AI explore material, mood, and cultural aesthetics as a parametric design surface.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 88
+  },
+  {
+    "id": "magnific_ai_high_end_upscale_as_creative_tool",
+    "category": "STR_ART",
+    "headline": "Magnific reframes upscaling as generative co-creation",
+    "summary": "Magnific’s rise in recent “best of 2026” lists shows upscaling becoming a creative, not merely technical, process—where detail hallucination is steered via prompts. For illustrators and photographers, this turns finishing work into a dialogue with the model, inviting speculative micro-worlds, textures, and narrative clues to emerge inside existing compositions.",
+    "url": "https://www.jotform.com/ai/best-ai-image-generator/",
+    "relevance": 87
+  },
+  {
+    "id": "prome_ai_style_suggestions_for_design_systems",
+    "category": "CX_UX",
+    "headline": "PromeAI suggests coherent styles for design systems",
+    "summary": "PromeAI’s growing use among interface teams comes from its ability to recommend visual styles, component treatments, and art directions based on textual intent. This is important for UX because it treats style as a searchable design space, allowing teams to rapidly explore coherent design languages before committing to manual craft and documentation.",
+    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "relevance": 86
+  },
+  {
+    "id": "fontjoy_ml_typography_pairing",
+    "category": "CX_UX",
+    "headline": "FontJoy’s ML-powered font pairing informs AI UX tooling",
+    "summary": "FontJoy, resurfacing in current AI-art tool collections, uses deep learning to propose typographic pairings that balance contrast and harmony. For UX and branding, it exemplifies how models can encode ‘taste’ and pattern literacy, hinting at broader systems where layout, motion, and copy tone are co-suggested as a single experiential gestalt.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 82
+  },
+  {
+    "id": "ai_teachable_machine_as_ux_research_probe",
+    "category": "CX_UX",
+    "headline": "Teachable Machine emerges as a rapid UX probe for AI behaviors",
+    "summary": "Teachable Machine, highlighted in creative tool roundups, lets designers prototype AI interactions by training simple models directly in the browser. This is significant for UX because non-technical researchers can quickly test how users interpret model feedback, recognition errors, and confidence, turning AI itself into a material for participatory design.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 80
+  },
+  {
+    "id": "suno_v3_5_structured_song_generation",
+    "category": "SONIC",
+    "headline": "Suno v3.5 advances structured, radio-ready AI songcraft",
+    "summary": "The latest Suno v3.5 model, currently leading Product Hunt’s music AI tools, improves long-form structure, hooks, and mix quality for generated songs. For sound designers and composers, this pushes AI from demo-style sketches into fully realized tracks, making generative music a serious option for prototyping sonic identities and interactive soundscapes.",
+    "url": "https://www.producthunt.com/categories/ai-generative-art",
+    "relevance": 94
+  },
+  {
+    "id": "udio_text_to_song_for_indie_creators",
+    "category": "SONIC",
+    "headline": "Udio’s text-to-song pipeline empowers non-musician storytellers",
+    "summary": "Udio, noted alongside Suno in current generative audio tool lists, focuses on fast, high-quality song generation from plain language prompts. This matters for narrative design and game audio because writers can materialize musical arcs directly from story beats, flattening the gap between narrative intent and expressive, themed soundtracks.",
+    "url": "https://www.producthunt.com/categories/ai-generative-art",
+    "relevance": 89
+  },
+  {
+    "id": "mureka_parametric_music_for_brand_sonics",
+    "category": "SONIC",
+    "headline": "Mureka explores parametric brand-aligned music generation",
+    "summary": "Mureka’s presence among emerging audio generators highlights a trend toward brand-parameterized music—tempo, instrumentation, and emotional tone tied to identity guidelines. For sonic UX and retail environments, this enables adaptive soundtracks that stay on-brand while responding to context, opening new terrain for experience designers working with sound.",
+    "url": "https://www.producthunt.com/categories/ai-generative-art",
+    "relevance": 86
+  },
+  {
+    "id": "awesome_generative_deep_art_sonic_crossovers",
+    "category": "SONIC",
+    "headline": "‘Awesome Generative Deep Art’ list surfaces cross-media sound tools",
+    "summary": "The updated ‘awesome-generative-deep-art’ GitHub list catalogs a growing ecosystem of models that treat audio, video, and image generation as a shared space. For sound artists, this cross-pollination means workflows where a visual mood board can directly drive spectral characteristics, suggesting a future of unified multimodal design environments.",
+    "url": "https://github.com/sonoroboto/awesome-generative-deep-art",
+    "relevance": 83
+  },
+  {
+    "id": "boring_report_aesthetic_of_neutrality",
+    "category": "META",
+    "headline": "Boring Report tests an AI aesthetic of de-sensationalized media",
+    "summary": "Boring Report, an AI system that rewrites news to strip away sensationalism, embodies a philosophical stance on what counts as ‘good’ information design. For media theorists and UX practitioners, it raises questions about whether AI should amplify engagement or cultivate calm, and how editorial values can be encoded as aesthetic constraints.",
+    "url": "https://github.com/sonoroboto/awesome-generative-deep-art",
+    "relevance": 88
+  },
+  {
+    "id": "gpt_output_detector_authorship_question",
+    "category": "META",
+    "headline": "GPT-Output Detector reframes authorship as forensic design",
+    "summary": "Tools like the GPT-2 Output Detector, cataloged in recent generative art lists, turn AI authorship into a detectable style that can be analyzed and flagged. This is philosophically rich for creativity studies: it treats ‘AI voice’ as an aesthetic trace, inviting designers to consider whether and when machine origin should be visible in cultural artifacts.",
+    "url": "https://github.com/sonoroboto/awesome-generative-deep-art",
+    "relevance": 84
+  },
+  {
+    "id": "aiartists_org_as_living_theory_lab",
+    "category": "META",
+    "headline": "AIArtists.org functions as a living lab of AI art theory-in-practice",
+    "summary": "AIArtists.org’s continually updated catalog of tools foregrounds artists who treat machine learning not as a utility but as a conceptual medium. For philosophy of art, this ecosystem evidences new genres—collaborative authorship, model-steered chance operations, and dataset critique—that demand revised theories of creativity, originality, and control.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 90
+  },
+  {
+    "id": "fusion_generative_design_as_machine_intuition",
+    "category": "META",
+    "headline": "Generative design in Fusion challenges human-centric optimization",
+    "summary": "Autodesk Fusion’s generative design tools, amplified in recent art/design AI surveys, produce structures no human would intuitively draw yet are functionally superior. This raises philosophical questions about whether creativity is tied to human intuition or to exploring vast solution spaces, and whether designers become curators of machine-suggested forms.",
+    "url": "https://www.forbes.com/sites/bernardmarr/2024/05/09/the-top-generative-ai-tools-for-art-and-design/",
+    "relevance": 88
+  },
+  {
+    "id": "deep_dream_generator_as_hallucinatory_heritage",
+    "category": "META",
+    "headline": "Deep Dream’s aesthetic persists as a cultural memory of AI vision",
+    "summary": "Deep Dream Generator, still present in current tool roundups, functions less as cutting-edge tech and more as an aesthetic artifact of early AI hallucination. For theorists, its endurance suggests that each generation of models leaves behind a style that shapes public imagination about ‘how AI sees’, becoming a reference point for later, subtler systems.",
+    "url": "https://aiartists.org/ai-generated-art-tools",
+    "relevance": 80
+  }
+]
