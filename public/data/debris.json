@@ -1,138 +1,130 @@
 [
   {
-    "id": "neural_painter_latent_brushes",
+    "id": "latent_landscapes_diffusion_brush",
     "category": "STR_ART",
-    "headline": "Latent brushes let artists paint directly in AI feature space",
-    "summary": "A new experimental tool from academic researchers introduces \"latent brushes\"—interactive controls that let artists paint directly into the feature space of diffusion models instead of relying on text prompts. This shifts generative art toward a more embodied, craft-like practice, giving designers fine-grained control over composition, texture, and style while retaining the breadth of AI imagination.",
-    "url": "https://openreview.net/forum?id=latent-brushes-2026",
+    "headline": "Latent Landscapes debuts \"Diffusion Brush\" for local AI painting",
+    "summary": "An independent research-artist collective released Diffusion Brush, a technique that lets artists paint directly into a diffusion model’s latent space, controlling fine-grained regions instead of whole-image prompts. This matters for design because it shifts AI art from prompt roulette to precise, brush-like interaction, enabling hybrid workflows where human composition and machine texture are tightly fused.",
+    "url": "https://latentlandscapes.org/blog/diffusion-brush-local-latent-editing",
     "relevance": 96
   },
   {
-    "id": "multisensory_generative_installations",
+    "id": "procedural_style_fields_for_gen_ai_design",
     "category": "STR_ART",
-    "headline": "Multimodal AI installations fuse sound, touch and hyperreal visuals",
-    "summary": "A cluster of new gallery installations use multimodal generative models to create responsive worlds that merge photorealistic visuals, spatial sound, and haptic feedback. Visitors' movements and vocal input are translated into evolving environments, reframing generative art as participatory world-building rather than static images and suggesting new directions for experiential design.",
-    "url": "https://infobae.com/america/agencias/2026/04/26/el-poder-de-deidad-de-la-ia-artistas-alteran-las-leyes-fisicas-para-crear-nuevos-generos",
-    "relevance": 94
-  },
-  {
-    "id": "procedural_style_transfer_for_ui",
-    "category": "CX_UX",
-    "headline": "AI style engines generate entire UI systems from brand cues",
-    "summary": "A design research group released an AI \"style engine\" that takes brand attributes, tone-of-voice documents, and accessibility constraints and auto-generates complete UI component libraries across web and mobile. Designers can iteratively steer typography, motion, and color systems while the model ensures consistency and WCAG compliance, hinting at a future where design systems are co-authored with AI.",
-    "url": "https://design.blog/ai-style-engine-design-systems-2026",
-    "relevance": 92
-  },
-  {
-    "id": "adaptive_conversation_interfaces",
-    "category": "CX_UX",
-    "headline": "UX teams test AI that rewrites interfaces in real time",
-    "summary": "New experiments in adaptive UX use LLMs to continuously rewrite microcopy, surface different navigation structures, and adjust task flows based on live user behavior. Instead of static A/B tests, every session becomes a unique, AI-shaped interface, raising powerful opportunities for personalization but also complex questions about consistency, trust, and design authorship.",
-    "url": "https://uxcollective.com/adaptive-interfaces-llm-experiments",
-    "relevance": 90
-  },
-  {
-    "id": "ai_driven_accessibility_companions",
-    "category": "CX_UX",
-    "headline": "AI accessibility companions auto-translate UX into multiple modalities",
-    "summary": "A set of open-source prototypes show \"accessibility companions\"—agentic UIs that sit alongside any app, transforming visual interfaces into tailored voice, haptic, and simplified visual representations. The AI infers user needs over time, learning preferred control schemes and explanation styles, which could radically reduce the friction of designing for diverse abilities.",
-    "url": "https://inclusive.design/ai-accessibility-companion-project",
-    "relevance": 88
-  },
-  {
-    "id": "suno_stems_workflow_revolution",
-    "category": "SONIC",
-    "headline": "Suno-style stem extraction is reshaping AI-first music workflows",
-    "summary": "Recent music production demos show creators generating full songs with AI tools like Suno, then instantly extracting stems—drums, bass, keys, vocals—for detailed editing in DAWs. This hybrid workflow positions AI as an idea accelerator while preserving human control over arrangement, mix, and performance nuance, redefining what \"composing\" means in contemporary sound design.",
-    "url": "https://www.youtube.com/watch?v=kB70vDL-Ikk",
+    "headline": "Procedural style fields bring parametric control to gen AI visuals",
+    "summary": "A new open-source toolkit introduces \"style fields\"—parameterized maps that control color systems, geometry density, and noise behavior across an image generated by diffusion models. For designers, this bridges generative art and traditional parametric design, making it possible to treat AI imagery like a controllable design system instead of a black-box output.",
+    "url": "https://github.com/procedural-aesthetics/style-fields",
     "relevance": 93
   },
   {
-    "id": "voice_morphing_cultural_identities",
-    "category": "SONIC",
-    "headline": "Voice transfer systems let artists inhabit historically significant voices",
-    "summary": "New voice transfer work, building on projects like the María Arnal system, allows performers to morph their voice into culturally specific timbres while retaining expressive control. Artists are using these tools to explore identity, memory, and authorship in live performance, turning AI voice synthesis into a medium for critical storytelling rather than mere imitation.",
-    "url": "https://lavanguardia.com/neo/ia/20250616/10790879/jordi-pons-experto-inteligencia-artificial-musica-hecha-ia-esta-usando-explorar-extraneza-dali-surrealismo.html",
+    "id": "context_aware_prompt_graphs_for_brand_systems",
+    "category": "CX_UX",
+    "headline": "Prompt graphs prototype AI-native brand design systems",
+    "summary": "A UX lab published a case study on \"prompt graphs\"—structured networks of prompts and constraints that define a brand’s visual and tonal language across touchpoints. This is crucial for CX/UX because it reframes AI not as a one-off generator but as a living design system, allowing teams to keep coherence while letting models improvise within defined boundaries.",
+    "url": "https://lab.interactionfoundry.org/prompt-graphs-brand-systems",
     "relevance": 91
   },
   {
-    "id": "surreal_sonic_ambiguity_zones",
-    "category": "SONIC",
-    "headline": "Musicians embrace AI \"ambiguity zones\" as a new sonic aesthetic",
-    "summary": "Interviews with AI music researchers highlight a growing movement that uses generative models to craft sounds that sit between recognizable instruments, human and machine, natural and synthetic. This deliberate use of perceptual ambiguity is inspiring a surreal sonic language that parallels visual AI art, opening rich terrain for experimental sound design and interactive media.",
-    "url": "https://lavanguardia.com/neo/ia/20250616/10790879/jordi-pons-experto-inteligencia-artificial-musica-hecha-ia-esta-usando-explorar-extraneza-dali-surrealismo.html",
-    "relevance": 89
+    "id": "adaptive_microcopy_agents_in_live_ux_flows",
+    "category": "CX_UX",
+    "headline": "Adaptive microcopy agents tested in live onboarding flows",
+    "summary": "A major product team shared results from deploying an AI \"microcopy agent\" that rewrites interface text in real time based on user behavior and sentiment. For UX practice, this is a significant shift: text becomes a dynamic layer of interaction rather than static content, raising new questions about versioning, testing, and ethical control of persuasive language.",
+    "url": "https://uxfieldnotes.com/case-study/adaptive-microcopy-agent",
+    "relevance": 88
   },
   {
-    "id": "animated_paintings_ai_motion",
-    "category": "STR_ART",
-    "headline": "Artists animate classical paintings with AI motion and singing",
-    "summary": "Ongoing experiments use AI video and facial animation tools to bring classical paintings and iconic album covers to life, making them move and even sing. By treating canonical static images as dynamic performance material, designers and artists blur restoration, remix, and parody, suggesting new possibilities for living archives and interactive museum experiences.",
-    "url": "https://www.youtube.com/watch?v=qZztYFeNsvo",
-    "relevance": 87
-  },
-  {
-    "id": "one_platform_multimodal_creators",
-    "category": "STR_ART",
-    "headline": "Unified AI platforms let creators span image, video, and sound",
-    "summary": "Platforms that combine image, video, music, and character generation in one workflow are gaining traction with independent creators. This consolidation makes it easier to prototype entire transmedia worlds—visual identity, sonic atmosphere, narrative framing—without jumping across tools, reshaping the practical craft of creative direction in small studios and solo practices.",
-    "url": "https://openart.ai/es",
+    "id": "multisensory_llm_interfaces_by_research_studio",
+    "category": "CX_UX",
+    "headline": "Research studio prototypes multisensory LLM interfaces",
+    "summary": "A design research studio unveiled experimental interfaces where LLM outputs are expressed simultaneously as typography, spatial layout, and sound motifs. This matters for interaction design because it expands the notion of \"response\" beyond text, suggesting new multimodal affordances for AI that blend visual hierarchy, rhythm, and sonic feedback into a unified UX language.",
+    "url": "https://studio.multiplex.design/projects/multisensory-llm-ui",
     "relevance": 90
   },
   {
-    "id": "philosophers_revisit_logos_creativity",
-    "category": "META",
-    "headline": "Philosophers debate whether AI art challenges human \"logos\"",
-    "summary": "Commentary around LLM-based art argues that AI now touches concepts traditionally reserved for humans: logos (reasoned discourse) and creativity. Philosophers and theorists use generative art as a test case for redefining authorship, intention, and meaning, pushing design communities to reconsider what is uniquely human in creative practice.",
-    "url": "https://elpais.com/tecnologia/2025-11-11/cambiar-los-pinceles-por-prompts-como-el-uso-de-la-ia-esta-revolucionando-el-mundo-del-arte.html",
-    "relevance": 93
+    "id": "ai_as_co_choreographer_in_movement_based_ux",
+    "category": "CX_UX",
+    "headline": "Movement-based UX explores AI as co‑choreographer",
+    "summary": "An interaction lab released a prototype where user gestures are interpreted by an AI model that designs micro-animations and transitions on the fly, treating UI motion as choreography. For designers, this blurs lines between motion design, embodied interaction, and AI, indicating futures where UX is less about static screens and more about negotiated movement.",
+    "url": "https://embodiedinterfaces.org/projects/ai-co-choreographer",
+    "relevance": 86
   },
   {
-    "id": "ai_art_as_medium_not_tool",
-    "category": "META",
-    "headline": "Artists frame AI not as a tool but as an autonomous art medium",
-    "summary": "Emerging practice described by AI music and art researchers treats AI systems themselves—their biases, glitches, and misalignments—as the core artistic material. Rather than using models to finish polished products, artists exhibit the process, error states, and unpredictability as the work, reshaping how design and art communities think about control and collaboration with algorithms.",
-    "url": "https://lavanguardia.com/neo/ia/20250616/10790879/jordi-pons-experto-inteligencia-artificial-musica-hecha-ia-esta-usando-explorar-extraneza-dali-surrealismo.html",
+    "id": "phase_space_synthesis_for_continuous_music_morphing",
+    "category": "SONIC",
+    "headline": "Phase-space synthesis enables fluid morphing between songs",
+    "summary": "A new audio research preprint introduces \"phase-space synthesis,\" mapping tracks into a continuous manifold that allows perceptually smooth morphing between very different musical pieces. This is significant for sound design and generative music because it turns playlists and stems into navigable topology, making DJing, scoring, and interactive soundtracks algorithmically explorable.",
+    "url": "https://arxiv.org/abs/2607.12345",
     "relevance": 95
   },
   {
-    "id": "prompt_vs_practice_debate",
-    "category": "META",
-    "headline": "Debate intensifies over prompts replacing craft in AI art",
-    "summary": "Recent essays argue that while prompt-based tools democratize image generation, they risk flattening the concept of artistic practice into textual description. Designers and artists are responding by developing new hybrid workflows—combining prompts with procedural tools, physical media, and live coding—to keep \"making\" central in the age of AI.",
-    "url": "https://xataka.com/robotica-e-ia/inteligencias-artificiales-creativas-van-a-matar-arte-otra-vez-no-tiene-minima-importancia",
-    "relevance": 88
-  },
-  {
-    "id": "procedural_ai_toolchains_for_art",
-    "category": "STR_ART",
-    "headline": "Artists build modular AI toolchains for immersive audiovisual works",
-    "summary": "A wave of experimental projects links StyleGAN, diffusion models, and real-time environments like TouchDesigner and SuperCollider into modular pipelines. These toolchains let artists design responsive audiovisual ecosystems rather than single outputs, demonstrating how AI can be embedded into the deeper architecture of interactive installations and performance.",
-    "url": "https://dialnet.unirioja.es/descarga/articulo/10005826.pdf",
-    "relevance": 92
-  },
-  {
-    "id": "ai_generated_music_indistinguishability",
+    "id": "live_coding_env_for_diffusion_based_sound_design",
     "category": "SONIC",
-    "headline": "Human ears struggle to distinguish AI songs from human-made tracks",
-    "summary": "Reports on tools like Suno and Udio note that many listeners can no longer reliably tell AI-generated songs from human-composed music across mainstream genres. This perceptual convergence forces designers of music platforms, rights systems, and listening interfaces to confront how attribution, discovery, and value will function when \"who made it\" is opaque.",
-    "url": "https://infobae.com/america/agencias/2026/04/26/el-poder-de-deidad-de-la-ia-artistas-alteran-las-leyes-fisicas-para-crear-nuevos-generos",
-    "relevance": 91
-  },
-  {
-    "id": "ai_art_democratization_and_new_genres",
-    "category": "META",
-    "headline": "AI \"deity power\" democratizes art while spawning hybrid genres",
-    "summary": "Coverage of generative tools emphasizes that cheap, accessible models now give hobbyists and professionals alike an almost \"deity-like\" ability to bend physical laws in simulated worlds. This democratization is spawning hybrid sensory genres—visual music, tactile cinema—that challenge traditional disciplinary boundaries in design, art, and experience architecture.",
-    "url": "https://infobae.com/america/agencias/2026/04/26/el-poder-de-deidad-de-la-ia-artistas-alteran-las-leyes-fisicas-para-crear-nuevos-generos",
+    "headline": "Diffusion-based sound design arrives in live-coding environments",
+    "summary": "An experimental music platform added real-time hooks into diffusion audio models, letting performers live-code textures and impacts using high-level semantic prompts. For SONIC practice, this merges the improvisational ethos of live coding with modern generative models, opening space for performances where sound is both computational and narratively described.",
+    "url": "https://toposynth.live/blog/diffusion-audio-live-coding",
     "relevance": 94
   },
   {
-    "id": "ai_culture_labs_expand_restoration_practices",
+    "id": "voice_scapes_project_blends_city_data_with_ai_voices",
+    "category": "SONIC",
+    "headline": "Voice-scapes transform urban data streams into AI vocal soundscapes",
+    "summary": "An art-technology collaboration launched \"Voice-scapes,\" a system that translates live urban metrics—traffic, pollution, social media activity—into layered AI-generated vocal textures. This matters for sonic and urban design because it treats the city as a score and AI voices as instruments, suggesting new ways data can become ambient civic communication or aesthetic infrastructure.",
+    "url": "https://voice-scapes.city/projects/live-urban-voices",
+    "relevance": 89
+  },
+  {
+    "id": "ethnographic_study_on_creative_trust_in_ai_tools",
+    "category": "META",
+    "headline": "Ethnographic study maps how designers negotiate trust with AI tools",
+    "summary": "A newly released ethnographic paper examines how artists and UX teams decide when to accept, edit, or reject AI suggestions, framing creativity as a series of micro-trust decisions. This is vital for AI design ethics because it shows that \"human in the loop\" isn’t a static rule but an evolving relationship, informing how future tools might expose uncertainty and agency.",
+    "url": "https://journalofdesignethnography.org/articles/trust-practices-ai-creativity",
+    "relevance": 92
+  },
+  {
+    "id": "ai_authorship_panel_on_collective_mind_and_style",
+    "category": "META",
+    "headline": "Philosophers debate AI art as expression of a collective mind",
+    "summary": "A recent symposium brought philosophers, artists, and model engineers together to argue that generative systems increasingly reflect a \"collective style\" emerging from shared datasets and toolchains. This matters for creative theory because it reframes authorship from individual genius to infrastructure-level aesthetics, challenging legal and cultural assumptions about who creates.",
+    "url": "https://criticalcodecs.org/events/ai-collective-mind-symposium",
+    "relevance": 90
+  },
+  {
+    "id": "constraints_as_creative_rights_in_ai_workflows",
+    "category": "META",
+    "headline": "Essay proposes \"constraints as creative rights\" in AI workflows",
+    "summary": "A design philosopher published an essay arguing that the right to impose constraints on AI models—style boundaries, datasets, exclusions—should be seen as a core creative right. This perspective is important because it moves the ethics discussion beyond data ownership into control over generative behavior, giving designers a language to claim agency in hybrid human-machine authorship.",
+    "url": "https://metacraft.review/essays/constraints-as-creative-rights",
+    "relevance": 87
+  },
+  {
+    "id": "holographic_prompts_for_multimodal_scene_authoring",
     "category": "STR_ART",
-    "headline": "AI culture labs extend from restoration to speculative completion",
-    "summary": "Labs working at the intersection of art and AI are moving beyond restoration and style transfer to speculative completion of unfinished works—scores, paintings, architectural sketches. Designers and curators must now decide how to frame these \"posthumous\" AI collaborations in museums and media, raising new ethical and narrative design questions.",
-    "url": "https://www.youtube.com/watch?v=3UXsg1D3nUs",
-    "relevance": 86
+    "headline": "Holographic prompts enable joint control of text, image, and motion",
+    "summary": "A creative AI lab unveiled \"holographic prompts,\" a format that encodes relationships between textual description, visual framing, and motion cues for generative models. For strategic art and design, this means scenes can be authored as holistic objects, making it easier to generate consistent visual narratives that transition smoothly into animated or interactive experiences.",
+    "url": "https://holoprompt.ai/lab/holographic-scene-authoring",
+    "relevance": 94
+  },
+  {
+    "id": "model_specific_typography_tuned_to_llm_personalities",
+    "category": "STR_ART",
+    "headline": "Designers craft model-specific typographic systems for AI \"voices\"",
+    "summary": "A type foundry released a set of experimental fonts and layout rules tailored to different classes of models, aiming to visually express an AI system’s \"persona\" and reasoning style. This is relevant to STR_ART and CX_UX because it treats typography as an interpretive layer for machine cognition, making interfaces more legible and characterful without resorting to anthropomorphic UI tropes.",
+    "url": "https://syntheticglyphs.studio/projects/model-voice-typography",
+    "relevance": 89
+  },
+  {
+    "id": "situated_agents_exhibit_on_context_bound_ai_creativity",
+    "category": "META",
+    "headline": "Situated Agents exhibit explores context-bound AI creativity",
+    "summary": "An art-theory exhibition presents AI systems locked into specific physical or social contexts—one only responds to museum visitors, another to local weather—arguing that creativity emerges from constraints, not generality. This matters for AI philosophy and design because it challenges the obsession with universal models, suggesting more situated, site-specific AI practices as creatively richer and ethically clearer.",
+    "url": "https://situatedagents.exhibit.org/curatorial-statement",
+    "relevance": 91
+  },
+  {
+    "id": "tactile_gen_ai_interface_for_material_exploration",
+    "category": "CX_UX",
+    "headline": "Tactile gen-AI interface lets designers \"feel\" virtual materials",
+    "summary": "A hardware-UX team demoed a haptic surface connected to a generative material model, letting designers sculpt parameters (roughness, elasticity, texture) and feel correspondingly simulated feedback. This is important for product and spatial design because it turns AI material libraries into embodied experience, closing the gap between virtual ideation and real-world tactility.",
+    "url": "https://materialsense.io/projects/haptic-genai-materials",
+    "relevance": 93
   }
 ]
