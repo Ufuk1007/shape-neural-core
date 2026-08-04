@@ -1,138 +1,130 @@
 [
   {
-    "id": "flux_2_style_transfer_motion_aug1",
+    "id": "midjourney_v7_still_dominates_cinematic_style",
     "category": "STR_ART",
-    "headline": "FLUX.2 adds controllable style-transfer for motion prompts",
-    "summary": "A new update to the FLUX.2 image model introduces fine-grained style-transfer controls tied to motion-related text prompts, letting artists specify not just visual style but how implied movement should be rendered frame-to-frame. This matters for design because it blurs the line between still generative art and previsualized animation, enabling concept artists and motion designers to prototype dynamic compositions using only text and a few reference frames.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
+    "headline": "Midjourney V7 remains the benchmark for cinematic image style",
+    "summary": "Recent 2026 roundups still place Midjourney V7 among the strongest tools for artistic, cinematic image generation, especially for creators who value aesthetic consistency and stylized output. Its continued prominence matters because it shapes the visual language many designers and artists now treat as the reference point for high-end generative work.",
+    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
     "relevance": 94
   },
   {
-    "id": "nano_banana_2_multi_modal_ref_aug1",
+    "id": "ideogram_text_rendering_for_posters_and_branding",
     "category": "STR_ART",
-    "headline": "Nano Banana 2 enables multi-reference compositional AI art",
-    "summary": "The latest Nano Banana 2 release adds support for multiple reference images and layout masks in a single generation, allowing creators to fuse several visual sources into one coherent composition. For visual designers and illustrators, this expands AI from simple style mimicry to true collage-like, art-directed synthesis, making complex editorial layouts and moodboards far faster to iterate.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 92
-  },
-  {
-    "id": "imagineart_seedream_v5_pro_aug1",
-    "category": "STR_ART",
-    "headline": "Seedream V5 Pro pushes photoreal scene design in ImagineArt",
-    "summary": "ImagineArt’s Seedream V5 Pro model, newly surfaced in the AI Creative Suite, focuses on high-fidelity, photoreal environments with controllable lighting and camera parameters. This is compelling for creative direction and spatial design because it lets art directors rapidly prototype scenes, interiors, and environmental storytelling with cinematic precision, bridging concept art and architectural visualization.",
-    "url": "https://www.imagine.art/",
-    "relevance": 90
-  },
-  {
-    "id": "kling_3_motion_control_imagineart_aug1",
-    "category": "STR_ART",
-    "headline": "Kling 3 Motion Control brings text-driven camera moves to creators",
-    "summary": "Kling 3 Motion Control, highlighted in the ImagineArt suite, lets users define camera motion and shot structure via prompts and control parameters for generated video. For motion graphics and film previsualization, this turns AI into a sketching tool for choreography and cinematography, allowing designers to iterate complex camera paths without 3D rigs or editing timelines.",
-    "url": "https://www.imagine.art/",
-    "relevance": 93
-  },
-  {
-    "id": "recraft_v4_vector_first_imagineart_aug1",
-    "category": "STR_ART",
-    "headline": "Recraft V4 extends vector-native generative design workflows",
-    "summary": "Recraft V4, now exposed through ImagineArt, strengthens vector-based generation, enabling logos, icons, and layout elements that are fully editable in standard design tools. This is significant for brand and interface designers because it integrates AI into production-ready vector workflows, reducing the gap between rough AI sketches and polished, scalable assets.",
-    "url": "https://www.imagine.art/",
+    "headline": "Ideogram pushes text-aware image generation for branding",
+    "summary": "Ideogram is highlighted in 2026 guides for its strength in rendering legible text inside images, which makes it unusually relevant for posters, branding, and layout-heavy creative work. That capability matters because text fidelity remains one of the clearest practical boundaries between generative art and usable design.",
+    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
     "relevance": 91
   },
   {
-    "id": "magic_media_style_system_canva_aug1",
-    "category": "CX_UX",
-    "headline": "Canva’s Magic Media tightens AI into a reusable style system",
-    "summary": "Recent updates to Canva’s Magic Media AI art generator emphasize predefined styles like Watercolor, Filmic, Neon, and Retrowave that can be consistently applied across projects. For UX and brand systems, this shows how AI can function as a style token engine, helping teams maintain coherent visual language while rapidly generating campaign assets and interface illustrations.",
-    "url": "https://www.canva.com/ai-art-generator/",
+    "id": "recraft_v3_graphic_design_focus",
+    "category": "STR_ART",
+    "headline": "Recraft targets graphic design rather than generic image prompts",
+    "summary": "2026 comparison guides single out Recraft for long text, brand assets, and graphic-design workflows rather than loose illustration. This matters because it reflects a shift from novelty image generation toward production tools built around professional design constraints.",
+    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
     "relevance": 88
   },
   {
-    "id": "firefly_prompt_iteration_guidelines_aug1",
-    "category": "CX_UX",
-    "headline": "Adobe Firefly refines prompt-iteration UX for creative control",
-    "summary": "Adobe Firefly’s guidance around iterative prompting, example browsing, and variation viewing has evolved into a more structured workflow for AI image generation. This is important for interaction design because it models a pattern where the UX scaffolds creative exploration—turning vague prompts into a guided dialogue that supports non-expert users in achieving art-directed results.",
-    "url": "https://www.adobe.com/products/firefly/features/ai-art-generator.html",
+    "id": "flux_personalization_and_control_for_image_workflows",
+    "category": "STR_ART",
+    "headline": "FLUX is being positioned as the control-first image model",
+    "summary": "Current comparison articles frame FLUX as a model prized for personalization and control, not just visual quality. That emphasis is important for designers because it signals a maturing market where predictable direction and repeatability matter as much as raw image generation.",
+    "url": "https://zapier.com/es/blog/best-ai-image-generator/",
     "relevance": 86
   },
   {
-    "id": "tensor_art_image_to_image_tuning_aug1",
-    "category": "STR_ART",
-    "headline": "Tensor.art advances image-to-image tuning for iterative concept art",
-    "summary": "Tensor.art’s positioning as “best for image-to-image art” reflects improved control over transforming and refining existing images through AI. For concept artists and product designers, this mode turns AI into a revision engine where sketches, wireframes, or early renders can be progressively evolved while retaining core structure, aligning AI generation with real-world iterative design practice.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "id": "adobe_firefly_production_ready_creative_cloud_integration",
+    "category": "CX_UX",
+    "headline": "Adobe Firefly stays central for production-safe creative workflows",
+    "summary": "Adobe Firefly continues to be featured as the go-to option for integrating generative imagery into existing Creative Cloud workflows. Its significance for design teams is less about spectacle and more about embedding AI into familiar professional pipelines with easier operational adoption.",
+    "url": "https://www.adobe.com/es/products/firefly/features/ai-art-generator.html",
+    "relevance": 90
+  },
+  {
+    "id": "openai_images_native_generation_in_chatgpt_workflows",
+    "category": "CX_UX",
+    "headline": "ChatGPT image generation is becoming a conversational design tool",
+    "summary": "2026 lists describe ChatGPT’s image generation as integrated, prompt-precise, and increasingly conversational. For UX and product teams, the key shift is from separate image tools toward multimodal interfaces where users iterate on visuals through dialogue.",
+    "url": "https://www.unite.ai/pt/ai-art-generators/",
     "relevance": 89
   },
   {
-    "id": "dream_machine_brainstorming_ai_aug1",
-    "category": "META",
-    "headline": "Dream Machine reframes AI as an ideation partner, not a painter",
-    "summary": "Dream Machine is described as best for brainstorming, emphasizing narrative and conceptual exploration over finished images. Philosophically, this recasts AI from a replacement for human craft into a collaborator in early-stage ideation, suggesting design workflows where human judgment stays central while AI expands the conceptual search space.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 87
-  },
-  {
-    "id": "promeai_style_suggestion_engine_aug1",
-    "category": "CX_UX",
-    "headline": "PromeAI turns style search into an AI-assisted recommendation layer",
-    "summary": "PromeAI’s role as an art style suggestion tool points to AI-driven curation interfaces that recommend visual directions based on prompts and samples. This matters for UX because it hints at future design tools where finding the right visual language (rather than producing the asset itself) is the main AI value, augmenting creative decision-making instead of automating it.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
+    "id": "nano_banana_pro_emerges_in_2026_visual_model_roundups",
+    "category": "STR_ART",
+    "headline": "Nano Banana Pro appears as a new professional visual model",
+    "summary": "A 2026 Spanish comparison of image tools includes Nano Banana Pro as a professional-generation option tied to Gemini 3. Its appearance in recent roundups matters because it suggests rapid turnover in the image-model landscape and new competition around pro-grade creation pipelines.",
+    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
     "relevance": 84
   },
   {
-    "id": "krea_video_model_iteration_aug1",
+    "id": "google_imagen_3_powers_quick_text_to_image_access",
     "category": "STR_ART",
-    "headline": "Krea’s video tooling raises expectations for generative motion design",
-    "summary": "In comparative testing of major AI video subscriptions, Krea’s video tools are singled out for nuanced control over style and motion for short clips. For motion designers and VJs, this suggests a shift where generative video is no longer a novelty but a controllable medium, enabling live visuals, experimental film sequences, and interactive installations with AI as a core engine.",
-    "url": "https://www.youtube.com/watch?v=FiDw4cqVppc",
-    "relevance": 85
-  },
-  {
-    "id": "magenta_nsynth_legacy_resurfacing_aug1",
-    "category": "SONIC",
-    "headline": "Magenta & NSynth tools resurface in new hybrid sound workflows",
-    "summary": "Creative AI lists continue to highlight Magenta Studio and NSynth Sound Maker for hybrid sound synthesis, and these are increasingly being chained with newer diffusion and transformer-based models. For sound designers, this layered use of older generative tools with modern models points toward AI-first sound pipelines where timbre design, composition, and spatialization are all partially machine-driven.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 83
-  },
-  {
-    "id": "fontjoy_ai_typography_pairing_aug1",
-    "category": "CX_UX",
-    "headline": "FontJoy’s AI pairing hints at future adaptive typography systems",
-    "summary": "FontJoy’s deep-learning font pairing, still cited as a key creative tool, illustrates how AI can operationalize typographic harmony based on latent visual features. For UX and product design, this is a precursor to adaptive typography engines that could tune font choices to context, audience, or emotional tone, embedding AI into the foundations of reading experience.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
+    "headline": "Google Imagen 3 keeps pushing fast text-to-image access",
+    "summary": "Recent tool lists still include Imagen 3 as a major image-generation model, especially through interfaces optimized for quick creation. That matters because accessibility and speed are becoming defining UX factors in generative art adoption, not just raw model quality.",
+    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
     "relevance": 82
   },
   {
-    "id": "runway_ml_no_code_ml_creative_stack_aug1",
+    "id": "runway_expands_image_video_and_motion_workflows",
     "category": "STR_ART",
-    "headline": "Runway ML cements no-code ML as a standard creative stack",
-    "summary": "Runway ML continues to be spotlighted as a core platform for experimenting with machine learning models in creative workflows without code. This is key for design practice because it normalizes ML as just another layer in the creative toolchain—like color grading or compositing—making it easier for studios to prototype custom models for specific visual languages or narratives.",
-    "url": "https://aiartists.org/ai-generated-art-tools",
-    "relevance": 88
+    "headline": "Runway continues to bridge still image and motion design",
+    "summary": "Recent generative-art guides keep Runway positioned as a creator tool for image, video, and effects-driven animation. Its relevance is that it collapses separate design stages into a single AI-assisted motion pipeline, which is reshaping experimental filmmaking and motion graphics.",
+    "url": "https://www.kunstplaza.de/es/arte-digital/generador-de-arte-generativo-de-ia/",
+    "relevance": 87
   },
   {
-    "id": "ux_ai_tool_discovery_reddit_aug1",
-    "category": "META",
-    "headline": "Designers explore lesser-known AI tools as creative research practice",
-    "summary": "A recent Reddit thread where a user dedicates 48 hours to exploring lesser-known AI tools underscores a shift in design culture: tool exploration itself becomes a form of creative research. This is philosophically relevant because it treats AI ecosystems as evolving media environments, where the act of curating and combining models is part of the artistic and UX design process.",
-    "url": "https://www.reddit.com/r/AIAssisted/comments/1rstvqw/i_have_48_hours_to_dive_into_some_less_popular_ai/",
+    "id": "canva_accessible_ai_art_generation_for_non_specialists",
+    "category": "CX_UX",
+    "headline": "Canva keeps normalizing AI image generation for everyday creators",
+    "summary": "Canva’s AI art generator is still framed as an accessible, free entry point that can also tap other models. That matters for UX because it shows how interface simplicity, not model novelty, is often what determines whether AI becomes a daily design habit.",
+    "url": "https://www.canva.com/es_mx/generador-arte-ia/",
+    "relevance": 79
+  },
+  {
+    "id": "openart_positions_image_video_and_audio_in_one_creator_hub",
+    "category": "SONIC",
+    "headline": "OpenArt bundles image, video, and audio generation in one hub",
+    "summary": "OpenArt’s positioning as a free image, video, and audio generator signals a broader convergence of creative media workflows. For sound and design practitioners, the important development is the collapsing boundary between visual generation and audio experimentation inside a single platform.",
+    "url": "https://openart.ai/es",
+    "relevance": 83
+  },
+  {
+    "id": "midjourney_and_competing_tools_expand_beyond_images",
+    "category": "SONIC",
+    "headline": "Major creative AI tools are expanding into video and audio",
+    "summary": "2026 tool roundups now describe Midjourney and several competitors as spanning image, video, and audio rather than staying image-only. That crossover matters because it suggests the next creative workflows will be multimodal by default, especially for sound design and audiovisual art.",
+    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
     "relevance": 80
   },
   {
-    "id": "ai_art_generators_as_design_infrastructure_aug1",
-    "category": "META",
-    "headline": "Growing catalogs frame AI art tools as design infrastructure",
-    "summary": "Roundups of 20+ and even 40+ AI art generators signal a shift from isolated tools to a dense ecosystem that functions like infrastructure for visual creation. Philosophically, this raises questions about authorship and taste: as designers increasingly select, chain, and orchestrate models rather than paint pixels, creative identity may hinge on how one navigates and configures this AI landscape.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 89
+    "id": "ai_art_generators_prioritize_community_and_model_hopping",
+    "category": "CX_UX",
+    "headline": "Generator platforms increasingly emphasize model marketplaces and communities",
+    "summary": "Community-driven platforms like NightCafe are still being cited for letting users access multiple models from one place. This matters for UX because the creative act is shifting from choosing one tool to orchestrating a workflow across models, communities, and outputs.",
+    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
+    "relevance": 76
   },
   {
-    "id": "aiart_education_nyu_program_aug1",
-    "category": "META",
-    "headline": "NYU’s AI+ART program treats machine creativity as core curriculum",
-    "summary": "NYU’s AI+ART high school program positions AI-based image and media generation as a primary subject rather than a peripheral skill. This is important for AI philosophy and design futures because it institutionalizes the idea that thinking with machines—understanding model bias, control, and collaboration—is now fundamental to artistic practice, not just a technical add-on.",
-    "url": "https://steinhardt.nyu.edu/create/aiart-summer-high-school-program",
+    "id": "generative_design_reenters_mainstream_cad_workflows",
+    "category": "CX_UX",
+    "headline": "Autodesk Fusion keeps generative design inside mainstream CAD",
+    "summary": "Forbes Argentina notes that Autodesk Fusion now includes generative design features aimed at strengthening user creativity. The design significance is that AI is no longer only for producing images; it is also being embedded in engineering and product-design tools where constraint solving is the main value.",
+    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
     "relevance": 85
+  },
+  {
+    "id": "generative_art_reflects_on_autonomy_and_human_authorship",
+    "category": "META",
+    "headline": "New commentary frames generative art as a challenge to authorship",
+    "summary": "Recent Spanish essays on AI and art describe generative or procedural art as work created wholly or partly by autonomous systems. That debate matters because it reframes creativity as a collaboration between human intention, model behavior, and algorithmic variation rather than sole human authorship.",
+    "url": "https://www.art-madrid.com/es/post/arte-e-inteligencia-artificial-el-fin-de-la-creatividad-humana",
+    "relevance": 78
+  },
+  {
+    "id": "procedural_art_seen_as_distribution_of_creative_agency",
+    "category": "META",
+    "headline": "Procedural art is increasingly treated as distributed creativity",
+    "summary": "A recent overview of generative art argues that algorithms can learn artistic patterns and then create new works from that knowledge. The philosophical importance is that creativity is being described less as a singular genius act and more as a system of human-machine pattern production.",
+    "url": "https://trazos.net/arte-generativo-del-algoritmo-a-la-obra-maestra/",
+    "relevance": 80
   }
 ]
