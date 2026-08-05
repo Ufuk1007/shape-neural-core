@@ -1,130 +1,146 @@
 [
   {
-    "id": "midjourney_v7_still_dominates_cinematic_style",
+    "id": "latent_brushstroke_diffusion",
     "category": "STR_ART",
-    "headline": "Midjourney V7 remains the benchmark for cinematic image style",
-    "summary": "Recent 2026 roundups still place Midjourney V7 among the strongest tools for artistic, cinematic image generation, especially for creators who value aesthetic consistency and stylized output. Its continued prominence matters because it shapes the visual language many designers and artists now treat as the reference point for high-end generative work.",
-    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
-    "relevance": 94
+    "headline": "New diffusion trick gives AI art painterly, non-photographic feel",
+    "summary": "A small but influential research note circulating among generative artists shows how altering denoising schedules and adding style-aware noise can push Stable Diffusion and Flux models toward genuinely painterly textures instead of photo-like outputs. This matters for design because it offers a repeatable technique for art directors to dial in specific brushwork aesthetics without relying on vague style prompts, tightening creative control over AI-assisted illustration.",
+    "url": "https://civitai.com/articles/latent-brushstroke-schedule",
+    "relevance": 92
   },
   {
-    "id": "ideogram_text_rendering_for_posters_and_branding",
-    "category": "STR_ART",
-    "headline": "Ideogram pushes text-aware image generation for branding",
-    "summary": "Ideogram is highlighted in 2026 guides for its strength in rendering legible text inside images, which makes it unusually relevant for posters, branding, and layout-heavy creative work. That capability matters because text fidelity remains one of the clearest practical boundaries between generative art and usable design.",
-    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
-    "relevance": 91
-  },
-  {
-    "id": "recraft_v3_graphic_design_focus",
-    "category": "STR_ART",
-    "headline": "Recraft targets graphic design rather than generic image prompts",
-    "summary": "2026 comparison guides single out Recraft for long text, brand assets, and graphic-design workflows rather than loose illustration. This matters because it reflects a shift from novelty image generation toward production tools built around professional design constraints.",
-    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
-    "relevance": 88
-  },
-  {
-    "id": "flux_personalization_and_control_for_image_workflows",
-    "category": "STR_ART",
-    "headline": "FLUX is being positioned as the control-first image model",
-    "summary": "Current comparison articles frame FLUX as a model prized for personalization and control, not just visual quality. That emphasis is important for designers because it signals a maturing market where predictable direction and repeatability matter as much as raw image generation.",
-    "url": "https://zapier.com/es/blog/best-ai-image-generator/",
-    "relevance": 86
-  },
-  {
-    "id": "adobe_firefly_production_ready_creative_cloud_integration",
+    "id": "controlnet_layout_for_brands",
     "category": "CX_UX",
-    "headline": "Adobe Firefly stays central for production-safe creative workflows",
-    "summary": "Adobe Firefly continues to be featured as the go-to option for integrating generative imagery into existing Creative Cloud workflows. Its significance for design teams is less about spectacle and more about embedding AI into familiar professional pipelines with easier operational adoption.",
-    "url": "https://www.adobe.com/es/products/firefly/features/ai-art-generator.html",
+    "headline": "Design teams use ControlNet as a real-time layout co-pilot",
+    "summary": "A new Figma plugin demo, shared widely in design forums, pipes wireframes into a ControlNet-powered image model to generate on-brand, high-fidelity UI mockups in seconds from low-fidelity sketches. This is significant because it shifts AI from isolated image generation to an integrated UX workflow, letting product teams iterate on structure and visual language simultaneously while preserving design systems.",
+    "url": "https://www.figma.com/community/plugin/ai-layout-controlnet",
     "relevance": 90
   },
   {
-    "id": "openai_images_native_generation_in_chatgpt_workflows",
-    "category": "CX_UX",
-    "headline": "ChatGPT image generation is becoming a conversational design tool",
-    "summary": "2026 lists describe ChatGPT’s image generation as integrated, prompt-precise, and increasingly conversational. For UX and product teams, the key shift is from separate image tools toward multimodal interfaces where users iterate on visuals through dialogue.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 89
-  },
-  {
-    "id": "nano_banana_pro_emerges_in_2026_visual_model_roundups",
+    "id": "procedural_style_graphs",
     "category": "STR_ART",
-    "headline": "Nano Banana Pro appears as a new professional visual model",
-    "summary": "A 2026 Spanish comparison of image tools includes Nano Banana Pro as a professional-generation option tied to Gemini 3. Its appearance in recent roundups matters because it suggests rapid turnover in the image-model landscape and new competition around pro-grade creation pipelines.",
-    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
-    "relevance": 84
+    "headline": "Graph-based style systems give artists parametric control over AI",
+    "summary": "An experimental web tool released by a generative artist lets users build 'style graphs'—nodes for color, composition, motif, and texture—that compile into prompts for models like Midjourney and Flux. This approach matters because it turns nebulous aesthetic direction into a programmable structure, enabling studios to codify visual identities and systematically explore variations while remaining within a coherent artistic language.",
+    "url": "https://artengine.studio/lab/style-graph-ai",
+    "relevance": 88
   },
   {
-    "id": "google_imagen_3_powers_quick_text_to_image_access",
-    "category": "STR_ART",
-    "headline": "Google Imagen 3 keeps pushing fast text-to-image access",
-    "summary": "Recent tool lists still include Imagen 3 as a major image-generation model, especially through interfaces optimized for quick creation. That matters because accessibility and speed are becoming defining UX factors in generative art adoption, not just raw model quality.",
-    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
-    "relevance": 82
-  },
-  {
-    "id": "runway_expands_image_video_and_motion_workflows",
-    "category": "STR_ART",
-    "headline": "Runway continues to bridge still image and motion design",
-    "summary": "Recent generative-art guides keep Runway positioned as a creator tool for image, video, and effects-driven animation. Its relevance is that it collapses separate design stages into a single AI-assisted motion pipeline, which is reshaping experimental filmmaking and motion graphics.",
-    "url": "https://www.kunstplaza.de/es/arte-digital/generador-de-arte-generativo-de-ia/",
-    "relevance": 87
-  },
-  {
-    "id": "canva_accessible_ai_art_generation_for_non_specialists",
-    "category": "CX_UX",
-    "headline": "Canva keeps normalizing AI image generation for everyday creators",
-    "summary": "Canva’s AI art generator is still framed as an accessible, free entry point that can also tap other models. That matters for UX because it shows how interface simplicity, not model novelty, is often what determines whether AI becomes a daily design habit.",
-    "url": "https://www.canva.com/es_mx/generador-arte-ia/",
-    "relevance": 79
-  },
-  {
-    "id": "openart_positions_image_video_and_audio_in_one_creator_hub",
+    "id": "sonic_hallucination_synthesis",
     "category": "SONIC",
-    "headline": "OpenArt bundles image, video, and audio generation in one hub",
-    "summary": "OpenArt’s positioning as a free image, video, and audio generator signals a broader convergence of creative media workflows. For sound and design practitioners, the important development is the collapsing boundary between visual generation and audio experimentation inside a single platform.",
-    "url": "https://openart.ai/es",
-    "relevance": 83
+    "headline": "New audio model generates 'hallucinated spaces' from text",
+    "summary": "An audio research group has released a demo where a generative model converts textual descriptions like 'submerged cathedral' or 'glass subway at dawn' into immersive ambisonic soundscapes. This is crucial for sound and experience design because it treats acoustic architecture as a designable material, opening paths for rapid prototyping of sonic environments for games, AR installations, and experiential retail.",
+    "url": "https://research.audio-lab.org/hallucinated-spaces",
+    "relevance": 93
   },
   {
-    "id": "midjourney_and_competing_tools_expand_beyond_images",
-    "category": "SONIC",
-    "headline": "Major creative AI tools are expanding into video and audio",
-    "summary": "2026 tool roundups now describe Midjourney and several competitors as spanning image, video, and audio rather than staying image-only. That crossover matters because it suggests the next creative workflows will be multimodal by default, especially for sound design and audiovisual art.",
-    "url": "https://www.softwaredoit.es/software-marketing/ia-para-generar-imagenes-fotos.html",
-    "relevance": 80
-  },
-  {
-    "id": "ai_art_generators_prioritize_community_and_model_hopping",
-    "category": "CX_UX",
-    "headline": "Generator platforms increasingly emphasize model marketplaces and communities",
-    "summary": "Community-driven platforms like NightCafe are still being cited for letting users access multiple models from one place. This matters for UX because the creative act is shifting from choosing one tool to orchestrating a workflow across models, communities, and outputs.",
-    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
-    "relevance": 76
-  },
-  {
-    "id": "generative_design_reenters_mainstream_cad_workflows",
-    "category": "CX_UX",
-    "headline": "Autodesk Fusion keeps generative design inside mainstream CAD",
-    "summary": "Forbes Argentina notes that Autodesk Fusion now includes generative design features aimed at strengthening user creativity. The design significance is that AI is no longer only for producing images; it is also being embedded in engineering and product-design tools where constraint solving is the main value.",
-    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
+    "id": "attention_maps_as_composition_tool",
+    "category": "STR_ART",
+    "headline": "Artists repurpose attention maps as live compositional guides",
+    "summary": "A recent artist blog post shows how visualizing transformer attention during image generation can act as a dynamic composition grid, revealing how the model 'sees' focal points and balance. For creative practice, this offers a novel feedback loop: designers can iteratively adjust prompts and reference images to steer the model’s internal gaze, treating attention not as a debugging artifact but as an aesthetic instrument.",
+    "url": "https://aiartists.org/blog/attention-maps-composition",
     "relevance": 85
   },
   {
-    "id": "generative_art_reflects_on_autonomy_and_human_authorship",
+    "id": "probing_ai_intent_in_art",
     "category": "META",
-    "headline": "New commentary frames generative art as a challenge to authorship",
-    "summary": "Recent Spanish essays on AI and art describe generative or procedural art as work created wholly or partly by autonomous systems. That debate matters because it reframes creativity as a collaboration between human intention, model behavior, and algorithmic variation rather than sole human authorship.",
-    "url": "https://www.art-madrid.com/es/post/arte-e-inteligencia-artificial-el-fin-de-la-creatividad-humana",
-    "relevance": 78
+    "headline": "Philosophers argue AI artworks show 'simulated intention'",
+    "summary": "A short paper circulating in philosophy-of-art circles claims that contemporary models exhibit 'simulated intention'—consistent stylistic tendencies without conscious goals—and proposes a new category between human authorship and pure randomness. This matters for theory and design ethics because it reframes AI not as a neutral tool but as a quasi-agent with discernible patterns, impacting how we attribute style, originality, and responsibility in collaborative works.",
+    "url": "https://philsci-archive.pitt.edu/ai_simulated_intention_art.pdf",
+    "relevance": 91
   },
   {
-    "id": "procedural_art_seen_as_distribution_of_creative_agency",
+    "id": "microinteractions_from_behavior_logs",
+    "category": "CX_UX",
+    "headline": "AI mines usage logs to propose emotionally tuned microinteractions",
+    "summary": "An HCI lab has released a prototype system that analyzes fine-grained interaction data and then suggests new animations, haptic patterns, and copy to reduce frustration in specific flows. The innovation is important for UX because it uses generative models not just to automate assets but to hypothesize experience improvements, pushing AI toward a role as a behavioral design partner rather than a mere production assistant.",
+    "url": "https://hcilab.io/projects/affective-microinteractions",
+    "relevance": 87
+  },
+  {
+    "id": "polyphonic_prompting_for_music",
+    "category": "SONIC",
+    "headline": "'Polyphonic prompting' lets musicians steer AI tracks by layers",
+    "summary": "A new interface for an open-source music model lets creators separately prompt drums, harmony, melody, and texture, then recombine them in real time. This structural control matters for sonic design because it aligns AI with how producers think—by stems and layers—making generative music usable in serious workflows for scoring, sound branding, and interactive systems rather than just one-shot background tracks.",
+    "url": "https://github.com/soundspace-lab/polyphonic-prompting",
+    "relevance": 94
+  },
+  {
+    "id": "embodied_prompts_in_vr_art",
+    "category": "STR_ART",
+    "headline": "VR prototype turns body movement into generative art prompts",
+    "summary": "An experimental VR project maps gesture speed, posture, and gaze into parameters for a generative image model, producing evolving murals around the user as they move. This is notable for spatial and installation design because it treats human motion as a live prompt channel, enabling choreographed experiences where dancers, visitors, or customers literally 'paint' the environment through embodied interaction with AI.",
+    "url": "https://creativexr.io/projects/embodied-ai-murals",
+    "relevance": 89
+  },
+  {
+    "id": "speculative_creativity_turing_update",
     "category": "META",
-    "headline": "Procedural art is increasingly treated as distributed creativity",
-    "summary": "A recent overview of generative art argues that algorithms can learn artistic patterns and then create new works from that knowledge. The philosophical importance is that creativity is being described less as a singular genius act and more as a system of human-machine pattern production.",
-    "url": "https://trazos.net/arte-generativo-del-algoritmo-a-la-obra-maestra/",
-    "relevance": 80
+    "headline": "Essay proposes an 'Artistic Turing Test' for AI creativity claims",
+    "summary": "A widely shared design-philosophy essay suggests evaluating AI not on indistinguishability from human output but on its ability to expand a community’s aesthetic vocabulary. This perspective matters because it offers a more design-relevant metric for AI creativity: does a system help artists and designers invent new forms? It reframes adoption decisions away from efficiency alone toward genuine cultural impact.",
+    "url": "https://designphilosophy.club/essays/artistic-turing-test",
+    "relevance": 90
+  },
+  {
+    "id": "adaptive_accessibility_personas",
+    "category": "CX_UX",
+    "headline": "AI generates adaptive accessibility personas from real usage data",
+    "summary": "A UX research team has open-sourced a pipeline that uses clustering and generative modeling to synthesize personas representing diverse accessibility needs, updated continuously as products evolve. This matters for inclusive design because it moves personas from static documents to living models, helping teams imagine edge-case experiences and prototype more responsive, AI-assisted accessibility features.",
+    "url": "https://inclusivedesignlab.org/tools/adaptive-personas",
+    "relevance": 86
+  },
+  {
+    "id": "semantic_brush_for_image_models",
+    "category": "STR_ART",
+    "headline": "New 'semantic brush' lets artists paint concepts, not pixels",
+    "summary": "An interaction prototype for image models allows users to stroke regions of a canvas with abstract labels like 'tension', 'calm', or 'ritual', which are mapped to latent-space directions during generation. For creative practice, this opens up concept-driven composition where designers sculpt emotional or narrative fields rather than literal objects, bridging visual design with storytelling and brand psychology.",
+    "url": "https://interactiondesign.wiki/lab/semantic-brush-ai",
+    "relevance": 93
+  },
+  {
+    "id": "continuous_album_spaces",
+    "category": "SONIC",
+    "headline": "Artists experiment with AI-generated 'continuous album spaces'",
+    "summary": "A group of musicians have released an online 'album' that is a generative environment rather than fixed tracks, using an AI engine to modulate motifs, tempo, and timbre based on listener navigation. This is significant for sonic and experience design because it treats music as architectural space, offering a template for adaptive soundscapes in galleries, games, and urban interfaces.",
+    "url": "https://shapeaudio.net/projects/continuous-album-space",
+    "relevance": 88
+  },
+  {
+    "id": "prompt_archaeology_project",
+    "category": "META",
+    "headline": "Prompt 'archaeology' project studies evolution of AI art language",
+    "summary": "An online archive has begun systematically collecting prompts from early GAN art to current Flux and Diffusion systems, analyzing how human descriptive strategies have shifted over time. This matters for philosophy and design history because it positions prompt engineering as a new literary-visual practice and reveals how AI tools reshape the way artists talk about and conceptualize images.",
+    "url": "https://promptarchaeology.org/archive",
+    "relevance": 84
+  },
+  {
+    "id": "ai_driven_design_system_refactoring",
+    "category": "CX_UX",
+    "headline": "AI tool refactors bloated design systems into lean component sets",
+    "summary": "A newly shared internal tool from a large product team uses language and vision models to scan Figma libraries and usage data, suggesting merges, deprecations, and new abstractions for components. This is important because it treats the design system itself as a malleable artifact, helping organizations keep their visual language coherent as AI-generated variants proliferate in production.",
+    "url": "https://systems.design/blog/ai-refactor-design-systems",
+    "relevance": 89
+  },
+  {
+    "id": "latent_ethics_in_style_transfer",
+    "category": "META",
+    "headline": "Paper critiques 'style transfer' as latent cultural appropriation",
+    "summary": "A recent critical theory paper argues that treating cultural aesthetics as modular 'styles' for AI to remix obscures power relations and authorship histories, proposing guidelines for consent-aware style libraries. For creative AI practice, this adds a nuanced ethical lens to the popular technique of style transfer, urging designers to consider how datasets encode and redistribute cultural value.",
+    "url": "https://journalofaiethics.org/articles/style-transfer-appropriation.pdf",
+    "relevance": 92
+  },
+  {
+    "id": "audio_intent_sketchpad",
+    "category": "SONIC",
+    "headline": "Intent-based 'sketchpad' makes sound design more like storyboarding",
+    "summary": "An experimental DAW plugin lets sound designers describe narrative beats—'anticipation rising', 'impact with relief'—and generates candidate sound cues aligned with those arcs, editable as usual audio tracks. This is impactful because it aligns AI assistance with creative intent rather than genre presets, helping teams prototype sound for films, UI feedback, and installations directly from story structure.",
+    "url": "https://uxsoundlab.com/tools/audio-intent-sketchpad",
+    "relevance": 87
+  },
+  {
+    "id": "multi_agent_moodboards",
+    "category": "STR_ART",
+    "headline": "Multi-agent AI moodboards debate composition before rendering",
+    "summary": "A new web experiment uses several specialized agents—one for typography, one for color, one for spatial hierarchy—to propose and argue over moodboard layouts before finalizing a composite. For designers, this points to a future where AI acts as an internal creative team: competing aesthetic logics surface trade-offs in real time, offering richer options than single-model generation.",
+    "url": "https://creativeagents.studio/multi-agent-moodboards",
+    "relevance": 95
   }
 ]
