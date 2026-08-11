@@ -1,146 +1,146 @@
 [
   {
-    "id": "generative_art_tool_landscape_2026",
+    "id": "ai_design_tool_roundups_dominate_but_most_are_not_new",
     "category": "STR_ART",
-    "headline": "2026’s AI art-tool landscape is consolidating around control",
-    "summary": "Recent roundups show the current wave of generative art tools emphasizing editable workflows, text rendering, and style control rather than pure image novelty. This matters for designers because the center of gravity is shifting from one-shot image generation to production-ready creative systems.",
-    "url": "https://www.zapier.com/blog/ai-art-generator/",
-    "relevance": 82
-  },
-  {
-    "id": "chatgpt_images_2_conversational_image_editing",
-    "category": "STR_ART",
-    "headline": "Conversational image editing becomes a mainstream creative interface",
-    "summary": "Tool lists now highlight ChatGPT Images 2.0 for precise text-to-image creation, image editing, transparent backgrounds, and aspect-ratio control. For creative teams, this signals a move toward prompt-led art direction inside a single conversational workspace.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 88
-  },
-  {
-    "id": "ideogram_text_rendering_for_designers",
-    "category": "STR_ART",
-    "headline": "AI image tools are finally treating typography as a first-class feature",
-    "summary": "Ideogram is singled out for strong text rendering inside generated images and for batch workflows. That matters for poster design, branding mockups, and any composition where legible lettering has historically been a weak point in generative systems.",
-    "url": "https://www.ai-media-studio.com/es/blog/best-ai-art-generator",
-    "relevance": 86
-  },
-  {
-    "id": "midjourney_art_direction_and_animation_workflows",
-    "category": "STR_ART",
-    "headline": "Midjourney keeps pushing art direction toward cinematic control",
-    "summary": "Current 2026 tool comparisons still place Midjourney near the top for stylized image quality, custom style controls, mood boards, and animation workflows. It remains important because it functions less like a novelty generator and more like an art-direction engine.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 84
-  },
-  {
-    "id": "recraft_vector_brand_design_generation",
-    "category": "STR_ART",
-    "headline": "Vector-first AI is emerging as a serious design workflow",
-    "summary": "Recent AI art roundups include tools aimed at vector graphics, branding, and structured design output rather than purely painterly images. This is notable for identity systems because vector-native generation is closer to actual production design than raster-only image generation.",
-    "url": "https://www.zapier.com/blog/ai-art-generator/",
-    "relevance": 79
-  },
-  {
-    "id": "seedream_45_cost_effective_high_volume_generation",
-    "category": "STR_ART",
-    "headline": "Low-cost high-volume image generation is becoming accessible",
-    "summary": "Comparison tables now include Seedream 4.5 as a lower-cost option for lifestyle, fashion, ecommerce, and product imagery. The design implication is clear: generative image pipelines are moving into bulk content production, not just experimental art.",
-    "url": "https://www.kunstplaza.de/es/arte-de-ia/los-mejores-generadores-de-arte-con-ia-gratuitos/",
+    "headline": "2026 AI art tool roundups spotlight newer generative stacks",
+    "summary": "Several 2026 tool roundups emphasize current image-generation platforms like ChatGPT Images 2.0, Midjourney, Recraft, Adobe Firefly, and Nano Banana, showing where creative workflows are concentrating. The design-relevant signal is the shift toward integrated image editing, style control, and multi-model workflows rather than standalone prompt-to-image novelty.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
     "relevance": 74
   },
   {
-    "id": "firefly_adobe_on_brand_safe_visual_generation",
+    "id": "chatgpt_images_2_conversational_editing",
     "category": "STR_ART",
-    "headline": "Brand-safe generation remains a key differentiator for Adobe Firefly",
-    "summary": "Adobe Firefly continues to be positioned as a mainstream art generator for creators who need commercially usable output and integrated design workflows. That makes it relevant to teams balancing generative speed with rights, consistency, and brand constraints.",
-    "url": "https://www.adobe.com/es/products/firefly/features/ai-art-generator.html",
-    "relevance": 78
+    "headline": "ChatGPT Images 2.0 pushes conversational image editing",
+    "summary": "This tool is notable for text-to-image generation plus editing of uploaded images, transparent backgrounds, typography, and selection-based controls. For designers, the importance is not just generation but iterative art direction inside a conversational interface.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
+    "relevance": 88
   },
   {
-    "id": "canva_ai_image_generation_for_non_specialists",
-    "category": "CX_UX",
-    "headline": "Canva keeps turning AI image generation into a low-friction UX",
-    "summary": "Canva’s AI art generator is still framed around accessibility and ease of use, which is a UX story as much as a creative one. The significance is that AI image creation is now embedded in familiar design tools rather than isolated expert software.",
-    "url": "https://www.canva.com/es_mx/generador-arte-ia/",
-    "relevance": 73
+    "id": "midjourney_style_reference_workflows",
+    "category": "STR_ART",
+    "headline": "Midjourney leans deeper into art direction workflows",
+    "summary": "The 2026 listings highlight personalization profiles, moodboards, style references, web editing, and animation workflows. That combination makes Midjourney less of a one-shot image generator and more of a controllable creative system for visual direction.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
+    "relevance": 86
   },
   {
-    "id": "getimg_multimodal_creative_workspace",
-    "category": "CX_UX",
-    "headline": "Multimodal creative workspaces are replacing single-purpose generators",
-    "summary": "GetIMG is being highlighted for spanning image, video, and audio workflows in one environment, with shared workspaces and API access. That points to an emerging UX pattern: creators want asset pipelines, not just generators.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 81
-  },
-  {
-    "id": "dzine_canvas_based_control_for_designers",
-    "category": "CX_UX",
-    "headline": "Canvas-based AI design tools are becoming more controllable",
-    "summary": "Dzine is presented as a controllable visual canvas for localized edits, character consistency, image-to-video, and brand-oriented design tools. For UX, this matters because it bridges the gap between prompt generation and hands-on compositing.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 80
-  },
-  {
-    "id": "nightcafe_community_driven_ai_art_workflows",
-    "category": "CX_UX",
-    "headline": "Community-driven AI art platforms are shaping discovery and learning",
-    "summary": "NightCafe is still notable for community challenges, model variety, LoRA training, and mobile-friendly creation. Its importance is less about raw model power and more about how social workflows help users learn, remix, and iterate creatively.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 72
-  },
-  {
-    "id": "stable_diffusion_open_tooling_comparison_cycle",
-    "category": "CX_UX",
-    "headline": "Open-model ecosystems remain central to AI design experimentation",
-    "summary": "Multiple 2026 comparisons still place Stable Diffusion-based tools among the most versatile options for designers and hobbyists. Open ecosystems matter because they enable experimentation, customization, and more transparent design workflows than closed platforms.",
-    "url": "https://www.zapier.com/blog/ai-art-generator/",
-    "relevance": 77
-  },
-  {
-    "id": "audio_video_platforms_add_music_generation",
-    "category": "SONIC",
-    "headline": "Creative suites are bundling image, video, and music generation",
-    "summary": "Tool roundups now describe platforms that combine image, video, and music models in a shared workflow. That convergence is important for sound designers because audio AI is increasingly being embedded in broader multimodal creative pipelines.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 76
-  },
-  {
-    "id": "audio_generation_as_part_of_design_infrastructure",
-    "category": "SONIC",
-    "headline": "Audio AI is moving from standalone tools into design infrastructure",
-    "summary": "The latest tool comparisons frame audio generation as part of broader creative systems rather than a separate niche. This matters for sonic work because it suggests future sound design tools will be coordinated with image, motion, and brand assets.",
-    "url": "https://www.unite.ai/pt/ai-art-generators/",
-    "relevance": 71
-  },
-  {
-    "id": "ai_creativity_and_the_end_of_human_authorship_debate",
-    "category": "META",
-    "headline": "The creativity debate is shifting from replacement to authorship",
-    "summary": "Recent Spanish-language commentary asks whether AI art marks the end of human creativity, while also noting that generative systems learn patterns and styles to create new works. The philosophical issue is no longer whether AI can make art, but how authorship is defined when humans set constraints and machines synthesize outcomes.",
-    "url": "https://www.art-madrid.com/es/post/arte-e-inteligencia-artificial-el-fin-de-la-creatividad-humana",
-    "relevance": 89
-  },
-  {
-    "id": "generative_art_as_partial_autonomy",
-    "category": "META",
-    "headline": "Generative art is increasingly understood as partially autonomous practice",
-    "summary": "A generative-art explainer describes the field as work created wholly or partly through autonomous systems. That framing is useful philosophically because it treats AI creativity as a collaboration between intention, algorithmic process, and emergent result.",
-    "url": "https://trazos.net/arte-generativo-del-algoritmo-a-la-obra-maestra/",
+    "id": "dzine_canvas_based_control",
+    "category": "STR_ART",
+    "headline": "Dzine treats image generation like a controllable canvas",
+    "summary": "Dzine is described as a visual-canvas workflow with localized editing, consistent characters, image-to-video, avatars, and lip sync. Its design relevance is the move from prompt-only generation to direct manipulation on a structured workspace.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
     "relevance": 84
   },
   {
-    "id": "design_tool_comparisons_prioritize_user_control",
-    "category": "META",
-    "headline": "The real design question is control, not just generation",
-    "summary": "Across current comparisons, the highest-rated tools are the ones offering editable outputs, style consistency, and production-oriented controls. Philosophically, that suggests AI creativity is being judged less as autonomous genius and more as a controllable medium for human-directed expression.",
-    "url": "https://www.ai-media-studio.com/es/blog/best-ai-art-generator",
+    "id": "recraft_brand_system_generation",
+    "category": "STR_ART",
+    "headline": "Recraft-style workflows blur branding and generative art",
+    "summary": "Current comparisons place Recraft among the tools that combine generation with brand-oriented design output. This matters because it points toward AI systems that produce not just images, but coherent visual identities for products and campaigns.",
+    "url": "https://www.zapier.com/blog/ai-art-generator/",
+    "relevance": 70
+  },
+  {
+    "id": "firefly_continues_as_design_safe_generator",
+    "category": "STR_ART",
+    "headline": "Adobe Firefly remains a design-centric generative option",
+    "summary": "Recent roundups continue to feature Adobe Firefly as a free or accessible art generator for design work. Its inclusion signals that creators still value tools positioned around production safety, workflow fit, and editorially usable outputs.",
+    "url": "https://www.adobe.com/es/products/firefly/features/ai-art-generator.html",
+    "relevance": 72
+  },
+  {
+    "id": "canva_ai_art_generation_entry_point",
+    "category": "CX_UX",
+    "headline": "Canva keeps lowering the barrier to AI visual design",
+    "summary": "Canva’s AI art generator remains framed as an online, free entry point for image creation. The UX significance is accessibility: AI image generation is increasingly embedded in familiar design interfaces rather than isolated specialist tools.",
+    "url": "https://www.canva.com/es_mx/generador-arte-ia/",
+    "relevance": 66
+  },
+  {
+    "id": "autodesk_fusion_generative_design_tools",
+    "category": "STR_ART",
+    "headline": "Autodesk Fusion adds generative design capabilities",
+    "summary": "One roundup highlights Autodesk Fusion’s generative tools as a way to improve user capability and creativity. This is important for design practice because it extends AI beyond aesthetics into shape optimization and functional form-making.",
+    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
+    "relevance": 76
+  },
+  {
+    "id": "getimg_merges_image_video_audio",
+    "category": "SONIC",
+    "headline": "GetIMG moves toward multi-modal image, video, and music creation",
+    "summary": "A 2026 review describes GetIMG as working across text, images, video models, and music models, with shared workspaces and API access. The relevance is the convergence of creative media pipelines inside one AI system, which is especially useful for experimental production workflows.",
+    "url": "https://www.unite.ai/pt/ai-art-generators/",
+    "relevance": 82
+  },
+  {
+    "id": "imagineart_unified_multimedia_creation",
+    "category": "SONIC",
+    "headline": "ImagineArt targets unified image, video, audio, and brand workflows",
+    "summary": "ImagineArt is presented as a single environment for images, video, branding, editing, scaling, and audio tools. For creative teams, this suggests a future where sound and visuals are co-produced inside one interface rather than passed between separate applications.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
+    "relevance": 79
+  },
+  {
+    "id": "nightcafe_community_lora_training",
+    "category": "STR_ART",
+    "headline": "NightCafe emphasizes community models and LoRA training",
+    "summary": "NightCafe’s current positioning includes model variety, prompt editing, photo transformation, LoRA training, and community challenges. Its significance lies in participatory AI art culture, where users can shape styles rather than only consume generated outputs.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
+    "relevance": 73
+  },
+  {
+    "id": "promeai_architecture_and_concept_rendering",
+    "category": "STR_ART",
+    "headline": "PromeAI keeps generative architecture and concept rendering central",
+    "summary": "PromeAI is framed around sketch rendering, architectural generation, renovation, relighting, and scene conversion. That makes it one of the clearer examples of AI as a design-development engine for spatial and product visualization.",
+    "url": "https://www.unite.ai/fr/ai-art-generators/",
     "relevance": 81
   },
   {
-    "id": "search_limited_to_broader_recent_tool_roundups",
-    "category": "META",
-    "headline": "Most available sources are tool roundups, not true 48-hour breaking news",
-    "summary": "The provided results are dominated by comparative lists and evergreen reviews rather than timestamped announcements from the last 48 hours. That limits confidence in claiming fresh breakthroughs, but it still reveals the current direction of AI creativity: more control, more multimodality, and more production readiness.",
-    "url": "https://www.zapier.com/blog/ai-art-generator/",
+    "id": "seedream_4_5_low_cost_visual_generation",
+    "category": "STR_ART",
+    "headline": "Seedream 4.5 targets low-cost, high-volume visual generation",
+    "summary": "A recent comparison places Seedream 4.5 among newer generators focused on affordability and fast output. The design implication is that high-frequency visual ideation is becoming cheaper and more accessible for commercial and experimental creators alike.",
+    "url": "https://www.kunstplaza.de/es/arte-de-ia/los-mejores-generadores-de-arte-con-ia-gratuitos/",
+    "relevance": 69
+  },
+  {
+    "id": "imagefx_access_to_imagen_model",
+    "category": "STR_ART",
+    "headline": "ImageFX exposes Google’s Imagen for faster visual exploration",
+    "summary": "One roundup notes that ImageFX is designed to make Imagen easier to use for quick image generation. The creative value is a simpler interface to a powerful model, which matters when ideation speed is more important than deep parameter control.",
+    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
     "relevance": 68
+  },
+  {
+    "id": "shutterstock_gen_ai_image_generation",
+    "category": "STR_ART",
+    "headline": "Shutterstock’s AI image tool reflects stock-to-generation convergence",
+    "summary": "Shutterstock is described as offering image creation when its library cannot satisfy a need. This matters for design because it shows licensed asset platforms evolving into on-demand generative studios.",
+    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
+    "relevance": 64
+  },
+  {
+    "id": "ibm_style_philosophical_signal_missing_from_results",
+    "category": "META",
+    "headline": "Recent results contain little direct philosophy on AI creativity",
+    "summary": "The supplied sources are dominated by tool roundups rather than philosophical essays, so there is limited direct evidence of new theory about AI creativity in the last 48 hours. The strongest available signal is the ongoing debate implied by art-focused pieces asking whether algorithmic systems expand or replace human creativity.",
+    "url": "https://www.art-madrid.com/es/post/arte-e-inteligencia-artificial-el-fin-de-la-creatividad-humana",
+    "relevance": 52
+  },
+  {
+    "id": "art_madrid_on_algorithmic_art_generation",
+    "category": "META",
+    "headline": "Algorithmic art is still framed as a challenge to human creativity",
+    "summary": "A philosophy-oriented piece argues that generative or procedural art arises when algorithms learn artistic patterns and then create new works from that knowledge. That framing remains central to current debates about authorship, originality, and the status of the artist.",
+    "url": "https://www.art-madrid.com/es/post/arte-e-inteligencia-artificial-el-fin-de-la-creatividad-humana",
+    "relevance": 60
+  },
+  {
+    "id": "trazos_democratization_of_generative_art",
+    "category": "META",
+    "headline": "Generative AI continues to democratize art-making",
+    "summary": "A 2026 explainer notes that tools like DALL-E, ChatGPT, Midjourney, and Stable Diffusion democratized access to generative creation for anyone with internet access. The philosophical tension is that accessibility expands creative participation while also intensifying questions about style, labor, and originality.",
+    "url": "https://trazos.net/arte-generativo-del-algoritmo-a-la-obra-maestra/",
+    "relevance": 58
   }
 ]
