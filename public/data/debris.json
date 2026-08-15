@@ -1,146 +1,138 @@
 [
   {
-    "id": "autodesk_fusion_generative_design_refresh",
-    "category": "STR_ART",
-    "headline": "Autodesk Fusion deepens generative design for creators",
-    "summary": "Autodesk Fusion now includes generative design tools intended to expand users' creative capacity rather than replace it. This matters because it pushes industrial design software further into AI-assisted form exploration and rapid iteration.",
-    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
-    "relevance": 78
+    "id": "midashenglm_gen_unified_audio_scene_generation",
+    "category": "SONIC",
+    "headline": "Unified audio scene generation via LLM-driven flow matching",
+    "summary": "This recent arXiv paper presents a single model for generating audio scenes with language-model guidance, pointing toward more coherent, controllable sonic composition. It matters for designers because it moves beyond isolated sound effects into structured audio environments that can support film, game, and immersive experience workflows.",
+    "url": "https://arxiv.org/list/eess.AS/current",
+    "relevance": 95
   },
   {
-    "id": "runway_multimodal_art_workflows",
-    "category": "STR_ART",
-    "headline": "Runway stays central for multimodal art generation",
-    "summary": "Runway is highlighted for text-to-image generation, style transfer, and other pre-trained creative models. Its appeal is the way it compresses several experimental visual workflows into one accessible toolchain.",
-    "url": "https://www.zenledger.io/es/blog/best-ai-art-generators/",
+    "id": "soundstager_story_driven_genai_soundscapes",
+    "category": "SONIC",
+    "headline": "Story-driven GenAI soundscapes with iterative control",
+    "summary": "SoundStager is an interactive design system for creating narrative soundscapes from video, combining AI analysis with conversational and analog controls. It is highly relevant to sound design because it frames generative audio as an editable creative medium rather than a one-shot output.",
+    "url": "https://research.adobe.com/publication/soundstager-interactive-design-of-story-driven-genai-soundscapes-for-video/",
+    "relevance": 94
+  },
+  {
+    "id": "sound_designer_workflow_study_ai_assistive_tools",
+    "category": "SONIC",
+    "headline": "Sound designers prefer assistive AI over end-to-end generation",
+    "summary": "This workflow study finds that sound designers value AI most for restoration, library management, and task-specific assistance, while rejecting overly autonomous systems for high-end narrative work. That distinction is important for creative tooling, because it highlights where AI actually fits into professional audio practice.",
+    "url": "https://arxiv.org/html/2605.27174v1",
+    "relevance": 88
+  },
+  {
+    "id": "ai_based_sound_effect_generation_arxiv",
+    "category": "SONIC",
+    "headline": "New AI-based sound effect generation research lands on arXiv",
+    "summary": "A fresh arXiv paper on sound effect generation indicates continued movement toward more expressive text-to-audio systems. Even without broad productization, this kind of research matters because it expands the vocabulary available to sound designers working on film, games, and installation pieces.",
+    "url": "https://arxiv.org/html/2608.03742v1",
     "relevance": 84
   },
   {
-    "id": "midjourney_art_direction_workflows",
-    "category": "STR_ART",
-    "headline": "Midjourney doubles down on art direction and mood boards",
-    "summary": "Midjourney is described as strong in cinematic image generation, personalization, mood boards, and style references. That combination keeps it relevant as a creative direction tool, not just an image generator.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 89
-  },
-  {
-    "id": "chatgpt_images_precision_editing",
-    "category": "STR_ART",
-    "headline": "ChatGPT Images 2.0 pushes precise conversational editing",
-    "summary": "ChatGPT Images 2.0 is presented as a conversational image tool with editing, transparent backgrounds, aspect-ratio control, and selection-based edits. The design relevance is in reducing friction between prompt, revision, and production.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
+    "id": "mi_dashenglm_gen_audio_scene_generation",
+    "category": "SONIC",
+    "headline": "LLM-driven audio scene generation points to richer sonic worlds",
+    "summary": "The current arXiv audio listings include MiDashengLM-Gen, a unified audio scene generation system, suggesting active progress toward scene-level rather than clip-level audio synthesis. That is significant for design because it aligns AI audio generation with atmosphere, spatial storytelling, and experience design.",
+    "url": "https://arxiv.org/list/eess.AS/current",
     "relevance": 87
   },
   {
-    "id": "dzine_controlable_design_canvas",
-    "category": "CX_UX",
-    "headline": "Dzine turns AI image work into a controllable canvas",
-    "summary": "Dzine emphasizes localized editing, consistent characters, and a generative canvas for image and video work. This is important for UX because it shifts AI creation toward controllable, stateful design interactions.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 81
-  },
-  {
-    "id": "imagineart_unified_creative_suite",
-    "category": "CX_UX",
-    "headline": "ImagineArt unifies image, video, audio, and brand tools",
-    "summary": "ImagineArt is framed as a single environment for image, video, audio, and brand asset creation. The design implication is a more integrated creative workflow, where asset generation and brand consistency happen in one interface.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 82
-  },
-  {
-    "id": "getimg_multimodel_asset_workspaces",
-    "category": "CX_UX",
-    "headline": "GetIMG blends image, video, and music workflows",
-    "summary": "GetIMG is described as supporting text-to-image, video models, music models, editing, and shared workspaces. This is notable because it points toward collaborative multimodal studios rather than single-purpose generators.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
+    "id": "adobe_audio_human_centered_creativity",
+    "category": "SONIC",
+    "headline": "Adobe frames audio AI around human-centered creativity",
+    "summary": "Adobe’s audio research page emphasizes speech, music, everyday sounds, and cross-modal creative workflows, signaling a design-led approach rather than pure automation. This matters because it reflects a broader industry shift toward AI as a creative partner across sound, AR, and media production.",
+    "url": "https://research.adobe.com/research/audio/",
     "relevance": 79
   },
   {
-    "id": "promeai_architecture_rendering_ai",
-    "category": "STR_ART",
-    "headline": "PromeAI targets architecture, interiors, and product concepts",
-    "summary": "PromeAI focuses on sketch rendering, architectural generation, renovation, and product concept work. That makes it a strong example of AI being used as a visual ideation layer for spatial and industrial design.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 76
+    "id": "byte_dance_swantale_unified_audio_ai",
+    "category": "SONIC",
+    "headline": "Unified audio model collapses voice, ambience, and music",
+    "summary": "ByteDance’s SwanTale research describes a single model that can generate multi-speaker dialogue, environmental sound, sound effects, and music from one prompt. For creators, this is important because it suggests a future where sonic direction can be orchestrated as a coherent scene rather than assembled from separate tools.",
+    "url": "https://www.techtimes.com/articles/323058/20260804/bytedance-unified-audio-ai-collapses-voice-sound-music-one-model-swantale.htm",
+    "relevance": 91
   },
   {
-    "id": "nightcafe_community_lo_ra_workflows",
-    "category": "STR_ART",
-    "headline": "NightCafe leans into community-driven model experimentation",
-    "summary": "NightCafe combines image and video models with prompt editing, photo transformation, LoRA training, and community challenges. Its significance lies in how it makes model experimentation social and iterative.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 75
-  },
-  {
-    "id": "getty_images_ai_stock_generation",
-    "category": "STR_ART",
-    "headline": "Getty Images AI brings stock imagery into generation",
-    "summary": "Getty Images now offers AI image generation powered by Nvidia. The creative significance is the convergence of licensed stock infrastructure with generative creation.",
-    "url": "https://www.forbesargentina.com/innovacion/las-mejores-herramientas-ia-generativa-arte-diseno-impulsan-creatividad-nuevo-nivel-n52583",
+    "id": "sonic_ai_design_workflow_roundup_2026",
+    "category": "SONIC",
+    "headline": "Audio AI is shifting from generation to workflow support",
+    "summary": "A 2026 sound-design roundup highlights a split between high-velocity content generation and professional workflow tools for stem separation, restoration, and text-to-SFX. This is relevant because it shows the real creative frontier is not just making audio, but integrating AI into production pipelines.",
+    "url": "https://aiyd.com/best-ai-for-sound-design/",
     "relevance": 73
   },
   {
-    "id": "canva_ai_image_generator_accessibility",
+    "id": "ai_music_for_ux_design_soundverse",
     "category": "CX_UX",
-    "headline": "Canva keeps AI image generation accessible for non-experts",
-    "summary": "Canva offers a free online AI art generator and access to models like DALL-E and Imagen. This matters for UX because it lowers the barrier to image creation for mainstream users and lightweight teams.",
-    "url": "https://www.canva.com/es_mx/generador-arte-ia/",
-    "relevance": 70
+    "headline": "AI-generated soundscapes are entering UX design practice",
+    "summary": "This UX-oriented article argues that AI music is becoming a design material for onboarding, navigation, and mood-setting inside digital products. While not a research paper, it reflects an important UX trend: sonic identity is increasingly prototyped and tested like visual interface systems.",
+    "url": "https://www.soundverse.ai/blog/article/ai-music-for-ux-design-0846",
+    "relevance": 76
   },
   {
-    "id": "adobe_firefly_creative_workflow",
+    "id": "sound_design_ai_in_ux_workflows",
     "category": "CX_UX",
-    "headline": "Adobe Firefly frames AI as a workflow accelerator",
-    "summary": "Adobe positions Firefly as a way to create impactful images in minutes and use AI across creative tasks. The relevance here is the integration of generative output into familiar professional design workflows.",
-    "url": "https://www.adobe.com/es/products/firefly/features/ai-art-generator.html",
-    "relevance": 74
+    "headline": "UX teams are prototyping interface audio with generative models",
+    "summary": "The same UX article describes a practical workflow of ideation, prototype insertion, testing, and deployment for generated audio in product design. That matters because it reframes sound as a first-class UX component rather than an afterthought.",
+    "url": "https://www.soundverse.ai/blog/article/ai-music-for-ux-design-0846",
+    "relevance": 72
   },
   {
-    "id": "soundraw_audio_generation_for_creators",
-    "category": "SONIC",
-    "headline": "Multimodal suites start absorbing audio generation",
-    "summary": "Several creative platforms are now bundling audio alongside image and video tools, signaling a move toward integrated media generation. This matters because it changes sound design from a separate specialty into part of a broader generative workflow.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 66
+    "id": "soundscape_human_ai_cocreation_system",
+    "category": "CX_UX",
+    "headline": "Human-AI co-creation improves soundscape UX",
+    "summary": "SoundScape is described as a human-AI co-creation system that improves user experience and perceived quality in generated works. It is relevant to interaction design because it supports a collaborative loop instead of treating AI output as final content.",
+    "url": "https://arxiv.org/pdf/2410.08136",
+    "relevance": 86
   },
   {
-    "id": "ai_music_models_enter_creative_suites",
-    "category": "SONIC",
-    "headline": "Music AI is being folded into broader design environments",
-    "summary": "GetIMG and similar suites are described as including music models alongside visual tools. The development is important because it suggests that audio generation is becoming a native feature of creative platforms rather than a standalone product class.",
-    "url": "https://www.unite.ai/es/ai-art-generators/",
-    "relevance": 68
-  },
-  {
-    "id": "algorithmic_art_as_autonomous_practice",
-    "category": "META",
-    "headline": "Generative art is increasingly framed as autonomous practice",
-    "summary": "One source defines generative art as work created fully or partially by autonomous systems. That framing remains central to debates about authorship, intention, and where creativity resides when the system participates in making the work.",
-    "url": "https://trazos.net/arte-generativo-del-algoritmo-a-la-obra-maestra/",
+    "id": "similar_sound_search_wwise_beta",
+    "category": "CX_UX",
+    "headline": "Audio-to-audio search changes sound asset discovery",
+    "summary": "Sony AI and Audiokinetic’s Similar Sound Search lets creators search by reference sound instead of metadata alone, which makes audio libraries much more navigable. This is a UX breakthrough for sound teams because it turns searching into an embodied, creative act.",
+    "url": "https://ai.sony/blog/advancing-ai-highlights-from-august",
     "relevance": 85
   },
   {
-    "id": "artificial_intelligence_end_of_human_creativity_debate",
-    "category": "META",
-    "headline": "AI art renews the debate over the end of human creativity",
-    "summary": "A philosophical discussion asks whether AI art signals the decline of human creativity or a new mode of artistic production. Its importance is less in the conclusion than in how it captures the current tension between tool, collaborator, and author.",
-    "url": "https://www.art-madrid.com/es/post/arte-e-inteligencia-artificial-el-fin-de-la-creatividad-humana",
+    "id": "generative_audio_workflows_in_professional_sound_design",
+    "category": "CX_UX",
+    "headline": "Professional audio UX is moving toward conversational control",
+    "summary": "Recent audio research and product-facing writing both point to iterative control, prompt-based search, and hybrid human-AI workflows as the dominant interaction pattern. This matters for UX because the design challenge is no longer only interface layout, but how creators steer generative systems without losing intent.",
+    "url": "https://research.adobe.com/publication/soundstager-interactive-design-of-story-driven-genai-soundscapes-for-video/",
+    "relevance": 81
+  },
+  {
+    "id": "arxiv_sound_recent_list_unified_audio_scene_gen",
+    "category": "SONIC",
+    "headline": "Audio research is converging on unified scene generation",
+    "summary": "The current sound-related arXiv listings show multiple efforts aimed at generating complete audio scenes rather than isolated sounds. That convergence suggests a new creative paradigm for sound artists, where narrative, ambience, and timbre are designed together.",
+    "url": "https://arxiv.org/list/cs.SD/recent",
     "relevance": 83
   },
   {
-    "id": "creative_workflow_integration_education",
+    "id": "cross_cultural_attitudes_toward_generative_ai_in_art",
     "category": "META",
-    "headline": "AI design education is shifting toward end-to-end workflows",
-    "summary": "A design-focused course description emphasizes integrating AI across the full creative workflow from ideation to delivery. This is significant because it reflects a broader normalization of AI as process infrastructure rather than a novelty tool.",
-    "url": "https://cei.es/cei-curso/curso-inteligencia-artificial-herramientas-diseno-creadores/",
-    "relevance": 62
+    "headline": "Cross-cultural attitudes reveal AI art is a social question",
+    "summary": "A ScienceDirect study on cross-cultural attitudes toward generative AI in art underscores that acceptance and interpretation vary across contexts. This is important philosophically because AI creativity is not just a technical issue; it is shaped by cultural values, authorship norms, and aesthetic expectations.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666188825004940",
+    "relevance": 82
   },
   {
-    "id": "generative_design_democratization",
+    "id": "ai_creativity_tools_landscape_2026",
     "category": "META",
-    "headline": "Generative design tools are democratizing procedural creation",
-    "summary": "The cited coverage links the rise of tools like DALL-E, Midjourney, and Stable Diffusion to wider access to generative creation. That shift matters because it turns what was once specialized procedural art into a mainstream creative medium.",
-    "url": "https://trazos.net/arte-generativo-del-algoritmo-a-la-obra-maestra/",
-    "relevance": 77
+    "headline": "The AI creativity stack is splitting into models and workflows",
+    "summary": "A 2026 landscape piece argues that creative AI is dividing into a frontier-model layer and a workflow layer that assembles outputs into finished work. That framing matters philosophically because it suggests authorship is moving from single-tool creation to distributed orchestration across systems.",
+    "url": "https://kompozy.io/roundups/ai-creativity-tools-landscape-2026",
+    "relevance": 78
+  },
+  {
+    "id": "adobe_project_music_genai_control",
+    "category": "SONIC",
+    "headline": "Fine-grained music editing is becoming a generative interface",
+    "summary": "Adobe’s Project Music GenAI Control previewed a tool for generating music from prompts and then editing the result with detailed control. This is significant because it moves music AI away from novelty output and toward a compositional interface for serious creative iteration.",
+    "url": "https://research.adobe.com/news/adobe-research-previews-a-new-ai-tool-for-music-co-creation/",
+    "relevance": 90
   }
 ]
