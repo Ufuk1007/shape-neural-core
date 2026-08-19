@@ -1,146 +1,146 @@
 [
   {
-    "id": "swantale_unified_audio_model",
-    "category": "SONIC",
-    "headline": "SwanTale unifies speech, sound, and music in one model",
-    "summary": "ByteDance’s SwanTale collapses multi-speaker speech, sound effects, ambience, and music into a single promptable audio system. It matters for design because it suggests a future where soundscapes can be authored as coherent experiences, not stitched together from separate tools.",
-    "url": "https://www.techtimes.com/articles/323058/20260804/bytedance-unified-audio-ai-collapses-voice-sound-music-one-model-swantale.htm",
-    "relevance": 96
+    "id": "google_nai_adaptive_interfaces",
+    "category": "CX_UX",
+    "headline": "Google’s NAI reframes accessibility as adaptive co-design",
+    "summary": "Google Research’s Natively Adaptive Interfaces proposes multimodal, agent-driven UI modules that adapt to users’ needs instead of forcing one fixed interface. It matters for design because it turns accessibility into a living interaction system rather than a checklist feature.",
+    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
+    "relevance": 97
   },
   {
-    "id": "minimax_music_3_0",
-    "category": "SONIC",
-    "headline": "MiniMax Music 3.0 pushes full-song generation forward",
-    "summary": "MiniMax Music 3.0 generates complete songs up to five minutes long with richer arrangements and more natural vocals. The design significance is in how quickly AI is moving from short clips to production-shaped musical forms that creators can iterate on structurally.",
-    "url": "https://releasebot.io/updates/minimax",
-    "relevance": 92
-  },
-  {
-    "id": "lyria_35_real_time_music",
-    "category": "SONIC",
-    "headline": "Lyria 3.5 targets interactive, real-time music generation",
-    "summary": "Google’s Lyria 3.5 emphasizes real-time, interactive music generation with stronger musicality, lyrics, and vocal quality. This matters for sonic design because it supports performative workflows where the user shapes music live rather than only prompting a finished track.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/",
-    "relevance": 90
-  },
-  {
-    "id": "lyria_realtime_prompt_to_music",
-    "category": "SONIC",
-    "headline": "Google AI Studio makes music generation more immediate",
-    "summary": "Google AI Studio positions Lyria for prompt-to-music creation, including custom scores from video and seamless shifts across instruments, genres, and moods. For designers, this points to tighter coupling between audiovisual editing and adaptive music systems.",
-    "url": "https://aistudio.google.com/models/lyria",
+    "id": "fiddl_art_ai_image_video_remix",
+    "category": "STR_ART",
+    "headline": "Fiddl.art blends image generation with remixable creative publishing",
+    "summary": "Fiddl.art combines fast AI image/video generation with prompt remixing and public publishing, making the creative process social and iterative. It is relevant to design culture because it treats AI output as a shared medium rather than a one-off render.",
+    "url": "https://fiddl.art/",
     "relevance": 88
   },
   {
-    "id": "elevenmusic_audio_platform_shift",
+    "id": "stable_audio_3_daw_plugin_iterative_editing",
     "category": "SONIC",
-    "headline": "Audio platforms are converging on voice-plus-music systems",
-    "summary": "Coverage of recent audio-model developments notes ElevenLabs’ move into music generation with ElevenMusic, extending a voice-and-sound-effects stack toward full audio composition. The important design shift is the emergence of unified audio authoring environments instead of fragmented point tools.",
-    "url": "https://www.techtimes.com/articles/323058/20260804/bytedance-unified-audio-ai-collapses-voice-sound-music-one-model-swantale.htm",
-    "relevance": 84
+    "headline": "Stable Audio 3 moves AI sound into the DAW workflow",
+    "summary": "The Stable Audio 3 beta adds a DAW plugin, iterative editing, and multitrack mixing, which pushes AI audio from standalone generation into production-grade composition. That matters because it makes AI feel less like a prompt toy and more like an instrument inside the creative toolchain.",
+    "url": "https://futuretools.io/news",
+    "relevance": 96
   },
   {
-    "id": "deezer_ai_music_flood",
+    "id": "pika_audio_models_music_sfx_speech",
+    "category": "SONIC",
+    "headline": "Pika’s audio stack targets soundtrack, music, SFX, and speech",
+    "summary": "Pika Audio’s new models split audio creation into specialized modes for soundtrack sync, music, sound effects, and expressive speech. The design implication is a modular audio studio where generative systems handle different parts of sonic authorship.",
+    "url": "https://futuretools.io/news",
+    "relevance": 94
+  },
+  {
+    "id": "alibaba_happyshrimp_text_to_song_beta",
+    "category": "SONIC",
+    "headline": "Alibaba’s HappyShrimp turns one prompt into a full song",
+    "summary": "HappyShrimp 1.0 generates melody, arrangement, lyrics, and vocals from a single text prompt, with attention to culturally specific music styles. This is important because it expands AI music from short clips into a more complete songwriting pipeline.",
+    "url": "https://futuretools.io/news",
+    "relevance": 92
+  },
+  {
+    "id": "berklee_hackathon_ai_music_defined_by_musicians",
+    "category": "SONIC",
+    "headline": "Berklee hackathon shows AI music as human-centered collaboration",
+    "summary": "A 48-hour Berklee hackathon used leading generative tools to build projects that pulled musicians deeper into music-making rather than replacing them. One standout fine-tuned Stable Audio 3 on Arabic maqam recordings, making cultural bias and stylistic specificity audible.",
+    "url": "https://zinstrel.substack.com/p/berklee-hackathon-proves-ai-music",
+    "relevance": 95
+  },
+  {
+    "id": "modulate_ai_music_detection_api",
     "category": "META",
-    "headline": "AI music is saturating streaming platforms",
-    "summary": "Deezer’s report that AI-generated uploads now exceed half of its daily deliveries highlights a structural change in music ecosystems. It matters philosophically and operationally because it reframes AI not just as a tool for composition, but as a force reshaping authorship, discovery, and cultural filtering.",
-    "url": "https://aa.com.tr/en/features/ai-generated-music-floods-streaming-platforms-what-comes-next-for-artists/4019270",
-    "relevance": 87
-  },
-  {
-    "id": "human_creativity_benchmark",
-    "category": "CX_UX",
-    "headline": "Benchmarking human creativity across design tasks",
-    "summary": "The Human Creativity Benchmark spans ad images, brand design, ad video, landing pages, and desktop apps. It matters for CX/UX because it gives the field a more structured way to compare AI-assisted design outputs across concrete product and brand contexts.",
-    "url": "https://arxiv.org/html/2606.30561v1",
-    "relevance": 89
-  },
-  {
-    "id": "genai_design_fixation_research",
-    "category": "STR_ART",
-    "headline": "Generative AI can amplify novelty without guaranteeing usefulness",
-    "summary": "Research on generative AI and design reports that AI-supported outputs can look more creative or unconventional even when usefulness and brand alignment do not improve. This is relevant to strategic art because it captures the core tension between visual surprise and design performance.",
-    "url": "https://arxiv.org/abs/2411.00168",
-    "relevance": 83
-  },
-  {
-    "id": "genai_creativity_meta_analysis",
-    "category": "META",
-    "headline": "Meta-analysis finds AI boosts creative performance but can narrow diversity",
-    "summary": "A 2025 meta-analysis reports that humans collaborating with generative AI outperform those working alone, while also showing a reduction in idea diversity. This is a crucial design-theory signal: AI may increase output quality while quietly flattening the range of creative exploration.",
-    "url": "https://arxiv.org/abs/2505.17241",
-    "relevance": 91
-  },
-  {
-    "id": "collective_idea_diversity_ai",
-    "category": "META",
-    "headline": "AI exposure changes idea diversity more than individual creativity",
-    "summary": "A study on AI ideas found that high AI exposure increased the diversity and rate of change in collective ideas, even when individual creativity did not change much. For creative systems, that suggests AI may be most powerful as a cultural variance engine rather than a direct creativity enhancer.",
-    "url": "https://arxiv.org/html/2401.13481v2",
-    "relevance": 84
-  },
-  {
-    "id": "co_creativity_system_review",
-    "category": "CX_UX",
-    "headline": "System design for human-AI co-creativity is becoming a discipline",
-    "summary": "A systematic review of human-AI co-creativity identifies design dimensions such as creative phase, user control, system embodiment, and proactive behavior. This is highly relevant to UX because it translates co-creation from a loose product idea into a set of actual interaction design decisions.",
-    "url": "https://arxiv.org/abs/2506.21333",
+    "headline": "AI music detection becomes part of the distribution layer",
+    "summary": "Modulate’s AI Music Detection API flags synthetic vocals and instrumentals directly from audio, aiming at catalog moderation rather than creator-facing novelty. It matters philosophically because it treats synthetic media as a governance problem, not only a creative one.",
+    "url": "https://siliconangle.com/2026/06/24/modulate-launches-ai-music-detection-synthetic-tracks-flood-streaming/",
     "relevance": 86
   },
   {
-    "id": "effects_of_generative_ai_on_design_fixation",
-    "category": "CX_UX",
-    "headline": "Generative AI can reshape designers’ fixation patterns",
-    "summary": "Research on design fixation shows that generative AI changes how people explore options during ideation. For UX and design systems, this matters because AI may function less like a drafting assistant and more like an influence layer that alters the designer’s search space.",
-    "url": "https://arxiv.org/html/2403.11164v1",
-    "relevance": 80
-  },
-  {
-    "id": "ai_creativity_in_creative_industries_review",
+    "id": "ai_creativity_process_philosophy",
     "category": "META",
-    "headline": "Creative-industry reviews are moving from hype to structure",
-    "summary": "A recent review of AI in creative industries organizes advances, risks, and future directions across artistic and production workflows. It matters as theory because it marks the shift from speculative commentary to more formal models of how AI changes creative labor.",
-    "url": "https://arxiv.org/html/2501.02725v4",
-    "relevance": 78
+    "headline": "Process philosophy reimagines creativity as human-machine relation",
+    "summary": "A process-philosophy view argues that AI creativity should be understood through evolving relationships between artists, tools, and environments rather than through human psychology alone. This matters for design theory because it shifts authorship from isolated genius to distributed emergence.",
+    "url": "https://www.pdcnet.org/jcp/content/jcp_2024_0999_11_6_53",
+    "relevance": 90
   },
   {
-    "id": "ai_generated_art_gallery_cycles",
+    "id": "artistic_agency_participant_paradigm",
     "category": "STR_ART",
-    "headline": "Community image galleries keep evolving prompt aesthetics",
-    "summary": "Current image-generation galleries show how prompt culture is becoming a participatory visual movement, with shared themes and iterative style exploration. While less rigorous than research, these communities matter because they reveal the living aesthetics of AI-native image making.",
-    "url": "https://community.openai.com/t/gpt-image-monthly-theme-gallery-august-2026-theme-is-returning/1378298/3124",
-    "relevance": 72
+    "headline": "AI art as participation, not just tool use",
+    "summary": "The “participant” model of artistic agency frames AI as something artists enter into dialogue with, allowing the system’s own representations to become part of the work. That is highly relevant to experimental art because it aligns AI practice with conceptual and participatory art traditions.",
+    "url": "https://academic.oup.com/bjaesthetics/advance-article/doi/10.1093/aesthj/ayae055/7930310?searchresult=1",
+    "relevance": 93
   },
   {
-    "id": "nightcafe_daily_ai_art_challenge",
+    "id": "ai_art_end_of_creativity_or_new_movement",
     "category": "STR_ART",
-    "headline": "Daily AI art challenges are shaping emergent visual language",
-    "summary": "NightCafe’s active challenge feed shows how recurring prompt contests generate fast-moving aesthetic conventions and collective experimentation. This is relevant to generative art because it captures the social layer where tools become movements.",
-    "url": "https://creator.nightcafe.studio/",
-    "relevance": 69
+    "headline": "AI art is increasingly framed as a new movement, not a novelty",
+    "summary": "Recent criticism around AI art has shifted from whether it is possible to whether it is becoming a distinct movement with its own aesthetics and methods. That matters because it places AI imagery inside art history instead of outside it as mere automation.",
+    "url": "https://www.bbc.com/future/article/20241018-ai-art-the-end-of-creativity-or-a-new-movement",
+    "relevance": 84
   },
   {
-    "id": "leonardo_ai_visual_video_creation",
+    "id": "ai_creativity_scholarly_definition_boden",
+    "category": "META",
+    "headline": "Creativity debates keep returning to novelty, surprise, and value",
+    "summary": "Recent philosophical writing on AI creativity continues to use Boden’s framework of novelty, surprise, and value as the baseline test. This matters because it gives curators and designers a concrete way to judge whether an AI system is doing more than stylistic mimicry.",
+    "url": "https://www.100-days-of-making-ai.com/project/ai-creativity",
+    "relevance": 82
+  },
+  {
+    "id": "designing_ai_with_rights_and_freedom",
+    "category": "META",
+    "headline": "Rights-based AI design moves from metaphor to precaution",
+    "summary": "A design proposal argues for building future AI with self-respect, freedom, and rights-oriented safeguards under uncertainty about consciousness. It is important for speculative design because it treats machine moral status as a design constraint rather than a remote thought experiment.",
+    "url": "https://philarchive.org/rec/SCHDAW-10",
+    "relevance": 87
+  },
+  {
+    "id": "ai_consciousness_possible_in_principle",
+    "category": "META",
+    "headline": "AI consciousness is being discussed as a live ethical possibility",
+    "summary": "A recent discussion argues that there are no obvious technical barriers to systems that could give rise to consciousness, while also stressing deep uncertainty about current models. This matters for the creative field because questions of agency, feeling, and moral patienthood will shape how AI collaborators are designed and treated.",
+    "url": "https://www.theguardian.com/technology/2026/jul/19/could-ai-be-conscious",
+    "relevance": 89
+  },
+  {
+    "id": "artificial_intelligence_reshapes_creativity_multidimensional",
+    "category": "META",
+    "headline": "Creativity is being redefined as a multidimensional AI phenomenon",
+    "summary": "Recent scholarship frames AI as reshaping creativity across production, evaluation, and cultural meaning rather than simply imitating human output. That is useful for SHAPENEURAL because it supports a broader curatorial lens: AI as infrastructure, collaborator, and cultural force.",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12702588/",
+    "relevance": 85
+  },
+  {
+    "id": "artificial_creativity_without_cognition",
+    "category": "META",
+    "headline": "Some theorists define AI creativity as non-cognitive generation",
+    "summary": "A newer argument defines artificial creativity as a non-cognitive, non-intentional generative mechanism, separating output from human-like experience. It is relevant because it gives a rigorous counterpoint to claims that AI art must be conscious to count as creative.",
+    "url": "https://link.springer.com/article/10.1007/s00146-025-02682-3?error=cookies_not_supported&code=8c623829-1b42-4a60-8119-4e0ee9400c55",
+    "relevance": 83
+  },
+  {
+    "id": "creative_ai_moral_significance_guided_by_humans",
+    "category": "META",
+    "headline": "AI creativity is increasingly linked to moral responsibility",
+    "summary": "One recent paper argues that AI systems can be creative in a limited sense, but their moral significance depends on human guidance and interpretation. This matters because design practice increasingly sits at the boundary between authorship, stewardship, and accountability.",
+    "url": "https://journals.sagepub.com/doi/10.1177/09539468251347501",
+    "relevance": 81
+  },
+  {
+    "id": "artificial_intelligence_in_fine_arts_systematic_review",
     "category": "STR_ART",
-    "headline": "Image-generation platforms are expanding into visual storytelling",
-    "summary": "Leonardo.Ai’s updated app reflects the continued fusion of image and video generation into one creative environment. The design significance is not the app itself, but the broader shift toward multi-format visual authorship pipelines.",
-    "url": "https://play.google.com/store/apps/details?id=ai.leonardo.leonardo&hl=en_US",
-    "relevance": 70
+    "headline": "Systematic review maps AI’s growing role in the fine arts",
+    "summary": "A systematic review in fine arts literature shows that AI is now being studied as a substantive force in artistic production, not merely a peripheral tool. It matters because it provides a research-backed map of how generative systems are entering art practice, criticism, and methodology.",
+    "url": "https://www.sciencedirect.com/science/article/pii/S294988212300004X",
+    "relevance": 79
   },
   {
-    "id": "firefly_design_generator_iterative_workflows",
+    "id": "ai_ux_natively_adaptive_interfaces_accessibility",
     "category": "CX_UX",
-    "headline": "Firefly-style prompt workflows are normalizing rapid design iteration",
-    "summary": "Adobe’s design-generation framing emphasizes prompt-based iteration for graphics, social assets, and web visuals. Even as a product page, it signals a UX pattern that is becoming standard: natural-language art direction paired with fast visual exploration.",
-    "url": "https://www.adobe.com/products/firefly/features/ai-graphic-design-generator.html",
-    "relevance": 66
-  },
-  {
-    "id": "firefly_ai_art_generator_style_exploration",
-    "category": "STR_ART",
-    "headline": "Style-transfer prompting is now part of mainstream visual tooling",
-    "summary": "Adobe’s art-generator messaging highlights rapid experimentation across styles like anime, impressionism, surrealism, watercolor, charcoal, and ink. The design relevance is that style is increasingly treated as an editable parameter rather than a fixed artistic signature.",
-    "url": "https://www.adobe.com/in_hi/products/firefly/features/ai-art-generator.html",
-    "relevance": 64
+    "headline": "Adaptive interfaces replace static UX with context-aware agents",
+    "summary": "NAI proposes UI systems that adjust navigation and interaction patterns in response to context and user needs. For UX teams, that suggests a future where accessibility is continuously negotiated by the interface itself.",
+    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
+    "relevance": 91
   }
 ]
