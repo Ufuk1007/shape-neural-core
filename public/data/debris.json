@@ -1,130 +1,138 @@
 [
   {
-    "id": "minimax_music3_open_weights",
+    "id": "mureka_human_hearted_music",
     "category": "SONIC",
-    "headline": "MiniMax Music3: open-weights model for full-length AI songs",
-    "summary": "MiniMax released Music3, an open-weights production music model that generates up to 5-minute stereo tracks from structured lyrics and a text description, with no subscription or generation cap.[10][7] This matters for sonic design because it gives composers and sound designers a locally-runnable, hackable model for end-to-end song creation, making AI music more of a programmable instrument than a black-box web service.",
-    "url": "https://www.aimusicpreneur.com/ai-tools-news/",
+    "headline": "Mureka V9.5 pushes AI music toward 'human-hearted' composition",
+    "summary": "Kunlun Wanwei’s Mureka V9.5 refines its MusiCoT (Music Chain-of-Thought) framework to move away from loud, hyper-saturated tracks toward more restrained, emotionally nuanced compositions.[2] This matters for sonic design because it treats prompts as narrative and emotional structures rather than mere style tags, giving composers and sound designers finer control over dynamics, silence, and 'breath'—key ingredients for believable, repeatable listening experiences.",
+    "url": "https://news.aibase.com/news/30430",
+    "relevance": 98
+  },
+  {
+    "id": "mureka_prompt_fidelity_control",
+    "category": "SONIC",
+    "headline": "High-fidelity prompt control reshapes AI music direction workflows",
+    "summary": "Internal evaluations of Mureka V9.5 report a 97% prompt control pass rate, with 95.7% of tracks fully reflecting requested styles and a 61% pass rate for vocal performance.[2] For creative directors and UX sound teams, this level of alignment means AI can be treated more like a reliable session musician that executes detailed briefs—shifting design practice from endless resampling to higher-level iteration on emotional and structural intent.",
+    "url": "https://news.aibase.com/news/30430",
     "relevance": 96
   },
   {
-    "id": "omni_rust_daw_native_ai",
+    "id": "alibaba_happyshrimp_full_track",
     "category": "SONIC",
-    "headline": "OMNi: first Rust-based DAW with native AI sample generation",
-    "summary": "OMNi v0.1 is a new free DAW built in Rust that integrates native AI sample generation via ElevenLabs and an image-to-sound spectral synth powered by Gemini 2.5 Flash.[7] For sonic designers, this fuses workflow and model directly in the production environment, turning the DAW timeline into a hybrid of sequencer and generative engine rather than something that just hosts external AI plugins.",
-    "url": "https://www.aimusicpreneur.com/ai-tools-news/",
-    "relevance": 94
-  },
-  {
-    "id": "suno_studio2_midi_prompting",
-    "category": "SONIC",
-    "headline": "Suno Studio 2.0 turns MIDI performances into generative prompts",
-    "summary": "Suno’s Studio 2.0 adds MIDI recording, editing, a wavetable synth, session-aware chat, custom effects, and higher-fidelity stem separation, but its key innovation is using MIDI clips as prompts for new audio generations.[8] This lets producers play in harmonic or melodic ideas and iteratively co-compose with the model, collapsing the boundary between traditional performance and AI-driven arrangement.",
-    "url": "https://www.unite.ai/suno-studio-2-0-turns-played-midi-into-a-prompt-for-ai-generated-audio/",
-    "relevance": 95
-  },
-  {
-    "id": "ai_music_workflow_hybrids",
-    "category": "SONIC",
-    "headline": "Hybrid workflows: AI models become integrated studio collaborators",
-    "summary": "Recent tools like Suno Studio 2.0 and OMNi point to a shift from single-shot generation to continuous, DAW-native AI collaboration, with MIDI prompts, stem-aware editing, and on-timeline sample synthesis.[8][7] This is significant for sound design because it reframes AI as a temporal, context-aware collaborator embedded in the session rather than an external generator of finished tracks.",
-    "url": "https://www.unite.ai/suno-studio-2-0-turns-played-midi-into-a-prompt-for-ai-generated-audio/",
-    "relevance": 92
-  },
-  {
-    "id": "lyria3_5_music_system_landscape",
-    "category": "SONIC",
-    "headline": "Lyria 3.x clarifies the emerging AI music systems stack",
-    "summary": "A recent overview of Google’s Lyria family outlines a spectrum from 30-second instrumental models to Lyria 3.5’s 3-minute tracks with improved vocals, all carrying SynthID watermarks and accessed via a per-song API pricing model.[12] For designers of musical experiences, this clarifies the constraints and affordances of system-level AI music—short-form clips vs. longer compositions, licensing implications, and how generative scores might be embedded into apps or games.",
-    "url": "https://invideo.io/blog/lyria-ai-music-generator/",
-    "relevance": 88
-  },
-  {
-    "id": "ai_music_model_comparison_design",
-    "category": "SONIC",
-    "headline": "Comparative survey of AI music tools for design-centric workflows",
-    "summary": "A recent comparative guide maps tools like Eleven Music, MusicGPT, Suno, Udio, and Flow Music by use cases such as film scoring, conversational remixing, visual music projects, and stem-based editing.[15] This is valuable for sonic UX and interaction design because it frames AI music not just as output quality but as different modes of control—bar-level editing, clip-based composition, or conversational direction—informing which models best suit interactive or adaptive audio systems.",
-    "url": "https://www.unite.ai/best-ai-music-generators/",
-    "relevance": 86
-  },
-  {
-    "id": "ux_framework_human_ai_agents",
-    "category": "CX_UX",
-    "headline": "New UX framework for human–AI agent interaction at work",
-    "summary": "A recent research paper proposes eight core UX principles for designing workplace human–AI agent interactions, based on participatory design workshops, expert review, meta-analysis, and in-depth interviews.[14] For CX/UX practitioners, this offers a structured lens for designing AI copilots and agents—moving beyond ad hoc patterns toward a principled vocabulary for trust, transparency, and role clarity in AI-assisted workflows.",
-    "url": "https://arxiv.org/html/2607.19941v1",
-    "relevance": 93
-  },
-  {
-    "id": "breon_ai_adaptive_interfaces",
-    "category": "CX_UX",
-    "headline": "AI-driven interfaces that assemble themselves per user",
-    "summary": "New UX research from Breon.ai describes interfaces where layout, interaction model, and content depth are generated per user based on role, behavior, and context instead of being fixed.[2] This is critical for UX design because it reframes the screen as a negotiable, generative surface—demanding new pattern languages, guardrails, and testing methods for systems that redesign themselves in real time.",
-    "url": "https://research.breon.ai/",
+    "headline": "Alibaba’s HappyShrimp turns narratives into fully produced songs",
+    "summary": "Alibaba’s HappyShrimp 1.0 generates complete songs—including lyrics, melody, arrangement, and vocals—from natural language prompts describing emotions, scenes, or memories.[4][12] This opens new design space for narrative-driven sonic experiences, where writers and product teams can prototype full tracks as part of storytelling, branding, or interactive installations without traditional music production skills.",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-17/alibaba-launches-ai-music-generation-model-happyshrimp-in-beta",
     "relevance": 97
   },
   {
-    "id": "breon_ai_designers_as_curators",
-    "category": "CX_UX",
-    "headline": "Designers shift from producers to curators of AI output",
-    "summary": "The same Breon.ai study notes that 94% of designers now use generative tools and increasingly act like creative directors—briefing, directing, and editing machine output instead of handcrafting every artifact.[2] This matters for design practice because it changes what UX deliverables are (from static screens to prompt systems and constraints) and how teams define craft and authorship in AI-mediated workflows.",
-    "url": "https://research.breon.ai/",
+    "id": "happyshrimp_structural_reasoning",
+    "category": "SONIC",
+    "headline": "End-to-end music models reason over structure before audio",
+    "summary": "Coverage of HappyShrimp emphasizes that it first maps song structure and harmonic progression before generating audio, contrasting with models that jump straight into waveform synthesis.[6][7] For sonic UX and interactive media, this structural reasoning enables consistent themes, predictable transitions, and scene-aware scoring—bringing AI closer to how human composers plan form and tension over time.",
+    "url": "https://thursdai.news/releases/2026-08",
+    "relevance": 94
+  },
+  {
+    "id": "minimax_music3_open_weights",
+    "category": "SONIC",
+    "headline": "MiniMax-Music3 offers open-weights, 5-minute AI songs at 32 kHz",
+    "summary": "MiniMax-Music3 is an open-weights text-to-music model that generates up to five-minute, 32 kHz, 16-bit stereo songs from lyrics with section tags plus a detailed musical description.[5][6][14] Its openness and long-form capability are crucial for designers and artists who need inspectable, modifiable models for installation soundtracks, game scores, and experimental audio systems without subscription lock-in.",
+    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
+    "relevance": 99
+  },
+  {
+    "id": "minimax_structured_lyrics_interface",
+    "category": "SONIC",
+    "headline": "Section-tagged lyrics emerge as a new score interface for AI",
+    "summary": "MiniMax-Music3’s requirement for lyrics annotated with section tags (e.g., verse, chorus, bridge) effectively turns text into a formal score language that guides musical form.[5][14] This structured interface is a design pattern for future sonic tools, where narrative and layout metadata can direct arrangement and energy, making AI composition feel closer to working with a DAW timeline than a single prompt box.",
+    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
+    "relevance": 93
+  },
+  {
+    "id": "google_lyria35_creative_control",
+    "category": "SONIC",
+    "headline": "Lyria 3.5 tightens creative control over AI music’s form and feel",
+    "summary": "Google’s Lyria 3.5 improves musicality, lyrics, vocals, and gives creators finer control over tempo and duration in AI-generated tracks.[11] For sound designers and product teams, these controls shift AI from a novelty generator to a parametric instrument that can be tuned to match interaction rhythms, brand tempos, and specific emotional arcs.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/",
+    "relevance": 92
+  },
+  {
+    "id": "lyria_emotional_vocals",
+    "category": "SONIC",
+    "headline": "Emotionally nuanced AI vocals blur line between singer and model",
+    "summary": "Lyria 3.5 is reported to deliver more expressive, emotionally nuanced vocals with improved pronunciation.[11] This matters for creative practice because AI vocalists start to function as believable narrative agents—altering how designers think about characters, voice branding, and dialogic music in games or interactive fiction.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/",
+    "relevance": 94
+  },
+  {
+    "id": "imaginelab_all_in_one_studio",
+    "category": "STR_ART",
+    "headline": "ImagineLab.art unifies image, video, voice, music, and infographics",
+    "summary": "ImagineLab.art launches as a browser-based studio that combines image, video, voice, music, writing, and infographic tools into a single environment.[10] For strategic art and design systems, this convergence signals a shift from single-modality generators to holistic creative workbenches, where brand narratives, motion design, and sonic identities can be prototyped as one interconnected artefact.",
+    "url": "https://www.bignewsnetwork.com/news/279254409/imaginelabart-launches-an-all-in-one-ai-creative-studio-built-for-speed-and-scale",
     "relevance": 90
   },
   {
-    "id": "nano_banana_imagen_retirement",
-    "category": "STR_ART",
-    "headline": "Retirement of Imagen pushes artists toward new Gemini-based models",
-    "summary": "A recent image-model survey notes that Google is retiring the entire Imagen line and steering users to Nano Banana, its Gemini-based image models.[13] For strategic art and design systems, this signals how quickly foundational tools can vanish, forcing artists and pipelines to plan for model churn, portability of styles, and abstraction layers over specific vendors.",
-    "url": "https://www.gradually.ai/en/ai-image-models/",
-    "relevance": 82
+    "id": "imaginelab_design_ops",
+    "category": "CX_UX",
+    "headline": "Browser-native AI studio hints at new design ops workflows",
+    "summary": "By centralizing multi-modal generation in a single web-based tool, ImagineLab.art reframes AI not as scattered plugins but as a shared creative operating layer for teams.[10] UX and design ops practitioners can treat it as a living design system where visual, motion, and audio tokens are co-authored, enabling faster experimentation with cohesive experiences across touchpoints.",
+    "url": "https://www.bignewsnetwork.com/news/279254409/imaginelabart-launches-an-all-in-one-ai-creative-studio-built-for-speed-and-scale",
+    "relevance": 86
   },
   {
-    "id": "ai_art_tool_landscape_aug21",
+    "id": "zapier_ai_art_generators_landscape",
     "category": "STR_ART",
-    "headline": "Updated map of AI art generators reveals converging feature sets",
-    "summary": "New reviews of AI art generators as of August 21 highlight tools that combine unified image/video/audio creation, brand kits, animation workflows, LoRA training, and community-driven challenges in a single stack.[1][4] For STR_ART, this convergence points to a shift from single-medium generators to polymedia design environments where a style system spans visuals, motion, and sound, opening up more systemic and cybernetic approaches to creative direction.",
+    "headline": "Convergent AI art tools push toward unified generative design stacks",
+    "summary": "Recent roundups highlight how tools like Midjourney, Adobe Firefly, Stable Assistant, Luma’s Dream Machine, and brand-focused platforms such as ImagineArt are coalescing into integrated image, video, audio, and brand creation suites.[1][3] This consolidation shifts strategic art practice from tool-hopping to orchestrating pipelines, where style systems, motion templates, and brand kits are woven through multiple generators as a coherent design stack.",
+    "url": "https://zapier.com/blog/ai-art-generator/",
+    "relevance": 88
+  },
+  {
+    "id": "dzine_generative_canvas_control",
+    "category": "CX_UX",
+    "headline": "Canvas-first generative editors enable spatial AI interaction patterns",
+    "summary": "Tools like Dzine emphasize a generative canvas with localized editing, consistent characters, and image-to-video transitions rather than purely prompt-based workflows.[3] For UX, this signals a pattern where users manipulate AI outputs spatially—through selections, anchors, and constraints—turning generative systems into collaborative design surfaces instead of opaque text boxes.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 84
+  },
+  {
+    "id": "imagineart_brand_kits_multimodal",
+    "category": "STR_ART",
+    "headline": "Brand-aware multimodal generators reshape visual identity practice",
+    "summary": "ImagineArt and similar tools now bundle image, video, audio generation with brand kits and automated workflows.[3] This matters for strategic art because identity work shifts from static guidelines to executable systems, where typography, color, motion, and even sonic logos are instantiated directly by AI rather than merely documented for human interpretation.",
     "url": "https://www.unite.ai/ai-art-generators/",
     "relevance": 89
   },
   {
-    "id": "midjourney_v6_1_as_aesthetic_reference",
-    "category": "STR_ART",
-    "headline": "Midjourney v6.1 solidifies as a benchmark for AI aesthetics",
-    "summary": "A recent comparative review positions Midjourney v6.1 as leading for artistic quality and aesthetics among major image generators.[9] While not a single news event, this ongoing consolidation matters for strategic art direction because it establishes de facto visual baselines and biases that other tools and movements either align with or intentionally resist.",
-    "url": "https://thegoodatheist.net/best-ai-art-generator/",
-    "relevance": 80
-  },
-  {
-    "id": "ux_principles_implications_philosophy",
-    "category": "META",
-    "headline": "Workplace AI UX principles reshape human–machine agency",
-    "summary": "The new UX principles framework for human–AI agents implicitly redefines agency at work, emphasizing role negotiation, shared control, and continuous calibration of trust between human and system.[14] For META inquiry, this provides a concrete lens for thinking about AI as a colleague rather than a tool, raising questions about responsibility, authorship, and the phenomenology of collaborating with non-human agents.",
-    "url": "https://arxiv.org/html/2607.19941v1",
-    "relevance": 87
-  },
-  {
-    "id": "generative_interfaces_as_media",
-    "category": "META",
-    "headline": "Self-assembling interfaces as a new medium of experience",
-    "summary": "The emergence of AI-generated interfaces that adapt structure and content per user suggests that UX is becoming a probabilistic medium rather than a fixed design artifact.[2] This is philosophically significant because it shifts from designing singular experiences to designing distributions of possible experiences, where user identity and model behavior co-author the interface.",
-    "url": "https://research.breon.ai/",
+    "id": "happyshrimp_cross_cultural_music_ux",
+    "category": "CX_UX",
+    "headline": "Emotion-aware music models localize sound for global UX",
+    "summary": "HappyShrimp’s ability to interpret both professional labels like 'Lo-fi R&B' and everyday emotional descriptions suggests AI that can bridge technical and lay vocabularies in music creation.[12] For UX design, this supports adaptive soundtracks and interfaces that adjust to user mood and cultural context, raising new questions about personalization, consent, and ambient manipulation.",
+    "url": "https://www.techflowpost.com/en-US/newsletter/132292",
     "relevance": 91
   },
   {
-    "id": "ai_music_watermarking_ethics",
+    "id": "mechanical_feel_vs_human_touch",
     "category": "META",
-    "headline": "SynthID watermarking frames a norm for AI music traceability",
-    "summary": "Lyria’s use of SynthID watermarking on all outputs presents a concrete technical stance on the traceability of AI-generated audio.[12] This matters for philosophical and ethical debates about AI creativity because it encodes a presumption that artificial authorship should be detectable, influencing norms around disclosure, attribution, and hybrid human–machine composition.",
-    "url": "https://invideo.io/blog/lyria-ai-music-generator/",
-    "relevance": 84
+    "headline": "AI music’s move from 'mechanical feel' to 'human touch' reframes authorship",
+    "summary": "Mureka V9.5 explicitly positions itself against 'mechanical' AI music, emphasizing restraint, blank space, and naturalness to make tracks that can withstand repeated listening.[2] This design stance forces philosophical questions about whether 'human-ness' is a style that can be encoded, and how responsibility and credit are shared when models intentionally emulate subtle human imperfections.",
+    "url": "https://news.aibase.com/news/30430",
+    "relevance": 95
   },
   {
-    "id": "ai_music_toolstack_for_creatives",
-    "category": "SONIC",
-    "headline": "Designing AI music toolstacks as modular creative systems",
-    "summary": "The synthesis of open-weights models like MiniMax Music3, DAW-native tools like OMNi, and API-based systems like Lyria sketches an emerging modular stack for AI music creation across offline, on-device, and cloud contexts.[10][7][12] For SHAPENEURAL-style systems thinking, this highlights opportunities to orchestrate these layers into custom pipelines, where designers control not just outputs but the topology of the creative system itself.",
-    "url": "https://www.aimusicpreneur.com/ai-tools-news/",
-    "relevance": 93
+    "id": "open_models_as_sonic_infrastructure",
+    "category": "META",
+    "headline": "Open music models reconfigure creative infrastructure and power",
+    "summary": "By releasing open weights for a high-quality, long-form text-to-music model, MiniMax-Music3 shifts power from proprietary platforms toward communities who can self-host, fine-tune, and fork their own sonic engines.[5][14] This has societal and ethical implications: music generation becomes infrastructural, inviting new licensing models, collective authorship, and localized cultural training rather than one-size-fits-all corporate sound.",
+    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
+    "relevance": 92
+  },
+  {
+    "id": "multimodal_creativity_stack",
+    "category": "META",
+    "headline": "Unified creative suites hint at AI as a 'general design organ'",
+    "summary": "Tools like ImagineLab.art and multimodal suites reviewed in recent roundups point toward AI that simultaneously handles visual, sonic, textual, and brand outputs.[3][10] Conceptually, this looks less like a collection of apps and more like a general-purpose design organ—raising questions about how human creativity shifts when orchestration, not execution, becomes the primary artistic act.",
+    "url": "https://www.bignewsnetwork.com/news/279254409/imaginelabart-launches-an-all-in-one-ai-creative-studio-built-for-speed-and-scale",
+    "relevance": 90
   }
 ]
