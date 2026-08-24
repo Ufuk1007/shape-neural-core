@@ -1,138 +1,130 @@
 [
   {
-    "id": "minimax_music3_open_weights_songs",
+    "id": "alibaba_happyshrimp_music_model",
     "category": "SONIC",
-    "headline": "MiniMax-Music3 drops open-weights full-song generator",
-    "summary": "MiniMax-Music3 is an open-weights text-to-music model that can generate complete songs up to five minutes as 32 kHz, 16-bit stereo WAV from structured lyric inputs and detailed musical descriptions. This matters for sonic design because it enables end‑to‑end, fully local, highly controllable music creation pipelines for composers, game audio teams, and interactive sound systems without relying on closed APIs.",
-    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
-    "relevance": 96
+    "headline": "Alibaba’s HappyShrimp turns text prompts into full produced songs",
+    "summary": "Alibaba’s new generative music model **HappyShrimp 1.0** can create complete tracks—melody, arrangement, lyrics, and vocals—from a single text description of mood, story, or genre.[5][8] For designers and musicians, this dramatically lowers the barrier to prototyping sonic identities, interactive soundscapes, and narrative audio for games, experiences, and installations, enabling non‑experts to iterate on complex musical structures.",
+    "url": "https://www.chosun.com/english/industry-en/2026/08/23/TFV5UVB4ZVG7HN3BEY7AFFE5XY/",
+    "relevance": 95
   },
   {
-    "id": "cmi_rewardbench_music_preference_eval",
+    "id": "alibaba_happyshrimp_artist_cocreation",
     "category": "SONIC",
-    "headline": "New benchmark aligns AI music with human taste",
-    "summary": "Researchers introduced CMI-RewardBench, a benchmark for evaluating music reward models under “compositional multimodal instruction” conditions, combining text prompts, lyrics, and reference audio. This is crucial for AI-powered sound tools because it directly targets how models learn to satisfy nuanced human preferences, enabling more intentional scoring, adaptive soundtracks, and artist‑in‑the‑loop composition workflows.",
-    "url": "https://www.qmul.ac.uk/news/latest-news/2026/science-and-engineering/se/new-ai-benchmark-helps-music-generation-systems-better-understand-human-preference.html",
+    "headline": "AI music as co-creator: HappyShrimp partners with Taihe Music Group",
+    "summary": "HappyShrimp 1.0 is positioned not just as a consumer toy but as a co‑creation tool, teaming up with Taihe Music Group for artist collaboration and content development.[8] This signals a shift toward AI as an embedded partner in professional music workflows, reshaping how producers, labels, and sound designers structure creative pipelines, authorship, and rights.",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/08/18/alibaba-launches-ai-music-generation-model-happyshrimp-in-beta",
     "relevance": 90
   },
   {
-    "id": "global_ai_music_usage_40_percent",
+    "id": "minimax_music_3_full_song_generation",
     "category": "SONIC",
-    "headline": "Study: 40% of July 2026 music used AI in production",
-    "summary": "A new survey of over one million tracks reports that roughly 38.5% of music released in July 2026 involved AI, with over 23% fully AI-generated and another 15% mixing AI elements with human editing. For sound and experience designers, this signals a tipping point where AI‑assisted audio workflows are no longer experimental but a dominant production reality, reshaping expectations around authorship, originality, and sonic branding.",
-    "url": "https://www.euronews.com/culture/2026/08/20/alarming-study-reveals-that-almost-40-per-cent-of-music-released-globally-in-july-2026-use",
+    "headline": "MiniMax Music 3.0 generates five-minute songs from concepts",
+    "summary": "MiniMax’s **Music 3.0** model can turn high‑level creative concepts and optional lyrics into complete songs up to five minutes long, with richer arrangements, clearer sound, and more natural vocals.[14] For sonic UX and interactive media, this enables dynamic generative scores that can respond to user behavior, environmental data, or narrative state in real time while preserving production‑grade audio quality.",
+    "url": "https://releasebot.io/updates/minimax",
+    "relevance": 93
+  },
+  {
+    "id": "minimax_music_25_instrumental_capability",
+    "category": "SONIC",
+    "headline": "Instrumental-only AI composition expands sound design workflows",
+    "summary": "MiniMax Music 2.5 introduces dedicated instrumental music generation, allowing creators to produce non‑vocal tracks tailored to specific atmospheres or interaction contexts.[14] This is crucial for product sound design, ambient environments, and spatial audio where vocals can distract, giving designers finer control over generative sonic textures.",
+    "url": "https://releasebot.io/updates/minimax",
     "relevance": 88
   },
   {
-    "id": "imagen2_imagefx_creative_prompt_playground",
+    "id": "imagineart_unified_visual_audio_brand",
     "category": "STR_ART",
-    "headline": "Google’s ImageFX pushes playful prompt-level art control",
-    "summary": "ImageFX, built on Google’s Imagen 2 model, focuses on creative ideation by letting users generate high-quality images through a conversational, experiment‑friendly interface in AI Test Kitchen. For visual designers, it exemplifies a shift from raw model access to structured creative playgrounds, where prompt exploration and iteration patterns become as important a design surface as brush tools or layer stacks.",
-    "url": "https://www.techradar.com/computing/artificial-intelligence/googles-new-generative-ai-aims-to-help-you-get-those-creative-juices-following",
-    "relevance": 87
-  },
-  {
-    "id": "wavespeed_multimodel_image_stack",
-    "category": "STR_ART",
-    "headline": "Meta-tool chains Flux, GPT Images, Ideogram in one canvas",
-    "summary": "WaveSpeedAI aggregates multiple image models—Flux, GPT Image 1.5, Ideogram, Recraft, and others—into a single interface with free credit–based creation. This multi‑model stack is significant for strategic art practice because it treats models as interchangeable materials, inviting workflows where style exploration, brand systems, and visual experimentation traverse model boundaries instead of staying locked into a single engine.",
-    "url": "https://wavespeed.ai/blog/posts/best-free-ai-image-generators-2026/",
-    "relevance": 84
-  },
-  {
-    "id": "unite_ai_imagineart_unified_media_creator",
-    "category": "STR_ART",
-    "headline": "ImagineArt positions AI as unified image–video–audio studio",
-    "summary": "ImagineArt is described as a unified environment for image, video, audio, and brand creation, bundling generation, editing, upscaling, and workflow automation in one tool. This matters for design systems because it blurs the lines between static and time‑based media, suggesting a future where a single generative backbone handles campaign imagery, motion, and sound as variations of the same underlying model‑driven brand logic.",
+    "headline": "ImagineArt unifies image, video, audio, and brand creation",
+    "summary": "The ImagineArt platform is evolving into a unified environment for image, video, audio, and brand asset generation, with built‑in film and ad studios, editing, upscaling, and workflow automation.[4][10] For creative directors and design systems teams, this convergence turns AI into a cross‑modal **brand engine**, enabling coherent visual and sonic identities to be generated, iterated, and deployed from a single control surface.",
     "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 86
-  },
-  {
-    "id": "midjourney_v8_2_fast_hd_iteration",
-    "category": "STR_ART",
-    "headline": "Midjourney V8.2 makes 2K HD art generation 5× faster",
-    "summary": "The latest Midjourney model, V8.2, delivers native 2K HD images with roughly five‑times faster generation than V7, emphasizing speed and iterative refinement at production quality. For art directors and creative coders, this accelerates the sketch‑to‑final loop, making it more feasible to treat generative visuals as a live medium for rapid storyboarding, motion boards, and style exploration during client sessions.",
-    "url": "https://www.aiworthit.com/blog/midjourney-review/",
-    "relevance": 89
-  },
-  {
-    "id": "imagine_image_2_0_grok_experimental_tests",
-    "category": "STR_ART",
-    "headline": "Imagine Image 2.0 tested as Grok’s upgraded image engine",
-    "summary": "SpaceX‑affiliated Imagine Image 2.0 was recently released and independently tested for image quality, illustrating how conversational agents are being extended with specialized generative art subsystems. This is relevant for strategic art because image synthesis is increasingly embedded into broader AI environments, turning chat‑like interfaces into hybrid design studios where dialogue, code, and imagery coexist in a single creative loop.",
-    "url": "https://gigazine.net/news/20260810-grok-imagine-image-2/",
-    "relevance": 82
-  },
-  {
-    "id": "art_generator_landscape_2026_design_stack",
-    "category": "STR_ART",
-    "headline": "2026 art generator ecosystem becomes a modular design stack",
-    "summary": "Recent overviews of 2026’s leading AI art tools highlight a fragmented but complementary ecosystem spanning text‑to‑image, vector‑native design, animation workflows, LoRA training, and community‑driven challenges. For creative systems thinkers, this shows how generative tools are evolving into a modular stack—ideation engines, brand‑safe vector tools, community critique loops—that can be composed into bespoke pipelines rather than adopted as monoliths.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 80
-  },
-  {
-    "id": "best_ai_art_generators_strategic_overview",
-    "category": "STR_ART",
-    "headline": "Comparative mapping of AI art tools reframes creative roles",
-    "summary": "A recent strategic comparison of top AI art generators assigns each tool a distinct niche—from abstract animation to vector workflows, social graphics, and style suggestion engines. This matters for STR_ART because it frames tools as collaborators with specific strengths instead of general “image generators,” encouraging designers to choreograph multiple AIs across a project, much like casting specialists in a studio.",
-    "url": "https://www.jotform.com/ai/best-ai-art-generator/",
-    "relevance": 78
-  },
-  {
-    "id": "adobe_firefly_recoloring_vector_systems",
-    "category": "CX_UX",
-    "headline": "Firefly-powered recolor turns Illustrator into promptable UI",
-    "summary": "Adobe’s Generative Recolor feature brings Firefly AI directly into Illustrator, allowing designers to create and apply complex color themes to vector artwork via natural language descriptions. This is significant for UX and design systems because color tokens and theming become promptable parameters, suggesting future component libraries where states, density, and motion could be manipulated through semantic controls rather than manual tweaks.",
-    "url": "https://www.techradar.com/news/adobe-illustrator-gets-its-first-firefly-ai-tool",
-    "relevance": 85
-  },
-  {
-    "id": "imagineart_mobile_on_device_creation",
-    "category": "CX_UX",
-    "headline": "Mobile-first AI art apps normalize on-the-go concepting",
-    "summary": "Updated mobile apps like ImagineArt position powerful image generation directly on phones, making casual, on‑the‑go concepting part of everyday behavior. For UX designers, this pushes AI creation into micro‑interactions—quick sketches in transit, live co‑creation with clients—which demands new interaction patterns for managing prompts, version history, and rights in highly fluid contexts.",
-    "url": "https://play.google.com/store/apps/details?id=com.vyroai.aiart",
-    "relevance": 77
-  },
-  {
-    "id": "leonardo_ai_image_generator_as_design_workspace",
-    "category": "CX_UX",
-    "headline": "Leonardo.Ai evolves into a workspace for AI-native assets",
-    "summary": "Leonardo.Ai’s image generator is being positioned less as a single‑shot image tool and more as an asset creation workspace with project‑oriented management and refinement. This trajectory is important for CX_UX because it foreshadows AI‑native design environments where versioning, collaboration, and asset reuse are core, aligning generative flows with how teams already manage design systems and component libraries.",
-    "url": "https://play.google.com/store/apps/details?id=ai.leonardo.leonardo",
-    "relevance": 79
-  },
-  {
-    "id": "can_ai_system_be_creative_boden_framework",
-    "category": "META",
-    "headline": "New paper argues AIs lack ‘strong’ creativity by design",
-    "summary": "A recent philosophical paper revisits Margaret Boden’s framework to argue that current AI systems can manage combinatorial creativity but are structurally incapable of transformational creativity, lacking mechanisms for serendipity and a subject position to recognize it. This is pivotal for META because it challenges the rhetoric around “creative AI,” suggesting that what designers experience as novelty is constrained remix, and raising questions about how to intentionally design for surprise, failure, and situated judgment around generative tools.",
-    "url": "https://arxiv.org/abs/2607.20796",
-    "relevance": 98
-  },
-  {
-    "id": "ai_music_creativity_threshold_nature_work",
-    "category": "META",
-    "headline": "Expressive deep-learning music models blur authorship lines",
-    "summary": "Recent work on deep learning for expressive music composition and performance leverages datasets like MAESTRO to generate and interpret nuanced piano performances. While not brand‑new, it anchors current debates about whether expressive timing and dynamics produced by models count as ‘performance’ or ‘simulation,’ forcing composers and instrument designers to re‑examine where human interpretation ends and AI authorship begins.",
-    "url": "https://www.nature.com/articles/s41598-025-13064-6",
-    "relevance": 83
-  },
-  {
-    "id": "ai_music_industry_shift_cultural_implications",
-    "category": "META",
-    "headline": "Industrial-scale AI music use triggers cultural ethics questions",
-    "summary": "The finding that nearly 40% of newly released music now involves AI invites broader ethical and cultural scrutiny around attribution, economic displacement, and the homogenization of sonic aesthetics. For theorists and strategists, this marks a move from hypothetical futures to measurable structural change, making questions of regulation, disclosure, and labor in AI‑mediated creativity newly urgent.",
-    "url": "https://www.euronews.com/culture/2026/08/20/alarming-study-reveals-that-almost-40-per-cent-of-music-released-globally-in-july-2026-use",
     "relevance": 92
   },
   {
-    "id": "cmr_instruction_benchmark_implications_for_ux",
+    "id": "chatgpt_images_20_conversational_editing",
     "category": "CX_UX",
-    "headline": "Multimodal instruction in music hints at future UX patterns",
-    "summary": "CMI-RewardBench’s focus on compositional multimodal instructions—combining text, lyrics, and reference audio to steer generation—previews UI patterns where users orchestrate AI via layered signals instead of single prompts. For CX_UX, this suggests creative tools that accept sketches, moodboards, and rough recordings as coequal inputs, enabling richer, more tacile control surfaces for non‑technical creators.",
-    "url": "https://www.qmul.ac.uk/news/latest-news/2026/science-and-engineering/se/new-ai-benchmark-helps-music-generation-systems-better-understand-human-preference.html",
+    "headline": "Conversational image editing reframes creative UX",
+    "summary": "ChatGPT Images 2.0 supports precise prompts and conversational image editing—users can adjust typography, backgrounds, selections, and aspect ratios through dialog rather than complex tools.[4][9] This conversational UX paradigm reimagines creative interfaces, making advanced art‑direction and layout manipulation accessible to non‑experts while opening space for more fluid, iterative collaboration between human intent and generative systems.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 94
+  },
+  {
+    "id": "dzine_generative_canvas_consistent_characters",
+    "category": "STR_ART",
+    "headline": "Dzine’s generative canvas keeps characters consistent across media",
+    "summary": "Dzine offers a generative canvas with localized editing, consistent characters, image‑to‑video, avatars, and lip sync, aimed at controllable image and video design.[4] Consistency across outputs is a core design challenge for brands and narrative worlds; Dzine’s approach moves AI art from one‑off images toward **systemic character and style control**, critical for transmedia storytelling and design systems.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 91
+  },
+  {
+    "id": "getimg_multi_model_visual_audio_workflows",
+    "category": "STR_ART",
+    "headline": "GetIMG bridges image, video, and music models for workflows",
+    "summary": "GetIMG integrates text and image generation with video and music models, plus asset management, team workspaces, and API access.[4] This positions AI not just as a set of isolated tools but as an orchestrated **pipeline for multimodal production**, enabling studios to design end‑to‑end creative workflows where visuals and sound co‑evolve through shared prompts and constraints.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 90
+  },
+  {
+    "id": "nightcafe_lora_training_community_practice",
+    "category": "STR_ART",
+    "headline": "NightCafe blends LoRA training with community-driven AI art",
+    "summary": "NightCafe combines current image and video models with prompt editing, photo transformation, and LoRA training, embedded in a community sharing and daily challenge environment.[4] This hybrid of tooling and social practice turns AI image systems into evolving cultural spaces where style, ethics, and technique are negotiated collectively, offering a living laboratory for strategic art movements.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 87
+  },
+  {
+    "id": "midjourney_personalization_profiles_moodboards",
+    "category": "STR_ART",
+    "headline": "Midjourney adds profiles and moodboards for directed aesthetics",
+    "summary": "Midjourney’s latest iterations emphasize distinctive artistic and cinematic direction with personalization profiles, moodboards, style references, and web‑based editing and animation workflows.[4][7][9] These features push AI image generation toward **design system thinking**, where aesthetics can be parameterized, stored, and reused as creative primitives rather than isolated outputs.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 93
+  },
+  {
+    "id": "recraft_svg_brand_assets_specialist",
+    "category": "CX_UX",
+    "headline": "Recraft focuses AI on SVG and scalable brand asset creation",
+    "summary": "Recraft is emerging as a specialist for SVG and brand assets, targeting layouts, iconography, and graphic‑design‑oriented outputs rather than purely illustrative art.[7][9] This tight coupling between generative models and vector workflows matters for UX teams who need responsive, accessible, and performance‑friendly interfaces, turning AI into a core component of design system asset generation.",
+    "url": "https://www.itechguides.com/7-best-ai-art-generators-2026-best-tools-for-stunning-digital-art/",
+    "relevance": 89
+  },
+  {
+    "id": "nano_banana_flux_customization_control",
+    "category": "CX_UX",
+    "headline": "FLUX and Nano Banana emphasize controllable custom AI imagery",
+    "summary": "Contemporary image models like Nano Banana and FLUX are framed around customization and control, focusing on prompt adherence, fine‑grained editing, and integration into broader app ecosystems.[3][9][15] For interface and product designers, these models enable tightly governed generative components—such as adaptive illustrations or contextual imagery—while preserving brand and accessibility constraints.",
+    "url": "https://zapier.com/blog/best-ai-image-generator/",
+    "relevance": 86
+  },
+  {
+    "id": "ai_creativity_structural_incapacity_argument",
+    "category": "META",
+    "headline": "New critical paper argues AI is structurally non-creative",
+    "summary": "A recent philosophical paper, drawing on Margaret Boden’s framework, argues that AI systems are structurally incapable of creativity in the strongest sense, despite producing novel, surprising outputs.[12] For designers and artists, this reframes generative systems as powerful **simulation and exploration engines** rather than creative agents, influencing how we attribute authorship, value, and responsibility in AI‑mediated work.",
+    "url": "https://digitalcommons.chapman.edu/presidential_fellows_research/63/",
+    "relevance": 96
+  },
+  {
+    "id": "ai_creativity_moruzzi_edinburgh_explorer",
+    "category": "META",
+    "headline": "Philosophy of AI creativity examines value in machine outputs",
+    "summary": "Philosophical work on AI and creativity from the Edinburgh Research Explorer analyzes how and when AI‑produced artifacts can be considered valuable or creative in human terms.[11] These arguments inform strategic art and UX practice by clarifying whether AI should be treated as a tool, collaborator, or quasi‑author, shaping governance for crediting, curating, and archiving AI‑generated design.",
+    "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/494600418/Moruzzi2025PhiloCompArtificial.pdf",
+    "relevance": 92
+  },
+  {
+    "id": "meta_muse_image_sketch_annotation_editing",
+    "category": "CX_UX",
+    "headline": "Muse Image brings sketch-based editing to mainstream users",
+    "summary": "Muse Image, Meta’s image‑generation model, supports complex prompt interpretation, photo‑based inputs, and direct sketch or annotation editing of generated images inside social apps.[2] This fuses generative art with everyday UX patterns—stories, chats, and social creation—turning AI into an ambient design layer where users perform micro‑acts of art direction without traditional tools.",
+    "url": "https://www.reuters.com/technology/meta-expands-generative-ai-tools-with-muse-image-rollout-2026-07-07/",
     "relevance": 88
+  },
+  {
+    "id": "best_free_image_generators_practice_landscape",
+    "category": "STR_ART",
+    "headline": "Free AI image tools reshape entry-level creative practice",
+    "summary": "Recent surveys of free AI image generators highlight an ecosystem where high‑quality visual production is available without payment, dramatically expanding who can participate in digital art.[1][3][13] For strategic art and education, this democratization shifts the focus from tool access to **conceptual and critical literacy**, as creative leverage now resides in prompt craft, curation, and system understanding.",
+    "url": "https://wavespeed.ai/blog/posts/best-free-ai-image-generators-2026/",
+    "relevance": 82
   }
 ]
