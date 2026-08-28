@@ -1,146 +1,130 @@
 [
   {
-    "id": "minimax_music3_open_weights_song_model",
-    "category": "SONIC",
-    "headline": "MiniMax Music3 turns lyrics into 5-minute stereo songs",
-    "summary": "An open-weights text-to-music model that generates complete songs up to five minutes long with vocals and full arrangement. This matters for design because it moves music generation closer to a controllable production workflow rather than a novelty prompt toy.",
-    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
+    "id": "meta_ux_principles_human_ai_2026",
+    "category": "CX_UX",
+    "headline": "New UX framework codifies principles for human–AI interaction",
+    "summary": "A recent research paper proposes a formal framework of user experience principles for human–AI systems, highlighting controllability, explainability, ethics, privacy, transparency, and collaboration as core design requirements. This matters for UX because it pushes AI products beyond interface polish toward **system-level behaviors** that respect agency and trust, giving design teams a vocabulary and structure for next‑generation human–AI workflows.",
+    "url": "https://arxiv.org/html/2607.19941v1",
+    "relevance": 93
+  },
+  {
+    "id": "cx_ux_self_assembling_interfaces_breon",
+    "category": "CX_UX",
+    "headline": "Interfaces that design themselves: generative UX layouts",
+    "summary": "Recent UX research describes AI‑driven interfaces that assemble themselves per user, with layout, content depth, and interaction model generated dynamically from role, behavior, and context instead of one static screen for everyone. For UX teams, this reframes design systems as **rule engines and data-informed scaffolds**, where designers orchestrate adaptive patterns rather than fixed screens, redefining what “responsive” means in AI‑native products.",
+    "url": "https://research.breon.ai/",
     "relevance": 95
   },
   {
-    "id": "minimax_music3_huggingface_comfyui_release",
-    "category": "SONIC",
-    "headline": "Music3 lands in open workflows on Hugging Face and ComfyUI",
-    "summary": "The release makes an end-to-end music model accessible in composable creator pipelines, not just in a closed demo. That is important for sound designers and experimental musicians who want local, remixable, and iteratable generation.",
-    "url": "https://kie.ai/blog/minimax-music-3-release",
-    "relevance": 92
-  },
-  {
-    "id": "byte_dance_unified_audio_model",
-    "category": "SONIC",
-    "headline": "ByteDance unifies voice, SFX, ambience, and music in one model",
-    "summary": "Researchers described a single generative audio system that can handle multi-speaker voice synthesis, environmental soundscapes, sound effects, and music from one natural-language prompt. This is a major creative shift because it suggests unified audio world-building instead of separate tools for each layer of sound.",
-    "url": "https://www.techtimes.com/articles/323058/20260804/bytedance-unified-audio-ai-collapses-voice-sound-music-one-model-swantale.htm",
-    "relevance": 94
-  },
-  {
-    "id": "adobe_firefly_audio_general_availability",
-    "category": "SONIC",
-    "headline": "Adobe Firefly opens music, speech, and SFX generation",
-    "summary": "Adobe moved its audio features from limited release to general availability, adding music, speech, and sound-effect generation to Firefly. For designers, this matters because audio becomes part of a broader creative system rather than a separate specialist workflow.",
-    "url": "https://siliconangle.com/2026/08/20/adobe-expands-generative-ai-audio-with-firefly-music-speech-and-sound-effects/",
-    "relevance": 90
-  },
-  {
-    "id": "adobe_firefly_audio_launch_korean_press",
-    "category": "SONIC",
-    "headline": "Firefly’s audio tools emphasize licensed, use-ready output",
-    "summary": "Adobe’s audio rollout frames generation around original, license-safe tracks tailored to video length and mood. That matters for creative production because it reduces friction between ideation, editing, and final publishing.",
-    "url": "https://en.sedaily.com/technology/2026/08/21/adobe-firefly-launches-music-and-sound-effect-generation",
-    "relevance": 86
-  },
-  {
-    "id": "alibaba_happyshrimp_audio_beta",
-    "category": "SONIC",
-    "headline": "Alibaba’s HappyShrimp pushes prompt-first music reasoning",
-    "summary": "Coverage suggests Alibaba’s model reasons over structure before generating music, mapping prompt intent to harmony and arrangement. That is notable for audio design because it points toward more directed compositional control rather than purely stochastic output.",
-    "url": "https://thursdai.news/topics/audio",
-    "relevance": 83
-  },
-  {
-    "id": "omni_rust_daw_ai_sample_generation",
-    "category": "SONIC",
-    "headline": "A Rust DAW adds native AI sample generation",
-    "summary": "OMNi v0.1 is described as an early DAW with built-in AI sample generation and image-to-sound synthesis. This is compelling for sound design because it collapses composition, synthesis, and visual-to-audio translation into one experimental workstation.",
-    "url": "https://www.aimusicpreneur.com/ai-tools-news/category/news/",
+    "id": "str_art_meta_muse_image_sketch_editing",
+    "category": "STR_ART",
+    "headline": "Muse Image fuses prompt, photo, and sketch into live generative art",
+    "summary": "Meta’s Muse Image model now interprets complex prompts, uses photos as inputs, and lets users edit generated images via direct sketches or annotations inside mainstream social apps. For strategic art and design practice, this accelerates a shift from static text-to-image to **iterative co-creation**, where everyday users engage in layered visual directing—blurring the line between casual content creation and art direction workflows.",
+    "url": "https://www.reuters.com/technology/meta-expands-generative-ai-tools-with-muse-image-rollout-2026-07-07/",
     "relevance": 88
   },
   {
-    "id": "ai_musicpreneur_firefly_music_speech_sfx_roundup",
-    "category": "SONIC",
-    "headline": "A wave of AI audio tools is converging on creator pipelines",
-    "summary": "The roundup highlights multiple releases in one week across music, speech, and SFX generation, including open-weight and subscription-based models. For design culture, the key development is not one model but the rapid normalization of AI audio inside creator workflows.",
-    "url": "https://www.aimusicpreneur.com/ai-tools-news/category/news/",
-    "relevance": 78
-  },
-  {
-    "id": "drs2026_visual_accessibility_ai_generated_interfaces",
-    "category": "CX_UX",
-    "headline": "AI-generated interfaces still struggle with visual accessibility",
-    "summary": "A design research paper found that ChatGPT and Copilot can generate accessible interfaces only when prompts are well structured, and still show low competence in execution. This matters because it challenges the assumption that generative design tools automatically improve accessibility.",
-    "url": "https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/344/",
-    "relevance": 91
-  },
-  {
-    "id": "design_science_framework_multidimensional_evaluation",
-    "category": "META",
-    "headline": "A new framework for evaluating multidimensional AI design systems",
-    "summary": "This August 2026 paper proposes a design-science framework for multidimensional evaluation, signaling a shift from single-metric AI assessment to richer design criteria. It matters for creative AI because usefulness, aesthetics, and human fit need to be judged together.",
-    "url": "https://etasr.com/index.php/ETASR/article/view/19540",
-    "relevance": 82
-  },
-  {
-    "id": "eu_ai_act_disclosure_as_ui",
-    "category": "CX_UX",
-    "headline": "Disclosure becomes a UX pattern under new AI rules",
-    "summary": "A design brief argues that EU AI Act transparency obligations turn disclosure into an interface responsibility, especially for emotion recognition, deepfakes, and public-interest text generation. That is important because compliance is becoming part of interaction design rather than a legal afterthought.",
-    "url": "https://joindrip.ai/careers/product-ux-design/briefs/week-of-2026-07-27",
-    "relevance": 84
-  },
-  {
-    "id": "india_accessibility_standards_as_enforceable_design",
-    "category": "CX_UX",
-    "headline": "Accessibility shifts from guidance to enforceable product design",
-    "summary": "The same brief notes proposed Indian ICT accessibility standards that would require formal accessibility conformance reporting across digital products and content. For design systems, that means accessible AI-assisted interfaces need evidence, not just intent.",
-    "url": "https://joindrip.ai/careers/product-ux-design/briefs/week-of-2026-07-27",
-    "relevance": 79
-  },
-  {
-    "id": "holly_herndon_mat_dryhurst_ai_art_the_atlantic",
+    "id": "str_art_leonardo_multimodal_creation",
     "category": "STR_ART",
-    "headline": "Holly Herndon and Mat Dryhurst frame AI art as cultural infrastructure",
-    "summary": "This feature centers on artists treating AI not as a shortcut for images but as a medium for new institutions, datasets, and collective practices. It matters because it reframes generative art as an artistic movement with social and political stakes.",
-    "url": "https://www.theatlantic.com/magazine/2026/08/ai-art-holly-herndon-mat-dryhurst/687619/",
+    "headline": "Leonardo.Ai evolves into a multimodal generative design studio",
+    "summary": "Leonardo.Ai, recently updated, positions itself as a powerful AI art generator for both images and videos, offering world‑class models for rapid visual creation on mobile. For design and creative teams, this represents the maturation of **AI-first production pipelines**, where moodboards, concept frames, and motion sketches can be generated and iterated in minutes, turning ideation and prototyping into a continuous, generative loop.",
+    "url": "https://play.google.com/store/apps/details?id=ai.leonardo.leonardo",
+    "relevance": 85
+  },
+  {
+    "id": "str_art_imagineart_unified_brand_creation",
+    "category": "STR_ART",
+    "headline": "ImagineArt links image, video, audio into unified brand creation",
+    "summary": "ImagineArt is highlighted as an AI platform that unifies image, video, audio, and brand‑kit workflows, extending beyond single‑asset generation toward integrated creative systems. For strategic art and brand design, this hints at **AI-native brand engines** where visual identity, motion language, and sonic signatures can be generated coherently, enabling designers to prototype entire brand worlds rather than isolated visuals.",
+    "url": "https://www.unite.ai/ai-art-generators/",
     "relevance": 90
   },
   {
-    "id": "unified_creative_ai_tool_roundup",
-    "category": "STR_ART",
-    "headline": "Unified image-video-audio tools blur the creative boundary",
-    "summary": "A 2026 roundup highlights tools that combine image, video, and audio generation inside one creative environment. The design significance is the collapse of medium boundaries, which changes how visual artists prototype, iterate, and package work.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 76
+    "id": "sonic_alibaba_happyshrimp_end_to_end_songs",
+    "category": "SONIC",
+    "headline": "HappyShrimp 1.0 generates fully produced songs from text",
+    "summary": "Alibaba’s HappyShrimp 1.0 can generate complete songs—from melody and arrangement to lyrics and vocals—based solely on text prompts describing mood, story, or style. This is crucial for sound design and music because it treats music as a **language with grammar and semantics**, enabling non‑musicians to author complex, multi‑track compositions and challenging established roles in songwriting, production, and audio branding.",
+    "url": "https://finance.biggo.com/news/ea8c7c88-7632-4cb1-b1d4-72f92cebad6f",
+    "relevance": 96
   },
   {
-    "id": "zapier_ai_art_generator_2026_overview",
+    "id": "sonic_minimax_music3_open_weights",
+    "category": "SONIC",
+    "headline": "MiniMax-Music3 offers open-weights, full-length text-to-music",
+    "summary": "MiniMax’s Music3 model releases open weights and code for generating up to five‑minute, 32 kHz stereo songs from structured lyrics and detailed music descriptions. For sonic designers and experimental musicians, this opens **research-grade control over AI composition pipelines**, enabling custom training, bespoke genre systems, and integration into interactive artworks, installations, and adaptive soundscapes.",
+    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3/",
+    "relevance": 94
+  },
+  {
+    "id": "sonic_google_lyria_35_flow_music_controls",
+    "category": "SONIC",
+    "headline": "Lyria 3.5 brings richer melodic and vocal control to creators",
+    "summary": "Google’s Lyria 3.5 rollout in Flow Music improves melody generation, lyric writing, vocal realism, and prompt adherence while adding finer creative controls and editing tools. This is significant for sound and UX because it pushes AI music toward **editable, directed composition** rather than one‑shot outputs, aligning AI audio tools with the iterative workflows of professional music production and interactive media design.",
+    "url": "https://turbo.gadgets360.com/en/ai/google-lyria-3-5-ai-music-model-roll-out-flow-music-news-11843032",
+    "relevance": 92
+  },
+  {
+    "id": "sonic_news_roundup_lyria3_suno_v5_minimax",
+    "category": "SONIC",
+    "headline": "AI music models converge on structure-aware, end-to-end tracks",
+    "summary": "Recent coverage of AI music tools highlights Google’s Lyria, MiniMax’s Music3, Suno v5, and Alibaba’s HappyShrimp as models that reason over song structure, harmonic progressions, and multi‑section prompts before generating audio. For sound design and creative coding, this marks a shift to **structure-aware generative music**, enabling designers to specify intros, verses, choruses, and bridges as compositional building blocks in interactive experiences.",
+    "url": "https://thursdai.news/topics/audio",
+    "relevance": 97
+  },
+  {
+    "id": "sonic_elevenmusic_composer_section_editing",
+    "category": "SONIC",
+    "headline": "Section-level editing arrives in AI music creation",
+    "summary": "ElevenMusic’s new Composer feature allows creators to rewrite a chorus or individual song sections without regenerating the entire track. This is key for sonic UX because it introduces **granular, non-destructive editing paradigms** in AI music, aligning generative systems with traditional DAW workflows and enabling hybrid processes where human composers sculpt AI‑generated material at the level of narrative and structure.",
+    "url": "https://www.aimusicpreneur.com/ai-tools-news/category/news/",
+    "relevance": 89
+  },
+  {
+    "id": "str_art_ai_art_generator_landscape_2026",
     "category": "STR_ART",
-    "headline": "AI art tools now center controllability and workflow integration",
-    "summary": "The overview emphasizes tools with editing, style control, asset management, and cross-media workflows rather than simple image generation. That matters for creative practice because the frontier is shifting from prompt novelty to art direction and production control.",
+    "headline": "2026 landscape of AI art tools reframes design workflows",
+    "summary": "Recent roundups of top AI art generators (Midjourney, Dzine, Dream Machine, Getty’s tools, etc.) show a maturing ecosystem spanning cinematic image direction, brand-oriented canvases, and image‑to‑video pipelines. For strategic art and UX, this signals that **tool choice is becoming a design decision**, where each model encodes a different aesthetic bias and interaction grammar, forcing studios to curate AI stacks as part of their creative identity.",
     "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 74
+    "relevance": 86
   },
   {
-    "id": "gpt_image_monthly_theme_gallery_august_2026",
-    "category": "STR_ART",
-    "headline": "Community image experiments keep pushing multimodal aesthetics",
-    "summary": "The community gallery reflects active experimentation around multimodal image generation and audio-image capability. While less formal than a research paper, it is useful as a signal of evolving aesthetic norms in AI-native image culture.",
-    "url": "https://community.openai.com/t/gpt-image-monthly-theme-gallery-august-2026-theme-is-returning/1378298?page=62",
-    "relevance": 68
-  },
-  {
-    "id": "ai_art_movement_thought_piece",
+    "id": "cx_ux_human_ai_principles_ethics_privacy",
     "category": "META",
-    "headline": "AI art is being argued as a new medium, not just a tool",
-    "summary": "The strongest philosophical thread in the coverage is that AI creativity is increasingly treated as a medium with its own institutions, methods, and authorship questions. That matters because the debate has moved beyond output quality to the ontology of creative agency itself.",
-    "url": "https://www.theatlantic.com/magazine/2026/08/ai-art-holly-herndon-mat-dryhurst/687619/",
-    "relevance": 87
+    "headline": "Human–AI UX principles foreground ethics and agency",
+    "summary": "The new framework for human–AI UX explicitly elevates ethics, privacy, transparency, and collaboration as central design requirements alongside usability. Philosophically, this pushes AI design beyond feature-level convenience toward **normative questions about power, autonomy, and responsibility**, embedding ethical reflection directly into interaction patterns rather than treating it as post‑hoc governance.",
+    "url": "https://arxiv.org/html/2607.19941v1",
+    "relevance": 91
   },
   {
-    "id": "recent_ai_accessibility_compliance_design_shift",
+    "id": "meta_music_as_language_happyshrimp",
+    "category": "META",
+    "headline": "Treating music as language reshapes AI creativity debates",
+    "summary": "HappyShrimp’s designers describe their model as treating music like a special language with grammar, semantics, and context to generate end‑to‑end tracks. This framing matters philosophically because it positions AI not just as a synthesizer of patterns, but as an agent operating in **symbolic, meaning-bearing spaces**, intensifying questions about authorship, intentionality, and whether linguistic metaphors adequately capture non‑verbal creative domains.",
+    "url": "https://finance.biggo.com/news/ea8c7c88-7632-4cb1-b1d4-72f92cebad6f",
+    "relevance": 88
+  },
+  {
+    "id": "str_art_prompt_to_director_shift_breon",
+    "category": "META",
+    "headline": "From prompt writer to creative director of machines",
+    "summary": "Current UX and design research notes that generative tools have moved from party tricks to “seats at the table,” with designers now briefing, directing, and editing machine output like a creative director works with a team. This is philosophically important because it frames AI as a **quasi-colleague in the studio**, forcing reconsideration of labor, expertise, and the boundary between tool and collaborator in artistic practice.",
+    "url": "https://research.breon.ai/",
+    "relevance": 92
+  },
+  {
+    "id": "cx_ux_generative_design_systems_personalization",
     "category": "CX_UX",
-    "headline": "AI design is being pulled toward auditability and proof",
-    "summary": "Recent accessibility and disclosure developments suggest that AI experiences now need traceable decisions, documented conformance, and readable explanations. For UX teams, this elevates documentation and evidence into core design artifacts.",
-    "url": "https://joindrip.ai/careers/product-ux-design/briefs/week-of-2026-07-27",
-    "relevance": 77
+    "headline": "AI-powered UX systems personalize depth and interaction model",
+    "summary": "Emerging AI UX patterns describe interfaces that modulate content depth and interaction style per user based on their role and behavior, rather than offering a single canonical flow. For customer and user experience, this points toward **living design systems** where interaction grammar is negotiated between user and model, demanding new methods for documenting, testing, and governing highly personalized journeys.",
+    "url": "https://research.breon.ai/",
+    "relevance": 93
+  },
+  {
+    "id": "str_art_sketch_based_image_editing_muse",
+    "category": "STR_ART",
+    "headline": "Sketch-over prompts turn AI image models into live canvases",
+    "summary": "Muse Image’s ability to interpret sketches and annotations as edits to generated or existing images points toward hybrid workflows where text, drawing, and photography co‑direct outputs in real time. This is pivotal for visual design because it restores **gestural control** to AI art, allowing analog mark‑making and spatial thinking to guide models, and opening new possibilities for rapid storyboarding, layout exploration, and speculative design.",
+    "url": "https://www.reuters.com/technology/meta-expands-generative-ai-tools-with-muse-image-rollout-2026-07-07/",
+    "relevance": 90
   }
 ]
