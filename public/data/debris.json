@@ -1,138 +1,146 @@
 [
   {
-    "id": "google_flow_lyria_music_spaces",
-    "category": "SONIC",
-    "headline": "Google Flow turns Lyria 3.5 into a modular AI music studio",
-    "summary": "Google’s Flow Music Spaces now combines the Lyria 3.5 model with tools for stem splitting, lyric writing, image and video generation in one collaborative workspace. This matters for sound design and music UX because it shifts generative audio from single-shot prompts to an integrated environment where “vibe coding” and interaction patterns can be designed as part of the creative process.",
-    "url": "https://www.digitalmusicnews.com/2026/07/29/google-ai-all-in-one-music-studio/",
+    "id": "google_nai_adaptive_interfaces",
+    "category": "CX_UX",
+    "headline": "Google’s NAI reframes accessibility as adaptive design",
+    "summary": "Google Research’s Natively Adaptive Interfaces proposes multimodal AI that adjusts to a user’s needs in real time, developed with the accessibility community. It matters because it treats accessibility not as a checklist but as an interaction paradigm that can reshape design systems and product logic.",
+    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
     "relevance": 96
   },
   {
-    "id": "lyria_3_5_creative_control",
-    "category": "SONIC",
-    "headline": "Lyria 3.5 boosts musicality and control for AI-composed tracks",
-    "summary": "Lyria 3.5 focuses on better melody, lyric generation, vocal realism, and prompt adherence, making AI songs more structurally coherent and emotionally convincing. For music and sound designers, this increases the reliability of AI as a compositional partner, enabling iterative workflows where fine-grained control over arrangement, voice, and feel becomes part of the design toolkit.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/lyria-3-5/",
-    "relevance": 94
-  },
-  {
-    "id": "alibaba_happyshrimp_end_to_end_music",
-    "category": "SONIC",
-    "headline": "HappyShrimp 1.0 introduces end-to-end AI songwriting pipeline",
-    "summary": "Alibaba’s HappyShrimp model generates lyrics, melody, harmonic progression, arrangement, and vocals in a single pass, reasoning over the prompt to plan song structure before producing audio. This is critical for creative practice because it treats songs as designed systems, aligning AI music generation with compositional thinking and opening new ways for artists to prototype complete sonic narratives rapidly.",
-    "url": "https://thursdai.news/topics/audio",
-    "relevance": 97
-  },
-  {
-    "id": "breeze_tts_2_expressive_voice",
-    "category": "SONIC",
-    "headline": "Breeze TTS 2 raises the bar for open expressive synthetic voices",
-    "summary": "Breeze TTS 2’s open weights and top performance in voice quality benchmarks signal a leap in accessible, high-fidelity voice synthesis. For UX and sound designers, this expands the palette for character voices, narrative interfaces, and sonic branding, allowing custom vocal personas that can be tightly tuned to an experience’s emotional and interaction design.",
-    "url": "https://thursdai.news/topics/audio",
-    "relevance": 92
-  },
-  {
-    "id": "adobe_firefly_music_sfx_release",
-    "category": "SONIC",
-    "headline": "Firefly adds generative music, speech, and sound effects for creators",
-    "summary": "Adobe Firefly’s official audio features let users generate music beds, speech, and sound effects tailored to video length and mood under a general license. This integrates AI sound design into mainstream creative workflows, making it easier for designers and editors to treat audio as a malleable design material rather than a static asset, and to craft cohesive audiovisual experiences without complex DAW setups.",
-    "url": "https://siliconangle.com/2026/08/20/adobe-expands-generative-ai-audio-with-firefly-music-speech-and-sound-effects/",
-    "relevance": 93
-  },
-  {
-    "id": "google_flow_mobile_gen_art_video",
-    "category": "STR_ART",
-    "headline": "Google Flow brings advanced image and video generation to mobile",
-    "summary": "Flow now exposes Google’s latest generative models for images and video directly on phones, turning mobile devices into high-end generative art terminals. For visual designers and artists, this supports situated, in-the-field creation where prompts, photos, and sketches can be remixed instantly, reshaping how creative direction, storyboarding, and rapid prototyping happen across contexts.",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.labs.whisk",
-    "relevance": 90
-  },
-  {
-    "id": "imagineart_unified_media_creation",
-    "category": "STR_ART",
-    "headline": "ImagineArt unifies image, video, audio, and brand creation",
-    "summary": "ImagineArt positions generative models for images, video, and audio alongside brand kits and workflow automation. This is significant for design systems because it links visual identity, motion, and sound in a single generative stack, encouraging designers to think of brand as a multi-sensory, parameterized space rather than a static style guide, and to prototype campaigns holistically.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 91
-  },
-  {
-    "id": "dzine_generative_canvas_consistent_characters",
-    "category": "STR_ART",
-    "headline": "Dzine’s generative canvas enables controllable visual storytelling",
-    "summary": "Dzine focuses on controllable image and video design with localized edits, consistent characters, avatars, and lip-sync on a visual canvas. This matters for narrative design and sequential art because it turns generative models into layout-aware tools, allowing designers to maintain character continuity, timing, and framing across scenes as if directing actors on a storyboarded set.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 95
-  },
-  {
-    "id": "nightcafe_lora_training_community_practice",
-    "category": "STR_ART",
-    "headline": "NightCafe blends LoRA training with community-driven AI art",
-    "summary": "NightCafe combines diverse models with LoRA training and daily challenges, creating a social environment for evolving styles and techniques. For strategic art and design culture, this turns AI tools into communal studios where aesthetic norms and workflows are co-developed, highlighting how creative practice is increasingly shaped by shared model-tuning and prompt experimentation.",
-    "url": "https://www.unite.ai/ai-art-generators/",
+    "id": "stark_claude_accessibility_scanning",
+    "category": "CX_UX",
+    "headline": "Claude-based accessibility scanning enters the design workflow",
+    "summary": "A recent AI UX roundup highlights a workflow where designers scan Figma files, URLs, source code, and Storybook libraries for accessibility issues inside a chat-based interface. The significance is the collapse of design review and remediation into one conversational loop, which could change how teams ship accessible interfaces.",
+    "url": "https://www.aiuxdesign.guide/news/this-week-in-aiux-aug-24-agent-onboarding-trust-patterns-and-accessibility-scanning",
     "relevance": 88
   },
   {
-    "id": "chatgpt_images_selection_based_editing",
+    "id": "microsoft_agent_onboarding_patterns",
     "category": "CX_UX",
-    "headline": "Conversational image editing refines AI-assisted design workflows",
-    "summary": "ChatGPT Images 2.0 introduces selection-based edits, typography, and transparent backgrounds through dialogue, making complex image adjustments accessible via natural language. This impacts UX and design practice by reframing interface patterns around conversation, allowing non-experts to perform advanced compositing and layout changes while designers focus on higher-level compositional intent.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 89
-  },
-  {
-    "id": "getimg_multi_model_media_pipeline",
-    "category": "STR_ART",
-    "headline": "GetIMG coordinates image, video, and music models in one workspace",
-    "summary": "GetIMG offers a single environment for generating and editing images, video, and music with asset management and team workspaces. This is important for cross-media design because it treats generative models as modular components in a shared pipeline, enabling multidisciplinary teams to design cohesive campaigns where visual motion and sound are iteratively tuned together.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 90
-  },
-  {
-    "id": "midjourney_moodboards_style_reference",
-    "category": "STR_ART",
-    "headline": "Midjourney evolves into a cinematic moodboard and style engine",
-    "summary": "Recent Midjourney tooling emphasizes personalization profiles, moodboards, and style references alongside animation workflows. For strategic art and creative direction, this shifts AI imaging from one-off outputs to a persistent style infrastructure where art directors can codify visual languages, rapidly prototype sequences, and treat models as living design repositories.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 93
-  },
-  {
-    "id": "ai_art_generator_landscape_2026",
-    "category": "META",
-    "headline": "2026 AI art generator ecosystem reshapes creative practice",
-    "summary": "Surveys of 2026 AI art tools show a landscape spanning abstract animation, document-centric visuals, brand-oriented design, and community platforms. This meta-view matters for philosophy of design because it reveals how creativity is being redistributed across tools, with artists increasingly curating, orchestrating, and constraining model behavior rather than producing every stroke directly.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 86
-  },
-  {
-    "id": "creart_mobile_ai_image_generator",
-    "category": "CX_UX",
-    "headline": "CreArt turns casual photography into instant generative remixes",
-    "summary": "CreArt’s mobile AI image generator lets users create stylized art and pictures from everyday photos with minimal friction. This is significant for UX and visual culture because it normalizes generative transformation as part of routine image capture, blurring the boundary between raw documentation and designed imagery and prompting new expectations for immediacy in visual editing interfaces.",
-    "url": "https://play.google.com/store/apps/details?id=ai.aiart.aiartgenerator.creart",
+    "headline": "Agent onboarding patterns shift toward trust-first UX",
+    "summary": "This week’s AI UX coverage points to clearer agent onboarding: show value before setup, break configuration into smaller steps, and surface capabilities early. The design relevance is that AI agents are forcing a new interaction grammar for trust, disclosure, and progressive commitment.",
+    "url": "https://www.aiuxdesign.guide/news/this-week-in-aiux-aug-24-agent-onboarding-trust-patterns-and-accessibility-scanning",
     "relevance": 84
   },
   {
-    "id": "firefly_audio_integrated_creative_suite",
+    "id": "design_systems_ai_readability_requirement",
     "category": "CX_UX",
-    "headline": "Firefly’s audio tools embed sound design into design-system thinking",
-    "summary": "By adding music, voice, and effects to an existing generative visual suite, Firefly lets designers approach audio as another dimension of component libraries and brand systems. This changes UX and design operations by making it feasible to spec sonic guidelines alongside typography and color, and to generate default soundscapes that align tightly with interaction patterns.",
-    "url": "https://en.sedaily.com/technology/2026/08/21/adobe-firefly-launches-music-and-sound-effect-generation",
+    "headline": "AI-readability becomes a formal design-system requirement",
+    "summary": "A recent design-systems roundup describes teams making AI-readability an explicit system requirement alongside accessibility. That is notable because it suggests design tokens, content structure, and component semantics are being optimized not just for humans, but for agentic tooling as well.",
+    "url": "https://www.linkedin.com/pulse/august-24-30-round-up-design-systems-agents-ux-process-neeman-gm3sc",
+    "relevance": 82
+  },
+  {
+    "id": "ux_constructive_conflicts_ai_agents",
+    "category": "CX_UX",
+    "headline": "AI agents used to stage constructive conflict in novice design",
+    "summary": "A 2026 interaction-design paper studies using AI agents to create constructive conflict for novice designers. This matters because it turns AI from a drafting assistant into a cognitive prompt that can challenge assumptions and improve reconsideration during the design process.",
+    "url": "https://arxiv.org/abs/2608.04166",
+    "relevance": 89
+  },
+  {
+    "id": "human_operator_embodied_ai_wearable",
+    "category": "META",
+    "headline": "Embodied AI wearable explores machine-mediated motor control",
+    "summary": "MIT’s Human Operator prototype uses electrical muscle stimulation to move a user’s hand, presented as an experimental exploration of embodied AI and augmentation. It is compelling as a philosophical object because it blurs authorship, agency, and the boundary between assistance and control.",
+    "url": "https://www.moneycontrol.com/technology/mit-hackathon-team-builds-ai-powered-wearable-that-can-move-a-user-s-hand-using-electrical-stimulation-article-14012277.html",
+    "relevance": 94
+  },
+  {
+    "id": "ai_creativity_beats_humans_study",
+    "category": "META",
+    "headline": "Large study says AI can outperform average humans on creativity tests",
+    "summary": "A large 2026 study reports that generative AI can beat the average human on certain creativity tests. The bigger implication is not that AI is ‘more creative’ in a human sense, but that creativity metrics, originality, and evaluation norms are being destabilized.",
+    "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
     "relevance": 91
   },
   {
-    "id": "philosophical_shift_ai_as_co_designer",
+    "id": "cfp_ai_art_ethics",
     "category": "META",
-    "headline": "AI as co-designer: from tool to agent in creative workflows",
-    "summary": "Across tools like Lyria 3.5, HappyShrimp, Midjourney, and Dzine, AI systems increasingly handle structure, style, and continuity, not just isolated outputs. Philosophically, this reframes AI from a passive instrument to an active collaborator that co-determines form, raising questions about authorship, agency, and what it means to ‘design’ when model behavior becomes part of the creative medium.",
-    "url": "https://thursdai.news/topics/audio",
+    "headline": "AI, art, and ethics remain a live research frontier",
+    "summary": "A current call for papers on AI, Art, and Ethics signals continued pressure on questions of authorship, labor, consent, and cultural value. Even as a CFP, it reflects where the field is headed: from tool adoption toward deeper theory about creative systems and social consequence.",
+    "url": "https://philevents.org/event/show/130206",
+    "relevance": 74
+  },
+  {
+    "id": "jarvishub_canvas_native_creative_workflows",
+    "category": "STR_ART",
+    "headline": "JarvisHub targets long-horizon canvas-native creative work",
+    "summary": "JarvisHub is described as an open harness for canvas-native creative tasks, focusing on realistic, long-horizon workflows rather than single-shot generation. That matters for art and design because it points toward AI systems that can participate in iterative composition instead of merely producing outputs.",
+    "url": "https://arxiv.org/html/2607.23588v1",
+    "relevance": 92
+  },
+  {
+    "id": "fragmenta_open_source_audio_to_music_pipeline",
+    "category": "SONIC",
+    "headline": "Fragmenta opens the full text-to-audio pipeline to musicians",
+    "summary": "Metacreation Lab’s Fragmenta combines dataset creation, LoRA training, generation, audio editing, and live performance in one open-source workflow built on Stable Audio 3. It matters because it moves generative audio from a consumer feature into a controllable instrument for experimental musicians and sonic artists.",
+    "url": "https://www.metacreation.net/2026-workshop-series",
     "relevance": 98
   },
   {
-    "id": "ux_future_conversational_creative_interfaces",
-    "category": "CX_UX",
-    "headline": "Conversational AI interfaces reshape creative tool affordances",
-    "summary": "The spread of chat-based image editing and integrated creative workspaces suggests a future where prompts and dialogue become primary control surfaces for complex design actions. This has deep UX implications: interaction patterns move from menus and timelines to semantic requests and negotiation with models, requiring new thinking about discoverability, feedback, and shared mental models in creative software.",
-    "url": "https://www.unite.ai/ai-art-generators/",
+    "id": "minimax_music3_open_weights_release",
+    "category": "SONIC",
+    "headline": "MiniMax-Music3 pushes open-weight full-song generation",
+    "summary": "MiniMax-Music3 is reported as an open-weights model that generates complete songs up to five minutes long from lyrics and prompt-like creative direction. The design significance is its move toward higher-level musical authorship, where structure, arrangement, and vocal delivery are generated together.",
+    "url": "https://www.unite.ai/suno-studio-2-0-turns-played-midi-into-a-prompt-for-ai-generated-audio/",
     "relevance": 95
+  },
+  {
+    "id": "suno_studio_2_0_midi_prompt_workstation",
+    "category": "SONIC",
+    "headline": "Suno Studio 2.0 folds MIDI editing into generative audio",
+    "summary": "Suno Studio 2.0 adds MIDI recording, editing, a wavetable synth, automation, and higher-fidelity stem separation, making AI generation feel more like a DAW than a standalone generator. This is important because it shows the interface pattern for music AI shifting from prompt-only output to interactive composition.",
+    "url": "https://www.unite.ai/suno-studio-2-0-turns-played-midi-into-a-prompt-for-ai-generated-audio/",
+    "relevance": 93
+  },
+  {
+    "id": "adobe_firefly_audio_general_availability",
+    "category": "SONIC",
+    "headline": "Adobe Firefly turns generative audio into a production pipeline",
+    "summary": "Adobe’s Firefly audio release adds music, speech, and sound effects generation with commercial-use positioning and editable controls. The key design question is how licensing, controllability, and multimodal editing reshape creative workflows for motion, branding, and sound design.",
+    "url": "https://www.siliconangle.com/2026/08/20/adobe-expands-generative-ai-audio-with-firefly-music-speech-and-sound-effects/",
+    "relevance": 87
+  },
+  {
+    "id": "swantale_unified_audio_generation",
+    "category": "SONIC",
+    "headline": "SwanTale collapses voice, sound, and music into one model",
+    "summary": "ByteDance researchers’ SwanTale is described as a unified system for multi-speaker speech, environmental sound, sound effects, and music from a single natural-language prompt. It matters because it suggests a future where audio post-production becomes a single generative surface rather than a chain of specialized tools.",
+    "url": "https://www.techtimes.com/articles/323058/20260804/bytedance-unified-audio-ai-collapses-voice-sound-music-one-model-swantale.htm",
+    "relevance": 97
+  },
+  {
+    "id": "vocalrender_score_native_singing_voice_synthesis",
+    "category": "SONIC",
+    "headline": "Score-native singing synthesis narrows the gap with composition",
+    "summary": "VocalRender proposes score-native singing voice synthesis for real-world composition. The relevance is high because it links notation and performance more tightly, reducing friction between composing, arranging, and producing synthetic vocals.",
+    "url": "https://arxiv.org/abs/2607.27768",
+    "relevance": 88
+  },
+  {
+    "id": "mmgenre_multi_genre_singing_voice_benchmark",
+    "category": "SONIC",
+    "headline": "A new benchmark exposes singing-voice synthesis across genres",
+    "summary": "MMGenre benchmarks singing voice synthesis across multiple genres using an automatic pipeline for genre-aligned score construction. That matters because better evaluation can steer models away from one-size-fits-all singing and toward stylistically credible vocal design.",
+    "url": "https://arxiv.org/html/2607.06986v1",
+    "relevance": 76
+  },
+  {
+    "id": "collaborative_animation_pedagogy_generative_ai_vibe_coding",
+    "category": "STR_ART",
+    "headline": "Generative AI enters animation pedagogy through collaborative creation",
+    "summary": "A Frontiers paper describes a collaborative creation framework for experimental animation pedagogy integrating generative AI and vibe coding. It matters for strategic art because it treats AI as a partner in visual storytelling and teaching, not merely as an image generator.",
+    "url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2026.1940505",
+    "relevance": 80
+  },
+  {
+    "id": "aies_2026_hci_microsoft_research",
+    "category": "META",
+    "headline": "Microsoft Research’s HCI track underscores AI’s social stakes",
+    "summary": "Microsoft Research’s HCI area highlights AIES 2026 and related work on human-computer interaction. The significance is that the center of gravity for AI is increasingly moving from model capability toward governance, interface ethics, and the human consequences of deployment.",
+    "url": "https://www.microsoft.com/en-us/research/research-area/human-computer-interaction/",
+    "relevance": 70
   }
 ]
