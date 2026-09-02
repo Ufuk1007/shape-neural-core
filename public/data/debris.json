@@ -1,122 +1,138 @@
 [
   {
-    "id": "mureka_v9_5_emotional_ai_music",
-    "category": "SONIC",
-    "headline": "Mureka V9.5 pushes AI songs toward human‑level emotional depth",
-    "summary": "Mureka’s new V9.5 AI music model focuses on richer emotional expression, more cohesive arrangements, and lifelike vocals, treating \"musical identity\" as a core design parameter rather than an afterthought.[2] This matters for sound design and music UX because it shifts AI tracks from generic backing audio toward authored-feeling works that can carry narrative, mood, and brand personality in films, games, and interactive experiences.",
-    "url": "https://agentic.ai/news",
-    "relevance": 95
-  },
-  {
-    "id": "runway_solaris_interface_world_model",
-    "category": "CX_UX",
-    "headline": "Runway Solaris generates live app UIs as an \"interface world model\"",
-    "summary": "Runway’s Solaris is described as an \"Interface World Model\" that generates apps and websites visually, frame by frame, in real time as users interact, built on the Gen‑4.5 video model.[12] For UX and design systems, this is a radical move away from code‑first workflows toward behavior‑driven, visual synthesis, suggesting future design tools where interaction patterns, layouts, and micro‑animations emerge from live AI models rather than static design libraries.",
-    "url": "https://futuretools.io/news",
-    "relevance": 97
-  },
-  {
-    "id": "google_flow_mobile_ai_creative_studio",
+    "id": "google_pics_ai_workspace_creator",
     "category": "STR_ART",
-    "headline": "Google Flow turns the phone into a multimodal AI art studio",
-    "summary": "Google Flow is positioned as an AI creative studio app where users can create and refine images and videos on mobile using Google’s latest generative models.[3] This compresses a full creative pipeline into a handheld interface, altering how visual artists, motion designers, and creators prototype work in situ—capturing, transforming, and remixing material directly in their everyday environments.",
-    "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.labs.whisk",
-    "relevance": 90
-  },
-  {
-    "id": "adobe_firefly_music_speech_sfx_ga",
-    "category": "SONIC",
-    "headline": "Firefly makes AI music, speech, and SFX standard creative primitives",
-    "summary": "Adobe Firefly’s audio suite—Generate Music, Generate Speech, and Generate Sound Effects—has moved from beta to general availability, backed by the Firefly Music model and a \"universally licensed\" output regime.[11][15] For sound and experience designers, this turns sonic assets into on‑demand, editable building blocks integrated across Adobe’s tools, foregrounding audio as a first‑class design material alongside images and video.",
-    "url": "https://itwire.com/business-it-news/business-software/adobe-makes-firefly-a-full-audio-studio-and-the-licence-is-the-actual-product",
-    "relevance": 93
-  },
-  {
-    "id": "chatgpt_images_2_0_design_workflows",
-    "category": "STR_ART",
-    "headline": "ChatGPT Images 2.0 deepens conversational image design workflows",
-    "summary": "ChatGPT Images 2.0 introduces a new image generation model embedded directly into a conversational interface.[5] This is significant for visual design practice because it entwines prompt engineering, critique, and iteration into a single dialogic loop, hinting at studio workflows where designers co‑author images with an AI that simultaneously acts as canvas, assistant, and critique partner.",
-    "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-    "relevance": 88
-  },
-  {
-    "id": "grok_imagine_advanced_image_editing",
-    "category": "STR_ART",
-    "headline": "Grok Imagine fuses generative art with rich post‑editing tools",
-    "summary": "The latest Grok Imagine update adds a full photo editor plus tools like Restyle, Smart Resize, Background Remover, emoji and merch generators, and interface element creation in stylized aesthetics such as pixel art and cel‑shading.[13] This bridges pure image generation with structured design workflows, making it easier for artists and product designers to move from raw outputs into polished assets, style systems, and UI components.",
-    "url": "https://www.ixbt.com/news/2026/07/31/grok-ilona-maska-poluchil-redaktor-foto-i-massu-novyh-instrumentov-teper-mozhno-menjat-stil-izobrazhenij-odnim-nazhatiem.html",
-    "relevance": 89
-  },
-  {
-    "id": "happyshrimp_natural_language_music_creation",
-    "category": "SONIC",
-    "headline": "HappyShrimp 1.0 lets anyone author full songs via casual language",
-    "summary": "Alibaba’s HappyShrimp 1.0 AI music model lets users drive the entire pipeline—lyrics, composition, arrangement, and vocals—using everyday natural language instead of expert tags, producing high industrial‑grade tracks.[10] This redesign of the creative interface lowers barriers for non‑musicians while forcing sound and experience designers to rethink authorship, collaboration, and audience participation in music‑driven products and environments.",
-    "url": "https://www.chinaz.com/ainews/30405.shtml",
+    "headline": "Google Pics injects AI imaging directly into Workspace flows",
+    "summary": "Google Pics is rolling out as a pro-level AI image creation and object-level editing tool embedded in Google Workspace, letting designers generate and iteratively edit visuals from prompts or existing assets inside their everyday productivity stack.[14] This matters for design because AI art generation becomes a native part of collaborative documents and slides, shifting visual ideation from external tools into live, shared environments.",
+    "url": "https://workspaceupdates.googleblog.com/2026/09/google-pics-brings-pro-level-ai-image-creation-and-editing-to-Google-Workspace.html?m=1",
     "relevance": 92
   },
   {
-    "id": "splash_canvas_procedural_ai_painting",
+    "id": "breon_ai_self_assembling_interfaces",
+    "category": "CX_UX",
+    "headline": "Research maps rise of self-assembling, AI-driven UX layouts",
+    "summary": "Breon.ai’s UX trends research describes interfaces that ‘assemble themselves’ per user, with layout, content depth, and interaction patterns generated from role, behavior, and context instead of one static screen for everyone.[4] For UX designers, this signals a move from designing fixed screens to designing systems of constraints, guardrails, and feedback loops that AI uses to orchestrate dynamic experiences.",
+    "url": "https://research.breon.ai/",
+    "relevance": 96
+  },
+  {
+    "id": "breon_ai_creative_director_workflow",
+    "category": "CX_UX",
+    "headline": "Designers become AI creative directors, not just makers",
+    "summary": "The same Breon.ai study reports that 94% of designers are now using generative tools, reframing their role as briefing, directing, and editing machine output rather than manually producing every asset.[4] This shifts UX and product design toward curatorial and orchestration skills—design systems, prompt taxonomies, and review pipelines—over traditional artifact-centric workflows.",
+    "url": "https://research.breon.ai/",
+    "relevance": 90
+  },
+  {
+    "id": "ai_image_generation_ui_ux_trends_paper",
+    "category": "CX_UX",
+    "headline": "Academic study links AI image trends to evolving UI/UX roles",
+    "summary": "A recent research paper analyzes how emerging AI image generation trends are reshaping UI and UX design, emphasizing changing designer responsibilities in AI-enhanced workflows.[2] The work is significant for design teams because it frames AI imagery not just as a production shortcut but as a structural shift in how interfaces are conceptualized, prototyped, and maintained.",
+    "url": "https://www.ijsat.org/research-paper.php?id=4136",
+    "relevance": 85
+  },
+  {
+    "id": "openrouter_audio_model_ranking",
+    "category": "SONIC",
+    "headline": "Open audio model rankings spotlight new AI sound tools",
+    "summary": "A freshly updated ranking of audio generation models highlights systems like GPT Audio Mini and other leading-edge neural audio generators, with usage data updated into September 2026.[11] For sound designers and UX teams, this provides a living map of which AI engines are practically usable today for voice UX, sonic branding, and generative soundscapes rather than just lab demos.",
+    "url": "https://openrouter.ai/collections/audio-models",
+    "relevance": 88
+  },
+  {
+    "id": "suno_studio_generative_daw",
+    "category": "SONIC",
+    "headline": "Suno Studio merges AI music generation with pro DAW editing",
+    "summary": "Suno has introduced Suno Studio, a generative digital audio workstation that fuses its latest v5 AI music model with multi-track editing, stems generation, and support for user-uploaded audio.[13] This hybrid tool is critical for creative practice because it treats AI as a collaborator inside a familiar DAW-like environment, enabling producers and sound designers to iterate between human arrangement and machine-generated musical elements.",
+    "url": "https://www.musicbusinessworldwide.com/suno-launches-its-own-daw-after-introducing-most-powerful-model-yet/",
+    "relevance": 93
+  },
+  {
+    "id": "suno_v5_musician_collaborator_claim",
+    "category": "META",
+    "headline": "AI model that 'composes like a musician' challenges authorship",
+    "summary": "Suno describes its v5 model as one that 'composes like a musician' and 'adapts like a collaborator,' positioning AI as an intentional agent in creative workflows.[13] This framing forces philosophical questions about authorship, creative credit, and the ontological boundary between tool and collaborator in contemporary music practice.",
+    "url": "https://www.musicbusinessworldwide.com/suno-launches-its-own-daw-after-introducing-most-powerful-model-yet/",
+    "relevance": 89
+  },
+  {
+    "id": "google_pics_object_level_editing_paradigm",
     "category": "STR_ART",
-    "headline": "Splash Canvas mixes painting physics with live ML and AI dialogue",
-    "summary": "Splash Canvas is a browser‑based abstract painting experience that combines procedural painting physics, real‑time machine learning, and generative AI dialogue powered by Gemini and Chirp.[7] This hybrid approach turns the artwork into an evolving conversation with both material behavior and an AI agent, suggesting new interaction patterns for generative art where gesture, simulation, and language co‑compose the final piece.",
-    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/splash-canvas/",
+    "headline": "Object-level AI editing normalizes granular promptable canvases",
+    "summary": "Google Pics allows precise, object-based editing inside generated or imported images, driven by natural language instructions.[14] For visual and interaction designers, this points toward canvases where every element is both selectable and semantically addressable by language, blurring the boundary between design tools and conversational agents.",
+    "url": "https://workspaceupdates.googleblog.com/2026/09/google-pics-brings-pro-level-ai-image-creation-and-editing-to-Google-Workspace.html?m=1",
     "relevance": 91
   },
   {
-    "id": "meta_muse_image_ai_effects",
+    "id": "ai_art_generators_unified_brand_media",
     "category": "STR_ART",
-    "headline": "Muse Image brings sketch‑based AI editing to Instagram and WhatsApp",
-    "summary": "Meta’s Muse Image can interpret complex prompts, take photos as inputs, and let users edit generated images via sketches or annotations, powering new AI effects for Instagram Stories and chat experiences.[1] For visual communication and social design, this embeds nuanced generative editing directly into everyday platforms, turning casual user actions—doodles, notes, selfies—into rich design operations.",
-    "url": "https://www.reuters.com/technology/meta-expands-generative-ai-tools-with-muse-image-rollout-2026-07-07/",
-    "relevance": 87
+    "headline": "Unified AI platforms blend image, video, and brand creation",
+    "summary": "Recent reviews spotlight tools like ImagineArt and GetIMG that integrate image, video, audio, and brand asset creation into single AI-first platforms, while offering workflows for teams and automation.[9] This convergence matters for strategic art because it turns brand systems into dynamic, generative entities, where identities can be programmatically instantiated across media in response to context.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 84
   },
   {
-    "id": "openart_wan_3_0_unlimited_generations",
-    "category": "STR_ART",
-    "headline": "OpenArt Wan 3.0 expands unlimited image generation for creators",
-    "summary": "OpenArt’s update enabling unlimited generations with its Wan 3.0 model for certain tiers signals a push toward high‑volume iterative image exploration.[4] For generative design practice, this encourages continuous, combinatorial experimentation across style, composition, and concept, where designers move from individual images to evolving visual ecosystems and rapid variant testing.",
-    "url": "https://openart.ai/whats-new",
-    "relevance": 82
-  },
-  {
-    "id": "ai_creativity_structural_critique",
-    "category": "META",
-    "headline": "New paper argues AI is structurally incapable of \"strong\" creativity",
-    "summary": "A recent philosophical paper, drawing on Margaret Boden’s framework, claims current AI systems cannot achieve creativity in the strongest sense, even if they exhibit novelty, surprise, and value within constrained domains.[8] This matters for art and design theory because it challenges prevailing narratives about \"creative AI\" and pushes practitioners to distinguish between generative novelty and genuinely transformative, world‑reframing creativity when designing AI‑mediated practices.",
-    "url": "https://digitalcommons.chapman.edu/presidential_fellows_research/63/",
-    "relevance": 94
-  },
-  {
-    "id": "ai_tldr_pentagon_genai_portal_design_implications",
+    "id": "dzine_generative_canvas_control",
     "category": "CX_UX",
-    "headline": "Pentagon’s GenAI portal hints at secure AI UX for high‑risk domains",
-    "summary": "The Pentagon’s generative AI portal has added new models such as ChatGPT‑based and Grok‑based systems for government use.[9] While not a consumer product, it raises critical UX and design questions about how AI interfaces must adapt for high‑stakes, security‑sensitive contexts—balancing transparency, controllability, and traceability in decision‑support tools.",
-    "url": "https://ai-tldr.dev/",
-    "relevance": 78
-  },
-  {
-    "id": "firefly_audio_licensing_as_design_material",
-    "category": "META",
-    "headline": "Firefly’s \"universally licensed\" audio reframes copyright as UX",
-    "summary": "Firefly’s position that its AI‑generated music, speech, and sound effects carry a general license designed to avoid takedowns makes licensing itself part of the creative product.[11][15] This has philosophical and practical implications for creative ecosystems, foregrounding legal affordances and friction‑free reuse as design parameters in how AI audio tools shape collaboration, ownership, and distribution.",
-    "url": "https://en.sedaily.com/technology/2026/08/21/adobe-firefly-launches-music-and-sound-effect-generation",
+    "headline": "Generative canvases offer controllable AI layout and motion",
+    "summary": "Tools like Dzine emphasize a 'generative canvas' approach with localized editing, consistent characters, and image-to-video workflows designed for brand-oriented work.[9] This signals a shift from prompt-only generation to spatially controllable AI layouts, giving designers a new interaction pattern where they guide generative systems through direct manipulation and constraints rather than purely textual descriptions.",
+    "url": "https://www.unite.ai/ai-art-generators/",
     "relevance": 86
   },
   {
-    "id": "zapier_ai_art_generators_design_landscape",
+    "id": "chatgpt_images_conversational_editing",
     "category": "CX_UX",
-    "headline": "Survey of 20+ AI art tools maps an emerging design tool ecology",
-    "summary": "A recent overview of more than 20 AI art generators—including ChatGPT, Ideogram, OpenArt, Leonardo, Firefly, and others—highlights a fragmented but rapidly evolving ecosystem of creative interfaces.[6] For UX and design systems, this comparative lens reveals converging patterns (prompt‑based workflows, style presets) and emerging differentiators (control granularity, licensing, multimodal input) that will influence how designers choose and combine AI tools in their practice.",
+    "headline": "Conversational image editing reframes design as dialogue",
+    "summary": "Systems like ChatGPT Images 2.0 enable iterative image creation and editing through natural language, including selection-based edits and aspect-ratio changes managed via conversation.[9] For UX and product design, this foregrounds a future where designers conduct dialogic sessions with tools—negotiating constraints, styles, and corrections—rather than executing stepwise manipulations alone.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 87
+  },
+  {
+    "id": "nightcafe_community_lora_training",
+    "category": "META",
+    "headline": "Community LoRA training blurs line between users and model authors",
+    "summary": "Platforms like NightCafe now offer users the ability to train LoRA variants and participate in community-driven challenges, effectively turning audiences into co-authors of stylistic priors.[9] This raises theoretical questions about where creative agency resides—within individual artists, collective communities, or the evolving weights of shared generative models.",
+    "url": "https://www.unite.ai/ai-art-generators/",
+    "relevance": 82
+  },
+  {
+    "id": "google_pics_enterprise_creative_governance",
+    "category": "META",
+    "headline": "Enterprise AI imaging forces new creative governance models",
+    "summary": "Google Pics’ rollout with tiered access, usage limits, and business/education plans brings generative imaging into regulated enterprise contexts.[14] This compels organizations to formalize policies around AI-generated imagery, from licensing and content safety to how much AI-originated material is acceptable in customer-facing artifacts, reshaping creative governance at scale.",
+    "url": "https://workspaceupdates.googleblog.com/2026/09/google-pics-brings-pro-level-ai-image-creation-and-editing-to-Google-Workspace.html?m=1",
+    "relevance": 83
+  },
+  {
+    "id": "ai_design_tool_landscape_2026",
+    "category": "STR_ART",
+    "headline": "Evolving AI art toolscape pushes toward multi-modal studio stacks",
+    "summary": "Recent surveys of AI art tools highlight a landscape where platforms like Midjourney, Adobe Firefly, and Leonardo increasingly emphasize integration, brand-safe outputs, and animation workflows.[1][9] This is essential for strategic art because it suggests the emergence of AI 'studio stacks' rather than single-purpose generators, affecting how creative teams architect their pipelines.",
     "url": "https://zapier.com/blog/ai-art-generator/",
     "relevance": 80
   },
   {
-    "id": "firefly_image_model_retirement",
-    "category": "META",
-    "headline": "Retirement of Firefly Image 3 shows AI models as ephemeral design media",
-    "summary": "Adobe’s phased removal and retirement of the Firefly Image 3 model across Photoshop and other apps underscores how core creative engines in AI design tools can be swapped or deprecated within months.[14] This raises philosophical and practical questions for artists and designers about working in a medium where the underlying aesthetic and behavioral substrate is transient, versioned, and controlled by platform decisions.",
-    "url": "https://tech-insider.org/how-to-use-adobe-firefly-2026/",
-    "relevance": 83
+    "id": "ai_image_trends_impacting_information_density",
+    "category": "CX_UX",
+    "headline": "AI imagery reshapes information density and layout conventions",
+    "summary": "The AI Image Generation UI/UX paper notes that AI-generated visuals influence how designers handle information hierarchy and layout in interfaces, as imagery becomes cheaper and more abundant.[2] For UX, this means rethinking when to deploy visuals, how to ensure accessibility and clarity, and how to prevent interfaces from becoming noisy just because AI makes visuals effortless.",
+    "url": "https://www.ijsat.org/research-paper.php?id=4136",
+    "relevance": 78
+  },
+  {
+    "id": "audio_model_rankings_voice_ux",
+    "category": "CX_UX",
+    "headline": "Ranked audio models hint at next-gen voice and sonic UX",
+    "summary": "The updated audio model rankings surface not only music generators but also text-to-speech and voice models optimized for interactional use.[11] This is crucial for CX/UX because it enables designers to prototype and test rich voice personas, adaptive earcons, and responsive soundscapes informed by which models are performant in real-world deployments.",
+    "url": "https://openrouter.ai/collections/audio-models",
+    "relevance": 88
+  },
+  {
+    "id": "picsart_cli_terminal_creative_workflows",
+    "category": "STR_ART",
+    "headline": "Command-line creative tools bridge dev and design practices",
+    "summary": "Picsart’s CLI brings image, video, and audio generation into the terminal, exposing generative creativity as a scriptable operation for developers and technical artists.[15] This supports new cybernetic design patterns where designers can automate batches of assets, procedurally explore variations, and embed generative routines directly into build pipelines.",
+    "url": "https://picsart.com/",
+    "relevance": 81
   }
 ]
