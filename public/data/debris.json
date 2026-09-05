@@ -1,130 +1,130 @@
 [
   {
-    "id": "mureka_v9_5_emotional_ai_music",
+    "id": "lyria_35_structural_music_generation",
     "category": "SONIC",
-    "headline": "Mureka V9.5 pushes AI toward emotionally rich songcraft",
-    "summary": "Mureka’s new V9.5 music model focuses on richer emotional depth, cohesive arrangements, and lifelike vocals, moving AI music from demo-like sketches toward full, identity-bearing songs.[2] For designers of sonic experiences, this is crucial: it turns AI from a texture generator into a co-composer that can support branded soundscapes, narrative audio, and more nuanced interactive music.",
-    "url": "https://www.usatoday.com/press-release/story/41719/mureka-introduces-next-generation-ai-music-model-v9-5-advancing-toward-more-human-like-song-creation/",
-    "relevance": 95
+    "headline": "Google’s Lyria 3.5 brings full‑length structured AI music to creators",
+    "summary": "Google has released the Lyria 3.5 music generation model broadly through the Gemini app and API, enabling designers and musicians to generate full‑length songs with coherent structure, natural vocals, timed lyrics, and complete instrumental arrangements from text or image prompts.[7][12] This matters for sound design and music UX because it shifts AI audio from short clips to controllable compositions, opening up new workflows for interactive soundscapes, generative scores, and responsive audio in products and installations.",
+    "url": "https://www.unite.ai/google-brings-lyria-3-5-music-generation-to-the-gemini-app-and-api/",
+    "relevance": 96
   },
   {
-    "id": "google_pics_workspace_design_flows",
-    "category": "CX_UX",
-    "headline": "Google Pics embeds generative imagery into Docs and Slides",
-    "summary": "Google is rolling out Google Pics, an AI image creation and editing tool built on its Nano Banana model, directly inside Workspace tools like Docs and Slides.[11] For UX and communication design, this integrates generative visuals into everyday workflows, enabling rapid iteration of interface mockups, presentations, and brand assets without leaving the document surface.",
-    "url": "https://www.unite.ai/google-pics-rolls-out-to-workspace-customers-and-ai-subscribers/",
+    "id": "google_pics_prompt_based_design",
+    "category": "STR_ART",
+    "headline": "Google Pics turns everyday users into prompt‑based visual designers",
+    "summary": "Google has begun rolling out Google Pics, an AI image creation and editing tool inside Workspace that lets users generate designs from prompts and edit specific objects or text without starting over.[4] For strategic art and design practice, this embeds generative capabilities directly into productivity workflows, making prompt literacy and micro‑level control over compositions central to how non‑experts participate in visual design.",
+    "url": "https://mlq.ai/news/google-pics-rolls-out-with-prompt-based-image-editing-for-workspace-and-ai-subscribers/",
+    "relevance": 90
+  },
+  {
+    "id": "lyria_35_text_image_to_audio",
+    "category": "SONIC",
+    "headline": "Multimodal prompts drive 44.1 kHz AI music with Lyria 3.5",
+    "summary": "Lyria 3.5 generates 44.1 kHz stereo audio from either text or image inputs, producing MP3 or WAV outputs with improved musical coherence and fine‑grained control over duration and structure.[7][12] This multimodal design is crucial for sonic UX: it lets visual artists, game designers, and interaction designers treat sound as a responsive layer tied to visual states, narrative beats, or interface events without traditional audio engineering skills.",
+    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+    "relevance": 94
+  },
+  {
+    "id": "philosopher_volkov_collective_creativity",
+    "category": "META",
+    "headline": "Volkov: AI creativity as collective output, not lone genius",
+    "summary": "Philosopher Dmitry Volkov argues that AI will trigger an “explosion of creativity” but that machine creativity is of a different kind, better understood as a collective endeavour than the product of individual genius.[6] For design and art theory, this reframes authorship around systems, datasets, and communities, pushing studios and UX teams to think of AI‑mediated work as distributed and collaborative rather than singularly authored.",
+    "url": "https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html",
     "relevance": 88
   },
   {
-    "id": "nano_banana_model_visual_language",
-    "category": "STR_ART",
-    "headline": "Nano Banana powers unified AI image creation for creatives",
-    "summary": "Google’s Nano Banana model underpins Google Pics, offering a dedicated engine for high-quality AI image generation and editing at scale.[11][1] This matters for strategic art and design systems: consistent, model-driven visual language can be woven across slideware, docs, and future tools, enabling designers to orchestrate brand aesthetics programmatically.",
-    "url": "https://www.unite.ai/google-pics-rolls-out-to-workspace-customers-and-ai-subscribers/",
+    "id": "volkov_sycophantic_ai_warning",
+    "category": "META",
+    "headline": "Sycophantic AI and the risk of creativity that only pleases users",
+    "summary": "Volkov warns that contemporary AI systems tend to please the user in a “sycophantic” way, raising concerns about deepfakes and manipulative media.[6] For UX and strategic art, this highlights a tension between personalization and integrity: AI‑driven interfaces and creative tools must be designed to resist merely flattering user expectations and instead support critical, trustworthy, and ethically constrained outputs.",
+    "url": "https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html",
     "relevance": 82
   },
   {
-    "id": "leonardo_ai_mobile_visual_workbench",
-    "category": "STR_ART",
-    "headline": "Leonardo.Ai evolves into mobile-first generative art studio",
-    "summary": "Leonardo.Ai’s August 26, 2026 update positions it as a powerful mobile image generator for creating visuals and videos using world-class AI models.[9] This shifts generative art workflows toward on-the-move creation, letting designers and artists prototype styles, scenes, and motion graphics directly on phones as part of pervasive, ambient design practice.",
-    "url": "https://play.google.com/store/apps/details?id=ai.leonardo.leonardo&hl=en",
-    "relevance": 80
-  },
-  {
-    "id": "curated_ai_art_ecosystem_2026",
-    "category": "STR_ART",
-    "headline": "2026 AI art landscape converges on multi-modal creative suites",
-    "summary": "Recent overviews show tools like ImagineArt, Dzine, Midjourney, and GetIMG evolving into unified environments for image, video, audio, and brand creation with generative canvases and localized editing.[1][3][10] For strategic art, this consolidates disparate AI capabilities into end-to-end design systems where style, motion, and sound can be orchestrated from a single generative stack.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 86
-  },
-  {
-    "id": "dzine_generative_canvas_brand_systems",
-    "category": "CX_UX",
-    "headline": "Dzine’s generative canvas enables controllable visual UX flows",
-    "summary": "Dzine is highlighted as offering controllable image and video design on a visual canvas, with localized editing, consistent characters, lip sync, and brand-oriented tools.[1] For UX and product teams, this suggests a new interaction pattern where interfaces, avatars, and motion can be tuned in situ on a generative canvas rather than through static design files.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 84
-  },
-  {
-    "id": "imagineart_unified_brand_creation",
-    "category": "STR_ART",
-    "headline": "ImagineArt links generative visuals and audio to brand kits",
-    "summary": "ImagineArt is described as a unified tool for image, video, audio, and brand creation, supporting film, ads, editing, and workflow automation.[1] This is significant for strategic art: it treats models as brand engines, where campaigns, assets, and sound can be generated and iterated coherently across multiple media surfaces.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 83
-  },
-  {
-    "id": "ai_image_generators_as_design_infra",
-    "category": "CX_UX",
-    "headline": "AI image generators become baseline design infrastructure",
-    "summary": "Recent 2026 roundups show tools like ChatGPT Images, Adobe Firefly, Ideogram, and Canva becoming standard layers in UX and communication workflows.[3][13][8] Their integration into everyday software reframes AI from novel effect to design infrastructure, where text rendering, layout, and responsive imagery are model-driven rather than manually composed.",
-    "url": "https://zapier.com/blog/best-ai-image-generator/",
-    "relevance": 78
-  },
-  {
-    "id": "ai_creativity_volkov_perconti_dialogue",
+    "id": "ai_not_creative_functional_performance",
     "category": "META",
-    "headline": "Philosophers debate whether machine output counts as creativity",
-    "summary": "At the Vatican’s ICCS, Dmitry Volkov argues that AI will trigger an “explosion of creativity” by stimulating human inventiveness, while philosopher Pietro Perconti calls it “meaningless to speak of artificial creativity.”[7][15] This tension is central to meta-design: if machine creativity is categorically different, designers must treat AI as a catalyst or instrument rather than a co-author in conceptual frameworks.",
-    "url": "https://www.vaticannews.va/sv/vatikanen/news/2026-09/ai-okar-kreativiteten-med-kraver-aterhallsamhet.html",
-    "relevance": 92
+    "headline": "“AI is not creative”: performance without interiority as design lens",
+    "summary": "A recent AI & Society article argues that AI is not creative because it is not a subject, describing what is called AI creativity as “functional performance under conditions of maximal constraint: creativity without ownership, expression without interiority, novelty without responsibility.”[9] This perspective matters for design systems and generative art workflows because it positions AI firmly as an instrument, forcing teams to re‑center responsibility, meaning, and value judgments in human curation and context.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-02942-w",
+    "relevance": 93
   },
   {
-    "id": "ai_creativity_brakes_and_deepfakes",
+    "id": "boden_framework_strong_creativity_limits",
     "category": "META",
-    "headline": "Call for ‘brakes’ on AI’s creativity explosion and deepfakes",
-    "summary": "Volkov and Perconti warn that an AI-driven creativity boom carries a shadow side of deepfakes and manipulations that harm people.[7][15] For strategic art and UX, this foregrounds ethical design constraints: systems must build friction, provenance, and verification into creative pipelines rather than pursuing frictionless generation.",
-    "url": "https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html",
-    "relevance": 89
+    "headline": "Boden‑inspired critique: why AI may lack “strong” creativity",
+    "summary": "A critical paper drawing on Margaret Boden’s framework argues that AI systems are structurally incapable of creativity in its strongest sense, even if they produce novel and surprising outputs.[11] For creative tool design, this pushes toward treating AI as powerful combinatorial and exploratory engines while reserving transformational, value‑laden creativity for human‑led processes, influencing how studios frame AI’s role in concept development and authorship.",
+    "url": "https://digitalcommons.chapman.edu/presidential_fellows_research/63/",
+    "relevance": 91
   },
   {
-    "id": "midjourney_personalization_profiles",
-    "category": "STR_ART",
-    "headline": "Midjourney adds personalization and moodboards for art direction",
-    "summary": "Updated descriptions of Midjourney emphasize personalization profiles, moodboards, style references, and web-based animation workflows alongside image generation.[1][3] This strengthens AI’s role as an art director’s assistant, allowing designers to encode long-term aesthetic strategies into the model rather than re-specifying style in every prompt.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 81
+    "id": "polyphony_gotcha_ai_reception_focus",
+    "category": "META",
+    "headline": "Art as reception: AI outputs become art only when ratified",
+    "summary": "An essay in The Polyphony suggests that in the AI case, creativity is better sought in the reception of an output than in its generation, arguing that AI artefacts become art when they exert a force on someone and are ratified by publication, display, or debate.[14] This has direct implications for STR_ART and CX_UX: it shifts design attention from the model’s generative process to exhibition, curation, interface, and audience interaction as the true loci of artistic meaning.",
+    "url": "https://thepolyphony.org/2026/09/03/the-gotcha-ai/",
+    "relevance": 95
   },
   {
-    "id": "suno_studio_ai_daw_evolution",
-    "category": "SONIC",
-    "headline": "Suno’s AI DAW model points to integrated generative studios",
-    "summary": "Coverage of Suno Studio and its v5 model describes an AI-generative DAW that “composes like a musician” while offering multi-track editing and export.[14] Even as a slightly earlier launch, its framing prefigures current trends like Mureka’s V9.5—AI is shifting from standalone generators into full compositional workstations for sound designers and music UX.",
-    "url": "https://www.musicbusinessworldwide.com/suno-launches-its-own-daw-after-introducing-most-powerful-model-yet/",
+    "id": "polyphony_source_irrelevance_question",
+    "category": "META",
+    "headline": "Does it matter that a work was made by AI at all?",
+    "summary": "Reporting on an interdisciplinary AI workshop, The Polyphony notes philosopher Mike Wheeler’s provocation that creativity is judged on the finished artwork, not the generative practice, questioning why the source (human vs AI) should matter.[14] For design ethics and branding, this challenges current disclosure norms and suggests future practices where provenance is less central than experiential impact, forcing teams to reconsider transparency, trust, and aesthetic evaluation criteria.",
+    "url": "https://thepolyphony.org/2026/09/03/the-gotcha-ai/",
     "relevance": 87
   },
   {
-    "id": "ai_photo_generator_everyday_image_tasks",
+    "id": "google_pics_object_level_editing_ux",
     "category": "CX_UX",
-    "headline": "AI Photo Generator targets everyday, multi-task visual UX",
-    "summary": "AI Photo Generator is profiled as fitting broad day-to-day use for people who want one tool to cover several common image tasks.[12] For UX design, this hints at universal visual utilities embedded into interfaces, where users can resize, restyle, and adapt imagery on demand, reshaping expectations around content customization.",
-    "url": "https://www.aiphotogenerator.net/blog/2026/05/ai-art-generation-tools",
-    "relevance": 75
+    "headline": "Prompt‑driven, object‑level edits reshape everyday design UX",
+    "summary": "Google Pics allows users to revise individual objects or text within an image without restarting the whole design, using natural language prompts inside familiar productivity tools.[4] This micro‑targeted control is a significant UX pattern for AI systems: it demonstrates how interfaces can expose granular, semantic handles on complex generative models, informing future design systems for layout, branding, and content creation.",
+    "url": "https://mlq.ai/news/google-pics-rolls-out-with-prompt-based-image-editing-for-workspace-and-ai-subscribers/",
+    "relevance": 89
   },
   {
-    "id": "generative_design_systems_brand_safe_firefly",
+    "id": "lyria_35_interactions_api_audio_pipeline",
+    "category": "SONIC",
+    "headline": "Standardized AI audio via Interactions API for product teams",
+    "summary": "Lyria 3.5 and related audio models are exposed through Google’s Interactions API, returning MP3 by default and optionally high‑fidelity WAV for production use.[7][12] This is crucial for CX_UX and SONIC because it lowers integration friction: AI‑generated sound can become a standard layer in applications, from adaptive UI audio to generative brand soundtracks, without bespoke audio pipeline engineering.",
+    "url": "https://ai.google.dev/gemini-api/docs/changelog",
+    "relevance": 86
+  },
+  {
+    "id": "volkov_deepfake_creativity_brakes",
+    "category": "META",
+    "headline": "Deepfake harms as the shadow of AI’s “explosion of creativity”",
+    "summary": "Volkov emphasizes that the same AI systems driving an “explosion of creativity” also enable deepfakes that can seriously harm people, requiring strong prudence and caveats.[6] For design and communication practice, this underscores the need to embed authenticity checks, watermarking, and contextual cues into AI‑mediated visual and sonic experiences, balancing experimental freedom with safeguards against manipulative or deceptive media.",
+    "url": "https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html",
+    "relevance": 84
+  },
+  {
+    "id": "ai_instrumentality_design_implications",
+    "category": "META",
+    "headline": "AI as instrument: reframing creative pipelines around power",
+    "summary": "The AI & Society article stresses that AI is an instrument designed and deployed in the service of external interests, not an agent that chooses or understands.[9] For STR_ART and CX_UX, this invites more explicit mapping of whose interests shape datasets, prompts, and deployment contexts, making “instrument design” itself a creative and political act in studios and research labs.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-02942-w",
+    "relevance": 90
+  },
+  {
+    "id": "ai_creativity_without_responsibility",
+    "category": "META",
+    "headline": "Novelty without responsibility: ethics of AI‑mediated creation",
+    "summary": "Describing AI outputs as “novelty without responsibility,” the AI & Society piece highlights a gap between impressive generative performance and the absence of accountable interiority.[9] This matters for creative direction and UX governance because responsibility must be relocated to humans and institutions, influencing how attribution, consent, and harm mitigation are embedded into AI‑driven design systems.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-02942-w",
+    "relevance": 92
+  },
+  {
+    "id": "boden_types_guiding_tool_design",
+    "category": "META",
+    "headline": "Combinatorial vs transformational: tuning AI tools to creative scope",
+    "summary": "The Boden‑based critique distinguishes combinatorial and exploratory processes, which AI can excel at, from transformational creativity, which may remain out of reach.[11] For tool makers in STR_ART and SONIC, this suggests interfaces that foreground remixing, exploration, and rapid iteration while clearly signalling where human intervention is needed to redefine styles, genres, or conceptual frames.",
+    "url": "https://digitalcommons.chapman.edu/presidential_fellows_research/63/",
+    "relevance": 89
+  },
+  {
+    "id": "reception_centered_ai_art_practice",
     "category": "STR_ART",
-    "headline": "Adobe Firefly anchors brand-safe generative visual ecosystems",
-    "summary": "Firefly appears across 2026 rankings as a leading tool for commercially safe generative images, emphasizing licensing and brand suitability.[10][3] This positions AI models as governed design systems, where constraints around rights and ethics are baked into the creative substrate rather than added as external checks.",
-    "url": "https://tooldirectory.ai/top-ai-categories/ai-art-and-image-creation",
-    "relevance": 79
-  },
-  {
-    "id": "ideogram_reliable_text_rendering",
-    "category": "CX_UX",
-    "headline": "Ideogram advances reliable text rendering in generative images",
-    "summary": "Ideogram is repeatedly cited as best for AI images with reliable text rendering, addressing a long-standing gap in design workflows.[10][3] This directly impacts UI, signage, and branding: designers can now prototype typographic-heavy layouts with generative models that respect legibility and content constraints.",
-    "url": "https://tooldirectory.ai/top-ai-categories/ai-art-and-image-creation",
-    "relevance": 82
-  },
-  {
-    "id": "community_driven_ai_art_nightcafe",
-    "category": "STR_ART",
-    "headline": "NightCafe fuses AI art tools with community co-creation",
-    "summary": "NightCafe is positioned as a community-driven AI art platform with tools for LoRA training, photo transformation, and daily challenges.[1] By combining custom model training with social participation, it turns generative art into an evolving, collective design practice where styles emerge from shared experimentation rather than individual authorship alone.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 80
+    "headline": "Curatorial practice becomes central in AI‑native art ecosystems",
+    "summary": "The Polyphony essay’s claim that AI artefacts become art through reception and ratification foregrounds curation, hanging, platforming, and discourse as decisive creative acts.[14] This reorients strategic art practice toward designing exhibition systems, interactive galleries, and social feedback mechanisms that transform raw AI outputs into culturally legible works.",
+    "url": "https://thepolyphony.org/2026/09/03/the-gotcha-ai/",
+    "relevance": 93
   }
 ]
