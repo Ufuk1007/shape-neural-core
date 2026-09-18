@@ -1,130 +1,130 @@
 [
   {
-    "id": "google_lyria_35_full_length_ai_songs",
-    "category": "SONIC",
-    "headline": "Google's Lyria 3.5 brings full-length AI songs to Gemini",
-    "summary": "Google's new **Lyria 3.5** model pushes AI music from short clips to full songs of up to around three minutes, with more expressive vocals, richer arrangements, tighter lyric adherence, and control over tempo and duration. This matters for sound design and music-oriented UX because finished tracks with controllable structure can now be generated directly inside mainstream AI surfaces (Gemini app, API, AI Studio), enabling designers to prototype interactive soundscapes, adaptive scores, and personalized audio experiences at scale.",
-    "url": "https://ppc.land/googles-lyria-3-5-puts-full-length-ai-songs-in-gemini-and-the-api/",
-    "relevance": 96
+    "id": "brisbane_portrait_prize_ai_str_art",
+    "category": "STR_ART",
+    "headline": "Generative AI Portraits Re-enter Major Australian Prize",
+    "summary": "The Brisbane Portrait Prize has again opened its main category to generative AI works under strict non-infringing rules, prompting artists who previously boycotted the competition to return and directly confront AI-made portraits.[1] This matters for design and creativity because it tests how traditional juried art systems integrate AI-driven processes, forcing curators and artists to define what counts as authorship, originality, and acceptable data training in visual culture.",
+    "url": "https://www.theguardian.com/artanddesign/ng-interactive/2026/sep/18/bpp-brisbane-portrait-prize-2026-ai",
+    "relevance": 86
   },
   {
-    "id": "google_lyria_35_creative_control_templates",
-    "category": "SONIC",
-    "headline": "Lyria 3.5 adds genre, vocal and structure control for creators",
-    "summary": "Lyria 3.5 lets users specify genre, choose vocal or instrumental output, and leverage templates for background tracks or personalized songs for occasions like birthdays. For sonic interaction design, this granular control over mood, structure (verse/chorus/bridge) and vocal presence turns AI music into a parametric material that UX teams can tune to context—adaptive UI sounds, branded audio identities, or event-specific generative music flows.",
-    "url": "https://www.thedailystar.net/news/technology/news/google-launches-lyria-35-ai-music-generation-4265561",
-    "relevance": 92
-  },
-  {
-    "id": "google_lyria_35_design_workflows",
-    "category": "SONIC",
-    "headline": "Lyria 3.5 integrates AI music into video and prototyping tools",
-    "summary": "By making Lyria 3.5 available in Google AI Studio, Flow Music and Google Vids, Google is threading AI music generation into prototyping and video-editing pipelines. This creates a path for motion designers and product teams to treat music as a live design layer—iterating soundtracks alongside visuals, testing different emotional arcs, and rapidly exploring sonic branding without leaving their creative tooling.",
-    "url": "https://blockchain.news/news/google-lyria-3-5-gemini-ai-music",
+    "id": "samsung_gallery_fold_ai_str_art_meta",
+    "category": "STR_ART",
+    "headline": "Gallery Fold Exhibition Questions If AI Outputs Are \"Art\"",
+    "summary": "Samsung’s Gallery Fold pop-up in Amsterdam and Brussels showcases ten international AI artists, explicitly framing them as new pioneers and asking visitors whether AI creations qualify as art.[12][13] For creative practice, this exhibition operates as a live design lab on audience perception of AI-assisted authorship, curatorial strategies for machine-generated imagery, and how device ecosystems can be reimagined as generative canvases rather than passive screens.",
+    "url": "https://galleryfold.com/",
     "relevance": 90
   },
   {
-    "id": "yue2_open_music_generation_model",
-    "category": "SONIC",
-    "headline": "YuE2 releases free, Suno-level open music generation AI",
-    "summary": "Multimodal Art Projection’s **YuE2** launches as a free music generation AI aiming for performance comparable to paid systems like Suno 5, supporting generation from sheet music and Japanese vocals. This is significant for experimental sound design and non-English creative communities: composers can feed scores directly into an AI engine, while designers can prototype multilingual vocal soundscapes and culturally specific sonic UX without licensing a proprietary platform.",
-    "url": "https://gigazine.net/gsc_news/en/20260911-yue2-music-generation-ai/",
-    "relevance": 94
-  },
-  {
-    "id": "suno_v6_industry_partner_models",
-    "category": "SONIC",
-    "headline": "Suno v6 blends licensed catalogs with generative AI models",
-    "summary": "Suno’s v6 model suite, developed in partnership with Warner Music, BMG and Believe, introduces tiers—v6, v6-Wild and v6-mini—built on licensed material from major labels. This matters for designers and artists because it hints at a hybrid ecosystem where generative tools can legally echo the aesthetics of recognizable catalogs, enabling new forms of homage, genre-bending and interactive music experiences that stay inside evolving rights frameworks.",
-    "url": "https://www.musictimes.com/articles/112816/20260911/suno-launches-v6-ai-music-models-warner-bmg-believe-deals.htm",
-    "relevance": 91
-  },
-  {
-    "id": "suno_label_deals_ethics_of_training_data",
-    "category": "META",
-    "headline": "Record label deals push ethical reframe of AI music training",
-    "summary": "Warner Music’s licensing deal with Suno and similar partnerships shift AI music from scraping catalogs to explicitly negotiated training data. Philosophically, this reframes AI creativity as co-authored: the system’s \"style\" is a derivative of consent-based archives, raising questions about ownership of emergent aesthetics and suggesting future design practices where artists treat datasets as intentional creative media rather than invisible infrastructure.",
-    "url": "https://www.nytimes.com/2026/09/09/arts/music/suno-new-ai-model-warner-music.html",
+    "id": "lg_uplus_ai_art_space_str_art_cx",
+    "category": "STR_ART",
+    "headline": "Seoul AI Art Space Curates Works From Personal Taste Signals",
+    "summary": "LG Uplus has reopened a Seoul art space where AI reads visitors’ tastes and curates media artworks such as “Rocket Sequence,” which recomposes NASA imagery through AI editing tools.[15] This is significant for design because it prototypes taste-driven, responsive exhibitions where the “interface” is an adaptive curatorial engine, hinting at future galleries, retail spaces, and digital experiences that personalize aesthetics through continuous preference modeling.",
+    "url": "https://en.sedaily.com/technology/2026/09/16/lg-uplus-reopens-seoul-art-space-where-ai-reads-your-taste",
     "relevance": 88
   },
   {
-    "id": "mureka_v95_emotionally_cohesive_song_creation",
-    "category": "SONIC",
-    "headline": "Mureka v9.5 targets emotionally cohesive, human-like songs",
-    "summary": "Mureka’s v9.5 model focuses on richer emotional depth, cohesive arrangements, lifelike vocals and stronger musical identity in AI-generated songs. For sound design and experiential UX, this pushes AI audio beyond generic background loops toward tracks that carry narrative and affect, enabling designers to build interfaces, installations and games where the music feels more like a responsive collaborator than a decorative layer.",
-    "url": "https://www.usatoday.com/press-release/story/41719/mureka-introduces-next-generation-ai-music-model-v9-5-advancing-toward-more-human-like-song-creation/",
+    "id": "figma_weave_generative_shaders_str_art_cx",
+    "category": "CX_UX",
+    "headline": "Figma Expands On-Canvas Generative Shaders and Workflows",
+    "summary": "Figma has rolled out community publishing for Weave tools and expanded AI-powered generative plugins and shaders with animations, interactive effects, and code viewing directly on the design canvas.[11] This deeply affects design practice by turning the canvas into a programmable generative surface where designers author visual systems via prompting, share reusable image-generation workflows, and bridge between visual prototyping, motion, and production code as a single creative loop.",
+    "url": "https://releasebot.io/updates/figma",
+    "relevance": 94
+  },
+  {
+    "id": "breon_ai_design_trends_cx_ux",
+    "category": "CX_UX",
+    "headline": "Designers Shift From Production to Curation in AI Era",
+    "summary": "Breon.ai’s September research report finds that 72% of designers now use generative AI daily, with their role increasingly framed as briefing, directing, and editing machine output rather than manually producing every artifact.[4] For UX and design systems, this marks a structural change in workflows toward interface assemblers that tailor layouts and interaction patterns per user context, turning AI from a novelty tool into an invisible layer that continuously composes the experience.",
+    "url": "https://research.breon.ai/",
+    "relevance": 92
+  },
+  {
+    "id": "jakob_nielsen_ux_roundup_assumptions_agents_cx_ux",
+    "category": "CX_UX",
+    "headline": "New UX Patterns for Transparent, Controllable AI Agents",
+    "summary": "Recent UX roundup essays by Jakob Nielsen outline concrete patterns for AI interfaces, including asking clarifying questions, surfacing editable assumptions, precise rollback, and context-aware agent delegation.[2][14] These design guidelines matter because they turn abstract AI ethics and usability concerns into specific interaction patterns, shaping how creative tools, research platforms, and agentic systems can remain legible and trustworthy while operating with high degrees of autonomy.",
+    "url": "https://jakobnielsenphd.substack.com/p/ux-roundup-20260918",
     "relevance": 89
   },
   {
-    "id": "lyria_35_critical_analysis_for_creative_control",
+    "id": "aiuxdesign_practice_updates_cx_ux",
+    "category": "CX_UX",
+    "headline": "AI UX Guide Tracks Interface States and Generative Flows",
+    "summary": "The AI UX Design Guide’s latest updates focus on how generative tools miss key interface states, why interactive prototypes are vital for testing AI-driven flows, and how AI reshapes user research practice.[5] This is crucial for creative systems design because it addresses the gap between static mockups and dynamic AI behavior, encouraging designers to prototype entire agent workflows, edge states, and failure modes instead of just aesthetic outputs.",
+    "url": "https://www.aiuxdesign.guide/news",
+    "relevance": 84
+  },
+  {
+    "id": "nng_ai_for_design_workflows_course_cx_ux",
+    "category": "CX_UX",
+    "headline": "Live Courses Codify AI-First Design Workflow Patterns",
+    "summary": "NN/g’s September agenda includes sold-out courses on AI for design workflows and emerging interface patterns, indicating strong demand for structured training on integrating AI into everyday design work.[10] For UX, this institutionalizes AI as a core design competency, accelerating the emergence of shared best practices on how to blend generative tools, agents, and traditional research methods into cohesive creative processes.",
+    "url": "https://www.nngroup.com/training/september/",
+    "relevance": 78
+  },
+  {
+    "id": "aimc_2026_generative_turn_sonic_meta",
     "category": "SONIC",
-    "headline": "Critical breakdown shows Lyria 3.5 as a composer’s control panel",
-    "summary": "A detailed analysis of Lyria 3.5 highlights four core advances—musicality, lyrics, vocals and creative control (tempo, length)—positioning it as a \"control panel\" for compositional parameters rather than a black box generator. This is crucial for design systems thinking: sound becomes a configurable component in interaction libraries, where designers can standardize song length, structural cues and vocal behavior as part of their UX spec.",
-    "url": "https://explainx.ai/blog/google-lyria-3-5-music-generation-gemini-2026",
+    "headline": "AI Music Creativity 2026 Explores 'The Generative Turn'",
+    "summary": "The AI Music Creativity Conference 2026 in Berlin focuses on “The Generative Turn: Mediated Musicianship in a Hyper-reproductive Age,” bringing together researchers and artists around AI-driven music systems.[3] This is central to sound design and sonic UX: it frames AI not just as a composition tool, but as an infrastructure for endlessly reproducible, customizable music, forcing new thinking about authorship, listening practices, and interface design for generative instruments.",
+    "url": "https://www.udk-berlin.de/en/event/ai-music-creativity-conference-2026/",
     "relevance": 93
   },
   {
-    "id": "lyria_35_mass_access_creativity_shift",
-    "category": "META",
-    "headline": "Full-length AI songs in chat apps alter who counts as a musician",
-    "summary": "By embedding full-length song generation with vocals inside a mainstream chatbot, Lyria 3.5 turns \"describe a track\" into a ubiquitous creative gesture. Philosophically, this accelerates a shift from skill-based musicianship to prompt-based authorship, forcing design and ethics communities to rethink what counts as musical agency, how attribution should work, and whether UX flows should expose underlying model constraints to preserve human creative credit.",
-    "url": "https://x.com/i/trending/2095916328393527475",
-    "relevance": 90
+    "id": "sam_audio_segment_anything_sonic",
+    "category": "SONIC",
+    "headline": "SAM Audio Segments Any Sound for Precise Creative Control",
+    "summary": "Meta’s SAM Audio model achieves state-of-the-art performance in general sound, speech, music, and instrument separation across diverse conditions, substantially outperforming prior systems.[9] For creative audio and UX, this enables fine-grained manipulation of complex soundscapes—designers can isolate, remix, and spatialize elements in real time, opening up new modes of interactive music, adaptive sound branding, and accessibility-focused audio interfaces.",
+    "url": "https://ai.meta.com/research/publications/sam-audio-segment-anything-in-audio/",
+    "relevance": 96
   },
   {
-    "id": "best_ai_image_generators_design_landscape",
-    "category": "STR_ART",
-    "headline": "2026 landscape: AI image tools converge into design infrastructure",
-    "summary": "Recent overviews show tools like GPT Image 2, Gemini Nano Banana, Midjourney, FLUX, Ideogram and Adobe Firefly forming the core stack of AI image generation in 2026. Even though this is not a single new launch, it matters for strategic art and design systems: visual teams now design around a multi-tool ecosystem, orchestrating photorealism, typography fidelity, editing workflows and rights management rather than betting on one monolithic generator.",
-    "url": "https://www.citehawk.com/leaderboards/editions/2026-09/ai-image-generators",
+    "id": "audio_ml_hall_of_fame_sonic_tools",
+    "category": "SONIC",
+    "headline": "Audio ML Hall of Fame Maps Key Music Generation Models",
+    "summary": "An updated Audio ML “Hall of Fame” highlights landmark music models, including large-scale lyric-conditioned music language models and past systems like Jukebox that generate raw-audio songs with vocals.[6] For sonic design, this curated overview functions as an evolving toolkit index, helping artists and UX teams choose appropriate generative engines for everything from immersive soundscapes to adaptive game audio and personalized listening experiences.",
+    "url": "https://audiomlpapers.com/best",
     "relevance": 82
   },
   {
-    "id": "ai_art_workflows_midjourney_dzine_nightcafe",
-    "category": "STR_ART",
-    "headline": "Generative canvases and LoRA training redefine visual workflows",
-    "summary": "Updated rankings of AI art tools highlight features like Dzine’s controllable generative canvas, NightCafe’s LoRA training and community challenges, and GetIMG’s cross-modal image–video–audio integration. For strategic art practice, these capabilities shift AI from single-shot image generation toward iterative, community-shaped design workflows where style systems, brand assets and motion can be co-evolved with the model through localized edits and fine-tuning.",
-    "url": "https://www.unite.ai/ai-art-generators/",
-    "relevance": 85
+    "id": "nora_bereczki_prompting_as_art_str_art_meta",
+    "category": "META",
+    "headline": "AI Artist Frames Prompting as Core of Human Creation",
+    "summary": "Award-winning AI artist Nóra Bereczki argues that AI images become human creations when the artist can fully carry through their envisioned concept via prompting and iteration.[7] This perspective is vital for philosophy of AI creativity and design pedagogy, as it repositions skill from manual rendering to conceptual direction, system understanding, and prompt architecture, reframing creative tools as co-authors rather than mere generators.",
+    "url": "https://www.euronews.com/culture/2026/09/08/prompting-makes-perfect-award-winning-ai-artist-nora-bereczki-on-new-frontiers-for-photogr",
+    "relevance": 88
   },
   {
-    "id": "ai_art_tools_as_design_system_components",
-    "category": "CX_UX",
-    "headline": "AI art generators become components in design systems",
-    "summary": "Current comparisons of AI art tools stress differences in rights, text rendering, editing and hosting, which are now core considerations when integrating generative imagery into product UX. This is important for CX/UX because design systems must treat AI services as governed components—specifying which generator is used for marketing vs in-product visuals, how users can edit AI outputs, and how accessibility (e.g., alt-text generation) is layered atop these pipelines.",
-    "url": "https://zapier.com/blog/ai-art-generator/",
-    "relevance": 80
-  },
-  {
-    "id": "ai_art_tool_ecosystem_one_trick_for_control",
-    "category": "STR_ART",
-    "headline": "2026 AI art \"one trick\": prompt-to-style libraries for brands",
-    "summary": "A 2026 review of art tools emphasizes not just breadth of generators but a \"one trick\"—systematizing prompts and style references into reusable libraries. This reframes generative visual tools as programmable style engines: studios can codify brand aesthetics, cinematic moods or movement-specific looks into shareable prompt systems, turning abstract art direction into a concrete, iterable design asset within the AI stack.",
-    "url": "https://glows.ai/article/best_ai_art_tools_2026_en",
-    "relevance": 83
-  },
-  {
-    "id": "licensed_ai_music_as_new_ux_material",
-    "category": "CX_UX",
-    "headline": "Licensed AI music models unlock safer sonic UX experimentation",
-    "summary": "Suno’s licensed v6 models and similar arrangements create a space where UX teams can experiment with recognizable genre aesthetics without immediately triggering copyright conflicts. For CX design, this positions AI music as a safer material for dynamic onboarding flows, in-app celebrations and adaptive soundtracks, where the sound can echo familiar catalog vibes while living inside negotiated legal and ethical boundaries.",
-    "url": "https://www.reuters.com/legal/litigation/suno-releases-new-ai-music-models-partnership-with-warner-music-bmg-2026-09-09/",
+    "id": "ai_vs_human_design_trust_meta_cx",
+    "category": "META",
+    "headline": "Study Finds Users Doubt Products Designed by AI Alone",
+    "summary": "A recent marketing science study shows that consumers perceive products designed by AI as lacking genuine care, impacting their sense of sustainability and trust compared to human-designed offerings.[8] This has deep implications for UX and strategic design: it suggests that visible human involvement may need to be deliberately signaled in AI-mediated creation flows, reinforcing hybrid design narratives where designers curate and validate machine proposals.",
+    "url": "https://phys.org/news/2026-09-ai-product-consumers.html",
     "relevance": 87
   },
   {
-    "id": "ai_music_multilingual_experiences_yue2",
-    "category": "CX_UX",
-    "headline": "YuE2’s Japanese vocal support enables localized sonic UX",
-    "summary": "YuE2’s ability to generate Japanese vocals and songs from sheet music opens up localized, language-aware audio experiences beyond English-dominant tools. This is pivotal for global UX: interfaces, games and installations can now feature regionally tailored vocals, call-and-response patterns and culturally resonant jingles generated on demand, aligning sound design with linguistic and cultural context rather than retrofitting Western-centric models.",
-    "url": "https://gigazine.net/gsc_news/en/20260911-yue2-music-generation-ai/",
-    "relevance": 89
+    "id": "gallery_fold_ai_can_be_art_meta",
+    "category": "META",
+    "headline": "Public Exhibition Asks Visitors if AI Can Truly Be Art",
+    "summary": "Samsung’s Gallery Fold explicitly positions AI artists as pioneers and invites audiences to question whether AI-assisted works meet their internal criteria for art.[12][13] This real-world debate space matters for theory and cultural strategy because it surfaces how people negotiate originality, labor, and tool agency, informing how future AI design systems might communicate process transparency and human contribution to build legitimacy.",
+    "url": "https://www.sammobile.com/news/this-weekend-samsung-gallery-fold-will-make-you-wonder-if-ai-can-be-art/",
+    "relevance": 91
   },
   {
-    "id": "ai_creativity_as_dataset_composition",
+    "id": "ai_agents_delegation_econ_model_meta_cx",
     "category": "META",
-    "headline": "Industry-backed models recast AI creativity as curated datasets",
-    "summary": "Across Suno’s label-backed v6 and Google’s carefully scoped Lyria training, AI output is increasingly defined by explicit curation of source material rather than undifferentiated scraping. This philosophical turn suggests that \"AI style\" is the sum of its licensed influences: future creative practice may focus less on prompt engineering and more on composing training datasets—treating the choice and weighting of source catalogs as the primary artistic act.",
-    "url": "https://www.nytimes.com/2026/09/09/arts/music/suno-new-ai-model-warner-music.html",
-    "relevance": 92
+    "headline": "UX Research Reimagines Economic Models for AI Agent Work",
+    "summary": "Recent UX research notes that delegating tasks to AI agents departs from traditional economic assumptions, requiring new models of task allocation, cost, and progress visibility.[2] This is important for future creative systems, where fleets of agents might handle research, prototyping, and testing: designers will need new conceptual frameworks to decide which cognitive and aesthetic decisions remain human and which can be safely offloaded.",
+    "url": "https://jakobnielsenphd.substack.com/p/ux-roundup-20260918",
+    "relevance": 80
+  },
+  {
+    "id": "ai_design_reliability_gap_meta_cx",
+    "category": "META",
+    "headline": "Designers Use AI Daily Yet Enterprise Impact Lags",
+    "summary": "Breon.ai reports a persistent adoption–reliability gap: while most designers integrate generative tools into daily practice, a large majority of enterprise pilots fail to show measurable profit-and-loss impact.[4] This disconnect is philosophically and strategically significant, suggesting that AI’s value may lie in intangible creative augmentation, exploratory work, and speculative design rather than immediate metrics, reshaping how organizations justify and evaluate AI-based creativity.",
+    "url": "https://research.breon.ai/",
+    "relevance": 83
   }
 ]
