@@ -1,122 +1,146 @@
 [
   {
-    "id": "figma_weave_generative_canvas",
-    "category": "CX_UX",
-    "headline": "Figma Weave brings generative tools directly onto the canvas",
-    "summary": "Figma has added Weave tools into the design canvas, allowing designers to run generative AI workflows in situ and publish custom tools for image and vector generation at scale.[14] This matters for UX and design systems because AI becomes a native design material—supporting rapid concept sketching (e.g., architectural ‘what if’ stages) and shared, community-driven generative components embedded in collaborative workflows.[14]",
-    "url": "https://releasebot.io/updates/figma",
-    "relevance": 96
-  },
-  {
-    "id": "figma_ai_shaders_interactive_fx",
+    "id": "openart_arena_media_job_benchmark",
     "category": "STR_ART",
-    "headline": "AI-powered shaders and animations expand Figma as creative canvas",
-    "summary": "Recent Figma updates extend AI-powered generative plugins and shaders with animations, interactive effects, and code viewing and download.[14] For strategic art and creative tooling, this positions Figma not just as a layout tool but as an experimental playground where designers can script AI-driven motion and visual effects, bridging interface design, procedural art, and code-based generative practices.[14]",
-    "url": "https://releasebot.io/updates/figma",
-    "relevance": 90
-  },
-  {
-    "id": "chatgpt_images_25_sketch_control",
-    "category": "STR_ART",
-    "headline": "ChatGPT Images 2.5 adds sketch-based, multi-turn image editing",
-    "summary": "OpenAI’s ChatGPT Images 2.5 update introduces Sketch, which lets users draw directly in the interface as a visual reference, alongside comment-based edits, templates, and stronger multi-turn editing control.[13] This is significant for generative art and design because it shifts AI from a pure text-to-image engine to a mixed-initiative collaborator where hand-drawn intent, iterative feedback, and structured templates guide the evolution of visual concepts.[13]",
-    "url": "https://gadgetsnow.indiatimes.com/tech-news/chatgpt-images-2-5-adds-sketch-the-real-upgrade-is-editing-control/articleshow/133954136.cms",
-    "relevance": 94
-  },
-  {
-    "id": "google_pics_post_generation_image_edit",
-    "category": "STR_ART",
-    "headline": "Google Pics explores the \"post-generation\" era of AI image editing",
-    "summary": "Google’s new tool \"Google Pics\" combines image generation with rich editing capabilities, reflecting a broader shift toward a \"post-generation\" era where manipulation and refinement become as important as initial synthesis.[9] For strategic art and design, this moves practice toward continuous AI-mediated image workflows—iterating on style, composition, and narrative using AI as a non-destructive editing layer embedded in visual pipelines.[9]",
-    "url": "https://note.com/brave_agapan6249/n/n42d875d558e5?hl=en",
-    "relevance": 88
-  },
-  {
-    "id": "meta_muse_image_api_fal",
-    "category": "STR_ART",
-    "headline": "Meta’s Muse Image model exposed via API for creative platforms",
-    "summary": "The Muse Image model from Meta Superintelligence Labs has become available via API on the generative platform fal, opening it up to third-party creative tools.[9] This matters for design and visual experimentation because it enables custom pipelines where Muse can be orchestrated with other models, allowing artists and developers to build tailored workflows for style exploration, batch generation, and interactive image systems.[9]",
-    "url": "https://note.com/brave_agapan6249/n/n42d875d558e5?hl=en",
-    "relevance": 86
-  },
-  {
-    "id": "suno_v6_multimodal_music_editing",
-    "category": "SONIC",
-    "headline": "Suno v6 enables multimodal, fine-grained AI song editing",
-    "summary": "Suno’s new v6 generation of music models—developed with Warner Music Group, BMG and Believe—supports faster, higher-quality generation and precise edits via natural language prompts, with text, audio, images, and video as inputs.[10] For sonic design, this is a major step toward multimodal music systems where creators can tweak a single lyric, chorus, or arrangement element, treating songs as living, editable structures rather than static outputs.[10]",
-    "url": "https://www.axios.com/2026/09/09/suno-v6-ai-music-warner-bmg",
-    "relevance": 97
-  },
-  {
-    "id": "suno_industry_partnerships_creative_ecology",
-    "category": "META",
-    "headline": "Label-backed AI music models reshape creative and legal ecologies",
-    "summary": "Suno’s v6 models are the first developed under formal partnerships with major music companies like Warner and BMG, following earlier lawsuits and negotiated deals.[4][10] This is philosophically and strategically important because it foreshadows hybrid ecologies where AI systems co-create with licensed catalogs, blurring authorship, rights, and the meaning of \"original\" work in both commercial and experimental sound practice.[4][10]",
-    "url": "https://www.nytimes.com/2026/09/09/arts/music/suno-new-ai-model-warner-music.html",
-    "relevance": 89
-  },
-  {
-    "id": "google_lyria_35_expressive_vocals",
-    "category": "SONIC",
-    "headline": "Google Lyria 3.5 targets more expressive AI music and vocals",
-    "summary": "Google’s Lyria 3.5 model, now exposed through Gemini and multiple creative tools, focuses on more expressive vocals and detailed arrangements while supporting genre-based and template-driven generation.[8] For sonic design and UX, this pushes AI music from background texture toward emotionally legible performances, enabling designers to weave tailored soundtracks and vocal gestures directly into interactive experiences and personalized media.[8]",
-    "url": "https://www.thedailystar.net/news/technology/news/google-launches-lyria-35-ai-music-generation-4265561",
+    "headline": "OpenArt launches media-job benchmark for creative models",
+    "summary": "A new public benchmark ranks image and video models by creative tasks such as graphic design, motion design, filmmaking, and lip sync. It matters because it shifts evaluation away from generic image quality toward *design-specific* performance and practitioner taste.",
+    "url": "https://venturebeat.com/orchestration/whats-the-best-ai-model-for-graphic-design-video-ads-lip-sync-and-more-openarts-new-arena-offers-leaderboards-for-different-media-jobs",
     "relevance": 93
   },
   {
-    "id": "yue2_open_music_generation_model",
+    "id": "qwen3_8_omni_flash_omnimodal_release",
     "category": "SONIC",
-    "headline": "YuE2 offers open, Suno-level music generation with score input",
-    "summary": "Multimodal Art Projection’s YuE2, released free on September 10, claims performance close to paid Suno 5 and can generate music from sheet music while supporting Japanese vocals.[7] This opens experimental terrain where composers and sound designers can feed symbolic scores into generative systems, using AI as a performance and orchestration engine that interprets notation across styles, languages, and vocal timbres.[7]",
-    "url": "https://gigazine.net/gsc_news/en/20260911-yue2-music-generation-ai/",
-    "relevance": 95
-  },
-  {
-    "id": "elevenlabs_music_v25_audio_model",
-    "category": "SONIC",
-    "headline": "ElevenLabs Music v2.5 blurs speech, song, and sound design",
-    "summary": "ElevenLabs has launched ElevenMusic v2.5 globally via apps and APIs, extending its voice-generation capabilities into richer musical audio.[12] For sonic and UX designers, this convergence of voice and music synthesis enables fluid transitions between narration, sung phrases, and ambient sound design, supporting more cohesive, character-driven audio experiences across games, interfaces, and immersive media.[12]",
-    "url": "https://news.aibase.com/news/31030",
-    "relevance": 90
-  },
-  {
-    "id": "mureka_v95_emotional_song_model",
-    "category": "SONIC",
-    "headline": "Mureka v9.5 aims for more human-like, emotionally coherent songs",
-    "summary": "Mureka’s v9.5 AI music model is designed to produce songs with richer emotional depth, more cohesive arrangements, lifelike vocals, and stronger musical identity.[5] This is relevant to creative practice because it treats emotional coherence and identity as model targets, inviting designers to think of AI not merely as a generative engine but as a system for sculpting affect and narrative arcs in music-centered experiences.[5]",
-    "url": "https://www.usatoday.com/press-release/story/41719/mureka-introduces-next-generation-ai-music-model-v9-5-advancing-toward-more-human-like-song-creation/",
+    "headline": "Qwen3.8-Omni-Flash pushes native audio-video reasoning",
+    "summary": "This omnimodal model processes text, images, audio, and video together with very large context, which is significant for sound-driven creative workflows. Its relevance is in cross-modal generation and analysis for music, voice, and audiovisual design rather than ordinary chatbot use.",
+    "url": "https://aiweekly.co/ai-news-today",
     "relevance": 88
   },
   {
-    "id": "ai_creativity_moruzzi_definition_tension",
-    "category": "META",
-    "headline": "Philosophers probe whether AI outputs meet creativity criteria",
-    "summary": "Recent philosophical work on AI and creativity, such as Moruzzi’s analysis, foregrounds a definition of creativity as producing artefacts that are new, surprising, and valuable.[6] As AI systems increasingly meet these surface criteria, the tension shifts to questions of intentionality, understanding, and authorship—pressing designers and artists to reconsider how much \"creativity\" resides in models versus in the human framing and curation around them.[6]",
-    "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/494600418/Moruzzi2025PhiloCompArtificial.pdf",
-    "relevance": 92
-  },
-  {
-    "id": "ai_creativity_societal_implications",
-    "category": "META",
-    "headline": "Debates on AI creativity reshape roles of artists and designers",
-    "summary": "Building on philosophical criteria for creativity, ongoing discussions about AI-generated artefacts challenge existing notions of expertise, labor, and cultural value in creative industries.[6] For META design, this forces a re-mapping of practice: human creators increasingly act as system curators, prompt architects, and ethical stewards, while AI handles combinatorial exploration—prompting new hybrid roles and collective authorship models.[6]",
-    "url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/494600418/Moruzzi2025PhiloCompArtificial.pdf",
-    "relevance": 89
-  },
-  {
-    "id": "ai_illustration_post_generation_practices",
+    "id": "coreldraw_vector_craft_unlimited_generation",
     "category": "STR_ART",
-    "headline": "AI illustration enters \"post-generation\" workflows of constant revision",
-    "summary": "Commentary on \"post-generation\" AI illustration trends highlights how tools like Google Pics and Muse Image shift practice from one-off prompts to ongoing cycles of guided modification and enhancement.[9] For strategic art, this transforms the artist’s role into a director of iterative model behavior, where style transfer, compositional changes, and semantic edits become routine parts of a longer, AI-mediated production arc.[9]",
-    "url": "https://note.com/brave_agapan6249/n/n42d875d558e5?hl=en",
+    "headline": "CorelDRAW opens unlimited AI vector generation window",
+    "summary": "CorelDRAW is offering unlimited free AI vector generation for a limited period, using models that turn prompts or artwork into editable scalable vectors. This is important because vector-native generation directly serves illustrators, motion designers, and brand systems.",
+    "url": "https://finance.yahoo.com/technology/ai/articles/ai-powered-graphic-design-software-151000781.html",
     "relevance": 87
   },
   {
-    "id": "figma_ai_ux_research_design_systems",
+    "id": "text_to_vector_ai_workflow_expand",
+    "category": "STR_ART",
+    "headline": "Text-to-vector AI expands editable graphic workflows",
+    "summary": "Text-to-vector systems are becoming a practical bridge between generative imagery and production-ready design assets. Their design relevance is high because they preserve scalability and editability, which are central to professional creative systems.",
+    "url": "https://finance.yahoo.com/technology/ai/articles/ai-vector-graphics-tools-power-130000898.html",
+    "relevance": 85
+  },
+  {
+    "id": "recraft_custom_style_reusable_editable",
+    "category": "STR_ART",
+    "headline": "Recraft turns references into reusable visual styles",
+    "summary": "Recraft’s custom-style workflow converts uploaded images into an editable style that can be reused across outputs. That makes it especially relevant to art direction and visual identity systems, where consistency matters as much as novelty.",
+    "url": "https://www.recraft.ai/",
+    "relevance": 84
+  },
+  {
+    "id": "openart_model_ranking_tastemaker_evaluations",
     "category": "CX_UX",
-    "headline": "Figma’s AI workflows hint at agentic design systems and UX co-creation",
-    "summary": "By integrating AI workflows and third-party agent mechanisms into its design environment, Figma is evolving toward a space where autonomous tools can participate in layout, asset generation, and interaction exploration.[14] This matters for CX/UX because it suggests future design systems where patterns, components, and even research artifacts are co-created by human teams and AI agents, compressing the path from insight to implemented interface.[14]",
-    "url": "https://releasebot.io/updates/figma",
-    "relevance": 94
+    "headline": "OpenArt benchmarks models by practitioner taste",
+    "summary": "The Arena uses blind pairwise evaluations from creative practitioners and tastemakers across media tasks, which is a notable UX move for model selection. It matters because it reframes the interface between AI and creators around subjective, task-based judgment instead of abstract benchmark scores.",
+    "url": "https://venturebeat.com/orchestration/whats-the-best-ai-model-for-graphic-design-video-ads-lip-sync-and-more-openarts-new-arena-offers-leaderboards-for-different-media-jobs",
+    "relevance": 82
+  },
+  {
+    "id": "nightcafe_iterate_upscale_share_workflow",
+    "category": "STR_ART",
+    "headline": "NightCafe emphasizes iterative prompt-to-share creation",
+    "summary": "NightCafe’s workflow centers on model swapping, prompt iteration, upscaling, and community sharing. While not a breakthrough by itself, it remains relevant as a compact example of social generative art practice built around fast visual experimentation.",
+    "url": "https://creator.nightcafe.studio/tools/generative-art-generator",
+    "relevance": 74
+  },
+  {
+    "id": "pixlr_multi_variation_ai_image_workflow",
+    "category": "CX_UX",
+    "headline": "Pixlr streamlines multi-variation image generation",
+    "summary": "Pixlr’s generator emphasizes prompt detail, multiple variations, and rapid handoff into editing and face-swapping tools. This matters for UX because it combines generation, selection, and refinement into one compact creative loop.",
+    "url": "https://pixlr.com/image-generator/",
+    "relevance": 72
+  },
+  {
+    "id": "adobe_firefly_prompt_reference_generation",
+    "category": "CX_UX",
+    "headline": "Firefly leans into prompt plus reference-image control",
+    "summary": "Adobe Firefly’s workflow highlights descriptive prompting, reference images, and quick regeneration in a familiar design-tool context. Its importance lies in lowering friction for designers who need controllable AI inside established production habits.",
+    "url": "https://www.adobe.com/products/firefly/features/ai-graphic-design-generator.html",
+    "relevance": 71
+  },
+  {
+    "id": "magichour_multi_variation_art_generator",
+    "category": "STR_ART",
+    "headline": "Magic Hour frames AI art as rapid concept variation",
+    "summary": "The tool focuses on producing multiple variations per prompt and positioning outputs for moodboards, presentations, and concepting. That makes it useful as a lightweight ideation engine rather than a finished-art system.",
+    "url": "https://magichour.ai/tools/ai-art-generator",
+    "relevance": 69
+  },
+  {
+    "id": "shakker_mobile_design_tool_multimodel_workflow",
+    "category": "STR_ART",
+    "headline": "Shakker brings multimodel generative design to mobile",
+    "summary": "Shakker presents itself as a mobile generative design tool with a range of artistic models and LoRA support. Its interest is in portable, on-the-go visual experimentation rather than polished mainstream production.",
+    "url": "https://www.shakker.ai/mobile",
+    "relevance": 68
+  },
+  {
+    "id": "gencraft_image_edit_scene_character_remix",
+    "category": "STR_ART",
+    "headline": "Gencraft leans on character and scene remixing",
+    "summary": "Gencraft emphasizes image generation, scene editing, character building, and remixing from a single prompt. This matters for creative direction because it suggests a more narrative, asset-based approach to image generation.",
+    "url": "https://gencraft.com/",
+    "relevance": 66
+  },
+  {
+    "id": "ai_society_music_creativity_authorship_article",
+    "category": "META",
+    "headline": "New music-AI theory revisits creativity and authorship",
+    "summary": "A recent conceptual paper argues that AI-generated music reshapes creativity, authorship, and the material conditions of artistic work. It is especially relevant because it proposes norms such as transparency, consent-sensitive data practices, and contextual attribution.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2?error=cookies_not_supported&code=0e938c65-52f2-4c84-ad59-20b9094b5ba2",
+    "relevance": 96
+  },
+  {
+    "id": "barden_creativity_definition_machine_music",
+    "category": "META",
+    "headline": "Boden’s creativity frame still shapes machine music debates",
+    "summary": "The paper explicitly draws on Margaret Boden’s definition of creativity as producing ideas that are new, surprising, and valuable. That matters because it anchors current AI art debates in a long-running philosophical framework rather than a purely technical one.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2?error=cookies_not_supported&code=0e938c65-52f2-4c84-ad59-20b9094b5ba2",
+    "relevance": 91
+  },
+  {
+    "id": "nightcafe_community_sharing_as_creative_infrastructure",
+    "category": "CX_UX",
+    "headline": "NightCafe treats sharing as part of the creative loop",
+    "summary": "The platform’s emphasis on saving and posting work to a community turns distribution into part of the generation workflow. That is relevant to UX and design systems because it blurs the line between making, reviewing, and publishing.",
+    "url": "https://creator.nightcafe.studio/",
+    "relevance": 63
+  },
+  {
+    "id": "vector_tools_bridge_raster_and_editable_systems",
+    "category": "CX_UX",
+    "headline": "Editable vector AI bridges sketching and production",
+    "summary": "Vector generation tools are becoming a more production-friendly interface for designers who need outputs that can be revised downstream. Their value is less about spectacle and more about reducing the friction between ideation and implementation.",
+    "url": "https://finance.yahoo.com/technology/ai/articles/ai-vector-graphics-tools-power-130000898.html",
+    "relevance": 79
+  },
+  {
+    "id": "openart_benchmark_design_video_lip_sync",
+    "category": "SONIC",
+    "headline": "OpenArt’s benchmark includes lip sync as a media task",
+    "summary": "By evaluating lip sync alongside design and video tasks, the benchmark points to a future where voice and face alignment are judged as part of creative media production. This is relevant to sound because it connects audio generation with performance, timing, and audiovisual coherence.",
+    "url": "https://venturebeat.com/orchestration/whats-the-best-ai-model-for-graphic-design-video-ads-lip-sync-and-more-openarts-new-arena-offers-leaderboards-for-different-media-jobs",
+    "relevance": 78
+  },
+  {
+    "id": "qwen_multimodal_audio_video_context_design",
+    "category": "CX_UX",
+    "headline": "Omnimodal context points to richer creative interfaces",
+    "summary": "A model that jointly reasons over text, images, audio, and video suggests new interface patterns for creative tools. The design implication is a shift toward assistants that can understand *multimedia intent* rather than isolated prompt fields.",
+    "url": "https://aiweekly.co/ai-news-today",
+    "relevance": 80
   }
 ]
