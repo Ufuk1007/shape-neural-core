@@ -9,7 +9,6 @@ import Index from "./pages/Index";
 import ProjectPage from "./pages/ProjectPage";
 import InsightPage from "./pages/InsightPage";
 import LegalPage from "./pages/LegalPage";
-import ForgePage from "./pages/ForgePage";
 import AlliancePage from "./pages/AlliancePage";
 import NotFound from "./pages/NotFound";
 
@@ -25,10 +24,10 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/lab" element={<Index />} />
             <Route path="/project/:slug" element={<ProjectPage />} />
             <Route path="/insight/:slug" element={<InsightPage />} />
             <Route path="/legal" element={<LegalPage />} />
-            <Route path="/forge" element={<ForgePage />} />
             <Route path="/alliance" element={<AlliancePage />} />
             <Route
               path="/directions"

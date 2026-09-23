@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { ArrowDown, ArrowRight, Check, Languages, Menu, Sparkles, X } from "lucide-react";
+import { ArrowDown, ArrowRight, Check, ExternalLink, Languages, Menu, Sparkles, X } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import BindruneLogo from "@/components/BindruneLogo";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import "@/design-directions.css";
 
-type Direction = "precision" | "systems" | "independent";
+type Direction = "hybrid" | "precision" | "systems" | "independent";
 type Language = "de" | "en";
 
 const copy = {
@@ -64,6 +65,23 @@ const copy = {
     notePrecision: "Maximale Glaubwürdigkeit · hochwertige Beratung · klare Produktbeweise",
     noteSystems: "Stärkste Technologiepositionierung · agentisch · ambitioniert",
     noteIndependent: "Zugänglichste Richtung · eigenständig · nahbar und unverwechselbar",
+    hybridHeadline: "Wir machen aus KI einen funktionierenden Teil Ihres Geschäfts.",
+    hybridBody: "ShapeNeural klärt, baut und betreibt KI-Produkte und agentische Workflows – vom fokussierten Einstieg bis zur langfristigen Partnerschaft.",
+    hybridProof: "Strategie, Umsetzung und Betrieb aus einem Studio.",
+    hybridAudience: "Für kleine Unternehmen, Selbstständige und Teams im Wandel.",
+    hybridNav: ["Leistungen", "Projekte", "Arbeitsweise", "Studio"],
+    hybridMethod: "Unser Betriebssystem",
+    hybridMethodTitle: "Menschlich geführt. Agentisch verstärkt.",
+    hybridMethodBody: "Agenten übernehmen Recherche, Produktion und Routine. Entscheidungen, Qualitätskontrolle und Verantwortung bleiben klar beim Menschen.",
+    hybridWorkTitle: "Was wir selbst bauen, prägt wie wir für andere arbeiten.",
+    labEyebrow: "SHAPENEURAL / LAB",
+    labTitle: "Der explorative Kern bleibt unangetastet.",
+    labBody: "Wolke, Insights und Interrogation bekommen eine eigene Adresse und behalten ihre radikale CRT-Identität. Das Lab ist kein Nebenraum: Es zeigt, wie wir denken, forschen und neue Möglichkeiten testen.",
+    labCta: "Aktuelles Lab öffnen",
+    labPreserved: "WOLKE + INSIGHTS + ORACLE / 1:1 ERHALTEN",
+    engagement: "Klein anfangen. Substanziell weiterbauen.",
+    engagementBody: "Ein Arbeitstag für Klarheit, ein Sprint für einen Prototyp oder ein dauerhaftes Studio-Setup – der Einstieg richtet sich nach dem Problem, nicht nach der Unternehmensgröße.",
+    noteHybrid: "Empfehlung · glaubwürdig + agentisch + zugänglich · Lab als eigenständige Welt",
   },
   en: {
     review: "Design review",
@@ -119,10 +137,28 @@ const copy = {
     notePrecision: "Maximum credibility · premium advisory · clear product proof",
     noteSystems: "Strongest technology position · agentic · ambitious",
     noteIndependent: "Most accessible direction · independent · human and distinctive",
+    hybridHeadline: "We make AI a working part of your business.",
+    hybridBody: "ShapeNeural clarifies, builds and operates AI products and agentic workflows — from a focused first step to a long-term partnership.",
+    hybridProof: "Strategy, delivery and operations from one studio.",
+    hybridAudience: "For small businesses, independents and teams in transition.",
+    hybridNav: ["Services", "Work", "How we work", "Studio"],
+    hybridMethod: "Our operating system",
+    hybridMethodTitle: "Human-led. Agent-amplified.",
+    hybridMethodBody: "Agents handle research, production and routine. Decisions, quality control and accountability remain clearly human.",
+    hybridWorkTitle: "What we build for ourselves shapes how we work for others.",
+    labEyebrow: "SHAPENEURAL / LAB",
+    labTitle: "The exploratory core stays intact.",
+    labBody: "Cloud, insights and interrogation get their own address and retain their radical CRT identity. The Lab is not a side room: it shows how we think, research and test new possibilities.",
+    labCta: "Open the current Lab",
+    labPreserved: "CLOUD + INSIGHTS + ORACLE / PRESERVED 1:1",
+    engagement: "Start small. Build something substantial.",
+    engagementBody: "One working day for clarity, a sprint for a prototype or an ongoing studio setup — the entry point follows the problem, not the size of the company.",
+    noteHybrid: "Recommendation · credible + agentic + accessible · Lab as its own world",
   },
 } as const;
 
 const directionLabels: Record<Direction, { index: string; title: string; short: string }> = {
+  hybrid: { index: "00", title: "Recommended Hybrid", short: "Hybrid" },
   precision: { index: "01", title: "Precision Studio", short: "Precision" },
   systems: { index: "02", title: "Autonomous Systems", short: "Systems" },
   independent: { index: "03", title: "Independent Intelligence", short: "Independent" },
@@ -134,6 +170,138 @@ function BrandMark({ inverse = false }: { inverse?: boolean }) {
       <span className="dd-brand__glyph" aria-hidden="true">S/N</span>
       <span>SHAPE<br />NEURAL</span>
     </div>
+  );
+}
+
+function HybridHeader({ language }: { language: Language }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const t = copy[language];
+  return (
+    <header className="hybrid-header">
+      <a className="hybrid-logo" href="#hybrid-top" aria-label="ShapeNeural home">
+        <BindruneLogo size={34} onDark={false} />
+        <span>SHAPE<br />NEURAL</span>
+      </a>
+      <nav className={menuOpen ? "is-open" : ""} aria-label="Primary navigation">
+        {t.hybridNav.map((item, index) => (
+          <a href={index === 0 ? "#hybrid-services" : index === 1 ? "#hybrid-work" : "#hybrid-method"} key={item}>{item}</a>
+        ))}
+        <a className="hybrid-lab-link" href="#hybrid-lab">LAB <span>↘</span></a>
+        <a className="hybrid-header-cta" href="mailto:signal@shapeneural.com">{t.talk}<ArrowRight size={15} /></a>
+      </nav>
+      <button
+        type="button"
+        className="dd-menu hybrid-menu"
+        onClick={() => setMenuOpen((open) => !open)}
+        aria-expanded={menuOpen}
+        aria-label={menuOpen ? t.close : t.menu}
+      >
+        {menuOpen ? <X /> : <Menu />}
+      </button>
+    </header>
+  );
+}
+
+function HybridDirection({ language }: { language: Language }) {
+  const t = copy[language];
+  return (
+    <main className="dd-page dd-hybrid" id="hybrid-top">
+      <HybridHeader language={language} />
+
+      <section className="hybrid-hero">
+        <div className="hybrid-hero__copy">
+          <p className="dd-eyebrow"><i />{t.eyebrow}</p>
+          <h1>{t.hybridHeadline}</h1>
+          <div className="hybrid-hero__intro">
+            <p>{t.hybridBody}</p>
+            <div className="hybrid-actions">
+              <a href="mailto:signal@shapeneural.com">{t.talk}<ArrowRight size={17} /></a>
+              <a href="#hybrid-work">{t.explore}<ArrowDown size={16} /></a>
+            </div>
+          </div>
+        </div>
+
+        <aside className="hybrid-console" aria-label="ShapeNeural operating system">
+          <div className="hybrid-console__top"><span>SN / OPERATING SYSTEM</span><span><i />LIVE</span></div>
+          <div className="hybrid-console__visual">
+            <div className="hybrid-console__orbit orbit-a" />
+            <div className="hybrid-console__orbit orbit-b" />
+            <div className="hybrid-console__logo" aria-hidden="true"><BindruneLogo size={72} onDark /></div>
+            <span className="hybrid-console__node node-a">STRATEGY</span>
+            <span className="hybrid-console__node node-b">BUILD</span>
+            <span className="hybrid-console__node node-c">OPERATE</span>
+            <span className="hybrid-console__node node-d">ENABLE</span>
+          </div>
+          <div className="hybrid-console__foot"><span>HUMAN OVERSIGHT</span><strong>ACTIVE</strong></div>
+        </aside>
+      </section>
+
+      <section className="hybrid-proofline">
+        <span>{t.hybridProof}</span><span>{t.hybridAudience}</span><span>FRANKFURT / REMOTE</span>
+      </section>
+
+      <section className="hybrid-services" id="hybrid-services">
+        <header><p className="dd-section-label">{t.serviceLabel}</p><h2>{t.engagement}</h2><p>{t.engagementBody}</p></header>
+        <div className="hybrid-services__grid">
+          {t.services.map(([number, title, body]) => (
+            <article key={number}><span>{number}</span><h3>{title}</h3><p>{body}</p><ArrowRight size={18} /></article>
+          ))}
+        </div>
+      </section>
+
+      <section className="hybrid-method" id="hybrid-method">
+        <div className="hybrid-method__intro">
+          <p className="dd-section-label">02 / {t.hybridMethod}</p>
+          <h2>{t.hybridMethodTitle}</h2>
+          <p>{t.hybridMethodBody}</p>
+        </div>
+        <div className="hybrid-method__flow" aria-label="ShapeNeural process">
+          {t.systemSteps.map((step, index) => (
+            <div key={step}><span>0{index + 1}</span><strong>{step}</strong>{index < t.systemSteps.length - 1 && <i />}</div>
+          ))}
+        </div>
+      </section>
+
+      <section className="hybrid-work" id="hybrid-work">
+        <header><p className="dd-section-label">03 / {t.workLabel}</p><h2>{t.hybridWorkTitle}</h2><p>{t.workBody}</p></header>
+        <div className="hybrid-projects">
+          {t.projects.slice(0, 2).map(([title, category, body], index) => {
+            const images = [problaimImg, sapientshiftImg];
+            return (
+              <article key={title}>
+                <div><img src={images[index]} alt={`${title} project preview`} /><span>0{index + 1}</span></div>
+                <small>{category}</small><h3>{title}</h3><p>{body}</p><a href="#hybrid-work" aria-label={`${title} details`}><ArrowRight /></a>
+              </article>
+            );
+          })}
+          <aside className="hybrid-projects__index">
+            <p>PRODUCT / RESEARCH / FIELDWORK</p>
+            <ul><li>SAPIENTBLOCK <span>FLAGSHIP</span></li><li>VENIORA <span>PUBLIC AI</span></li><li>MELODEYE <span>LAB</span></li></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section className="hybrid-lab" id="hybrid-lab">
+        <div className="hybrid-lab__scan" aria-hidden="true" />
+        <div className="hybrid-lab__copy">
+          <p>{t.labEyebrow}</p>
+          <h2>{t.labTitle}</h2>
+          <p>{t.labBody}</p>
+          <a href="/lab">{t.labCta}<ExternalLink size={16} /></a>
+        </div>
+        <div className="hybrid-lab__portal" aria-label="Preview of the ShapeNeural Lab">
+          <div className="hybrid-lab__status"><span>SYS ● [SN_LAB]</span><span>ONLINE</span></div>
+          <div className="hybrid-lab__cloud">
+            <span className="cloud-a">HUMAN POTENTIAL</span><span className="cloud-b">DESIGNED INTELLIGENCE</span>
+            <span className="cloud-c">AGENTIC SYSTEMS</span><span className="cloud-d">EMOTION</span>
+            <span className="cloud-e">FUTURE OF WORK</span><span className="cloud-f">INTERROGATE →</span>
+          </div>
+          <div className="hybrid-lab__preserved">{t.labPreserved}</div>
+        </div>
+      </section>
+
+      <ConceptNote label="00" text={t.noteHybrid} />
+    </main>
   );
 }
 
@@ -367,7 +535,7 @@ function ConceptNote({ label, text }: { label: string; text: string }) {
 }
 
 export default function DesignDirections() {
-  const [direction, setDirection] = useState<Direction>("precision");
+  const [direction, setDirection] = useState<Direction>("hybrid");
   const [language, setLanguage] = useState<Language>("de");
 
   useEffect(() => {
@@ -387,6 +555,7 @@ export default function DesignDirections() {
         setLanguage={setLanguage}
       />
       <div className="dd-preview" key={direction}>
+        {direction === "hybrid" && <HybridDirection language={language} />}
         {direction === "precision" && <PrecisionDirection language={language} />}
         {direction === "systems" && <SystemsDirection language={language} />}
         {direction === "independent" && <IndependentDirection language={language} />}
