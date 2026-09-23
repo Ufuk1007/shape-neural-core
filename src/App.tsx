@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 const DesignDirections = lazy(() => import("./pages/DesignDirections"));
+const SignalsPage = lazy(() => import("./pages/SignalsPage"));
 
 const App = () => (
   <HelmetProvider>
@@ -34,6 +35,14 @@ const App = () => (
               element={
                 <Suspense fallback={null}>
                   <DesignDirections />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/signals"
+              element={
+                <Suspense fallback={null}>
+                  <SignalsPage />
                 </Suspense>
               }
             />

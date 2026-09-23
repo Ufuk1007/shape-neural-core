@@ -308,7 +308,7 @@ const labAgencyCopy = {
 const proofStudioCopy = {
   de: {
     eyebrow: "UNABHÄNGIGES KI-PRODUKTSTUDIO · FRANKFURT / REMOTE",
-    nav: [["Leistungen", "#proof-services"], ["Arbeit", "#proof-work"], ["Arbeitsweise", "#proof-process"], ["Studio", "#proof-studio"]],
+    nav: [["Leistungen", "#proof-services"], ["Arbeit", "#proof-work"], ["Signals", "/signals"], ["Arbeitsweise", "#proof-process"], ["Studio", "#proof-studio"]],
     contact: "Vorhaben besprechen",
     headline: <>Von einer guten Frage zu einem System, das <em>läuft.</em></>,
     body: "ShapeNeural verbindet Beratung, Produktentwicklung, Betrieb und Enablement. Für Unternehmen und Selbstständige, die KI praktisch einsetzen wollen – ohne unnötigen Overhead.",
@@ -375,7 +375,7 @@ const proofStudioCopy = {
   },
   en: {
     eyebrow: "INDEPENDENT AI PRODUCT STUDIO · FRANKFURT / REMOTE",
-    nav: [["Services", "#proof-services"], ["Work", "#proof-work"], ["How we work", "#proof-process"], ["Studio", "#proof-studio"]],
+    nav: [["Services", "#proof-services"], ["Work", "#proof-work"], ["Signals", "/signals"], ["How we work", "#proof-process"], ["Studio", "#proof-studio"]],
     contact: "Discuss a project",
     headline: <>From one good question to a system that <em>works.</em></>,
     body: "ShapeNeural combines advisory, product development, operations and enablement. For businesses and independents who want to put AI to practical use – without unnecessary overhead.",

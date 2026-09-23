@@ -1,5 +1,5 @@
 import { useRef, useMemo, useState, useEffect } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas, useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
@@ -9,6 +9,8 @@ import InterrogationUI from "./InterrogationUI";
 // Types
 type Category = "STR_ART" | "CX_UX" | "SONIC" | "META";
 type AtmosphereMood = 'NEUTRAL' | 'AGITATED' | 'ENLIGHTENED' | 'DARK';
+type NeuralCloudVariant = 'lab' | 'studio';
+type NeuralCloudLanguage = 'de' | 'en';
 
 interface DebrisData {
   id: string;
@@ -19,12 +21,24 @@ interface DebrisData {
   summary?: string;
 }
 
+type DistortMaterialHandle = THREE.MeshStandardMaterial & {
+  distort: number;
+  speed: number;
+};
+
 // Category Colors
 const CATEGORY_COLORS: Record<Category, string> = {
   STR_ART: "#ff0055",
   CX_UX: "#00ff41",
   SONIC: "#00ccff",
   META: "#ffffff",
+};
+
+const STUDIO_CATEGORY_COLORS: Record<Category, string> = {
+  STR_ART: "#ff5c7a",
+  CX_UX: "#b9ff3f",
+  SONIC: "#6480ff",
+  META: "#c9b4ff",
 };
 
 // Fallback Mock Data
@@ -137,7 +151,7 @@ const LiquidCore = ({
   mood?: AtmosphereMood;
   onClick?: () => void;
 }) => {
-  const materialRef = useRef<any>(null);
+  const materialRef = useRef<DistortMaterialHandle>(null);
   const meshRef = useRef<THREE.Mesh>(null);
 
   // Animated values for smooth transitions
@@ -147,7 +161,7 @@ const LiquidCore = ({
   const currentWireframe = useRef(false);
   const tapPulse = useRef(0);
 
-  const handleClick = (e: any) => {
+  const handleClick = (e: ThreeEvent<MouseEvent>) => {
     e.stopPropagation();
     tapPulse.current = 1.0;
     onClick?.();
@@ -275,6 +289,7 @@ const DebrisShard = ({
   isHighlighted,
   isDecrypted,
   isInterrogating,
+  color,
   onHover,
   onLeave,
   onClick
@@ -285,13 +300,14 @@ const DebrisShard = ({
   isHighlighted: boolean;
   isDecrypted: boolean;
   isInterrogating: boolean;
+  color?: string;
   onHover: () => void;
   onLeave: () => void;
   onClick: () => void;
 }) => {
   const meshRef = useRef<THREE.Mesh>(null);
   const groupRef = useRef<THREE.Group>(null);
-  const color = CATEGORY_COLORS[data.category];
+  const shardColor = color ?? CATEGORY_COLORS[data.category];
   const glowIntensity = useRef(0.5);
   const currentScale = useRef(1);
 
@@ -346,8 +362,8 @@ const DebrisShard = ({
       >
         <tetrahedronGeometry args={[0.25, 0]} />
         <meshStandardMaterial
-          color={color}
-          emissive={color}
+          color={shardColor}
+          emissive={shardColor}
           emissiveIntensity={0.5}
           wireframe={!isActive && !isHighlighted}
           transparent
@@ -359,7 +375,7 @@ const DebrisShard = ({
       {(isActive || isHighlighted || data.relevance > 90) && !isInterrogating && (
         <Line
           points={[[0, 0, 0], [-currentPos.current[0], -currentPos.current[1], -currentPos.current[2]]]}
-          color={isHighlighted ? "#fff" : isActive ? "#fff" : color}
+          color={isHighlighted ? "#fff" : isActive ? "#fff" : shardColor}
           lineWidth={isHighlighted ? 3 : isActive ? 2 : 1}
           transparent
           opacity={isHighlighted ? 1 : isActive ? 0.8 : 0.5}
@@ -370,31 +386,32 @@ const DebrisShard = ({
 };
 
 // Data Card Component (Hover preview)
-const DataCard = ({ data }: { data: DebrisData }) => {
-  const borderColor = CATEGORY_COLORS[data.category];
+const DataCard = ({ data, variant, language }: { data: DebrisData; variant: NeuralCloudVariant; language: NeuralCloudLanguage }) => {
+  const isStudio = variant === 'studio';
+  const borderColor = isStudio ? STUDIO_CATEGORY_COLORS[data.category] : CATEGORY_COLORS[data.category];
   
   return (
     <div 
-      className="absolute bottom-8 left-8 z-20 pointer-events-none"
+      className={`absolute bottom-8 left-8 z-20 pointer-events-none neural-data-card ${isStudio ? 'neural-data-card--studio' : ''}`}
       style={{
-        fontFamily: "'Courier New', Courier, monospace",
-        background: 'rgba(0, 0, 0, 0.9)',
-        border: `2px solid ${borderColor}`,
-        padding: '16px 20px',
+        fontFamily: isStudio ? "'Manrope', Arial, sans-serif" : "'Courier New', Courier, monospace",
+        background: isStudio ? 'rgba(15, 17, 15, 0.94)' : 'rgba(0, 0, 0, 0.9)',
+        border: `${isStudio ? 1 : 2}px solid ${borderColor}`,
+        padding: isStudio ? '20px 22px' : '16px 20px',
         minWidth: '280px',
       }}
     >
       <div style={{ color: borderColor, marginBottom: '8px' }}>
-        {`> DECRYPTING_ID: [${data.id}]`}
+        {isStudio ? `SIGNAL / ${data.id}` : `> DECRYPTING_ID: [${data.id}]`}
       </div>
       <div style={{ color: '#888', marginBottom: '4px' }}>
-        CATEGORY: <span style={{ color: borderColor }}>{data.category}</span>
+        {language === 'de' ? 'KATEGORIE' : 'CATEGORY'}: <span style={{ color: borderColor }}>{data.category}</span>
       </div>
       <div style={{ color: '#888', marginBottom: '4px' }}>
-        RELEVANCE: <span style={{ color: '#00ff41' }}>{data.relevance}%</span>
+        {language === 'de' ? 'RELEVANZ' : 'RELEVANCE'}: <span style={{ color: isStudio ? '#b9ff3f' : '#00ff41' }}>{data.relevance}%</span>
       </div>
       <div style={{ color: '#888' }}>
-        HEADLINE: <span style={{ color: '#fff' }}>{data.headline}</span>
+        {isStudio ? null : 'HEADLINE: '}<span style={{ color: '#fff' }}>{data.headline}</span>
       </div>
     </div>
   );
@@ -403,28 +420,33 @@ const DataCard = ({ data }: { data: DebrisData }) => {
 // Decryption Panel Component (Full detail view)
 const DecryptionPanel = ({ 
   data, 
-  onClose 
+  onClose,
+  variant,
+  language,
 }: { 
   data: DebrisData; 
   onClose: () => void;
+  variant: NeuralCloudVariant;
+  language: NeuralCloudLanguage;
 }) => {
-  const borderColor = CATEGORY_COLORS[data.category];
+  const isStudio = variant === 'studio';
+  const borderColor = isStudio ? STUDIO_CATEGORY_COLORS[data.category] : CATEGORY_COLORS[data.category];
   
   return (
     <>
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm"
+        className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm neural-detail-backdrop ${isStudio ? 'neural-detail-backdrop--studio' : ''}`}
         onClick={onClose}
       />
       
       {/* Side Panel */}
       <div 
-        className="fixed top-0 right-0 h-full w-full max-w-md z-50 animate-in slide-in-from-right duration-300"
+        className={`fixed top-0 right-0 h-full w-full max-w-md z-50 animate-in slide-in-from-right duration-300 neural-detail-panel ${isStudio ? 'neural-detail-panel--studio' : ''}`}
         style={{
-          fontFamily: "'Courier New', Courier, monospace",
-          background: 'rgba(0, 0, 0, 0.95)',
-          borderLeft: `2px solid ${borderColor}`,
+          fontFamily: isStudio ? "'Manrope', Arial, sans-serif" : "'Courier New', Courier, monospace",
+          background: isStudio ? '#f2f1ed' : 'rgba(0, 0, 0, 0.95)',
+          borderLeft: `${isStudio ? 1 : 2}px solid ${borderColor}`,
         }}
       >
         {/* Header */}
@@ -432,13 +454,14 @@ const DecryptionPanel = ({
           className="flex items-center justify-between p-4 border-b"
           style={{ borderColor }}
         >
-          <div style={{ color: '#00ff41' }} className="text-sm tracking-wider">
-            {'>'} DECRYPTION_MODE
+          <div style={{ color: isStudio ? '#3d6300' : '#00ff41' }} className="text-sm tracking-wider">
+            {isStudio ? 'SIGNAL / DETAILS' : '> DECRYPTION_MODE'}
           </div>
           <button
             onClick={onClose}
+            aria-label={language === 'de' ? 'Signal schließen' : 'Close signal'}
             className="p-2 hover:bg-white/10 transition-colors rounded"
-            style={{ color: '#fff' }}
+            style={{ color: isStudio ? '#101210' : '#fff' }}
           >
             <X size={20} />
           </button>
@@ -449,17 +472,17 @@ const DecryptionPanel = ({
           {/* Source ID */}
           <div>
             <div className="text-xs mb-1" style={{ color: '#666' }}>
-              {'>'} SOURCE_ID:
+              {isStudio ? 'SIGNAL ID' : '> SOURCE_ID:'}
             </div>
             <div className="text-lg tracking-wider" style={{ color: borderColor }}>
-              [{data.id}]
+              {isStudio ? data.id : `[${data.id}]`}
             </div>
           </div>
           
           {/* Category */}
           <div>
             <div className="text-xs mb-1" style={{ color: '#666' }}>
-              CATEGORY:
+              {language === 'de' ? 'KATEGORIE' : 'CATEGORY'}:
             </div>
             <div 
               className="inline-block px-3 py-1 text-sm font-bold tracking-wider"
@@ -476,10 +499,10 @@ const DecryptionPanel = ({
           {/* Relevance */}
           <div>
             <div className="text-xs mb-1" style={{ color: '#666' }}>
-              RELEVANCE_SCORE:
+              {language === 'de' ? 'RELEVANZ' : 'RELEVANCE'}:
             </div>
             <div className="flex items-center gap-3">
-              <div className="text-2xl font-bold" style={{ color: '#00ff41' }}>
+              <div className="text-2xl font-bold" style={{ color: isStudio ? '#3d6300' : '#00ff41' }}>
                 {data.relevance}%
               </div>
               <div 
@@ -500,9 +523,9 @@ const DecryptionPanel = ({
           {/* Headline */}
           <div>
             <div className="text-xs mb-2" style={{ color: '#666' }}>
-              HEADLINE:
+              {language === 'de' ? 'BEOBACHTUNG' : 'OBSERVATION'}:
             </div>
-            <div className="text-xl leading-relaxed" style={{ color: '#fff' }}>
+            <div className="text-xl leading-relaxed" style={{ color: isStudio ? '#101210' : '#fff' }}>
               {data.headline}
             </div>
           </div>
@@ -511,14 +534,14 @@ const DecryptionPanel = ({
           {data.summary && (
             <div>
               <div className="text-xs mb-2" style={{ color: '#666' }}>
-                SUMMARY:
+                {language === 'de' ? 'EINORDNUNG' : 'CONTEXT'}:
               </div>
               <div 
                 className="text-sm leading-relaxed p-4"
                 style={{ 
-                  color: '#aaa',
-                  background: 'rgba(255,255,255,0.03)',
-                  border: '1px solid #222'
+                  color: isStudio ? '#4e514b' : '#aaa',
+                  background: isStudio ? '#e7e7e2' : 'rgba(255,255,255,0.03)',
+                  border: `1px solid ${isStudio ? '#cacbc5' : '#222'}`
                 }}
               >
                 {data.summary}
@@ -535,11 +558,11 @@ const DecryptionPanel = ({
               className="flex items-center justify-center gap-2 w-full py-3 mt-8 font-bold tracking-wider text-sm transition-all hover:scale-[1.02]"
               style={{
                 color: '#000',
-                background: '#00ff41',
-                border: '2px solid #00ff41',
+                background: isStudio ? '#b9ff3f' : '#00ff41',
+                border: `2px solid ${isStudio ? '#b9ff3f' : '#00ff41'}`,
               }}
             >
-              <span>[ ACCESS_SOURCE_DATA ]</span>
+              <span>{isStudio ? (language === 'de' ? 'Quelle öffnen' : 'Open source') : '[ ACCESS_SOURCE_DATA ]'}</span>
               <ExternalLink size={16} />
             </a>
           )}
@@ -550,7 +573,7 @@ const DecryptionPanel = ({
           className="absolute bottom-0 left-0 right-0 p-4 border-t text-xs"
           style={{ borderColor: '#222', color: '#444' }}
         >
-          // CLICK_OUTSIDE_OR_[X]_TO_CLOSE
+          {isStudio ? (language === 'de' ? 'Außerhalb klicken oder × zum Schließen' : 'Click outside or × to close') : '// CLICK_OUTSIDE_OR_[X]_TO_CLOSE'}
         </div>
       </div>
     </>
@@ -596,11 +619,15 @@ const CameraController = ({ isMobile, isInterrogating }: { isMobile: boolean; is
 const NeuralCloud = ({
   isInterrogating = false,
   onExitInterrogation,
-  currentMood = 'NEUTRAL'
+  currentMood = 'NEUTRAL',
+  variant = 'lab',
+  language = 'en',
 }: {
   isInterrogating?: boolean;
   onExitInterrogation?: () => void;
   currentMood?: AtmosphereMood;
+  variant?: NeuralCloudVariant;
+  language?: NeuralCloudLanguage;
 }) => {
   const [activeShard, setActiveShard] = useState<DebrisData | null>(null);
   const [decryptedShard, setDecryptedShard] = useState<DebrisData | null>(null);
@@ -616,6 +643,7 @@ const NeuralCloud = ({
 
   // When interrogating, use interrogationMood; otherwise use currentMood
   const activeMood = isInterrogating ? interrogationMood : currentMood;
+  const isStudio = variant === 'studio';
   
   // Fetch debris data: try local first, then GitHub, then fallback to mock
   useEffect(() => {
@@ -667,7 +695,7 @@ const NeuralCloud = ({
   }, []);
   
   const analysis = useMemo(() => analyzeDebrisData(debrisData), [debrisData]);
-  const dominantColor = CATEGORY_COLORS[analysis.dominantCategory];
+  const dominantColor = isStudio ? STUDIO_CATEGORY_COLORS[analysis.dominantCategory] : CATEGORY_COLORS[analysis.dominantCategory];
   
   // Pre-calculate stable positions
   const debrisPositions = useMemo(() => {
@@ -678,23 +706,31 @@ const NeuralCloud = ({
   }, [debrisData]);
 
   return (
-    <section id="cloud" className="relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111]">
+    <section id="cloud" className={`relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111] neural-cloud ${isStudio ? 'neural-cloud--studio' : ''}`}>
       {/* Section Header - Above everything with semi-transparent background */}
-      <div className={`absolute top-0 left-0 right-0 z-40 px-8 md:px-20 pt-20 pb-8 pointer-events-none transition-opacity duration-1000 ${isInterrogating ? 'opacity-0' : 'opacity-100'}`}
-           style={{ background: 'linear-gradient(to bottom, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.7) 70%, transparent 100%)' }}>
+      <div className={`absolute top-0 left-0 right-0 z-40 px-8 md:px-20 pt-20 pb-8 pointer-events-none transition-opacity duration-1000 neural-cloud__header ${isInterrogating ? 'opacity-0' : 'opacity-100'}`}
+           style={{ background: isStudio ? 'linear-gradient(to bottom, rgba(8,10,9,.96) 0%, rgba(8,10,9,.68) 68%, transparent 100%)' : 'linear-gradient(to bottom, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.7) 70%, transparent 100%)' }}>
         <div className="max-w-6xl mx-auto pointer-events-auto">
           <div className="flex items-center gap-4 mb-4">
             <div
               className="w-3 h-3 rounded-full animate-pulse"
               style={{
-                backgroundColor: "#0f0",
-                boxShadow: "0 0 10px #0f0, 0 0 20px #0f044",
+                backgroundColor: isStudio ? "#b9ff3f" : "#0f0",
+                boxShadow: isStudio ? "0 0 16px rgba(185,255,63,.45)" : "0 0 10px #0f0, 0 0 20px #0f044",
               }}
             />
-            <span className="text-[#0f0] text-sm tracking-[0.3em] font-bold" style={{ fontFamily: "'Courier New', monospace" }}>LIVE_DATA_CLOUD</span>
+            <span className="text-sm tracking-[0.3em] font-bold" style={{ color: isStudio ? '#b9ff3f' : '#0f0', fontFamily: isStudio ? "'DM Mono', monospace" : "'Courier New', monospace" }}>
+              {isStudio ? 'SHAPENEURAL / SIGNAL FIELD' : 'LIVE_DATA_CLOUD'}
+            </span>
           </div>
           
-          {/* Chromatic Aberration Title */}
+          {isStudio ? (
+            <div className="neural-cloud__studio-heading">
+              <h2>{language === 'de' ? 'Signale werden sichtbar, wenn man Beziehungen sieht.' : 'Signals become visible when you see the relationships.'}</h2>
+              <p>{language === 'de' ? 'Nähe zum Kern zeigt Relevanz. Farbe zeigt Perspektive. Wählen Sie einen Punkt, um Quelle und Einordnung zu öffnen.' : 'Distance to the core indicates relevance. Colour shows perspective. Select a point to open its source and context.'}</p>
+            </div>
+          ) : (
+          <>
           <div className="relative">
             {/* Red Channel */}
             <div
@@ -722,21 +758,23 @@ const NeuralCloud = ({
           <p className="text-[#666] mt-6 max-w-xl tracking-wide text-sm md:text-base" style={{ fontFamily: "'Courier New', monospace" }}>
             {">"} Inspirations visualized by relevance. Click nodes to decrypt.
           </p>
+          </>
+          )}
           
           {/* Stats - Desktop: right side, Mobile: below subtitle */}
           {!isLoading && (
             <div className="mt-4 md:absolute md:top-20 md:right-8 lg:right-20 md:mt-0 text-xs font-mono flex flex-wrap gap-x-4 gap-y-1 md:block md:text-right">
               <div style={{ color: dominantColor }}>
-                DOMINANT: {analysis.dominantCategory}
+                {isStudio ? (language === 'de' ? 'FOKUS' : 'FOCUS') : 'DOMINANT'}: {analysis.dominantCategory}
               </div>
               <div style={{ color: '#00ff41' }}>
-                AVG_RELEVANCE: {analysis.averageRelevance.toFixed(1)}%
+                {isStudio ? (language === 'de' ? 'Ø RELEVANZ' : 'AVG RELEVANCE') : 'AVG_RELEVANCE'}: {analysis.averageRelevance.toFixed(1)}%
               </div>
               <div className="hidden md:block" style={{ color: 'rgba(255,255,255,0.5)' }}>
-                PULSE_FREQ: {analysis.pulseSpeed.toFixed(2)}Hz
+                {isStudio ? (language === 'de' ? 'AKTUALITÄT' : 'ACTIVITY') : 'PULSE_FREQ'}: {analysis.pulseSpeed.toFixed(2)}Hz
               </div>
               <div style={{ color: 'rgba(255,255,255,0.3)' }}>
-                NODES: {debrisData.length}
+                {isStudio ? (language === 'de' ? 'SIGNALE' : 'SIGNALS') : 'NODES'}: {debrisData.length}
               </div>
             </div>
           )}
@@ -751,8 +789,8 @@ const NeuralCloud = ({
       {/* Loading State */}
       {isLoading && (
         <div className="absolute inset-0 z-30 flex items-center justify-center">
-          <div className="font-mono text-sm tracking-wider animate-pulse" style={{ color: '#00ff41' }}>
-            INITIALIZING_CONNECTION...
+          <div className="font-mono text-sm tracking-wider animate-pulse" style={{ color: isStudio ? '#b9ff3f' : '#00ff41' }}>
+            {isStudio ? (language === 'de' ? 'SIGNALE WERDEN GELADEN…' : 'LOADING SIGNALS…') : 'INITIALIZING_CONNECTION...'}
           </div>
         </div>
       )}
@@ -762,18 +800,18 @@ const NeuralCloud = ({
         <CameraController isMobile={isMobile} isInterrogating={isInterrogating} />
         
         {/* Atmosphere */}
-        <color attach="background" args={["#000000"]} />
-        <fog attach="fog" args={["#000000", 10, 25]} />
-        <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+        <color attach="background" args={[isStudio ? "#080a09" : "#000000"]} />
+        <fog attach="fog" args={[isStudio ? "#080a09" : "#000000", 10, 25]} />
+        <Stars radius={100} depth={50} count={isStudio ? 1400 : 5000} factor={isStudio ? 2.5 : 4} saturation={0} fade speed={isStudio ? .35 : 1} />
         
         {/* Lighting */}
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} intensity={1} color="#fff" />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#ff0055" />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} color={isStudio ? "#6480ff" : "#ff0055"} />
 
         {/* The Liquid Core */}
         <LiquidCore
-          color={dominantColor}
+          color={isStudio ? '#b9ff3f' : dominantColor}
           pulseSpeed={analysis.pulseSpeed}
           isInterrogating={isInterrogating}
           mood={activeMood}
@@ -807,6 +845,7 @@ const NeuralCloud = ({
             isHighlighted={highlightedShard?.id === data.id}
             isDecrypted={isDecrypted}
             isInterrogating={isInterrogating}
+            color={isStudio ? STUDIO_CATEGORY_COLORS[data.category] : undefined}
             onHover={() => !isDecrypted && !isInterrogating && setActiveShard(data)}
             onLeave={() => !isDecrypted && setActiveShard(null)}
             onClick={() => !isInterrogating && setDecryptedShard(data)}
@@ -825,13 +864,15 @@ const NeuralCloud = ({
       </Canvas>
       
       {/* Data Card Overlay (only show when not decrypted) */}
-      {activeShard && !isDecrypted && <DataCard data={activeShard} />}
+      {activeShard && !isDecrypted && <DataCard data={activeShard} variant={variant} language={language} />}
       
       {/* Decryption Panel */}
       {decryptedShard && (
         <DecryptionPanel
           data={decryptedShard}
           onClose={() => setDecryptedShard(null)}
+          variant={variant}
+          language={language}
         />
       )}
 
