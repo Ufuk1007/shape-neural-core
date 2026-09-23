@@ -1,146 +1,138 @@
 [
   {
-    "id": "natively_adaptive_interfaces",
-    "category": "CX_UX",
-    "headline": "Natively Adaptive Interfaces Recast Accessibility as a Runtime Layer",
-    "summary": "Google Research introduces a framework for using multimodal AI to adapt applications to users’ accessibility needs. The approach is significant because it shifts universal design from fixed compliance targets toward interfaces that can dynamically respond to context, modality, and individual capability.",
-    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
-    "relevance": 94
-  },
-  {
-    "id": "ai_accessibility_summit_2026",
-    "category": "CX_UX",
-    "headline": "AI Accessibility Summit Brings Universal Design Into Focus",
-    "summary": "Cornell Tech’s September 22–23 summit centers on AI opportunities for accessibility, including research presentations, panels, and demonstrations. Its timing and subject matter make it a useful signal of accessibility becoming a primary design frontier rather than a secondary feature requirement.",
-    "url": "https://catai.ai.cornell.edu/summit.html",
-    "relevance": 80
-  },
-  {
-    "id": "generative_creativity_interaction_taxonomy",
+    "id": "human_ai_cocreativity_structural_design",
     "category": "STR_ART",
-    "headline": "A Taxonomy Maps How Artists Collaborate With Generative AI",
-    "summary": "A systematic review organizes interaction patterns for generative AI in art and creative practice. Its value lies in treating prompting, iteration, agency, and creative control as designable relationships rather than reducing AI art to image generation alone.",
-    "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337749952/Designing_Interactions_with_Generative_AI_for_Art_and_Creativity_A_Systematic_Review_and_Taxonomy.pdf",
-    "relevance": 88
-  },
-  {
-    "id": "human_ai_creative_agency",
-    "category": "META",
-    "headline": "Where Does the Human End in AI-Assisted Creativity?",
-    "summary": "This research examines creative agency when generative AI participates in artistic work. It is relevant to designers because it frames authorship as a distributed interaction between intention, system behavior, selection, and revision rather than as a binary human-versus-machine property.",
-    "url": "https://arxiv.org/html/2609.09333v1",
+    "headline": "Human–AI co-creativity turns friction into a design method",
+    "summary": "A new research paper examines how deliberate friction in human–AI interaction can support exploratory structural design rather than simply accelerate output. It matters because it frames AI as a partner for divergent thinking and material experimentation, not just an image generator.",
+    "url": "https://arxiv.org/html/2609.07711v1",
     "relevance": 91
   },
   {
-    "id": "interactive_evolving_aesthetic_systems",
-    "category": "STR_ART",
-    "headline": "Interactive Artworks Evolve Through Audience Feedback",
-    "summary": "A hybrid framework combines generative models, reinforcement learning, and particle-swarm optimization to produce digital artworks that change in response to audience engagement. The concept points toward artworks functioning as adaptive systems rather than static outputs.",
-    "url": "https://www.nature.com/articles/s41599-026-07132-z",
-    "relevance": 86
+    "id": "artists_histories_travel_with_work",
+    "category": "META",
+    "headline": "Can an artwork’s history survive generative transformation?",
+    "summary": "A new essay questions whether generative AI can carry an artist’s cultural memory, authorship, and process into derived works. The issue is central to creative practice because it shifts the debate from stylistic imitation toward provenance and artistic identity.",
+    "url": "https://www.dailymaverick.co.za/article/2026-09-23-ai-and-the-future-of-creativity-can-artists-histories-travel-with-their-work/",
+    "relevance": 88
   },
   {
-    "id": "ai_generated_accessibility_evaluation",
-    "category": "CX_UX",
-    "headline": "AI-Generated Interfaces Still Struggle With Visual Accessibility",
-    "summary": "Research evaluating outputs from ChatGPT and Copilot finds that structured prompts can produce useful results, but the systems remain weak at implementing visual accessibility reliably. The work proposes a cross-standard evaluation method and positions AI as an assistive design instrument, not an autonomous accessibility expert.",
-    "url": "https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/344/",
-    "relevance": 89
-  },
-  {
-    "id": "ai_music_creative_agency",
+    "id": "music_to_movement_translation_enabler",
     "category": "SONIC",
-    "headline": "AI Music Forces a Rethink of Musicianship and Agency",
-    "summary": "The 2026 Conference on AI Music Creativity foregrounds how generative systems reshape musicianship, style, education, and creative control. Its emphasis on negotiated agency between performers and AI makes it especially relevant to new collaborative sound practices.",
-    "url": "https://aimc2026.org/info-for-attendees-1/conference-program/papers",
+    "headline": "Audio models become choreographic engines",
+    "summary": "An experimental European project maps music into rhythm, emotional valence, spatial audio, and movement-generation features for time-aligned visual choreography. It suggests a future in which sound is not merely scored to motion but actively generates embodied spatial behavior.",
+    "url": "https://www.artificialnouveau.com/smalltools/grants/eu/",
+    "relevance": 93
+  },
+  {
+    "id": "adaptive_narrative_creator_ai",
+    "category": "META",
+    "headline": "Evolutionary AI offers a post-LLM route to narrative variation",
+    "summary": "A theatre and games project proposes evolutionary generation from creator-written story elements while explicitly rejecting language models trained on problematic historical corpora. Its design relevance lies in treating narrative AI as a controllable cultural system rather than an opaque text generator.",
+    "url": "https://www.artificialnouveau.com/smalltools/grants/eu/",
     "relevance": 90
   },
   {
-    "id": "generative_music_emotional_resonance",
-    "category": "SONIC",
-    "headline": "Generative Music Can Trigger Measurable Emotional Responses",
-    "summary": "A review finds that AI-generated music can reproduce acoustic cues associated with basic emotions and elicit measurable affective, attentional, and physiological responses in specific contexts. This opens design questions about emotional sound interfaces, synthetic performers, and attribution of affective intent.",
-    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1889696/pdf",
-    "relevance": 87
-  },
-  {
-    "id": "ai_music_authorship_material_conditions",
-    "category": "META",
-    "headline": "AI-Generated Music Reframes Creativity as a Sociotechnical Practice",
-    "summary": "A philosophical analysis argues that coherent generative music challenges conventional ideas of creativity and authorship while changing the material conditions of human artistic work. The key design implication is that creative AI must be understood through workflows, labor, datasets, and institutions—not output quality alone.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2?error=cookies_not_supported&code=0e938c65-52f2-4c84-ad59-20b9094b5ba2",
-    "relevance": 92
-  },
-  {
-    "id": "ai_creativity_boden_recombination",
-    "category": "META",
-    "headline": "Can Pattern Recombination Count as Machine Creativity?",
-    "summary": "The analysis applies Margaret Boden’s account of combinational creativity to generative music, arguing that systems can create novel configurations by recombining learned musical structures. It provides a precise framework for separating novelty, value, intention, and experience in debates about AI creativity.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2?error=cookies_not_supported&code=6ebe04d0-77ea-4f0b-a9ce-1826a7691fbf",
-    "relevance": 84
-  },
-  {
-    "id": "ai_music_education_creativity",
-    "category": "SONIC",
-    "headline": "Researchers Ask Whether Generative AI Expands Musical Creativity",
-    "summary": "Conference research considers whether generative systems encourage or hinder creativity in music education. The question matters for sonic design because educational interfaces may need to cultivate musical judgment and exploration rather than merely accelerate production.",
-    "url": "https://aimc2026.org/info-for-attendees-1/conference-program/papers",
-    "relevance": 82
-  },
-  {
-    "id": "human_ai_emotional_attribution",
-    "category": "META",
-    "headline": "Emotional Response Does Not Settle Questions of Authorship",
-    "summary": "Research on human–AI emotional resonance separates a listener’s measurable reaction from the question of who authored the emotional intention. That distinction is important for designing systems that generate affective audio while making provenance, agency, and responsibility legible.",
-    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1889696/pdf",
-    "relevance": 85
-  },
-  {
-    "id": "dynamic_audience_responsive_art",
-    "category": "STR_ART",
-    "headline": "Audience Engagement Becomes Material for Generative Art",
-    "summary": "The proposed art framework uses audience engagement as a signal that influences the evolution of an artwork in real time. This suggests a move from generative content pipelines toward feedback-driven aesthetic ecologies in which spectators become active participants in form-making.",
-    "url": "https://www.nature.com/articles/s41599-026-07132-z",
-    "relevance": 88
-  },
-  {
-    "id": "cross_standard_visual_accessibility",
+    "id": "immersive_speech_to_scene",
     "category": "CX_UX",
-    "headline": "A Cross-Standard Scorecard Tests AI Interface Accessibility",
-    "summary": "A new evaluation approach combines Apple, WCAG 2.2, and Microsoft accessibility guidance to assess interfaces generated by AI. Such cross-standard scoring could give design teams a more rigorous way to detect polished-looking outputs that fail practical accessibility requirements.",
-    "url": "https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/344/",
-    "relevance": 86
-  },
-  {
-    "id": "generative_ai_creative_control",
-    "category": "STR_ART",
-    "headline": "Creative Control Becomes an Interaction Design Problem",
-    "summary": "The systematic review of generative AI for art highlights the importance of designing interactions around iteration, control, and artistic intent. This reframes creative tooling: the central question is not only what a model can produce, but how artists can steer, contest, and meaningfully transform its behavior.",
-    "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337749952/Designing_Interactions_with_Generative_AI_for_Art_and_Creativity_A_Systematic_Review_and_Taxonomy.pdf",
-    "relevance": 87
-  },
-  {
-    "id": "adaptive_multimodal_universal_design",
-    "category": "CX_UX",
-    "headline": "Multimodal AI Makes Universal Design More Contextual",
-    "summary": "The Natively Adaptive Interfaces framework proposes multimodal AI as a mechanism for making applications more responsive to users and environments. Its broader implication is that accessibility may be designed as an ongoing negotiation among voice, vision, input method, cognition, and situational constraints.",
-    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
-    "relevance": 91
-  },
-  {
-    "id": "negotiated_human_ai_performance",
-    "category": "SONIC",
-    "headline": "The Performer–Model Relationship Becomes Part of the Composition",
-    "summary": "AI Music Creativity research focuses on situations where performers and generative systems negotiate creative control. This is compelling for sound designers because the interaction itself—prompting, interruption, selection, and live correction—can become an expressive layer of the performance.",
-    "url": "https://aimc2026.org/info-for-attendees-1/conference-program/papers",
+    "headline": "Speech-to-3D scene editing reshapes immersive design",
+    "summary": "An experimental XR initiative uses natural-language instructions to edit three-dimensional environments for dance and theatre. This points toward interaction models in which spatial composition becomes conversational, while raising questions about precision, embodiment, and designer control.",
+    "url": "https://www.artificialnouveau.com/smalltools/grants/eu/",
     "relevance": 89
   },
   {
-    "id": "ai_as_assistive_not_autonomous_designer",
+    "id": "agentic_systems_creativity_cognition",
+    "category": "CX_UX",
+    "headline": "Researchers measure how AI agents alter human creativity",
+    "summary": "A newly funded study combines brain signals, screen tracking, and verbalized thought to examine when agentic systems sharpen critical thinking and when they create cognitive blind spots. The findings could inform interaction guidelines for AI-assisted creative and professional workflows.",
+    "url": "https://agiright.org/topics",
+    "relevance": 92
+  },
+  {
+    "id": "ai_creative_bargain_originality",
+    "category": "STR_ART",
+    "headline": "The creative bargain: speed may displace experimentation",
+    "summary": "A recent analysis of Korean design, video, and music practice documents creators’ concern that one-click usable results can weaken judgment and exploratory craft. It is significant because it treats convenience as a cultural and pedagogical trade-off, not simply a productivity gain.",
+    "url": "https://www.koreajoongangdaily.com/korea/ais-creative-bargain-speed-for-originality/12886570",
+    "relevance": 84
+  },
+  {
+    "id": "ai_generated_music_chart_entry",
+    "category": "SONIC",
+    "headline": "Fully AI-made music reaches mainstream charts",
+    "summary": "A song reportedly created through an end-to-end AI music workflow entered major Korean streaming charts. The development tests existing assumptions about authorship, audience taste, labor, and whether a finished track requires a human performer to function as popular culture.",
+    "url": "https://www.koreajoongangdaily.com/korea/ais-creative-bargain-speed-for-originality/12886570",
+    "relevance": 87
+  },
+  {
+    "id": "generative_audio_production_infrastructure",
+    "category": "SONIC",
+    "headline": "Generative audio moves toward production infrastructure",
+    "summary": "A recent assessment of ElevenLabs Music v2.5 highlights blind-test validation and lossless downloads as indicators of improving output quality and workflow readiness. The shift matters for sound designers because generative audio is being evaluated as a dependable production layer rather than an experimental novelty.",
+    "url": "https://futurumgroup.com/insights/elevenlabs-music-v25-generative-audio-grows-up/",
+    "relevance": 82
+  },
+  {
+    "id": "ai_anthropomorphism_models",
     "category": "META",
-    "headline": "Accessibility Research Rejects the Autonomous AI Designer",
-    "summary": "Evaluation of AI-generated interfaces concludes that current systems are better positioned as assistive tools than independent designers. The finding offers a useful philosophical boundary: automation can expand design capacity, but accountability for inclusion remains embedded in human review and institutional standards.",
-    "url": "https://dl.designresearchsociety.org/drs-conference-papers/drs2026/researchpapers/344/",
-    "relevance": 88
+    "headline": "Are AI systems being pushed to perform too much humanity?",
+    "summary": "A recent philosophical and scientific discussion challenges the tendency to interpret instruction-following systems as humanlike minds. For designers, it raises the need to distinguish persuasive social behavior from consciousness when creating interfaces, agents, and emotional interaction patterns.",
+    "url": "https://www.nytimes.com/2026/09/21/science/ai-anthropomorphism-consciousness.html",
+    "relevance": 89
+  },
+  {
+    "id": "probabilistic_ai_consciousness_assessment",
+    "category": "META",
+    "headline": "Consciousness research shifts from binaries to probabilities",
+    "summary": "Current discussions increasingly frame machine consciousness through competing theories and probabilistic assessment rather than a simple conscious-versus-unconscious verdict. This creates a practical design problem: systems may require ethical safeguards before consciousness can be conclusively established.",
+    "url": "https://agiright.org/topics",
+    "relevance": 90
+  },
+  {
+    "id": "ai_ethics_guidance_moral_cognition",
+    "category": "CX_UX",
+    "headline": "Ethics guidance can improve AI decision-making",
+    "summary": "A reported psychology study found that embedded AI ethics guidance and formal ethics education improved participants’ decision quality, partly through stronger moral cognition. The result supports designing ethical reflection into workflows instead of treating responsible use as a standalone policy document.",
+    "url": "https://agiright.org/topics",
+    "relevance": 85
+  },
+  {
+    "id": "real_time_creative_generation",
+    "category": "STR_ART",
+    "headline": "Real-time generation compresses the distance from idea to image",
+    "summary": "A current review describes rapid image, video, and 3D generation from text or sketches as a defining creative-tool trend. Its design significance is the emergence of continuous visual iteration, where ideation, prototyping, and rendering increasingly happen in one fluid loop.",
+    "url": "https://mixflow.ai/blog/the-ai-pulse-whats-new-in-real-time-creativity-design-generation-for-september-2026/",
+    "relevance": 78
+  },
+  {
+    "id": "ai_ui_prototyping_workflows",
+    "category": "CX_UX",
+    "headline": "AI-generated interfaces accelerate the first design pass",
+    "summary": "The latest creative-tool landscape includes systems that generate wireframes, UI concepts, and prototypes from natural-language descriptions. These tools can reduce the cost of exploration, but they make critique, accessibility validation, and design-system coherence more important than ever.",
+    "url": "https://mixflow.ai/blog/the-ai-pulse-whats-new-in-real-time-creativity-design-generation-for-september-2026/",
+    "relevance": 81
+  },
+  {
+    "id": "copyright_aware_narrative_generation",
+    "category": "META",
+    "headline": "Narrative AI confronts the cultural bias of training corpora",
+    "summary": "The adaptive-narrative project foregrounds a rarely addressed problem: historical texts used for model training can reproduce sexism, racism, and imperial assumptions. Its alternative points toward creator-bounded systems whose cultural inputs are explicit, inspectable, and intentionally curated.",
+    "url": "https://www.artificialnouveau.com/smalltools/grants/eu/",
+    "relevance": 92
+  },
+  {
+    "id": "generative_ai_creativity_friction",
+    "category": "STR_ART",
+    "headline": "Design research asks whether friction can preserve originality",
+    "summary": "The emerging co-creativity literature treats resistance, constraint, and iterative negotiation as valuable parts of human–AI making. This challenges interfaces optimized solely for instant gratification and suggests that productive difficulty may be a core feature of creative AI tools.",
+    "url": "https://arxiv.org/html/2609.07711v1",
+    "relevance": 87
+  },
+  {
+    "id": "voice_to_spatial_worldbuilding",
+    "category": "CX_UX",
+    "headline": "Conversational commands enter spatial worldbuilding",
+    "summary": "Speech-driven scene editing connects language interfaces with 3D composition, offering a new model for building immersive environments through verbal direction. The opportunity is faster access to spatial authoring; the challenge is preserving nuance, reversibility, and embodied control.",
+    "url": "https://www.artificialnouveau.com/smalltools/grants/eu/",
+    "relevance": 86
   }
 ]
