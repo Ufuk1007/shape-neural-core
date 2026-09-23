@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,6 +14,7 @@ import AlliancePage from "./pages/AlliancePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+const DesignDirections = lazy(() => import("./pages/DesignDirections"));
 
 const App = () => (
   <HelmetProvider>
@@ -28,6 +30,14 @@ const App = () => (
             <Route path="/legal" element={<LegalPage />} />
             <Route path="/forge" element={<ForgePage />} />
             <Route path="/alliance" element={<AlliancePage />} />
+            <Route
+              path="/directions"
+              element={
+                <Suspense fallback={null}>
+                  <DesignDirections />
+                </Suspense>
+              }
+            />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
