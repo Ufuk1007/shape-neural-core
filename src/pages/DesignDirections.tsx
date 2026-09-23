@@ -221,7 +221,7 @@ function HybridDirection({ language }: { language: Language }) {
           </div>
         </div>
 
-        <aside className="hybrid-console" aria-label="ShapeNeural operating system">
+        <aside className="hybrid-console" id="hybrid-system" aria-label="ShapeNeural operating system">
           <div className="hybrid-console__top"><span>SN / OPERATING SYSTEM</span><span><i />LIVE</span></div>
           <div className="hybrid-console__visual">
             <div className="hybrid-console__orbit orbit-a" />
