@@ -6,6 +6,9 @@ import problaimImg from "@/assets/problaim-screenshot.png";
 import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import profilePortrait from "@/assets/profile-portrait.png";
+import stageFrictionImg from "@/assets/stage-friction.webp";
+import stageClarityImg from "@/assets/stage-clarity.webp";
+import stageSystemImg from "@/assets/stage-system.webp";
 import "@/design-directions.css";
 
 type Direction = "hybrid" | "precision" | "systems" | "independent" | "labAgency" | "proofStudio";
@@ -991,7 +994,7 @@ function ProofStudioHeader({ language }: { language: Language }) {
   return (
     <header className="proof-header">
       <a className="proof-brand" href="#proof-top" aria-label={language === "de" ? "ShapeNeural Startseite" : "ShapeNeural home"} onClick={() => setMenuOpen(false)}>
-        <BindruneLogo size={34} onDark={false} />
+        <BindruneLogo size={34} onDark showRed />
         <span>SHAPE<br />NEURAL</span>
       </a>
       <nav className={menuOpen ? "is-open" : ""} aria-label={language === "de" ? "Hauptnavigation" : "Primary navigation"}>
@@ -1021,6 +1024,11 @@ function ProofStudioDirection({ language }: { language: Language }) {
       <ProofStudioHeader language={language} />
 
       <section className="proof-hero">
+        <div className="proof-hero__sequence" aria-hidden="true">
+          <img className="proof-hero__frame proof-hero__frame--friction" src={stageFrictionImg} alt="" />
+          <img className="proof-hero__frame proof-hero__frame--clarity" src={stageClarityImg} alt="" />
+          <img className="proof-hero__frame proof-hero__frame--system" src={stageSystemImg} alt="" />
+        </div>
         <div className="proof-hero__copy">
           <p className="proof-kicker"><i />{t.eyebrow}</p>
           <h1>{t.headline}</h1>
@@ -1033,14 +1041,11 @@ function ProofStudioDirection({ language }: { language: Language }) {
           </div>
           <span className="proof-hero__entry">{t.entry}</span>
         </div>
-        <aside className="proof-hero__card">
-          <div className="proof-card__head"><span>{t.heroCardLabel}</span><span>SN / 01</span></div>
-          <div className="proof-card__mark"><BindruneLogo size={82} onDark showRed /></div>
-          <h2>{t.heroCardTitle}</h2>
-          <ol>
-            {t.heroCardItems.map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}
-          </ol>
-        </aside>
+        <div className="proof-hero__story" aria-hidden="true">
+          <span>{language === "de" ? "REIBUNG" : "FRICTION"}</span>
+          <span>{language === "de" ? "KLARHEIT" : "CLARITY"}</span>
+          <span>{language === "de" ? "SYSTEM" : "SYSTEM"}</span>
+        </div>
       </section>
 
       <section className="proof-facts" aria-label={language === "de" ? "Studio-Fakten" : "Studio facts"}>
