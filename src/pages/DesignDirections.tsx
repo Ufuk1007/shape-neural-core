@@ -8,7 +8,7 @@ import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import profilePortrait from "@/assets/profile-portrait.png";
 import "@/design-directions.css";
 
-type Direction = "hybrid" | "precision" | "systems" | "independent";
+type Direction = "hybrid" | "precision" | "systems" | "independent" | "labAgency";
 type Language = "de" | "en";
 
 const copy = {
@@ -219,7 +219,87 @@ const directionLabels: Record<Direction, { index: string; title: string; short: 
   precision: { index: "01", title: "Precision Studio", short: "Precision" },
   systems: { index: "02", title: "Autonomous Systems", short: "Systems" },
   independent: { index: "03", title: "Independent Intelligence", short: "Independent" },
+  labAgency: { index: "04", title: "Lab-native Agency", short: "Lab OS" },
 };
+
+const labAgencyCopy = {
+  de: {
+    system: "UNABHÄNGIGES KI-STUDIO / FRANKFURT",
+    live: "AGENCY_MODE: LIVE",
+    nav: [["LEISTUNGEN", "#labos-services"], ["AKTUELLES_LAB", "/lab"]],
+    headline: "Große KI-Wirkung. Ohne großes Theater.",
+    body: "ShapeNeural klärt, baut und betreibt KI-Produkte und agentische Systeme – direkt, verständlich und mit klarer menschlicher Verantwortung.",
+    primary: "PROJEKT_STARTEN",
+    secondary: "SYSTEME_ANSEHEN",
+    select: "ZUSAMMENARBEIT_WÄHLEN",
+    entry: "EINSTIEG AB EINEM FOKUSSIERTEN ARBEITSTAG",
+    servicesLabel: "01 / SERVICE_RACK",
+    servicesTitle: "Vier Module. Ein Studio. Kein unnötiger Overhead.",
+    servicesBody: "Der Einstieg folgt dem Problem – nicht der Unternehmensgröße. Jedes Modul liefert ein greifbares Ergebnis und kann allein oder als Teil einer dauerhaften Zusammenarbeit funktionieren.",
+    services: [
+      ["KLÄREN", "Wir finden den KI-Hebel, der für Ihr Geschäft tatsächlich zählt.", "SPARRING / DISCOVERY"],
+      ["BAUEN", "Vom ersten Prototyp bis zum belastbaren digitalen Produkt.", "PROTOTYPE SPRINT"],
+      ["BETREIBEN", "Agentische Workflows, überwacht und kontinuierlich verbessert.", "EMBEDDED STUDIO"],
+      ["BEFÄHIGEN", "Wissen, Systeme und Routinen, die in Ihrem Team bleiben.", "ENABLEMENT / ÜBERGABE"],
+    ],
+    workLabel: "02 / DEPLOYED_SYSTEMS",
+    workTitle: "Produkte statt PowerPoints.",
+    workBody: "Eigene Produkte sind unser Testfeld – und der Beweis, dass wir Strategie in funktionierende Systeme übersetzen.",
+    methodLabel: "03 / OPERATING_MODEL",
+    methodTitle: "Menschen geben Richtung. Agenten geben Hebel.",
+    methodBody: "Agenten beschleunigen Recherche, Produktion und Routine. Ziele, Entscheidungen, Qualitätskontrolle und Verantwortung bleiben menschlich.",
+    studioLabel: "04 / OPERATOR_PROFILE",
+    studioTitle: "Unabhängig im Denken. Verbindlich in der Umsetzung.",
+    studioBody: "ShapeNeural verbindet Design, Strategie, Produktdenken und angewandte KI. Klein genug für direkte Zusammenarbeit – systemisch genug für komplexe Vorhaben.",
+    labLabel: "05 / RESEARCH_LAYER",
+    labTitle: "Das Lab ist kein Nebenraum. Es ist die Forschungsoberfläche des Studios.",
+    labBody: "Wolke, Insights und Oracle bleiben als eigenständiges Erlebnis erhalten. In dieser Richtung sprechen Studio und Lab erstmals dieselbe visuelle Sprache.",
+    labCta: "LAB_BETRETEN",
+    contactLabel: "06 / TRANSMISSION_READY",
+    contactTitle: "Vielleicht beginnt es mit einer einzigen guten Frage.",
+    contactBody: "Kein großes Transformationsprogramm nötig. Wir können klein anfangen und nur dann weiterbauen, wenn es Substanz gibt.",
+    contactCta: "SIGNAL_SENDEN",
+    note: "Konsequent aus dem bestehenden Lab abgeleitet · Agenturinhalt als lebendes Betriebssystem",
+  },
+  en: {
+    system: "INDEPENDENT AI STUDIO / FRANKFURT",
+    live: "AGENCY_MODE: LIVE",
+    nav: [["SERVICES", "#labos-services"], ["CURRENT_LAB", "/lab"]],
+    headline: "Serious AI impact. Without the theatre.",
+    body: "ShapeNeural clarifies, builds and operates AI products and agentic systems — directly, clearly and with explicit human accountability.",
+    primary: "START_PROJECT",
+    secondary: "VIEW_SYSTEMS",
+    select: "SELECT_ENGAGEMENT",
+    entry: "START WITH ONE FOCUSED WORKING DAY",
+    servicesLabel: "01 / SERVICE_RACK",
+    servicesTitle: "Four modules. One studio. No unnecessary overhead.",
+    servicesBody: "The entry point follows the problem — not the size of the company. Each module creates a tangible outcome and works alone or as part of an ongoing partnership.",
+    services: [
+      ["CLARIFY", "Find the AI leverage that genuinely matters to your business.", "SPARRING / DISCOVERY"],
+      ["BUILD", "From first prototype to a robust digital product.", "PROTOTYPE SPRINT"],
+      ["OPERATE", "Agentic workflows, supervised and continuously improved.", "EMBEDDED STUDIO"],
+      ["ENABLE", "Knowledge, systems and routines that stay with your team.", "ENABLEMENT / HANDOVER"],
+    ],
+    workLabel: "02 / DEPLOYED_SYSTEMS",
+    workTitle: "Products, not PowerPoints.",
+    workBody: "Our own products are our testing ground — and proof that we translate strategy into working systems.",
+    methodLabel: "03 / OPERATING_MODEL",
+    methodTitle: "Humans set direction. Agents create leverage.",
+    methodBody: "Agents accelerate research, production and routine. Goals, decisions, quality control and accountability remain human.",
+    studioLabel: "04 / OPERATOR_PROFILE",
+    studioTitle: "Independent in thought. Accountable in delivery.",
+    studioBody: "ShapeNeural combines design, strategy, product thinking and applied AI. Small enough for direct collaboration — systemic enough for complex work.",
+    labLabel: "05 / RESEARCH_LAYER",
+    labTitle: "The Lab is not a side room. It is the studio's research surface.",
+    labBody: "Cloud, insights and Oracle remain their own experience. In this direction, studio and Lab finally speak the same visual language.",
+    labCta: "ENTER_LAB",
+    contactLabel: "06 / TRANSMISSION_READY",
+    contactTitle: "Maybe it starts with one good question.",
+    contactBody: "No grand transformation programme required. We can start small and only keep building when there is real substance.",
+    contactCta: "SEND_SIGNAL",
+    note: "Derived directly from the existing Lab · agency content as a living operating system",
+  },
+} as const;
 
 function BrandMark({ inverse = false }: { inverse?: boolean }) {
   return (
@@ -693,6 +773,79 @@ function IndependentDirection({ language }: { language: Language }) {
   );
 }
 
+function LabAgencyDirection({ language }: { language: Language }) {
+  const t = labAgencyCopy[language];
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => setSeconds((value) => value + 1), 1000);
+    return () => window.clearInterval(interval);
+  }, []);
+
+  const time = new Date(seconds * 1000).toISOString().slice(11, 19);
+
+  return (
+    <main className="dd-page dd-lab-agency" id="labos-top">
+      <div className="labos-scanline" aria-hidden="true" />
+      <header className="labos-header">
+        <a href="#labos-top" className="labos-brand" aria-label={language === "de" ? "ShapeNeural Startseite" : "ShapeNeural home"}>
+          <BindruneLogo size={34} onDark showRed />
+          <span>SHAPE<br />NEURAL_</span>
+        </a>
+        <span className="labos-header__system">{t.system}</span>
+        <nav aria-label={language === "de" ? "Hauptnavigation" : "Primary navigation"}>
+          {t.nav.map(([label, href]) => <a href={href} key={href}>{label}</a>)}
+          <a className="labos-header__contact" href="mailto:signal@shapeneural.com">{t.contactCta}</a>
+        </nav>
+      </header>
+
+      <section className="labos-hero">
+        <div className="labos-hero__copy">
+          <div className="labos-status"><span>SYS ● [SN_AGENCY_V1]</span><span>{time}</span><span>{t.live}</span></div>
+          <p className="labos-command">&gt; LOAD: DESIGNED_INTELLIGENCE / HUMAN_OVERSIGHT=ON</p>
+          <h1 className="labos-glitch" data-text={t.headline}>{t.headline}<i>_</i></h1>
+          <p className="labos-hero__body">{t.body}</p>
+          <div className="labos-actions">
+            <a href="mailto:signal@shapeneural.com">&gt; {t.primary}<ArrowRight size={18} /></a>
+            <a href="#labos-services">[ {t.select} ]</a>
+          </div>
+        </div>
+
+        <aside className="labos-selector" aria-label={t.select}>
+          <div className="labos-selector__head"><span>&gt; {t.select}:</span><span>04 MODULES</span></div>
+          {t.services.map(([title, , format], index) => (
+            <a href="#labos-services" key={title} className={`labos-selector__module is-${index + 1}`}>
+              <span>[MOD_0{index + 1}]</span><strong>{title}</strong><small>{format}</small><i>↗</i>
+            </a>
+          ))}
+          <div className="labos-selector__foot"><span>HUMAN_LED</span><span>AGENT_AMPLIFIED</span></div>
+        </aside>
+      </section>
+
+      <div className="labos-signalbar"><span>{t.entry}</span><span>FRANKFURT_NODE</span><span>REMOTE_ACCESS: ENABLED</span></div>
+
+      <section className="labos-services" id="labos-services">
+        <header>
+          <p>{t.servicesLabel}</p>
+          <h2>{t.servicesTitle}</h2>
+          <span>{t.servicesBody}</span>
+        </header>
+        <div className="labos-services__rack">
+          {t.services.map(([title, body, format], index) => (
+            <article key={title} className={`is-${index + 1}`}>
+              <div><span>[MOD_0{index + 1}]</span><span>STATUS: READY</span></div>
+              <h3>{title}</h3><p>{body}</p><small>OUTPUT: {format}</small>
+              <a href="mailto:signal@shapeneural.com" aria-label={`${title} — ${t.contactCta}`}>ACCESS_MODULE <ArrowRight size={15} /></a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <ConceptNote label="04" text={t.note} />
+    </main>
+  );
+}
+
 function ConceptNote({ label, text }: { label: string; text: string }) {
   return (
     <footer className="dd-concept-note">
@@ -735,6 +888,7 @@ export default function DesignDirections() {
         {direction === "precision" && <PrecisionDirection language={language} />}
         {direction === "systems" && <SystemsDirection language={language} />}
         {direction === "independent" && <IndependentDirection language={language} />}
+        {direction === "labAgency" && <LabAgencyDirection language={language} />}
       </div>
     </div>
   );
