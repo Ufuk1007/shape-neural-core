@@ -15,6 +15,8 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 const DesignDirections = lazy(() => import("./pages/DesignDirections"));
 const SignalsPage = lazy(() => import("./pages/SignalsPage"));
+const ModuleLibrary = lazy(() => import("./pages/ModuleLibrary"));
+const ModuleProjectPage = lazy(() => import("./pages/ModuleProjectPage"));
 
 const App = () => (
   <HelmetProvider>
@@ -43,6 +45,22 @@ const App = () => (
               element={
                 <Suspense fallback={null}>
                   <SignalsPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/modules"
+              element={
+                <Suspense fallback={null}>
+                  <ModuleLibrary />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/modules/projects/:slug"
+              element={
+                <Suspense fallback={null}>
+                  <ModuleProjectPage />
                 </Suspense>
               }
             />
