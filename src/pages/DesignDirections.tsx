@@ -8,7 +8,7 @@ import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import profilePortrait from "@/assets/profile-portrait.png";
 import "@/design-directions.css";
 
-type Direction = "hybrid" | "precision" | "systems" | "independent" | "labAgency";
+type Direction = "hybrid" | "precision" | "systems" | "independent" | "labAgency" | "proofStudio";
 type Language = "de" | "en";
 
 const copy = {
@@ -220,6 +220,7 @@ const directionLabels: Record<Direction, { index: string; title: string; short: 
   systems: { index: "02", title: "Autonomous Systems", short: "Systems" },
   independent: { index: "03", title: "Independent Intelligence", short: "Independent" },
   labAgency: { index: "04", title: "Lab-native Agency", short: "Lab OS" },
+  proofStudio: { index: "05", title: "Proof-led Studio", short: "Proof" },
 };
 
 const labAgencyCopy = {
@@ -298,6 +299,143 @@ const labAgencyCopy = {
     contactBody: "No grand transformation programme required. We can start small and only keep building when there is real substance.",
     contactCta: "SEND_SIGNAL",
     note: "Derived directly from the existing Lab · agency content as a living operating system",
+  },
+} as const;
+
+const proofStudioCopy = {
+  de: {
+    eyebrow: "UNABHÄNGIGES KI-PRODUKTSTUDIO · FRANKFURT / REMOTE",
+    nav: [["Leistungen", "#proof-services"], ["Arbeit", "#proof-work"], ["Arbeitsweise", "#proof-process"], ["Studio", "#proof-studio"]],
+    contact: "Vorhaben besprechen",
+    headline: <>Von einer guten Frage zu einem System, das <em>läuft.</em></>,
+    body: "ShapeNeural verbindet Beratung, Produktentwicklung, Betrieb und Enablement. Für Unternehmen und Selbstständige, die KI praktisch einsetzen wollen – ohne unnötigen Overhead.",
+    primary: "Vorhaben besprechen",
+    secondary: "Arbeit ansehen",
+    entry: "Einstieg ab einem fokussierten Arbeitstag",
+    heroCardLabel: "WAS SIE BEKOMMEN",
+    heroCardTitle: "Nicht nur eine Idee. Einen nächsten Zustand.",
+    heroCardItems: ["Eine klare Entscheidung", "Ein nutzbares System", "Ein Weg in den Betrieb"],
+    proof: [
+      ["01 TAG", "möglicher Einstieg"],
+      ["03", "eigene Produkte"],
+      ["DIREKT", "mit dem Gründer"],
+      ["END-TO-END", "Strategie bis Betrieb"],
+    ],
+    servicesLabel: "01 / LEISTUNGEN",
+    servicesTitle: "Klein anfangen. Sichtbar liefern. Verantwortung behalten.",
+    servicesBody: "Jede Zusammenarbeit beginnt mit einer konkreten Frage und endet mit einem greifbaren Ergebnis – nicht mit einer allgemeinen KI-Präsentation.",
+    outcome: "ERGEBNIS",
+    format: "FORMAT",
+    services: [
+      ["Klarheit schaffen", "Wir priorisieren den KI-Hebel, der für Ihr Geschäft wirklich zählt.", "Entscheidungsgrundlage", "Focus Day / AI Opportunity Map"],
+      ["Etwas Echtes bauen", "Wir übersetzen die Entscheidung in einen testbaren Workflow, Agenten oder ein digitales Produkt.", "Nutzbares Produkt", "Prototype / Product Sprint"],
+      ["Zuverlässig betreiben", "Wir überwachen, pflegen und verbessern Systeme, wenn sie Teil des Alltags werden.", "Verlässlicher Betrieb", "Embedded AI Operations"],
+      ["Menschen befähigen", "Wir verankern Wissen, Werkzeuge und Verantwortung so, dass Ihr Team selbständig weiterkommt.", "Eigenständiges Team", "Training / Handover"],
+    ],
+    workLabel: "02 / EIGENE PRODUKTE",
+    workTitle: "Wir beraten nicht nur über KI. Wir bauen mit ihr.",
+    workBody: "Eigene Produkte machen unsere Entscheidungen überprüfbar: Produktstrategie, Experience, Engineering und laufendes Lernen treffen in realen Systemen aufeinander.",
+    projects: [
+      ["PROBLAIM", "DECISION INTELLIGENCE", "Komplexe Probleme strukturiert zerlegen, Perspektiven vergleichen und bessere nächste Schritte finden.", "BETA / AKTIV"],
+      ["SAPIENTSHIFT", "AI POTENTIAL", "Kuratiertes Wissen macht konkrete KI-Potenziale für Rollen, Teams und Unternehmen sichtbar.", "318 USE CASES / BETA"],
+      ["HUMANCRYP.TO", "EXPLORATION / ARCHIVE", "Ein frühes narratives Experiment, das komplexe Technologie über Figuren und Geschichten zugänglich macht.", "EXPERIMENT / ARCHIV"],
+    ],
+    processLabel: "03 / ARBEITSWEISE",
+    processTitle: "Vom ersten Signal bis zu einem System im Alltag.",
+    processBody: "Wir zeigen früh etwas Reales, treffen Entscheidungen gemeinsam und bauen nur weiter, wenn der nächste Schritt Substanz hat.",
+    steps: [
+      ["Verstehen", "Problem, Menschen, Daten und Grenzen sichtbar machen."],
+      ["Beweisen", "Die kleinste sinnvolle Lösung prototypisch testen."],
+      ["Produzieren", "Experience, Engineering und Governance zusammenführen."],
+      ["Betreiben", "Qualität, Kosten und Verhalten im Alltag beobachten."],
+      ["Übergeben", "Wissen, Dokumentation und Entscheidungsfähigkeit verankern."],
+    ],
+    trustLabel: "04 / VERANTWORTUNG",
+    trustTitle: "Technologie wird austauschbar. Verantwortung nicht.",
+    trustBody: "Modelle und Werkzeuge ändern sich schnell. Deshalb entwerfen wir Systeme um klare Zuständigkeiten, menschliche Freigaben und nachvollziehbare Entscheidungen.",
+    principles: [
+      ["Problem vor Modell", "Die Technologie folgt dem geschäftlichen Kontext – nicht umgekehrt."],
+      ["Menschliche Freigaben", "Kritische Entscheidungen behalten eine klar benannte verantwortliche Person."],
+      ["Offene Übergabe", "Dokumentation, Wissen und Zugänge sind Teil des Ergebnisses."],
+      ["Lernen im Betrieb", "Ein System ist nicht fertig, wenn es live geht. Dann beginnt die reale Prüfung."],
+    ],
+    studioLabel: "05 / DAS STUDIO",
+    studioTitle: "Ein verantwortlicher Partner. Verstärkt durch ein agentisches System.",
+    studioBody: "ShapeNeural ist bewusst unabhängig und kompakt. Sie arbeiten direkt mit Ufuk Avci – mit Erfahrung in Strategie, Experience Design und angewandter KI – und einem spezialisierten Netzwerk, wenn das Vorhaben mehr Disziplinen braucht.",
+    studioMeta: "UFUK AVCI · FOUNDER / AI & CX STRATEGY · FRANKFURT",
+    ctaLabel: "06 / EIN GUTER ANFANG",
+    ctaTitle: "Zeigen Sie mir den Prozess, der gerade Zeit, Qualität oder Nerven kostet.",
+    ctaBody: "Sie müssen noch keine fertige KI-Idee haben. Eine konkrete Reibung im Alltag reicht als Ausgangspunkt.",
+    ctaButton: "Signal senden",
+    footer: "INDEPENDENT AI PRODUCT STUDIO",
+    note: "Benchmark-Synthese · outcome-first · proof-led · zugänglich · bewusst ohne Lab",
+  },
+  en: {
+    eyebrow: "INDEPENDENT AI PRODUCT STUDIO · FRANKFURT / REMOTE",
+    nav: [["Services", "#proof-services"], ["Work", "#proof-work"], ["How we work", "#proof-process"], ["Studio", "#proof-studio"]],
+    contact: "Discuss a project",
+    headline: <>From one good question to a system that <em>works.</em></>,
+    body: "ShapeNeural combines advisory, product development, operations and enablement. For businesses and independents who want to put AI to practical use – without unnecessary overhead.",
+    primary: "Discuss a project",
+    secondary: "See our work",
+    entry: "Start with one focused working day",
+    heroCardLabel: "WHAT YOU GET",
+    heroCardTitle: "Not just an idea. A better next state.",
+    heroCardItems: ["A clear decision", "A usable system", "A path into operations"],
+    proof: [
+      ["01 DAY", "possible entry point"],
+      ["03", "products of our own"],
+      ["DIRECT", "with the founder"],
+      ["END-TO-END", "strategy to operations"],
+    ],
+    servicesLabel: "01 / SERVICES",
+    servicesTitle: "Start small. Ship visibly. Keep accountability clear.",
+    servicesBody: "Every engagement starts with a concrete question and ends with a tangible outcome – not a generic AI presentation.",
+    outcome: "OUTCOME",
+    format: "FORMAT",
+    services: [
+      ["Create clarity", "We prioritise the AI leverage that genuinely matters to your business.", "A sound decision", "Focus Day / AI Opportunity Map"],
+      ["Build something real", "We turn the decision into a testable workflow, agent or digital product.", "A usable product", "Prototype / Product Sprint"],
+      ["Run it reliably", "We monitor, maintain and improve systems once they become part of daily work.", "Reliable operations", "Embedded AI Operations"],
+      ["Enable people", "We anchor knowledge, tools and accountability so your team can keep moving independently.", "An independent team", "Training / Handover"],
+    ],
+    workLabel: "02 / PRODUCTS OF OUR OWN",
+    workTitle: "We do not just advise on AI. We build with it.",
+    workBody: "Our own products make our decisions testable: product strategy, experience, engineering and continuous learning meet in real systems.",
+    projects: [
+      ["PROBLAIM", "DECISION INTELLIGENCE", "Decompose complex problems, compare perspectives and identify better next moves.", "BETA / ACTIVE"],
+      ["SAPIENTSHIFT", "AI POTENTIAL", "Curated knowledge makes concrete AI potential visible for roles, teams and companies.", "318 USE CASES / BETA"],
+      ["HUMANCRYP.TO", "EXPLORATION / ARCHIVE", "An early narrative experiment that makes complex technology accessible through characters and stories.", "EXPERIMENT / ARCHIVE"],
+    ],
+    processLabel: "03 / HOW WE WORK",
+    processTitle: "From the first signal to a system in daily use.",
+    processBody: "We show something real early, make decisions together and only keep building when the next step has substance.",
+    steps: [
+      ["Understand", "Make the problem, people, data and boundaries visible."],
+      ["Prove", "Test the smallest meaningful solution as a prototype."],
+      ["Produce", "Bring experience, engineering and governance together."],
+      ["Operate", "Observe quality, cost and behaviour in daily work."],
+      ["Transfer", "Anchor knowledge, documentation and decision-making capability."],
+    ],
+    trustLabel: "04 / ACCOUNTABILITY",
+    trustTitle: "Technology becomes interchangeable. Accountability does not.",
+    trustBody: "Models and tools change quickly. That is why we design systems around clear ownership, human approvals and traceable decisions.",
+    principles: [
+      ["Problem before model", "Technology follows the business context – never the other way around."],
+      ["Human approvals", "Critical decisions keep a clearly named accountable person."],
+      ["Open handover", "Documentation, knowledge and access are part of the outcome."],
+      ["Learn in operation", "A system is not finished when it goes live. That is when the real test starts."],
+    ],
+    studioLabel: "05 / THE STUDIO",
+    studioTitle: "One accountable partner. Amplified by an agentic system.",
+    studioBody: "ShapeNeural is deliberately independent and compact. You work directly with Ufuk Avci – combining strategy, experience design and applied AI – and a specialist network when the work needs more disciplines.",
+    studioMeta: "UFUK AVCI · FOUNDER / AI & CX STRATEGY · FRANKFURT",
+    ctaLabel: "06 / A GOOD PLACE TO START",
+    ctaTitle: "Show me the process that is currently costing time, quality or patience.",
+    ctaBody: "You do not need a finished AI idea. One concrete point of friction in daily work is enough to begin.",
+    ctaButton: "Send a signal",
+    footer: "INDEPENDENT AI PRODUCT STUDIO",
+    note: "Benchmark synthesis · outcome-first · proof-led · accessible · deliberately without Lab",
   },
 } as const;
 
@@ -846,6 +984,154 @@ function LabAgencyDirection({ language }: { language: Language }) {
   );
 }
 
+function ProofStudioHeader({ language }: { language: Language }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const t = proofStudioCopy[language];
+
+  return (
+    <header className="proof-header">
+      <a className="proof-brand" href="#proof-top" aria-label={language === "de" ? "ShapeNeural Startseite" : "ShapeNeural home"} onClick={() => setMenuOpen(false)}>
+        <BindruneLogo size={34} onDark={false} />
+        <span>SHAPE<br />NEURAL</span>
+      </a>
+      <nav className={menuOpen ? "is-open" : ""} aria-label={language === "de" ? "Hauptnavigation" : "Primary navigation"}>
+        {t.nav.map(([label, href]) => <a href={href} key={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
+        <a className="proof-header__cta" href="#proof-contact" onClick={() => setMenuOpen(false)}>{t.contact}<ArrowRight size={15} /></a>
+      </nav>
+      <button
+        type="button"
+        className="dd-menu proof-menu"
+        onClick={() => setMenuOpen((open) => !open)}
+        aria-expanded={menuOpen}
+        aria-label={menuOpen ? copy[language].close : copy[language].menu}
+      >
+        {menuOpen ? <X /> : <Menu />}
+      </button>
+    </header>
+  );
+}
+
+function ProofStudioDirection({ language }: { language: Language }) {
+  const t = proofStudioCopy[language];
+  const projectImages = [problaimImg, sapientshiftImg, humancryptoImg];
+  const projectUrls = ["https://problaim.com", "https://sapientshift.com", "https://humancryp.to"];
+
+  return (
+    <main className="dd-page dd-proof-studio" id="proof-top">
+      <ProofStudioHeader language={language} />
+
+      <section className="proof-hero">
+        <div className="proof-hero__copy">
+          <p className="proof-kicker"><i />{t.eyebrow}</p>
+          <h1>{t.headline}</h1>
+          <div className="proof-hero__intro">
+            <p>{t.body}</p>
+            <div className="proof-actions">
+              <a href="#proof-contact">{t.primary}<ArrowRight size={17} /></a>
+              <a href="#proof-work">{t.secondary}<ArrowDown size={16} /></a>
+            </div>
+          </div>
+          <span className="proof-hero__entry">{t.entry}</span>
+        </div>
+        <aside className="proof-hero__card">
+          <div className="proof-card__head"><span>{t.heroCardLabel}</span><span>SN / 01</span></div>
+          <div className="proof-card__mark"><BindruneLogo size={82} onDark showRed /></div>
+          <h2>{t.heroCardTitle}</h2>
+          <ol>
+            {t.heroCardItems.map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}
+          </ol>
+        </aside>
+      </section>
+
+      <section className="proof-facts" aria-label={language === "de" ? "Studio-Fakten" : "Studio facts"}>
+        {t.proof.map(([value, label]) => <div key={label}><strong>{value}</strong><span>{label}</span></div>)}
+      </section>
+
+      <section className="proof-services" id="proof-services">
+        <header>
+          <p>{t.servicesLabel}</p>
+          <h2>{t.servicesTitle}</h2>
+          <span>{t.servicesBody}</span>
+        </header>
+        <div className="proof-services__grid">
+          {t.services.map(([title, body, outcome, format], index) => (
+            <article key={title}>
+              <div className="proof-services__number"><span>0{index + 1}</span><i /></div>
+              <h3>{title}</h3>
+              <p>{body}</p>
+              <dl>
+                <div><dt>{t.outcome}</dt><dd>{outcome}</dd></div>
+                <div><dt>{t.format}</dt><dd>{format}</dd></div>
+              </dl>
+              <a href="#proof-contact" aria-label={`${title} — ${t.contact}`}><ArrowRight /></a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="proof-work" id="proof-work">
+        <header>
+          <p>{t.workLabel}</p>
+          <h2>{t.workTitle}</h2>
+          <span>{t.workBody}</span>
+        </header>
+        <div className="proof-work__grid">
+          {t.projects.map(([title, category, body, status], index) => (
+            <article key={title} className={index === 0 ? "is-featured" : ""}>
+              <a href={projectUrls[index]} target="_blank" rel="noreferrer" className="proof-work__image">
+                <img src={projectImages[index]} alt={language === "de" ? `${title} Projektvorschau` : `${title} project preview`} />
+                <span>0{index + 1}</span>
+              </a>
+              <div className="proof-work__meta"><span>{category}</span><span>{status}</span></div>
+              <h3>{title}</h3><p>{body}</p>
+              <a href={projectUrls[index]} target="_blank" rel="noreferrer" aria-label={`${title} website`}>{language === "de" ? "Projekt öffnen" : "Open project"}<ExternalLink size={15} /></a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="proof-process" id="proof-process">
+        <div className="proof-process__intro">
+          <p>{t.processLabel}</p><h2>{t.processTitle}</h2><span>{t.processBody}</span>
+        </div>
+        <div className="proof-process__steps">
+          {t.steps.map(([title, body], index) => (
+            <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{body}</p></article>
+          ))}
+        </div>
+      </section>
+
+      <section className="proof-trust">
+        <header><p>{t.trustLabel}</p><h2>{t.trustTitle}</h2><span>{t.trustBody}</span></header>
+        <div>
+          {t.principles.map(([title, body], index) => (
+            <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{body}</p></article>
+          ))}
+        </div>
+      </section>
+
+      <section className="proof-studio" id="proof-studio">
+        <div className="proof-studio__portrait">
+          <img src={profilePortrait} alt={language === "de" ? "Ufuk Avci, Gründer von ShapeNeural" : "Ufuk Avci, founder of ShapeNeural"} />
+          <span>{t.studioMeta}</span>
+        </div>
+        <div className="proof-studio__copy"><p>{t.studioLabel}</p><h2>{t.studioTitle}</h2><span>{t.studioBody}</span></div>
+      </section>
+
+      <section className="proof-contact" id="proof-contact">
+        <p>{t.ctaLabel}</p><h2>{t.ctaTitle}</h2>
+        <div><span>{t.ctaBody}</span><a href="mailto:signal@shapeneural.com">{t.ctaButton}<ArrowRight /></a></div>
+      </section>
+
+      <footer className="proof-footer">
+        <div className="proof-brand proof-brand--footer"><BindruneLogo size={30} onDark /><span>SHAPE<br />NEURAL</span></div>
+        <span>{t.footer}</span><span>FRANKFURT / REMOTE · DE / EN</span>
+      </footer>
+      <ConceptNote label="05" text={t.note} />
+    </main>
+  );
+}
+
 function ConceptNote({ label, text }: { label: string; text: string }) {
   return (
     <footer className="dd-concept-note">
@@ -856,7 +1142,7 @@ function ConceptNote({ label, text }: { label: string; text: string }) {
 }
 
 export default function DesignDirections() {
-  const [direction, setDirection] = useState<Direction>("independent");
+  const [direction, setDirection] = useState<Direction>("proofStudio");
   const [language, setLanguage] = useState<Language>("de");
 
   useEffect(() => {
@@ -889,6 +1175,7 @@ export default function DesignDirections() {
         {direction === "systems" && <SystemsDirection language={language} />}
         {direction === "independent" && <IndependentDirection language={language} />}
         {direction === "labAgency" && <LabAgencyDirection language={language} />}
+        {direction === "proofStudio" && <ProofStudioDirection language={language} />}
       </div>
     </div>
   );
