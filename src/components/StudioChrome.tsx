@@ -62,7 +62,15 @@ export function StudioFooter({ language }: { language: StudioLanguage }) {
     <footer className="ss-footer">
       <div className="ss-footer__brand"><BindruneLogo size={38} onDark /><span>SHAPENEURAL®</span></div>
       <p>{language === "de" ? "Unabhängiges KI-Produktstudio · Frankfurt / Remote" : "Independent applied AI studio · Frankfurt / Remote"}</p>
-      <div><Link to="/studio/leistungen">{language === "de" ? "Leistungen" : "Services"}</Link><Link to="/studio/projekte">{language === "de" ? "Projekte" : "Projects"}</Link><Link to="/studio/lab">Lab</Link><a href="mailto:signal@shapeneural.com">signal@shapeneural.com</a></div>
+      <div className="ss-footer__links">
+        <Link to="/studio/leistungen">{language === "de" ? "Leistungen" : "Services"}</Link>
+        <Link to="/studio/projekte">{language === "de" ? "Projekte" : "Projects"}</Link>
+        <Link to="/studio/lab">Lab</Link>
+        <a href="mailto:signal@shapeneural.com">signal@shapeneural.com</a>
+        <Link to="/impressum">{language === "de" ? "Impressum" : "Legal notice"}</Link>
+        <Link to="/datenschutz">{language === "de" ? "Datenschutz" : "Privacy"}</Link>
+        <Link to="/agb">{language === "de" ? "AGB" : "Terms"}</Link>
+      </div>
     </footer>
   );
 }

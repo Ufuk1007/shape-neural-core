@@ -41,7 +41,7 @@ const LegalPage = () => {
           <div className="space-y-3 text-sm md:text-base leading-relaxed" style={{ color: "#888" }}>
             <div className="grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-2">
               <span style={{ color: "#666" }}>OPERATOR_ID:</span>
-              <span style={{ color: "#aaa" }}>Ufuk Avci</span>
+              <span style={{ color: "#aaa" }}>Aeron Avci</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-[160px_1fr] gap-2">
               <span style={{ color: "#666" }}>CONTACT_NODE:</span>

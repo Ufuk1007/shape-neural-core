@@ -24,8 +24,8 @@ const C = {
   textLightMid: "rgba(255, 255, 255, 0.65)",
   textLightSub: "rgba(255, 255, 255, 0.4)",
   textLightMuted: "rgba(255, 255, 255, 0.18)",
-  mono: "'IBM Plex Mono', 'Courier New', monospace",
-  sans: "'DM Sans', system-ui, sans-serif",
+  mono: "'DM Mono', 'Courier New', monospace",
+  sans: "'Manrope', system-ui, sans-serif",
 };
 
 /* ── Intersection Observer hook ── */
@@ -483,16 +483,6 @@ export default function AlliancePage() {
       setFormState("sent");
     }
   };
-
-  useEffect(() => {
-    if (!document.getElementById("alliance-fonts")) {
-      const link = document.createElement("link");
-      link.id = "alliance-fonts";
-      link.rel = "stylesheet";
-      link.href = "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap";
-      document.head.appendChild(link);
-    }
-  }, []);
 
   const sectionLabel = (text: string, onDark: boolean) => (
     <p style={{

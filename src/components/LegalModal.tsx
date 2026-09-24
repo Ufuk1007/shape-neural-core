@@ -86,7 +86,7 @@ const LegalModal = ({ isOpen, onClose }: LegalModalProps) => {
                   <div className="space-y-3 text-[#888] text-sm md:text-base leading-relaxed">
                     <div className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2">
                       <span className="text-[#666]">OPERATOR_ID:</span>
-                      <span className="text-[#aaa]">Ufuk Avci</span>
+                      <span className="text-[#aaa]">Aeron Avci</span>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-2">
                       <span className="text-[#666]">CONTACT_NODE:</span>

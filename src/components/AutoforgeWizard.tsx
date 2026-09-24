@@ -843,7 +843,7 @@ Built with AUTOFORGE by ShapeNeural Labs
 // ═══════════════════════════════════════════════════════════
 
 const glow = (c) => `0 0 20px ${c}33, 0 0 40px ${c}15`;
-const mono = "'IBM Plex Mono', 'Fira Code', monospace";
+const mono = "'DM Mono', 'Fira Code', monospace";
 
 function StepBar({ step }) {
   return (
@@ -1897,7 +1897,6 @@ export default function AutoforgeWizard() {
       backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,255,65,0.012) 2px, rgba(0,255,65,0.012) 4px)`,
     }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; }
         ::selection { background: ${C.green}44; }
         input:focus, select:focus { border-color: ${C.green} !important; }
@@ -1992,5 +1991,4 @@ export default function AutoforgeWizard() {
     </div>
   );
 }
-
 
