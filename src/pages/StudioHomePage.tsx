@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowDown, ArrowRight, Check, ExternalLink } from "lucide-react";
+import { ArrowDown, ArrowRight, Check } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
 import { PROJECT_DETAILS } from "@/data/project-details";
 import { STUDIO_OFFERS } from "@/data/studio";
@@ -13,8 +13,6 @@ import stageFriction from "@/assets/stage-friction.webp";
 import stageClarity from "@/assets/stage-clarity.webp";
 import stageSystem from "@/assets/stage-system.webp";
 import workshopImage from "@/assets/module-workshop.webp";
-import operationsImage from "@/assets/module-operations.webp";
-import profilePortrait from "@/assets/profile-portrait.png";
 import "@/studio-site.css";
 
 const HERO_FRAMES = [stageFriction, stageClarity, stageSystem];
@@ -30,7 +28,7 @@ const copy = {
     definition: "ShapeNeural ist ein unabhängiges Studio für angewandte KI. Wir verbessern bestehende Arbeit, gestalten Abläufe neu und machen neue Produktideen real testbar.",
     smallLabel: "Small by design",
     smallTitle: "Direkte Zusammenarbeit. Klar begrenzte Vorhaben. Etwas, das danach existiert.",
-    smallBody: "Keine Übergabe zwischen Sales, Beratung und Entwicklung. Die Person, mit der Sie sprechen, strukturiert, konzipiert und baut auch – unterstützt durch ein agentisches Studio-Setup.",
+    smallBody: "Konzeption, Umsetzung und Betrieb bleiben in einem kleinen verantwortlichen Setup verbunden – unterstützt durch spezialisierte KI-Agenten.",
     pathLabel: "Welcher Weg passt zu Ihnen?",
     pathTitle: "Drei Wege – je nachdem, was heute wirklich gebraucht wird.",
     explore: "Leistung vertiefen",
@@ -58,14 +56,6 @@ const copy = {
     responsibilityLabel: "Human-led / agent-amplified",
     responsibilityTitle: "KI darf handeln. Verantwortung bleibt sichtbar.",
     responsibilityBody: "Agenten können recherchieren, produzieren und Routine übernehmen. Ziele, Freigaben, sensible Entscheidungen und die Verantwortung für das Ergebnis bleiben bei Menschen.",
-    labLabel: "ShapeNeural Lab",
-    labTitle: "Beobachten, bevor etwas offensichtlich wird.",
-    labBody: "Das Lab ist keine zweite Projektgalerie. Es sammelt Signale, verbindet Entwicklungen und hält offene Fragen sichtbar – als eigenständige Forschungsoberfläche des Studios.",
-    openLab: "Lab betreten",
-    founderLabel: "Direkter Senior-Zugang",
-    founderTitle: "Die Person im Gespräch bleibt auch im Projekt verantwortlich.",
-    founderBody: "Mehr als 20 Jahre Experience- und Transformationsarbeit treffen auf angewandte KI und schnelles Produktbauen. Klein genug für direkte Zusammenarbeit – strukturiert genug für anspruchsvolle Vorhaben.",
-    founderMeta: "Ufuk Avci · AI & CX Strategy / Product / Venture Building",
     ctaLabel: "Klein anfangen. Substanziell weiterbauen.",
     ctaTitle: "Was soll durch KI besser werden?",
     cta: "Vorhaben besprechen",
@@ -80,7 +70,7 @@ const copy = {
     definition: "ShapeNeural is the independent applied AI studio that improves existing work, redesigns workflows and makes new ideas tangible enough to test.",
     smallLabel: "Small by design",
     smallTitle: "Direct collaboration. Bounded projects. Something that exists afterwards.",
-    smallBody: "No handover between sales, consultants and developers. The person you speak with structures, designs and builds the work — supported by an agentic studio setup.",
+    smallBody: "Concept, implementation and operations stay connected in one small accountable setup — supported by specialised AI agents.",
     pathLabel: "Which path fits you?",
     pathTitle: "Three paths — depending on what the work needs now.",
     explore: "Explore service",
@@ -108,14 +98,6 @@ const copy = {
     responsibilityLabel: "Human-led / agent-amplified",
     responsibilityTitle: "AI may act. Accountability stays visible.",
     responsibilityBody: "Agents can research, produce and handle routine. Intent, approvals, sensitive decisions and accountability for the outcome remain human.",
-    labLabel: "ShapeNeural Lab",
-    labTitle: "Observe before something becomes obvious.",
-    labBody: "The Lab is not a second project gallery. It collects signals, connects developments and keeps open questions visible — as the studio’s independent research surface.",
-    openLab: "Enter the Lab",
-    founderLabel: "Direct senior access",
-    founderTitle: "The person in the conversation remains accountable in the work.",
-    founderBody: "More than 20 years of experience and transformation work meet applied AI and rapid product building. Small enough for direct collaboration — structured enough for ambitious work.",
-    founderMeta: "Ufuk Avci · AI & CX Strategy / Product / Venture Building",
     ctaLabel: "Start small. Build something substantial.",
     ctaTitle: "What should AI make better?",
     cta: "Discuss a project",
@@ -157,7 +139,7 @@ export default function StudioHomePage() {
 
         <section className="ss-small ss-section">
           <img src={workshopImage} alt="Focused direct collaboration" />
-          <div><p className="ss-eyebrow">{t.smallLabel}</p><h2>{t.smallTitle}</h2><p>{t.smallBody}</p><ul><li><Check />{language === "de" ? "Ein direkter Ansprechpartner" : "One direct partner"}</li><li><Check />{language === "de" ? "Klarer Umfang statt offener Programme" : "Clear scope rather than open programmes"}</li><li><Check />{language === "de" ? "Umsetzung statt Folienübergabe" : "Implementation rather than a deck handover"}</li></ul></div>
+          <div><p className="ss-eyebrow">{t.smallLabel}</p><h2>{t.smallTitle}</h2><p>{t.smallBody}</p><ul><li><Check />{language === "de" ? "Ein verantwortlicher Projektkern" : "One accountable project core"}</li><li><Check />{language === "de" ? "Klarer Umfang statt offener Programme" : "Clear scope rather than open programmes"}</li><li><Check />{language === "de" ? "Umsetzung statt Folienübergabe" : "Implementation rather than a deck handover"}</li></ul></div>
         </section>
 
         <section className="ss-paths ss-section">
@@ -189,19 +171,18 @@ export default function StudioHomePage() {
           <div className="ss-method__track">{t.method.map(([number, title, body]) => <article key={number}><span>{number}</span><i /><h3>{title}</h3><p>{body}</p></article>)}</div>
         </section>
 
-        <section className="ss-responsibility ss-section">
-          <img src={operationsImage} alt="Human review of an agent workflow" />
+        <section className="ss-responsibility ss-section" id="responsibility">
+          <div className="ss-accountability-map" role="img" aria-label={language === "de" ? "Vier Kontrollpunkte eines verantwortlichen KI-Systems" : "Four checkpoints in an accountable AI system"}>
+            <header><span>OPERATING MODEL</span><small>04 / CHECKPOINTS</small></header>
+            <div>{[
+              ["01", "INTENT", language === "de" ? "Ziel und Grenze" : "Goal and boundary"],
+              ["02", "AI ACTION", language === "de" ? "Nachvollziehbarer Lauf" : "Inspectable run"],
+              ["03", "HUMAN CHECK", language === "de" ? "Prüfung und Freigabe" : "Review and approval"],
+              ["04", "RELEASE", language === "de" ? "Verantwortete Wirkung" : "Accountable outcome"],
+            ].map(([number, title, body]) => <article key={number}><span>{number}</span><i /><strong>{title}</strong><p>{body}</p></article>)}</div>
+            <footer><span>HUMAN ACCOUNTABILITY</span><b>ACTIVE</b></footer>
+          </div>
           <div><p className="ss-eyebrow">{t.responsibilityLabel}</p><h2>{t.responsibilityTitle}</h2><p>{t.responsibilityBody}</p><div className="ss-control-flow"><span>INTENT</span><ArrowRight /><span>AI ACTION</span><ArrowRight /><span>HUMAN CHECK</span><ArrowRight /><span>RELEASE</span></div></div>
-        </section>
-
-        <section className="ss-lab-portal ss-section">
-          <div className="ss-signal-orbit"><i /><i /><i /><b>SN</b><span>LIVE SIGNALS</span></div>
-          <div><p className="ss-eyebrow">{t.labLabel}</p><h2>{t.labTitle}</h2><p>{t.labBody}</p><Link className="ss-button ss-button--dark" to="/studio/lab">{t.openLab}<ExternalLink size={16} /></Link></div>
-        </section>
-
-        <section className="ss-founder ss-section">
-          <div className="ss-founder__portrait"><img src={profilePortrait} alt="Ufuk Avci" /><span>FOUNDER / OPERATOR</span></div>
-          <div><p className="ss-eyebrow">{t.founderLabel}</p><h2>{t.founderTitle}</h2><p>{t.founderBody}</p><strong>{t.founderMeta}</strong></div>
         </section>
 
         <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:signal@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a><BindruneLogo size={50} onDark={false} /></section>
