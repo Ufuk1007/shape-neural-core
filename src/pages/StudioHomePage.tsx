@@ -8,7 +8,6 @@ import { STUDIO_OFFERS } from "@/data/studio";
 import { StudioFooter, StudioHeader } from "@/components/StudioChrome";
 import { useStudioLanguage } from "@/hooks/use-studio-language";
 import StudioProjectCard from "@/components/StudioProjectCard";
-import StudioDeviceStage from "@/components/StudioDeviceStage";
 import BindruneLogo from "@/components/BindruneLogo";
 import stageFriction from "@/assets/stage-friction.webp";
 import stageClarity from "@/assets/stage-clarity.webp";
@@ -173,7 +172,8 @@ export default function StudioHomePage() {
 
         <section className="ss-proof ss-section">
           <div className="ss-proof__media">
-            {featured.image && <StudioDeviceStage primarySrc={featured.image} secondarySrc={featuredMedia[1]?.src} alt="SAPIENTBLOCK analysis interface" host="sapientblock.com" variant="dark" />}
+            <div className="ss-device ss-device--laptop"><div className="ss-device__top"><i /><i /><i /></div>{featured.image && <img src={featured.image} alt="SAPIENTBLOCK analysis interface" />}</div>
+            <div className="ss-proof__covers">{featuredMedia.filter((item) => item.device === "plain").map((item, index) => <img src={item.src} alt={language === "de" ? `SAPIENTBLOCK Use-Case-Motiv ${index + 1}` : `SAPIENTBLOCK use-case visual ${index + 1}`} key={item.src} />)}</div>
             <span>FEATURED PRODUCT / LIVE</span>
           </div>
           <div className="ss-proof__copy"><p className="ss-eyebrow">{t.proofLabel}</p><h2>{t.proofTitle}</h2><p>{t.proofBody}</p><div className="ss-proof__features"><span>{language === "de" ? "Unternehmensanalyse" : "Company analysis"}</span><span>RAG Matching</span><span>{language === "de" ? "Ideengenerator" : "Idea generator"}</span><span>Content Operations</span><span>LLM Readability</span></div><blockquote>{language === "de" ? "Aus einer Technologiedatenbank wurde ein System, das Kontext versteht, Relevanz ordnet und Wissen verteilt." : "A technology database became a system that understands context, prioritises relevance and distributes knowledge."}</blockquote><Link className="ss-text-link" to="/studio/projekte/sapientblock">SAPIENTBLOCK {language === "de" ? "vertiefen" : "case"}<ArrowRight size={16} /></Link></div>

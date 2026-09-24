@@ -2,13 +2,10 @@ import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ArrowRight, ExternalLink, Languages, Mail } from "lucide-react";
 import BindruneLogo from "@/components/BindruneLogo";
-import StudioDeviceStage from "@/components/StudioDeviceStage";
 import { useStudioLanguage } from "@/hooks/use-studio-language";
 import { findProjectBySlug, PROJECTS } from "@/data/projects";
 import { PROJECT_DETAILS, type ProjectMedia } from "@/data/project-details";
 import "@/module-library.css";
-
-const lightStageProjects = new Set(["melodeye", "problaim", "humancrypto"]);
 
 function DeviceVisual({ media, alt }: { media: ProjectMedia; alt: string }) {
   if (media.device === "plain") {
@@ -40,7 +37,6 @@ export default function ModuleProjectPage() {
   const projectIndex = PROJECTS.findIndex((item) => item.slug === slug);
   const next = PROJECTS[(projectIndex + 1) % PROJECTS.length];
   const contactSubject = encodeURIComponent(`${project.title.replaceAll("_", " ")} — Projektgespräch`);
-  const host = project.url ? new URL(project.url).hostname.replace(/^www\./, "") : "shapeneural.com";
 
   return (
     <div className={`mp-shell ${studioMode ? "mp-shell--studio" : ""}`}>
@@ -63,13 +59,7 @@ export default function ModuleProjectPage() {
             <blockquote>{copy.question}</blockquote>
           </div>
           <div className="mp-hero__visual">
-            <StudioDeviceStage
-              primarySrc={detail.media[0].src}
-              secondarySrc={detail.media[1]?.src}
-              alt={`${project.title} — ${copy.mediaCaptions[0]}`}
-              host={host}
-              variant={lightStageProjects.has(project.slug) ? "light" : "dark"}
-            />
+            <DeviceVisual media={detail.media[0]} alt={`${project.title} — ${copy.mediaCaptions[0]}`} />
             <span>{project.status}</span>
           </div>
         </section>
