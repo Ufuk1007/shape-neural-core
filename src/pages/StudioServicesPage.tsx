@@ -6,7 +6,7 @@ import { useStudioLanguage } from "@/hooks/use-studio-language";
 import { STUDIO_OFFERS } from "@/data/studio";
 import workshopImage from "@/assets/module-workshop.webp";
 import workflowImage from "@/assets/stage-clarity.webp";
-import productImage from "@/assets/stage-system.webp";
+import productImage from "@/assets/service-create.webp";
 import "@/studio-site.css";
 
 const OFFER_IMAGES = {
