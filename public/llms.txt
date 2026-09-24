@@ -12,7 +12,7 @@ ShapeNeural ist ein unabhängiges Studio für angewandte KI in Frankfurt am Main
 
 ## Hauptseiten
 
-- [Startseite](https://www.shapeneural.com/) · [Markdown](https://www.shapeneural.com/index.md) · [JSON-LD](https://www.shapeneural.com/schema.jsonld)
+- [Startseite](https://www.shapeneural.com/) · [Markdown](https://www.shapeneural.com/home.md) · [JSON-LD](https://www.shapeneural.com/schema.jsonld)
 - [Leistungen und Preise](https://www.shapeneural.com/studio/leistungen) · [Markdown](https://www.shapeneural.com/studio/leistungen.md) · [JSON-LD](https://www.shapeneural.com/studio/leistungen.jsonld) · [Service-Katalog](https://www.shapeneural.com/studio/leistungen/catalog.json)
 - [Projektportfolio](https://www.shapeneural.com/studio/projekte) · [Markdown](https://www.shapeneural.com/studio/projekte.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte.jsonld) · [Projekt-Katalog](https://www.shapeneural.com/studio/projekte/catalog.json)
 - [ShapeNeural Lab](https://www.shapeneural.com/studio/lab) · [Markdown](https://www.shapeneural.com/studio/lab.md) · [JSON-LD](https://www.shapeneural.com/studio/lab.jsonld)
