@@ -4,14 +4,23 @@ import { ArrowRight, Check, Minus } from "lucide-react";
 import { StudioFooter, StudioHeader } from "@/components/StudioChrome";
 import { useStudioLanguage } from "@/hooks/use-studio-language";
 import { STUDIO_OFFERS } from "@/data/studio";
+import workshopImage from "@/assets/module-workshop.webp";
+import workflowImage from "@/assets/stage-clarity.webp";
+import productImage from "@/assets/stage-system.webp";
 import "@/studio-site.css";
+
+const OFFER_IMAGES = {
+  augment: workshopImage,
+  transform: workflowImage,
+  create: productImage,
+} as const;
 
 const copy = {
   de: {
-    eyebrow: "Leistungen & Preise",
-    title: "Drei Wege, KI praktisch voranzubringen.",
-    intro: "Kein offenes Transformationsprogramm. Jedes Angebot beginnt mit einer konkreten Frage und endet mit etwas, das genutzt, getestet oder entschieden werden kann.",
-    path: "Welcher Weg passt zu Ihnen?",
+    eyebrow: "Leistungen",
+    title: "KI einrichten. Arbeit neu gestalten. Produktideen real testen.",
+    intro: "Der richtige Auftrag hängt nicht vom neuesten Werkzeug ab, sondern von Ihrer Ausgangslage. Jedes Angebot löst ein anderes Problem und endet mit einem konkret nutzbaren Ergebnis.",
+    path: "Ihre Ausgangslage",
     choose: "Zum Angebot",
     result: "Konkretes Ergebnis",
     includes: "Was enthalten ist",
@@ -39,6 +48,11 @@ const copy = {
       ["04", "Validate", "Nutzen, Qualität, Fehlerfälle, Kosten und menschliche Eingriffe testen."],
       ["05", "Transfer", "Wissen, Dokumentation und Verantwortung nachvollziehbar übergeben."],
     ],
+    imageCaptions: {
+      augment: "Bestehende Arbeit verstehen, bevor Werkzeuge ausgewählt und eingerichtet werden.",
+      transform: "Abläufe als überprüfbare Systeme aus KI, Automation und menschlicher Freigabe gestalten.",
+      create: "Produktideen so weit bauen, dass echte Nutzung eine belastbare Entscheidung ermöglicht.",
+    },
     faqLabel: "Häufige Fragen",
     faq: [
       ["Für wen ist das gedacht?", "Für kleine Unternehmen, kompakte Teams und Selbstständige, die KI praktisch einsetzen wollen. Nicht für große Kernsystemmigrationen oder unternehmenskritischen 24/7-Betrieb."],
@@ -53,9 +67,9 @@ const copy = {
   },
   en: {
     eyebrow: "Services & pricing",
-    title: "Three ways to move AI into practical work.",
-    intro: "No open-ended transformation programme. Every offer starts with a concrete question and ends with something that can be used, tested or decided.",
-    path: "Which path fits you?",
+    title: "Set up AI. Redesign the work. Test product ideas in the real world.",
+    intro: "The right engagement is defined by your starting point, not by the newest tool. Each offer solves a different problem and ends in a concrete, usable outcome.",
+    path: "Your starting point",
     choose: "Explore offer",
     result: "Concrete outcome",
     includes: "What is included",
@@ -83,6 +97,11 @@ const copy = {
       ["04", "Validate", "Test value, quality, failure cases, cost and human intervention."],
       ["05", "Transfer", "Hand over knowledge, documentation and accountability clearly."],
     ],
+    imageCaptions: {
+      augment: "Understand the work before selecting and configuring the tools.",
+      transform: "Design workflows as inspectable systems of AI, automation and human approval.",
+      create: "Build product ideas far enough for real use to support a confident decision.",
+    },
     faqLabel: "Frequently asked questions",
     faq: [
       ["Who is this for?", "Small businesses, compact teams and independent professionals who want to use AI in practice. It is not designed for core-system migrations or production-critical 24/7 operations."],
@@ -121,6 +140,7 @@ export default function StudioServicesPage() {
             <section className={`ss-offer ss-offer--${offer.id} ss-section`} id={offer.id} key={offer.id}>
               <header><span>{offer.number}</span><small>{offer.label}</small><p>{offer.proof === "portfolio" ? t.proofPortfolio : t.proofExample}</p></header>
               <div className="ss-offer__intro"><div><p className="ss-eyebrow">{offer.title[language]}</p><h2>{offer.promise[language]}</h2></div><div><p>{offer.description[language]}</p><strong>{offer.frame[language]}</strong></div></div>
+              <figure className="ss-offer__media"><img src={OFFER_IMAGES[offer.id]} alt="" loading="lazy" decoding="async" /><figcaption><span>{offer.number} / {offer.label}</span><p>{t.imageCaptions[offer.id]}</p></figcaption></figure>
               <div className="ss-offer__result"><small>{t.result}</small><h3>{offer.outcome[language]}</h3></div>
               <div className="ss-offer__details">
                 <div><h4>{t.includes}</h4><ul>{offer.deliverables[language].map((item) => <li key={item}><Check size={15} />{item}</li>)}</ul></div>

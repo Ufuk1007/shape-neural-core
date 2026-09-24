@@ -13,6 +13,7 @@ import stageFriction from "@/assets/stage-friction.webp";
 import stageClarity from "@/assets/stage-clarity.webp";
 import stageSystem from "@/assets/stage-system.webp";
 import workshopImage from "@/assets/module-workshop.webp";
+import accountabilityImage from "@/assets/module-accountability.webp";
 import "@/studio-site.css";
 
 const HERO_FRAMES = [stageFriction, stageClarity, stageSystem];
@@ -29,8 +30,8 @@ const copy = {
     smallLabel: "Small by design",
     smallTitle: "Direkte Zusammenarbeit. Klar begrenzte Vorhaben. Etwas, das danach existiert.",
     smallBody: "Konzeption, Umsetzung und Betrieb bleiben in einem kleinen verantwortlichen Setup verbunden – unterstützt durch spezialisierte KI-Agenten.",
-    pathLabel: "Welcher Weg passt zu Ihnen?",
-    pathTitle: "Drei Wege – je nachdem, was heute wirklich gebraucht wird.",
+    pathLabel: "Drei Ausgangslagen",
+    pathTitle: "Nicht jede KI-Frage braucht dasselbe Projekt.",
     explore: "Leistung vertiefen",
     materialLabel: "Nicht nur Beratung",
     materialTitle: "Was nach der Zusammenarbeit tatsächlich bleibt.",
@@ -40,9 +41,9 @@ const copy = {
       ["TRANSFORM", "Working Workflow", "Blueprint, Automationen, Kontrollpunkte, Evaluation und Runbook"],
       ["CREATE", "Testable Product", "Produktkonzept, funktionaler Prototyp, Validierung und Roadmap"],
     ],
-    proofLabel: "Flagship Product / Proof through building",
-    proofTitle: "SAPIENTBLOCK verbindet Analyse, Matching, Ideen und Content zu einem Produkt.",
-    proofBody: "Die Plattform analysiert Unternehmen, ordnet hunderte reale Blockchain-Anwendungen ein und erzeugt daraus relevante Beispiele, neue Ideen und veröffentlichbare Inhalte. Ein gebautes System – nicht nur ein Konzept.",
+    proofLabel: "Produktbeispiel / von Analyse bis Veröffentlichung",
+    proofTitle: "SAPIENTBLOCK zeigt, wie aus Daten ein durchgängiger KI-Arbeitsprozess wird.",
+    proofBody: "Die Plattform analysiert Unternehmen, findet passende Anwendungen, entwickelt daraus neue Ideen und bereitet veröffentlichbare Inhalte vor. Für Kunden zeigt das Prinzip, wie sich Recherche, Bewertung und Produktion in einem nachvollziehbaren System verbinden lassen.",
     allProjects: "Gesamtes Portfolio ansehen",
     methodLabel: "Wie ShapeNeural arbeitet",
     methodTitle: "Ein wiederholbarer Weg – ohne Standardlösung zu spielen.",
@@ -71,8 +72,8 @@ const copy = {
     smallLabel: "Small by design",
     smallTitle: "Direct collaboration. Bounded projects. Something that exists afterwards.",
     smallBody: "Concept, implementation and operations stay connected in one small accountable setup — supported by specialised AI agents.",
-    pathLabel: "Which path fits you?",
-    pathTitle: "Three paths — depending on what the work needs now.",
+    pathLabel: "Three starting points",
+    pathTitle: "Different AI questions require different engagements.",
     explore: "Explore service",
     materialLabel: "Beyond advice",
     materialTitle: "What actually remains after the work.",
@@ -82,9 +83,9 @@ const copy = {
       ["TRANSFORM", "Working Workflow", "Blueprint, automations, checkpoints, evaluation and runbook"],
       ["CREATE", "Testable Product", "Product concept, functional prototype, validation and roadmap"],
     ],
-    proofLabel: "Flagship product / Proof through building",
-    proofTitle: "SAPIENTBLOCK connects analysis, matching, ideas and content in one product.",
-    proofBody: "The platform analyses companies, evaluates hundreds of real blockchain applications and turns them into relevant examples, new ideas and publishable content. A working system — not just a concept.",
+    proofLabel: "Product example / from analysis to publishing",
+    proofTitle: "SAPIENTBLOCK shows how data becomes an end-to-end AI workflow.",
+    proofBody: "The platform analyses companies, finds relevant applications, develops new ideas and prepares publishable content. For clients, the principle demonstrates how research, evaluation and production can be connected in one inspectable system.",
     allProjects: "Explore the complete portfolio",
     methodLabel: "How ShapeNeural works",
     methodTitle: "A repeatable path — without pretending every problem is the same.",
@@ -156,9 +157,9 @@ export default function StudioHomePage() {
           <div className="ss-proof__media">
             <div className="ss-device ss-device--laptop"><div className="ss-device__top"><i /><i /><i /></div>{featured.image && <img src={featured.image} alt="SAPIENTBLOCK analysis interface" />}</div>
             <div className="ss-proof__covers">{featuredMedia.filter((item) => item.device === "plain").map((item, index) => <img src={item.src} alt={language === "de" ? `SAPIENTBLOCK Use-Case-Motiv ${index + 1}` : `SAPIENTBLOCK use-case visual ${index + 1}`} key={item.src} />)}</div>
-            <span>FEATURED PRODUCT / LIVE</span>
+            <span>{language === "de" ? "SAPIENTBLOCK / GEBAUTES PRODUKT" : "SAPIENTBLOCK / BUILT PRODUCT"}</span>
           </div>
-          <div className="ss-proof__copy"><p className="ss-eyebrow">{t.proofLabel}</p><h2>{t.proofTitle}</h2><p>{t.proofBody}</p><div className="ss-proof__features"><span>{language === "de" ? "Unternehmensanalyse" : "Company analysis"}</span><span>RAG Matching</span><span>{language === "de" ? "Ideengenerator" : "Idea generator"}</span><span>Content Operations</span><span>LLM Readability</span></div><blockquote>{language === "de" ? "Aus einer Technologiedatenbank wurde ein System, das Kontext versteht, Relevanz ordnet und Wissen verteilt." : "A technology database became a system that understands context, prioritises relevance and distributes knowledge."}</blockquote><Link className="ss-text-link" to="/studio/projekte/sapientblock">SAPIENTBLOCK {language === "de" ? "vertiefen" : "case"}<ArrowRight size={16} /></Link></div>
+          <div className="ss-proof__copy"><p className="ss-eyebrow">{t.proofLabel}</p><h2>{t.proofTitle}</h2><p>{t.proofBody}</p><div className="ss-proof__features"><span>{language === "de" ? "Unternehmensanalyse" : "Company analysis"}</span><span>RAG Matching</span><span>{language === "de" ? "Ideengenerator" : "Idea generator"}</span><span>Content Operations</span><span>LLM Readability</span></div><blockquote>{language === "de" ? "Übertragbar auf Prozesse, in denen Wissen recherchiert, bewertet, kombiniert und veröffentlicht werden muss." : "Transferable to processes where knowledge must be researched, evaluated, combined and published."}</blockquote><Link className="ss-text-link" to="/studio/projekte/sapientblock">SAPIENTBLOCK {language === "de" ? "vertiefen" : "case"}<ArrowRight size={16} /></Link></div>
         </section>
 
         <section className="ss-project-preview ss-section">
@@ -172,15 +173,9 @@ export default function StudioHomePage() {
         </section>
 
         <section className="ss-responsibility ss-section" id="responsibility">
-          <div className="ss-accountability-map" role="img" aria-label={language === "de" ? "Vier Kontrollpunkte eines verantwortlichen KI-Systems" : "Four checkpoints in an accountable AI system"}>
-            <header><span>OPERATING MODEL</span><small>04 / CHECKPOINTS</small></header>
-            <div>{[
-              ["01", "INTENT", language === "de" ? "Ziel und Grenze" : "Goal and boundary"],
-              ["02", "AI ACTION", language === "de" ? "Nachvollziehbarer Lauf" : "Inspectable run"],
-              ["03", "HUMAN CHECK", language === "de" ? "Prüfung und Freigabe" : "Review and approval"],
-              ["04", "RELEASE", language === "de" ? "Verantwortete Wirkung" : "Accountable outcome"],
-            ].map(([number, title, body]) => <article key={number}><span>{number}</span><i /><strong>{title}</strong><p>{body}</p></article>)}</div>
-            <footer><span>HUMAN ACCOUNTABILITY</span><b>ACTIVE</b></footer>
+          <div className="ss-responsibility__media">
+            <img src={accountabilityImage} alt={language === "de" ? "Team prüft einen KI-gestützten Arbeitsablauf vor der Freigabe" : "Team reviews an AI-assisted workflow before approval"} loading="lazy" decoding="async" />
+            <div><span>HUMAN CHECK</span><b>{language === "de" ? "FREIGABE SICHTBAR" : "APPROVAL VISIBLE"}</b></div>
           </div>
           <div><p className="ss-eyebrow">{t.responsibilityLabel}</p><h2>{t.responsibilityTitle}</h2><p>{t.responsibilityBody}</p><div className="ss-control-flow"><span>INTENT</span><ArrowRight /><span>AI ACTION</span><ArrowRight /><span>HUMAN CHECK</span><ArrowRight /><span>RELEASE</span></div></div>
         </section>
