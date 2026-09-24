@@ -3,16 +3,25 @@ import { ArrowRight } from "lucide-react";
 import type { Project } from "@/data/projects";
 import type { StudioLanguage } from "@/hooks/use-studio-language";
 import { PROJECT_SUMMARIES } from "@/data/studio";
+import { PROJECT_DETAILS } from "@/data/project-details";
+import StudioDeviceStage from "@/components/StudioDeviceStage";
+
+const lightStageProjects = new Set(["melodeye", "problaim", "humancrypto"]);
 
 export function StudioProjectVisual({ project }: { project: Project }) {
   const host = project.url ? new URL(project.url).hostname.replace(/^www\./, "") : "shapeneural.com";
+  const detail = PROJECT_DETAILS[project.slug];
 
   return (
     <div className="ss-project-visual">
-      <div className="ss-project-browser">
-        <div className="ss-project-browser__bar"><i /><i /><i /><span>{host}</span></div>
-        {project.image && <img src={project.image} alt={`${project.title.replaceAll("_", " ")} live product interface`} />}
-      </div>
+      {project.image && <StudioDeviceStage
+        primarySrc={project.image}
+        secondarySrc={detail?.media[1]?.src}
+        alt={`${project.title.replaceAll("_", " ")} live product interface`}
+        host={host}
+        variant={lightStageProjects.has(project.slug) ? "light" : "dark"}
+        compact
+      />}
       <span className={`ss-status ss-status--${project.status.toLowerCase()}`}>{project.status}</span>
     </div>
   );
