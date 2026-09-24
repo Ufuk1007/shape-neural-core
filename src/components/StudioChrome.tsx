@@ -25,7 +25,7 @@ export function StudioHeader({ language, onLanguage }: { language: StudioLanguag
 
   return (
     <header className="ss-header">
-      <Link className="ss-brand" to="/studio" aria-label="ShapeNeural home">
+      <Link className="ss-brand" to="/" aria-label="ShapeNeural home">
         <BindruneLogo size={30} onDark />
         <span>SHAPENEURAL®</span>
       </Link>

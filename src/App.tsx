@@ -30,7 +30,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Index />} />
+            <Route path="/" element={<Suspense fallback={null}><StudioHomePage /></Suspense>} />
             <Route path="/lab" element={<Index />} />
             <Route path="/project/:slug" element={<ProjectPage />} />
             <Route path="/insight/:slug" element={<InsightPage />} />
