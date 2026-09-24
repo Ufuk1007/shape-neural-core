@@ -1,0 +1,615 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shapeneural.com/#organization",
+      "name": "ShapeNeural",
+      "legalName": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/favicon.png"
+      },
+      "email": "signal@shapeneural.com",
+      "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wasserhofstraße 47",
+        "postalCode": "60529",
+        "addressLocality": "Frankfurt am Main",
+        "addressCountry": "DE"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Deutschland"
+        },
+        {
+          "@type": "Place",
+          "name": "Remote"
+        }
+      ],
+      "knowsAbout": [
+        "Angewandte künstliche Intelligenz",
+        "KI-Workspaces",
+        "KI-Agenten",
+        "Workflow-Automatisierung",
+        "Digitale Produktentwicklung",
+        "AI Enablement",
+        "Human-in-the-loop-Systeme"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.shapeneural.com/#website",
+      "name": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.shapeneural.com/studio/projekte#collection",
+      "url": "https://www.shapeneural.com/studio/projekte",
+      "name": "KI-Projekte & digitale Produkte | ShapeNeural Portfolio",
+      "description": "KI-Produkte, Experimente und Partnerprojekte von ShapeNeural – mit Systembeschreibung, Projektstatus, technischen Details und übertragbarem Kundennutzen.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/#website"
+      },
+      "about": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/api/og-image?type=page&slug=projekte"
+      },
+      "dateModified": "2026-09-24"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ShapeNeural",
+          "item": "https://www.shapeneural.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projekte",
+          "item": "https://www.shapeneural.com/studio/projekte"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "name": "ShapeNeural Projektportfolio",
+      "numberOfItems": 7,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/sapientblock#project",
+            "name": "SAPIENTBLOCK",
+            "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+            "sameAs": "https://sapientblock.com",
+            "description": "SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.",
+            "abstract": "Wie wird aus einer abstrakten Technologiefrage ein belastbarer Entscheidungs- und Innovationsprozess?",
+            "applicationCategory": "BLOCKCHAIN",
+            "operatingSystem": "Web",
+            "dateCreated": "2024",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "BLOCKCHAIN",
+              "AI",
+              "ANALYTICS"
+            ],
+            "featureList": [
+              "Unternehmensanalyse",
+              "Semantisches Matching",
+              "Ideengenerator",
+              "Insights & Benchmarks",
+              "Content Operations",
+              "LLM-Lesbarkeit"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "LIVE"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Partnerprojekt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "BLOCKCHAIN REALLABOR"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb."
+              }
+            ],
+            "citation": [
+              "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/"
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://www.shapeneural.com/studio/projekte/melodeye",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/melodeye#project",
+            "name": "MELODEYE",
+            "url": "https://www.shapeneural.com/studio/projekte/melodeye",
+            "sameAs": "https://aura-soundscape-96.vercel.app",
+            "description": "MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.",
+            "abstract": "Kann ein digitales System auf erlebte statt nur auf gezeigte Emotion reagieren?",
+            "applicationCategory": "BIOMETRIC AI",
+            "operatingSystem": "Web",
+            "dateCreated": "2024",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "BIOMETRIC_AI",
+              "EMOTION_RECOGNITION",
+              "MUSIC_GENERATION"
+            ],
+            "featureList": [
+              "Lokale Wahrnehmung",
+              "Gap-aware interpretation",
+              "Adaptive Musik"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "BETA"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Experiment"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Das Projekt untersucht personalisierte Interaktion, ohne biometrische Rohdaten an einen Server zu übertragen."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Multimodale Signale sind aussagekräftiger als ein einzelner Klassifikator – erfordern aber klare Sicherheitslogik und eine bescheidene Interpretation."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=melodeye"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://www.shapeneural.com/studio/projekte/problaim",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/problaim#project",
+            "name": "PROBLAIM",
+            "url": "https://www.shapeneural.com/studio/projekte/problaim",
+            "sameAs": "https://problaim.com",
+            "description": "PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.",
+            "abstract": "Wie entsteht aus einem komplexen Problem fortlaufend bessere Klarheit?",
+            "applicationCategory": "AI ANALYSIS",
+            "operatingSystem": "Web",
+            "dateCreated": "2025",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "AI_ANALYSIS",
+              "DECISION_INTELLIGENCE",
+              "SAAS"
+            ],
+            "featureList": [
+              "Problemzerlegung",
+              "Perspektiven",
+              "Fortlaufende Analyse"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "BETA"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Eigenes Produkt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://www.shapeneural.com/studio/projekte/veniora",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/veniora#project",
+            "name": "VENIORA",
+            "url": "https://www.shapeneural.com/studio/projekte/veniora",
+            "sameAs": "https://veniora.de",
+            "description": "VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.",
+            "abstract": "Wie wird aus großen öffentlichen Datenbeständen eine belastbare regionale Entscheidungsgrundlage?",
+            "applicationCategory": "REGIONAL AI EVIDENCE",
+            "operatingSystem": "Web",
+            "dateCreated": "2026",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "PUBLIC_DATA",
+              "AI_IMPACT",
+              "DECISION_INTELLIGENCE"
+            ],
+            "featureList": [
+              "Regionale Datenverbindung",
+              "Belastbarkeit sichtbar machen",
+              "Maschinenlesbare Evidenz"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "LIVE"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Eigenes Produkt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Aus Millionen Beschäftigtendaten und internationaler Forschung entsteht eine lesbare regionale Evidenzschicht für konkrete Diskussionen über Arbeit und KI."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Vertrauen entsteht nicht durch eine möglichst eindeutige Zahl, sondern durch sichtbare Quellen, belastbare Übersetzungsregeln und klar benannte Grenzen."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=veniora"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://www.shapeneural.com/studio/projekte/humancrypto",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/humancrypto#project",
+            "name": "HUMANCRYP.TO",
+            "url": "https://www.shapeneural.com/studio/projekte/humancrypto",
+            "sameAs": "https://humancryp.to",
+            "description": "HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.",
+            "abstract": "Wie wird abstrakte Technologie erinnerbar und menschlich?",
+            "applicationCategory": "CRYPTO EDUCATION",
+            "operatingSystem": "Web",
+            "dateCreated": "2023",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "CRYPTO_EDUCATION",
+              "STORYTELLING",
+              "AI_PERSONAS"
+            ],
+            "featureList": [
+              "Archetypen-Modell",
+              "Generative Produktion",
+              "Lernnarrativ"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "ARCHIVED"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Experiment"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Komplexe Konzepte werden über Narrativ, Emotion und Wiedererkennbarkeit zugänglicher gemacht."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Storytelling kann technisches Lernen tragen, wenn Metapher und zugrunde liegende Fakten klar voneinander getrennt bleiben."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=humancrypto"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://www.shapeneural.com/studio/projekte/sapientshift",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/sapientshift#project",
+            "name": "SAPIENTSHIFT",
+            "url": "https://www.shapeneural.com/studio/projekte/sapientshift",
+            "sameAs": "https://sapientshift.com",
+            "description": "SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.",
+            "abstract": "Welche KI-Chance passt wirklich zu diesem Unternehmen, Team oder Menschen?",
+            "applicationCategory": "AI PLATFORM",
+            "operatingSystem": "Web",
+            "dateCreated": "2025",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "AI_PLATFORM",
+              "POTENTIAL_ANALYSIS",
+              "STRATEGY"
+            ],
+            "featureList": [
+              "Drei Analysepfade",
+              "Opportunity Matching",
+              "Creative Guild"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "BETA"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Eigenes Produkt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Unterschiedliche Zielgruppen erhalten keine generische Trendübersicht, sondern einen priorisierten Ausgangspunkt für eigene Entscheidungen."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Personalisierung wird dann nützlich, wenn sie nicht nur Inhalte variiert, sondern Ausgangslage, Bereitschaft und Handlungsraum berücksichtigt."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientshift"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+          "item": {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape#project",
+            "name": "BITCOIN SOUNDSCAPE",
+            "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+            "sameAs": "https://radio.shapeneural.com/",
+            "description": "BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.",
+            "abstract": "Was wird hörbar, wenn Marktdaten zu einem zweiten Sinneskanal werden?",
+            "applicationCategory": "GENERATIVE AI",
+            "operatingSystem": "Web",
+            "dateCreated": "2025",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "GENERATIVE_AI",
+              "FINTECH",
+              "AUDIO"
+            ],
+            "featureList": [
+              "Signalzerlegung",
+              "Musikalisches Mapping",
+              "Kontinuierlicher Betrieb"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "LIVE"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Experiment"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Das Projekt erforscht Sonifikation nicht als Effekt, sondern als informationsdichte Ergänzung zu visuellen Dashboards."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Daten werden nicht automatisch verständlich, wenn man sie vertont. Erst eine klare semantische Zuordnung und musikalische Kohärenz schaffen einen brauchbaren zweiten Kanal."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
+          }
+        }
+      ]
+    }
+  ]
+}

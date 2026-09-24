@@ -192,7 +192,10 @@ function ProjectCarousel() {
   const onTouchStart = (e: React.TouchEvent) => { touchStart.current = e.touches[0].clientX; };
   const onTouchEnd = (e: React.TouchEvent) => {
     const diff = touchStart.current - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) diff > 0 ? next() : prev();
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next();
+      else prev();
+    }
   };
 
   return (
@@ -617,7 +620,7 @@ export default function AlliancePage() {
             <FI>
               <div>
                 <h2 style={{ fontFamily: C.mono, fontSize: 28, fontWeight: 500, color: C.textLight, marginBottom: 36 }}>
-                  Ufuk Avci
+                  ShapeNeural Studio
                 </h2>
                 <div style={{ fontSize: 17, lineHeight: 1.8, color: C.textLightMid }}>
                   <p style={{ marginBottom: 20 }}>

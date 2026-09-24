@@ -1,105 +1,79 @@
-interface InsightOGMeta {
+export interface OGMeta {
   title: string;
   description: string;
   type: string;
-  lens: string;
-  projectTitle: string;
-  projectId: string;
-  date: string;
+  canonical?: string;
+  image?: string;
+  id?: string;
+  status?: string;
+  lens?: string;
+  projectTitle?: string;
+  projectId?: string;
+  date?: string;
 }
-
-interface ProjectOGMeta {
-  title: string;
-  description: string;
-  type: string;
-  id: string;
-  status: string;
-}
-
-export type OGMeta = InsightOGMeta | ProjectOGMeta;
 
 export const OG_META: Record<string, OGMeta> = {
-  // Projects
-  "/project/sapientblock": {
-    title: "SAPIENTBLOCK",
-    description: "AI-powered blockchain relevance analysis for enterprises. Algorithmic pattern recognition meets use-case matching.",
+  "/": {
+    title: "KI-Agentur & KI-Produktstudio Frankfurt | ShapeNeural",
+    description: "ShapeNeural richtet KI für kleine Unternehmen praktisch ein, automatisiert kontrollierbare Workflows und baut testbare KI-Produkte – in Frankfurt und remote.",
     type: "website",
-    id: "MOD_01",
-    status: "LIVE",
   },
-  "/project/melodeye": {
-    title: "MELODEYE",
-    description: "Multi-modal emotion recognition system that reads facial expressions and eye behaviors, generating adaptive music based on true emotional state.",
+  "/studio/leistungen": {
+    title: "KI-Beratung, Automatisierung & Prototypen | ShapeNeural",
+    description: "KI-Workspace, kontrollierbare Workflow-Automatisierung und KI-Prototypen für kleine Unternehmen – mit Ergebnis, Dauer, Preisrahmen und klaren Grenzen.",
     type: "website",
-    id: "MOD_02",
-    status: "BETA",
   },
-  "/project/problaim": {
-    title: "PROBLAIM",
-    description: "AI-orchestrated problem decomposition engine. Transforms cognitive noise into crystallized insight pyramids through multi-model synthesis.",
+  "/studio/projekte": {
+    title: "KI-Projekte & digitale Produkte | ShapeNeural Portfolio",
+    description: "KI-Produkte, Experimente und Partnerprojekte von ShapeNeural – mit Systembeschreibung, Projektstatus, technischen Details und übertragbarem Kundennutzen.",
     type: "website",
-    id: "MOD_03",
-    status: "BETA",
   },
-  "/project/humancrypto": {
-    title: "HUMANCRYP.TO",
-    description: "Crypto-education platform where cryptocurrencies take human form. Each coin reveals its distinct character through AI-generated personas.",
+  "/studio/lab": {
+    title: "Applied AI Research & Signal Cloud | ShapeNeural Lab",
+    description: "Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.",
     type: "website",
-    id: "MOD_04",
-    status: "ARCHIVED",
   },
-  "/project/sapientshift": {
-    title: "SAPIENTSHIFT",
-    description: "AI-powered potential analysis platform. Analyze your AI potential in 5 minutes — receive tailored use cases and actionable recommendations.",
+  "/kontakt": {
+    title: "KI-Projekt besprechen | ShapeNeural Fit-Check",
+    description: "Beschreiben Sie Ihren KI-Workspace, Workflow oder Ihre Produktidee. ShapeNeural antwortet mit einer klaren Einschätzung zu Fit und nächstem Schritt.",
     type: "website",
-    id: "MOD_05",
-    status: "BETA",
   },
-  "/project/bitcoin-soundscape": {
-    title: "BITCOIN_SOUNDSCAPE",
-    description: "Real-time market sentiment translated into AI-generated soundscapes. Bitcoin's emotional pulse, rendered as ambient music through neural synthesis.",
-    type: "website",
-    id: "MOD_06",
-    status: "LIVE",
+  "/impressum": { title: "Impressum — ShapeNeural", description: "Anbieterkennzeichnung und Kontaktangaben für ShapeNeural.", type: "website" },
+  "/datenschutz": { title: "Datenschutz — ShapeNeural", description: "Informationen zur Verarbeitung von Daten auf der ShapeNeural Website.", type: "website" },
+  "/agb": { title: "AGB — ShapeNeural", description: "Vertragsgrundlage für ShapeNeural Leistungen im B2B-Bereich.", type: "website" },
+  "/studio/projekte/sapientblock": {
+    title: "SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural",
+    description: "Eine Intelligence-Plattform, die Unternehmensanalyse, semantisches Matching, Ideenentwicklung und Content Operations verbindet.",
+    type: "website", id: "MOD_01", status: "LIVE",
   },
-  // Insights
-  "/insight/signal-layers": {
-    title: "SIGNAL_LAYERS // WHY 5 AND NOT 1",
-    description: "Bitcoin doesn't have one mood. It has five simultaneous pulses operating at different time scales.",
-    type: "article",
-    lens: "THE_STACK",
-    projectTitle: "BITCOIN_SOUNDSCAPE",
-    projectId: "MOD_06",
-    date: "2025-03",
+  "/studio/projekte/melodeye": {
+    title: "MELODEYE: Emotion AI & adaptive Musik | ShapeNeural",
+    description: "Ein Experiment für lokale multimodale Emotionssignale und adaptive Musik mit datenschutzbewusster Verarbeitung im Browser.",
+    type: "website", id: "MOD_02", status: "BETA",
   },
-  "/insight/silent-nameerror": {
-    title: "THE_SILENT_NAMEERROR // 3 DAYS OF DEAD AUDIO",
-    description: "The API returned 200 OK. The logs showed success. But no music was generated — for three days.",
-    type: "article",
-    lens: "THE_SIGNAL",
-    projectTitle: "BITCOIN_SOUNDSCAPE",
-    projectId: "MOD_06",
-    date: "2025-02",
+  "/studio/projekte/problaim": {
+    title: "PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural",
+    description: "Eine autonome Multi-LLM-Pipeline, die komplexe Probleme in überprüfbare Perspektiven und fortlaufende Analysen zerlegt.",
+    type: "website", id: "MOD_03", status: "BETA",
   },
-  "/insight/no-emotion-layer": {
-    title: "NO_EMOTION_LAYER // BITCOIN DATA IS DEAF",
-    description: "We have 10,000 ways to visualize Bitcoin. Zero ways to hear what it feels like.",
-    type: "article",
-    lens: "THE_PROBLEM",
-    projectTitle: "BITCOIN_SOUNDSCAPE",
-    projectId: "MOD_06",
-    date: "2025-01",
+  "/studio/projekte/veniora": {
+    title: "VENIORA: regionale KI-Evidenzplattform | ShapeNeural",
+    description: "Eine regionale Evidenzplattform für Beschäftigungsdaten, KI-Forschung und nachvollziehbare Befunde für alle 401 deutschen Kreise.",
+    type: "website", id: "MOD_04", status: "LIVE",
   },
-};
-
-export const FORGE_OG = {
-  title: "AUTOFORGE | Content Automation Pipeline Generator",
-  description: "Not content. The machine that makes it. Build your own automated content pipeline in minutes — monitors your industry, scores relevance, writes and delivers.",
-  type: "website",
-};
-
-export const DEFAULT_OG = {
-  title: "SHAPENEURAL | Designed Intelligence",
-  description: "AI systems that move people, not just data.",
-  type: "website",
+  "/studio/projekte/humancrypto": {
+    title: "HUMANCRYP.TO: KI-Storytelling-Experiment | ShapeNeural",
+    description: "Ein archiviertes Storytelling-Experiment, das Kryptowährungen über Archetypen und generative Medien als Figuren vermittelt.",
+    type: "website", id: "MOD_05", status: "ARCHIVED",
+  },
+  "/studio/projekte/sapientshift": {
+    title: "SAPIENTSHIFT: KI-Potenzialanalyse-Plattform | ShapeNeural",
+    description: "Eine Plattform, die KI-Potenziale für Unternehmen, Mitarbeitende und Einzelpersonen in priorisierte nächste Schritte übersetzt.",
+    type: "website", id: "MOD_06", status: "BETA",
+  },
+  "/studio/projekte/bitcoin-soundscape": {
+    title: "Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural",
+    description: "Ein Experiment, das fünf Zeitebenen des Bitcoin-Markts in einen kontinuierlichen KI-generierten Soundscape übersetzt.",
+    type: "website", id: "MOD_07", status: "LIVE",
+  },
 };

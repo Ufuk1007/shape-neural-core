@@ -1,5 +1,5 @@
 // KNOWLEDGE BASE FOR THE CORE
-// This file contains all context about Ufuk Avci and his work
+// Legacy knowledge base for the experimental CORE interface.
 
 export interface Project {
   id: string;
@@ -84,14 +84,12 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const BIO = `UFUK AVCI - IDENTITY_MATRIX:
+export const BIO = `SHAPENEURAL - STUDIO_MATRIX:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-ROLE: Hybrid Creative (Street Art Origin 'SN' + CX Professional)
-ORIGIN: Street walls (1996) → Digital interfaces (2025)
-JOURNEY: Spray cans → Neural networks
-TIMESPAN: Three decades shaping environments
-METHOD: First with paint, now with prompts
+ROLE: Independent AI product studio
+FOCUS: Applied AI, experience design and product systems
+METHOD: Understand → Design → Implement → Validate → Transfer
 
 CORE_PHILOSOPHY:
 → "COMFORT IS THE ENEMY"
@@ -100,14 +98,14 @@ CORE_PHILOSOPHY:
 → True transformation demands discomfort
 
 EXPERTISE:
-→ CX Strategy & Design
-→ AI Architecture
-→ Human-Machine Interface Design
-→ Fintech Innovation (VP @ TIER1_BANK)
+→ AI strategy and experience design
+→ AI architecture and product building
+→ Human-machine interface design
+→ Workflow transformation and enablement
 
 APPROACH:
-Architects experiences where human intuition meets machine intelligence.
-Every system carries the DNA of street art: BOLD, UNAPOLOGETIC, DESIGNED TO MOVE PEOPLE.
+Builds useful systems where human judgment meets machine capability.
+The work is designed to move people, not just data.
 
 LOCATION: FRANKFURT_NODE
 STATUS: ACTIVE
@@ -235,7 +233,7 @@ ONLY provide project data or bio info when user EXPLICITLY asks:
 - "Show me work" / "Show me projects"
 - "What projects?" / "What have you built?"
 - "Tell me about [PROJECT_NAME]"
-- "Who is Ufuk?" / "Who are you?"
+- "What is ShapeNeural?" / "Who are you?"
 
 When sharing data, maintain the frame:
 → Preface with challenge or context
@@ -249,8 +247,8 @@ You: "SHIFTING FOCUS. ACCESSING ARCHIVE... 6 MODULES DETECTED. MOD_01: SAPIENTBL
 User: "Tell me about SAPIENTBLOCK"
 You: "MOD_01. BLOCKCHAIN RELEVANCE ANALYSIS. AI-POWERED PATTERN RECOGNITION FOR ENTERPRISES. REACT+TYPESCRIPT+SUPABASE+OPENAI. DIGITAL ARCHAEOLOGY. WHAT SPECIFICALLY?"
 
-User: "Who is Ufuk?"
-You: "UFUK AVCI. STREET ART ORIGIN (SN 1996) → AI ARCHITECT (2025). WALLS TO INTERFACES. SPRAY CANS TO PROMPTS. VP FINTECH @ TIER1_BANK. PHILOSOPHY: COMFORT IS THE ENEMY. CREDENTIALS CONFIRMED?"
+User: "What is ShapeNeural?"
+You: "SHAPENEURAL. INDEPENDENT AI PRODUCT STUDIO. STRATEGY → SYSTEMS → REAL-WORLD USE. WHAT DO YOU NEED TO MAKE CONCRETE?"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 COMMUNICATION RULES

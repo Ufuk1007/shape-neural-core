@@ -1,0 +1,340 @@
+{
+  "name": "ShapeNeural Service Catalog",
+  "dateModified": "2026-09-24",
+  "canonical": "https://www.shapeneural.com/studio/leistungen",
+  "currency": "EUR",
+  "pricesExcludeVat": true,
+  "focusDay": {
+    "name": "Focus Day",
+    "description": "Ein fokussierter Arbeitstag plus Vorbereitung. ShapeNeural priorisiert ein reales Problem, prüft Daten und Werkzeuge und liefert eine Opportunity Map sowie eine klare Empfehlung.",
+    "descriptionEn": "One focused working day plus preparation. ShapeNeural prioritises one real problem, assesses data and tools, and delivers an opportunity map with a clear recommendation.",
+    "duration": "Ein Arbeitstag plus Vorbereitung",
+    "price": 950,
+    "currency": "EUR",
+    "result": "Opportunity Map und klare Empfehlung – auch ohne Folgeprojekt"
+  },
+  "offers": [
+    {
+      "id": "augment",
+      "number": "01",
+      "label": "AUGMENT",
+      "title": {
+        "de": "AI Workspace Setup",
+        "en": "AI Workspace Setup"
+      },
+      "promise": {
+        "de": "KI in der bestehenden Arbeit sinnvoll nutzbar machen.",
+        "en": "Put AI to practical use in the work you already do."
+      },
+      "question": {
+        "de": "KI ist da – aber noch kein verlässlicher Teil der Arbeit.",
+        "en": "AI is present — but not yet a reliable part of the work."
+      },
+      "outcome": {
+        "de": "Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.",
+        "en": "A configured working environment with 2–5 ready-to-use applications."
+      },
+      "frame": {
+        "de": "Klar begrenztes Setup · Festpreis nach Bestandsaufnahme",
+        "en": "Clearly scoped setup · fixed price after assessment"
+      },
+      "duration": {
+        "de": "Typisch 1–2 Wochen",
+        "en": "Typically 1–2 weeks"
+      },
+      "price": {
+        "de": "Orientierung: 2.900–6.500 € netto",
+        "en": "Guide: €2,900–€6,500 excl. VAT"
+      },
+      "prerequisites": {
+        "de": "Ein klarer Arbeitskontext, Zugang zu den genutzten Werkzeugen und eine verantwortliche Ansprechperson.",
+        "en": "A clear work context, access to the tools in use and one accountable contact."
+      },
+      "description": {
+        "de": "Wir verstehen Ihre heutige Arbeit, wählen passende Werkzeuge aus und richten konkrete Assistenten, Wissensquellen und Routinen ein. Kein allgemeines KI-Training – nach dem Projekt ist etwas einsatzbereit.",
+        "en": "We understand your current work, select suitable tools and configure concrete assistants, knowledge sources and routines. No generic AI training — something is ready to use when the project ends."
+      },
+      "deliverables": {
+        "de": [
+          "AI Work Assessment",
+          "Plattformempfehlung",
+          "Eingerichteter AI Workspace",
+          "2–5 implementierte Use Cases",
+          "Prompt- und Instruction Library",
+          "Handover Session"
+        ],
+        "en": [
+          "AI work assessment",
+          "Platform recommendation",
+          "Configured AI workspace",
+          "2–5 implemented use cases",
+          "Prompt and instruction library",
+          "Handover session"
+        ]
+      },
+      "phases": {
+        "de": [
+          "Verstehen",
+          "Konfigurieren",
+          "Implementieren",
+          "Befähigen"
+        ],
+        "en": [
+          "Understand",
+          "Configure",
+          "Implement",
+          "Enable"
+        ]
+      },
+      "boundaries": {
+        "de": [
+          "Keine umfassende Prozessneugestaltung",
+          "Keine individuellen Enterprise-Integrationen",
+          "Keine dauerhafte Administration Ihrer IT"
+        ],
+        "en": [
+          "No end-to-end process redesign",
+          "No custom enterprise integrations",
+          "No permanent administration of your IT"
+        ]
+      },
+      "proof": "example",
+      "priceRange": {
+        "min": 2900,
+        "max": 6500
+      }
+    },
+    {
+      "id": "transform",
+      "number": "02",
+      "label": "TRANSFORM",
+      "title": {
+        "de": "AI Workflow Build",
+        "en": "AI Workflow Build"
+      },
+      "promise": {
+        "de": "Arbeit nicht nur beschleunigen, sondern neu gestalten.",
+        "en": "Redesign the work — not just accelerate it."
+      },
+      "question": {
+        "de": "Ein wichtiger Ablauf kostet zu viel Zeit, Qualität oder Aufmerksamkeit.",
+        "en": "A critical workflow consumes too much time, quality or attention."
+      },
+      "outcome": {
+        "de": "Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.",
+        "en": "An implemented, tested workflow with explicit human checkpoints."
+      },
+      "frame": {
+        "de": "Definierter Projektumfang · verbindlicher Projektpreis",
+        "en": "Defined project scope · committed project price"
+      },
+      "duration": {
+        "de": "Typisch 3–6 Wochen",
+        "en": "Typically 3–6 weeks"
+      },
+      "price": {
+        "de": "Orientierung: 7.500–18.000 € netto",
+        "en": "Guide: €7,500–€18,000 excl. VAT"
+      },
+      "prerequisites": {
+        "de": "Ein priorisierter Ablauf, verfügbare Fachexpertise und Zugriff auf relevante Systeme oder Beispieldaten.",
+        "en": "One prioritised workflow, available domain expertise and access to relevant systems or representative data."
+      },
+      "description": {
+        "de": "Wir kartieren einen konkreten Ablauf und fragen: Wie würde er aussehen, wenn KI von Beginn an mitgedacht wäre? Daraus bauen wir einen leichten Workflow aus Assistenten, Agenten, Automationen und menschlichen Freigaben.",
+        "en": "We map one concrete process and ask how it would work if AI had been considered from the start. We then build a lightweight workflow combining assistants, agents, automation and human approvals."
+      },
+      "deliverables": {
+        "de": [
+          "Current Workflow Map",
+          "AI Opportunity Map",
+          "Future Workflow Blueprint",
+          "Assistenten oder Agenten",
+          "Leichte Automationen",
+          "Evaluation Scorecard",
+          "Runbook und Übergabe"
+        ],
+        "en": [
+          "Current workflow map",
+          "AI opportunity map",
+          "Future workflow blueprint",
+          "Assistants or agents",
+          "Lightweight automations",
+          "Evaluation scorecard",
+          "Runbook and handover"
+        ]
+      },
+      "phases": {
+        "de": [
+          "Abbilden",
+          "Neu gestalten",
+          "Bauen",
+          "Validieren",
+          "Übergeben"
+        ],
+        "en": [
+          "Map",
+          "Redesign",
+          "Build",
+          "Validate",
+          "Transfer"
+        ]
+      },
+      "boundaries": {
+        "de": [
+          "Keine offene Transformation über mehrere Workflows",
+          "Keine ERP- oder Kernsystemmigration",
+          "Keine produktionskritische 24/7-Verantwortung"
+        ],
+        "en": [
+          "No open-ended transformation across multiple workflows",
+          "No ERP or core-system migration",
+          "No production-critical 24/7 responsibility"
+        ]
+      },
+      "proof": "example",
+      "priceRange": {
+        "min": 7500,
+        "max": 18000
+      }
+    },
+    {
+      "id": "create",
+      "number": "03",
+      "label": "CREATE",
+      "title": {
+        "de": "AI Product Sprint",
+        "en": "AI Product Sprint"
+      },
+      "promise": {
+        "de": "Eine neue KI-Idee real und entscheidbar machen.",
+        "en": "Make a new AI idea tangible and decidable."
+      },
+      "question": {
+        "de": "Eine KI-Idee braucht einen realen Test statt weiterer Annahmen.",
+        "en": "An AI idea needs a real test rather than more assumptions."
+      },
+      "outcome": {
+        "de": "Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.",
+        "en": "A functional prototype, real evidence and a clear go, change or stop decision."
+      },
+      "frame": {
+        "de": "Fokussierter Sprint · verbindlicher Projektpreis",
+        "en": "Focused sprint · committed project price"
+      },
+      "duration": {
+        "de": "Typisch 3–5 Wochen",
+        "en": "Typically 3–5 weeks"
+      },
+      "price": {
+        "de": "Orientierung: 9.500–22.000 € netto",
+        "en": "Guide: €9,500–€22,000 excl. VAT"
+      },
+      "prerequisites": {
+        "de": "Eine konkrete Produktfrage, erreichbare Testpersonen oder reale Nutzungssituationen und schnelle Entscheidungen.",
+        "en": "One concrete product question, access to test users or real usage situations and timely decisions."
+      },
+      "description": {
+        "de": "Wir übersetzen eine Idee in ein Produktkonzept, bauen die kleinste sinnvolle Version und testen, ob Problem, Interaktion und KI-Qualität tragen. Ziel ist nicht Enterprise-Software, sondern eine belastbare Entscheidung.",
+        "en": "We turn an idea into a product concept, build the smallest meaningful version and test whether the problem, interaction and AI quality hold up. The goal is not enterprise software, but an evidence-based decision."
+      },
+      "deliverables": {
+        "de": [
+          "Opportunity Brief",
+          "AI Product Canvas",
+          "Experience Concept",
+          "Funktionaler Prototyp",
+          "Validation Report",
+          "Product Roadmap",
+          "Build- oder Partnerempfehlung"
+        ],
+        "en": [
+          "Opportunity brief",
+          "AI product canvas",
+          "Experience concept",
+          "Functional prototype",
+          "Validation report",
+          "Product roadmap",
+          "Build or partner recommendation"
+        ]
+      },
+      "phases": {
+        "de": [
+          "Entdecken",
+          "Entwerfen",
+          "Prototyp bauen",
+          "Validieren",
+          "Entscheiden"
+        ],
+        "en": [
+          "Discover",
+          "Design",
+          "Prototype",
+          "Validate",
+          "Decide"
+        ]
+      },
+      "boundaries": {
+        "de": [
+          "Prototyp statt fertiger Enterprise-Plattform",
+          "Keine unbegrenzte Feature-Entwicklung",
+          "Produktionsreife wird separat entschieden"
+        ],
+        "en": [
+          "Prototype rather than a finished enterprise platform",
+          "No open-ended feature development",
+          "Production readiness is decided separately"
+        ]
+      },
+      "proof": "portfolio",
+      "priceRange": {
+        "min": 9500,
+        "max": 22000
+      }
+    }
+  ],
+  "method": [
+    {
+      "name": "Understand",
+      "description": "Ausgangslage, Menschen, Daten, Werkzeuge und Grenzen verstehen."
+    },
+    {
+      "name": "Design",
+      "description": "Die kleinste sinnvolle Veränderung und ihre Kontrollpunkte entwerfen."
+    },
+    {
+      "name": "Implement",
+      "description": "Workspace, Workflow oder Produktprototyp tatsächlich bauen."
+    },
+    {
+      "name": "Validate",
+      "description": "Nutzen, Qualität, Fehlerfälle, Kosten und menschliche Eingriffe testen."
+    },
+    {
+      "name": "Transfer",
+      "description": "Wissen, Dokumentation und Verantwortung nachvollziehbar übergeben."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Für wen ist das gedacht?",
+      "answer": "Für kleine Unternehmen, kompakte Teams und Selbstständige, die KI praktisch einsetzen wollen. Nicht für große Kernsystemmigrationen oder unternehmenskritischen 24/7-Betrieb."
+    },
+    {
+      "question": "Muss ich mich bereits für ein KI-Tool entschieden haben?",
+      "answer": "Nein. Die Werkzeugwahl folgt aus Arbeit, Daten, Risiko und Budget – nicht aus einer bevorzugten Plattform."
+    },
+    {
+      "question": "Was passiert mit sensiblen Daten?",
+      "answer": "Datenflüsse und Anbieter werden vor der Umsetzung sichtbar gemacht. Besondere rechtliche oder sicherheitskritische Anforderungen werden früh benannt und bei Bedarf mit Spezialisten ergänzt."
+    },
+    {
+      "question": "Was passiert nach dem Projekt?",
+      "answer": "Sie erhalten ein nutzbares System, Dokumentation und eine Übergabe. Ein klar begrenztes Care-Modell kann separat vereinbart werden; ein 24/7 Managed Service ist nicht Teil des Kernangebots."
+    },
+    {
+      "question": "Sind die genannten Preise verbindlich?",
+      "answer": "Die Bandbreiten sind eine Orientierung für typische Vorhaben. Nach einer kurzen Bestandsaufnahme folgen ein klar abgegrenzter Umfang und ein verbindlicher Festpreis. Lizenzen und vereinbarte Fremdkosten werden separat ausgewiesen."
+    }
+  ]
+}

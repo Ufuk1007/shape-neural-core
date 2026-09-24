@@ -1,9 +1,9 @@
-import { useRef, useMemo, useState, useEffect } from "react";
+import { useRef, useMemo, useState, useEffect, type ElementRef } from "react";
 import { Canvas, useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import { Sphere, Line, MeshDistortMaterial, Stars } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import * as THREE from "three";
-import { X, ExternalLink } from "lucide-react";
+import { X, ExternalLink, List } from "lucide-react";
 import InterrogationUI from "./InterrogationUI";
 
 // Types
@@ -21,10 +21,7 @@ interface DebrisData {
   summary?: string;
 }
 
-type DistortMaterialHandle = THREE.MeshStandardMaterial & {
-  distort: number;
-  speed: number;
-};
+type DistortMaterialHandle = ElementRef<typeof MeshDistortMaterial>;
 
 // Category Colors
 const CATEGORY_COLORS: Record<Category, string> = {
@@ -143,12 +140,14 @@ const LiquidCore = ({
   pulseSpeed,
   isInterrogating,
   mood = 'NEUTRAL',
+  reducedMotion = false,
   onClick
 }: {
   color: string;
   pulseSpeed: number;
   isInterrogating: boolean;
   mood?: AtmosphereMood;
+  reducedMotion?: boolean;
   onClick?: () => void;
 }) => {
   const materialRef = useRef<DistortMaterialHandle>(null);
@@ -156,7 +155,6 @@ const LiquidCore = ({
 
   // Animated values for smooth transitions
   const currentDistort = useRef(0.4);
-  const currentSpeed = useRef(1.0);
   const currentEmissiveIntensity = useRef(2.0);
   const currentWireframe = useRef(false);
   const tapPulse = useRef(0);
@@ -168,11 +166,11 @@ const LiquidCore = ({
   };
 
   useFrame((state) => {
+    if (reducedMotion) return;
     if (materialRef.current) {
       // Target values based on mood
       let targetColor: string;
       let targetDistort: number;
-      let targetSpeed: number;
       let targetEmissiveIntensity: number;
       let targetWireframe: boolean;
 
@@ -180,7 +178,6 @@ const LiquidCore = ({
         case 'NEUTRAL':
           targetColor = color; // Dominant category color (Green/Blue)
           targetDistort = 0.4;
-          targetSpeed = 1.0;
           targetEmissiveIntensity = 2.0;
           targetWireframe = false;
           break;
@@ -188,7 +185,6 @@ const LiquidCore = ({
         case 'AGITATED':
           targetColor = '#ff0055'; // Red
           targetDistort = 1.0;
-          targetSpeed = 3.0;
           targetEmissiveIntensity = 3.0;
           targetWireframe = false;
           break;
@@ -196,7 +192,6 @@ const LiquidCore = ({
         case 'ENLIGHTENED':
           targetColor = '#ffffff'; // White/Gold
           targetDistort = 0.2;
-          targetSpeed = 0.2;
           targetEmissiveIntensity = 3.0; // High bloom
           targetWireframe = false;
           break;
@@ -204,7 +199,6 @@ const LiquidCore = ({
         case 'DARK':
           targetColor = '#111111'; // Black
           targetDistort = 0.3;
-          targetSpeed = 0.5;
           targetEmissiveIntensity = 0; // No emissive
           targetWireframe = true; // Only wireframe visible
           break;
@@ -212,14 +206,12 @@ const LiquidCore = ({
         default:
           targetColor = color;
           targetDistort = 0.4;
-          targetSpeed = 1.0;
           targetEmissiveIntensity = 2.0;
           targetWireframe = false;
       }
 
       // Smooth lerp to target values
       currentDistort.current += (targetDistort - currentDistort.current) * 0.05;
-      currentSpeed.current += (targetSpeed - currentSpeed.current) * 0.05;
       currentEmissiveIntensity.current += (targetEmissiveIntensity - currentEmissiveIntensity.current) * 0.05;
 
       // Tap pulse decay
@@ -232,7 +224,6 @@ const LiquidCore = ({
       materialRef.current.distort = currentDistort.current +
         Math.sin(state.clock.elapsedTime * pulseSpeed) * 0.2 +
         tapPulse.current * 0.8;
-      materialRef.current.speed = currentSpeed.current;
 
       // Lerp color
       const colorTarget = new THREE.Color(targetColor);
@@ -275,7 +266,7 @@ const LiquidCore = ({
         emissiveIntensity={2}
         roughness={0.1}
         metalness={1}
-        speed={1.0}
+        speed={reducedMotion ? 0 : 1.0}
       />
     </Sphere>
   );
@@ -290,6 +281,7 @@ const DebrisShard = ({
   isDecrypted,
   isInterrogating,
   color,
+  reducedMotion,
   onHover,
   onLeave,
   onClick
@@ -301,6 +293,7 @@ const DebrisShard = ({
   isDecrypted: boolean;
   isInterrogating: boolean;
   color?: string;
+  reducedMotion: boolean;
   onHover: () => void;
   onLeave: () => void;
   onClick: () => void;
@@ -315,6 +308,7 @@ const DebrisShard = ({
   const currentPos = useRef<[number, number, number]>([...position]);
 
   useFrame(() => {
+    if (reducedMotion) return;
     if (meshRef.current && !isDecrypted) {
       meshRef.current.rotation.x += 0.01;
       meshRef.current.rotation.y += 0.01;
@@ -431,17 +425,31 @@ const DecryptionPanel = ({
 }) => {
   const isStudio = variant === 'studio';
   const borderColor = isStudio ? STUDIO_CATEGORY_COLORS[data.category] : CATEGORY_COLORS[data.category];
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    closeButtonRef.current?.focus();
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [onClose]);
   
   return (
     <>
       {/* Backdrop */}
       <div 
+        role="presentation"
         className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm neural-detail-backdrop ${isStudio ? 'neural-detail-backdrop--studio' : ''}`}
         onClick={onClose}
       />
       
       {/* Side Panel */}
       <div 
+        role="dialog"
+        aria-modal="true"
+        aria-label={language === 'de' ? `Signal: ${data.headline}` : `Signal: ${data.headline}`}
         className={`fixed top-0 right-0 h-full w-full max-w-md z-50 animate-in slide-in-from-right duration-300 neural-detail-panel ${isStudio ? 'neural-detail-panel--studio' : ''}`}
         style={{
           fontFamily: isStudio ? "'Manrope', Arial, sans-serif" : "'Courier New', Courier, monospace",
@@ -458,6 +466,7 @@ const DecryptionPanel = ({
             {isStudio ? 'SIGNAL / DETAILS' : '> DECRYPTION_MODE'}
           </div>
           <button
+            ref={closeButtonRef}
             onClick={onClose}
             aria-label={language === 'de' ? 'Signal schließen' : 'Close signal'}
             className="p-2 hover:bg-white/10 transition-colors rounded"
@@ -594,8 +603,22 @@ const useIsMobile = () => {
   return isMobile;
 };
 
+const usePrefersReducedMotion = () => {
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const update = () => setReducedMotion(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
+
+  return reducedMotion;
+};
+
 // Camera controller that updates based on screen size and interrogation mode
-const CameraController = ({ isMobile, isInterrogating }: { isMobile: boolean; isInterrogating: boolean }) => {
+const CameraController = ({ isMobile, isInterrogating, reducedMotion }: { isMobile: boolean; isInterrogating: boolean; reducedMotion: boolean }) => {
   const { camera } = useThree();
 
   useEffect(() => {
@@ -608,6 +631,10 @@ const CameraController = ({ isMobile, isInterrogating }: { isMobile: boolean; is
   // Smooth camera zoom animation using useFrame
   useFrame(() => {
     const targetZ = isInterrogating ? 3 : (isMobile ? 16 : 10);
+    if (reducedMotion) {
+      camera.position.z = targetZ;
+      return;
+    }
     // Smooth lerp (linear interpolation)
     camera.position.z += (targetZ - camera.position.z) * 0.05;
   });
@@ -636,6 +663,7 @@ const NeuralCloud = ({
   const [isLoading, setIsLoading] = useState(true);
   const [interrogationMood, setInterrogationMood] = useState<AtmosphereMood>('NEUTRAL');
   const isMobile = useIsMobile();
+  const reducedMotion = usePrefersReducedMotion();
   const coreClickIndex = useRef(-1);
   const highlightTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -645,48 +673,24 @@ const NeuralCloud = ({
   const activeMood = isInterrogating ? interrogationMood : currentMood;
   const isStudio = variant === 'studio';
   
-  // Fetch debris data: try local first, then GitHub, then fallback to mock
+  // Fetch the locally published signal data, then fall back to the bundled sample.
   useEffect(() => {
     const fetchDebrisData = async () => {
       const LOCAL_URL = '/data/debris.json';
-      const GITHUB_RAW_URL = 'https://raw.githubusercontent.com/Ufuk1007/shape-neural-core/main/public/data/debris.json';
-
-      // Try local file first
       try {
-        console.log('[NEURAL_CLOUD] Trying local:', LOCAL_URL);
         const localRes = await fetch(LOCAL_URL);
         if (localRes.ok) {
           const data = await localRes.json();
           if (Array.isArray(data) && data.length > 0) {
-            console.log('[NEURAL_CLOUD] ✓ Local data loaded:', data.length, 'items');
             setDebrisData(data);
             setIsLoading(false);
             return;
           }
         }
-      } catch (e) {
-        console.warn('[NEURAL_CLOUD] Local fetch failed, trying GitHub...');
+      } catch {
+        // The bundled fallback keeps the Lab usable if the data file cannot be loaded.
       }
 
-      // Fallback to GitHub
-      try {
-        console.log('[NEURAL_CLOUD] Trying GitHub:', GITHUB_RAW_URL);
-        const response = await fetch(GITHUB_RAW_URL);
-        if (response.ok) {
-          const data = await response.json();
-          if (Array.isArray(data) && data.length > 0) {
-            console.log('[NEURAL_CLOUD] ✓ GitHub data loaded:', data.length, 'items');
-            setDebrisData(data);
-            setIsLoading(false);
-            return;
-          }
-        }
-      } catch (error) {
-        console.error('[NEURAL_CLOUD] ✗ GitHub fetch failed:', error);
-      }
-
-      // Final fallback
-      console.log('[NEURAL_CLOUD] Using MOCK_DEBRIS fallback');
       setDebrisData(MOCK_DEBRIS);
       setIsLoading(false);
     };
@@ -706,7 +710,7 @@ const NeuralCloud = ({
   }, [debrisData]);
 
   return (
-    <section id="cloud" className={`relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111] neural-cloud ${isStudio ? 'neural-cloud--studio' : ''}`}>
+    <section id={isStudio ? undefined : "cloud"} className={`relative h-screen w-full bg-gradient-to-b from-[#111] via-[#000000] to-[#111] neural-cloud ${isStudio ? 'neural-cloud--studio' : ''}`}>
       {/* Section Header - Above everything with semi-transparent background */}
       <div className={`absolute top-0 left-0 right-0 z-40 px-8 md:px-20 pt-20 pb-8 pointer-events-none transition-opacity duration-1000 neural-cloud__header ${isInterrogating ? 'opacity-0' : 'opacity-100'}`}
            style={{ background: isStudio ? 'linear-gradient(to bottom, rgba(8,10,9,.96) 0%, rgba(8,10,9,.68) 68%, transparent 100%)' : 'linear-gradient(to bottom, rgba(17,17,17,0.95) 0%, rgba(17,17,17,0.7) 70%, transparent 100%)' }}>
@@ -727,7 +731,7 @@ const NeuralCloud = ({
           {isStudio ? (
             <div className="neural-cloud__studio-heading">
               <h2>{language === 'de' ? 'Signale werden sichtbar, wenn man Beziehungen sieht.' : 'Signals become visible when you see the relationships.'}</h2>
-              <p>{language === 'de' ? 'Nähe zum Kern zeigt Relevanz. Farbe zeigt Perspektive. Wählen Sie einen Punkt, um Quelle und Einordnung zu öffnen.' : 'Distance to the core indicates relevance. Colour shows perspective. Select a point to open its source and context.'}</p>
+              <p>{language === 'de' ? 'Nähe zum Kern zeigt Relevanz. Farbe zeigt Perspektive. Wählen Sie einen Punkt oder nutzen Sie die zugängliche Signalliste.' : 'Distance to the core indicates relevance. Colour shows perspective. Select a point or use the accessible signal list.'}</p>
             </div>
           ) : (
           <>
@@ -771,7 +775,7 @@ const NeuralCloud = ({
                 {isStudio ? (language === 'de' ? 'Ø RELEVANZ' : 'AVG RELEVANCE') : 'AVG_RELEVANCE'}: {analysis.averageRelevance.toFixed(1)}%
               </div>
               <div className="hidden md:block" style={{ color: 'rgba(255,255,255,0.5)' }}>
-                {isStudio ? (language === 'de' ? 'AKTUALITÄT' : 'ACTIVITY') : 'PULSE_FREQ'}: {analysis.pulseSpeed.toFixed(2)}Hz
+                {isStudio ? (language === 'de' ? 'AKTUALISIERT' : 'UPDATED') : 'PULSE_FREQ'}: {isStudio ? '24.09.2026' : `${analysis.pulseSpeed.toFixed(2)}Hz`}
               </div>
               <div style={{ color: 'rgba(255,255,255,0.3)' }}>
                 {isStudio ? (language === 'de' ? 'SIGNALE' : 'SIGNALS') : 'NODES'}: {debrisData.length}
@@ -795,14 +799,15 @@ const NeuralCloud = ({
         </div>
       )}
 
+      <div className="neural-cloud__canvas" aria-hidden="true">
       <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
         {/* Dynamic Camera Controller */}
-        <CameraController isMobile={isMobile} isInterrogating={isInterrogating} />
+        <CameraController isMobile={isMobile} isInterrogating={isInterrogating} reducedMotion={reducedMotion} />
         
         {/* Atmosphere */}
         <color attach="background" args={[isStudio ? "#080a09" : "#000000"]} />
         <fog attach="fog" args={[isStudio ? "#080a09" : "#000000", 10, 25]} />
-        <Stars radius={100} depth={50} count={isStudio ? 1400 : 5000} factor={isStudio ? 2.5 : 4} saturation={0} fade speed={isStudio ? .35 : 1} />
+        <Stars radius={100} depth={50} count={isStudio ? 1400 : 5000} factor={isStudio ? 2.5 : 4} saturation={0} fade speed={reducedMotion ? 0 : isStudio ? .35 : 1} />
         
         {/* Lighting */}
         <ambientLight intensity={0.5} />
@@ -815,6 +820,7 @@ const NeuralCloud = ({
           pulseSpeed={analysis.pulseSpeed}
           isInterrogating={isInterrogating}
           mood={activeMood}
+          reducedMotion={reducedMotion}
           onClick={() => {
             if (!isInterrogating && debrisPositions.length > 0) {
               // Clear any pending timer
@@ -845,6 +851,7 @@ const NeuralCloud = ({
             isHighlighted={highlightedShard?.id === data.id}
             isDecrypted={isDecrypted}
             isInterrogating={isInterrogating}
+            reducedMotion={reducedMotion}
             color={isStudio ? STUDIO_CATEGORY_COLORS[data.category] : undefined}
             onHover={() => !isDecrypted && !isInterrogating && setActiveShard(data)}
             onLeave={() => !isDecrypted && setActiveShard(null)}
@@ -862,6 +869,23 @@ const NeuralCloud = ({
           />
         </EffectComposer>
       </Canvas>
+      </div>
+
+      {!isLoading && isStudio ? (
+        <details className="neural-cloud__signal-list">
+          <summary><List size={16} />{language === 'de' ? 'Signale als Liste' : 'Signals as a list'}<span>{debrisData.length}</span></summary>
+          <ul>
+            {debrisData.map((signal) => (
+              <li key={signal.id}>
+                <button type="button" onClick={() => setDecryptedShard(signal)}>
+                  <span>{signal.category} · {signal.relevance}%</span>
+                  <strong>{signal.headline}</strong>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </details>
+      ) : null}
       
       {/* Data Card Overlay (only show when not decrypted) */}
       {activeShard && !isDecrypted && <DataCard data={activeShard} variant={variant} language={language} />}

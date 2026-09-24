@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { StudioFooter, StudioHeader } from "@/components/StudioChrome";
 import { useStudioLanguage, type StudioLanguage } from "@/hooks/use-studio-language";
+import StudioMeta from "@/components/StudioMeta";
 import "@/studio-site.css";
 
 export type StudioLegalPageKind = "imprint" | "privacy" | "terms";
@@ -48,8 +48,8 @@ function privacySections(language: StudioLanguage): LegalSection[] {
       id: "controller",
       title: de ? "1. Verantwortlicher" : "1. Controller",
       paragraphs: [de
-        ? "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Aeron Avci, ShapeNeural, Wasserhofstraße 47, 60529 Frankfurt am Main, Deutschland. Datenschutzanfragen können an signal@shapeneural.com gerichtet werden."
-        : "The controller within the meaning of the General Data Protection Regulation (GDPR) is Aeron Avci, ShapeNeural, Wasserhofstraße 47, 60529 Frankfurt am Main, Germany. Privacy requests can be sent to signal@shapeneural.com."],
+        ? "Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist der im Impressum bezeichnete Anbieter von ShapeNeural. Die vollständigen Kontaktdaten stehen im Impressum; Datenschutzanfragen können an signal@shapeneural.com gerichtet werden."
+        : "The controller within the meaning of the General Data Protection Regulation (GDPR) is the ShapeNeural provider identified in the legal notice. Full contact details are provided there; privacy requests can be sent to signal@shapeneural.com."],
     },
     {
       id: "hosting",
@@ -81,8 +81,8 @@ function privacySections(language: StudioLanguage): LegalSection[] {
       id: "contact",
       title: de ? "4. Kontaktaufnahme" : "4. Contact",
       paragraphs: [de
-        ? "Wenn Sie per E-Mail Kontakt aufnehmen, verarbeiten wir die von Ihnen übermittelten Angaben, um Ihre Anfrage zu beantworten, ein Vorhaben anzubahnen oder die anschließende Geschäftsbeziehung zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei vorvertraglicher oder vertraglicher Kommunikation, ansonsten Art. 6 Abs. 1 lit. f DSGVO."
-        : "When you contact us by email, we process the information you provide to answer your request, prepare a potential engagement or manage the subsequent business relationship. The legal basis is Art. 6(1)(b) GDPR for pre-contractual or contractual communication and otherwise Art. 6(1)(f) GDPR.",
+        ? "Wenn Sie über das Kontaktformular oder per E-Mail Kontakt aufnehmen, verarbeiten wir die von Ihnen übermittelten Angaben – insbesondere Name, E-Mail-Adresse, optionale Unternehmensangabe, gewählten Einstieg und Nachricht –, um Ihre Anfrage zu beantworten, ein Vorhaben anzubahnen oder die anschließende Geschäftsbeziehung zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO bei vorvertraglicher oder vertraglicher Kommunikation, ansonsten Art. 6 Abs. 1 lit. f DSGVO."
+        : "When you contact us through the form or by email, we process the details you provide — in particular your name, email address, optional company, selected entry point and message — to answer your request, prepare a potential engagement or manage the subsequent business relationship. The legal basis is Art. 6(1)(b) GDPR for pre-contractual or contractual communication and otherwise Art. 6(1)(f) GDPR.",
         de
           ? "Für die E-Mail-Infrastruktur wird Private Email von Namecheap eingesetzt. Nachrichten werden gelöscht, sobald sie für den jeweiligen Zweck nicht mehr erforderlich sind, sofern keine gesetzlichen Aufbewahrungspflichten oder berechtigten Interessen an einer längeren Speicherung bestehen."
           : "The email infrastructure uses Namecheap Private Email. Messages are deleted once they are no longer required for their purpose, unless statutory retention obligations or legitimate interests require a longer retention period.",
@@ -155,8 +155,8 @@ function termsSections(language: StudioLanguage): LegalSection[] {
       id: "scope",
       title: de ? "1. Geltungsbereich" : "1. Scope",
       paragraphs: [de
-        ? "Diese Allgemeinen Geschäftsbedingungen gelten für Verträge zwischen Aeron Avci, handelnd unter ShapeNeural, und Kunden, die bei Vertragsschluss als Unternehmer im Sinne des § 14 BGB, als juristische Person des öffentlichen Rechts oder als öffentlich-rechtliches Sondervermögen handeln. Verträge mit Verbrauchern werden auf dieser Grundlage nicht geschlossen."
-        : "These terms apply to contracts between Aeron Avci, trading as ShapeNeural, and customers acting as entrepreneurs within the meaning of Section 14 BGB, legal entities under public law or special funds under public law. Consumer contracts are not concluded on the basis of these terms.",
+        ? "Diese Allgemeinen Geschäftsbedingungen gelten für Verträge zwischen dem im Impressum bezeichneten Anbieter von ShapeNeural und Kunden, die bei Vertragsschluss als Unternehmer im Sinne des § 14 BGB, als juristische Person des öffentlichen Rechts oder als öffentlich-rechtliches Sondervermögen handeln. Verträge mit Verbrauchern werden auf dieser Grundlage nicht geschlossen."
+        : "These terms apply to contracts between the ShapeNeural provider identified in the legal notice and customers acting as entrepreneurs within the meaning of Section 14 BGB, legal entities under public law or special funds under public law. Consumer contracts are not concluded on the basis of these terms.",
         de
           ? "Individuelle Angebote, Leistungsbeschreibungen und ausdrücklich vereinbarte Regelungen gehen diesen AGB vor. Entgegenstehende Bedingungen des Kunden gelten nur, wenn ShapeNeural ihnen ausdrücklich zugestimmt hat."
           : "Individual proposals, statements of work and expressly agreed provisions take precedence over these terms. Conflicting customer terms apply only where ShapeNeural has expressly accepted them.",
@@ -351,15 +351,9 @@ export default function StudioLegalPage({ page }: { page: StudioLegalPageKind })
   const { language, setLanguage } = useStudioLanguage();
   const title = pageLabels[language][page];
   const description = pageIntroductions[language][page];
-  const canonical = `https://www.shapeneural.com${routes[page]}`;
-
   return (
     <div className="ss-site ss-site--legal">
-      <Helmet>
-        <title>{title} — ShapeNeural</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={canonical} />
-      </Helmet>
+      <StudioMeta title={title} description={description} path={routes[page]} language={language} />
       <StudioHeader language={language} onLanguage={() => setLanguage(language === "de" ? "en" : "de")} />
       <main>
         <header className="ss-legal__hero ss-section">

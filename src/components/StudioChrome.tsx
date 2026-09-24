@@ -33,9 +33,9 @@ export function StudioHeader({ language, onLanguage }: { language: StudioLanguag
         {nav[language].map(([label, path]) => (
           <Link className={location.pathname === path ? "is-active" : ""} to={path} key={path}>{label}</Link>
         ))}
-        <a className="ss-header__cta" href="mailto:signal@shapeneural.com?subject=Projektanfrage">
-          {language === "de" ? "Vorhaben besprechen" : "Discuss a project"}<ArrowRight size={15} />
-        </a>
+        <Link className="ss-header__cta" to="/kontakt">
+          {language === "de" ? "Fit prüfen" : "Check the fit"}<ArrowRight size={15} />
+        </Link>
       </nav>
       <div className="ss-header__tools">
         <button type="button" onClick={onLanguage} aria-label={language === "de" ? "Switch to English" : "Auf Deutsch wechseln"}>
@@ -66,6 +66,7 @@ export function StudioFooter({ language }: { language: StudioLanguage }) {
         <Link to="/studio/leistungen">{language === "de" ? "Leistungen" : "Services"}</Link>
         <Link to="/studio/projekte">{language === "de" ? "Projekte" : "Projects"}</Link>
         <Link to="/studio/lab">Lab</Link>
+        <Link to="/kontakt">{language === "de" ? "Kontakt" : "Contact"}</Link>
         <a href="mailto:signal@shapeneural.com">signal@shapeneural.com</a>
         <Link to="/impressum">{language === "de" ? "Impressum" : "Legal notice"}</Link>
         <Link to="/datenschutz">{language === "de" ? "Datenschutz" : "Privacy"}</Link>

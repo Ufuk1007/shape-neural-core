@@ -1,92 +1,118 @@
-import { OG_META, DEFAULT_OG, FORGE_OG } from '../shared/og-metadata.js';
-import { SPA_SHELL } from './_spa-shell.js';
+import { OG_META, type OGMeta } from "../shared/og-metadata.js";
+import { getGeneratedSeoRoute, safeJsonLd } from "../shared/seo-runtime.js";
+import { SPA_SHELL } from "./_spa-shell.js";
 
-export const config = {
-  runtime: 'edge',
-};
+export const config = { runtime: "edge" };
 
-const CRAWLER_USER_AGENTS = [
-  'linkedinbot',
-  'twitterbot',
-  'facebookexternalhit',
-  'slackbot',
-  'telegrambot',
-  'whatsapp',
-  'discordbot',
-  'googlebot',
-  'bingbot',
-  'yandexbot',
-];
-
-function isCrawler(userAgent: string): boolean {
-  const ua = userAgent.toLowerCase();
-  return CRAWLER_USER_AGENTS.some((bot) => ua.includes(bot));
+function escapeHtml(value: string): string {
+  return value.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-function escapeHtml(str: string): string {
-  return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+function markHelmetManaged(markup: string): string {
+  if (/^<(meta|link)\b/i.test(markup)) return markup.replace(/\s*\/?>$/, ' data-rh="true" />');
+  if (/^<script\b/i.test(markup)) return markup.replace(">", ' data-rh="true">');
+  return markup;
+}
+
+function replaceOrInsert(html: string, pattern: RegExp, replacement: string): string {
+  const managedReplacement = markHelmetManaged(replacement);
+  if (pattern.test(html)) return html.replace(pattern, managedReplacement);
+  return html.replace("</head>", `${managedReplacement}\n</head>`);
+}
+
+function insertBeforeHeadEnd(html: string, markup: string): string {
+  return html.replace("</head>", `${markHelmetManaged(markup)}\n</head>`);
+}
+
+function routeMeta(path: string): OGMeta | null {
+  return OG_META[path] ?? null;
+}
+
+function pageSlug(path: string): string {
+  if (path === "/") return "home";
+  return path.split("/").filter(Boolean).at(-1) ?? "home";
 }
 
 export default function handler(req: Request): Response {
-  const userAgent = req.headers.get('user-agent') || '';
   const url = new URL(req.url);
-  const path = url.searchParams.get('path') || url.pathname;
+  const path = url.searchParams.get("path") || url.pathname;
+  const meta = routeMeta(path);
+  const machineRoute = getGeneratedSeoRoute(path);
 
-  // Normal visitors get the SPA shell
-  if (!isCrawler(userAgent)) {
-    return new Response(SPA_SHELL, {
-      headers: { 'Content-Type': 'text/html; charset=utf-8' },
+  if (!meta) {
+    return new Response("Not found", {
+      status: 404,
+      headers: { "Content-Type": "text/plain; charset=utf-8", "X-Robots-Tag": "noindex, nofollow" },
     });
   }
 
-  // Crawlers get minimal OG HTML
-  const meta = path === '/forge' ? FORGE_OG : (OG_META[path] || DEFAULT_OG);
-  const origin = url.origin;
-  const canonicalUrl = `${origin}${path}`;
-
-  // Dynamic OG image for projects and insights, static fallback otherwise
-  const insightMatch = path.match(/^\/insight\/([a-z0-9-]+)$/);
-  const projectMatch = path.match(/^\/project\/([a-z0-9-]+)$/);
-
-  let ogImage: string;
-  if (insightMatch) {
-    ogImage = `${origin}/api/og-image?type=insight&slug=${insightMatch[1]}`;
-  } else if (projectMatch) {
-    ogImage = `${origin}/api/og-image?type=project&slug=${projectMatch[1]}`;
-  } else {
-    ogImage = `${origin}/og-image-social.png`;
-  }
-
+  const canonicalPath = meta.canonical ?? path;
+  const canonicalUrl = `https://www.shapeneural.com${canonicalPath}`;
+  const projectMatch = path.match(/^\/studio\/projekte\/([a-z0-9-]+)$/);
+  const imageUrl = meta.image
+    ? new URL(meta.image, "https://www.shapeneural.com").toString()
+    : projectMatch
+      ? `https://www.shapeneural.com/api/og-image?type=project&slug=${projectMatch[1]}`
+      : `https://www.shapeneural.com/api/og-image?type=page&slug=${pageSlug(path)}`;
   const title = escapeHtml(meta.title);
-  // Ensure description meets LinkedIn's 100-character minimum
-  let rawDescription = meta.description;
-  if (rawDescription.length < 100) {
-    rawDescription += ` — An insight from the SHAPENEURAL designed intelligence portfolio.`;
-  }
-  const description = escapeHtml(rawDescription);
+  const description = escapeHtml(meta.description);
+  const imageAlt = escapeHtml(`${meta.title} — ShapeNeural`);
+  const markdownUrl = machineRoute?.markdown ? `${origin(machineRoute.markdown)}` : null;
+  const jsonLdUrl = machineRoute?.jsonld ? `${origin(machineRoute.jsonld)}` : null;
 
-  const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>${title}</title>
-<meta property="og:title" content="${title}"/>
-<meta property="og:description" content="${description}"/>
-<meta property="og:image" content="${ogImage}"/>
-<meta property="og:url" content="${canonicalUrl}"/>
-<meta property="og:type" content="${meta.type}"/>
-<meta property="og:site_name" content="SHAPENEURAL"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="${title}"/>
-<meta name="twitter:description" content="${description}"/>
-<meta name="twitter:image" content="${ogImage}"/>
-<meta name="description" content="${description}"/>
-<meta http-equiv="refresh" content="0;url=${canonicalUrl}"/>
-</head>
-<body></body>
-</html>`;
+  let html = SPA_SHELL;
+  html = replaceOrInsert(html, /<title>.*?<\/title>/i, `<title>${title}</title>`);
+  html = replaceOrInsert(html, /<meta\s+name="description"[^>]*>/i, `<meta name="description" content="${description}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:title"[^>]*>/i, `<meta property="og:title" content="${title}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:description"[^>]*>/i, `<meta property="og:description" content="${description}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:type"[^>]*>/i, `<meta property="og:type" content="${meta.type}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:image"[^>]*>/i, `<meta property="og:image" content="${imageUrl}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:image:secure_url"[^>]*>/i, `<meta property="og:image:secure_url" content="${imageUrl}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:image:width"[^>]*>/i, `<meta property="og:image:width" content="1200" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:image:height"[^>]*>/i, `<meta property="og:image:height" content="630" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:image:alt"[^>]*>/i, `<meta property="og:image:alt" content="${imageAlt}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:url"[^>]*>/i, `<meta property="og:url" content="${canonicalUrl}" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:site_name"[^>]*>/i, `<meta property="og:site_name" content="ShapeNeural" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:locale"[^>]*>/i, `<meta property="og:locale" content="de_DE" />`);
+  html = replaceOrInsert(html, /<meta\s+property="og:locale:alternate"[^>]*>/i, `<meta property="og:locale:alternate" content="en_GB" />`);
+  if (machineRoute) html = replaceOrInsert(html, /<meta\s+property="og:updated_time"[^>]*>/i, `<meta property="og:updated_time" content="${machineRoute.dateModified}" />`);
+  html = replaceOrInsert(html, /<meta\s+name="author"[^>]*>/i, `<meta name="author" content="ShapeNeural" />`);
+  html = replaceOrInsert(html, /<meta\s+name="robots"[^>]*>/i, `<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`);
+  html = replaceOrInsert(html, /<meta\s+name="googlebot"[^>]*>/i, `<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`);
+  html = replaceOrInsert(html, /<meta\s+name="bingbot"[^>]*>/i, `<meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />`);
+  html = replaceOrInsert(html, /<meta\s+name="twitter:title"[^>]*>/i, `<meta name="twitter:title" content="${title}" />`);
+  html = replaceOrInsert(html, /<meta\s+name="twitter:description"[^>]*>/i, `<meta name="twitter:description" content="${description}" />`);
+  html = replaceOrInsert(html, /<meta\s+name="twitter:image"[^>]*>/i, `<meta name="twitter:image" content="${imageUrl}" />`);
+  html = replaceOrInsert(html, /<meta\s+name="twitter:image:alt"[^>]*>/i, `<meta name="twitter:image:alt" content="${imageAlt}" />`);
+  html = replaceOrInsert(html, /<link\s+rel="canonical"[^>]*>/i, `<link rel="canonical" href="${canonicalUrl}" />`);
+  html = replaceOrInsert(html, /<link\s+rel="sitemap"[^>]*>/i, `<link rel="sitemap" type="application/xml" href="https://www.shapeneural.com/sitemap.xml" />`);
+  html = insertBeforeHeadEnd(html, `<link rel="alternate" type="text/plain" title="LLM-readable site overview" href="https://www.shapeneural.com/llms.txt" />`);
+  if (markdownUrl) html = insertBeforeHeadEnd(html, `<link rel="alternate" type="text/markdown" title="Markdown version" href="${markdownUrl}" />`);
+  if (jsonLdUrl) html = insertBeforeHeadEnd(html, `<link rel="alternate" type="application/ld+json" title="Structured data" href="${jsonLdUrl}" />`);
+  if (machineRoute) {
+    html = insertBeforeHeadEnd(html, `<script type="application/ld+json">${safeJsonLd(machineRoute.structuredData)}</script>`);
+    html = html.replace(/<div\s+id="root"\s*><\/div>/i, `<div id="root">${machineRoute.fallbackHtml}</div>`);
+  }
+
+  const alternateLinks = [
+    `<${canonicalUrl}>; rel="canonical"`,
+    `<https://www.shapeneural.com/llms.txt>; rel="alternate"; type="text/plain"`,
+    ...(markdownUrl ? [`<${markdownUrl}>; rel="alternate"; type="text/markdown"`] : []),
+    ...(jsonLdUrl ? [`<${jsonLdUrl}>; rel="alternate"; type="application/ld+json"`] : []),
+  ].join(", ");
 
   return new Response(html, {
-    headers: { 'Content-Type': 'text/html; charset=utf-8' },
+    status: 200,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Language": "de",
+      "Cache-Control": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400",
+      "Link": alternateLinks,
+      "X-Robots-Tag": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    },
   });
+}
+
+function origin(pathname: string): string {
+  return `https://www.shapeneural.com${pathname}`;
 }

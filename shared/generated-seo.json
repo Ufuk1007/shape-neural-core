@@ -1,0 +1,3005 @@
+{
+  "generatedAt": "2026-09-24T00:00:00+02:00",
+  "site": {
+    "name": "ShapeNeural",
+    "legalName": "ShapeNeural",
+    "url": "https://www.shapeneural.com",
+    "email": "signal@shapeneural.com",
+    "location": "Frankfurt am Main / Remote",
+    "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+    "descriptionEn": "Independent applied AI product studio for small organisations, compact teams and independent professionals. ShapeNeural configures AI for real use, redesigns workflows and makes digital product ideas testable.",
+    "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+    "audience": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige",
+    "serviceArea": "Deutschland und Remote"
+  },
+  "routes": {
+    "/": {
+      "title": "KI-Agentur & KI-Produktstudio Frankfurt | ShapeNeural",
+      "description": "ShapeNeural richtet KI für kleine Unternehmen praktisch ein, automatisiert kontrollierbare Workflows und baut testbare KI-Produkte – in Frankfurt und remote.",
+      "markdown": "/index.md",
+      "jsonld": "/schema.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>KI-Agentur &amp; KI-Produktstudio Frankfurt | ShapeNeural</h1><p>ShapeNeural richtet KI für kleine Unternehmen praktisch ein, automatisiert kontrollierbare Workflows und baut testbare KI-Produkte – in Frankfurt und remote.</p></header><section><h2>Unabhängiges KI-Produktstudio</h2><p>Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.</p><h2>Drei Wege der Zusammenarbeit</h2><article><h3>AUGMENT — AI Workspace Setup</h3><p>Wir verstehen Ihre heutige Arbeit, wählen passende Werkzeuge aus und richten konkrete Assistenten, Wissensquellen und Routinen ein. Kein allgemeines KI-Training – nach dem Projekt ist etwas einsatzbereit.</p><p><strong>Ergebnis:</strong> Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.</p><a href=\"/studio/leistungen#augment\">Leistung ansehen</a></article><article><h3>TRANSFORM — AI Workflow Build</h3><p>Wir kartieren einen konkreten Ablauf und fragen: Wie würde er aussehen, wenn KI von Beginn an mitgedacht wäre? Daraus bauen wir einen leichten Workflow aus Assistenten, Agenten, Automationen und menschlichen Freigaben.</p><p><strong>Ergebnis:</strong> Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.</p><a href=\"/studio/leistungen#transform\">Leistung ansehen</a></article><article><h3>CREATE — AI Product Sprint</h3><p>Wir übersetzen eine Idee in ein Produktkonzept, bauen die kleinste sinnvolle Version und testen, ob Problem, Interaktion und KI-Qualität tragen. Ziel ist nicht Enterprise-Software, sondern eine belastbare Entscheidung.</p><p><strong>Ergebnis:</strong> Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.</p><a href=\"/studio/leistungen#create\">Leistung ansehen</a></article><h2>Aus dem Portfolio</h2><article><h3><a href=\"/studio/projekte/sapientblock\">SAPIENTBLOCK</a></h3><p>SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.</p></article><article><h3><a href=\"/studio/projekte/melodeye\">MELODEYE</a></h3><p>MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.</p></article><article><h3><a href=\"/studio/projekte/problaim\">PROBLAIM</a></h3><p>PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.</p></article><article><h3><a href=\"/studio/projekte/veniora\">VENIORA</a></h3><p>VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.</p></article><article><h3><a href=\"/studio/projekte/humancrypto\">HUMANCRYP.TO</a></h3><p>HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.</p></article><article><h3><a href=\"/studio/projekte/sapientshift\">SAPIENTSHIFT</a></h3><p>SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.</p></article><article><h3><a href=\"/studio/projekte/bitcoin-soundscape\">BITCOIN SOUNDSCAPE</a></h3><p>BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.</p></article></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/index.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/schema.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/#webpage",
+            "url": "https://www.shapeneural.com/",
+            "name": "KI-Agentur & KI-Produktstudio Frankfurt | ShapeNeural",
+            "description": "ShapeNeural richtet KI für kleine Unternehmen praktisch ein, automatisiert kontrollierbare Workflows und baut testbare KI-Produkte – in Frankfurt und remote.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=home"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://www.shapeneural.com/studio/leistungen#catalog",
+            "name": "ShapeNeural Leistungen",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#augment",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "minPrice": 2900,
+                  "maxPrice": 6500,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "@id": "https://www.shapeneural.com/studio/leistungen#service-augment",
+                  "name": "AI Workspace Setup",
+                  "alternateName": "AI Workspace Setup",
+                  "serviceType": "AUGMENT",
+                  "description": "Wir verstehen Ihre heutige Arbeit, wählen passende Werkzeuge aus und richten konkrete Assistenten, Wissensquellen und Routinen ein. Kein allgemeines KI-Training – nach dem Projekt ist etwas einsatzbereit.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "areaServed": "Deutschland und Remote",
+                  "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige"
+                  },
+                  "produces": "Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.",
+                  "serviceOutput": [
+                    "AI Work Assessment",
+                    "Plattformempfehlung",
+                    "Eingerichteter AI Workspace",
+                    "2–5 implementierte Use Cases",
+                    "Prompt- und Instruction Library",
+                    "Handover Session"
+                  ],
+                  "termsOfService": "Keine umfassende Prozessneugestaltung; Keine individuellen Enterprise-Integrationen; Keine dauerhafte Administration Ihrer IT"
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#transform",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "minPrice": 7500,
+                  "maxPrice": 18000,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "@id": "https://www.shapeneural.com/studio/leistungen#service-transform",
+                  "name": "AI Workflow Build",
+                  "alternateName": "AI Workflow Build",
+                  "serviceType": "TRANSFORM",
+                  "description": "Wir kartieren einen konkreten Ablauf und fragen: Wie würde er aussehen, wenn KI von Beginn an mitgedacht wäre? Daraus bauen wir einen leichten Workflow aus Assistenten, Agenten, Automationen und menschlichen Freigaben.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "areaServed": "Deutschland und Remote",
+                  "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige"
+                  },
+                  "produces": "Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.",
+                  "serviceOutput": [
+                    "Current Workflow Map",
+                    "AI Opportunity Map",
+                    "Future Workflow Blueprint",
+                    "Assistenten oder Agenten",
+                    "Leichte Automationen",
+                    "Evaluation Scorecard",
+                    "Runbook und Übergabe"
+                  ],
+                  "termsOfService": "Keine offene Transformation über mehrere Workflows; Keine ERP- oder Kernsystemmigration; Keine produktionskritische 24/7-Verantwortung"
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#create",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "minPrice": 9500,
+                  "maxPrice": 22000,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "@id": "https://www.shapeneural.com/studio/leistungen#service-create",
+                  "name": "AI Product Sprint",
+                  "alternateName": "AI Product Sprint",
+                  "serviceType": "CREATE",
+                  "description": "Wir übersetzen eine Idee in ein Produktkonzept, bauen die kleinste sinnvolle Version und testen, ob Problem, Interaktion und KI-Qualität tragen. Ziel ist nicht Enterprise-Software, sondern eine belastbare Entscheidung.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "areaServed": "Deutschland und Remote",
+                  "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige"
+                  },
+                  "produces": "Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.",
+                  "serviceOutput": [
+                    "Opportunity Brief",
+                    "AI Product Canvas",
+                    "Experience Concept",
+                    "Funktionaler Prototyp",
+                    "Validation Report",
+                    "Product Roadmap",
+                    "Build- oder Partnerempfehlung"
+                  ],
+                  "termsOfService": "Prototyp statt fertiger Enterprise-Plattform; Keine unbegrenzte Feature-Entwicklung; Produktionsreife wird separat entschieden"
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#focus-day",
+                "price": 950,
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 950,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false,
+                  "unitText": "Ein Arbeitstag plus Vorbereitung"
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Focus Day",
+                  "description": "Ein fokussierter Arbeitstag plus Vorbereitung. ShapeNeural priorisiert ein reales Problem, prüft Daten und Werkzeuge und liefert eine Opportunity Map sowie eine klare Empfehlung.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "produces": "Opportunity Map und klare Empfehlung – auch ohne Folgeprojekt"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/leistungen": {
+      "title": "KI-Beratung, Automatisierung & Prototypen | ShapeNeural",
+      "description": "KI-Workspace, kontrollierbare Workflow-Automatisierung und KI-Prototypen für kleine Unternehmen – mit Ergebnis, Dauer, Preisrahmen und klaren Grenzen.",
+      "markdown": "/studio/leistungen.md",
+      "jsonld": "/studio/leistungen.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>KI-Beratung, Automatisierung &amp; Prototypen | ShapeNeural</h1><p>KI-Workspace, kontrollierbare Workflow-Automatisierung und KI-Prototypen für kleine Unternehmen – mit Ergebnis, Dauer, Preisrahmen und klaren Grenzen.</p></header><section><h2>Leistungen, Ergebnisse und Preisrahmen</h2><article><h3>AUGMENT — AI Workspace Setup</h3><p>Wir verstehen Ihre heutige Arbeit, wählen passende Werkzeuge aus und richten konkrete Assistenten, Wissensquellen und Routinen ein. Kein allgemeines KI-Training – nach dem Projekt ist etwas einsatzbereit.</p><dl><dt>Ergebnis</dt><dd>Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.</dd><dt>Dauer</dt><dd>Typisch 1–2 Wochen</dd><dt>Preis</dt><dd>Orientierung: 2.900–6.500 € netto</dd></dl><ul><li>AI Work Assessment</li><li>Plattformempfehlung</li><li>Eingerichteter AI Workspace</li><li>2–5 implementierte Use Cases</li><li>Prompt- und Instruction Library</li><li>Handover Session</li></ul></article><article><h3>TRANSFORM — AI Workflow Build</h3><p>Wir kartieren einen konkreten Ablauf und fragen: Wie würde er aussehen, wenn KI von Beginn an mitgedacht wäre? Daraus bauen wir einen leichten Workflow aus Assistenten, Agenten, Automationen und menschlichen Freigaben.</p><dl><dt>Ergebnis</dt><dd>Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.</dd><dt>Dauer</dt><dd>Typisch 3–6 Wochen</dd><dt>Preis</dt><dd>Orientierung: 7.500–18.000 € netto</dd></dl><ul><li>Current Workflow Map</li><li>AI Opportunity Map</li><li>Future Workflow Blueprint</li><li>Assistenten oder Agenten</li><li>Leichte Automationen</li><li>Evaluation Scorecard</li><li>Runbook und Übergabe</li></ul></article><article><h3>CREATE — AI Product Sprint</h3><p>Wir übersetzen eine Idee in ein Produktkonzept, bauen die kleinste sinnvolle Version und testen, ob Problem, Interaktion und KI-Qualität tragen. Ziel ist nicht Enterprise-Software, sondern eine belastbare Entscheidung.</p><dl><dt>Ergebnis</dt><dd>Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.</dd><dt>Dauer</dt><dd>Typisch 3–5 Wochen</dd><dt>Preis</dt><dd>Orientierung: 9.500–22.000 € netto</dd></dl><ul><li>Opportunity Brief</li><li>AI Product Canvas</li><li>Experience Concept</li><li>Funktionaler Prototyp</li><li>Validation Report</li><li>Product Roadmap</li><li>Build- oder Partnerempfehlung</li></ul></article><article><h3>Focus Day</h3><p>Ein fokussierter Arbeitstag plus Vorbereitung. ShapeNeural priorisiert ein reales Problem, prüft Daten und Werkzeuge und liefert eine Opportunity Map sowie eine klare Empfehlung.</p><p>950 € netto · Ein Arbeitstag plus Vorbereitung</p></article><h2>Häufige Fragen</h2><details open><summary>Für wen ist das gedacht?</summary><p>Für kleine Unternehmen, kompakte Teams und Selbstständige, die KI praktisch einsetzen wollen. Nicht für große Kernsystemmigrationen oder unternehmenskritischen 24/7-Betrieb.</p></details><details open><summary>Muss ich mich bereits für ein KI-Tool entschieden haben?</summary><p>Nein. Die Werkzeugwahl folgt aus Arbeit, Daten, Risiko und Budget – nicht aus einer bevorzugten Plattform.</p></details><details open><summary>Was passiert mit sensiblen Daten?</summary><p>Datenflüsse und Anbieter werden vor der Umsetzung sichtbar gemacht. Besondere rechtliche oder sicherheitskritische Anforderungen werden früh benannt und bei Bedarf mit Spezialisten ergänzt.</p></details><details open><summary>Was passiert nach dem Projekt?</summary><p>Sie erhalten ein nutzbares System, Dokumentation und eine Übergabe. Ein klar begrenztes Care-Modell kann separat vereinbart werden; ein 24/7 Managed Service ist nicht Teil des Kernangebots.</p></details><details open><summary>Sind die genannten Preise verbindlich?</summary><p>Die Bandbreiten sind eine Orientierung für typische Vorhaben. Nach einer kurzen Bestandsaufnahme folgen ein klar abgegrenzter Umfang und ein verbindlicher Festpreis. Lizenzen und vereinbarte Fremdkosten werden separat ausgewiesen.</p></details></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/leistungen.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/leistungen.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/leistungen#webpage",
+            "url": "https://www.shapeneural.com/studio/leistungen",
+            "name": "KI-Beratung, Automatisierung & Prototypen | ShapeNeural",
+            "description": "KI-Workspace, kontrollierbare Workflow-Automatisierung und KI-Prototypen für kleine Unternehmen – mit Ergebnis, Dauer, Preisrahmen und klaren Grenzen.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=leistungen"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Leistungen",
+                "item": "https://www.shapeneural.com/studio/leistungen"
+              }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "@id": "https://www.shapeneural.com/studio/leistungen#catalog",
+            "name": "ShapeNeural Leistungen",
+            "description": "KI-Workspace, kontrollierbare Workflow-Automatisierung und KI-Prototypen für kleine Unternehmen – mit Ergebnis, Dauer, Preisrahmen und klaren Grenzen.",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#augment",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "minPrice": 2900,
+                  "maxPrice": 6500,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "@id": "https://www.shapeneural.com/studio/leistungen#service-augment",
+                  "name": "AI Workspace Setup",
+                  "alternateName": "AI Workspace Setup",
+                  "serviceType": "AUGMENT",
+                  "description": "Wir verstehen Ihre heutige Arbeit, wählen passende Werkzeuge aus und richten konkrete Assistenten, Wissensquellen und Routinen ein. Kein allgemeines KI-Training – nach dem Projekt ist etwas einsatzbereit.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "areaServed": "Deutschland und Remote",
+                  "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige"
+                  },
+                  "produces": "Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.",
+                  "serviceOutput": [
+                    "AI Work Assessment",
+                    "Plattformempfehlung",
+                    "Eingerichteter AI Workspace",
+                    "2–5 implementierte Use Cases",
+                    "Prompt- und Instruction Library",
+                    "Handover Session"
+                  ],
+                  "termsOfService": "Keine umfassende Prozessneugestaltung; Keine individuellen Enterprise-Integrationen; Keine dauerhafte Administration Ihrer IT"
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#transform",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "minPrice": 7500,
+                  "maxPrice": 18000,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "@id": "https://www.shapeneural.com/studio/leistungen#service-transform",
+                  "name": "AI Workflow Build",
+                  "alternateName": "AI Workflow Build",
+                  "serviceType": "TRANSFORM",
+                  "description": "Wir kartieren einen konkreten Ablauf und fragen: Wie würde er aussehen, wenn KI von Beginn an mitgedacht wäre? Daraus bauen wir einen leichten Workflow aus Assistenten, Agenten, Automationen und menschlichen Freigaben.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "areaServed": "Deutschland und Remote",
+                  "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige"
+                  },
+                  "produces": "Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.",
+                  "serviceOutput": [
+                    "Current Workflow Map",
+                    "AI Opportunity Map",
+                    "Future Workflow Blueprint",
+                    "Assistenten oder Agenten",
+                    "Leichte Automationen",
+                    "Evaluation Scorecard",
+                    "Runbook und Übergabe"
+                  ],
+                  "termsOfService": "Keine offene Transformation über mehrere Workflows; Keine ERP- oder Kernsystemmigration; Keine produktionskritische 24/7-Verantwortung"
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#create",
+                "availability": "https://schema.org/InStock",
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "minPrice": 9500,
+                  "maxPrice": 22000,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "@id": "https://www.shapeneural.com/studio/leistungen#service-create",
+                  "name": "AI Product Sprint",
+                  "alternateName": "AI Product Sprint",
+                  "serviceType": "CREATE",
+                  "description": "Wir übersetzen eine Idee in ein Produktkonzept, bauen die kleinste sinnvolle Version und testen, ob Problem, Interaktion und KI-Qualität tragen. Ziel ist nicht Enterprise-Software, sondern eine belastbare Entscheidung.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "areaServed": "Deutschland und Remote",
+                  "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Kleine Unternehmen, kompakte Teams und beruflich Selbstständige"
+                  },
+                  "produces": "Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.",
+                  "serviceOutput": [
+                    "Opportunity Brief",
+                    "AI Product Canvas",
+                    "Experience Concept",
+                    "Funktionaler Prototyp",
+                    "Validation Report",
+                    "Product Roadmap",
+                    "Build- oder Partnerempfehlung"
+                  ],
+                  "termsOfService": "Prototyp statt fertiger Enterprise-Plattform; Keine unbegrenzte Feature-Entwicklung; Produktionsreife wird separat entschieden"
+                }
+              },
+              {
+                "@type": "Offer",
+                "url": "https://www.shapeneural.com/studio/leistungen#focus-day",
+                "price": 950,
+                "priceCurrency": "EUR",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 950,
+                  "priceCurrency": "EUR",
+                  "valueAddedTaxIncluded": false,
+                  "unitText": "Ein Arbeitstag plus Vorbereitung"
+                },
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Focus Day",
+                  "description": "Ein fokussierter Arbeitstag plus Vorbereitung. ShapeNeural priorisiert ein reales Problem, prüft Daten und Werkzeuge und liefert eine Opportunity Map sowie eine klare Empfehlung.",
+                  "provider": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "produces": "Opportunity Map und klare Empfehlung – auch ohne Folgeprojekt"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Für wen ist das gedacht?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Für kleine Unternehmen, kompakte Teams und Selbstständige, die KI praktisch einsetzen wollen. Nicht für große Kernsystemmigrationen oder unternehmenskritischen 24/7-Betrieb."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Muss ich mich bereits für ein KI-Tool entschieden haben?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nein. Die Werkzeugwahl folgt aus Arbeit, Daten, Risiko und Budget – nicht aus einer bevorzugten Plattform."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was passiert mit sensiblen Daten?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Datenflüsse und Anbieter werden vor der Umsetzung sichtbar gemacht. Besondere rechtliche oder sicherheitskritische Anforderungen werden früh benannt und bei Bedarf mit Spezialisten ergänzt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was passiert nach dem Projekt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sie erhalten ein nutzbares System, Dokumentation und eine Übergabe. Ein klar begrenztes Care-Modell kann separat vereinbart werden; ein 24/7 Managed Service ist nicht Teil des Kernangebots."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Sind die genannten Preise verbindlich?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Die Bandbreiten sind eine Orientierung für typische Vorhaben. Nach einer kurzen Bestandsaufnahme folgen ein klar abgegrenzter Umfang und ein verbindlicher Festpreis. Lizenzen und vereinbarte Fremdkosten werden separat ausgewiesen."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte": {
+      "title": "KI-Projekte & digitale Produkte | ShapeNeural Portfolio",
+      "description": "KI-Produkte, Experimente und Partnerprojekte von ShapeNeural – mit Systembeschreibung, Projektstatus, technischen Details und übertragbarem Kundennutzen.",
+      "markdown": "/studio/projekte.md",
+      "jsonld": "/studio/projekte.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>KI-Projekte &amp; digitale Produkte | ShapeNeural Portfolio</h1><p>KI-Produkte, Experimente und Partnerprojekte von ShapeNeural – mit Systembeschreibung, Projektstatus, technischen Details und übertragbarem Kundennutzen.</p></header><section><h2>Vollständiges Portfolio</h2><article><p>Partnerprojekt · LIVE · 2024</p><h3><a href=\"/studio/projekte/sapientblock\">SAPIENTBLOCK</a></h3><p>SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.</p></article><article><p>Experiment · BETA · 2024</p><h3><a href=\"/studio/projekte/melodeye\">MELODEYE</a></h3><p>MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.</p></article><article><p>Eigenes Produkt · BETA · 2025</p><h3><a href=\"/studio/projekte/problaim\">PROBLAIM</a></h3><p>PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.</p></article><article><p>Eigenes Produkt · LIVE · 2026</p><h3><a href=\"/studio/projekte/veniora\">VENIORA</a></h3><p>VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.</p></article><article><p>Experiment · ARCHIVED · 2023</p><h3><a href=\"/studio/projekte/humancrypto\">HUMANCRYP.TO</a></h3><p>HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.</p></article><article><p>Eigenes Produkt · BETA · 2025</p><h3><a href=\"/studio/projekte/sapientshift\">SAPIENTSHIFT</a></h3><p>SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.</p></article><article><p>Experiment · LIVE · 2025</p><h3><a href=\"/studio/projekte/bitcoin-soundscape\">BITCOIN SOUNDSCAPE</a></h3><p>BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.</p></article></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.shapeneural.com/studio/projekte#collection",
+            "url": "https://www.shapeneural.com/studio/projekte",
+            "name": "KI-Projekte & digitale Produkte | ShapeNeural Portfolio",
+            "description": "KI-Produkte, Experimente und Partnerprojekte von ShapeNeural – mit Systembeschreibung, Projektstatus, technischen Details und übertragbarem Kundennutzen.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=projekte"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "ShapeNeural Projektportfolio",
+            "numberOfItems": 7,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/sapientblock#project",
+                  "name": "SAPIENTBLOCK",
+                  "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+                  "sameAs": "https://sapientblock.com",
+                  "description": "SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.",
+                  "abstract": "Wie wird aus einer abstrakten Technologiefrage ein belastbarer Entscheidungs- und Innovationsprozess?",
+                  "applicationCategory": "BLOCKCHAIN",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2024",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "BLOCKCHAIN",
+                    "AI",
+                    "ANALYTICS"
+                  ],
+                  "featureList": [
+                    "Unternehmensanalyse",
+                    "Semantisches Matching",
+                    "Ideengenerator",
+                    "Insights & Benchmarks",
+                    "Content Operations",
+                    "LLM-Lesbarkeit"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "LIVE"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Partnerprojekt"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "BLOCKCHAIN REALLABOR"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb."
+                    }
+                  ],
+                  "citation": [
+                    "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/"
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "url": "https://www.shapeneural.com/studio/projekte/melodeye",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/melodeye#project",
+                  "name": "MELODEYE",
+                  "url": "https://www.shapeneural.com/studio/projekte/melodeye",
+                  "sameAs": "https://aura-soundscape-96.vercel.app",
+                  "description": "MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.",
+                  "abstract": "Kann ein digitales System auf erlebte statt nur auf gezeigte Emotion reagieren?",
+                  "applicationCategory": "BIOMETRIC AI",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2024",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "BIOMETRIC_AI",
+                    "EMOTION_RECOGNITION",
+                    "MUSIC_GENERATION"
+                  ],
+                  "featureList": [
+                    "Lokale Wahrnehmung",
+                    "Gap-aware interpretation",
+                    "Adaptive Musik"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "BETA"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Experiment"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "INDEPENDENT"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Das Projekt untersucht personalisierte Interaktion, ohne biometrische Rohdaten an einen Server zu übertragen."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Multimodale Signale sind aussagekräftiger als ein einzelner Klassifikator – erfordern aber klare Sicherheitslogik und eine bescheidene Interpretation."
+                    }
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=melodeye"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "url": "https://www.shapeneural.com/studio/projekte/problaim",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/problaim#project",
+                  "name": "PROBLAIM",
+                  "url": "https://www.shapeneural.com/studio/projekte/problaim",
+                  "sameAs": "https://problaim.com",
+                  "description": "PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.",
+                  "abstract": "Wie entsteht aus einem komplexen Problem fortlaufend bessere Klarheit?",
+                  "applicationCategory": "AI ANALYSIS",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2025",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "AI_ANALYSIS",
+                    "DECISION_INTELLIGENCE",
+                    "SAAS"
+                  ],
+                  "featureList": [
+                    "Problemzerlegung",
+                    "Perspektiven",
+                    "Fortlaufende Analyse"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "BETA"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Eigenes Produkt"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "INDEPENDENT"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten."
+                    }
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "url": "https://www.shapeneural.com/studio/projekte/veniora",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/veniora#project",
+                  "name": "VENIORA",
+                  "url": "https://www.shapeneural.com/studio/projekte/veniora",
+                  "sameAs": "https://veniora.de",
+                  "description": "VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.",
+                  "abstract": "Wie wird aus großen öffentlichen Datenbeständen eine belastbare regionale Entscheidungsgrundlage?",
+                  "applicationCategory": "REGIONAL AI EVIDENCE",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2026",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "PUBLIC_DATA",
+                    "AI_IMPACT",
+                    "DECISION_INTELLIGENCE"
+                  ],
+                  "featureList": [
+                    "Regionale Datenverbindung",
+                    "Belastbarkeit sichtbar machen",
+                    "Maschinenlesbare Evidenz"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "LIVE"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Eigenes Produkt"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "INDEPENDENT"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Aus Millionen Beschäftigtendaten und internationaler Forschung entsteht eine lesbare regionale Evidenzschicht für konkrete Diskussionen über Arbeit und KI."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Vertrauen entsteht nicht durch eine möglichst eindeutige Zahl, sondern durch sichtbare Quellen, belastbare Übersetzungsregeln und klar benannte Grenzen."
+                    }
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=veniora"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "url": "https://www.shapeneural.com/studio/projekte/humancrypto",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/humancrypto#project",
+                  "name": "HUMANCRYP.TO",
+                  "url": "https://www.shapeneural.com/studio/projekte/humancrypto",
+                  "sameAs": "https://humancryp.to",
+                  "description": "HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.",
+                  "abstract": "Wie wird abstrakte Technologie erinnerbar und menschlich?",
+                  "applicationCategory": "CRYPTO EDUCATION",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2023",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "CRYPTO_EDUCATION",
+                    "STORYTELLING",
+                    "AI_PERSONAS"
+                  ],
+                  "featureList": [
+                    "Archetypen-Modell",
+                    "Generative Produktion",
+                    "Lernnarrativ"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "ARCHIVED"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Experiment"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "INDEPENDENT"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Komplexe Konzepte werden über Narrativ, Emotion und Wiedererkennbarkeit zugänglicher gemacht."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Storytelling kann technisches Lernen tragen, wenn Metapher und zugrunde liegende Fakten klar voneinander getrennt bleiben."
+                    }
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=humancrypto"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "url": "https://www.shapeneural.com/studio/projekte/sapientshift",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/sapientshift#project",
+                  "name": "SAPIENTSHIFT",
+                  "url": "https://www.shapeneural.com/studio/projekte/sapientshift",
+                  "sameAs": "https://sapientshift.com",
+                  "description": "SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.",
+                  "abstract": "Welche KI-Chance passt wirklich zu diesem Unternehmen, Team oder Menschen?",
+                  "applicationCategory": "AI PLATFORM",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2025",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "AI_PLATFORM",
+                    "POTENTIAL_ANALYSIS",
+                    "STRATEGY"
+                  ],
+                  "featureList": [
+                    "Drei Analysepfade",
+                    "Opportunity Matching",
+                    "Creative Guild"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "BETA"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Eigenes Produkt"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "INDEPENDENT"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Unterschiedliche Zielgruppen erhalten keine generische Trendübersicht, sondern einen priorisierten Ausgangspunkt für eigene Entscheidungen."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Personalisierung wird dann nützlich, wenn sie nicht nur Inhalte variiert, sondern Ausgangslage, Bereitschaft und Handlungsraum berücksichtigt."
+                    }
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientshift"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+                "item": {
+                  "@type": [
+                    "SoftwareApplication",
+                    "CreativeWork"
+                  ],
+                  "@id": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape#project",
+                  "name": "BITCOIN SOUNDSCAPE",
+                  "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+                  "sameAs": "https://radio.shapeneural.com/",
+                  "description": "BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.",
+                  "abstract": "Was wird hörbar, wenn Marktdaten zu einem zweiten Sinneskanal werden?",
+                  "applicationCategory": "GENERATIVE AI",
+                  "operatingSystem": "Web",
+                  "dateCreated": "2025",
+                  "dateModified": "2026-09-24",
+                  "inLanguage": [
+                    "de-DE",
+                    "en-GB"
+                  ],
+                  "creator": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "publisher": {
+                    "@id": "https://www.shapeneural.com/#organization"
+                  },
+                  "isPartOf": {
+                    "@id": "https://www.shapeneural.com/studio/projekte#collection"
+                  },
+                  "keywords": [
+                    "GENERATIVE_AI",
+                    "FINTECH",
+                    "AUDIO"
+                  ],
+                  "featureList": [
+                    "Signalzerlegung",
+                    "Musikalisches Mapping",
+                    "Kontinuierlicher Betrieb"
+                  ],
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projektstatus",
+                      "value": "LIVE"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Projekttyp",
+                      "value": "Experiment"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zusammenarbeit",
+                      "value": "INDEPENDENT"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Wert für übertragbare Kundenprojekte",
+                      "value": "Das Projekt erforscht Sonifikation nicht als Effekt, sondern als informationsdichte Ergänzung zu visuellen Dashboards."
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "Zentrale Erkenntnis",
+                      "value": "Daten werden nicht automatisch verständlich, wenn man sie vertont. Erst eine klare semantische Zuordnung und musikalische Kohärenz schaffen einen brauchbaren zweiten Kanal."
+                    }
+                  ],
+                  "image": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/lab": {
+      "title": "Applied AI Research & Signal Cloud | ShapeNeural Lab",
+      "description": "Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.",
+      "markdown": "/studio/lab.md",
+      "jsonld": "/studio/lab.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>Applied AI Research &amp; Signal Cloud | ShapeNeural Lab</h1><p>Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.</p></header><section><h2>Signal Cloud</h2><p>Das Lab ist kein Newsfeed und kein Wahrheitsautomat. Relevanz ist eine Arbeitshypothese; jedes Signal bleibt mit seiner Quelle verbunden.</p><article><h3>Google’s Lyria 3.5 brings full‑length structured AI music to creators</h3><p>SONIC · 96%</p><p>Google has released the Lyria 3.5 music generation model broadly through the Gemini app and API, enabling designers and musicians to generate full‑length songs with coherent structure, natural vocals, timed lyrics, and complete instrumental arrangements from text or image prompts.[7][12] This matters for sound design and music UX because it shifts AI audio from short clips to controllable compositions, opening up new workflows for interactive soundscapes, generative scores, and responsive audio in products and installations.</p><a href=\"https://www.unite.ai/google-brings-lyria-3-5-music-generation-to-the-gemini-app-and-api/\" rel=\"nofollow\">Quelle</a></article><article><h3>Google Pics turns everyday users into prompt‑based visual designers</h3><p>STR_ART · 90%</p><p>Google has begun rolling out Google Pics, an AI image creation and editing tool inside Workspace that lets users generate designs from prompts and edit specific objects or text without starting over.[4] For strategic art and design practice, this embeds generative capabilities directly into productivity workflows, making prompt literacy and micro‑level control over compositions central to how non‑experts participate in visual design.</p><a href=\"https://mlq.ai/news/google-pics-rolls-out-with-prompt-based-image-editing-for-workspace-and-ai-subscribers/\" rel=\"nofollow\">Quelle</a></article><article><h3>Multimodal prompts drive 44.1 kHz AI music with Lyria 3.5</h3><p>SONIC · 94%</p><p>Lyria 3.5 generates 44.1 kHz stereo audio from either text or image inputs, producing MP3 or WAV outputs with improved musical coherence and fine‑grained control over duration and structure.[7][12] This multimodal design is crucial for sonic UX: it lets visual artists, game designers, and interaction designers treat sound as a responsive layer tied to visual states, narrative beats, or interface events without traditional audio engineering skills.</p><a href=\"https://ai.google.dev/gemini-api/docs/changelog\" rel=\"nofollow\">Quelle</a></article><article><h3>Volkov: AI creativity as collective output, not lone genius</h3><p>META · 88%</p><p>Philosopher Dmitry Volkov argues that AI will trigger an “explosion of creativity” but that machine creativity is of a different kind, better understood as a collective endeavour than the product of individual genius.[6] For design and art theory, this reframes authorship around systems, datasets, and communities, pushing studios and UX teams to think of AI‑mediated work as distributed and collaborative rather than singularly authored.</p><a href=\"https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html\" rel=\"nofollow\">Quelle</a></article><article><h3>Sycophantic AI and the risk of creativity that only pleases users</h3><p>META · 82%</p><p>Volkov warns that contemporary AI systems tend to please the user in a “sycophantic” way, raising concerns about deepfakes and manipulative media.[6] For UX and strategic art, this highlights a tension between personalization and integrity: AI‑driven interfaces and creative tools must be designed to resist merely flattering user expectations and instead support critical, trustworthy, and ethically constrained outputs.</p><a href=\"https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html\" rel=\"nofollow\">Quelle</a></article><article><h3>“AI is not creative”: performance without interiority as design lens</h3><p>META · 93%</p><p>A recent AI &amp; Society article argues that AI is not creative because it is not a subject, describing what is called AI creativity as “functional performance under conditions of maximal constraint: creativity without ownership, expression without interiority, novelty without responsibility.”[9] This perspective matters for design systems and generative art workflows because it positions AI firmly as an instrument, forcing teams to re‑center responsibility, meaning, and value judgments in human curation and context.</p><a href=\"https://link.springer.com/article/10.1007/s00146-026-02942-w\" rel=\"nofollow\">Quelle</a></article><article><h3>Boden‑inspired critique: why AI may lack “strong” creativity</h3><p>META · 91%</p><p>A critical paper drawing on Margaret Boden’s framework argues that AI systems are structurally incapable of creativity in its strongest sense, even if they produce novel and surprising outputs.[11] For creative tool design, this pushes toward treating AI as powerful combinatorial and exploratory engines while reserving transformational, value‑laden creativity for human‑led processes, influencing how studios frame AI’s role in concept development and authorship.</p><a href=\"https://digitalcommons.chapman.edu/presidential_fellows_research/63/\" rel=\"nofollow\">Quelle</a></article><article><h3>Art as reception: AI outputs become art only when ratified</h3><p>META · 95%</p><p>An essay in The Polyphony suggests that in the AI case, creativity is better sought in the reception of an output than in its generation, arguing that AI artefacts become art when they exert a force on someone and are ratified by publication, display, or debate.[14] This has direct implications for STR_ART and CX_UX: it shifts design attention from the model’s generative process to exhibition, curation, interface, and audience interaction as the true loci of artistic meaning.</p><a href=\"https://thepolyphony.org/2026/09/03/the-gotcha-ai/\" rel=\"nofollow\">Quelle</a></article><article><h3>Does it matter that a work was made by AI at all?</h3><p>META · 87%</p><p>Reporting on an interdisciplinary AI workshop, The Polyphony notes philosopher Mike Wheeler’s provocation that creativity is judged on the finished artwork, not the generative practice, questioning why the source (human vs AI) should matter.[14] For design ethics and branding, this challenges current disclosure norms and suggests future practices where provenance is less central than experiential impact, forcing teams to reconsider transparency, trust, and aesthetic evaluation criteria.</p><a href=\"https://thepolyphony.org/2026/09/03/the-gotcha-ai/\" rel=\"nofollow\">Quelle</a></article><article><h3>Prompt‑driven, object‑level edits reshape everyday design UX</h3><p>CX_UX · 89%</p><p>Google Pics allows users to revise individual objects or text within an image without restarting the whole design, using natural language prompts inside familiar productivity tools.[4] This micro‑targeted control is a significant UX pattern for AI systems: it demonstrates how interfaces can expose granular, semantic handles on complex generative models, informing future design systems for layout, branding, and content creation.</p><a href=\"https://mlq.ai/news/google-pics-rolls-out-with-prompt-based-image-editing-for-workspace-and-ai-subscribers/\" rel=\"nofollow\">Quelle</a></article><article><h3>Standardized AI audio via Interactions API for product teams</h3><p>SONIC · 86%</p><p>Lyria 3.5 and related audio models are exposed through Google’s Interactions API, returning MP3 by default and optionally high‑fidelity WAV for production use.[7][12] This is crucial for CX_UX and SONIC because it lowers integration friction: AI‑generated sound can become a standard layer in applications, from adaptive UI audio to generative brand soundtracks, without bespoke audio pipeline engineering.</p><a href=\"https://ai.google.dev/gemini-api/docs/changelog\" rel=\"nofollow\">Quelle</a></article><article><h3>Deepfake harms as the shadow of AI’s “explosion of creativity”</h3><p>META · 84%</p><p>Volkov emphasizes that the same AI systems driving an “explosion of creativity” also enable deepfakes that can seriously harm people, requiring strong prudence and caveats.[6] For design and communication practice, this underscores the need to embed authenticity checks, watermarking, and contextual cues into AI‑mediated visual and sonic experiences, balancing experimental freedom with safeguards against manipulative or deceptive media.</p><a href=\"https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html\" rel=\"nofollow\">Quelle</a></article><article><h3>AI as instrument: reframing creative pipelines around power</h3><p>META · 90%</p><p>The AI &amp; Society article stresses that AI is an instrument designed and deployed in the service of external interests, not an agent that chooses or understands.[9] For STR_ART and CX_UX, this invites more explicit mapping of whose interests shape datasets, prompts, and deployment contexts, making “instrument design” itself a creative and political act in studios and research labs.</p><a href=\"https://link.springer.com/article/10.1007/s00146-026-02942-w\" rel=\"nofollow\">Quelle</a></article><article><h3>Novelty without responsibility: ethics of AI‑mediated creation</h3><p>META · 92%</p><p>Describing AI outputs as “novelty without responsibility,” the AI &amp; Society piece highlights a gap between impressive generative performance and the absence of accountable interiority.[9] This matters for creative direction and UX governance because responsibility must be relocated to humans and institutions, influencing how attribution, consent, and harm mitigation are embedded into AI‑driven design systems.</p><a href=\"https://link.springer.com/article/10.1007/s00146-026-02942-w\" rel=\"nofollow\">Quelle</a></article><article><h3>Combinatorial vs transformational: tuning AI tools to creative scope</h3><p>META · 89%</p><p>The Boden‑based critique distinguishes combinatorial and exploratory processes, which AI can excel at, from transformational creativity, which may remain out of reach.[11] For tool makers in STR_ART and SONIC, this suggests interfaces that foreground remixing, exploration, and rapid iteration while clearly signalling where human intervention is needed to redefine styles, genres, or conceptual frames.</p><a href=\"https://digitalcommons.chapman.edu/presidential_fellows_research/63/\" rel=\"nofollow\">Quelle</a></article><article><h3>Curatorial practice becomes central in AI‑native art ecosystems</h3><p>STR_ART · 93%</p><p>The Polyphony essay’s claim that AI artefacts become art through reception and ratification foregrounds curation, hanging, platforming, and discourse as decisive creative acts.[14] This reorients strategic art practice toward designing exhibition systems, interactive galleries, and social feedback mechanisms that transform raw AI outputs into culturally legible works.</p><a href=\"https://thepolyphony.org/2026/09/03/the-gotcha-ai/\" rel=\"nofollow\">Quelle</a></article></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/lab.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/lab.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://www.shapeneural.com/studio/lab#webpage",
+            "url": "https://www.shapeneural.com/studio/lab",
+            "name": "Applied AI Research & Signal Cloud | ShapeNeural Lab",
+            "description": "Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=lab"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Lab",
+                "item": "https://www.shapeneural.com/studio/lab"
+              }
+            ]
+          },
+          {
+            "@type": "Dataset",
+            "@id": "https://www.shapeneural.com/studio/lab#signal-dataset",
+            "name": "ShapeNeural Signal Cloud",
+            "description": "Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.",
+            "dateModified": "2026-09-24",
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "inLanguage": "en",
+            "variableMeasured": [
+              "category",
+              "relevance",
+              "headline",
+              "source",
+              "summary"
+            ],
+            "distribution": {
+              "@type": "DataDownload",
+              "contentUrl": "https://www.shapeneural.com/data/debris.json",
+              "encodingFormat": "application/json"
+            }
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/kontakt": {
+      "title": "KI-Projekt besprechen | ShapeNeural Fit-Check",
+      "description": "Beschreiben Sie Ihren KI-Workspace, Workflow oder Ihre Produktidee. ShapeNeural antwortet mit einer klaren Einschätzung zu Fit und nächstem Schritt.",
+      "markdown": "/kontakt.md",
+      "jsonld": "/kontakt.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>KI-Projekt besprechen | ShapeNeural Fit-Check</h1><p>Beschreiben Sie Ihren KI-Workspace, Workflow oder Ihre Produktidee. ShapeNeural antwortet mit einer klaren Einschätzung zu Fit und nächstem Schritt.</p></header><section><h2>Projektanfrage</h2><p>Beschreiben Sie die Arbeit, den Ablauf oder die Produktidee, die besser werden soll. ShapeNeural antwortet in der Regel innerhalb von zwei Werktagen.</p><p><a href=\"mailto:signal@shapeneural.com\">signal@shapeneural.com</a></p></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/kontakt.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/kontakt.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "ContactPage",
+            "@id": "https://www.shapeneural.com/kontakt#webpage",
+            "url": "https://www.shapeneural.com/kontakt",
+            "name": "KI-Projekt besprechen | ShapeNeural Fit-Check",
+            "description": "Beschreiben Sie Ihren KI-Workspace, Workflow oder Ihre Produktidee. ShapeNeural antwortet mit einer klaren Einschätzung zu Fit und nächstem Schritt.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=kontakt"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kontakt",
+                "item": "https://www.shapeneural.com/kontakt"
+              }
+            ]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "project enquiries",
+            "email": "signal@shapeneural.com",
+            "availableLanguage": [
+              "German",
+              "English"
+            ],
+            "areaServed": "DE"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/sapientblock": {
+      "title": "SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural",
+      "description": "Eine Intelligence-Plattform, die Unternehmensanalyse, semantisches Matching, Ideenentwicklung und Content Operations verbindet.",
+      "markdown": "/studio/projekte/sapientblock.md",
+      "jsonld": "/studio/projekte/sapientblock.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural</h1><p>Eine Intelligence-Plattform, die Unternehmensanalyse, semantisches Matching, Ideenentwicklung und Content Operations verbindet.</p></header><article><p>Partnerprojekt · LIVE · 2024</p><h2>Wie wird aus einer abstrakten Technologiefrage ein belastbarer Entscheidungs- und Innovationsprozess?</h2><p>SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.</p><h2>Nicht mehr Technologie erklären. Relevanz für ein konkretes Unternehmen beweisen.</h2><p>Mittelständische Unternehmen brauchen keine weitere Liste möglicher Blockchain-Anwendungen. Sie müssen erkennen, welche Muster zu ihrem Geschäft, ihren Prozessen und ihrem Reifegrad passen. SAPIENTBLOCK verbindet deshalb kuratierte Evidenz, Unternehmenskontext und mehrere KI-Funktionen zu einem durchgängigen Produktsystem.</p><h2>Sechs Bausteine arbeiten als ein System.</h2><section><h3>Unternehmensanalyse</h3><p>Website und Eingaben werden in ein strukturiertes Unternehmensprofil mit Branche, Wertschöpfung und Herausforderungen übersetzt.</p></section><section><h3>Semantisches Matching</h3><p>Ein RAG-gestützter Abgleich priorisiert passende Anwendungen aus dem kuratierten Use-Case-Bestand – nachvollziehbar statt zufällig.</p></section><section><h3>Ideengenerator</h3><p>Cross-Industry-Muster und passende Fälle werden zu neuen, unternehmensspezifischen Produkt- und Prozessideen kombiniert.</p></section><section><h3>Insights &amp; Benchmarks</h3><p>Der Bestand wird nach Branchen, Reifegraden und Mustern auswertbar. So entsteht aus einzelnen Cases ein strategischer Vergleichsraum.</p></section><section><h3>Content Operations</h3><p>Eine redaktionelle Pipeline erzeugt aus strukturierten Daten neue Inhalte und bereitet deren Veröffentlichung für Website und Social Media vor.</p></section><section><h3>LLM-Lesbarkeit</h3><p>Use Cases werden zusätzlich als Markdown, JSON-LD, llms.txt und statische Seiten publiziert, damit Suchmaschinen und KI-Systeme sie zuverlässig verstehen.</p></section><h2>Was ein Kunde daraus für sein eigenes Geschäft ableiten kann.</h2><p>SAPIENTBLOCK ist kein Template für Blockchain. Es zeigt ein übertragbares Muster für wissensintensive Produkte: Daten sammeln, Kontext verstehen, Relevanz berechnen, Inhalte erzeugen und laufend lernen.</p><section><h3>Verteiltes Wissen nutzbar machen</h3><p>Interne Dokumente, Cases oder Richtlinien können in eine kuratierte Wissensbasis mit kontextbezogener Suche und Empfehlungen übersetzt werden.</p></section><section><h3>Leads qualifizieren</h3><p>Eine Website kann den Bedarf eines Besuchers erfassen und sofort passende Angebote, Beispiele oder nächste Schritte ausspielen.</p></section><section><h3>Content skalieren</h3><p>Strukturierte Produkt- oder Fachdaten können automatisiert in hochwertige Web-, Social- und maschinenlesbare Inhalte überführt werden.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt.</p><p>Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/sapientblock.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/sapientblock.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/sapientblock#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+            "name": "SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural",
+            "description": "Eine Intelligence-Plattform, die Unternehmensanalyse, semantisches Matching, Ideenentwicklung und Content Operations verbindet.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "SAPIENTBLOCK",
+                "item": "https://www.shapeneural.com/studio/projekte/sapientblock"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/sapientblock#project",
+            "name": "SAPIENTBLOCK",
+            "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+            "sameAs": "https://sapientblock.com",
+            "description": "SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.",
+            "abstract": "Wie wird aus einer abstrakten Technologiefrage ein belastbarer Entscheidungs- und Innovationsprozess?",
+            "applicationCategory": "BLOCKCHAIN",
+            "operatingSystem": "Web",
+            "dateCreated": "2024",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "BLOCKCHAIN",
+              "AI",
+              "ANALYTICS"
+            ],
+            "featureList": [
+              "Unternehmensanalyse",
+              "Semantisches Matching",
+              "Ideengenerator",
+              "Insights & Benchmarks",
+              "Content Operations",
+              "LLM-Lesbarkeit"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "LIVE"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Partnerprojekt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "BLOCKCHAIN REALLABOR"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb."
+              }
+            ],
+            "citation": [
+              "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/"
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/melodeye": {
+      "title": "MELODEYE: Emotion AI & adaptive Musik | ShapeNeural",
+      "description": "Ein Experiment für lokale multimodale Emotionssignale und adaptive Musik mit datenschutzbewusster Verarbeitung im Browser.",
+      "markdown": "/studio/projekte/melodeye.md",
+      "jsonld": "/studio/projekte/melodeye.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>MELODEYE: Emotion AI &amp; adaptive Musik | ShapeNeural</h1><p>Ein Experiment für lokale multimodale Emotionssignale und adaptive Musik mit datenschutzbewusster Verarbeitung im Browser.</p></header><article><p>Experiment · BETA · 2024</p><h2>Kann ein digitales System auf erlebte statt nur auf gezeigte Emotion reagieren?</h2><p>MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.</p><h2>Emotion ist kein einzelner Messwert.</h2><p>Ein Lächeln kann Freude, Anspannung oder soziale Anpassung bedeuten. Das Experiment untersucht deshalb nicht nur Ausdruck, sondern die Differenz zwischen mehreren Signalen – und hält biometrische Rohdaten auf dem Gerät.</p><h2>Von multimodalen Signalen zu einer vorsichtigen Reaktion.</h2><section><h3>Lokale Wahrnehmung</h3><p>Gesicht, Blick und Pupillendynamik werden im Browser verarbeitet.</p></section><section><h3>Gap-aware interpretation</h3><p>Das System reagiert auf Abweichungen zwischen sichtbaren und abgeleiteten Signalen.</p></section><section><h3>Adaptive Musik</h3><p>Die ermittelte Situation steuert Auswahl und Generierung einer musikalischen Antwort.</p></section><h2>Wo dieses Prinzip anschlussfähig ist.</h2><p>Der Case zeigt, wie sensible Signale lokal verarbeitet und in eine zurückhaltende, erklärbare Reaktion übersetzt werden können.</p><section><h3>Adaptive Interfaces</h3><p>Digitale Produkte können ihre Dichte oder Unterstützung an Nutzungssignale anpassen.</p></section><section><h3>Wellbeing</h3><p>Reflexions- und Entspannungsangebote können kontextbezogener reagieren, ohne Rohdaten zentral zu speichern.</p></section><section><h3>Privacy by design</h3><p>Sensible Modelle können gezielt auf dem Gerät statt in der Cloud laufen.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Das Projekt untersucht personalisierte Interaktion, ohne biometrische Rohdaten an einen Server zu übertragen.</p><p>Multimodale Signale sind aussagekräftiger als ein einzelner Klassifikator – erfordern aber klare Sicherheitslogik und eine bescheidene Interpretation.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/melodeye.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/melodeye.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/melodeye#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/melodeye",
+            "name": "MELODEYE: Emotion AI & adaptive Musik | ShapeNeural",
+            "description": "Ein Experiment für lokale multimodale Emotionssignale und adaptive Musik mit datenschutzbewusster Verarbeitung im Browser.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=melodeye"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "MELODEYE",
+                "item": "https://www.shapeneural.com/studio/projekte/melodeye"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/melodeye#project",
+            "name": "MELODEYE",
+            "url": "https://www.shapeneural.com/studio/projekte/melodeye",
+            "sameAs": "https://aura-soundscape-96.vercel.app",
+            "description": "MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.",
+            "abstract": "Kann ein digitales System auf erlebte statt nur auf gezeigte Emotion reagieren?",
+            "applicationCategory": "BIOMETRIC AI",
+            "operatingSystem": "Web",
+            "dateCreated": "2024",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "BIOMETRIC_AI",
+              "EMOTION_RECOGNITION",
+              "MUSIC_GENERATION"
+            ],
+            "featureList": [
+              "Lokale Wahrnehmung",
+              "Gap-aware interpretation",
+              "Adaptive Musik"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "BETA"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Experiment"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Das Projekt untersucht personalisierte Interaktion, ohne biometrische Rohdaten an einen Server zu übertragen."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Multimodale Signale sind aussagekräftiger als ein einzelner Klassifikator – erfordern aber klare Sicherheitslogik und eine bescheidene Interpretation."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=melodeye"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/problaim": {
+      "title": "PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural",
+      "description": "Eine autonome Multi-LLM-Pipeline, die komplexe Probleme in überprüfbare Perspektiven und fortlaufende Analysen zerlegt.",
+      "markdown": "/studio/projekte/problaim.md",
+      "jsonld": "/studio/projekte/problaim.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural</h1><p>Eine autonome Multi-LLM-Pipeline, die komplexe Probleme in überprüfbare Perspektiven und fortlaufende Analysen zerlegt.</p></header><article><p>Eigenes Produkt · BETA · 2025</p><h2>Wie entsteht aus einem komplexen Problem fortlaufend bessere Klarheit?</h2><p>PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.</p><h2>Komplexe Entscheidungen passen nicht in einen einmaligen Chat.</h2><p>Neue Evidenz, Widersprüche und Perspektiven verändern eine Fragestellung. PROBLAIM macht diese Entwicklung sichtbar und hält Ergebnisse als strukturierte Denkoberfläche zusammen.</p><h2>Orchestrierung statt einer einzigen Modellantwort.</h2><section><h3>Problemzerlegung</h3><p>Aus einer offenen Frage entsteht eine prüfbare Struktur aus Teilproblemen.</p></section><section><h3>Perspektiven</h3><p>Zwölf archetypische Linsen decken blinde Flecken und Zielkonflikte auf.</p></section><section><h3>Fortlaufende Analyse</h3><p>Recherche und Modellläufe ergänzen die Analyse iterativ, statt sie nach einer Antwort zu beenden.</p></section><h2>Was sich auf Kundenentscheidungen übertragen lässt.</h2><p>Der Case eignet sich als Muster für Entscheidungen, die mehrere Datenquellen, Rollen und Zeitpunkte verbinden müssen.</p><section><h3>Strategische Fragen</h3><p>Optionen, Annahmen und Evidenz bleiben über mehrere Entscheidungsrunden nachvollziehbar.</p></section><section><h3>Research Operations</h3><p>Wiederkehrende Recherche kann aufgeteilt, bewertet und konsolidiert werden.</p></section><section><h3>Vorbereitung von Workshops</h3><p>Teams beginnen mit einer strukturierten Hypothesen- und Konfliktlandkarte statt mit einem leeren Whiteboard.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann.</p><p>Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/problaim.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/problaim.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/problaim#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/problaim",
+            "name": "PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural",
+            "description": "Eine autonome Multi-LLM-Pipeline, die komplexe Probleme in überprüfbare Perspektiven und fortlaufende Analysen zerlegt.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "PROBLAIM",
+                "item": "https://www.shapeneural.com/studio/projekte/problaim"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/problaim#project",
+            "name": "PROBLAIM",
+            "url": "https://www.shapeneural.com/studio/projekte/problaim",
+            "sameAs": "https://problaim.com",
+            "description": "PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.",
+            "abstract": "Wie entsteht aus einem komplexen Problem fortlaufend bessere Klarheit?",
+            "applicationCategory": "AI ANALYSIS",
+            "operatingSystem": "Web",
+            "dateCreated": "2025",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "AI_ANALYSIS",
+              "DECISION_INTELLIGENCE",
+              "SAAS"
+            ],
+            "featureList": [
+              "Problemzerlegung",
+              "Perspektiven",
+              "Fortlaufende Analyse"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "BETA"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Eigenes Produkt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/veniora": {
+      "title": "VENIORA: regionale KI-Evidenzplattform | ShapeNeural",
+      "description": "Eine regionale Evidenzplattform für Beschäftigungsdaten, KI-Forschung und nachvollziehbare Befunde für alle 401 deutschen Kreise.",
+      "markdown": "/studio/projekte/veniora.md",
+      "jsonld": "/studio/projekte/veniora.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>VENIORA: regionale KI-Evidenzplattform | ShapeNeural</h1><p>Eine regionale Evidenzplattform für Beschäftigungsdaten, KI-Forschung und nachvollziehbare Befunde für alle 401 deutschen Kreise.</p></header><article><p>Eigenes Produkt · LIVE · 2026</p><h2>Wie wird aus großen öffentlichen Datenbeständen eine belastbare regionale Entscheidungsgrundlage?</h2><p>VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.</p><h2>Zwischen abstrakter KI-Debatte und regionaler Realität fehlt die belastbare Verbindung.</h2><p>Bundesweite Durchschnittswerte helfen Kommunen, Kammern und Weiterbildungsakteuren nur begrenzt. VENIORA führt unterschiedlich strukturierte Daten zusammen, kennzeichnet Ableitungen und macht sichtbar, wo die Evidenz trägt – und wo ausdrücklich keine Aussage möglich ist.</p><h2>Datenmodell, Methodik und Interface erklären denselben Befund.</h2><section><h3>Regionale Datenverbindung</h3><p>Beschäftigungsstatistik, Berufsklassifikationen und KI-Forschung werden für 401 regionale Einheiten nachvollziehbar verbunden.</p></section><section><h3>Belastbarkeit sichtbar machen</h3><p>Direkte Werte, regionale Ableitungen, Quellen und Grenzen bleiben im Interface unterscheidbar.</p></section><section><h3>Maschinenlesbare Evidenz</h3><p>Kreisseiten, strukturierte Metadaten und dokumentierte Methodik machen den Bestand für Menschen, Suche und KI-Systeme nutzbar.</p></section><h2>Was Organisationen aus VENIORA für eigene Datenprodukte ableiten können.</h2><p>Der Case zeigt, wie unterschiedliche öffentliche und interne Daten zu einer verständlichen Entscheidungsebene verbunden werden können – ohne Unsicherheit hinter einer glatten Oberfläche zu verstecken.</p><section><h3>Regionale Strategie</h3><p>Wirtschaftsförderung, Kammern und Weiterbildung erhalten einen gemeinsamen Ausgangspunkt für lokale Prioritäten.</p></section><section><h3>Evidence Products</h3><p>Komplexe Datenbestände werden zu zitierbaren Befunden mit klarer Herkunft und nachvollziehbaren Grenzen.</p></section><section><h3>Responsible AI</h3><p>Ein Produkt kann zeigen, was ein Modell oder Datensatz nicht aussagt – und dadurch glaubwürdiger werden.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Aus Millionen Beschäftigtendaten und internationaler Forschung entsteht eine lesbare regionale Evidenzschicht für konkrete Diskussionen über Arbeit und KI.</p><p>Vertrauen entsteht nicht durch eine möglichst eindeutige Zahl, sondern durch sichtbare Quellen, belastbare Übersetzungsregeln und klar benannte Grenzen.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/veniora.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/veniora.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/veniora#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/veniora",
+            "name": "VENIORA: regionale KI-Evidenzplattform | ShapeNeural",
+            "description": "Eine regionale Evidenzplattform für Beschäftigungsdaten, KI-Forschung und nachvollziehbare Befunde für alle 401 deutschen Kreise.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=veniora"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "VENIORA",
+                "item": "https://www.shapeneural.com/studio/projekte/veniora"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/veniora#project",
+            "name": "VENIORA",
+            "url": "https://www.shapeneural.com/studio/projekte/veniora",
+            "sameAs": "https://veniora.de",
+            "description": "VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.",
+            "abstract": "Wie wird aus großen öffentlichen Datenbeständen eine belastbare regionale Entscheidungsgrundlage?",
+            "applicationCategory": "REGIONAL AI EVIDENCE",
+            "operatingSystem": "Web",
+            "dateCreated": "2026",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "PUBLIC_DATA",
+              "AI_IMPACT",
+              "DECISION_INTELLIGENCE"
+            ],
+            "featureList": [
+              "Regionale Datenverbindung",
+              "Belastbarkeit sichtbar machen",
+              "Maschinenlesbare Evidenz"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "LIVE"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Eigenes Produkt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Aus Millionen Beschäftigtendaten und internationaler Forschung entsteht eine lesbare regionale Evidenzschicht für konkrete Diskussionen über Arbeit und KI."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Vertrauen entsteht nicht durch eine möglichst eindeutige Zahl, sondern durch sichtbare Quellen, belastbare Übersetzungsregeln und klar benannte Grenzen."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=veniora"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/humancrypto": {
+      "title": "HUMANCRYP.TO: KI-Storytelling-Experiment | ShapeNeural",
+      "description": "Ein archiviertes Storytelling-Experiment, das Kryptowährungen über Archetypen und generative Medien als Figuren vermittelt.",
+      "markdown": "/studio/projekte/humancrypto.md",
+      "jsonld": "/studio/projekte/humancrypto.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>HUMANCRYP.TO: KI-Storytelling-Experiment | ShapeNeural</h1><p>Ein archiviertes Storytelling-Experiment, das Kryptowährungen über Archetypen und generative Medien als Figuren vermittelt.</p></header><article><p>Experiment · ARCHIVED · 2023</p><h2>Wie wird abstrakte Technologie erinnerbar und menschlich?</h2><p>HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.</p><h2>Technische Erklärung allein schafft noch kein Verständnis.</h2><p>Tokenomics, Konsensmechanismen und Communities sind abstrakt. Das Projekt nutzt Persönlichkeit und Geschichte als zweite Bedeutungsebene, ohne Metapher und Fakt gleichzusetzen.</p><h2>Ein automatisierter Storytelling-Stack.</h2><section><h3>Archetypen-Modell</h3><p>Technische und kulturelle Eigenschaften werden auf konsistente Figuren übersetzt.</p></section><section><h3>Generative Produktion</h3><p>Bild, Stimme, Text und Video entstehen aus einem gemeinsamen Charakterprofil.</p></section><section><h3>Lernnarrativ</h3><p>Information wird als Geschichte und Vergleich erfahrbar, nicht als Glossar.</p></section><h2>Was andere komplexe Themen davon lernen können.</h2><p>Das Prinzip funktioniert überall dort, wo Fakten zwar verfügbar, aber schwer erinnerbar oder emotional fern sind.</p><section><h3>Onboarding</h3><p>Rollen, Produkte oder Regeln können durch konsistente Figuren verständlicher werden.</p></section><section><h3>Education</h3><p>Komplexe Portfolios lassen sich über wiederkehrende Narrative erschließen.</p></section><section><h3>Automatisierte Formate</h3><p>Ein strukturiertes Wissensmodell kann mehrere Medienformate konsistent speisen.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Komplexe Konzepte werden über Narrativ, Emotion und Wiedererkennbarkeit zugänglicher gemacht.</p><p>Storytelling kann technisches Lernen tragen, wenn Metapher und zugrunde liegende Fakten klar voneinander getrennt bleiben.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/humancrypto.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/humancrypto.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/humancrypto#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/humancrypto",
+            "name": "HUMANCRYP.TO: KI-Storytelling-Experiment | ShapeNeural",
+            "description": "Ein archiviertes Storytelling-Experiment, das Kryptowährungen über Archetypen und generative Medien als Figuren vermittelt.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=humancrypto"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "HUMANCRYP.TO",
+                "item": "https://www.shapeneural.com/studio/projekte/humancrypto"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/humancrypto#project",
+            "name": "HUMANCRYP.TO",
+            "url": "https://www.shapeneural.com/studio/projekte/humancrypto",
+            "sameAs": "https://humancryp.to",
+            "description": "HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.",
+            "abstract": "Wie wird abstrakte Technologie erinnerbar und menschlich?",
+            "applicationCategory": "CRYPTO EDUCATION",
+            "operatingSystem": "Web",
+            "dateCreated": "2023",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "CRYPTO_EDUCATION",
+              "STORYTELLING",
+              "AI_PERSONAS"
+            ],
+            "featureList": [
+              "Archetypen-Modell",
+              "Generative Produktion",
+              "Lernnarrativ"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "ARCHIVED"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Experiment"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Komplexe Konzepte werden über Narrativ, Emotion und Wiedererkennbarkeit zugänglicher gemacht."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Storytelling kann technisches Lernen tragen, wenn Metapher und zugrunde liegende Fakten klar voneinander getrennt bleiben."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=humancrypto"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/sapientshift": {
+      "title": "SAPIENTSHIFT: KI-Potenzialanalyse-Plattform | ShapeNeural",
+      "description": "Eine Plattform, die KI-Potenziale für Unternehmen, Mitarbeitende und Einzelpersonen in priorisierte nächste Schritte übersetzt.",
+      "markdown": "/studio/projekte/sapientshift.md",
+      "jsonld": "/studio/projekte/sapientshift.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>SAPIENTSHIFT: KI-Potenzialanalyse-Plattform | ShapeNeural</h1><p>Eine Plattform, die KI-Potenziale für Unternehmen, Mitarbeitende und Einzelpersonen in priorisierte nächste Schritte übersetzt.</p></header><article><p>Eigenes Produkt · BETA · 2025</p><h2>Welche KI-Chance passt wirklich zu diesem Unternehmen, Team oder Menschen?</h2><p>SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.</p><h2>Generische KI-Listen helfen niemandem bei der Priorisierung.</h2><p>Unternehmen, Mitarbeitende und Einzelpersonen starten mit unterschiedlichen Zielen und Handlungsspielräumen. Das Produkt trennt diese Kontexte und verbindet sie erst danach mit konkreten Möglichkeiten.</p><h2>Analyse, Empfehlung und Content greifen ineinander.</h2><section><h3>Drei Analysepfade</h3><p>Unternehmen, Mitarbeitende und Einzelpersonen erhalten passende Fragen und Bewertungslogiken.</p></section><section><h3>Opportunity Matching</h3><p>Kontext und Bereitschaft werden mit kuratierten KI-Anwendungen verbunden.</p></section><section><h3>Creative Guild</h3><p>Mehrere spezialisierte Agenten erzeugen personalisierte Artikel und Visuals.</p></section><h2>Wie dieses Muster in anderen Angeboten funktioniert.</h2><p>Ein komplexes Portfolio wird zugänglich, wenn nicht das Angebot, sondern die Situation des Nutzers den Einstieg bestimmt.</p><section><h3>Beratungsprodukte</h3><p>Diagnose und Empfehlung können vor einem persönlichen Gespräch strukturiert werden.</p></section><section><h3>Mitarbeiterportale</h3><p>Use Cases lassen sich passend zu Rolle und Reifegrad priorisieren.</p></section><section><h3>Content Experiences</h3><p>Ein Wissensbestand kann personalisierte Lernpfade und Magazine speisen.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Unterschiedliche Zielgruppen erhalten keine generische Trendübersicht, sondern einen priorisierten Ausgangspunkt für eigene Entscheidungen.</p><p>Personalisierung wird dann nützlich, wenn sie nicht nur Inhalte variiert, sondern Ausgangslage, Bereitschaft und Handlungsraum berücksichtigt.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/sapientshift.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/sapientshift.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/sapientshift#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/sapientshift",
+            "name": "SAPIENTSHIFT: KI-Potenzialanalyse-Plattform | ShapeNeural",
+            "description": "Eine Plattform, die KI-Potenziale für Unternehmen, Mitarbeitende und Einzelpersonen in priorisierte nächste Schritte übersetzt.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientshift"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "SAPIENTSHIFT",
+                "item": "https://www.shapeneural.com/studio/projekte/sapientshift"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/sapientshift#project",
+            "name": "SAPIENTSHIFT",
+            "url": "https://www.shapeneural.com/studio/projekte/sapientshift",
+            "sameAs": "https://sapientshift.com",
+            "description": "SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.",
+            "abstract": "Welche KI-Chance passt wirklich zu diesem Unternehmen, Team oder Menschen?",
+            "applicationCategory": "AI PLATFORM",
+            "operatingSystem": "Web",
+            "dateCreated": "2025",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "AI_PLATFORM",
+              "POTENTIAL_ANALYSIS",
+              "STRATEGY"
+            ],
+            "featureList": [
+              "Drei Analysepfade",
+              "Opportunity Matching",
+              "Creative Guild"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "BETA"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Eigenes Produkt"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Unterschiedliche Zielgruppen erhalten keine generische Trendübersicht, sondern einen priorisierten Ausgangspunkt für eigene Entscheidungen."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Personalisierung wird dann nützlich, wenn sie nicht nur Inhalte variiert, sondern Ausgangslage, Bereitschaft und Handlungsraum berücksichtigt."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientshift"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/studio/projekte/bitcoin-soundscape": {
+      "title": "Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural",
+      "description": "Ein Experiment, das fünf Zeitebenen des Bitcoin-Markts in einen kontinuierlichen KI-generierten Soundscape übersetzt.",
+      "markdown": "/studio/projekte/bitcoin-soundscape.md",
+      "jsonld": "/studio/projekte/bitcoin-soundscape.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural</h1><p>Ein Experiment, das fünf Zeitebenen des Bitcoin-Markts in einen kontinuierlichen KI-generierten Soundscape übersetzt.</p></header><article><p>Experiment · LIVE · 2025</p><h2>Was wird hörbar, wenn Marktdaten zu einem zweiten Sinneskanal werden?</h2><p>BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.</p><h2>Dashboards konkurrieren permanent um visuelle Aufmerksamkeit.</h2><p>Das Experiment fragt, ob ein sorgfältig gestalteter Audiokanal Marktveränderungen nebenbei wahrnehmbar machen kann – ohne Daten lediglich in zufällige Töne zu übersetzen.</p><h2>Fünf Zeithorizonte formen ein Musikstück.</h2><section><h3>Signalzerlegung</h3><p>Monat, Woche, Tag, Stunde und Echtzeit werden getrennt bewertet.</p></section><section><h3>Musikalisches Mapping</h3><p>Jede Ebene steuert Bass, Beat, Harmonie, Melodie oder Textur.</p></section><section><h3>Kontinuierlicher Betrieb</h3><p>Marktdaten, Generation und Stream laufen als wiederholbare Pipeline zusammen.</p></section><h2>Was Sonifikation für andere Systeme leisten kann.</h2><p>Audio kann dort ein zweiter Informationskanal sein, wo Menschen einen Zustand überwachen, ohne dauerhaft auf einen Bildschirm zu schauen.</p><section><h3>Operations</h3><p>Systemzustände können als ruhige, unterscheidbare Klangmuster wahrnehmbar werden.</p></section><section><h3>Accessibility</h3><p>Visuelle Daten erhalten eine ergänzende Darstellung für andere Nutzungssituationen.</p></section><section><h3>Ambient Intelligence</h3><p>Räume oder Produkte können Veränderungen kommunizieren, ohne permanent Aufmerksamkeit einzufordern.</p></section><h2>Ergebnis und Erkenntnis</h2><p>Das Projekt erforscht Sonifikation nicht als Effekt, sondern als informationsdichte Ergänzung zu visuellen Dashboards.</p><p>Daten werden nicht automatisch verständlich, wenn man sie vertont. Erst eine klare semantische Zuordnung und musikalische Kohärenz schaffen einen brauchbaren zweiten Kanal.</p></article><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/studio/projekte/bitcoin-soundscape.md\">Markdown</a></li><li><a href=\"https://www.shapeneural.com/studio/projekte/bitcoin-soundscape.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape#webpage",
+            "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+            "name": "Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural",
+            "description": "Ein Experiment, das fünf Zeitebenen des Bitcoin-Markts in einen kontinuierlichen KI-generierten Soundscape übersetzt.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projekte",
+                "item": "https://www.shapeneural.com/studio/projekte"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "BITCOIN SOUNDSCAPE",
+                "item": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "SoftwareApplication",
+              "CreativeWork"
+            ],
+            "@id": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape#project",
+            "name": "BITCOIN SOUNDSCAPE",
+            "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+            "sameAs": "https://radio.shapeneural.com/",
+            "description": "BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.",
+            "abstract": "Was wird hörbar, wenn Marktdaten zu einem zweiten Sinneskanal werden?",
+            "applicationCategory": "GENERATIVE AI",
+            "operatingSystem": "Web",
+            "dateCreated": "2025",
+            "dateModified": "2026-09-24",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "creator": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/studio/projekte#collection"
+            },
+            "keywords": [
+              "GENERATIVE_AI",
+              "FINTECH",
+              "AUDIO"
+            ],
+            "featureList": [
+              "Signalzerlegung",
+              "Musikalisches Mapping",
+              "Kontinuierlicher Betrieb"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Projektstatus",
+                "value": "LIVE"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Projekttyp",
+                "value": "Experiment"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zusammenarbeit",
+                "value": "INDEPENDENT"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Wert für übertragbare Kundenprojekte",
+                "value": "Das Projekt erforscht Sonifikation nicht als Effekt, sondern als informationsdichte Ergänzung zu visuellen Dashboards."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Zentrale Erkenntnis",
+                "value": "Daten werden nicht automatisch verständlich, wenn man sie vertont. Erst eine klare semantische Zuordnung und musikalische Kohärenz schaffen einen brauchbaren zweiten Kanal."
+              }
+            ],
+            "image": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/impressum": {
+      "title": "Impressum — ShapeNeural",
+      "description": "Anbieterkennzeichnung und Kontaktangaben für ShapeNeural.",
+      "markdown": null,
+      "jsonld": "/impressum.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>Impressum — ShapeNeural</h1><p>Anbieterkennzeichnung und Kontaktangaben für ShapeNeural.</p></header><section><p>Die vollständigen und verbindlichen Inhalte stehen auf dieser Seite.</p></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/impressum.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/impressum#webpage",
+            "url": "https://www.shapeneural.com/impressum",
+            "name": "Impressum — ShapeNeural",
+            "description": "Anbieterkennzeichnung und Kontaktangaben für ShapeNeural.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=impressum"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Impressum",
+                "item": "https://www.shapeneural.com/impressum"
+              }
+            ]
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/datenschutz": {
+      "title": "Datenschutz — ShapeNeural",
+      "description": "Informationen zur Verarbeitung von Daten auf der ShapeNeural Website.",
+      "markdown": null,
+      "jsonld": "/datenschutz.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>Datenschutz — ShapeNeural</h1><p>Informationen zur Verarbeitung von Daten auf der ShapeNeural Website.</p></header><section><p>Die vollständigen und verbindlichen Inhalte stehen auf dieser Seite.</p></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/datenschutz.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/datenschutz#webpage",
+            "url": "https://www.shapeneural.com/datenschutz",
+            "name": "Datenschutz — ShapeNeural",
+            "description": "Informationen zur Verarbeitung von Daten auf der ShapeNeural Website.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=datenschutz"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Datenschutz",
+                "item": "https://www.shapeneural.com/datenschutz"
+              }
+            ]
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    },
+    "/agb": {
+      "title": "AGB — ShapeNeural",
+      "description": "Vertragsgrundlage für ShapeNeural Leistungen im B2B-Bereich.",
+      "markdown": null,
+      "jsonld": "/agb.jsonld",
+      "fallbackHtml": "<main class=\"seo-fallback\" data-machine-readable=\"true\"><header><p>SHAPENEURAL / MASCHINENLESBARE SEITENFASSUNG</p><h1>AGB — ShapeNeural</h1><p>Vertragsgrundlage für ShapeNeural Leistungen im B2B-Bereich.</p></header><section><p>Die vollständigen und verbindlichen Inhalte stehen auf dieser Seite.</p></section><footer><h2>Maschinenlesbare Alternativen</h2><ul><li><a href=\"https://www.shapeneural.com/agb.jsonld\">JSON-LD</a></li><li><a href=\"https://www.shapeneural.com/llms.txt\">LLM-Übersicht</a></li></ul></footer></main>",
+      "structuredData": {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.shapeneural.com/#organization",
+            "name": "ShapeNeural",
+            "legalName": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/favicon.png"
+            },
+            "email": "signal@shapeneural.com",
+            "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Wasserhofstraße 47",
+              "postalCode": "60529",
+              "addressLocality": "Frankfurt am Main",
+              "addressCountry": "DE"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "Deutschland"
+              },
+              {
+                "@type": "Place",
+                "name": "Remote"
+              }
+            ],
+            "knowsAbout": [
+              "Angewandte künstliche Intelligenz",
+              "KI-Workspaces",
+              "KI-Agenten",
+              "Workflow-Automatisierung",
+              "Digitale Produktentwicklung",
+              "AI Enablement",
+              "Human-in-the-loop-Systeme"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.shapeneural.com/#website",
+            "name": "ShapeNeural",
+            "url": "https://www.shapeneural.com",
+            "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "publisher": {
+              "@id": "https://www.shapeneural.com/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.shapeneural.com/agb#webpage",
+            "url": "https://www.shapeneural.com/agb",
+            "name": "AGB — ShapeNeural",
+            "description": "Vertragsgrundlage für ShapeNeural Leistungen im B2B-Bereich.",
+            "inLanguage": [
+              "de-DE",
+              "en-GB"
+            ],
+            "isPartOf": {
+              "@id": "https://www.shapeneural.com/#website"
+            },
+            "about": {
+              "@id": "https://www.shapeneural.com/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.shapeneural.com/api/og-image?type=page&slug=agb"
+            },
+            "dateModified": "2026-09-24"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ShapeNeural",
+                "item": "https://www.shapeneural.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "AGB",
+                "item": "https://www.shapeneural.com/agb"
+              }
+            ]
+          }
+        ]
+      },
+      "dateModified": "2026-09-24"
+    }
+  },
+  "catalogs": {
+    "services": "/studio/leistungen/catalog.json",
+    "projects": "/studio/projekte/catalog.json",
+    "projectDataset": "/studio/projekte/dataset.jsonld",
+    "signals": "/data/debris.json"
+  }
+}

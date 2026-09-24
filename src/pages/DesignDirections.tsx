@@ -82,7 +82,7 @@ const copy = {
     ],
     independentStudioTitle: "Unabhängig im Denken. Verbindlich in der Umsetzung.",
     independentStudioBody: "ShapeNeural verbindet Design, Strategie, Produktdenken und angewandte KI. Klein genug für direkte Zusammenarbeit – systemisch genug, um komplexe Vorhaben zu tragen.",
-    independentStudioMeta: "Ufuk Avci · Founder / AI & CX Strategy · Frankfurt",
+    independentStudioMeta: "ShapeNeural · AI & CX Strategy · Frankfurt",
     independentLabTitle: "Die ungezähmte Seite von ShapeNeural.",
     independentLabBody: "Im Lab werden Signale gesammelt, Ideen befragt und Experimente öffentlich gemacht. Wolke, Insights und Oracle bleiben als eigenständiges Erlebnis erhalten – jetzt in derselben Coral-, Neon- und Cobalt-Farbwelt.",
     independentLabCta: "Lab betreten",
@@ -182,7 +182,7 @@ const copy = {
     ],
     independentStudioTitle: "Independent in thought. Accountable in delivery.",
     independentStudioBody: "ShapeNeural combines design, strategy, product thinking and applied AI. Small enough for direct collaboration — systemic enough to carry complex work.",
-    independentStudioMeta: "Ufuk Avci · Founder / AI & CX Strategy · Frankfurt",
+    independentStudioMeta: "ShapeNeural · AI & CX Strategy · Frankfurt",
     independentLabTitle: "The untamed side of ShapeNeural.",
     independentLabBody: "The Lab collects signals, interrogates ideas and makes experiments public. Cloud, insights and Oracle remain their own experience — now in the same coral, neon and cobalt colour world.",
     independentLabCta: "Enter the Lab",
@@ -364,8 +364,8 @@ const proofStudioCopy = {
     ],
     studioLabel: "05 / DAS STUDIO",
     studioTitle: "Ein verantwortlicher Partner. Verstärkt durch ein agentisches System.",
-    studioBody: "ShapeNeural ist bewusst unabhängig und kompakt. Sie arbeiten direkt mit Ufuk Avci – mit Erfahrung in Strategie, Experience Design und angewandter KI – und einem spezialisierten Netzwerk, wenn das Vorhaben mehr Disziplinen braucht.",
-    studioMeta: "UFUK AVCI · FOUNDER / AI & CX STRATEGY · FRANKFURT",
+    studioBody: "ShapeNeural ist bewusst unabhängig und kompakt. Sie arbeiten direkt mit seniorer Expertise in Strategie, Experience Design und angewandter KI – ergänzt durch ein spezialisiertes Netzwerk, wenn das Vorhaben mehr Disziplinen braucht.",
+    studioMeta: "SHAPENEURAL · APPLIED AI / PRODUCT / EXPERIENCE · FRANKFURT",
     ctaLabel: "06 / EIN GUTER ANFANG",
     ctaTitle: "Zeigen Sie mir den Prozess, der gerade Zeit, Qualität oder Nerven kostet.",
     ctaBody: "Sie müssen noch keine fertige KI-Idee haben. Eine konkrete Reibung im Alltag reicht als Ausgangspunkt.",
@@ -431,8 +431,8 @@ const proofStudioCopy = {
     ],
     studioLabel: "05 / THE STUDIO",
     studioTitle: "One accountable partner. Amplified by an agentic system.",
-    studioBody: "ShapeNeural is deliberately independent and compact. You work directly with Ufuk Avci – combining strategy, experience design and applied AI – and a specialist network when the work needs more disciplines.",
-    studioMeta: "UFUK AVCI · FOUNDER / AI & CX STRATEGY · FRANKFURT",
+    studioBody: "ShapeNeural is deliberately independent and compact. You work directly with senior expertise across strategy, experience design and applied AI — supported by a specialist network when the work needs more disciplines.",
+    studioMeta: "SHAPENEURAL · APPLIED AI / PRODUCT / EXPERIENCE · FRANKFURT",
     ctaLabel: "06 / A GOOD PLACE TO START",
     ctaTitle: "Show me the process that is currently costing time, quality or patience.",
     ctaBody: "You do not need a finished AI idea. One concrete point of friction in daily work is enough to begin.",
@@ -870,7 +870,7 @@ function IndependentDirection({ language }: { language: Language }) {
       </section>
 
       <section className="independent-studio" id="independent-studio">
-        <div className="independent-studio__portrait"><img src={profilePortrait} alt={language === "de" ? "Ufuk Avci, Gründer von ShapeNeural" : "Ufuk Avci, founder of ShapeNeural"} /><span>{t.independentFounder}</span></div>
+        <div className="independent-studio__portrait"><img src={profilePortrait} alt="ShapeNeural Studio" /><span>{t.independentFounder}</span></div>
         <div className="independent-studio__copy">
           <p className="dd-section-label">04 / SHAPENEURAL STUDIO</p>
           <h2>{t.independentStudioTitle}</h2>
@@ -1117,7 +1117,7 @@ function ProofStudioDirection({ language }: { language: Language }) {
 
       <section className="proof-studio" id="proof-studio">
         <div className="proof-studio__portrait">
-          <img src={profilePortrait} alt={language === "de" ? "Ufuk Avci, Gründer von ShapeNeural" : "Ufuk Avci, founder of ShapeNeural"} />
+          <img src={profilePortrait} alt="ShapeNeural Studio" />
           <span>{t.studioMeta}</span>
         </div>
         <div className="proof-studio__copy"><p>{t.studioLabel}</p><h2>{t.studioTitle}</h2><span>{t.studioBody}</span></div>

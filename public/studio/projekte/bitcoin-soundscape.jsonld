@@ -1,0 +1,171 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shapeneural.com/#organization",
+      "name": "ShapeNeural",
+      "legalName": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/favicon.png"
+      },
+      "email": "signal@shapeneural.com",
+      "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wasserhofstraße 47",
+        "postalCode": "60529",
+        "addressLocality": "Frankfurt am Main",
+        "addressCountry": "DE"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Deutschland"
+        },
+        {
+          "@type": "Place",
+          "name": "Remote"
+        }
+      ],
+      "knowsAbout": [
+        "Angewandte künstliche Intelligenz",
+        "KI-Workspaces",
+        "KI-Agenten",
+        "Workflow-Automatisierung",
+        "Digitale Produktentwicklung",
+        "AI Enablement",
+        "Human-in-the-loop-Systeme"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.shapeneural.com/#website",
+      "name": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape#webpage",
+      "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+      "name": "Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural",
+      "description": "Ein Experiment, das fünf Zeitebenen des Bitcoin-Markts in einen kontinuierlichen KI-generierten Soundscape übersetzt.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/#website"
+      },
+      "about": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
+      },
+      "dateModified": "2026-09-24"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ShapeNeural",
+          "item": "https://www.shapeneural.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projekte",
+          "item": "https://www.shapeneural.com/studio/projekte"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BITCOIN SOUNDSCAPE",
+          "item": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "CreativeWork"
+      ],
+      "@id": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape#project",
+      "name": "BITCOIN SOUNDSCAPE",
+      "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape",
+      "sameAs": "https://radio.shapeneural.com/",
+      "description": "BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.",
+      "abstract": "Was wird hörbar, wenn Marktdaten zu einem zweiten Sinneskanal werden?",
+      "applicationCategory": "GENERATIVE AI",
+      "operatingSystem": "Web",
+      "dateCreated": "2025",
+      "dateModified": "2026-09-24",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "creator": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/studio/projekte#collection"
+      },
+      "keywords": [
+        "GENERATIVE_AI",
+        "FINTECH",
+        "AUDIO"
+      ],
+      "featureList": [
+        "Signalzerlegung",
+        "Musikalisches Mapping",
+        "Kontinuierlicher Betrieb"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Projektstatus",
+          "value": "LIVE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Projekttyp",
+          "value": "Experiment"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zusammenarbeit",
+          "value": "INDEPENDENT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Wert für übertragbare Kundenprojekte",
+          "value": "Das Projekt erforscht Sonifikation nicht als Effekt, sondern als informationsdichte Ergänzung zu visuellen Dashboards."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zentrale Erkenntnis",
+          "value": "Daten werden nicht automatisch verständlich, wenn man sie vertont. Erst eine klare semantische Zuordnung und musikalische Kohärenz schaffen einen brauchbaren zweiten Kanal."
+        }
+      ],
+      "image": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
+    }
+  ]
+}

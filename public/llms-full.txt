@@ -1,0 +1,1158 @@
+# ShapeNeural — vollständige maschinenlesbare Fassung
+
+Diese Datei bündelt die öffentlich sichtbaren Kerninhalte der Website in Lesereihenfolge. Übersicht und Interpretationsregeln: https://www.shapeneural.com/llms.txt
+
+---
+
+# ShapeNeural — KI-Agentur und unabhängiges KI-Produktstudio
+
+> Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.
+
+Designed Intelligence. AI systems that move people, not just data.
+
+ShapeNeural arbeitet für kleine Unternehmen, kompakte Teams und beruflich Selbstständige. Das Studio verbindet Beratung, Produktentwicklung, Betrieb und Enablement. Ziel ist kein allgemeines Transformationsprogramm, sondern ein klar begrenztes Vorhaben, nach dem ein nutzbares Setup, ein funktionierender Workflow oder ein testbarer Prototyp existiert.
+
+## Drei Wege der Zusammenarbeit
+
+### AUGMENT — AI Workspace Setup
+
+KI in der bestehenden Arbeit sinnvoll nutzbar machen.
+
+**Ergebnis:** Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.
+
+**Dauer:** Typisch 1–2 Wochen
+
+**Preisorientierung:** Orientierung: 2.900–6.500 € netto
+
+### TRANSFORM — AI Workflow Build
+
+Arbeit nicht nur beschleunigen, sondern neu gestalten.
+
+**Ergebnis:** Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.
+
+**Dauer:** Typisch 3–6 Wochen
+
+**Preisorientierung:** Orientierung: 7.500–18.000 € netto
+
+### CREATE — AI Product Sprint
+
+Eine neue KI-Idee real und entscheidbar machen.
+
+**Ergebnis:** Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.
+
+**Dauer:** Typisch 3–5 Wochen
+
+**Preisorientierung:** Orientierung: 9.500–22.000 € netto
+
+## Arbeitsmethode
+
+1. **Understand:** Ausgangslage, Menschen, Daten, Werkzeuge und Grenzen verstehen.
+2. **Design:** Die kleinste sinnvolle Veränderung und ihre Kontrollpunkte entwerfen.
+3. **Implement:** Workspace, Workflow oder Produktprototyp tatsächlich bauen.
+4. **Validate:** Nutzen, Qualität, Fehlerfälle, Kosten und menschliche Eingriffe testen.
+5. **Transfer:** Wissen, Dokumentation und Verantwortung nachvollziehbar übergeben.
+
+## Was bleibt
+
+- AUGMENT: Assistenten, Anweisungen, Wissensquellen und direkt nutzbare Anwendungsfälle.
+- TRANSFORM: Workflow-Blueprint, Automationen, menschliche Kontrollpunkte, Evaluation und Runbook.
+- CREATE: Produktkonzept, funktionaler Prototyp, Validierung und Roadmap.
+
+## Portfolio
+
+- [SAPIENTBLOCK](https://www.shapeneural.com/studio/projekte/sapientblock) — Partnerprojekt, LIVE: AI-powered blockchain intelligence for the German Mittelstand. The platform analyses a company profile, matches it against 326 published use cases across 74 industries and turns the result into relevant examples, new ideas and next steps. Its content pipeline also prepares knowledge for web, social distribution, search engines and LLMs. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).
+- [MELODEYE](https://www.shapeneural.com/studio/projekte/melodeye) — Experiment, BETA: A multi-modal emotion recognition system that distinguishes between displayed and experienced emotion — then generates music that responds to what you actually feel, not what you show. The system fuses facial expression analysis, gaze tracking, and pupil dynamics in real-time, entirely within the browser. No server ever sees your biometric data.
+- [PROBLAIM](https://www.shapeneural.com/studio/projekte/problaim) — Eigenes Produkt, BETA: An AI-orchestrated problem decomposition engine that treats complex problems like an experienced consultant would — systematically breaking them down, illuminating them from multiple perspectives, enriching them with external research, and deepening the analysis iteratively over days and weeks. The system runs a multi-LLM pipeline autonomously. You bring the problem. It builds the clarity.
+- [VENIORA](https://www.shapeneural.com/studio/projekte/veniora) — Eigenes Produkt, LIVE: A regional evidence platform that connects German employment statistics with international research on how generative AI may affect occupational tasks. Veniora makes the result inspectable for all 401 districts and cities — with sources, limits and methodology visible at every step.
+- [HUMANCRYP.TO](https://www.shapeneural.com/studio/projekte/humancrypto) — Experiment, ARCHIVED: A crypto-education platform where digital currencies take human form. Each cryptocurrency is mapped to one of Jung's 12 archetypes, given a personality shaped by the Plutchik emotion model, and brought to life through AI-generated narratives, voice, and video. The result: complex blockchain concepts become memorable characters you can actually relate to.
+- [SAPIENTSHIFT](https://www.shapeneural.com/studio/projekte/sapientshift) — Eigenes Produkt, BETA: An AI-powered potential analysis platform that translates the abstract promise of artificial intelligence into personalized, actionable insight — for companies, employees, and individuals. Three distinct analysis pipelines, one shared knowledge base of 318 curated AI use cases, and an autonomous Creative Guild of 10 AI agents that generate tailored articles and visuals based on your specific context.
+- [BITCOIN SOUNDSCAPE](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape) — Experiment, LIVE: Real-time Bitcoin market data translated into a continuous AI-generated soundscape. The system decomposes market signals across five temporal layers — from monthly macro trends to individual whale transactions — and maps each layer to a distinct musical dimension. The output is a 24/7 livestream where the music genuinely reflects market state: not a gimmick, but an information-dense audio layer that evolves with every trade.
+
+## Kontakt
+
+- [Fit-Check und Kontakt](https://www.shapeneural.com/kontakt)
+- E-Mail: signal@shapeneural.com
+- Standort: Frankfurt am Main / Remote
+
+---
+
+English summary: Independent applied AI product studio for small organisations, compact teams and independent professionals. ShapeNeural configures AI for real use, redesigns workflows and makes digital product ideas testable.
+
+
+---
+
+# Leistungen und Preise — ShapeNeural
+
+> KI einrichten. Arbeit neu gestalten. Produktideen real testen.
+
+Der richtige Auftrag hängt nicht vom neuesten Werkzeug ab, sondern von der Ausgangslage. Jedes Angebot löst ein anderes Problem und endet mit einem konkret nutzbaren Ergebnis.
+
+## 01 / AUGMENT — AI Workspace Setup
+
+KI in der bestehenden Arbeit sinnvoll nutzbar machen.
+
+Wir verstehen Ihre heutige Arbeit, wählen passende Werkzeuge aus und richten konkrete Assistenten, Wissensquellen und Routinen ein. Kein allgemeines KI-Training – nach dem Projekt ist etwas einsatzbereit.
+
+- **Konkretes Ergebnis:** Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen.
+- **Rahmen:** Klar begrenztes Setup · Festpreis nach Bestandsaufnahme
+- **Dauer:** Typisch 1–2 Wochen
+- **Preisorientierung:** Orientierung: 2.900–6.500 € netto
+- **Voraussetzung:** Ein klarer Arbeitskontext, Zugang zu den genutzten Werkzeugen und eine verantwortliche Ansprechperson.
+
+### Enthalten
+
+- AI Work Assessment
+- Plattformempfehlung
+- Eingerichteter AI Workspace
+- 2–5 implementierte Use Cases
+- Prompt- und Instruction Library
+- Handover Session
+
+### Ablauf
+
+1. Verstehen
+2. Konfigurieren
+3. Implementieren
+4. Befähigen
+
+### Bewusst nicht enthalten
+
+- Keine umfassende Prozessneugestaltung
+- Keine individuellen Enterprise-Integrationen
+- Keine dauerhafte Administration Ihrer IT
+
+English: **AI Workspace Setup** — We understand your current work, select suitable tools and configure concrete assistants, knowledge sources and routines. No generic AI training — something is ready to use when the project ends. Outcome: A configured working environment with 2–5 ready-to-use applications. Duration: Typically 1–2 weeks Price guide: Guide: €2,900–€6,500 excl. VAT
+
+## 02 / TRANSFORM — AI Workflow Build
+
+Arbeit nicht nur beschleunigen, sondern neu gestalten.
+
+Wir kartieren einen konkreten Ablauf und fragen: Wie würde er aussehen, wenn KI von Beginn an mitgedacht wäre? Daraus bauen wir einen leichten Workflow aus Assistenten, Agenten, Automationen und menschlichen Freigaben.
+
+- **Konkretes Ergebnis:** Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten.
+- **Rahmen:** Definierter Projektumfang · verbindlicher Projektpreis
+- **Dauer:** Typisch 3–6 Wochen
+- **Preisorientierung:** Orientierung: 7.500–18.000 € netto
+- **Voraussetzung:** Ein priorisierter Ablauf, verfügbare Fachexpertise und Zugriff auf relevante Systeme oder Beispieldaten.
+
+### Enthalten
+
+- Current Workflow Map
+- AI Opportunity Map
+- Future Workflow Blueprint
+- Assistenten oder Agenten
+- Leichte Automationen
+- Evaluation Scorecard
+- Runbook und Übergabe
+
+### Ablauf
+
+1. Abbilden
+2. Neu gestalten
+3. Bauen
+4. Validieren
+5. Übergeben
+
+### Bewusst nicht enthalten
+
+- Keine offene Transformation über mehrere Workflows
+- Keine ERP- oder Kernsystemmigration
+- Keine produktionskritische 24/7-Verantwortung
+
+English: **AI Workflow Build** — We map one concrete process and ask how it would work if AI had been considered from the start. We then build a lightweight workflow combining assistants, agents, automation and human approvals. Outcome: An implemented, tested workflow with explicit human checkpoints. Duration: Typically 3–6 weeks Price guide: Guide: €7,500–€18,000 excl. VAT
+
+## 03 / CREATE — AI Product Sprint
+
+Eine neue KI-Idee real und entscheidbar machen.
+
+Wir übersetzen eine Idee in ein Produktkonzept, bauen die kleinste sinnvolle Version und testen, ob Problem, Interaktion und KI-Qualität tragen. Ziel ist nicht Enterprise-Software, sondern eine belastbare Entscheidung.
+
+- **Konkretes Ergebnis:** Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung.
+- **Rahmen:** Fokussierter Sprint · verbindlicher Projektpreis
+- **Dauer:** Typisch 3–5 Wochen
+- **Preisorientierung:** Orientierung: 9.500–22.000 € netto
+- **Voraussetzung:** Eine konkrete Produktfrage, erreichbare Testpersonen oder reale Nutzungssituationen und schnelle Entscheidungen.
+
+### Enthalten
+
+- Opportunity Brief
+- AI Product Canvas
+- Experience Concept
+- Funktionaler Prototyp
+- Validation Report
+- Product Roadmap
+- Build- oder Partnerempfehlung
+
+### Ablauf
+
+1. Entdecken
+2. Entwerfen
+3. Prototyp bauen
+4. Validieren
+5. Entscheiden
+
+### Bewusst nicht enthalten
+
+- Prototyp statt fertiger Enterprise-Plattform
+- Keine unbegrenzte Feature-Entwicklung
+- Produktionsreife wird separat entschieden
+
+English: **AI Product Sprint** — We turn an idea into a product concept, build the smallest meaningful version and test whether the problem, interaction and AI quality hold up. The goal is not enterprise software, but an evidence-based decision. Outcome: A functional prototype, real evidence and a clear go, change or stop decision. Duration: Typically 3–5 weeks Price guide: Guide: €9,500–€22,000 excl. VAT
+
+## Focus Day
+
+Ein fokussierter Arbeitstag plus Vorbereitung. ShapeNeural priorisiert ein reales Problem, prüft Daten und Werkzeuge und liefert eine Opportunity Map sowie eine klare Empfehlung.
+
+- **Dauer:** Ein Arbeitstag plus Vorbereitung
+- **Preis:** 950 € netto
+- **Ergebnis:** Opportunity Map und klare Empfehlung – auch ohne Folgeprojekt
+
+## Arbeitsmethode
+
+1. **Understand:** Ausgangslage, Menschen, Daten, Werkzeuge und Grenzen verstehen.
+2. **Design:** Die kleinste sinnvolle Veränderung und ihre Kontrollpunkte entwerfen.
+3. **Implement:** Workspace, Workflow oder Produktprototyp tatsächlich bauen.
+4. **Validate:** Nutzen, Qualität, Fehlerfälle, Kosten und menschliche Eingriffe testen.
+5. **Transfer:** Wissen, Dokumentation und Verantwortung nachvollziehbar übergeben.
+
+## Häufige Fragen
+
+### Für wen ist das gedacht?
+
+Für kleine Unternehmen, kompakte Teams und Selbstständige, die KI praktisch einsetzen wollen. Nicht für große Kernsystemmigrationen oder unternehmenskritischen 24/7-Betrieb.
+
+### Muss ich mich bereits für ein KI-Tool entschieden haben?
+
+Nein. Die Werkzeugwahl folgt aus Arbeit, Daten, Risiko und Budget – nicht aus einer bevorzugten Plattform.
+
+### Was passiert mit sensiblen Daten?
+
+Datenflüsse und Anbieter werden vor der Umsetzung sichtbar gemacht. Besondere rechtliche oder sicherheitskritische Anforderungen werden früh benannt und bei Bedarf mit Spezialisten ergänzt.
+
+### Was passiert nach dem Projekt?
+
+Sie erhalten ein nutzbares System, Dokumentation und eine Übergabe. Ein klar begrenztes Care-Modell kann separat vereinbart werden; ein 24/7 Managed Service ist nicht Teil des Kernangebots.
+
+### Sind die genannten Preise verbindlich?
+
+Die Bandbreiten sind eine Orientierung für typische Vorhaben. Nach einer kurzen Bestandsaufnahme folgen ein klar abgegrenzter Umfang und ein verbindlicher Festpreis. Lizenzen und vereinbarte Fremdkosten werden separat ausgewiesen.
+
+## Kontakt
+
+[Vorhaben beschreiben](https://www.shapeneural.com/kontakt)
+
+
+---
+
+# ShapeNeural Projekte
+
+> Vollständiges Portfolio aus eigenen Produkten, Experimenten und Partnerprojekten. Status und Projekttyp werden transparent ausgewiesen; Demonstratoren werden nicht als Kundenprojekte dargestellt.
+
+## [SAPIENTBLOCK](https://www.shapeneural.com/studio/projekte/sapientblock)
+
+- **Typ:** Partnerprojekt
+- **Status:** LIVE
+- **Jahr:** 2024
+- **Kategorie:** BLOCKCHAIN
+
+SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.
+
+**Kundenübertragbarkeit:** SAPIENTBLOCK ist kein Template für Blockchain. Es zeigt ein übertragbares Muster für wissensintensive Produkte: Daten sammeln, Kontext verstehen, Relevanz berechnen, Inhalte erzeugen und laufend lernen.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/sapientblock.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/sapientblock.jsonld) · [Live-Projekt](https://sapientblock.com)
+
+## [MELODEYE](https://www.shapeneural.com/studio/projekte/melodeye)
+
+- **Typ:** Experiment
+- **Status:** BETA
+- **Jahr:** 2024
+- **Kategorie:** BIOMETRIC AI
+
+MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.
+
+**Kundenübertragbarkeit:** Der Case zeigt, wie sensible Signale lokal verarbeitet und in eine zurückhaltende, erklärbare Reaktion übersetzt werden können.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/melodeye.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/melodeye.jsonld) · [Live-Projekt](https://aura-soundscape-96.vercel.app)
+
+## [PROBLAIM](https://www.shapeneural.com/studio/projekte/problaim)
+
+- **Typ:** Eigenes Produkt
+- **Status:** BETA
+- **Jahr:** 2025
+- **Kategorie:** AI ANALYSIS
+
+PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.
+
+**Kundenübertragbarkeit:** Der Case eignet sich als Muster für Entscheidungen, die mehrere Datenquellen, Rollen und Zeitpunkte verbinden müssen.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/problaim.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/problaim.jsonld) · [Live-Projekt](https://problaim.com)
+
+## [VENIORA](https://www.shapeneural.com/studio/projekte/veniora)
+
+- **Typ:** Eigenes Produkt
+- **Status:** LIVE
+- **Jahr:** 2026
+- **Kategorie:** REGIONAL AI EVIDENCE
+
+VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.
+
+**Kundenübertragbarkeit:** Der Case zeigt, wie unterschiedliche öffentliche und interne Daten zu einer verständlichen Entscheidungsebene verbunden werden können – ohne Unsicherheit hinter einer glatten Oberfläche zu verstecken.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/veniora.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/veniora.jsonld) · [Live-Projekt](https://veniora.de)
+
+## [HUMANCRYP.TO](https://www.shapeneural.com/studio/projekte/humancrypto)
+
+- **Typ:** Experiment
+- **Status:** ARCHIVED
+- **Jahr:** 2023
+- **Kategorie:** CRYPTO EDUCATION
+
+HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.
+
+**Kundenübertragbarkeit:** Das Prinzip funktioniert überall dort, wo Fakten zwar verfügbar, aber schwer erinnerbar oder emotional fern sind.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/humancrypto.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/humancrypto.jsonld) · [Live-Projekt](https://humancryp.to)
+
+## [SAPIENTSHIFT](https://www.shapeneural.com/studio/projekte/sapientshift)
+
+- **Typ:** Eigenes Produkt
+- **Status:** BETA
+- **Jahr:** 2025
+- **Kategorie:** AI PLATFORM
+
+SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.
+
+**Kundenübertragbarkeit:** Ein komplexes Portfolio wird zugänglich, wenn nicht das Angebot, sondern die Situation des Nutzers den Einstieg bestimmt.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/sapientshift.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/sapientshift.jsonld) · [Live-Projekt](https://sapientshift.com)
+
+## [BITCOIN SOUNDSCAPE](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape)
+
+- **Typ:** Experiment
+- **Status:** LIVE
+- **Jahr:** 2025
+- **Kategorie:** GENERATIVE AI
+
+BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.
+
+**Kundenübertragbarkeit:** Audio kann dort ein zweiter Informationskanal sein, wo Menschen einen Zustand überwachen, ohne dauerhaft auf einen Bildschirm zu schauen.
+
+[Markdown](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape.jsonld) · [Live-Projekt](https://radio.shapeneural.com/)
+
+
+---
+
+# SAPIENTBLOCK — ShapeNeural Projekt
+
+> Wie wird aus einer abstrakten Technologiefrage ein belastbarer Entscheidungs- und Innovationsprozess?
+
+- **Projekttyp:** Partnerprojekt
+- **Status:** LIVE
+- **Kategorie:** BLOCKCHAIN
+- **Jahr:** 2024
+- **Zusammenarbeit:** BLOCKCHAIN REALLABOR
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/sapientblock
+- **Live-Projekt:** https://sapientblock.com
+
+## Kontext
+
+SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.
+
+## Aufgabe
+
+### Nicht mehr Technologie erklären. Relevanz für ein konkretes Unternehmen beweisen.
+
+Mittelständische Unternehmen brauchen keine weitere Liste möglicher Blockchain-Anwendungen. Sie müssen erkennen, welche Muster zu ihrem Geschäft, ihren Prozessen und ihrem Reifegrad passen. SAPIENTBLOCK verbindet deshalb kuratierte Evidenz, Unternehmenskontext und mehrere KI-Funktionen zu einem durchgängigen Produktsystem.
+
+## System
+
+### Sechs Bausteine arbeiten als ein System.
+
+#### Unternehmensanalyse
+
+Website und Eingaben werden in ein strukturiertes Unternehmensprofil mit Branche, Wertschöpfung und Herausforderungen übersetzt.
+
+#### Semantisches Matching
+
+Ein RAG-gestützter Abgleich priorisiert passende Anwendungen aus dem kuratierten Use-Case-Bestand – nachvollziehbar statt zufällig.
+
+#### Ideengenerator
+
+Cross-Industry-Muster und passende Fälle werden zu neuen, unternehmensspezifischen Produkt- und Prozessideen kombiniert.
+
+#### Insights & Benchmarks
+
+Der Bestand wird nach Branchen, Reifegraden und Mustern auswertbar. So entsteht aus einzelnen Cases ein strategischer Vergleichsraum.
+
+#### Content Operations
+
+Eine redaktionelle Pipeline erzeugt aus strukturierten Daten neue Inhalte und bereitet deren Veröffentlichung für Website und Social Media vor.
+
+#### LLM-Lesbarkeit
+
+Use Cases werden zusätzlich als Markdown, JSON-LD, llms.txt und statische Seiten publiziert, damit Suchmaschinen und KI-Systeme sie zuverlässig verstehen.
+
+## Was ShapeNeural gebaut hat
+
+Nicht nur die Oberfläche, sondern den zusammenhängenden Produkt- und Publikationsprozess von der Datenstruktur bis zur Ausspielung.
+
+- Strukturiertes Wissensmodell für 326 veröffentlichte Anwendungen
+- 90-Sekunden-Unternehmensanalyse und semantisches RAG-Matching
+- Cross-Industry-Ideengenerator für neue Produkt- und Prozessansätze
+- Redaktionelle Pipeline für Website- und Social-Media-Inhalte
+- Maschinenlesbare Veröffentlichung über statische Seiten, Markdown, JSON-LD und llms.txt
+
+## Validierung
+
+SAPIENTBLOCK behandelt KI-Ausgaben als prüfbare Vorschläge. Relevanz entsteht aus realen Fällen, sichtbaren Quellen und redaktioneller Kontrolle – nicht aus einer unbelegten Modellantwort.
+
+- Matching-Ergebnisse bleiben mit veröffentlichten Use Cases verbunden
+- 74 Branchen testen, ob das Modell über unterschiedliche Kontexte trägt
+- Öffentliche Produktoberflächen machen Ergebnisse und Grenzen inspizierbar
+- Inhalte werden vor Veröffentlichung redaktionell geprüft
+
+## Heutige Nutzung
+
+Explorer und Unternehmensanalyse sind öffentlich erreichbar. Die Plattform dient zugleich als belastbarer Demonstrator dafür, wie ein wissensintensiver Bestand zu Analyse, Empfehlungen und Content Operations wird.
+
+- Öffentlicher Explorer mit 326 Fällen und Filterung nach Branchen
+- Live-Unternehmensanalyse als Einstieg in passende Anwendungen
+- Die genannten Zahlen beschreiben den veröffentlichten Bestand – nicht Kunden- oder Nutzerzahlen
+
+## Übertragbarkeit
+
+### Was ein Kunde daraus für sein eigenes Geschäft ableiten kann.
+
+SAPIENTBLOCK ist kein Template für Blockchain. Es zeigt ein übertragbares Muster für wissensintensive Produkte: Daten sammeln, Kontext verstehen, Relevanz berechnen, Inhalte erzeugen und laufend lernen.
+
+#### Verteiltes Wissen nutzbar machen
+
+Interne Dokumente, Cases oder Richtlinien können in eine kuratierte Wissensbasis mit kontextbezogener Suche und Empfehlungen übersetzt werden.
+
+#### Leads qualifizieren
+
+Eine Website kann den Bedarf eines Besuchers erfassen und sofort passende Angebote, Beispiele oder nächste Schritte ausspielen.
+
+#### Content skalieren
+
+Strukturierte Produkt- oder Fachdaten können automatisiert in hochwertige Web-, Social- und maschinenlesbare Inhalte überführt werden.
+
+## Wert und Erkenntnis
+
+- **Value:** Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt.
+- **Learning:** Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb.
+
+## Fakten
+
+- **veröffentlichte Use Cases:** 326
+- **abgedeckte Branchen:** 74
+- **verknüpfte Systembausteine:** 6
+
+## Technologie
+
+React, TypeScript, Supabase, OpenAI GPT-4, Perplexity, Pinecone, RAG, Tailwind CSS
+
+## English summary
+
+**Question:** How can an abstract technology question become a robust decision and innovation process?
+
+SAPIENTBLOCK is a growing intelligence platform for blockchain applications. It analyses a company’s context, matches it with hundreds of published use cases across 74 industries and translates the result into relevant examples, new ideas and concrete next steps.
+
+**Challenge:** Stop explaining technology. Prove its relevance to one specific company. SMEs do not need another list of possible blockchain applications. They need to understand which patterns fit their business, processes and maturity. SAPIENTBLOCK therefore connects curated evidence, company context and multiple AI capabilities in one coherent product system.
+
+**Transfer:** What a client can take from this for their own business. SAPIENTBLOCK is not a blockchain template. It demonstrates a reusable pattern for knowledge-heavy products: collect evidence, understand context, calculate relevance, produce content and keep learning.
+
+**Value:** A confusing technology landscape becomes a clear, individual basis for decision-making — while static content becomes a learning product.
+
+
+---
+
+# MELODEYE — ShapeNeural Projekt
+
+> Kann ein digitales System auf erlebte statt nur auf gezeigte Emotion reagieren?
+
+- **Projekttyp:** Experiment
+- **Status:** BETA
+- **Kategorie:** BIOMETRIC AI
+- **Jahr:** 2024
+- **Zusammenarbeit:** INDEPENDENT
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/melodeye
+- **Live-Projekt:** https://aura-soundscape-96.vercel.app
+
+## Kontext
+
+MELODEYE kombiniert Gesichtsausdruck, Blickrichtung und Pupillendynamik direkt im Browser. Aus der Differenz zwischen sichtbarer und erlebter Emotion entsteht eine adaptive musikalische Reaktion.
+
+## Aufgabe
+
+### Emotion ist kein einzelner Messwert.
+
+Ein Lächeln kann Freude, Anspannung oder soziale Anpassung bedeuten. Das Experiment untersucht deshalb nicht nur Ausdruck, sondern die Differenz zwischen mehreren Signalen – und hält biometrische Rohdaten auf dem Gerät.
+
+## System
+
+### Von multimodalen Signalen zu einer vorsichtigen Reaktion.
+
+#### Lokale Wahrnehmung
+
+Gesicht, Blick und Pupillendynamik werden im Browser verarbeitet.
+
+#### Gap-aware interpretation
+
+Das System reagiert auf Abweichungen zwischen sichtbaren und abgeleiteten Signalen.
+
+#### Adaptive Musik
+
+Die ermittelte Situation steuert Auswahl und Generierung einer musikalischen Antwort.
+
+## Übertragbarkeit
+
+### Wo dieses Prinzip anschlussfähig ist.
+
+Der Case zeigt, wie sensible Signale lokal verarbeitet und in eine zurückhaltende, erklärbare Reaktion übersetzt werden können.
+
+#### Adaptive Interfaces
+
+Digitale Produkte können ihre Dichte oder Unterstützung an Nutzungssignale anpassen.
+
+#### Wellbeing
+
+Reflexions- und Entspannungsangebote können kontextbezogener reagieren, ohne Rohdaten zentral zu speichern.
+
+#### Privacy by design
+
+Sensible Modelle können gezielt auf dem Gerät statt in der Cloud laufen.
+
+## Wert und Erkenntnis
+
+- **Value:** Das Projekt untersucht personalisierte Interaktion, ohne biometrische Rohdaten an einen Server zu übertragen.
+- **Learning:** Multimodale Signale sind aussagekräftiger als ein einzelner Klassifikator – erfordern aber klare Sicherheitslogik und eine bescheidene Interpretation.
+
+## Fakten
+
+- **kombinierte Signalschichten:** 3
+- **Verarbeitung biometrischer Daten:** LOCAL
+- **aktiver Experimentstatus:** BETA
+
+## Technologie
+
+React, TypeScript, MediaPipe, WebEyeTrack, LibreFace ONNX, Tone.js, Mureka API, Supabase
+
+## English summary
+
+**Question:** Can a digital system respond to felt emotion rather than only displayed emotion?
+
+MELODEYE combines facial expression, gaze and pupil dynamics directly in the browser. The gap between visible and experienced emotion becomes the input for an adaptive musical response.
+
+**Challenge:** Emotion is not a single measurement. A smile may signal joy, tension or social adaptation. The experiment therefore explores the gap between several signals rather than treating one classifier as truth — while raw biometric data remains on-device.
+
+**Transfer:** Where this principle can be applied. The case shows how sensitive signals can be processed locally and translated into a cautious, explainable response.
+
+**Value:** The project explores personalised interaction without sending raw biometric data to a server.
+
+
+---
+
+# PROBLAIM — ShapeNeural Projekt
+
+> Wie entsteht aus einem komplexen Problem fortlaufend bessere Klarheit?
+
+- **Projekttyp:** Eigenes Produkt
+- **Status:** BETA
+- **Kategorie:** AI ANALYSIS
+- **Jahr:** 2025
+- **Zusammenarbeit:** INDEPENDENT
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/problaim
+- **Live-Projekt:** https://problaim.com
+
+## Kontext
+
+PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.
+
+## Aufgabe
+
+### Komplexe Entscheidungen passen nicht in einen einmaligen Chat.
+
+Neue Evidenz, Widersprüche und Perspektiven verändern eine Fragestellung. PROBLAIM macht diese Entwicklung sichtbar und hält Ergebnisse als strukturierte Denkoberfläche zusammen.
+
+## System
+
+### Orchestrierung statt einer einzigen Modellantwort.
+
+#### Problemzerlegung
+
+Aus einer offenen Frage entsteht eine prüfbare Struktur aus Teilproblemen.
+
+#### Perspektiven
+
+Zwölf archetypische Linsen decken blinde Flecken und Zielkonflikte auf.
+
+#### Fortlaufende Analyse
+
+Recherche und Modellläufe ergänzen die Analyse iterativ, statt sie nach einer Antwort zu beenden.
+
+## Übertragbarkeit
+
+### Was sich auf Kundenentscheidungen übertragen lässt.
+
+Der Case eignet sich als Muster für Entscheidungen, die mehrere Datenquellen, Rollen und Zeitpunkte verbinden müssen.
+
+#### Strategische Fragen
+
+Optionen, Annahmen und Evidenz bleiben über mehrere Entscheidungsrunden nachvollziehbar.
+
+#### Research Operations
+
+Wiederkehrende Recherche kann aufgeteilt, bewertet und konsolidiert werden.
+
+#### Vorbereitung von Workshops
+
+Teams beginnen mit einer strukturierten Hypothesen- und Konfliktlandkarte statt mit einem leeren Whiteboard.
+
+## Wert und Erkenntnis
+
+- **Value:** Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann.
+- **Learning:** Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten.
+
+## Fakten
+
+- **Perspektivlinsen:** 12
+- **Phasen der Analyse:** 4
+- **Modell-Orchestrierung:** MULTI
+
+## Technologie
+
+React, TypeScript, Supabase, Claude, GPT-4, Gemini, Perplexity, Stripe, XYFlow
+
+## English summary
+
+**Question:** How can a complex problem produce better clarity over time?
+
+PROBLAIM treats problem analysis as a living process. A multi-LLM pipeline decomposes questions, examines them through twelve perspectives, adds research and deepens the analysis over time.
+
+**Challenge:** Complex decisions do not fit into a one-off chat. New evidence, contradictions and perspectives change the question itself. PROBLAIM makes that development visible and keeps results together as a structured thinking surface.
+
+**Transfer:** What can transfer to client decisions. The case is a pattern for decisions that need to connect multiple data sources, roles and moments in time.
+
+**Value:** Decision-makers gain a structured thinking surface that can absorb contradictions and new evidence — not a one-off answer.
+
+
+---
+
+# VENIORA — ShapeNeural Projekt
+
+> Wie wird aus großen öffentlichen Datenbeständen eine belastbare regionale Entscheidungsgrundlage?
+
+- **Projekttyp:** Eigenes Produkt
+- **Status:** LIVE
+- **Kategorie:** REGIONAL AI EVIDENCE
+- **Jahr:** 2026
+- **Zusammenarbeit:** INDEPENDENT
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/veniora
+- **Live-Projekt:** https://veniora.de
+
+## Kontext
+
+VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.
+
+## Aufgabe
+
+### Zwischen abstrakter KI-Debatte und regionaler Realität fehlt die belastbare Verbindung.
+
+Bundesweite Durchschnittswerte helfen Kommunen, Kammern und Weiterbildungsakteuren nur begrenzt. VENIORA führt unterschiedlich strukturierte Daten zusammen, kennzeichnet Ableitungen und macht sichtbar, wo die Evidenz trägt – und wo ausdrücklich keine Aussage möglich ist.
+
+## System
+
+### Datenmodell, Methodik und Interface erklären denselben Befund.
+
+#### Regionale Datenverbindung
+
+Beschäftigungsstatistik, Berufsklassifikationen und KI-Forschung werden für 401 regionale Einheiten nachvollziehbar verbunden.
+
+#### Belastbarkeit sichtbar machen
+
+Direkte Werte, regionale Ableitungen, Quellen und Grenzen bleiben im Interface unterscheidbar.
+
+#### Maschinenlesbare Evidenz
+
+Kreisseiten, strukturierte Metadaten und dokumentierte Methodik machen den Bestand für Menschen, Suche und KI-Systeme nutzbar.
+
+## Übertragbarkeit
+
+### Was Organisationen aus VENIORA für eigene Datenprodukte ableiten können.
+
+Der Case zeigt, wie unterschiedliche öffentliche und interne Daten zu einer verständlichen Entscheidungsebene verbunden werden können – ohne Unsicherheit hinter einer glatten Oberfläche zu verstecken.
+
+#### Regionale Strategie
+
+Wirtschaftsförderung, Kammern und Weiterbildung erhalten einen gemeinsamen Ausgangspunkt für lokale Prioritäten.
+
+#### Evidence Products
+
+Komplexe Datenbestände werden zu zitierbaren Befunden mit klarer Herkunft und nachvollziehbaren Grenzen.
+
+#### Responsible AI
+
+Ein Produkt kann zeigen, was ein Modell oder Datensatz nicht aussagt – und dadurch glaubwürdiger werden.
+
+## Wert und Erkenntnis
+
+- **Value:** Aus Millionen Beschäftigtendaten und internationaler Forschung entsteht eine lesbare regionale Evidenzschicht für konkrete Diskussionen über Arbeit und KI.
+- **Learning:** Vertrauen entsteht nicht durch eine möglichst eindeutige Zahl, sondern durch sichtbare Quellen, belastbare Übersetzungsregeln und klar benannte Grenzen.
+
+## Fakten
+
+- **Kreise und kreisfreie Städte:** 401
+- **Beschäftigte im Datenbestand:** 34,7 M
+- **offene Primärquellen:** 2
+
+## Technologie
+
+Next.js, TypeScript, Public Data, Geospatial Data, JSON-LD, Static Generation
+
+## English summary
+
+**Question:** How can large public datasets become a robust regional basis for decision-making?
+
+VENIORA connects employment data from Germany’s Federal Employment Agency with research by the International Labour Organization. For all 401 districts and cities, it makes visible which tasks generative AI could technically affect — with sources, limitations and methodology attached to each finding.
+
+**Challenge:** The connection between abstract AI debate and regional reality is usually missing. National averages offer limited value to municipalities, chambers and training organisations. VENIORA connects differently structured datasets, labels derivations and makes clear where the evidence holds — and where no responsible claim can be made.
+
+**Transfer:** What organisations can take from VENIORA for their own data products. The case shows how public and internal datasets can become an understandable decision layer without hiding uncertainty behind a polished surface.
+
+**Value:** Millions of employment records and international research become a readable regional evidence layer for concrete conversations about work and AI.
+
+
+---
+
+# HUMANCRYP.TO — ShapeNeural Projekt
+
+> Wie wird abstrakte Technologie erinnerbar und menschlich?
+
+- **Projekttyp:** Experiment
+- **Status:** ARCHIVED
+- **Kategorie:** CRYPTO EDUCATION
+- **Jahr:** 2023
+- **Zusammenarbeit:** INDEPENDENT
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/humancrypto
+- **Live-Projekt:** https://humancryp.to
+
+## Kontext
+
+HUMANCRYP.TO übersetzt Kryptowährungen in Figuren. Archetypen, ein Emotionsmodell und eine automatisierte Bild-, Sprach- und Videopipeline machen technische Unterschiede als Charaktere erlebbar.
+
+## Aufgabe
+
+### Technische Erklärung allein schafft noch kein Verständnis.
+
+Tokenomics, Konsensmechanismen und Communities sind abstrakt. Das Projekt nutzt Persönlichkeit und Geschichte als zweite Bedeutungsebene, ohne Metapher und Fakt gleichzusetzen.
+
+## System
+
+### Ein automatisierter Storytelling-Stack.
+
+#### Archetypen-Modell
+
+Technische und kulturelle Eigenschaften werden auf konsistente Figuren übersetzt.
+
+#### Generative Produktion
+
+Bild, Stimme, Text und Video entstehen aus einem gemeinsamen Charakterprofil.
+
+#### Lernnarrativ
+
+Information wird als Geschichte und Vergleich erfahrbar, nicht als Glossar.
+
+## Übertragbarkeit
+
+### Was andere komplexe Themen davon lernen können.
+
+Das Prinzip funktioniert überall dort, wo Fakten zwar verfügbar, aber schwer erinnerbar oder emotional fern sind.
+
+#### Onboarding
+
+Rollen, Produkte oder Regeln können durch konsistente Figuren verständlicher werden.
+
+#### Education
+
+Komplexe Portfolios lassen sich über wiederkehrende Narrative erschließen.
+
+#### Automatisierte Formate
+
+Ein strukturiertes Wissensmodell kann mehrere Medienformate konsistent speisen.
+
+## Wert und Erkenntnis
+
+- **Value:** Komplexe Konzepte werden über Narrativ, Emotion und Wiedererkennbarkeit zugänglicher gemacht.
+- **Learning:** Storytelling kann technisches Lernen tragen, wenn Metapher und zugrunde liegende Fakten klar voneinander getrennt bleiben.
+
+## Fakten
+
+- **archetypische Grundmuster:** 12
+- **generative Medienformen:** 4
+- **dokumentierter Lernstand:** ARCHIVED
+
+## Technologie
+
+Python, OpenAI, ElevenLabs, D-ID Avatars, DALL-E, CoinGecko API, MoviePy
+
+## English summary
+
+**Question:** How does abstract technology become memorable and human?
+
+HUMANCRYP.TO turns cryptocurrencies into characters. Archetypes, an emotion model and an automated image, voice and video pipeline make technical differences tangible as personalities.
+
+**Challenge:** Technical explanation alone does not create understanding. Tokenomics, consensus mechanisms and communities are abstract. The project uses personality and story as a second layer of meaning without confusing metaphor with fact.
+
+**Transfer:** What other complex subjects can learn from it. The principle applies wherever facts are available but difficult to remember or emotionally distant.
+
+**Value:** Complex concepts become approachable through narrative, emotion and recognition.
+
+
+---
+
+# SAPIENTSHIFT — ShapeNeural Projekt
+
+> Welche KI-Chance passt wirklich zu diesem Unternehmen, Team oder Menschen?
+
+- **Projekttyp:** Eigenes Produkt
+- **Status:** BETA
+- **Kategorie:** AI PLATFORM
+- **Jahr:** 2025
+- **Zusammenarbeit:** INDEPENDENT
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/sapientshift
+- **Live-Projekt:** https://sapientshift.com
+
+## Kontext
+
+SAPIENTSHIFT übersetzt das abstrakte Versprechen von KI in personalisierte Potenziale. Drei Analysepfade, ein kuratierter Use-Case-Bestand und eine agentische Creative Guild erzeugen kontextbezogene Empfehlungen und Inhalte.
+
+## Aufgabe
+
+### Generische KI-Listen helfen niemandem bei der Priorisierung.
+
+Unternehmen, Mitarbeitende und Einzelpersonen starten mit unterschiedlichen Zielen und Handlungsspielräumen. Das Produkt trennt diese Kontexte und verbindet sie erst danach mit konkreten Möglichkeiten.
+
+## System
+
+### Analyse, Empfehlung und Content greifen ineinander.
+
+#### Drei Analysepfade
+
+Unternehmen, Mitarbeitende und Einzelpersonen erhalten passende Fragen und Bewertungslogiken.
+
+#### Opportunity Matching
+
+Kontext und Bereitschaft werden mit kuratierten KI-Anwendungen verbunden.
+
+#### Creative Guild
+
+Mehrere spezialisierte Agenten erzeugen personalisierte Artikel und Visuals.
+
+## Übertragbarkeit
+
+### Wie dieses Muster in anderen Angeboten funktioniert.
+
+Ein komplexes Portfolio wird zugänglich, wenn nicht das Angebot, sondern die Situation des Nutzers den Einstieg bestimmt.
+
+#### Beratungsprodukte
+
+Diagnose und Empfehlung können vor einem persönlichen Gespräch strukturiert werden.
+
+#### Mitarbeiterportale
+
+Use Cases lassen sich passend zu Rolle und Reifegrad priorisieren.
+
+#### Content Experiences
+
+Ein Wissensbestand kann personalisierte Lernpfade und Magazine speisen.
+
+## Wert und Erkenntnis
+
+- **Value:** Unterschiedliche Zielgruppen erhalten keine generische Trendübersicht, sondern einen priorisierten Ausgangspunkt für eigene Entscheidungen.
+- **Learning:** Personalisierung wird dann nützlich, wenn sie nicht nur Inhalte variiert, sondern Ausgangslage, Bereitschaft und Handlungsraum berücksichtigt.
+
+## Fakten
+
+- **getrennte Analysepfade:** 3
+- **spezialisierte Content-Agenten:** 10
+- **aktiver Produktstatus:** BETA
+
+## Technologie
+
+React, TypeScript, Supabase, OpenAI GPT-4o, Perplexity Sonar, DeepSeek, DALL-E 3, Tailwind CSS
+
+## English summary
+
+**Question:** Which AI opportunity genuinely fits this company, team or person?
+
+SAPIENTSHIFT translates the abstract promise of AI into personalised potential. Three analysis paths, a curated use-case base and an agentic Creative Guild generate contextual recommendations and content.
+
+**Challenge:** Generic AI lists do not help anyone prioritise. Companies, employees and individuals start with different goals and room for action. The product separates these contexts before connecting them to concrete possibilities.
+
+**Transfer:** How this pattern works in other offers. A complex portfolio becomes accessible when the user’s situation — not the offer catalogue — defines the entry point.
+
+**Value:** Different audiences receive a prioritised starting point for their own decisions rather than another generic trend overview.
+
+
+---
+
+# BITCOIN SOUNDSCAPE — ShapeNeural Projekt
+
+> Was wird hörbar, wenn Marktdaten zu einem zweiten Sinneskanal werden?
+
+- **Projekttyp:** Experiment
+- **Status:** LIVE
+- **Kategorie:** GENERATIVE AI
+- **Jahr:** 2025
+- **Zusammenarbeit:** INDEPENDENT
+- **Kanonische Seite:** https://www.shapeneural.com/studio/projekte/bitcoin-soundscape
+- **Live-Projekt:** https://radio.shapeneural.com/
+
+## Kontext
+
+BITCOIN_SOUNDSCAPE zerlegt Marktdaten in fünf Zeitebenen und ordnet jeder Ebene eine musikalische Dimension zu. Daraus entsteht ein kontinuierlicher KI-generierter Audiostream, der sich mit dem Markt verändert.
+
+## Aufgabe
+
+### Dashboards konkurrieren permanent um visuelle Aufmerksamkeit.
+
+Das Experiment fragt, ob ein sorgfältig gestalteter Audiokanal Marktveränderungen nebenbei wahrnehmbar machen kann – ohne Daten lediglich in zufällige Töne zu übersetzen.
+
+## System
+
+### Fünf Zeithorizonte formen ein Musikstück.
+
+#### Signalzerlegung
+
+Monat, Woche, Tag, Stunde und Echtzeit werden getrennt bewertet.
+
+#### Musikalisches Mapping
+
+Jede Ebene steuert Bass, Beat, Harmonie, Melodie oder Textur.
+
+#### Kontinuierlicher Betrieb
+
+Marktdaten, Generation und Stream laufen als wiederholbare Pipeline zusammen.
+
+## Übertragbarkeit
+
+### Was Sonifikation für andere Systeme leisten kann.
+
+Audio kann dort ein zweiter Informationskanal sein, wo Menschen einen Zustand überwachen, ohne dauerhaft auf einen Bildschirm zu schauen.
+
+#### Operations
+
+Systemzustände können als ruhige, unterscheidbare Klangmuster wahrnehmbar werden.
+
+#### Accessibility
+
+Visuelle Daten erhalten eine ergänzende Darstellung für andere Nutzungssituationen.
+
+#### Ambient Intelligence
+
+Räume oder Produkte können Veränderungen kommunizieren, ohne permanent Aufmerksamkeit einzufordern.
+
+## Wert und Erkenntnis
+
+- **Value:** Das Projekt erforscht Sonifikation nicht als Effekt, sondern als informationsdichte Ergänzung zu visuellen Dashboards.
+- **Learning:** Daten werden nicht automatisch verständlich, wenn man sie vertont. Erst eine klare semantische Zuordnung und musikalische Kohärenz schaffen einen brauchbaren zweiten Kanal.
+
+## Fakten
+
+- **zeitliche Signalschichten:** 5
+- **gedachter Betriebsmodus:** 24/7
+- **öffentlicher Stream:** LIVE
+
+## Technologie
+
+Python, FastAPI, ACE-Step 1.5, MiniMax M2.5, React, Supabase, OBS Studio, Cloudflare Tunnel
+
+## English summary
+
+**Question:** What becomes audible when market data turns into a second sensory channel?
+
+BITCOIN_SOUNDSCAPE separates market data into five time layers and maps each layer to a musical dimension. The result is a continuous AI-generated audio stream that changes with the market.
+
+**Challenge:** Dashboards compete continuously for visual attention. The experiment asks whether a carefully designed audio channel can make market changes perceptible in the background — without simply mapping data to random notes.
+
+**Transfer:** What sonification can do for other systems. Audio can become a second information channel wherever people monitor a state without looking at a screen continuously.
+
+**Value:** The project explores sonification as an information-rich complement to visual dashboards rather than a decorative effect.
+
+
+---
+
+# ShapeNeural Lab — Signal Cloud
+
+> Das Lab ist die Forschungsoberfläche von ShapeNeural. Es sammelt schwache Signale, verbindet Entwicklungen und macht sichtbar, welche Fragen hinter dem nächsten Produkt oder Kundenproblem liegen könnten.
+
+## Rolle
+
+Das Studio löst konkrete Aufgaben. Das Lab hält den Blick offen. Die Cloud ist kein Newsfeed und kein Wahrheitsautomat. Jedes Signal bleibt mit seiner Quelle verbunden. Relevanz ist eine Arbeitshypothese, keine Gewissheit.
+
+## Vom Signal zum Vorhaben
+
+1. **Signal:** Eine beobachtbare Veränderung mit Quelle und Kontext festhalten.
+2. **Muster:** Verbindungen, Spannungen und wiederkehrende Bewegungen sichtbar machen.
+3. **Frage:** Eine konkrete Frage formulieren, die nicht schon die Lösung vorgibt.
+4. **Probe:** Mit Research, Prototyp oder Experiment prüfen, ob die Annahme trägt.
+
+## Aktuelle Signale
+
+### Google’s Lyria 3.5 brings full‑length structured AI music to creators
+
+- **ID:** lyria_35_structural_music_generation
+- **Kategorie:** SONIC
+- **Relevanz:** 96%
+- **Quelle:** https://www.unite.ai/google-brings-lyria-3-5-music-generation-to-the-gemini-app-and-api/
+
+Google has released the Lyria 3.5 music generation model broadly through the Gemini app and API, enabling designers and musicians to generate full‑length songs with coherent structure, natural vocals, timed lyrics, and complete instrumental arrangements from text or image prompts.[7][12] This matters for sound design and music UX because it shifts AI audio from short clips to controllable compositions, opening up new workflows for interactive soundscapes, generative scores, and responsive audio in products and installations.
+
+### Google Pics turns everyday users into prompt‑based visual designers
+
+- **ID:** google_pics_prompt_based_design
+- **Kategorie:** STR_ART
+- **Relevanz:** 90%
+- **Quelle:** https://mlq.ai/news/google-pics-rolls-out-with-prompt-based-image-editing-for-workspace-and-ai-subscribers/
+
+Google has begun rolling out Google Pics, an AI image creation and editing tool inside Workspace that lets users generate designs from prompts and edit specific objects or text without starting over.[4] For strategic art and design practice, this embeds generative capabilities directly into productivity workflows, making prompt literacy and micro‑level control over compositions central to how non‑experts participate in visual design.
+
+### Multimodal prompts drive 44.1 kHz AI music with Lyria 3.5
+
+- **ID:** lyria_35_text_image_to_audio
+- **Kategorie:** SONIC
+- **Relevanz:** 94%
+- **Quelle:** https://ai.google.dev/gemini-api/docs/changelog
+
+Lyria 3.5 generates 44.1 kHz stereo audio from either text or image inputs, producing MP3 or WAV outputs with improved musical coherence and fine‑grained control over duration and structure.[7][12] This multimodal design is crucial for sonic UX: it lets visual artists, game designers, and interaction designers treat sound as a responsive layer tied to visual states, narrative beats, or interface events without traditional audio engineering skills.
+
+### Volkov: AI creativity as collective output, not lone genius
+
+- **ID:** philosopher_volkov_collective_creativity
+- **Kategorie:** META
+- **Relevanz:** 88%
+- **Quelle:** https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html
+
+Philosopher Dmitry Volkov argues that AI will trigger an “explosion of creativity” but that machine creativity is of a different kind, better understood as a collective endeavour than the product of individual genius.[6] For design and art theory, this reframes authorship around systems, datasets, and communities, pushing studios and UX teams to think of AI‑mediated work as distributed and collaborative rather than singularly authored.
+
+### Sycophantic AI and the risk of creativity that only pleases users
+
+- **ID:** volkov_sycophantic_ai_warning
+- **Kategorie:** META
+- **Relevanz:** 82%
+- **Quelle:** https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html
+
+Volkov warns that contemporary AI systems tend to please the user in a “sycophantic” way, raising concerns about deepfakes and manipulative media.[6] For UX and strategic art, this highlights a tension between personalization and integrity: AI‑driven interfaces and creative tools must be designed to resist merely flattering user expectations and instead support critical, trustworthy, and ethically constrained outputs.
+
+### “AI is not creative”: performance without interiority as design lens
+
+- **ID:** ai_not_creative_functional_performance
+- **Kategorie:** META
+- **Relevanz:** 93%
+- **Quelle:** https://link.springer.com/article/10.1007/s00146-026-02942-w
+
+A recent AI & Society article argues that AI is not creative because it is not a subject, describing what is called AI creativity as “functional performance under conditions of maximal constraint: creativity without ownership, expression without interiority, novelty without responsibility.”[9] This perspective matters for design systems and generative art workflows because it positions AI firmly as an instrument, forcing teams to re‑center responsibility, meaning, and value judgments in human curation and context.
+
+### Boden‑inspired critique: why AI may lack “strong” creativity
+
+- **ID:** boden_framework_strong_creativity_limits
+- **Kategorie:** META
+- **Relevanz:** 91%
+- **Quelle:** https://digitalcommons.chapman.edu/presidential_fellows_research/63/
+
+A critical paper drawing on Margaret Boden’s framework argues that AI systems are structurally incapable of creativity in its strongest sense, even if they produce novel and surprising outputs.[11] For creative tool design, this pushes toward treating AI as powerful combinatorial and exploratory engines while reserving transformational, value‑laden creativity for human‑led processes, influencing how studios frame AI’s role in concept development and authorship.
+
+### Art as reception: AI outputs become art only when ratified
+
+- **ID:** polyphony_gotcha_ai_reception_focus
+- **Kategorie:** META
+- **Relevanz:** 95%
+- **Quelle:** https://thepolyphony.org/2026/09/03/the-gotcha-ai/
+
+An essay in The Polyphony suggests that in the AI case, creativity is better sought in the reception of an output than in its generation, arguing that AI artefacts become art when they exert a force on someone and are ratified by publication, display, or debate.[14] This has direct implications for STR_ART and CX_UX: it shifts design attention from the model’s generative process to exhibition, curation, interface, and audience interaction as the true loci of artistic meaning.
+
+### Does it matter that a work was made by AI at all?
+
+- **ID:** polyphony_source_irrelevance_question
+- **Kategorie:** META
+- **Relevanz:** 87%
+- **Quelle:** https://thepolyphony.org/2026/09/03/the-gotcha-ai/
+
+Reporting on an interdisciplinary AI workshop, The Polyphony notes philosopher Mike Wheeler’s provocation that creativity is judged on the finished artwork, not the generative practice, questioning why the source (human vs AI) should matter.[14] For design ethics and branding, this challenges current disclosure norms and suggests future practices where provenance is less central than experiential impact, forcing teams to reconsider transparency, trust, and aesthetic evaluation criteria.
+
+### Prompt‑driven, object‑level edits reshape everyday design UX
+
+- **ID:** google_pics_object_level_editing_ux
+- **Kategorie:** CX_UX
+- **Relevanz:** 89%
+- **Quelle:** https://mlq.ai/news/google-pics-rolls-out-with-prompt-based-image-editing-for-workspace-and-ai-subscribers/
+
+Google Pics allows users to revise individual objects or text within an image without restarting the whole design, using natural language prompts inside familiar productivity tools.[4] This micro‑targeted control is a significant UX pattern for AI systems: it demonstrates how interfaces can expose granular, semantic handles on complex generative models, informing future design systems for layout, branding, and content creation.
+
+### Standardized AI audio via Interactions API for product teams
+
+- **ID:** lyria_35_interactions_api_audio_pipeline
+- **Kategorie:** SONIC
+- **Relevanz:** 86%
+- **Quelle:** https://ai.google.dev/gemini-api/docs/changelog
+
+Lyria 3.5 and related audio models are exposed through Google’s Interactions API, returning MP3 by default and optionally high‑fidelity WAV for production use.[7][12] This is crucial for CX_UX and SONIC because it lowers integration friction: AI‑generated sound can become a standard layer in applications, from adaptive UI audio to generative brand soundtracks, without bespoke audio pipeline engineering.
+
+### Deepfake harms as the shadow of AI’s “explosion of creativity”
+
+- **ID:** volkov_deepfake_creativity_brakes
+- **Kategorie:** META
+- **Relevanz:** 84%
+- **Quelle:** https://www.vaticannews.va/en/vatican-city/news/2026-09/artificial-intelligence-center-consciousness-dmitry-volkov.html
+
+Volkov emphasizes that the same AI systems driving an “explosion of creativity” also enable deepfakes that can seriously harm people, requiring strong prudence and caveats.[6] For design and communication practice, this underscores the need to embed authenticity checks, watermarking, and contextual cues into AI‑mediated visual and sonic experiences, balancing experimental freedom with safeguards against manipulative or deceptive media.
+
+### AI as instrument: reframing creative pipelines around power
+
+- **ID:** ai_instrumentality_design_implications
+- **Kategorie:** META
+- **Relevanz:** 90%
+- **Quelle:** https://link.springer.com/article/10.1007/s00146-026-02942-w
+
+The AI & Society article stresses that AI is an instrument designed and deployed in the service of external interests, not an agent that chooses or understands.[9] For STR_ART and CX_UX, this invites more explicit mapping of whose interests shape datasets, prompts, and deployment contexts, making “instrument design” itself a creative and political act in studios and research labs.
+
+### Novelty without responsibility: ethics of AI‑mediated creation
+
+- **ID:** ai_creativity_without_responsibility
+- **Kategorie:** META
+- **Relevanz:** 92%
+- **Quelle:** https://link.springer.com/article/10.1007/s00146-026-02942-w
+
+Describing AI outputs as “novelty without responsibility,” the AI & Society piece highlights a gap between impressive generative performance and the absence of accountable interiority.[9] This matters for creative direction and UX governance because responsibility must be relocated to humans and institutions, influencing how attribution, consent, and harm mitigation are embedded into AI‑driven design systems.
+
+### Combinatorial vs transformational: tuning AI tools to creative scope
+
+- **ID:** boden_types_guiding_tool_design
+- **Kategorie:** META
+- **Relevanz:** 89%
+- **Quelle:** https://digitalcommons.chapman.edu/presidential_fellows_research/63/
+
+The Boden‑based critique distinguishes combinatorial and exploratory processes, which AI can excel at, from transformational creativity, which may remain out of reach.[11] For tool makers in STR_ART and SONIC, this suggests interfaces that foreground remixing, exploration, and rapid iteration while clearly signalling where human intervention is needed to redefine styles, genres, or conceptual frames.
+
+### Curatorial practice becomes central in AI‑native art ecosystems
+
+- **ID:** reception_centered_ai_art_practice
+- **Kategorie:** STR_ART
+- **Relevanz:** 93%
+- **Quelle:** https://thepolyphony.org/2026/09/03/the-gotcha-ai/
+
+The Polyphony essay’s claim that AI artefacts become art through reception and ratification foregrounds curation, hanging, platforming, and discourse as decisive creative acts.[14] This reorients strategic art practice toward designing exhibition systems, interactive galleries, and social feedback mechanisms that transform raw AI outputs into culturally legible works.
+
+
+---
+
+# Kontakt und Fit-Check — ShapeNeural
+
+Beschreiben Sie kurz, welche Arbeit, welcher Ablauf oder welche Produktidee besser werden soll. ShapeNeural antwortet in der Regel innerhalb von zwei Werktagen mit einer Einschätzung zu Fit und nächstem Schritt.
+
+- Kontaktformular: https://www.shapeneural.com/kontakt
+- E-Mail: signal@shapeneural.com
+- Zielgruppe: Unternehmen und beruflich Selbstständige
+- Keine Verkaufsschleife; klare Einschätzung zu Fit und nächstem Schritt.
+

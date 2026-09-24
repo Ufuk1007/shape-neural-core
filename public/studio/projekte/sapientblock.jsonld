@@ -1,0 +1,177 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shapeneural.com/#organization",
+      "name": "ShapeNeural",
+      "legalName": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/favicon.png"
+      },
+      "email": "signal@shapeneural.com",
+      "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wasserhofstraße 47",
+        "postalCode": "60529",
+        "addressLocality": "Frankfurt am Main",
+        "addressCountry": "DE"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Deutschland"
+        },
+        {
+          "@type": "Place",
+          "name": "Remote"
+        }
+      ],
+      "knowsAbout": [
+        "Angewandte künstliche Intelligenz",
+        "KI-Workspaces",
+        "KI-Agenten",
+        "Workflow-Automatisierung",
+        "Digitale Produktentwicklung",
+        "AI Enablement",
+        "Human-in-the-loop-Systeme"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.shapeneural.com/#website",
+      "name": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.shapeneural.com/studio/projekte/sapientblock#webpage",
+      "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+      "name": "SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural",
+      "description": "Eine Intelligence-Plattform, die Unternehmensanalyse, semantisches Matching, Ideenentwicklung und Content Operations verbindet.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/#website"
+      },
+      "about": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
+      },
+      "dateModified": "2026-09-24"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ShapeNeural",
+          "item": "https://www.shapeneural.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projekte",
+          "item": "https://www.shapeneural.com/studio/projekte"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SAPIENTBLOCK",
+          "item": "https://www.shapeneural.com/studio/projekte/sapientblock"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "CreativeWork"
+      ],
+      "@id": "https://www.shapeneural.com/studio/projekte/sapientblock#project",
+      "name": "SAPIENTBLOCK",
+      "url": "https://www.shapeneural.com/studio/projekte/sapientblock",
+      "sameAs": "https://sapientblock.com",
+      "description": "SAPIENTBLOCK ist eine wachsende Intelligence-Plattform für Blockchain-Anwendungen. Sie analysiert den Kontext eines Unternehmens, gleicht ihn mit hunderten veröffentlichten Use Cases aus 74 Branchen ab und übersetzt das Ergebnis in relevante Beispiele, neue Ideen und nächste Schritte.",
+      "abstract": "Wie wird aus einer abstrakten Technologiefrage ein belastbarer Entscheidungs- und Innovationsprozess?",
+      "applicationCategory": "BLOCKCHAIN",
+      "operatingSystem": "Web",
+      "dateCreated": "2024",
+      "dateModified": "2026-09-24",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "creator": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/studio/projekte#collection"
+      },
+      "keywords": [
+        "BLOCKCHAIN",
+        "AI",
+        "ANALYTICS"
+      ],
+      "featureList": [
+        "Unternehmensanalyse",
+        "Semantisches Matching",
+        "Ideengenerator",
+        "Insights & Benchmarks",
+        "Content Operations",
+        "LLM-Lesbarkeit"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Projektstatus",
+          "value": "LIVE"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Projekttyp",
+          "value": "Partnerprojekt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zusammenarbeit",
+          "value": "BLOCKCHAIN REALLABOR"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Wert für übertragbare Kundenprojekte",
+          "value": "Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zentrale Erkenntnis",
+          "value": "Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb."
+        }
+      ],
+      "citation": [
+        "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/"
+      ],
+      "image": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
+    }
+  ]
+}

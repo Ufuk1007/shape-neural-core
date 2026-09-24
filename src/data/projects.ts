@@ -22,6 +22,7 @@ export interface Project {
   slug: string;
   title: string;
   status: "LIVE" | "BETA" | "ARCHIVED";
+  kind: "OWN_PRODUCT" | "EXPERIMENT" | "PARTNER_PROJECT" | "CLIENT_PROJECT";
   collaboration: string;
   collaborationUrl?: string;
   brief: string;
@@ -45,6 +46,7 @@ export const PROJECTS: Project[] = [
     collaborationUrl: "https://blockchain-reallabor.de/showroom-bcrl/use-case-bot/",
     year: 2024,
     status: "LIVE",
+    kind: "PARTNER_PROJECT",
     category: "BLOCKCHAIN",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
     brief: "AI-powered blockchain intelligence for the German Mittelstand. The platform analyses a company profile, matches it against 326 published use cases across 74 industries and turns the result into relevant examples, new ideas and next steps. Its content pipeline also prepares knowledge for web, social distribution, search engines and LLMs. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
@@ -61,6 +63,7 @@ export const PROJECTS: Project[] = [
     collaboration: "INDEPENDENT",
     year: 2024,
     status: "BETA",
+    kind: "EXPERIMENT",
     category: "BIOMETRIC_AI",
     tags: ["BIOMETRIC_AI", "EMOTION_RECOGNITION", "MUSIC_GENERATION"],
     brief: "A multi-modal emotion recognition system that distinguishes between displayed and experienced emotion — then generates music that responds to what you actually feel, not what you show. The system fuses facial expression analysis, gaze tracking, and pupil dynamics in real-time, entirely within the browser. No server ever sees your biometric data.",
@@ -77,6 +80,7 @@ export const PROJECTS: Project[] = [
     collaboration: "INDEPENDENT",
     year: 2025,
     status: "BETA",
+    kind: "OWN_PRODUCT",
     category: "AI_ANALYSIS",
     tags: ["AI_ANALYSIS", "DECISION_INTELLIGENCE", "SAAS"],
     brief: "An AI-orchestrated problem decomposition engine that treats complex problems like an experienced consultant would — systematically breaking them down, illuminating them from multiple perspectives, enriching them with external research, and deepening the analysis iteratively over days and weeks. The system runs a multi-LLM pipeline autonomously. You bring the problem. It builds the clarity.",
@@ -94,6 +98,7 @@ export const PROJECTS: Project[] = [
     collaboration: "INDEPENDENT",
     year: 2026,
     status: "LIVE",
+    kind: "OWN_PRODUCT",
     category: "REGIONAL_AI_EVIDENCE",
     tags: ["PUBLIC_DATA", "AI_IMPACT", "DECISION_INTELLIGENCE"],
     brief: "A regional evidence platform that connects German employment statistics with international research on how generative AI may affect occupational tasks. Veniora makes the result inspectable for all 401 districts and cities — with sources, limits and methodology visible at every step.",
@@ -110,6 +115,7 @@ export const PROJECTS: Project[] = [
     collaboration: "INDEPENDENT",
     year: 2023,
     status: "ARCHIVED",
+    kind: "EXPERIMENT",
     category: "CRYPTO_EDUCATION",
     tags: ["CRYPTO_EDUCATION", "STORYTELLING", "AI_PERSONAS"],
     brief: "A crypto-education platform where digital currencies take human form. Each cryptocurrency is mapped to one of Jung's 12 archetypes, given a personality shaped by the Plutchik emotion model, and brought to life through AI-generated narratives, voice, and video. The result: complex blockchain concepts become memorable characters you can actually relate to.",
@@ -127,6 +133,7 @@ export const PROJECTS: Project[] = [
     collaboration: "INDEPENDENT",
     year: 2025,
     status: "BETA",
+    kind: "OWN_PRODUCT",
     category: "AI_PLATFORM",
     tags: ["AI_PLATFORM", "POTENTIAL_ANALYSIS", "STRATEGY"],
     brief: "An AI-powered potential analysis platform that translates the abstract promise of artificial intelligence into personalized, actionable insight — for companies, employees, and individuals. Three distinct analysis pipelines, one shared knowledge base of 318 curated AI use cases, and an autonomous Creative Guild of 10 AI agents that generate tailored articles and visuals based on your specific context.",
@@ -144,6 +151,7 @@ export const PROJECTS: Project[] = [
     collaboration: "INDEPENDENT",
     year: 2025,
     status: "LIVE",
+    kind: "EXPERIMENT",
     category: "GENERATIVE_AI",
     tags: ["GENERATIVE_AI", "FINTECH", "AUDIO"],
     brief: "Real-time Bitcoin market data translated into a continuous AI-generated soundscape. The system decomposes market signals across five temporal layers — from monthly macro trends to individual whale transactions — and maps each layer to a distinct musical dimension. The output is a 24/7 livestream where the music genuinely reflects market state: not a gimmick, but an information-dense audio layer that evolves with every trade.",

@@ -1,0 +1,56 @@
+# ShapeNeural
+
+> Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.
+
+Designed Intelligence. AI systems that move people, not just data.
+
+Stand: 2026-09-24. Primärsprache ist Deutsch; die Website besitzt einen Deutsch/Englisch-Umschalter. Kanonische Domain: https://www.shapeneural.com.
+
+## Was ShapeNeural ist
+
+ShapeNeural ist ein unabhängiges Studio für angewandte KI in Frankfurt am Main und remote. Das Studio verbindet Beratung, Produktentwicklung, Workflow-Umsetzung, Betrieb und Enablement für kleine Unternehmen, kompakte Teams und beruflich Selbstständige. Die Angebote sind bewusst begrenzt; Preisangaben sind Netto-Orientierungen und keine automatischen Vertragsangebote.
+
+## Hauptseiten
+
+- [Startseite](https://www.shapeneural.com/) · [Markdown](https://www.shapeneural.com/index.md) · [JSON-LD](https://www.shapeneural.com/schema.jsonld)
+- [Leistungen und Preise](https://www.shapeneural.com/studio/leistungen) · [Markdown](https://www.shapeneural.com/studio/leistungen.md) · [JSON-LD](https://www.shapeneural.com/studio/leistungen.jsonld) · [Service-Katalog](https://www.shapeneural.com/studio/leistungen/catalog.json)
+- [Projektportfolio](https://www.shapeneural.com/studio/projekte) · [Markdown](https://www.shapeneural.com/studio/projekte.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte.jsonld) · [Projekt-Katalog](https://www.shapeneural.com/studio/projekte/catalog.json)
+- [ShapeNeural Lab](https://www.shapeneural.com/studio/lab) · [Markdown](https://www.shapeneural.com/studio/lab.md) · [JSON-LD](https://www.shapeneural.com/studio/lab.jsonld)
+- [Kontakt und Fit-Check](https://www.shapeneural.com/kontakt) · [Markdown](https://www.shapeneural.com/kontakt.md)
+
+## Leistungen
+
+- **AUGMENT / AI Workspace Setup:** Eine eingerichtete Arbeitsumgebung mit 2–5 direkt nutzbaren Anwendungsfällen. Typisch 1–2 Wochen; Orientierung: 2.900–6.500 € netto.
+- **TRANSFORM / AI Workflow Build:** Ein implementierter, getesteter Workflow mit klaren menschlichen Kontrollpunkten. Typisch 3–6 Wochen; Orientierung: 7.500–18.000 € netto.
+- **CREATE / AI Product Sprint:** Ein funktionaler Prototyp, reale Erkenntnisse und eine klare Go-, Change- oder Stop-Entscheidung. Typisch 3–5 Wochen; Orientierung: 9.500–22.000 € netto.
+- **Focus Day:** Opportunity Map und klare Empfehlung – auch ohne Folgeprojekt. Ein Arbeitstag plus Vorbereitung; 950 € netto.
+
+## Projekte
+
+- [SAPIENTBLOCK](https://www.shapeneural.com/studio/projekte/sapientblock) — Partnerprojekt, Status LIVE. [Markdown](https://www.shapeneural.com/studio/projekte/sapientblock.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/sapientblock.jsonld)
+- [MELODEYE](https://www.shapeneural.com/studio/projekte/melodeye) — Experiment, Status BETA. [Markdown](https://www.shapeneural.com/studio/projekte/melodeye.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/melodeye.jsonld)
+- [PROBLAIM](https://www.shapeneural.com/studio/projekte/problaim) — Eigenes Produkt, Status BETA. [Markdown](https://www.shapeneural.com/studio/projekte/problaim.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/problaim.jsonld)
+- [VENIORA](https://www.shapeneural.com/studio/projekte/veniora) — Eigenes Produkt, Status LIVE. [Markdown](https://www.shapeneural.com/studio/projekte/veniora.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/veniora.jsonld)
+- [HUMANCRYP.TO](https://www.shapeneural.com/studio/projekte/humancrypto) — Experiment, Status ARCHIVED. [Markdown](https://www.shapeneural.com/studio/projekte/humancrypto.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/humancrypto.jsonld)
+- [SAPIENTSHIFT](https://www.shapeneural.com/studio/projekte/sapientshift) — Eigenes Produkt, Status BETA. [Markdown](https://www.shapeneural.com/studio/projekte/sapientshift.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/sapientshift.jsonld)
+- [BITCOIN SOUNDSCAPE](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape) — Experiment, Status LIVE. [Markdown](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape.md) · [JSON-LD](https://www.shapeneural.com/studio/projekte/bitcoin-soundscape.jsonld)
+
+## Provenienz und Interpretationsregeln
+
+- „Eigenes Produkt“, „Experiment“, „Partnerprojekt“ und „Kundenprojekt“ sind getrennte Projekttypen. Ein Experiment oder Demonstrator ist kein Kundenprojekt.
+- LIVE, BETA und ARCHIVED beschreiben den veröffentlichten Projektstatus, nicht automatisch Nutzerzahlen oder wirtschaftlichen Erfolg.
+- Zahlen auf Projektseiten werden nur in ihrem ausdrücklich genannten Kontext verwendet. Bei SAPIENTBLOCK beschreiben 326 und 74 den publizierten Use-Case-Bestand und die abgedeckten Branchen, nicht Kunden oder Nutzer.
+- Die Signal Cloud ist eine kuratierte Forschungsoberfläche. Relevanzwerte sind Arbeitshypothesen, keine objektiven Wahrheiten.
+- Rechtlich verbindliche Anbieterangaben stehen ausschließlich im [Impressum](https://www.shapeneural.com/impressum).
+
+## Volltext und Discovery
+
+- [Vollständige LLM-Fassung](https://www.shapeneural.com/llms-full.txt)
+- [Sitemap](https://www.shapeneural.com/sitemap.xml)
+- [robots.txt](https://www.shapeneural.com/robots.txt)
+- [Portfolio-Dataset](https://www.shapeneural.com/studio/projekte/dataset.jsonld)
+
+## Kontakt
+
+- E-Mail: signal@shapeneural.com
+- [Kurzer Fit-Check](https://www.shapeneural.com/kontakt)

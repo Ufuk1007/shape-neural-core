@@ -1,0 +1,171 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shapeneural.com/#organization",
+      "name": "ShapeNeural",
+      "legalName": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/favicon.png"
+      },
+      "email": "signal@shapeneural.com",
+      "slogan": "Designed Intelligence. AI systems that move people, not just data.",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Wasserhofstraße 47",
+        "postalCode": "60529",
+        "addressLocality": "Frankfurt am Main",
+        "addressCountry": "DE"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Deutschland"
+        },
+        {
+          "@type": "Place",
+          "name": "Remote"
+        }
+      ],
+      "knowsAbout": [
+        "Angewandte künstliche Intelligenz",
+        "KI-Workspaces",
+        "KI-Agenten",
+        "Workflow-Automatisierung",
+        "Digitale Produktentwicklung",
+        "AI Enablement",
+        "Human-in-the-loop-Systeme"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.shapeneural.com/#website",
+      "name": "ShapeNeural",
+      "url": "https://www.shapeneural.com",
+      "description": "Unabhängiges KI-Produktstudio für kleine Unternehmen, kompakte Teams und Selbstständige. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht digitale Produktideen testbar.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.shapeneural.com/studio/projekte/problaim#webpage",
+      "url": "https://www.shapeneural.com/studio/projekte/problaim",
+      "name": "PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural",
+      "description": "Eine autonome Multi-LLM-Pipeline, die komplexe Probleme in überprüfbare Perspektiven und fortlaufende Analysen zerlegt.",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/#website"
+      },
+      "about": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
+      },
+      "dateModified": "2026-09-24"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ShapeNeural",
+          "item": "https://www.shapeneural.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projekte",
+          "item": "https://www.shapeneural.com/studio/projekte"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "PROBLAIM",
+          "item": "https://www.shapeneural.com/studio/projekte/problaim"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "CreativeWork"
+      ],
+      "@id": "https://www.shapeneural.com/studio/projekte/problaim#project",
+      "name": "PROBLAIM",
+      "url": "https://www.shapeneural.com/studio/projekte/problaim",
+      "sameAs": "https://problaim.com",
+      "description": "PROBLAIM behandelt Problemanalyse als lebenden Prozess. Eine Multi-LLM-Pipeline zerlegt Fragestellungen, beleuchtet sie aus zwölf Perspektiven, ergänzt Recherche und vertieft die Analyse über Zeit.",
+      "abstract": "Wie entsteht aus einem komplexen Problem fortlaufend bessere Klarheit?",
+      "applicationCategory": "AI ANALYSIS",
+      "operatingSystem": "Web",
+      "dateCreated": "2025",
+      "dateModified": "2026-09-24",
+      "inLanguage": [
+        "de-DE",
+        "en-GB"
+      ],
+      "creator": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://www.shapeneural.com/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://www.shapeneural.com/studio/projekte#collection"
+      },
+      "keywords": [
+        "AI_ANALYSIS",
+        "DECISION_INTELLIGENCE",
+        "SAAS"
+      ],
+      "featureList": [
+        "Problemzerlegung",
+        "Perspektiven",
+        "Fortlaufende Analyse"
+      ],
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Projektstatus",
+          "value": "BETA"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Projekttyp",
+          "value": "Eigenes Produkt"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zusammenarbeit",
+          "value": "INDEPENDENT"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Wert für übertragbare Kundenprojekte",
+          "value": "Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Zentrale Erkenntnis",
+          "value": "Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten."
+        }
+      ],
+      "image": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
+    }
+  ]
+}

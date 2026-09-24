@@ -4,6 +4,11 @@ import type { Project } from "@/data/projects";
 import type { StudioLanguage } from "@/hooks/use-studio-language";
 import { PROJECT_SUMMARIES } from "@/data/studio";
 
+const kindLabels = {
+  de: { OWN_PRODUCT: "Eigenes Produkt", EXPERIMENT: "Experiment", PARTNER_PROJECT: "Partnerprojekt", CLIENT_PROJECT: "Kundenprojekt" },
+  en: { OWN_PRODUCT: "Own product", EXPERIMENT: "Experiment", PARTNER_PROJECT: "Partner project", CLIENT_PROJECT: "Client project" },
+} as const;
+
 export function StudioProjectVisual({ project }: { project: Project }) {
   const host = project.url ? new URL(project.url).hostname.replace(/^www\./, "") : "shapeneural.com";
 
@@ -23,7 +28,7 @@ export default function StudioProjectCard({ project, language, featured = false 
     <Link className={`ss-project-card ${featured ? "ss-project-card--featured" : ""}`} to={`/studio/projekte/${project.slug}`}>
       <StudioProjectVisual project={project} />
       <div className="ss-project-card__copy">
-        <small>{project.category.replaceAll("_", " ")} / {project.year}</small>
+        <small>{kindLabels[language][project.kind]} · {project.category.replaceAll("_", " ")} / {project.year}</small>
         <h3>{project.title.replaceAll("_", " ")}</h3>
         <p>{PROJECT_SUMMARIES[project.slug]?.[language] ?? project.brief}</p>
         <strong>{language === "de" ? "Projekt ansehen" : "View project"}<ArrowRight size={16} /></strong>

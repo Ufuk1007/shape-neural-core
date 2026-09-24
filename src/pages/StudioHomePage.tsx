@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowDown, ArrowRight, Check } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
@@ -9,6 +8,7 @@ import { StudioFooter, StudioHeader } from "@/components/StudioChrome";
 import { useStudioLanguage } from "@/hooks/use-studio-language";
 import StudioProjectCard from "@/components/StudioProjectCard";
 import BindruneLogo from "@/components/BindruneLogo";
+import StudioMeta from "@/components/StudioMeta";
 import stageFriction from "@/assets/stage-friction.webp";
 import stageClarity from "@/assets/stage-clarity.webp";
 import stageSystem from "@/assets/stage-system.webp";
@@ -114,13 +114,14 @@ export default function StudioHomePage() {
   const previewProjects = ["sapientshift", "problaim", "veniora"].map((slug) => PROJECTS.find((project) => project.slug === slug)!);
 
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const timer = window.setInterval(() => setFrame((current) => (current + 1) % HERO_FRAMES.length), 3200);
     return () => window.clearInterval(timer);
   }, []);
 
   return (
     <div className="ss-site">
-      <Helmet><title>{language === "de" ? "ShapeNeural — KI-Produktstudio" : "ShapeNeural — Applied AI Studio"}</title><meta name="description" content={t.heroBody} /></Helmet>
+      <StudioMeta title={language === "de" ? "ShapeNeural — KI-Produktstudio" : "ShapeNeural — Applied AI Studio"} description={t.heroBody} path="/" language={language} />
       <StudioHeader language={language} onLanguage={() => setLanguage(language === "de" ? "en" : "de")} />
       <main>
         <section className="ss-hero">
@@ -180,7 +181,7 @@ export default function StudioHomePage() {
           <div><p className="ss-eyebrow">{t.responsibilityLabel}</p><h2>{t.responsibilityTitle}</h2><p>{t.responsibilityBody}</p><div className="ss-control-flow"><span>INTENT</span><ArrowRight /><span>AI ACTION</span><ArrowRight /><span>HUMAN CHECK</span><ArrowRight /><span>RELEASE</span></div></div>
         </section>
 
-        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:signal@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a><BindruneLogo size={50} onDark={false} /></section>
+        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><Link className="ss-button ss-button--dark" to="/kontakt">{t.cta}<ArrowRight size={18} /></Link><BindruneLogo size={50} onDark={false} /></section>
       </main>
       <StudioFooter language={language} />
     </div>

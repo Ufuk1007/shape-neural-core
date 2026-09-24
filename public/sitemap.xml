@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://www.shapeneural.com/</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>1.0</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/leistungen</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/lab</loc><lastmod>2026-09-24</lastmod><changefreq>weekly</changefreq><priority>0.7</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/kontakt</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/sapientblock</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=sapientblock</image:loc><image:title>SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/melodeye</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=melodeye</image:loc><image:title>MELODEYE: Emotion AI &amp; adaptive Musik | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/problaim</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=problaim</image:loc><image:title>PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/veniora</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=veniora</image:loc><image:title>VENIORA: regionale KI-Evidenzplattform | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/humancrypto</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=humancrypto</image:loc><image:title>HUMANCRYP.TO: KI-Storytelling-Experiment | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/sapientshift</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=sapientshift</image:loc><image:title>SAPIENTSHIFT: KI-Potenzialanalyse-Plattform | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/studio/projekte/bitcoin-soundscape</loc><lastmod>2026-09-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <image:image><image:loc>https://www.shapeneural.com/api/og-image?type=project&amp;slug=bitcoin-soundscape</image:loc><image:title>Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural</image:title></image:image>
+  </url>
+  <url><loc>https://www.shapeneural.com/impressum</loc><lastmod>2026-09-24</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/datenschutz</loc><lastmod>2026-09-24</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+  <url><loc>https://www.shapeneural.com/agb</loc><lastmod>2026-09-24</lastmod><changefreq>yearly</changefreq><priority>0.2</priority>
+  </url>
+</urlset>

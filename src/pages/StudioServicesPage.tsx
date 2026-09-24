@@ -1,9 +1,9 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, Check, Minus } from "lucide-react";
 import { StudioFooter, StudioHeader } from "@/components/StudioChrome";
 import { useStudioLanguage } from "@/hooks/use-studio-language";
 import { STUDIO_OFFERS } from "@/data/studio";
+import StudioMeta from "@/components/StudioMeta";
 import workshopImage from "@/assets/module-workshop.webp";
 import workflowImage from "@/assets/stage-clarity.webp";
 import productImage from "@/assets/stage-system.webp";
@@ -23,6 +23,9 @@ const copy = {
     path: "Ihre Ausgangslage",
     choose: "Zum Angebot",
     result: "Konkretes Ergebnis",
+    duration: "Typische Dauer",
+    price: "Preisorientierung",
+    prerequisites: "Damit wir starten können",
     includes: "Was enthalten ist",
     phases: "Typischer Ablauf",
     limits: "Bewusst nicht enthalten",
@@ -32,13 +35,17 @@ const copy = {
     honestBody: "Create ist durch eigene Produkte und reale Builds belegt. Für Augment und Transform zeigen wir zunächst nachvollziehbare Setups, Methoden und Demonstratoren. Externe Kundencases werden erst dann als solche bezeichnet, wenn sie existieren und gezeigt werden dürfen.",
     pricingLabel: "Preislogik",
     pricingTitle: "Klarer Umfang. Verbindlicher Preis. Keine endlose Agentur-Retainerlogik.",
-    pricingBody: "Der genaue Preis folgt nach einer kurzen Bestandsaufnahme, weil Werkzeuge, Datenlage und Integrationen den Aufwand bestimmen. Danach erhalten Sie einen klaren Projektumfang mit einem festen Preis und expliziten Grenzen.",
+    pricingBody: "Die Bandbreiten geben kleinen Unternehmen und selbstständig Tätigen eine belastbare erste Orientierung. Der verbindliche Festpreis folgt nach der Bestandsaufnahme und berücksichtigt Werkzeuge, Datenlage, Integrationen und Risiko.",
     pricing: [
-      ["AI Workspace Setup", "Festpreis für ein abgegrenztes Setup", "Nach kurzer Sichtung Ihrer Arbeitsweise und vorhandenen Werkzeuge."],
-      ["AI Workflow Build", "Projektpreis für einen Workflow", "Für einen klar definierten Ablauf mit vereinbarten Kontrollpunkten."],
-      ["AI Product Sprint", "Sprintpreis für Prototyp + Validierung", "Für eine konkrete Produktfrage und einen entscheidungsfähigen Prototyp."],
+      ["AI Workspace Setup", "1–2 Wochen", "2.900–6.500 € netto", "Ein abgegrenztes Setup mit 2–5 direkt nutzbaren Anwendungen."],
+      ["AI Workflow Build", "3–6 Wochen", "7.500–18.000 € netto", "Ein implementierter Workflow mit Kontrollen, Evaluation und Übergabe."],
+      ["AI Product Sprint", "3–5 Wochen", "9.500–22.000 € netto", "Ein funktionaler Prototyp mit realer Validierung und Entscheidung."],
     ],
-    focus: "Ist der richtige Weg noch unklar? Ein bezahlter Focus Day kann Problem, Priorität und sinnvollsten Einstieg bestimmen.",
+    focusLabel: "Der kleinste bezahlte Einstieg",
+    focusTitle: "Focus Day",
+    focusPrice: "950 € netto · ein fokussierter Arbeitstag plus Vorbereitung",
+    focusBody: "Noch unklar, womit Sie beginnen sollen? Wir priorisieren ein reales Problem, prüfen Daten und Werkzeuge und verdichten den sinnvollsten nächsten Schritt. Sie erhalten eine Opportunity Map und eine klare Empfehlung – auch wenn daraus kein Folgeprojekt entsteht.",
+    focusCta: "Focus Day anfragen",
     methodLabel: "Die Arbeitsmethode",
     methodTitle: "Das Angebot bestimmt das Was. Fünf Phasen sichern das Wie.",
     method: [
@@ -59,7 +66,7 @@ const copy = {
       ["Muss ich mich bereits für ein KI-Tool entschieden haben?", "Nein. Die Werkzeugwahl folgt aus Arbeit, Daten, Risiko und Budget – nicht aus einer bevorzugten Plattform."],
       ["Was passiert mit sensiblen Daten?", "Datenflüsse und Anbieter werden vor der Umsetzung sichtbar gemacht. Wenn ein Vorhaben besondere rechtliche oder sicherheitskritische Anforderungen hat, wird das früh benannt und gegebenenfalls mit Spezialisten ergänzt."],
       ["Was passiert nach dem Projekt?", "Sie erhalten ein nutzbares System, Dokumentation und eine Übergabe. Ein klar begrenztes Care-Modell kann bei Bedarf separat vereinbart werden; ein 24/7 Managed Service ist nicht Teil des Kernangebots."],
-      ["Warum stehen hier noch keine Zahlen?", "Weil ein belastbarer Festpreis erst nach der kurzen Bestandsaufnahme seriös ist. Die Preislogik ist transparent; konkrete Preispunkte werden finalisiert, sobald Umfang und wiederholbare Standards ausreichend validiert sind."],
+      ["Sind die genannten Preise verbindlich?", "Die Bandbreiten sind eine ehrliche Orientierung für typische Vorhaben. Nach einer kurzen Bestandsaufnahme erhalten Sie einen klar abgegrenzten Umfang und einen verbindlichen Festpreis. Lizenzen oder ausdrücklich vereinbarte Fremdkosten werden separat ausgewiesen."],
     ],
     ctaLabel: "Ein guter Einstieg ist klein genug, um ihn wirklich zu beginnen.",
     ctaTitle: "Welche Arbeit soll durch KI besser werden?",
@@ -72,6 +79,9 @@ const copy = {
     path: "Your starting point",
     choose: "Explore offer",
     result: "Concrete outcome",
+    duration: "Typical duration",
+    price: "Price guide",
+    prerequisites: "What we need to begin",
     includes: "What is included",
     phases: "Typical flow",
     limits: "Deliberately not included",
@@ -81,13 +91,17 @@ const copy = {
     honestBody: "Create is supported by products and real builds of our own. For Augment and Transform, we initially show inspectable setups, methods and demonstrators. External client cases will only be labelled as such once they exist and can be shared.",
     pricingLabel: "Pricing logic",
     pricingTitle: "Clear scope. Committed price. No endless agency retainer.",
-    pricingBody: "The exact price follows a short assessment because tools, data and integrations determine the effort. You then receive a clearly scoped project, a fixed price and explicit boundaries.",
+    pricingBody: "The ranges give small organisations and independent professionals a reliable first guide. A committed fixed price follows the assessment and reflects tools, data, integrations and risk.",
     pricing: [
-      ["AI Workspace Setup", "Fixed price for a bounded setup", "After a short review of your work and existing tools."],
-      ["AI Workflow Build", "Project price for one workflow", "For one clearly defined process with agreed checkpoints."],
-      ["AI Product Sprint", "Sprint price for prototype + validation", "For one product question and a prototype that enables a decision."],
+      ["AI Workspace Setup", "1–2 weeks", "€2,900–€6,500 excl. VAT", "A bounded setup with 2–5 applications ready for use."],
+      ["AI Workflow Build", "3–6 weeks", "€7,500–€18,000 excl. VAT", "An implemented workflow with controls, evaluation and handover."],
+      ["AI Product Sprint", "3–5 weeks", "€9,500–€22,000 excl. VAT", "A functional prototype with real validation and a decision."],
     ],
-    focus: "Not sure which path is right? A paid Focus Day can clarify the problem, priority and most useful entry point.",
+    focusLabel: "The smallest paid entry point",
+    focusTitle: "Focus Day",
+    focusPrice: "€950 excl. VAT · one focused working day plus preparation",
+    focusBody: "Not sure where to begin? We prioritise one real problem, assess the data and tools and define the most useful next step. You receive an opportunity map and a clear recommendation — even if no follow-on project is needed.",
+    focusCta: "Request a Focus Day",
     methodLabel: "The working method",
     methodTitle: "The offer defines the what. Five phases protect the how.",
     method: [
@@ -108,7 +122,7 @@ const copy = {
       ["Do I need to have selected an AI tool?", "No. Tool selection follows the work, data, risk and budget — not a preferred platform."],
       ["What happens to sensitive data?", "Data flows and providers are made visible before implementation. If the work has exceptional legal or security requirements, that is raised early and specialist partners may be recommended."],
       ["What happens after the project?", "You receive a usable system, documentation and handover. A bounded care model can be agreed separately; a 24/7 managed service is not part of the core offer."],
-      ["Why are there no numbers yet?", "Because a reliable fixed price is only responsible after a short assessment. The pricing logic is transparent; numerical price points will be published once scope and repeatable standards are sufficiently validated."],
+      ["Are the prices binding?", "The ranges are an honest guide for typical engagements. After a short assessment, you receive a clearly bounded scope and a committed fixed price. Licences or explicitly agreed third-party costs are shown separately."],
     ],
     ctaLabel: "A good entry point is small enough to actually begin.",
     ctaTitle: "What work should AI make better?",
@@ -122,7 +136,7 @@ export default function StudioServicesPage() {
 
   return (
     <div className="ss-site">
-      <Helmet><title>{language === "de" ? "Leistungen & Preise" : "Services & pricing"} — ShapeNeural</title><meta name="description" content={t.intro} /></Helmet>
+      <StudioMeta title={language === "de" ? "Leistungen" : "Services"} description={t.intro} path="/studio/leistungen" language={language} />
       <StudioHeader language={language} onLanguage={() => setLanguage(language === "de" ? "en" : "de")} />
       <main>
         <section className="ss-page-hero ss-page-hero--services">
@@ -141,13 +155,13 @@ export default function StudioServicesPage() {
               <header><span>{offer.number}</span><small>{offer.label}</small><p>{offer.proof === "portfolio" ? t.proofPortfolio : t.proofExample}</p></header>
               <div className="ss-offer__intro"><div><p className="ss-eyebrow">{offer.title[language]}</p><h2>{offer.promise[language]}</h2></div><div><p>{offer.description[language]}</p><strong>{offer.frame[language]}</strong></div></div>
               <figure className="ss-offer__media"><img src={OFFER_IMAGES[offer.id]} alt="" loading="lazy" decoding="async" /><figcaption><span>{offer.number} / {offer.label}</span><p>{t.imageCaptions[offer.id]}</p></figcaption></figure>
-              <div className="ss-offer__result"><small>{t.result}</small><h3>{offer.outcome[language]}</h3></div>
+              <div className="ss-offer__result"><small>{t.result}</small><h3>{offer.outcome[language]}</h3><div className="ss-offer__commercial"><span><small>{t.duration}</small><strong>{offer.duration[language]}</strong></span><span><small>{t.price}</small><strong>{offer.price[language]}</strong></span><span><small>{t.prerequisites}</small><strong>{offer.prerequisites[language]}</strong></span></div></div>
               <div className="ss-offer__details">
                 <div><h4>{t.includes}</h4><ul>{offer.deliverables[language].map((item) => <li key={item}><Check size={15} />{item}</li>)}</ul></div>
                 <div><h4>{t.phases}</h4><ol>{offer.phases[language].map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}</ol></div>
                 <div><h4>{t.limits}</h4><ul>{offer.boundaries[language].map((item) => <li key={item}><Minus size={15} />{item}</li>)}</ul></div>
               </div>
-              <a className="ss-text-link" href={`mailto:signal@shapeneural.com?subject=${encodeURIComponent(offer.title[language])}`}>{t.choose}<ArrowRight size={16} /></a>
+              <Link className="ss-text-link" to={`/kontakt?offer=${offer.id}`}>{t.choose}<ArrowRight size={16} /></Link>
             </section>
           ))}
         </div>
@@ -156,8 +170,8 @@ export default function StudioServicesPage() {
 
         <section className="ss-pricing ss-section">
           <header><p className="ss-eyebrow">{t.pricingLabel}</p><h2>{t.pricingTitle}</h2><p>{t.pricingBody}</p></header>
-          <div>{t.pricing.map(([name, model, note], index) => <article key={name}><span>0{index + 1}</span><h3>{name}</h3><strong>{model}</strong><p>{note}</p></article>)}</div>
-          <aside>{t.focus}</aside>
+          <div>{t.pricing.map(([name, duration, range, note], index) => <article key={name}><span>0{index + 1}</span><h3>{name}</h3><strong>{duration}</strong><b>{range}</b><p>{note}</p></article>)}</div>
+          <aside className="ss-focus-day"><div><small>{t.focusLabel}</small><h3>{t.focusTitle}</h3><strong>{t.focusPrice}</strong><p>{t.focusBody}</p></div><Link className="ss-button ss-button--dark" to="/kontakt?offer=focus-day">{t.focusCta}<ArrowRight size={18} /></Link></aside>
         </section>
 
         <section className="ss-method ss-method--light ss-section">
@@ -167,7 +181,7 @@ export default function StudioServicesPage() {
 
         <section className="ss-faq ss-section"><header><p className="ss-eyebrow">{t.faqLabel}</p></header><div>{t.faq.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:signal@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a></section>
+        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><Link className="ss-button ss-button--dark" to="/kontakt">{t.cta}<ArrowRight size={18} /></Link></section>
       </main>
       <StudioFooter language={language} />
     </div>

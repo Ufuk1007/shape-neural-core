@@ -67,7 +67,7 @@ const ProfileSection = () => {
             <div className="flex flex-wrap">
               <span className="text-[#0f0] mr-2">{">"}</span>
               <span className="text-gray-400 w-20 sm:w-24">IDENT:</span>
-              <span className="text-white tracking-wider">UFUK AVCI</span>
+              <span className="text-white tracking-wider">SHAPENEURAL</span>
             </div>
             <div className="flex flex-wrap">
               <span className="text-[#0f0] mr-2">{">"}</span>
@@ -118,7 +118,7 @@ const ProfileSection = () => {
                 >
                   <img
                     src={profilePortrait}
-                    alt="Ufuk Avci"
+                    alt="ShapeNeural Studio"
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.currentTarget.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect fill='%23666' width='400' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23fff' font-size='120' font-family='monospace'%3EUA%3C/text%3E%3C/svg%3E";

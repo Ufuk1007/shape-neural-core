@@ -479,8 +479,8 @@ function ModuleLibrary() {
 
         {renderFrame(14,
           <section className="candidate-founder">
-            <div className="candidate-founder__portrait"><img src={profilePortrait} alt="Ufuk Avci" /><span>FOUNDER / OPERATOR</span></div>
-            <div className="candidate-founder__copy"><p>{language === "de" ? "DIREKTER SENIOR-ZUGANG" : "DIRECT SENIOR ACCESS"}</p><h2>{language === "de" ? "Die Person im Gespräch bleibt auch im Projekt verantwortlich." : "The person in the conversation remains accountable in the work."}</h2><blockquote>{language === "de" ? "ShapeNeural verbindet 20+ Jahre Experience- und Transformationsarbeit mit einem agentisch verstärkten Produktstudio." : "ShapeNeural combines 20+ years of experience and transformation work with an agent-amplified product studio."}</blockquote><div><strong>Ufuk Avci</strong><span>AI & CX Strategy / Product / Venture Building</span><span>Frankfurt / Remote</span></div></div>
+            <div className="candidate-founder__portrait"><img src={profilePortrait} alt="ShapeNeural Studio" /><span>STUDIO / OPERATOR</span></div>
+            <div className="candidate-founder__copy"><p>{language === "de" ? "DIREKTER SENIOR-ZUGANG" : "DIRECT SENIOR ACCESS"}</p><h2>{language === "de" ? "Die Verantwortung bleibt von der Beratung bis zur Umsetzung durchgängig." : "Accountability remains continuous from advisory through implementation."}</h2><blockquote>{language === "de" ? "ShapeNeural verbindet Experience- und Transformationsarbeit mit einem agentisch verstärkten Produktstudio." : "ShapeNeural combines experience and transformation work with an agent-amplified product studio."}</blockquote><div><strong>ShapeNeural Studio</strong><span>AI & CX Strategy / Product / Venture Building</span><span>Frankfurt / Remote</span></div></div>
           </section>
         )}
 

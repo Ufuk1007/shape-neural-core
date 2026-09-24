@@ -1,0 +1,21 @@
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+
+const notFoundHtml = `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>404 — ShapeNeural</title>
+    <style>
+      *{box-sizing:border-box}body{margin:0;background:#0b0e0c;color:#fbfbf7;font-family:Arial,sans-serif}.page{min-height:100vh;display:grid;grid-template-rows:auto 1fr}.brand{border-bottom:1px solid #343834;font:700 12px/1 monospace;letter-spacing:.1em;padding:28px 5vw}.main{align-content:center;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:42px 42px;display:grid;padding:10vw 5vw}.code{color:#b7ff39;font:600 12px/1 monospace;letter-spacing:.12em}.main h1{font-size:clamp(4rem,11vw,10rem);letter-spacing:-.07em;line-height:.86;margin:34px 0;max-width:900px}.main p{color:#b7bab5;font-size:18px;line-height:1.6;max-width:600px}.main a{align-items:center;background:#b7ff39;color:#101310;display:inline-flex;font-size:14px;font-weight:800;justify-content:space-between;margin-top:42px;min-height:56px;padding:0 22px;text-decoration:none;width:min(100%,270px)}
+    </style>
+  </head>
+  <body><div class="page"><div class="brand">SHAPENEURAL®</div><main class="main"><span class="code">404 / KEIN SIGNAL</span><h1>Diese Seite existiert nicht.</h1><p>Der gesuchte Pfad gehört nicht zur aktuellen ShapeNeural Website. Von der Startseite aus finden Sie Leistungen, Projekte und das Lab.</p><a href="/">Zur Startseite <span>→</span></a></main></div></body>
+</html>`;
+
+export default function handler(_req: VercelRequest, res: VercelResponse) {
+  res.setHeader("Content-Type", "text/html; charset=utf-8");
+  res.setHeader("X-Robots-Tag", "noindex, nofollow");
+  return res.status(404).send(notFoundHtml);
+}

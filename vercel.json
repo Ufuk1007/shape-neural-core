@@ -1,8 +1,90 @@
 {
+  "redirects": [
+    { "source": "/studio", "destination": "/", "permanent": true },
+    { "source": "/lab", "destination": "/studio/lab", "permanent": true },
+    { "source": "/signals", "destination": "/studio/lab", "permanent": true },
+    { "source": "/directions", "destination": "/", "permanent": true },
+    { "source": "/modules", "destination": "/", "permanent": true },
+    { "source": "/modules/projects/:slug", "destination": "/studio/projekte/:slug", "permanent": true },
+    { "source": "/project/:slug", "destination": "/studio/projekte/:slug", "permanent": true },
+    { "source": "/insight/:slug", "destination": "/studio/lab", "permanent": true },
+    { "source": "/alliance", "destination": "/", "permanent": true },
+    { "source": "/legal", "destination": "/impressum", "permanent": true },
+    { "source": "/studio/impressum", "destination": "/impressum", "permanent": true },
+    { "source": "/studio/datenschutz", "destination": "/datenschutz", "permanent": true },
+    { "source": "/studio/agb", "destination": "/agb", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/project/:slug", "destination": "/api/og?path=/project/:slug" },
-    { "source": "/insight/:slug", "destination": "/api/og?path=/insight/:slug" },
-    { "source": "/forge", "destination": "/api/og?path=/forge" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/", "destination": "/api/og?path=/" },
+    { "source": "/studio/leistungen", "destination": "/api/og?path=/studio/leistungen" },
+    { "source": "/studio/projekte", "destination": "/api/og?path=/studio/projekte" },
+    { "source": "/studio/projekte/:slug((?!.*\\.).*)", "destination": "/api/og?path=/studio/projekte/:slug" },
+    { "source": "/studio/lab", "destination": "/api/og?path=/studio/lab" },
+    { "source": "/kontakt", "destination": "/api/og?path=/kontakt" },
+    { "source": "/impressum", "destination": "/api/og?path=/impressum" },
+    { "source": "/datenschutz", "destination": "/api/og?path=/datenschutz" },
+    { "source": "/agb", "destination": "/api/og?path=/agb" },
+    { "source": "/:path((?!.*\\.).*)", "destination": "/api/not-found" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" },
+        { "key": "X-Robots-Tag", "value": "noindex, follow" }
+      ]
+    },
+    {
+      "source": "/llms-full.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" },
+        { "key": "X-Robots-Tag", "value": "noindex, follow" }
+      ]
+    },
+    {
+      "source": "/(.*).md",
+      "headers": [
+        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" },
+        { "key": "X-Robots-Tag", "value": "noindex, follow" }
+      ]
+    },
+    {
+      "source": "/(.*).jsonld",
+      "headers": [
+        { "key": "Content-Type", "value": "application/ld+json; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" },
+        { "key": "X-Robots-Tag", "value": "noindex, follow" }
+      ]
+    },
+    {
+      "source": "/studio/(.*)/catalog.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" },
+        { "key": "X-Robots-Tag", "value": "noindex, follow" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400" }
+      ]
+    }
   ]
 }

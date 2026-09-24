@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "ShapeNeural Project Portfolio",
+  "description": "Machine-readable catalog of ShapeNeural own products, experiments and partner projects.",
+  "url": "https://www.shapeneural.com/studio/projekte",
+  "dateModified": "2026-09-24",
+  "creator": {
+    "@id": "https://www.shapeneural.com/#organization",
+    "name": "ShapeNeural"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://www.shapeneural.com/studio/projekte/catalog.json",
+    "encodingFormat": "application/json"
+  },
+  "hasPart": [
+    {
+      "@type": "CreativeWork",
+      "name": "SAPIENTBLOCK",
+      "url": "https://www.shapeneural.com/studio/projekte/sapientblock"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "MELODEYE",
+      "url": "https://www.shapeneural.com/studio/projekte/melodeye"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "PROBLAIM",
+      "url": "https://www.shapeneural.com/studio/projekte/problaim"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "VENIORA",
+      "url": "https://www.shapeneural.com/studio/projekte/veniora"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "HUMANCRYP.TO",
+      "url": "https://www.shapeneural.com/studio/projekte/humancrypto"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "SAPIENTSHIFT",
+      "url": "https://www.shapeneural.com/studio/projekte/sapientshift"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "BITCOIN SOUNDSCAPE",
+      "url": "https://www.shapeneural.com/studio/projekte/bitcoin-soundscape"
+    }
+  ]
+}

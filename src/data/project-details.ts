@@ -35,6 +35,17 @@ type ProjectNarrative = {
   learning: string;
   mediaCaptions: string[];
   facts: Array<{ value: string; label: string }>;
+  evidence?: {
+    builtTitle: string;
+    builtBody: string;
+    builtItems: string[];
+    validationTitle: string;
+    validationBody: string;
+    validationItems: string[];
+    usageTitle: string;
+    usageBody: string;
+    usageItems: string[];
+  };
 };
 
 export type ProjectDetail = {
@@ -77,6 +88,32 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         learning: "Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb.",
         mediaCaptions: ["Aktueller Live-Einstieg: Eine Unternehmenswebsite startet die 90-Sekunden-Analyse.", "Der Explorer macht 326 reale Anwendungen filterbar und vergleichbar.", "Reale Use Cases bilden die Evidenzschicht des Systems.", "Redaktionell aufbereitete Beispiele machen komplexe Anwendungen zugänglich.", "Der Bestand verbindet wirtschaftliche, öffentliche und ökologische Kontexte."],
         facts: [{ value: "326", label: "veröffentlichte Use Cases" }, { value: "74", label: "abgedeckte Branchen" }, { value: "6", label: "verknüpfte Systembausteine" }],
+        evidence: {
+          builtTitle: "Was ShapeNeural konkret gebaut hat",
+          builtBody: "Nicht nur die Oberfläche, sondern den zusammenhängenden Produkt- und Publikationsprozess von der Datenstruktur bis zur Ausspielung.",
+          builtItems: [
+            "Strukturiertes Wissensmodell für 326 veröffentlichte Anwendungen",
+            "90-Sekunden-Unternehmensanalyse und semantisches RAG-Matching",
+            "Cross-Industry-Ideengenerator für neue Produkt- und Prozessansätze",
+            "Redaktionelle Pipeline für Website- und Social-Media-Inhalte",
+            "Maschinenlesbare Veröffentlichung über statische Seiten, Markdown, JSON-LD und llms.txt",
+          ],
+          validationTitle: "Wie Qualität geprüft wird",
+          validationBody: "SAPIENTBLOCK behandelt KI-Ausgaben als prüfbare Vorschläge. Relevanz entsteht aus realen Fällen, sichtbaren Quellen und redaktioneller Kontrolle – nicht aus einer unbelegten Modellantwort.",
+          validationItems: [
+            "Matching-Ergebnisse bleiben mit veröffentlichten Use Cases verbunden",
+            "74 Branchen testen, ob das Modell über unterschiedliche Kontexte trägt",
+            "Öffentliche Produktoberflächen machen Ergebnisse und Grenzen inspizierbar",
+            "Inhalte werden vor Veröffentlichung redaktionell geprüft",
+          ],
+          usageTitle: "Was heute real genutzt werden kann",
+          usageBody: "Explorer und Unternehmensanalyse sind öffentlich erreichbar. Die Plattform dient zugleich als belastbarer Demonstrator dafür, wie ein wissensintensiver Bestand zu Analyse, Empfehlungen und Content Operations wird.",
+          usageItems: [
+            "Öffentlicher Explorer mit 326 Fällen und Filterung nach Branchen",
+            "Live-Unternehmensanalyse als Einstieg in passende Anwendungen",
+            "Die genannten Zahlen beschreiben den veröffentlichten Bestand – nicht Kunden- oder Nutzerzahlen",
+          ],
+        },
       },
       en: {
         question: "How can an abstract technology question become a robust decision and innovation process?",
@@ -103,6 +140,32 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         learning: "The strongest AI capability is not a single answer. Value comes from connecting reliable evidence, context, traceable matching and editorially controlled operations.",
         mediaCaptions: ["Current live entry: a company website starts the 90-second analysis.", "The Explorer makes 326 real applications filterable and comparable.", "Real use cases form the system’s evidence layer.", "Editorial presentation makes complex applications approachable.", "The collection links commercial, public and environmental contexts."],
         facts: [{ value: "326", label: "published use cases" }, { value: "74", label: "industries covered" }, { value: "6", label: "connected capabilities" }],
+        evidence: {
+          builtTitle: "What ShapeNeural built",
+          builtBody: "Not only the interface, but the connected product and publishing system from data structure to distribution.",
+          builtItems: [
+            "A structured knowledge model for 326 published applications",
+            "A 90-second company analysis and semantic RAG matching",
+            "A cross-industry idea generator for new product and workflow opportunities",
+            "An editorial pipeline for website and social content",
+            "Machine-readable publishing through static pages, Markdown, JSON-LD and llms.txt",
+          ],
+          validationTitle: "How quality is tested",
+          validationBody: "SAPIENTBLOCK treats AI output as an inspectable proposal. Relevance comes from real cases, visible sources and editorial control rather than an unsupported model response.",
+          validationItems: [
+            "Matching results remain connected to published use cases",
+            "Coverage across 74 industries tests whether the model travels across contexts",
+            "Public product surfaces make results and limitations inspectable",
+            "Content receives editorial review before publication",
+          ],
+          usageTitle: "What can be used today",
+          usageBody: "The explorer and company analysis are publicly available. The platform also acts as a working demonstrator for turning a knowledge-heavy collection into analysis, recommendations and content operations.",
+          usageItems: [
+            "A public explorer with 326 cases and industry filtering",
+            "A live company analysis that connects context with relevant applications",
+            "The figures describe the published corpus — not customer or user numbers",
+          ],
+        },
       },
     },
   },

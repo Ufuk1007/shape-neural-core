@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/generate-spa-shell.js",
+    "build": "node scripts/generate-machine-content.js && vite build && node scripts/generate-spa-shell.js",
+    "machine:build": "node scripts/generate-machine-content.js",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
