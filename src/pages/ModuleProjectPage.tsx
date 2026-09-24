@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, ArrowRight, ExternalLink, Languages } from "lucide-react";
 import BindruneLogo from "@/components/BindruneLogo";
+import { useStudioLanguage } from "@/hooks/use-studio-language";
 import { findProjectBySlug, PROJECTS } from "@/data/projects";
 import "@/module-library.css";
 
@@ -85,23 +85,26 @@ const detailCopyEn: typeof detailCopy = {
 };
 
 function ModuleProjectPage() {
-  const [language, setLanguage] = useState<"de" | "en">("de");
+  const { language, setLanguage } = useStudioLanguage();
+  const location = useLocation();
   const { slug = "" } = useParams();
   const project = findProjectBySlug(slug);
-  if (!project) return <Navigate to="/modules" replace />;
+  const studioMode = location.pathname.startsWith("/studio/");
+  const projectsBase = studioMode ? "/studio/projekte" : "/modules/projects";
+  if (!project) return <Navigate to={studioMode ? "/studio/projekte" : "/modules"} replace />;
   const copy = language === "de" ? detailCopy[slug] : detailCopyEn[slug];
   const nextIndex = (PROJECTS.findIndex((item) => item.slug === slug) + 1) % PROJECTS.length;
   const next = PROJECTS[nextIndex];
   const localImage = project.image && !project.image.startsWith("/__l5e");
 
   return (
-    <div className="mp-shell">
+    <div className={`mp-shell ${studioMode ? "mp-shell--studio" : ""}`}>
       <Helmet>
         <title>{project.title.replaceAll("_", " ")} — ShapeNeural Project</title>
         <meta name="description" content={copy.summary} />
       </Helmet>
       <header className="mp-header">
-        <Link to="/modules#module-10"><ArrowLeft size={15} />Module Library</Link>
+        <Link to={studioMode ? "/studio/projekte" : "/modules#module-10"}><ArrowLeft size={15} />{studioMode ? (language === "de" ? "Alle Projekte" : "All projects") : "Module Library"}</Link>
         <div><BindruneLogo size={28} onDark /><span>SHAPENEURAL® / PROJECT SYSTEM</span></div>
         <div className="mp-header__tools"><span>{project.id} / {project.status}</span><button onClick={() => setLanguage(language === "de" ? "en" : "de")}><Languages size={14} />{language.toUpperCase()}</button></div>
       </header>
@@ -143,7 +146,7 @@ function ModuleProjectPage() {
 
         <section className="mp-actions">
           {project.url && <a href={project.url} target="_blank" rel="noreferrer">{language === "de" ? "Live-Projekt öffnen" : "Open live project"}<ExternalLink size={17} /></a>}
-          <Link to={`/modules/projects/${next.slug}`}><span>{language === "de" ? "NÄCHSTES PROJEKT" : "NEXT PROJECT"}</span><strong>{next.title.replaceAll("_", " ")}</strong><ArrowRight /></Link>
+          <Link to={`${projectsBase}/${next.slug}`}><span>{language === "de" ? "NÄCHSTES PROJEKT" : "NEXT PROJECT"}</span><strong>{next.title.replaceAll("_", " ")}</strong><ArrowRight /></Link>
         </section>
       </main>
     </div>

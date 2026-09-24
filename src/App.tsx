@@ -17,6 +17,10 @@ const DesignDirections = lazy(() => import("./pages/DesignDirections"));
 const SignalsPage = lazy(() => import("./pages/SignalsPage"));
 const ModuleLibrary = lazy(() => import("./pages/ModuleLibrary"));
 const ModuleProjectPage = lazy(() => import("./pages/ModuleProjectPage"));
+const StudioHomePage = lazy(() => import("./pages/StudioHomePage"));
+const StudioServicesPage = lazy(() => import("./pages/StudioServicesPage"));
+const StudioProjectsPage = lazy(() => import("./pages/StudioProjectsPage"));
+const StudioLabPage = lazy(() => import("./pages/StudioLabPage"));
 
 const App = () => (
   <HelmetProvider>
@@ -63,6 +67,26 @@ const App = () => (
                   <ModuleProjectPage />
                 </Suspense>
               }
+            />
+            <Route
+              path="/studio"
+              element={<Suspense fallback={null}><StudioHomePage /></Suspense>}
+            />
+            <Route
+              path="/studio/leistungen"
+              element={<Suspense fallback={null}><StudioServicesPage /></Suspense>}
+            />
+            <Route
+              path="/studio/projekte"
+              element={<Suspense fallback={null}><StudioProjectsPage /></Suspense>}
+            />
+            <Route
+              path="/studio/projekte/:slug"
+              element={<Suspense fallback={null}><ModuleProjectPage /></Suspense>}
+            />
+            <Route
+              path="/studio/lab"
+              element={<Suspense fallback={null}><StudioLabPage /></Suspense>}
             />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
