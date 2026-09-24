@@ -1,18 +1,19 @@
 import type { StudioLanguage } from "@/hooks/use-studio-language";
-import sapientblockHome from "@/assets/project-media/sapientblock-home.jpg";
-import sapientblockSystem from "@/assets/project-media/sapientblock-system.jpg";
-import sapientblockDetail from "@/assets/project-media/sapientblock-detail.jpg";
+import sapientblockHome from "@/assets/project-media/sapientblock-live-home.jpg";
+import sapientblockExplorer from "@/assets/project-media/sapientblock-live-explorer.jpg";
 import sapientblockBanking from "@/assets/project-media/sapientblock-usecase-banking.jpg";
 import sapientblockMedia from "@/assets/project-media/sapientblock-usecase-media.jpg";
 import sapientblockClimate from "@/assets/project-media/sapientblock-usecase-climate.jpg";
-import melodeyeHome from "@/assets/project-media/melodeye-home.jpg";
-import melodeyeSystem from "@/assets/project-media/melodeye-system.jpg";
-import problaimHome from "@/assets/project-media/problaim-home.jpg";
-import problaimSystem from "@/assets/project-media/problaim-system.jpg";
+import melodeyeHome from "@/assets/project-media/melodeye-live-home.jpg";
+import melodeyeSystem from "@/assets/project-media/melodeye-live-about.jpg";
+import problaimHome from "@/assets/project-media/problaim-live-home.jpg";
+import problaimSystem from "@/assets/project-media/problaim-live-method.jpg";
+import venioraHome from "@/assets/project-media/veniora-live-home.jpg";
+import venioraRegion from "@/assets/project-media/veniora-live-region.jpg";
 import humancryptoHome from "@/assets/project-media/humancrypto-home.jpg";
 import humancryptoStory from "@/assets/project-media/humancrypto-story.jpg";
-import sapientshiftHome from "@/assets/project-media/sapientshift-home.jpg";
-import sapientshiftSystem from "@/assets/project-media/sapientshift-system.jpg";
+import sapientshiftHome from "@/assets/project-media/sapientshift-live-solutions.jpg";
+import sapientshiftSystem from "@/assets/project-media/sapientshift-live-careers.jpg";
 import bitcoinSoundscape from "@/assets/btc-radio-screenshot.png";
 
 export type ProjectMedia = {
@@ -45,8 +46,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   sapientblock: {
     media: [
       { src: sapientblockHome, device: "laptop" },
-      { src: sapientblockSystem, device: "laptop" },
-      { src: sapientblockDetail, device: "phone" },
+      { src: sapientblockExplorer, device: "laptop" },
       { src: sapientblockBanking, device: "plain" },
       { src: sapientblockMedia, device: "plain" },
       { src: sapientblockClimate, device: "plain" },
@@ -75,8 +75,8 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         ],
         value: "Aus einer unübersichtlichen Technologielandschaft wird eine verständliche, individuelle Entscheidungsgrundlage – und aus statischem Content ein lernendes Produkt.",
         learning: "Die stärkste KI-Funktion ist nicht die einzelne Antwort. Entscheidend ist die Verbindung aus verlässlichen Daten, Kontext, nachvollziehbarem Matching und einem redaktionell kontrollierten Betrieb.",
-        mediaCaptions: ["Frühe Analyseoberfläche: Eine Website wird zum Ausgangspunkt der Einordnung.", "Der Analysepfad verbindet Unternehmenskontext und konkrete Empfehlungen.", "Auch auf kleinen Screens bleibt der Einstieg fokussiert.", "Reale Use Cases bilden die Evidenzschicht des Systems.", "Redaktionell aufbereitete Beispiele machen komplexe Anwendungen zugänglich.", "Der Bestand verbindet wirtschaftliche, öffentliche und ökologische Kontexte."],
-        facts: [{ value: "300+", label: "veröffentlichte Use Cases" }, { value: "74", label: "abgedeckte Branchen" }, { value: "6", label: "verknüpfte Systembausteine" }],
+        mediaCaptions: ["Aktueller Live-Einstieg: Eine Unternehmenswebsite startet die 90-Sekunden-Analyse.", "Der Explorer macht 326 reale Anwendungen filterbar und vergleichbar.", "Reale Use Cases bilden die Evidenzschicht des Systems.", "Redaktionell aufbereitete Beispiele machen komplexe Anwendungen zugänglich.", "Der Bestand verbindet wirtschaftliche, öffentliche und ökologische Kontexte."],
+        facts: [{ value: "326", label: "veröffentlichte Use Cases" }, { value: "74", label: "abgedeckte Branchen" }, { value: "6", label: "verknüpfte Systembausteine" }],
       },
       en: {
         question: "How can an abstract technology question become a robust decision and innovation process?",
@@ -101,13 +101,13 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         ],
         value: "A confusing technology landscape becomes a clear, individual basis for decision-making — while static content becomes a learning product.",
         learning: "The strongest AI capability is not a single answer. Value comes from connecting reliable evidence, context, traceable matching and editorially controlled operations.",
-        mediaCaptions: ["Early analysis surface: a company website starts the assessment.", "The analysis path connects business context and concrete recommendations.", "The focused entry point remains legible on smaller screens.", "Real use cases form the system’s evidence layer.", "Editorial presentation makes complex applications approachable.", "The collection links commercial, public and environmental contexts."],
-        facts: [{ value: "300+", label: "published use cases" }, { value: "74", label: "industries covered" }, { value: "6", label: "connected capabilities" }],
+        mediaCaptions: ["Current live entry: a company website starts the 90-second analysis.", "The Explorer makes 326 real applications filterable and comparable.", "Real use cases form the system’s evidence layer.", "Editorial presentation makes complex applications approachable.", "The collection links commercial, public and environmental contexts."],
+        facts: [{ value: "326", label: "published use cases" }, { value: "74", label: "industries covered" }, { value: "6", label: "connected capabilities" }],
       },
     },
   },
   melodeye: {
-    media: [{ src: melodeyeHome, device: "laptop" }, { src: melodeyeSystem, device: "phone" }],
+    media: [{ src: melodeyeHome, device: "laptop" }, { src: melodeyeSystem, device: "laptop" }],
     narrative: {
       de: {
         question: "Kann ein digitales System auf erlebte statt nur auf gezeigte Emotion reagieren?",
@@ -121,7 +121,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         transfers: [{ title: "Adaptive Interfaces", body: "Digitale Produkte können ihre Dichte oder Unterstützung an Nutzungssignale anpassen." }, { title: "Wellbeing", body: "Reflexions- und Entspannungsangebote können kontextbezogener reagieren, ohne Rohdaten zentral zu speichern." }, { title: "Privacy by design", body: "Sensible Modelle können gezielt auf dem Gerät statt in der Cloud laufen." }],
         value: "Das Projekt untersucht personalisierte Interaktion, ohne biometrische Rohdaten an einen Server zu übertragen.",
         learning: "Multimodale Signale sind aussagekräftiger als ein einzelner Klassifikator – erfordern aber klare Sicherheitslogik und eine bescheidene Interpretation.",
-        mediaCaptions: ["Der Experience-Start verbindet Modellwahl und musikalische Reaktion.", "Die reduzierte Oberfläche macht den experimentellen Charakter sichtbar."],
+        mediaCaptions: ["Der aktuelle Live-Einstieg erklärt Sitzung, lokale Verarbeitung und das visuelle Aufmerksamkeitsfeld.", "Die Über-Ansicht legt Beobachtung, Sensordaten und das einmalige Ergebnis als System offen."],
         facts: [{ value: "3", label: "kombinierte Signalschichten" }, { value: "LOCAL", label: "Verarbeitung biometrischer Daten" }, { value: "BETA", label: "aktiver Experimentstatus" }],
       },
       en: {
@@ -136,7 +136,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         transfers: [{ title: "Adaptive interfaces", body: "Digital products can adapt density or support to signals from actual use." }, { title: "Wellbeing", body: "Reflection and relaxation experiences can react contextually without centralising raw data." }, { title: "Privacy by design", body: "Sensitive models can deliberately run on-device rather than in the cloud." }],
         value: "The project explores personalised interaction without sending raw biometric data to a server.",
         learning: "Multimodal signals offer more context than one classifier, but require explicit safety logic and restrained interpretation.",
-        mediaCaptions: ["The experience start connects model choice and musical response.", "The restrained surface communicates the experimental nature of the work."],
+        mediaCaptions: ["The current live entry explains the session, local processing and visual attention field.", "The about view exposes observation, sensor data and the one-off result as a system."],
         facts: [{ value: "3", label: "combined signal layers" }, { value: "LOCAL", label: "biometric processing" }, { value: "BETA", label: "active experiment" }],
       },
     },
@@ -156,7 +156,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         transfers: [{ title: "Strategische Fragen", body: "Optionen, Annahmen und Evidenz bleiben über mehrere Entscheidungsrunden nachvollziehbar." }, { title: "Research Operations", body: "Wiederkehrende Recherche kann aufgeteilt, bewertet und konsolidiert werden." }, { title: "Vorbereitung von Workshops", body: "Teams beginnen mit einer strukturierten Hypothesen- und Konfliktlandkarte statt mit einem leeren Whiteboard." }],
         value: "Entscheider erhalten keinen einmaligen Antworttext, sondern eine strukturierte Denkoberfläche, die Widersprüche und neue Evidenz aufnehmen kann.",
         learning: "Die Qualität autonomer Analyse hängt weniger von einem einzelnen Modell ab als von Orchestrierung, Perspektivenvielfalt und überprüfbaren Zwischenschritten.",
-        mediaCaptions: ["Der Einstieg beginnt mit einer realen, offenen Problemstellung.", "Analysen werden als nachvollziehbare Struktur statt als Chatverlauf organisiert."],
+        mediaCaptions: ["Der aktuelle Live-Einstieg beginnt mit einer realen, offenen Problemstellung.", "Die Methodenseite macht den vierstufigen Analysepfad als nachvollziehbaren Denkweg sichtbar."],
         facts: [{ value: "12", label: "Perspektivlinsen" }, { value: "4", label: "Phasen der Analyse" }, { value: "MULTI", label: "Modell-Orchestrierung" }],
       },
       en: {
@@ -171,8 +171,59 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         transfers: [{ title: "Strategic questions", body: "Options, assumptions and evidence remain traceable across decision rounds." }, { title: "Research operations", body: "Recurring research can be divided, assessed and consolidated." }, { title: "Workshop preparation", body: "Teams start with a structured map of hypotheses and tensions rather than an empty whiteboard." }],
         value: "Decision-makers gain a structured thinking surface that can absorb contradictions and new evidence — not a one-off answer.",
         learning: "The quality of autonomous analysis depends less on one model than on orchestration, diversity of perspectives and inspectable intermediate steps.",
-        mediaCaptions: ["The experience begins with a real, open problem.", "Analysis is organised as a traceable structure rather than a chat transcript."],
+        mediaCaptions: ["The current live experience begins with a real, open problem.", "The method page makes the four-stage analysis path visible as a traceable way of thinking."],
         facts: [{ value: "12", label: "perspective lenses" }, { value: "4", label: "analysis phases" }, { value: "MULTI", label: "model orchestration" }],
+      },
+    },
+  },
+  veniora: {
+    media: [{ src: venioraHome, device: "laptop" }, { src: venioraRegion, device: "laptop" }],
+    narrative: {
+      de: {
+        question: "Wie wird aus großen öffentlichen Datenbeständen eine belastbare regionale Entscheidungsgrundlage?",
+        summary: "VENIORA verbindet Beschäftigungsdaten der Bundesagentur für Arbeit mit Forschung der International Labour Organization. Für alle 401 Kreise und kreisfreien Städte wird nachvollziehbar, welche Tätigkeiten generative KI technisch berühren könnte – mit Quellen, Grenzen und Methodik direkt am Befund.",
+        challengeTitle: "Zwischen abstrakter KI-Debatte und regionaler Realität fehlt die belastbare Verbindung.",
+        challengeBody: "Bundesweite Durchschnittswerte helfen Kommunen, Kammern und Weiterbildungsakteuren nur begrenzt. VENIORA führt unterschiedlich strukturierte Daten zusammen, kennzeichnet Ableitungen und macht sichtbar, wo die Evidenz trägt – und wo ausdrücklich keine Aussage möglich ist.",
+        systemTitle: "Datenmodell, Methodik und Interface erklären denselben Befund.",
+        capabilities: [
+          { title: "Regionale Datenverbindung", body: "Beschäftigungsstatistik, Berufsklassifikationen und KI-Forschung werden für 401 regionale Einheiten nachvollziehbar verbunden." },
+          { title: "Belastbarkeit sichtbar machen", body: "Direkte Werte, regionale Ableitungen, Quellen und Grenzen bleiben im Interface unterscheidbar." },
+          { title: "Maschinenlesbare Evidenz", body: "Kreisseiten, strukturierte Metadaten und dokumentierte Methodik machen den Bestand für Menschen, Suche und KI-Systeme nutzbar." },
+        ],
+        transferTitle: "Was Organisationen aus VENIORA für eigene Datenprodukte ableiten können.",
+        transferIntro: "Der Case zeigt, wie unterschiedliche öffentliche und interne Daten zu einer verständlichen Entscheidungsebene verbunden werden können – ohne Unsicherheit hinter einer glatten Oberfläche zu verstecken.",
+        transfers: [
+          { title: "Regionale Strategie", body: "Wirtschaftsförderung, Kammern und Weiterbildung erhalten einen gemeinsamen Ausgangspunkt für lokale Prioritäten." },
+          { title: "Evidence Products", body: "Komplexe Datenbestände werden zu zitierbaren Befunden mit klarer Herkunft und nachvollziehbaren Grenzen." },
+          { title: "Responsible AI", body: "Ein Produkt kann zeigen, was ein Modell oder Datensatz nicht aussagt – und dadurch glaubwürdiger werden." },
+        ],
+        value: "Aus Millionen Beschäftigtendaten und internationaler Forschung entsteht eine lesbare regionale Evidenzschicht für konkrete Diskussionen über Arbeit und KI.",
+        learning: "Vertrauen entsteht nicht durch eine möglichst eindeutige Zahl, sondern durch sichtbare Quellen, belastbare Übersetzungsregeln und klar benannte Grenzen.",
+        mediaCaptions: ["Der Live-Einstieg verbindet Kreissuche, Deutschlandkarte und offen dokumentierte Methodik.", "Eine Kreisseite übersetzt Daten in einen zitierbaren Befund mit Zahlen, Quellen und Grenzen."],
+        facts: [{ value: "401", label: "Kreise und kreisfreie Städte" }, { value: "34,7 M", label: "Beschäftigte im Datenbestand" }, { value: "2", label: "offene Primärquellen" }],
+      },
+      en: {
+        question: "How can large public datasets become a robust regional basis for decision-making?",
+        summary: "VENIORA connects employment data from Germany’s Federal Employment Agency with research by the International Labour Organization. For all 401 districts and cities, it makes visible which tasks generative AI could technically affect — with sources, limitations and methodology attached to each finding.",
+        challengeTitle: "The connection between abstract AI debate and regional reality is usually missing.",
+        challengeBody: "National averages offer limited value to municipalities, chambers and training organisations. VENIORA connects differently structured datasets, labels derivations and makes clear where the evidence holds — and where no responsible claim can be made.",
+        systemTitle: "Data model, methodology and interface explain the same finding.",
+        capabilities: [
+          { title: "Regional data connection", body: "Employment statistics, occupational classifications and AI research are connected across 401 regional units." },
+          { title: "Visible robustness", body: "Direct values, regional derivations, sources and limitations remain distinguishable in the interface." },
+          { title: "Machine-readable evidence", body: "District pages, structured metadata and documented methodology make the collection useful to people, search and AI systems." },
+        ],
+        transferTitle: "What organisations can take from VENIORA for their own data products.",
+        transferIntro: "The case shows how public and internal datasets can become an understandable decision layer without hiding uncertainty behind a polished surface.",
+        transfers: [
+          { title: "Regional strategy", body: "Economic development, chambers and training bodies gain a shared starting point for local priorities." },
+          { title: "Evidence products", body: "Complex datasets become citable findings with clear provenance and inspectable limitations." },
+          { title: "Responsible AI", body: "A product can show what a model or dataset does not claim — and become more credible as a result." },
+        ],
+        value: "Millions of employment records and international research become a readable regional evidence layer for concrete conversations about work and AI.",
+        learning: "Trust does not come from the most definitive number. It comes from visible sources, robust translation rules and clearly stated boundaries.",
+        mediaCaptions: ["The live entry combines district search, a Germany map and openly documented methodology.", "A district page translates data into a citable finding with figures, sources and limitations."],
+        facts: [{ value: "401", label: "districts and cities" }, { value: "34.7 M", label: "employees in the dataset" }, { value: "2", label: "open primary sources" }],
       },
     },
   },
@@ -226,7 +277,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         transfers: [{ title: "Beratungsprodukte", body: "Diagnose und Empfehlung können vor einem persönlichen Gespräch strukturiert werden." }, { title: "Mitarbeiterportale", body: "Use Cases lassen sich passend zu Rolle und Reifegrad priorisieren." }, { title: "Content Experiences", body: "Ein Wissensbestand kann personalisierte Lernpfade und Magazine speisen." }],
         value: "Unterschiedliche Zielgruppen erhalten keine generische Trendübersicht, sondern einen priorisierten Ausgangspunkt für eigene Entscheidungen.",
         learning: "Personalisierung wird dann nützlich, wenn sie nicht nur Inhalte variiert, sondern Ausgangslage, Bereitschaft und Handlungsraum berücksichtigt.",
-        mediaCaptions: ["Der Einstieg trennt Zielgruppen, bevor Empfehlungen entstehen.", "Ergebnisse werden als priorisierte Handlungsoptionen statt als Trendliste präsentiert."],
+        mediaCaptions: ["Die aktuelle Lösungsbibliothek ordnet KI-Anwendungen für Prozesse, Produkte und Entscheidungen.", "Die Berufsperspektive übersetzt denselben Wissensbestand in eine konkrete, rollenbezogene Suche."],
         facts: [{ value: "3", label: "getrennte Analysepfade" }, { value: "10", label: "spezialisierte Content-Agenten" }, { value: "BETA", label: "aktiver Produktstatus" }],
       },
       en: {
@@ -241,7 +292,7 @@ export const PROJECT_DETAILS: Record<string, ProjectDetail> = {
         transfers: [{ title: "Advisory products", body: "Diagnosis and recommendation can be structured before a personal conversation." }, { title: "Employee portals", body: "Use cases can be prioritised by role and readiness." }, { title: "Content experiences", body: "A knowledge base can feed personalised learning paths and magazines." }],
         value: "Different audiences receive a prioritised starting point for their own decisions rather than another generic trend overview.",
         learning: "Personalisation becomes useful when it adapts not only content, but the starting point, readiness and room for action.",
-        mediaCaptions: ["The entry point separates audiences before generating recommendations.", "Results appear as prioritised actions rather than a trend list."],
+        mediaCaptions: ["The current solution library organises AI applications for processes, products and decisions.", "The careers perspective translates the same knowledge base into a concrete role-based search."],
         facts: [{ value: "3", label: "distinct analysis paths" }, { value: "10", label: "specialised content agents" }, { value: "BETA", label: "active product state" }],
       },
     },

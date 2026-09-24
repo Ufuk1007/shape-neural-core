@@ -26,13 +26,13 @@ const copy = {
     heroBody: "KI-Systeme, die Menschen bewegen – nicht nur Daten. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht neue Produktideen testbar.",
     primary: "Passenden Einstieg finden",
     secondary: "Arbeit ansehen",
-    definitionLabel: "Eine klare Definition",
+    definitionLabel: "Hello World",
     definition: "ShapeNeural ist ein unabhängiges Studio für angewandte KI. Wir verbessern bestehende Arbeit, gestalten Abläufe neu und machen neue Produktideen real testbar.",
     smallLabel: "Small by design",
     smallTitle: "Direkte Zusammenarbeit. Klar begrenzte Vorhaben. Etwas, das danach existiert.",
     smallBody: "Keine Übergabe zwischen Sales, Beratung und Entwicklung. Die Person, mit der Sie sprechen, strukturiert, konzipiert und baut auch – unterstützt durch ein agentisches Studio-Setup.",
     pathLabel: "Welcher Weg passt zu Ihnen?",
-    pathTitle: "Drei Bewegungen. Ein praktischer nächster Schritt.",
+    pathTitle: "Drei Wege – je nachdem, was heute wirklich gebraucht wird.",
     explore: "Leistung vertiefen",
     materialLabel: "Nicht nur Beratung",
     materialTitle: "Was nach der Zusammenarbeit tatsächlich bleibt.",
@@ -76,13 +76,13 @@ const copy = {
     heroBody: "AI systems that move people, not just data. ShapeNeural configures AI for real use, redesigns workflows and makes new product ideas testable.",
     primary: "Find the right entry point",
     secondary: "Explore the work",
-    definitionLabel: "One clear definition",
+    definitionLabel: "Hello World",
     definition: "ShapeNeural is the independent applied AI studio that improves existing work, redesigns workflows and makes new ideas tangible enough to test.",
     smallLabel: "Small by design",
     smallTitle: "Direct collaboration. Bounded projects. Something that exists afterwards.",
     smallBody: "No handover between sales, consultants and developers. The person you speak with structures, designs and builds the work — supported by an agentic studio setup.",
     pathLabel: "Which path fits you?",
-    pathTitle: "Three movements. One practical next step.",
+    pathTitle: "Three paths — depending on what the work needs now.",
     explore: "Explore service",
     materialLabel: "Beyond advice",
     materialTitle: "What actually remains after the work.",
@@ -128,7 +128,7 @@ export default function StudioHomePage() {
   const t = copy[language];
   const featured = PROJECTS.find((project) => project.slug === "sapientblock")!;
   const featuredMedia = PROJECT_DETAILS.sapientblock.media;
-  const previewProjects = ["problaim", "sapientshift", "melodeye"].map((slug) => PROJECTS.find((project) => project.slug === slug)!);
+  const previewProjects = ["sapientshift", "problaim", "veniora"].map((slug) => PROJECTS.find((project) => project.slug === slug)!);
 
   useEffect(() => {
     const timer = window.setInterval(() => setFrame((current) => (current + 1) % HERO_FRAMES.length), 3200);
@@ -173,7 +173,7 @@ export default function StudioHomePage() {
         <section className="ss-proof ss-section">
           <div className="ss-proof__media">
             <div className="ss-device ss-device--laptop"><div className="ss-device__top"><i /><i /><i /></div>{featured.image && <img src={featured.image} alt="SAPIENTBLOCK analysis interface" />}</div>
-            <div className="ss-proof__covers">{featuredMedia.slice(3).map((item, index) => <img src={item.src} alt={language === "de" ? `SAPIENTBLOCK Use-Case-Motiv ${index + 1}` : `SAPIENTBLOCK use-case visual ${index + 1}`} key={item.src} />)}</div>
+            <div className="ss-proof__covers">{featuredMedia.filter((item) => item.device === "plain").map((item, index) => <img src={item.src} alt={language === "de" ? `SAPIENTBLOCK Use-Case-Motiv ${index + 1}` : `SAPIENTBLOCK use-case visual ${index + 1}`} key={item.src} />)}</div>
             <span>FEATURED PRODUCT / LIVE</span>
           </div>
           <div className="ss-proof__copy"><p className="ss-eyebrow">{t.proofLabel}</p><h2>{t.proofTitle}</h2><p>{t.proofBody}</p><div className="ss-proof__features"><span>{language === "de" ? "Unternehmensanalyse" : "Company analysis"}</span><span>RAG Matching</span><span>{language === "de" ? "Ideengenerator" : "Idea generator"}</span><span>Content Operations</span><span>LLM Readability</span></div><blockquote>{language === "de" ? "Aus einer Technologiedatenbank wurde ein System, das Kontext versteht, Relevanz ordnet und Wissen verteilt." : "A technology database became a system that understands context, prioritises relevance and distributes knowledge."}</blockquote><Link className="ss-text-link" to="/studio/projekte/sapientblock">SAPIENTBLOCK {language === "de" ? "vertiefen" : "case"}<ArrowRight size={16} /></Link></div>

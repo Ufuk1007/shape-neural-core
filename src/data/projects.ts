@@ -1,8 +1,9 @@
-import sapientBlockImg from "@/assets/project-media/sapientblock-home.jpg";
-import melodeyeImg from "@/assets/project-media/melodeye-home.jpg";
-import problaimImg from "@/assets/problaim-screenshot.png";
+import sapientBlockImg from "@/assets/project-media/sapientblock-live-home.jpg";
+import melodeyeImg from "@/assets/project-media/melodeye-live-home.jpg";
+import problaimImg from "@/assets/project-media/problaim-live-home.jpg";
+import venioraImg from "@/assets/project-media/veniora-live-home.jpg";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
-import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
+import sapientshiftImg from "@/assets/project-media/sapientshift-live-solutions.jpg";
 import btcRadioImg from "@/assets/btc-radio-screenshot.png";
 
 export interface Insight {
@@ -46,8 +47,8 @@ export const PROJECTS: Project[] = [
     status: "LIVE",
     category: "BLOCKCHAIN",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
-    brief: "AI-powered blockchain intelligence for the German Mittelstand. The platform analyses a company profile, matches it against 300+ published use cases across 74 industries and turns the result into relevant examples, new ideas and next steps. Its content pipeline also prepares knowledge for web, social distribution, search engines and LLMs. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
-    signalTags: ["300+ PUBLISHED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "AI IDEA GENERATOR", "CONTENT OPERATIONS", "LLM-READABLE PUBLISHING"],
+    brief: "AI-powered blockchain intelligence for the German Mittelstand. The platform analyses a company profile, matches it against 326 published use cases across 74 industries and turns the result into relevant examples, new ideas and next steps. Its content pipeline also prepares knowledge for web, social distribution, search engines and LLMs. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
+    signalTags: ["326 PUBLISHED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "AI IDEA GENERATOR", "CONTENT OPERATIONS", "LLM-READABLE PUBLISHING"],
     techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4", "Perplexity", "Pinecone", "RAG", "Tailwind CSS"],
     image: sapientBlockImg,
     url: "https://sapientblock.com",
@@ -66,7 +67,7 @@ export const PROJECTS: Project[] = [
     signalTags: ["DISPLAYED vs. EXPERIENCED EMOTION", "EMER THEORY", "GAP-AWARE INTELLIGENCE", "SAFETY OVERRIDE LOGIC", "100% BROWSER-BASED BIOMETRICS", "THERAPEUTIC MUSIC GENERATION"],
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
     image: melodeyeImg,
-    // url removed — site under construction
+    url: "https://aura-soundscape-96.vercel.app",
     insights: [],
   },
   {
@@ -88,6 +89,22 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "MOD_04",
+    slug: "veniora",
+    title: "VENIORA",
+    collaboration: "INDEPENDENT",
+    year: 2026,
+    status: "LIVE",
+    category: "REGIONAL_AI_EVIDENCE",
+    tags: ["PUBLIC_DATA", "AI_IMPACT", "DECISION_INTELLIGENCE"],
+    brief: "A regional evidence platform that connects German employment statistics with international research on how generative AI may affect occupational tasks. Veniora makes the result inspectable for all 401 districts and cities — with sources, limits and methodology visible at every step.",
+    signalTags: ["401 DISTRICTS", "34.7M EMPLOYEES", "BA + ILO DATA", "REGIONAL EVIDENCE", "TRANSPARENT METHODOLOGY", "MACHINE-READABLE DATA"],
+    techStack: ["Next.js", "TypeScript", "Public Data", "Geospatial Data", "JSON-LD", "Static Generation"],
+    image: venioraImg,
+    url: "https://veniora.de",
+    insights: [],
+  },
+  {
+    id: "MOD_05",
     slug: "humancrypto",
     title: "HUMANCRYP.TO",
     collaboration: "INDEPENDENT",
@@ -104,7 +121,7 @@ export const PROJECTS: Project[] = [
     insights: [],
   },
   {
-    id: "MOD_05",
+    id: "MOD_06",
     slug: "sapientshift",
     title: "SAPIENTSHIFT",
     collaboration: "INDEPENDENT",
@@ -121,7 +138,7 @@ export const PROJECTS: Project[] = [
     insights: [],
   },
   {
-    id: "MOD_06",
+    id: "MOD_07",
     slug: "bitcoin-soundscape",
     title: "BITCOIN_SOUNDSCAPE",
     collaboration: "INDEPENDENT",

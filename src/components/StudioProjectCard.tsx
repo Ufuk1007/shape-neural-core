@@ -5,9 +5,14 @@ import type { StudioLanguage } from "@/hooks/use-studio-language";
 import { PROJECT_SUMMARIES } from "@/data/studio";
 
 export function StudioProjectVisual({ project }: { project: Project }) {
+  const host = project.url ? new URL(project.url).hostname.replace(/^www\./, "") : "shapeneural.com";
+
   return (
     <div className="ss-project-visual">
-      {project.image && <img src={project.image} alt={`${project.title.replaceAll("_", " ")} product interface`} />}
+      <div className="ss-project-browser">
+        <div className="ss-project-browser__bar"><i /><i /><i /><span>{host}</span></div>
+        {project.image && <img src={project.image} alt={`${project.title.replaceAll("_", " ")} live product interface`} />}
+      </div>
       <span className={`ss-status ss-status--${project.status.toLowerCase()}`}>{project.status}</span>
     </div>
   );

@@ -6,12 +6,12 @@ import type { StudioLanguage } from "@/hooks/use-studio-language";
 
 const nav = {
   de: [
-    ["Leistungen & Preise", "/studio/leistungen"],
+    ["Leistungen", "/studio/leistungen"],
     ["Projekte", "/studio/projekte"],
     ["Lab", "/studio/lab"],
   ],
   en: [
-    ["Services & pricing", "/studio/leistungen"],
+    ["Services", "/studio/leistungen"],
     ["Projects", "/studio/projekte"],
     ["Lab", "/studio/lab"],
   ],
