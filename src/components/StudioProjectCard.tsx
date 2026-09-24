@@ -5,10 +5,9 @@ import type { StudioLanguage } from "@/hooks/use-studio-language";
 import { PROJECT_SUMMARIES } from "@/data/studio";
 
 export function StudioProjectVisual({ project }: { project: Project }) {
-  const hasLocalImage = project.image && !project.image.startsWith("/__l5e");
   return (
     <div className="ss-project-visual">
-      {hasLocalImage ? <img src={project.image} alt="" /> : <div className="ss-project-fallback"><i /><i /><i /><b>{project.title.slice(0, 2)}</b></div>}
+      {project.image && <img src={project.image} alt={`${project.title.replaceAll("_", " ")} product interface`} />}
       <span className={`ss-status ss-status--${project.status.toLowerCase()}`}>{project.status}</span>
     </div>
   );

@@ -127,7 +127,7 @@ export default function StudioServicesPage() {
                 <div><h4>{t.phases}</h4><ol>{offer.phases[language].map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}</ol></div>
                 <div><h4>{t.limits}</h4><ul>{offer.boundaries[language].map((item) => <li key={item}><Minus size={15} />{item}</li>)}</ul></div>
               </div>
-              <a className="ss-text-link" href={`mailto:hello@shapeneural.com?subject=${encodeURIComponent(offer.title[language])}`}>{t.choose}<ArrowRight size={16} /></a>
+              <a className="ss-text-link" href={`mailto:signal@shapeneural.com?subject=${encodeURIComponent(offer.title[language])}`}>{t.choose}<ArrowRight size={16} /></a>
             </section>
           ))}
         </div>
@@ -147,7 +147,7 @@ export default function StudioServicesPage() {
 
         <section className="ss-faq ss-section"><header><p className="ss-eyebrow">{t.faqLabel}</p></header><div>{t.faq.map(([question, answer]) => <details key={question}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div></section>
 
-        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:hello@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a></section>
+        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:signal@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a></section>
       </main>
       <StudioFooter language={language} />
     </div>

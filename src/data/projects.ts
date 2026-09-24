@@ -1,5 +1,5 @@
-import sapientBlockAsset from "@/assets/sapient-block-screenshot.png.asset.json";
-import melodeyeAsset from "@/assets/melodeye-screenshot.png.asset.json";
+import sapientBlockImg from "@/assets/project-media/sapientblock-home.jpg";
+import melodeyeImg from "@/assets/project-media/melodeye-home.jpg";
 import problaimImg from "@/assets/problaim-screenshot.png";
 import humancryptoImg from "@/assets/humancrypto-screenshot.png";
 import sapientshiftImg from "@/assets/sapientshift-screenshot.png";
@@ -46,11 +46,10 @@ export const PROJECTS: Project[] = [
     status: "LIVE",
     category: "BLOCKCHAIN",
     tags: ["BLOCKCHAIN", "AI", "ANALYTICS"],
-    brief: "AI-powered blockchain relevance analysis for the German Mittelstand. The platform ingests a company's profile — via URL crawl or manual input — matches it against 250+ validated use cases across 74 industries, and delivers a data-driven relevance score with concrete recommendations. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
-    signalTags: ["250+ VALIDATED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "REGIONAL INTELLIGENCE", "SELF-REINFORCING DATA FLYWHEEL", "BLOCKCHAIN REALLABOR COLLABORATION"],
+    brief: "AI-powered blockchain intelligence for the German Mittelstand. The platform analyses a company profile, matches it against 300+ published use cases across 74 industries and turns the result into relevant examples, new ideas and next steps. Its content pipeline also prepares knowledge for web, social distribution, search engines and LLMs. Built in collaboration with Blockchain Reallabor (Fraunhofer FIT).",
+    signalTags: ["300+ PUBLISHED USE CASES", "74 INDUSTRY VERTICALS", "RAG-POWERED MATCHING", "AI IDEA GENERATOR", "CONTENT OPERATIONS", "LLM-READABLE PUBLISHING"],
     techStack: ["React", "TypeScript", "Supabase", "OpenAI GPT-4", "Perplexity", "Pinecone", "RAG", "Tailwind CSS"],
-    image: sapientBlockAsset.url,
-    // video removed — using updated screenshot instead
+    image: sapientBlockImg,
     url: "https://sapientblock.com",
     insights: [],
   },
@@ -66,8 +65,7 @@ export const PROJECTS: Project[] = [
     brief: "A multi-modal emotion recognition system that distinguishes between displayed and experienced emotion — then generates music that responds to what you actually feel, not what you show. The system fuses facial expression analysis, gaze tracking, and pupil dynamics in real-time, entirely within the browser. No server ever sees your biometric data.",
     signalTags: ["DISPLAYED vs. EXPERIENCED EMOTION", "EMER THEORY", "GAP-AWARE INTELLIGENCE", "SAFETY OVERRIDE LOGIC", "100% BROWSER-BASED BIOMETRICS", "THERAPEUTIC MUSIC GENERATION"],
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
-    image: melodeyeAsset.url,
-    // video removed — using updated screenshot instead
+    image: melodeyeImg,
     // url removed — site under construction
     insights: [],
   },

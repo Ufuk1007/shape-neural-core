@@ -33,7 +33,7 @@ export function StudioHeader({ language, onLanguage }: { language: StudioLanguag
         {nav[language].map(([label, path]) => (
           <Link className={location.pathname === path ? "is-active" : ""} to={path} key={path}>{label}</Link>
         ))}
-        <a className="ss-header__cta" href="mailto:hello@shapeneural.com?subject=Projektanfrage">
+        <a className="ss-header__cta" href="mailto:signal@shapeneural.com?subject=Projektanfrage">
           {language === "de" ? "Vorhaben besprechen" : "Discuss a project"}<ArrowRight size={15} />
         </a>
       </nav>
@@ -61,8 +61,8 @@ export function StudioFooter({ language }: { language: StudioLanguage }) {
   return (
     <footer className="ss-footer">
       <div className="ss-footer__brand"><BindruneLogo size={38} onDark /><span>SHAPENEURAL®</span></div>
-      <p>{language === "de" ? "Unabhängiges Applied-AI-Studio · Frankfurt / Remote" : "Independent applied AI studio · Frankfurt / Remote"}</p>
-      <div><Link to="/studio/leistungen">{language === "de" ? "Leistungen" : "Services"}</Link><Link to="/studio/projekte">{language === "de" ? "Projekte" : "Projects"}</Link><Link to="/studio/lab">Lab</Link><a href="mailto:hello@shapeneural.com">hello@shapeneural.com</a></div>
+      <p>{language === "de" ? "Unabhängiges KI-Produktstudio · Frankfurt / Remote" : "Independent applied AI studio · Frankfurt / Remote"}</p>
+      <div><Link to="/studio/leistungen">{language === "de" ? "Leistungen" : "Services"}</Link><Link to="/studio/projekte">{language === "de" ? "Projekte" : "Projects"}</Link><Link to="/studio/lab">Lab</Link><a href="mailto:signal@shapeneural.com">signal@shapeneural.com</a></div>
     </footer>
   );
 }

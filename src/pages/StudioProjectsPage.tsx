@@ -50,7 +50,7 @@ export default function StudioProjectsPage() {
           <header><div className="ss-filters">{(["ALL", "LIVE", "BETA", "ARCHIVED"] as Filter[]).map((item) => <button type="button" className={filter === item ? "is-active" : ""} onClick={() => setFilter(item)} key={item}>{item}</button>)}</div><p><strong>{visibleProjects.length}</strong> {t.count}</p></header>
           <div className="ss-portfolio__grid">{visibleProjects.map((project, index) => <StudioProjectCard featured={filter === "ALL" && index === 0} project={project} language={language} key={project.slug} />)}</div>
         </section>
-        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:hello@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a></section>
+        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:signal@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a></section>
       </main>
       <StudioFooter language={language} />
     </div>

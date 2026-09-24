@@ -85,7 +85,7 @@ export const STUDIO_OFFERS: StudioOffer[] = [
 ];
 
 export const PROJECT_SUMMARIES: Record<string, Localized> = {
-  sapientblock: { de: "Bewertet Blockchain-Relevanz für den deutschen Mittelstand anhand validierter Anwendungsfälle.", en: "Assesses blockchain relevance for German SMEs using validated use cases." },
+  sapientblock: { de: "Verbindet Unternehmensanalyse, semantisches Matching, Ideenentwicklung und Content Operations in einer Intelligence-Plattform.", en: "Connects company analysis, semantic matching, idea generation and content operations in one intelligence platform." },
   melodeye: { de: "Übersetzt multimodale Emotionssignale datenschutzbewusst in adaptive Musik.", en: "Turns multimodal emotion signals into adaptive music while keeping biometrics in the browser." },
   problaim: { de: "Zerlegt komplexe Probleme mit einer autonomen Multi-LLM-Pipeline in belastbare Perspektiven.", en: "Decomposes complex problems into robust perspectives through an autonomous multi-LLM pipeline." },
   humancrypto: { de: "Macht Kryptowährungen über Archetypen, Emotion und KI-generierte Figuren verständlich.", en: "Makes cryptocurrencies approachable through archetypes, emotion and AI-generated characters." },

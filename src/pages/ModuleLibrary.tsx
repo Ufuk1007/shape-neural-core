@@ -331,7 +331,7 @@ function ModuleLibrary() {
               <div className="candidate-nav"><span>SHAPENEURAL®</span><span>FRANKFURT / REMOTE</span></div>
               <p>INDEPENDENT AI STUDIO</p>
               <h2>{t.stageTitle}</h2>
-              <div className="candidate-hero__bottom"><p>{t.stageBody}</p><a href="mailto:hello@shapeneural.com">{t.stageCta}<ArrowRight size={18} /></a></div>
+              <div className="candidate-hero__bottom"><p>{t.stageBody}</p><a href="mailto:signal@shapeneural.com">{t.stageCta}<ArrowRight size={18} /></a></div>
             </div>
           </section>
         )}
@@ -509,8 +509,8 @@ function ModuleLibrary() {
           <section className="candidate-cta">
             <p>{language === "de" ? "KLEIN ANFANGEN. SUBSTANZIELL WEITERBAUEN." : "START SMALL. BUILD SOMETHING SUBSTANTIAL."}</p>
             <h2>{language === "de" ? "Womit sollen wir beginnen?" : "Where should we begin?"}</h2>
-            <div className="cta-paths"><a href="mailto:hello@shapeneural.com?subject=Focus%20Day"><span>01</span><strong>Focus Day</strong><small>{language === "de" ? "Eine wichtige Entscheidung klären" : "Clarify one important decision"}</small><ArrowRight /></a><a href="mailto:hello@shapeneural.com?subject=Prototype%20Sprint"><span>02</span><strong>Prototype Sprint</strong><small>{language === "de" ? "Etwas Reales testbar machen" : "Make something real and testable"}</small><ArrowRight /></a><a href="mailto:hello@shapeneural.com?subject=Embedded%20Studio"><span>03</span><strong>Embedded Studio</strong><small>{language === "de" ? "KI verlässlich in Betrieb bringen" : "Put AI into reliable operation"}</small><ArrowRight /></a></div>
-            <footer><BindruneLogo size={36} onDark /><span>SHAPENEURAL® / FRANKFURT / REMOTE</span><a href="mailto:hello@shapeneural.com">hello@shapeneural.com</a></footer>
+            <div className="cta-paths"><a href="mailto:signal@shapeneural.com?subject=Focus%20Day"><span>01</span><strong>Focus Day</strong><small>{language === "de" ? "Eine wichtige Entscheidung klären" : "Clarify one important decision"}</small><ArrowRight /></a><a href="mailto:signal@shapeneural.com?subject=Prototype%20Sprint"><span>02</span><strong>Prototype Sprint</strong><small>{language === "de" ? "Etwas Reales testbar machen" : "Make something real and testable"}</small><ArrowRight /></a><a href="mailto:signal@shapeneural.com?subject=Embedded%20Studio"><span>03</span><strong>Embedded Studio</strong><small>{language === "de" ? "KI verlässlich in Betrieb bringen" : "Put AI into reliable operation"}</small><ArrowRight /></a></div>
+            <footer><BindruneLogo size={36} onDark /><span>SHAPENEURAL® / FRANKFURT / REMOTE</span><a href="mailto:signal@shapeneural.com">signal@shapeneural.com</a></footer>
           </section>
         )}
       </main>

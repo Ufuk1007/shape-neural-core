@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowDown, ArrowRight, Check, ExternalLink } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
+import { PROJECT_DETAILS } from "@/data/project-details";
 import { STUDIO_OFFERS } from "@/data/studio";
 import { StudioFooter, StudioHeader } from "@/components/StudioChrome";
 import { useStudioLanguage } from "@/hooks/use-studio-language";
@@ -20,13 +21,13 @@ const HERO_FRAMES = [stageFriction, stageClarity, stageSystem];
 
 const copy = {
   de: {
-    meta: "Unabhängiges Applied-AI-Studio · Frankfurt / Remote",
+    meta: "Designed Intelligence · Unabhängiges KI-Produktstudio",
     hero: "Von Ihrer Arbeit zu einem KI-System, das wirklich hilft.",
-    heroBody: "ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht neue Produktideen testbar – für kleine Unternehmen, Teams und Selbstständige.",
+    heroBody: "KI-Systeme, die Menschen bewegen – nicht nur Daten. ShapeNeural richtet KI praktisch ein, gestaltet Arbeitsabläufe neu und macht neue Produktideen testbar.",
     primary: "Passenden Einstieg finden",
     secondary: "Arbeit ansehen",
     definitionLabel: "Eine klare Definition",
-    definition: "ShapeNeural ist das unabhängige Applied-AI-Studio, das bestehende Arbeit verbessert, Workflows neu gestaltet und neue Ideen real testbar macht.",
+    definition: "ShapeNeural ist ein unabhängiges Studio für angewandte KI. Wir verbessern bestehende Arbeit, gestalten Abläufe neu und machen neue Produktideen real testbar.",
     smallLabel: "Small by design",
     smallTitle: "Direkte Zusammenarbeit. Klar begrenzte Vorhaben. Etwas, das danach existiert.",
     smallBody: "Keine Übergabe zwischen Sales, Beratung und Entwicklung. Die Person, mit der Sie sprechen, strukturiert, konzipiert und baut auch – unterstützt durch ein agentisches Studio-Setup.",
@@ -41,9 +42,9 @@ const copy = {
       ["TRANSFORM", "Working Workflow", "Blueprint, Automationen, Kontrollpunkte, Evaluation und Runbook"],
       ["CREATE", "Testable Product", "Produktkonzept, funktionaler Prototyp, Validierung und Roadmap"],
     ],
-    proofLabel: "Proof through building",
-    proofTitle: "Create ist bereits gelebte Praxis.",
-    proofBody: "Eigene Produkte und Experimente sind unser Realitätscheck: Sie zwingen uns, Nutzen, Interaktion, Modellqualität, Kosten und Betrieb nicht nur zu beschreiben, sondern auszuprobieren.",
+    proofLabel: "Flagship Product / Proof through building",
+    proofTitle: "SAPIENTBLOCK verbindet Analyse, Matching, Ideen und Content zu einem Produkt.",
+    proofBody: "Die Plattform analysiert Unternehmen, ordnet hunderte reale Blockchain-Anwendungen ein und erzeugt daraus relevante Beispiele, neue Ideen und veröffentlichbare Inhalte. Ein gebautes System – nicht nur ein Konzept.",
     allProjects: "Gesamtes Portfolio ansehen",
     methodLabel: "Wie ShapeNeural arbeitet",
     methodTitle: "Ein wiederholbarer Weg – ohne Standardlösung zu spielen.",
@@ -70,9 +71,9 @@ const copy = {
     cta: "Vorhaben besprechen",
   },
   en: {
-    meta: "Independent applied AI studio · Frankfurt / Remote",
+    meta: "Designed Intelligence · Independent applied AI studio",
     hero: "From the way you work to an AI system that genuinely helps.",
-    heroBody: "ShapeNeural configures AI for real use, redesigns workflows and makes new product ideas testable — for small businesses, teams and independent professionals.",
+    heroBody: "AI systems that move people, not just data. ShapeNeural configures AI for real use, redesigns workflows and makes new product ideas testable.",
     primary: "Find the right entry point",
     secondary: "Explore the work",
     definitionLabel: "One clear definition",
@@ -91,9 +92,9 @@ const copy = {
       ["TRANSFORM", "Working Workflow", "Blueprint, automations, checkpoints, evaluation and runbook"],
       ["CREATE", "Testable Product", "Product concept, functional prototype, validation and roadmap"],
     ],
-    proofLabel: "Proof through building",
-    proofTitle: "Create is already proven practice.",
-    proofBody: "Our products and experiments are a reality check. They force us to work through value, interaction, model quality, cost and operations rather than merely describe them.",
+    proofLabel: "Flagship product / Proof through building",
+    proofTitle: "SAPIENTBLOCK connects analysis, matching, ideas and content in one product.",
+    proofBody: "The platform analyses companies, evaluates hundreds of real blockchain applications and turns them into relevant examples, new ideas and publishable content. A working system — not just a concept.",
     allProjects: "Explore the complete portfolio",
     methodLabel: "How ShapeNeural works",
     methodTitle: "A repeatable path — without pretending every problem is the same.",
@@ -125,8 +126,9 @@ export default function StudioHomePage() {
   const { language, setLanguage } = useStudioLanguage();
   const [frame, setFrame] = useState(0);
   const t = copy[language];
-  const featured = PROJECTS.find((project) => project.slug === "problaim")!;
-  const previewProjects = ["sapientblock", "sapientshift", "melodeye"].map((slug) => PROJECTS.find((project) => project.slug === slug)!);
+  const featured = PROJECTS.find((project) => project.slug === "sapientblock")!;
+  const featuredMedia = PROJECT_DETAILS.sapientblock.media;
+  const previewProjects = ["problaim", "sapientshift", "melodeye"].map((slug) => PROJECTS.find((project) => project.slug === slug)!);
 
   useEffect(() => {
     const timer = window.setInterval(() => setFrame((current) => (current + 1) % HERO_FRAMES.length), 3200);
@@ -135,7 +137,7 @@ export default function StudioHomePage() {
 
   return (
     <div className="ss-site">
-      <Helmet><title>ShapeNeural — Applied AI Studio</title><meta name="description" content={t.heroBody} /></Helmet>
+      <Helmet><title>{language === "de" ? "ShapeNeural — KI-Produktstudio" : "ShapeNeural — Applied AI Studio"}</title><meta name="description" content={t.heroBody} /></Helmet>
       <StudioHeader language={language} onLanguage={() => setLanguage(language === "de" ? "en" : "de")} />
       <main>
         <section className="ss-hero">
@@ -169,8 +171,12 @@ export default function StudioHomePage() {
         </section>
 
         <section className="ss-proof ss-section">
-          <div className="ss-proof__media">{featured.image && <img src={featured.image} alt="PROBLAIM interface" />}<span>FEATURED BUILD / CREATE</span></div>
-          <div className="ss-proof__copy"><p className="ss-eyebrow">{t.proofLabel}</p><h2>{t.proofTitle}</h2><p>{t.proofBody}</p><blockquote>{language === "de" ? "Was wäre, wenn ein komplexes Problem nicht in einem Workshop endet, sondern jeden Tag klüger analysiert wird?" : "What if a complex problem did not end in a workshop, but became more intelligently analysed every day?"}</blockquote><Link className="ss-text-link" to="/studio/projekte/problaim">PROBLAIM {language === "de" ? "vertiefen" : "case"}<ArrowRight size={16} /></Link></div>
+          <div className="ss-proof__media">
+            <div className="ss-device ss-device--laptop"><div className="ss-device__top"><i /><i /><i /></div>{featured.image && <img src={featured.image} alt="SAPIENTBLOCK analysis interface" />}</div>
+            <div className="ss-proof__covers">{featuredMedia.slice(3).map((item, index) => <img src={item.src} alt={language === "de" ? `SAPIENTBLOCK Use-Case-Motiv ${index + 1}` : `SAPIENTBLOCK use-case visual ${index + 1}`} key={item.src} />)}</div>
+            <span>FEATURED PRODUCT / LIVE</span>
+          </div>
+          <div className="ss-proof__copy"><p className="ss-eyebrow">{t.proofLabel}</p><h2>{t.proofTitle}</h2><p>{t.proofBody}</p><div className="ss-proof__features"><span>{language === "de" ? "Unternehmensanalyse" : "Company analysis"}</span><span>RAG Matching</span><span>{language === "de" ? "Ideengenerator" : "Idea generator"}</span><span>Content Operations</span><span>LLM Readability</span></div><blockquote>{language === "de" ? "Aus einer Technologiedatenbank wurde ein System, das Kontext versteht, Relevanz ordnet und Wissen verteilt." : "A technology database became a system that understands context, prioritises relevance and distributes knowledge."}</blockquote><Link className="ss-text-link" to="/studio/projekte/sapientblock">SAPIENTBLOCK {language === "de" ? "vertiefen" : "case"}<ArrowRight size={16} /></Link></div>
         </section>
 
         <section className="ss-project-preview ss-section">
@@ -198,7 +204,7 @@ export default function StudioHomePage() {
           <div><p className="ss-eyebrow">{t.founderLabel}</p><h2>{t.founderTitle}</h2><p>{t.founderBody}</p><strong>{t.founderMeta}</strong></div>
         </section>
 
-        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:hello@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a><BindruneLogo size={50} onDark={false} /></section>
+        <section className="ss-final-cta ss-section"><p className="ss-eyebrow">{t.ctaLabel}</p><h2>{t.ctaTitle}</h2><a className="ss-button ss-button--dark" href="mailto:signal@shapeneural.com?subject=Projektanfrage">{t.cta}<ArrowRight size={18} /></a><BindruneLogo size={50} onDark={false} /></section>
       </main>
       <StudioFooter language={language} />
     </div>
