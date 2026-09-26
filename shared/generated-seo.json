@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T00:00:00+02:00",
+  "generatedAt": "2026-09-26T00:00:00+02:00",
   "site": {
     "name": "ShapeNeural",
     "legalName": "ShapeNeural",
@@ -96,7 +96,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=home"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "OfferCatalog",
@@ -248,7 +248,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/leistungen": {
       "title": "KI-Beratung, Automatisierung & Prototypen | ShapeNeural",
@@ -333,7 +333,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=leistungen"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -548,7 +548,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte": {
       "title": "KI-Projekte & digitale Produkte | ShapeNeural Portfolio",
@@ -633,7 +633,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=projekte"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -675,7 +675,7 @@
                   "applicationCategory": "BLOCKCHAIN",
                   "operatingSystem": "Web",
                   "dateCreated": "2024",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -753,7 +753,7 @@
                   "applicationCategory": "BIOMETRIC AI",
                   "operatingSystem": "Web",
                   "dateCreated": "2024",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -825,7 +825,7 @@
                   "applicationCategory": "AI ANALYSIS",
                   "operatingSystem": "Web",
                   "dateCreated": "2025",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -897,7 +897,7 @@
                   "applicationCategory": "REGIONAL AI EVIDENCE",
                   "operatingSystem": "Web",
                   "dateCreated": "2026",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -969,7 +969,7 @@
                   "applicationCategory": "CRYPTO EDUCATION",
                   "operatingSystem": "Web",
                   "dateCreated": "2023",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -1041,7 +1041,7 @@
                   "applicationCategory": "AI PLATFORM",
                   "operatingSystem": "Web",
                   "dateCreated": "2025",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -1113,7 +1113,7 @@
                   "applicationCategory": "GENERATIVE AI",
                   "operatingSystem": "Web",
                   "dateCreated": "2025",
-                  "dateModified": "2026-09-24",
+                  "dateModified": "2026-09-26",
                   "inLanguage": [
                     "de-DE",
                     "en-GB"
@@ -1171,7 +1171,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/lab": {
       "title": "Applied AI Research & Signal Cloud | ShapeNeural Lab",
@@ -1256,7 +1256,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=lab"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -1280,7 +1280,7 @@
             "@id": "https://www.shapeneural.com/studio/lab#signal-dataset",
             "name": "ShapeNeural Signal Cloud",
             "description": "Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "creator": {
               "@id": "https://www.shapeneural.com/#organization"
             },
@@ -1300,7 +1300,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/kontakt": {
       "title": "KI-Projekt besprechen | ShapeNeural Fit-Check",
@@ -1385,7 +1385,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=kontakt"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -1416,7 +1416,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/sapientblock": {
       "title": "SAPIENTBLOCK: KI-Intelligence-Plattform | ShapeNeural",
@@ -1501,7 +1501,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientblock"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -1540,7 +1540,7 @@
             "applicationCategory": "BLOCKCHAIN",
             "operatingSystem": "Web",
             "dateCreated": "2024",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -1601,7 +1601,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/melodeye": {
       "title": "MELODEYE: Emotion AI & adaptive Musik | ShapeNeural",
@@ -1686,7 +1686,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=melodeye"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -1725,7 +1725,7 @@
             "applicationCategory": "BIOMETRIC AI",
             "operatingSystem": "Web",
             "dateCreated": "2024",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -1780,7 +1780,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/problaim": {
       "title": "PROBLAIM: autonome Multi-LLM-Analyse | ShapeNeural",
@@ -1865,7 +1865,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=problaim"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -1904,7 +1904,7 @@
             "applicationCategory": "AI ANALYSIS",
             "operatingSystem": "Web",
             "dateCreated": "2025",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -1959,7 +1959,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/veniora": {
       "title": "VENIORA: regionale KI-Evidenzplattform | ShapeNeural",
@@ -2044,7 +2044,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=veniora"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2083,7 +2083,7 @@
             "applicationCategory": "REGIONAL AI EVIDENCE",
             "operatingSystem": "Web",
             "dateCreated": "2026",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -2138,7 +2138,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/humancrypto": {
       "title": "HUMANCRYP.TO: KI-Storytelling-Experiment | ShapeNeural",
@@ -2223,7 +2223,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=humancrypto"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2262,7 +2262,7 @@
             "applicationCategory": "CRYPTO EDUCATION",
             "operatingSystem": "Web",
             "dateCreated": "2023",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -2317,7 +2317,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/sapientshift": {
       "title": "SAPIENTSHIFT: KI-Potenzialanalyse-Plattform | ShapeNeural",
@@ -2402,7 +2402,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=sapientshift"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2441,7 +2441,7 @@
             "applicationCategory": "AI PLATFORM",
             "operatingSystem": "Web",
             "dateCreated": "2025",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -2496,7 +2496,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/studio/projekte/bitcoin-soundscape": {
       "title": "Bitcoin Soundscape: KI-Marktdaten als Musik | ShapeNeural",
@@ -2581,7 +2581,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=project&slug=bitcoin-soundscape"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2620,7 +2620,7 @@
             "applicationCategory": "GENERATIVE AI",
             "operatingSystem": "Web",
             "dateCreated": "2025",
-            "dateModified": "2026-09-24",
+            "dateModified": "2026-09-26",
             "inLanguage": [
               "de-DE",
               "en-GB"
@@ -2675,7 +2675,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/impressum": {
       "title": "Impressum — ShapeNeural",
@@ -2760,7 +2760,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=impressum"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2781,7 +2781,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/datenschutz": {
       "title": "Datenschutz — ShapeNeural",
@@ -2866,7 +2866,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=datenschutz"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2887,7 +2887,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     "/agb": {
       "title": "AGB — ShapeNeural",
@@ -2972,7 +2972,7 @@
               "@type": "ImageObject",
               "url": "https://www.shapeneural.com/api/og-image?type=page&slug=agb"
             },
-            "dateModified": "2026-09-24"
+            "dateModified": "2026-09-26"
           },
           {
             "@type": "BreadcrumbList",
@@ -2993,7 +2993,7 @@
           }
         ]
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     }
   },
   "catalogs": {

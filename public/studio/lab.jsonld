@@ -75,7 +75,7 @@
         "@type": "ImageObject",
         "url": "https://www.shapeneural.com/api/og-image?type=page&slug=lab"
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     {
       "@type": "BreadcrumbList",
@@ -99,7 +99,7 @@
       "@id": "https://www.shapeneural.com/studio/lab#signal-dataset",
       "name": "ShapeNeural Signal Cloud",
       "description": "Das ShapeNeural Lab sammelt belegte KI-Signale, verbindet technologische und gesellschaftliche Entwicklungen und leitet bessere Produktfragen ab.",
-      "dateModified": "2026-09-24",
+      "dateModified": "2026-09-26",
       "creator": {
         "@id": "https://www.shapeneural.com/#organization"
       },

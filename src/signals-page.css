@@ -96,10 +96,36 @@
 .signals-stage__rail span { color: #747a72; font: 500 10px/1 "DM Mono", monospace; }
 .signals-stage__rail span::before { color: var(--signals-lime); content: "·"; margin-right: 8px; }
 
-.neural-cloud--studio { background: #080a09; scroll-margin-top: 78px; }
-.neural-cloud--studio .neural-cloud__header { border-top: 1px solid rgba(255,255,255,.13); padding-top: 58px; }
+.neural-cloud--studio { background: #080a09; height: auto; min-height: 0; scroll-margin-top: 78px; }
+.neural-cloud__stage { inset: 0; overflow: hidden; position: absolute; }
+.neural-cloud--studio .neural-cloud__header {
+  background: #080a09 !important;
+  border-top: 1px solid rgba(255,255,255,.13);
+  inset: auto !important;
+  padding: clamp(58px, 6vw, 92px) clamp(24px, 5.2vw, 84px) clamp(66px, 7vw, 104px);
+  pointer-events: auto;
+  position: relative !important;
+}
+.neural-cloud--studio .neural-cloud__header > div { position: relative; }
+.neural-cloud--studio .neural-cloud__stage {
+  border-top: 1px solid rgba(255,255,255,.13);
+  height: clamp(760px, 86svh, 980px);
+  inset: auto;
+  min-height: 760px;
+  position: relative;
+}
 .neural-cloud__studio-heading h2 { font: 600 clamp(2.8rem, 5vw, 5.8rem)/.91 "Space Grotesk", sans-serif; letter-spacing: -.06em; margin: 24px 0 0; max-width: 900px; }
 .neural-cloud__studio-heading p { color: #9da39a; font: 400 16px/1.58 "Manrope", Arial, sans-serif; margin: 25px 0 0; max-width: 650px; }
+.neural-cloud--studio .neural-cloud__stats {
+  border-top: 1px solid rgba(255,255,255,.13);
+  display: flex !important;
+  gap: 10px clamp(20px, 3vw, 44px);
+  margin-top: clamp(36px, 4vw, 58px) !important;
+  padding-top: 20px;
+  position: static !important;
+  text-align: left !important;
+}
+.neural-cloud--studio .neural-cloud__stats > div { display: block; }
 .neural-cloud--studio canvas { cursor: crosshair; }
 .neural-data-card--studio { border-radius: 0; box-shadow: 0 20px 60px rgba(0,0,0,.28); font-size: 12px; line-height: 1.55; max-width: 440px; }
 .neural-detail-backdrop--studio { z-index: 109 !important; }
@@ -149,10 +175,19 @@
   .signals-stage__index { border-left: 0; border-top: 1px solid var(--signals-line); min-height: 590px; padding: 24px 20px; }
   .signals-stage__index > p { margin-top: 34px; }
   .signals-stage__rail { display: none; }
-  .neural-cloud--studio { height: 100svh; min-height: 720px; scroll-margin-top: 72px; }
-  .neural-cloud--studio .neural-cloud__header { padding: 42px 20px 70px; }
+  .neural-cloud--studio { height: auto; min-height: 0; scroll-margin-top: 72px; }
+  .neural-cloud--studio .neural-cloud__header { padding: 44px 20px 56px; }
+  .neural-cloud--studio .neural-cloud__stage { height: 78svh; min-height: 680px; }
   .neural-cloud__studio-heading h2 { font-size: clamp(2.45rem, 11.3vw, 4rem); margin-top: 22px; max-width: 9.5ch; }
   .neural-cloud__studio-heading p { font-size: 15px; max-width: 32rem; }
+  .neural-cloud--studio .neural-cloud__stats {
+    display: grid !important;
+    font-size: 10px;
+    gap: 12px 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 36px !important;
+  }
+  .neural-cloud--studio .neural-cloud__stats > div { overflow-wrap: anywhere; }
   .neural-data-card--studio { display: none; }
   .neural-detail-panel--studio { max-width: none; }
   .neural-detail-panel--studio > div:nth-child(2) { padding-bottom: 90px; }

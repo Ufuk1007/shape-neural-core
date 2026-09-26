@@ -767,7 +767,7 @@ const NeuralCloud = ({
           
           {/* Stats - Desktop: right side, Mobile: below subtitle */}
           {!isLoading && (
-            <div className="mt-4 md:absolute md:top-20 md:right-8 lg:right-20 md:mt-0 text-xs font-mono flex flex-wrap gap-x-4 gap-y-1 md:block md:text-right">
+            <div className="neural-cloud__stats mt-4 md:absolute md:top-20 md:right-8 lg:right-20 md:mt-0 text-xs font-mono flex flex-wrap gap-x-4 gap-y-1 md:block md:text-right">
               <div style={{ color: dominantColor }}>
                 {isStudio ? (language === 'de' ? 'FOKUS' : 'FOCUS') : 'DOMINANT'}: {analysis.dominantCategory}
               </div>
@@ -785,22 +785,23 @@ const NeuralCloud = ({
         </div>
       </div>
       
-      {/* Top Vignette Overlay - removed, now part of header */}
-      
-      {/* Bottom Vignette Overlay - lower z-index so nodes are clickable */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-10 pointer-events-none" />
-      
-      {/* Loading State */}
-      {isLoading && (
-        <div className="absolute inset-0 z-30 flex items-center justify-center">
-          <div className="font-mono text-sm tracking-wider animate-pulse" style={{ color: isStudio ? '#b9ff3f' : '#00ff41' }}>
-            {isStudio ? (language === 'de' ? 'SIGNALE WERDEN GELADEN…' : 'LOADING SIGNALS…') : 'INITIALIZING_CONNECTION...'}
+      <div className="neural-cloud__stage">
+        {/* Top Vignette Overlay - removed, now part of header */}
+        
+        {/* Bottom Vignette Overlay - lower z-index so nodes are clickable */}
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111] to-transparent z-10 pointer-events-none" />
+        
+        {/* Loading State */}
+        {isLoading && (
+          <div className="absolute inset-0 z-30 flex items-center justify-center">
+            <div className="font-mono text-sm tracking-wider animate-pulse" style={{ color: isStudio ? '#b9ff3f' : '#00ff41' }}>
+              {isStudio ? (language === 'de' ? 'SIGNALE WERDEN GELADEN…' : 'LOADING SIGNALS…') : 'INITIALIZING_CONNECTION...'}
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <div className="neural-cloud__canvas" aria-hidden="true">
-      <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
+        <div className="neural-cloud__canvas" aria-hidden="true">
+        <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
         {/* Dynamic Camera Controller */}
         <CameraController isMobile={isMobile} isInterrogating={isInterrogating} reducedMotion={reducedMotion} />
         
@@ -868,27 +869,28 @@ const NeuralCloud = ({
             radius={0.6}
           />
         </EffectComposer>
-      </Canvas>
-      </div>
+        </Canvas>
+        </div>
 
-      {!isLoading && isStudio ? (
-        <details className="neural-cloud__signal-list">
-          <summary><List size={16} />{language === 'de' ? 'Signale als Liste' : 'Signals as a list'}<span>{debrisData.length}</span></summary>
-          <ul>
-            {debrisData.map((signal) => (
-              <li key={signal.id}>
-                <button type="button" onClick={() => setDecryptedShard(signal)}>
-                  <span>{signal.category} · {signal.relevance}%</span>
-                  <strong>{signal.headline}</strong>
-                </button>
-              </li>
-            ))}
-          </ul>
-        </details>
-      ) : null}
-      
-      {/* Data Card Overlay (only show when not decrypted) */}
-      {activeShard && !isDecrypted && <DataCard data={activeShard} variant={variant} language={language} />}
+        {!isLoading && isStudio ? (
+          <details className="neural-cloud__signal-list">
+            <summary><List size={16} />{language === 'de' ? 'Signale als Liste' : 'Signals as a list'}<span>{debrisData.length}</span></summary>
+            <ul>
+              {debrisData.map((signal) => (
+                <li key={signal.id}>
+                  <button type="button" onClick={() => setDecryptedShard(signal)}>
+                    <span>{signal.category} · {signal.relevance}%</span>
+                    <strong>{signal.headline}</strong>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ) : null}
+        
+        {/* Data Card Overlay (only show when not decrypted) */}
+        {activeShard && !isDecrypted && <DataCard data={activeShard} variant={variant} language={language} />}
+      </div>
       
       {/* Decryption Panel */}
       {decryptedShard && (

@@ -4,7 +4,7 @@
   "name": "ShapeNeural Project Portfolio",
   "description": "Machine-readable catalog of ShapeNeural own products, experiments and partner projects.",
   "url": "https://www.shapeneural.com/studio/projekte",
-  "dateModified": "2026-09-24",
+  "dateModified": "2026-09-26",
   "creator": {
     "@id": "https://www.shapeneural.com/#organization",
     "name": "ShapeNeural"

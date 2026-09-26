@@ -75,7 +75,7 @@
         "@type": "ImageObject",
         "url": "https://www.shapeneural.com/api/og-image?type=project&slug=melodeye"
       },
-      "dateModified": "2026-09-24"
+      "dateModified": "2026-09-26"
     },
     {
       "@type": "BreadcrumbList",
@@ -114,7 +114,7 @@
       "applicationCategory": "BIOMETRIC AI",
       "operatingSystem": "Web",
       "dateCreated": "2024",
-      "dateModified": "2026-09-24",
+      "dateModified": "2026-09-26",
       "inLanguage": [
         "de-DE",
         "en-GB"
