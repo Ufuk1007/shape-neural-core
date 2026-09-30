@@ -91,6 +91,14 @@ async function fetchDebris() {
       throw new Error('Response is not an array');
     }
 
+    // Treat unexpectedly small responses as a failed collection run. The
+    // provider occasionally returns an empty or truncated array; publishing
+    // that result would erase the live Signal Cloud and its machine-readable
+    // dataset. Throwing here keeps the last known-good file in place.
+    if (debrisData.length < 8) {
+      throw new Error(`Response contains only ${debrisData.length} items; keeping existing data`);
+    }
+
     // Validate and sanitize each item
     const validatedData = debrisData.map((item, index) => ({
       id: item.id || `debris_${index}`,
