@@ -1,138 +1,130 @@
 [
   {
-    "id": "instructmesh_editable_fabrication",
-    "category": "STR_ART",
-    "headline": "InstructMesh Turns Natural-Language Prompts into Editable Objects",
-    "summary": "MIT’s InstructMesh generates designs for everyday objects that remain editable and suitable for fabrication. Its significance lies in connecting generative ideation with practical making rather than stopping at photorealistic concept images.",
-    "url": "https://news.mit.edu/topic/machine-learning",
-    "relevance": 94
-  },
-  {
-    "id": "studio_gencai_creativity_workflow",
-    "category": "STR_ART",
-    "headline": "Structured Midjourney Workflow Improves Illustration Ideation",
-    "summary": "A quasi-experimental design study found that a structured Midjourney workflow improved expert-rated illustration creativity and increased documented ideation activity. The study is notable because it evaluates process design, version logging, and critique rather than treating image generation as a standalone shortcut.",
-    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70305",
+    "id": "ai_music_copyright_spiral",
+    "category": "SONIC",
+    "headline": "AI music faces a defining copyright confrontation",
+    "summary": "Record labels are challenging models accused of training on tens of thousands of copyrighted recordings, while developers argue that learning musical style constitutes fair use. The dispute could determine whether future creative audio systems are built around licensed provenance or unrestricted cultural ingestion.",
+    "url": "https://www.economist.com/business/2026/10/05/record-labels-are-in-a-spin-over-ai-music",
     "relevance": 91
   },
   {
-    "id": "creative_education_authorship_gap",
-    "category": "STR_ART",
-    "headline": "AI Support Can Rise While Perceived Artistic Authorship Falls",
-    "summary": "Research in creative education reports stronger perceived support and skill transfer from generative AI, but no corresponding improvement in final artistic performance. Content-generative use was also associated with lower perceived authorship, exposing a tension between assistance and visible human decision-making.",
-    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1956939/full",
-    "relevance": 95
-  },
-  {
-    "id": "artly_ai_feedback_for_artists",
-    "category": "STR_ART",
-    "headline": "Artly Tests AI Feedback Inside Artists’ Own Creative Practice",
-    "summary": "Artly explores how digital artists perceive and interact with AI-generated feedback on their personal work. The project matters because it investigates AI as a reflective studio collaborator rather than merely an image generator.",
-    "url": "https://arxiv.org/html/2608.16189v1",
-    "relevance": 88
-  },
-  {
-    "id": "genai_art_interaction_taxonomy",
-    "category": "CX_UX",
-    "headline": "A Taxonomy Maps Interaction Patterns for Creative GenAI",
-    "summary": "A systematic review organizes how generative AI systems support art and creative work, providing a framework for comparing interaction models. Such taxonomies can help designers move beyond prompt boxes toward tools for exploration, critique, control, and co-creation.",
-    "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337749952/Designing_Interactions_with_Generative_AI_for_Art_and_Creativity_A_Systematic_Review_and_Taxonomy.pdf",
-    "relevance": 89
-  },
-  {
-    "id": "human_oversight_ai_ux",
-    "category": "CX_UX",
-    "headline": "UX Practice Reframes AI Around Oversight and Ethical Interaction",
-    "summary": "Recent UX analysis focuses on the value of human-centered design in the AI era, including AI pitfalls, ethical interaction, and human oversight. The emphasis is relevant to designers building systems where users must understand, contest, and guide model behavior.",
-    "url": "https://uxdesignlab.com/insights/",
-    "relevance": 76
-  },
-  {
-    "id": "responsible_ai_research_ia",
-    "category": "CX_UX",
-    "headline": "UX Research and Information Architecture Face Responsible-AI Questions",
-    "summary": "A UX research meetup centered on responsible and strategic use of AI in research and information architecture. It reflects a growing design concern: how AI changes not only interfaces, but also the methods used to understand users and structure information.",
-    "url": "https://ixdf.org/meetups",
-    "relevance": 68
-  },
-  {
-    "id": "ai_music_distributed_authorship",
-    "category": "SONIC",
-    "headline": "AI Music Shifts Creativity from the Model to the Whole Stack",
-    "summary": "A philosophical analysis argues that musical meaning and value emerge through distributed authorship involving model designers, training data, prompt writers, performers, platforms, and listeners. This reframes AI music as a sociotechnical practice rather than an isolated act of machine composition.",
+    "id": "distributed_authorship_ai_music",
+    "category": "META",
+    "headline": "Music authorship is becoming a distributed system",
+    "summary": "A new conceptual analysis reframes AI-generated music as the product of an entire generative stack: model designers, datasets, prompt writers, performers, platforms, and listeners. Its proposed norms—transparency, consent-sensitive data, attribution, and accountability—offer a useful foundation for designing trustworthy creative systems.",
     "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 97
-  },
-  {
-    "id": "ai_music_combinational_creativity",
-    "category": "SONIC",
-    "headline": "Generative Music Qualifies as Combinational Creativity",
-    "summary": "The analysis distinguishes between producing enjoyable sound, recombining musical possibilities, and possessing human-like intentional authorship. It argues that current systems can generate novel configurations through combinational creativity while remaining dependent on human musical practices and infrastructures.",
-    "url": "https://link.springer.com/content/pdf/10.1007/s00146-026-03304-2.pdf",
     "relevance": 94
   },
   {
-    "id": "human_songwriting_machine_test",
-    "category": "SONIC",
-    "headline": "Musicians Test Whether Human Songwriting Still Matters",
-    "summary": "A recording-studio experiment brought experienced musicians together to compose songs largely from scratch while comparing the value of human effort with AI-generated alternatives. The project turns the abstract debate over machine creativity into a practical test of collaboration, distinction, and artistic labor.",
-    "url": "https://www.nytimes.com/2026/10/03/arts/music/human-songwriting-ai-songwriting.html",
+    "id": "human_ai_creative_design_study",
+    "category": "CX_UX",
+    "headline": "Study finds AI collaboration can expand human creativity",
+    "summary": "A large study of people working with AI on creative design tasks examines whether generative systems increase rather than replace creative capacity. The result is relevant to interaction design because it shifts attention from automation toward interfaces that improve exploration, variation, and user agency.",
+    "url": "https://www.sciencedaily.com/releases/2026/03/260315004355.htm",
     "relevance": 86
   },
   {
-    "id": "prompt_to_music_authorship",
-    "category": "SONIC",
-    "headline": "Prompt-Based Music Forces a New Definition of Authorship",
-    "summary": "Current text-to-music systems can produce coherent audio from short prompts, intensifying questions about authorship, consent, attribution, and accountability. The most consequential design issue is not only what the model generates, but how creative responsibility is allocated across the generative workflow.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "id": "genai_creative_interaction_taxonomy",
+    "category": "CX_UX",
+    "headline": "A taxonomy maps interaction patterns for creative AI",
+    "summary": "A systematic review catalogs how people interact with generative systems in art and creative work, including the growing importance of text prompts. Its value lies in treating creative AI interaction as a design field with recurring patterns, roles, and opportunities rather than as a single prompt box.",
+    "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337749952/Designing_Interactions_with_Generative_AI_for_Art_and_Creativity_A_Systematic_Review_and_Taxonomy.pdf",
     "relevance": 92
   },
   {
-    "id": "ai_creativity_social_context",
-    "category": "META",
-    "headline": "Machine Creativity Depends on Social Recognition and Context",
-    "summary": "The recent analysis separates novelty from authorship, arguing that creativity can describe recombination while authorship requires intentional, accountable, and socially recognized agency. This distinction gives designers a sharper vocabulary for discussing AI-generated works without collapsing generation and responsibility.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 96
+    "id": "provenance_first_ai_music",
+    "category": "SONIC",
+    "headline": "Provenance becomes a design requirement for AI music",
+    "summary": "Recent scholarship argues that audiences should know when generative systems materially shape a recording, particularly when recognizable artists or voices are evoked. Metadata, release disclosures, licensing, and opt-out pathways are presented as interface and infrastructure problems—not merely legal details.",
+    "url": "https://link.springer.com/content/pdf/10.1007/s00146-026-03304-2.pdf",
+    "relevance": 90
   },
   {
-    "id": "ai_music_consent_attribution_norms",
+    "id": "ai_voice_likeness_crisis",
+    "category": "SONIC",
+    "headline": "Voice cloning exposes a new boundary for sound design",
+    "summary": "Voice synthesis can reproduce vocal timbre, tone, and inflection closely enough to enable unauthorized impersonations and posthumous performances. The development expands creative possibility while forcing designers to build consent, identity protection, and usage controls directly into audio tools.",
+    "url": "https://www.dcbar.org/news-events/publications/washington-lawyer-articles/the-sound-of-ai-litigating-the-future-of-music",
+    "relevance": 89
+  },
+  {
+    "id": "cultural_responsibility_ai_music",
     "category": "META",
-    "headline": "Human–Machine Musicianship Needs Consent-Sensitive Norms",
-    "summary": "The proposed norms for AI music emphasize transparency, consent-sensitive data practices, contextual attribution, and protection of artistic agency. These principles extend beyond music toward any creative system trained on contested cultural material.",
+    "headline": "Ethical AI music requires cultural accountability",
+    "summary": "A discussion of AI music ethics highlights how unlicensed or misappropriated training data can reinforce cultural erasure. It proposes transparency, attribution, representation, and long-term compensation as design principles for systems that work with culturally specific sound.",
+    "url": "https://www.soundverse.ai/blog/article/ai-music-and-cultural-responsibility-0902",
+    "relevance": 82
+  },
+  {
+    "id": "ai_art_authorship_originality",
+    "category": "STR_ART",
+    "headline": "Graphic design authorship moves beyond the prompt",
+    "summary": "A recent article challenges simplistic ideas of originality in AI-assisted graphic design. It redirects attention toward art direction, selection, iteration, context, and the invisible labor surrounding generated images—areas where creative tools can better expose process and credit.",
+    "url": "https://www.sciencepublishinggroup.com/journal/106/archive",
+    "relevance": 79
+  },
+  {
+    "id": "cross_modal_intelligent_art_system",
+    "category": "STR_ART",
+    "headline": "Generative art systems target the gap between meaning and form",
+    "summary": "Research on intelligent art design systems addresses cross-modal semantic disconnection in creative production. The central design opportunity is to connect concepts, visual language, and rendered outcomes more coherently across stages of an artist’s workflow.",
+    "url": "https://link.springer.com/article/10.1007/s42452-025-07513-0",
+    "relevance": 78
+  },
+  {
+    "id": "hybrid_gan_cnn_art_evaluation",
+    "category": "STR_ART",
+    "headline": "Hybrid models evaluate artistic quality alongside novelty",
+    "summary": "A proposed system combines generative and visual-recognition models to produce diverse images and automatically assess creativity, artistry, and functionality. This matters because it experiments with computational evaluation criteria that could influence how generative design tools guide iteration.",
+    "url": "https://link.springer.com/article/10.1007/s44163-025-00343-4",
+    "relevance": 76
+  },
+  {
+    "id": "human_machine_musicianship_norms",
+    "category": "META",
+    "headline": "Human–machine musicianship needs explicit social norms",
+    "summary": "The emerging framework treats AI music as a sociotechnical practice rather than a question of whether machines possess human-like creativity. It proposes allocating responsibility across creators, developers, data communities, platforms, and audiences, giving designers a practical basis for provenance and accountability features.",
     "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
     "relevance": 93
   },
   {
-    "id": "creative_output_vs_agency",
-    "category": "META",
-    "headline": "More AI-Assisted Output Does Not Guarantee More Human Agency",
-    "summary": "Prior research found that text-to-image AI can substantially increase the volume and peer evaluation of creative artifacts, while newer creative-education evidence highlights weaker perceived authorship in AI-shaped outcomes. Together, the findings suggest that productivity and agency should be measured separately.",
-    "url": "https://academic.oup.com/pnasnexus/article/3/3/pgae052/7618478",
-    "relevance": 90
+    "id": "creative_ai_data_consent",
+    "category": "CX_UX",
+    "headline": "Consent-sensitive datasets reshape creative-tool UX",
+    "summary": "Recent AI music ethics work argues that public availability of recordings is not equivalent to ethical permission for model training. That principle implies new user experiences for licensing, opt-out management, contributor attribution, and clear visibility into how creative data travels through a system.",
+    "url": "https://link.springer.com/content/pdf/10.1007/s00146-026-03304-2.pdf",
+    "relevance": 87
   },
   {
-    "id": "ai_art_crossmodal_design",
+    "id": "creative_ai_agency_design",
+    "category": "CX_UX",
+    "headline": "Creative AI should amplify agency, not hide authorship",
+    "summary": "Research on human–AI creative collaboration frames the system as a partner in exploration rather than a replacement for artistic decision-making. This supports interfaces that preserve user intent, expose alternatives, and make iteration legible instead of collapsing the process into an opaque final output.",
+    "url": "https://www.granthaalayahpublication.org/Arts-Journal/ShodhKosh/article/download/7310/6957/40806",
+    "relevance": 80
+  },
+  {
+    "id": "abstract_art_human_ai_collaboration",
     "category": "STR_ART",
-    "headline": "Intelligent Art Systems Target the Cross-Modal Design Gap",
-    "summary": "Research on intelligent art-design systems addresses the disconnect between semantic intent and visual creation through generative AI. The direction is important for creative tools that must translate concepts across language, image, structure, and material constraints.",
-    "url": "https://link.springer.com/article/10.1007/s42452-025-07513-0",
-    "relevance": 82
+    "headline": "Abstract art offers a laboratory for human–AI co-creation",
+    "summary": "A mixed-method study examines how people and AI cooperate in producing abstract art. The work is relevant to strategic art because abstraction makes process, ambiguity, and negotiation visible—revealing how creative value may emerge through iterative exchange rather than autonomous generation.",
+    "url": "https://www.grantha alayahpublication.org/Arts-Journal/ShodhKosh/article/download/7125/6743/38919",
+    "relevance": 77
   },
   {
-    "id": "ai_creative_process_metrics",
-    "category": "CX_UX",
-    "headline": "Creative AI Evaluation Moves from Outputs to Process Evidence",
-    "summary": "The Midjourney classroom study used prompt logs, version histories, ideation activity, and critique milestones to evaluate AI-supported creativity. This points toward UX metrics that capture exploration and decision-making instead of judging only the final artifact.",
-    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70305",
-    "relevance": 88
+    "id": "ai_music_style_fair_use",
+    "category": "META",
+    "headline": "Can musical style be learned without permission?",
+    "summary": "The current legal dispute over AI-generated music tests whether models may learn from recordings and reproduce stylistic characteristics without licensing. Beyond copyright doctrine, it raises a philosophical question about whether style is private property, shared cultural knowledge, or a negotiated form of artistic identity.",
+    "url": "https://www.economist.com/business/2026/10/05/record-labels-are-in-a-spin-over-ai-music",
+    "relevance": 95
   },
   {
-    "id": "ai_art_human_agency_interface",
-    "category": "CX_UX",
-    "headline": "Creative Interfaces Must Make Human Decisions Legible",
-    "summary": "Evidence linking generative AI use with lower evaluated authorship highlights a core interface challenge: preserving the visibility of human intent, selection, revision, and judgment. Tools that expose process history and support meaningful intervention may better augment artists than systems optimized only for output quality.",
-    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1956939/full",
-    "relevance": 91
+    "id": "machine_creativity_redefined",
+    "category": "META",
+    "headline": "AI creativity is shifting from output to responsibility",
+    "summary": "New philosophical work argues that asking whether machines can create music is less useful than examining how creative responsibility is distributed across the system. The reframing places consent, attribution, compensation, and accountability at the center of debates about machine creativity.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 96
   }
 ]
