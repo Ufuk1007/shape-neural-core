@@ -16,6 +16,7 @@ const App = () => (
     <BrowserRouter>
           <Routes>
             <Route path="/" element={<Suspense fallback={null}><StudioHomePage /></Suspense>} />
+            <Route path="/agency" element={<Suspense fallback={null}><StudioHomePage /></Suspense>} />
             <Route path="/studio" element={<Navigate to="/" replace />} />
             <Route path="/lab" element={<Navigate to="/studio/lab" replace />} />
             <Route path="/signals" element={<Navigate to="/studio/lab#cloud" replace />} />
