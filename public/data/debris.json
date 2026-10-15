@@ -1,138 +1,130 @@
 [
   {
-    "id": "feral_metaverse_ai_sculpture",
-    "category": "STR_ART",
-    "headline": "AI Helps Build a Climbable Spider for a Feral Metaverse",
-    "summary": "Artist Theo Triantafyllidis used AI collaboratively to develop sketches, characters, environments, and 3D renders for an interactive sculpture and game world. The project matters because it treats generative models as participants in a hybrid physical-digital art pipeline rather than as isolated image generators.",
-    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/frieze-london-2026/",
-    "relevance": 94
-  },
-  {
-    "id": "agentic_creative_pipeline_shift",
-    "category": "STR_ART",
-    "headline": "Creative Workflows Move from Prompts to Agentic Pipelines",
-    "summary": "Emerging creative systems increasingly coordinate multiple models, applications, planning stages, and provenance mechanisms instead of producing one-off outputs. This suggests a shift in design practice toward directing evolving computational teams and managing continuity across media.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 88
-  },
-  {
-    "id": "ai_video_codirector_world_state",
-    "category": "STR_ART",
-    "headline": "AI Video Co-Directors Track Characters Across Long Narratives",
-    "summary": "Research systems such as Co-Director, CANVAS, A²RD, and VQQA frame long-form video as a planning and world-state problem. Visual memory, creative selection, and closed-loop critique address identity drift and continuity failures that limit generative filmmaking.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 95
-  },
-  {
-    "id": "c2pa_provenance_creative_agents",
-    "category": "CX_UX",
-    "headline": "Creative Agents Gain Built-In Provenance Workflows",
-    "summary": "Generative outputs are increasingly accompanied by automatic C2PA provenance records as creative agents operate across production and experience platforms. This connects authorship, trust, and workflow UX directly to the design of AI-assisted content systems.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 87
-  },
-  {
-    "id": "connected_creative_app_agents",
-    "category": "CX_UX",
-    "headline": "AI Agents Begin Operating Inside Creative Applications",
-    "summary": "New connected-app workflows let AI coordinate image, web, music, and design tasks across tools rather than forcing users to shuttle assets manually. The design challenge shifts toward permissions, handoffs, reversibility, and maintaining human intent across an agentic workspace.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 89
-  },
-  {
-    "id": "lyria_agentic_music_workflows",
+    "id": "ai_music_provenance_labels",
     "category": "SONIC",
-    "headline": "Music Generation Enters Agentic Creative Workflows",
-    "summary": "Lyria-based music generation is being integrated into broader creative environments alongside voice and visual tools. Its significance lies less in isolated song generation than in enabling music to become a coordinated layer of multimodal art direction.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
+    "headline": "YouTube begins labeling AI-generated music",
+    "summary": "YouTube Music is rolling out labels for tracks created primarily with generative AI, with details about AI use and possible platform-detected disclosure. The move turns provenance into a visible interaction layer for listeners, artists, and music platforms.",
+    "url": "https://ground.news/article/youtube-rolls-out-new-labeling-system-for-ai-generated-music",
     "relevance": 91
   },
   {
-    "id": "expressive_live_ai_audio",
-    "category": "SONIC",
-    "headline": "Expressive Live Audio Models Push Real-Time Voice Interaction",
-    "summary": "New live-audio systems combine expressive voice behavior with real-time reasoning and interaction. For sonic design, this opens possibilities for responsive characters, adaptive installations, and interfaces whose vocal identity changes with context.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 90
+    "id": "human_premium_in_ai_art",
+    "category": "META",
+    "headline": "AI abundance is creating a premium on human-made art",
+    "summary": "As synthetic music and imagery become difficult to distinguish from human work, audiences may increasingly value evidence of human participation. This reframes authorship as an experience and trust signal rather than merely a production method.",
+    "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
+    "relevance": 94
   },
   {
-    "id": "ai_as_game_art_collaborator",
+    "id": "distributed_authorship_ai_music",
+    "category": "META",
+    "headline": "AI music reframes creativity as distributed authorship",
+    "summary": "A recent analysis argues that musical meaning emerges across model builders, training data, prompt writers, performers, platforms, and listeners. It offers a useful design lens for provenance, consent, attribution, and accountability in generative music systems.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 96
+  },
+  {
+    "id": "ai_music_ip_design_principles",
+    "category": "SONIC",
+    "headline": "Music AI needs design principles for compensation and collaboration",
+    "summary": "Research connecting intellectual-property philosophy with music-tool design proposes systems that support sharing, collaboration, and creator compensation. It shifts the debate from abstract copyright disputes toward concrete interaction and platform mechanics.",
+    "url": "https://transactions.ismir.net/articles/10.5334/tismir.339",
+    "relevance": 95
+  },
+  {
+    "id": "architectural_ai_curation",
     "category": "STR_ART",
-    "headline": "Game Art Pipelines Treat AI as a Collaborative Sketch Partner",
-    "summary": "The Feral Metaverse project used AI throughout visual development while retaining a large human-led production process. It offers a practical model for generative systems as exploratory collaborators that expand iteration without fully replacing artistic direction.",
-    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/frieze-london-2026/",
+    "headline": "Architects use AI to trade production time for creative judgment",
+    "summary": "SHM Architects describes deploying generative tools to reduce repetitive production work while preserving time for curation, storytelling, and conceptual decisions. The case illustrates AI as an editorial amplifier rather than an autonomous designer.",
+    "url": "https://convo-by-design.blubrry.net/category/artificial-intelligence/",
     "relevance": 86
   },
   {
-    "id": "human_authorship_game_design",
-    "category": "META",
-    "headline": "Sega Draws a Boundary Around AI and Creative Authorship",
-    "summary": "Sega has described using AI for operational and exploratory work while keeping art, writing, and design human-made. The position makes authorship an explicit design policy and highlights the cultural value organizations attach to intentional human decisions.",
-    "url": "https://en.softonic.com/articles/sega-now-rules-out-generative-ai-for-creative-content-art-writing-and-design-stay-human",
-    "relevance": 84
-  },
-  {
-    "id": "creative_resistance_to_automation",
-    "category": "META",
-    "headline": "Creative Teams Reframe AI Around Assistance, Not Replacement",
-    "summary": "Resistance to generative systems in game development is increasingly expressed through workflow boundaries rather than outright rejection. Separating reference, ideation, and production raises deeper questions about where creative agency resides in hybrid practices.",
-    "url": "https://en.softonic.com/articles/sega-now-rules-out-generative-ai-for-creative-content-art-writing-and-design-stay-human",
-    "relevance": 82
-  },
-  {
-    "id": "ai_campaign_storyboard_pipeline",
+    "id": "analog_fortress_against_ai",
     "category": "STR_ART",
-    "headline": "Generative Models Compress the Campaign Visualization Pipeline",
-    "summary": "Pollo AI combines image and video models to turn concepts into posters, storyboards, and cinematic advertising assets. The notable design implication is the collapse of early ideation and previsualization into a rapid, multimodal feedback loop.",
-    "url": "https://openai.com/index/pollo-ai/",
-    "relevance": 80
+    "headline": "Physical material libraries become an antidote to digital replication",
+    "summary": "An architecture discussion positions physical materials, craft, and design fundamentals as sources of critical resistance to AI-generated sameness. It suggests that tactile constraints may become strategically valuable in future creative workflows.",
+    "url": "https://convo-by-design.blubrry.net/category/artificial-intelligence/",
+    "relevance": 88
   },
   {
-    "id": "multimodal_campaign_direction",
-    "category": "CX_UX",
-    "headline": "Campaign Creation Becomes a Single Multimodal Direction Surface",
-    "summary": "AI-assisted campaign systems allow creators to move from a high-level concept to coordinated visual and cinematic outputs. This points toward interfaces organized around intent, references, and variation spaces rather than conventional tool-by-tool production.",
-    "url": "https://openai.com/index/pollo-ai/",
-    "relevance": 78
-  },
-  {
-    "id": "creative_agent_provenance_guardrails",
-    "category": "META",
-    "headline": "Generative Design Systems Pair Autonomy with Auditability",
-    "summary": "Agentic creative workflows are being paired with monitoring, usage accounting, and provenance attachments. These mechanisms suggest that trustworthy creative automation will depend not only on output quality but also on traceable decisions and controllable agency.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 90
-  },
-  {
-    "id": "long_form_video_identity_drift",
+    "id": "cybernetic_serendipity_london",
     "category": "STR_ART",
-    "headline": "Continuity Becomes the Central Problem in Generative Cinema",
-    "summary": "Recent video research focuses on preserving character identity, visual memory, and narrative state across many shots. This is a major conceptual shift from prompt-level generation toward cinematic systems that understand evolving worlds.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
-    "relevance": 93
-  },
-  {
-    "id": "ai_artist_perception_study",
-    "category": "META",
-    "headline": "Artist Perceptions Become a Research Object in Human-AI Art",
-    "summary": "The Artly research project examines how digital artists perceive AI-generated art and its role in practice. Such work matters because adoption depends not only on model capability but also on legitimacy, identity, labor, and changing definitions of artistic expertise.",
-    "url": "https://arxiv.org/html/2608.16189v1",
+    "headline": "Cybernetic Serendipity returns as a forum for machine creativity",
+    "summary": "The ICA program brings together talks, performances, and readings examining machine creativity through art, currency, and NFTs. Its cross-disciplinary format treats AI as a cultural system rather than only a production tool.",
+    "url": "https://www.ica.art/talks/cybernetic-serendipity-towards-ai",
     "relevance": 89
   },
   {
-    "id": "ai_design_system_orchestration",
+    "id": "ai_creativity_conference_music",
+    "category": "SONIC",
+    "headline": "Philosophers revisit what musical creation means after generative AI",
+    "summary": "An international conference focuses on how deep learning changes the ways musicians, listeners, and philosophers create and appreciate music. The topic is especially relevant to interfaces that mediate intention, authorship, and listening context.",
+    "url": "https://philevents.org/event/iCal/149593",
+    "relevance": 87
+  },
+  {
+    "id": "ai_self_awareness_new_creation",
+    "category": "META",
+    "headline": "Generated images and sounds challenge the replication metaphor",
+    "summary": "A discussion of machine self-awareness argues that AI-generated images and sounds can be understood as novel constructions rather than simple copies. This raises foundational questions about whether novelty alone is enough to constitute creativity.",
+    "url": "https://www.cmich.edu/news/details/what-happens-if-artificial-intelligence-becomes-self-aware",
+    "relevance": 82
+  },
+  {
+    "id": "firefly_photography_workshop",
+    "category": "STR_ART",
+    "headline": "Photography workshops turn generative AI into a creative extension",
+    "summary": "An Adobe workshop explored safe photography capture followed by generative editing and visual design with Lightroom and Firefly. The workflow highlights how AI can extend observation into post-production without replacing the originating act of seeing.",
+    "url": "https://note.com/kaiyu06/n/n2ff52412c10f?hl=en",
+    "relevance": 78
+  },
+  {
+    "id": "ai_music_transparency_ecology",
+    "category": "SONIC",
+    "headline": "Music platforms compete to make synthetic authorship legible",
+    "summary": "YouTube, Apple Music, Spotify, and Deezer are developing different ways to identify AI-generated music and AI personas. These labels will shape how listeners navigate authenticity, discovery, recommendation, and trust in increasingly synthetic catalogs.",
+    "url": "https://ground.news/article/youtube-rolls-out-new-labeling-system-for-ai-generated-music",
+    "relevance": 90
+  },
+  {
+    "id": "consent_sensitive_music_ai",
+    "category": "META",
+    "headline": "Responsible music AI starts with provenance and consent",
+    "summary": "Research on generative music emphasizes transparency, consent-sensitive data practices, contextual attribution, and accountability across the creative stack. These principles can become concrete product requirements for training datasets and creative interfaces.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 97
+  },
+  {
+    "id": "ai_creation_and_audience_trust",
     "category": "CX_UX",
-    "headline": "Design Systems Evolve Toward Orchestrated AI Workflows",
-    "summary": "Creative-platform developments point toward AI coordinating connected design, web, image, and content tools. For UX, the central problem becomes designing coherent orchestration layers that expose system state without overwhelming users.",
-    "url": "https://aiagentstore.ai/ai-agent-news/topic/creative-industries",
+    "headline": "AI labels become a new user-experience layer for art",
+    "summary": "The rapid spread of AI-generated tracks creates a need for interfaces that explain how synthetic content was made without overwhelming audiences. Disclosure design now affects discovery, credibility, and the perceived value of creative work.",
+    "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
+    "relevance": 90
+  },
+  {
+    "id": "music_ai_compensation_interfaces",
+    "category": "CX_UX",
+    "headline": "Creative AI interfaces may need built-in compensation pathways",
+    "summary": "Design proposals grounded in intellectual-property theory suggest that music AI tools should encourage sharing while ensuring creators are rewarded. This expands UX beyond generation controls into attribution, licensing, collaboration, and payment flows.",
+    "url": "https://transactions.ismir.net/articles/10.5334/tismir.339",
+    "relevance": 93
+  },
+  {
+    "id": "ai_as_editorial_amplifier",
+    "category": "CX_UX",
+    "headline": "The strongest creative AI workflow may be editorial, not automatic",
+    "summary": "The architectural case for Krea centers on removing production bottlenecks so designers can spend more time selecting, refining, and narrating concepts. It points toward interfaces optimized for judgment and iteration rather than one-click output.",
+    "url": "https://convo-by-design.blubrry.net/category/artificial-intelligence/",
     "relevance": 85
   },
   {
-    "id": "human_ai_creative_boundary",
+    "id": "human_authorship_as_interface",
     "category": "META",
-    "headline": "The Creative Boundary Moves from Tool Use to Decision Rights",
-    "summary": "Projects that combine AI-assisted exploration with human-controlled final production reveal a more nuanced authorship debate. The key question is not whether AI appears in the workflow, but which decisions remain accountable to people.",
-    "url": "https://en.softonic.com/articles/sega-now-rules-out-generative-ai-for-creative-content-art-writing-and-design-stay-human",
-    "relevance": 88
+    "headline": "Authenticity may become an explicit design object",
+    "summary": "Growing interest in human-made markers suggests that authorship could be represented through labels, process records, and participation signals. Design systems may need to communicate not only what an artifact is, but who and what shaped it.",
+    "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
+    "relevance": 92
   }
 ]
