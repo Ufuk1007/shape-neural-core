@@ -1,130 +1,138 @@
 [
   {
-    "id": "ai_music_provenance_labels",
-    "category": "SONIC",
-    "headline": "YouTube begins labeling AI-generated music",
-    "summary": "YouTube Music is rolling out labels for tracks created primarily with generative AI, with details about AI use and possible platform-detected disclosure. The move turns provenance into a visible interaction layer for listeners, artists, and music platforms.",
-    "url": "https://ground.news/article/youtube-rolls-out-new-labeling-system-for-ai-generated-music",
+    "id": "metacognitive_prompt_cards",
+    "category": "CX_UX",
+    "headline": "Prompt cards make human–AI collaboration more creative",
+    "summary": "An experimental study found that metacognitive prompt cards improved the originality and detail of solutions developed with generative AI. The work suggests that interaction design can shape creative agency more effectively than prompt quality alone.",
+    "url": "https://link.springer.com/article/10.1007/s10639-026-14164-0",
     "relevance": 91
   },
   {
-    "id": "human_premium_in_ai_art",
+    "id": "human_ai_creativity_ownership",
     "category": "META",
-    "headline": "AI abundance is creating a premium on human-made art",
-    "summary": "As synthetic music and imagery become difficult to distinguish from human work, audiences may increasingly value evidence of human participation. This reframes authorship as an experience and trust signal rather than merely a production method.",
-    "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
+    "headline": "Creative ownership rises when humans actively co-create",
+    "summary": "Two experiments examining digital art found that human–AI co-creation is closely tied to perceived agency, psychological ownership, creative flow, and judgments of creativity. The findings position workflow design—not merely model capability—as central to meaningful authorship.",
+    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1986050/full",
     "relevance": 94
   },
   {
-    "id": "distributed_authorship_ai_music",
+    "id": "living_timeline_generative_art",
+    "category": "STR_ART",
+    "headline": "Interactive timeline traces generative art from caves to AI",
+    "summary": "The Living Timeline maps 1,147 moments in generative art history and includes playable versions of 36 algorithmic machines. Its historical framing challenges the idea that AI-generated art represents a complete break from earlier practices of delegated authorship.",
+    "url": "https://fastcompanyme.com/co-design/this-cool-interactive-visual-argues-that-generative-art-began-in-a-cave/",
+    "relevance": 89
+  },
+  {
+    "id": "ai_for_all_all_for_ai",
     "category": "META",
-    "headline": "AI music reframes creativity as distributed authorship",
-    "summary": "A recent analysis argues that musical meaning emerges across model builders, training data, prompt writers, performers, platforms, and listeners. It offers a useful design lens for provenance, consent, attribution, and accountability in generative music systems.",
+    "headline": "An art initiative asks what AI absorbs and leaves unresolved",
+    "summary": "The AI for ALL / ALL for AI initiative examines how artificial intelligence processes culture, language, and memory. Its emphasis on distortion and omission offers a productive framework for artists designing against the assumption that models are neutral cultural mirrors.",
+    "url": "https://www.e-flux.com/announcements/6788371/launch-of-ai-for-all-all-for-ai-initiative",
+    "relevance": 88
+  },
+  {
+    "id": "distributed_authorship_in_ai_music",
+    "category": "SONIC",
+    "headline": "AI music reframes authorship as a distributed system",
+    "summary": "A conceptual analysis argues that musical meaning emerges across model designers, training data, prompt writers, performers, platforms, and listeners. It proposes transparency, consent-sensitive data practices, and contextual attribution as foundations for human–machine musicianship.",
     "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
     "relevance": 96
   },
   {
-    "id": "ai_music_ip_design_principles",
+    "id": "editorial_control_in_ai_music",
     "category": "SONIC",
-    "headline": "Music AI needs design principles for compensation and collaboration",
-    "summary": "Research connecting intellectual-property philosophy with music-tool design proposes systems that support sharing, collaboration, and creator compensation. It shifts the debate from abstract copyright disputes toward concrete interaction and platform mechanics.",
-    "url": "https://transactions.ismir.net/articles/10.5334/tismir.339",
-    "relevance": 95
+    "headline": "The strongest AI music workflows keep humans in the edit",
+    "summary": "Musicians and industry observers argue that AI becomes more creatively useful when artists begin with a clear vision and retain strong editorial control. The perspective favors iterative augmentation over one-click generation, with composition shifting toward selection and refinement.",
+    "url": "https://www.thedeepview.com/newsletter/the-music-industry-s-ai-reckoning-is-already-here",
+    "relevance": 84
   },
   {
-    "id": "architectural_ai_curation",
-    "category": "STR_ART",
-    "headline": "Architects use AI to trade production time for creative judgment",
-    "summary": "SHM Architects describes deploying generative tools to reduce repetitive production work while preserving time for curation, storytelling, and conceptual decisions. The case illustrates AI as an editorial amplifier rather than an autonomous designer.",
-    "url": "https://convo-by-design.blubrry.net/category/artificial-intelligence/",
-    "relevance": 86
-  },
-  {
-    "id": "analog_fortress_against_ai",
-    "category": "STR_ART",
-    "headline": "Physical material libraries become an antidote to digital replication",
-    "summary": "An architecture discussion positions physical materials, craft, and design fundamentals as sources of critical resistance to AI-generated sameness. It suggests that tactile constraints may become strategically valuable in future creative workflows.",
-    "url": "https://convo-by-design.blubrry.net/category/artificial-intelligence/",
-    "relevance": 88
-  },
-  {
-    "id": "cybernetic_serendipity_london",
-    "category": "STR_ART",
-    "headline": "Cybernetic Serendipity returns as a forum for machine creativity",
-    "summary": "The ICA program brings together talks, performances, and readings examining machine creativity through art, currency, and NFTs. Its cross-disciplinary format treats AI as a cultural system rather than only a production tool.",
-    "url": "https://www.ica.art/talks/cybernetic-serendipity-towards-ai",
-    "relevance": 89
-  },
-  {
-    "id": "ai_creativity_conference_music",
-    "category": "SONIC",
-    "headline": "Philosophers revisit what musical creation means after generative AI",
-    "summary": "An international conference focuses on how deep learning changes the ways musicians, listeners, and philosophers create and appreciate music. The topic is especially relevant to interfaces that mediate intention, authorship, and listening context.",
-    "url": "https://philevents.org/event/iCal/149593",
+    "id": "human_premium_for_art",
+    "category": "META",
+    "headline": "AI abundance may create a premium for human-made art",
+    "summary": "Recent reporting highlights a growing tension between the difficulty of detecting AI-generated music and audiences’ desire for human involvement. The emerging “human-made” label points toward provenance as a future design layer for cultural platforms.",
+    "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
     "relevance": 87
   },
   {
-    "id": "ai_self_awareness_new_creation",
-    "category": "META",
-    "headline": "Generated images and sounds challenge the replication metaphor",
-    "summary": "A discussion of machine self-awareness argues that AI-generated images and sounds can be understood as novel constructions rather than simple copies. This raises foundational questions about whether novelty alone is enough to constitute creativity.",
-    "url": "https://www.cmich.edu/news/details/what-happens-if-artificial-intelligence-becomes-self-aware",
+    "id": "creative_roles_and_rewards_music",
+    "category": "SONIC",
+    "headline": "New co-creative music systems force a rethink of rewards",
+    "summary": "Recent scholarship examines how roles and compensation should work when music is produced through human–AI collaboration. The issue extends beyond copyright into interface design: systems must make creative contribution visible enough to support fair attribution.",
+    "url": "https://link.springer.com/subjects/creativity",
+    "relevance": 86
+  },
+  {
+    "id": "generative_art_as_delegated_agency",
+    "category": "STR_ART",
+    "headline": "AI continues a long history of delegated artistic control",
+    "summary": "The historical account of generative art places current video and image models alongside earlier rule-based, mechanical, and procedural systems. This perspective helps designers distinguish novelty in model scale from novelty in the underlying artistic gesture of surrendering control to a system.",
+    "url": "https://fastcompanyme.com/co-design/this-cool-interactive-visual-argues-that-generative-art-began-in-a-cave/",
     "relevance": 82
   },
   {
-    "id": "firefly_photography_workshop",
-    "category": "STR_ART",
-    "headline": "Photography workshops turn generative AI into a creative extension",
-    "summary": "An Adobe workshop explored safe photography capture followed by generative editing and visual design with Lightroom and Firefly. The workflow highlights how AI can extend observation into post-production without replacing the originating act of seeing.",
-    "url": "https://note.com/kaiyu06/n/n2ff52412c10f?hl=en",
-    "relevance": 78
+    "id": "creative_agency_workflow_design",
+    "category": "CX_UX",
+    "headline": "AI interfaces can increase creativity by preserving agency",
+    "summary": "Research comparing human-only, AI-only, and collaborative creation indicates that agency and psychological ownership mediate perceived creativity. For UX designers, this supports interfaces that expose meaningful decisions, revisions, and provenance instead of hiding generation behind a single action.",
+    "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1986050/full",
+    "relevance": 92
   },
   {
-    "id": "ai_music_transparency_ecology",
+    "id": "consent_sensitive_music_training",
     "category": "SONIC",
-    "headline": "Music platforms compete to make synthetic authorship legible",
-    "summary": "YouTube, Apple Music, Spotify, and Deezer are developing different ways to identify AI-generated music and AI personas. These labels will shape how listeners navigate authenticity, discovery, recommendation, and trust in increasingly synthetic catalogs.",
-    "url": "https://ground.news/article/youtube-rolls-out-new-labeling-system-for-ai-generated-music",
-    "relevance": 90
-  },
-  {
-    "id": "consent_sensitive_music_ai",
-    "category": "META",
-    "headline": "Responsible music AI starts with provenance and consent",
-    "summary": "Research on generative music emphasizes transparency, consent-sensitive data practices, contextual attribution, and accountability across the creative stack. These principles can become concrete product requirements for training datasets and creative interfaces.",
+    "headline": "Ethical AI music needs consent-aware training practices",
+    "summary": "A philosophical analysis of generative music identifies training data consent and attribution as structural problems rather than peripheral policy concerns. It suggests that future audio tools should make data lineage and participation legible inside the creative workflow.",
     "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 97
-  },
-  {
-    "id": "ai_creation_and_audience_trust",
-    "category": "CX_UX",
-    "headline": "AI labels become a new user-experience layer for art",
-    "summary": "The rapid spread of AI-generated tracks creates a need for interfaces that explain how synthetic content was made without overwhelming audiences. Disclosure design now affects discovery, credibility, and the perceived value of creative work.",
-    "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
-    "relevance": 90
-  },
-  {
-    "id": "music_ai_compensation_interfaces",
-    "category": "CX_UX",
-    "headline": "Creative AI interfaces may need built-in compensation pathways",
-    "summary": "Design proposals grounded in intellectual-property theory suggest that music AI tools should encourage sharing while ensuring creators are rewarded. This expands UX beyond generation controls into attribution, licensing, collaboration, and payment flows.",
-    "url": "https://transactions.ismir.net/articles/10.5334/tismir.339",
     "relevance": 93
   },
   {
-    "id": "ai_as_editorial_amplifier",
+    "id": "prompting_as_creative_metacognition",
     "category": "CX_UX",
-    "headline": "The strongest creative AI workflow may be editorial, not automatic",
-    "summary": "The architectural case for Krea centers on removing production bottlenecks so designers can spend more time selecting, refining, and narrating concepts. It points toward interfaces optimized for judgment and iteration rather than one-click output.",
-    "url": "https://convo-by-design.blubrry.net/category/artificial-intelligence/",
+    "headline": "Prompting is becoming a metacognitive design problem",
+    "summary": "The prompt-card study treats AI interaction as a process of planning, monitoring, and revising rather than simple instruction writing. This opens a design direction for creative tools that coach reflection and strategy while preserving user authorship.",
+    "url": "https://link.springer.com/article/10.1007/s10639-026-14164-0",
+    "relevance": 90
+  },
+  {
+    "id": "ai_art_history_machine_play",
+    "category": "STR_ART",
+    "headline": "Playable art history turns algorithms into creative instruments",
+    "summary": "The Living Timeline does more than archive generative art: it lets audiences interact with historical algorithmic systems. That shift from passive viewing to machine play offers a compelling model for teaching computational aesthetics through embodied experimentation.",
+    "url": "https://fastcompanyme.com/co-design/this-cool-interactive-visual-argues-that-generative-art-began-in-a-cave/",
     "relevance": 85
   },
   {
-    "id": "human_authorship_as_interface",
+    "id": "authorship_beyond_machine_consciousness",
     "category": "META",
-    "headline": "Authenticity may become an explicit design object",
-    "summary": "Growing interest in human-made markers suggests that authorship could be represented through labels, process records, and participation signals. Design systems may need to communicate not only what an artifact is, but who and what shaped it.",
+    "headline": "AI music ethics moves beyond the question of machine feeling",
+    "summary": "A recent theoretical framework redirects debate away from whether machines experience creativity and toward how responsibility is distributed across the generative stack. This makes accountability, consent, and attribution more actionable than speculative tests of machine consciousness.",
+    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 95
+  },
+  {
+    "id": "human_involvement_as_cultural_value",
+    "category": "META",
+    "headline": "Human participation may become part of an artwork’s value",
+    "summary": "Audience research discussed in recent reporting suggests that people can value art partly because they know another person made it. Design systems for creative platforms may therefore need visible human-process signals, not just output quality metrics.",
     "url": "https://www.bbc.com/news/articles/c5vgjm3gk7rzo",
-    "relevance": 92
+    "relevance": 83
+  },
+  {
+    "id": "co_creation_roles_music_platforms",
+    "category": "SONIC",
+    "headline": "AI music platforms need interfaces for shared creative credit",
+    "summary": "Research on co-creative music-making highlights unresolved questions about roles, rewards, and contribution. The challenge is directly relevant to audio UX: tools should record who shaped lyrics, arrangement, performance, editing, and model-assisted transformation.",
+    "url": "https://link.springer.com/subjects/creativity",
+    "relevance": 88
+  },
+  {
+    "id": "culture_language_memory_models",
+    "category": "META",
+    "headline": "Cultural memory becomes raw material for AI critique",
+    "summary": "The AI for ALL / ALL for AI initiative centers culture, language, and memory as sites where models can preserve, translate, distort, or erase meaning. It offers artists and theorists a framework for investigating whose histories become computationally legible.",
+    "url": "https://www.e-flux.com/announcements/6788371/launch-of-ai-for-all-all-for-ai-initiative",
+    "relevance": 90
   }
 ]
