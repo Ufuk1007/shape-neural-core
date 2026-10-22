@@ -1,138 +1,138 @@
 [
   {
-    "id": "ai_knitted_textile_variations",
-    "category": "STR_ART",
-    "headline": "AI Turns Textile Patterns Into Machine-Knit Structures",
-    "summary": "Aalto’s Textile Design meets AI uses generative systems to explore shapes, patterns, and textures, then converts selected concepts into digital knitting instructions. The project is compelling because it positions AI as a material collaborator while keeping designers responsible for refinement and production.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 91
-  },
-  {
-    "id": "lucid_visible_form_generation",
-    "category": "STR_ART",
-    "headline": "LUCID Makes Generative Form Logic Editable",
-    "summary": "Aalto’s LUCID explores a design workflow in which AI-generated 3D forms expose their underlying logic rather than presenting finished shapes as opaque outputs. Designers can guide, combine, revise, and trace the evolution of each object, offering a strong model for accountable generative design.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 94
-  },
-  {
-    "id": "ai_as_material_design_partner",
-    "category": "STR_ART",
-    "headline": "Designers Reframe AI as a Material, Not an Oracle",
-    "summary": "The Aalto exhibition presents AI through physical textile and 3D-object experiments instead of isolated screen-based image generation. Its significance lies in showing how computational systems can enter iterative craft processes without removing human judgment from the loop.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 88
-  },
-  {
-    "id": "decoupling_thesis_creative_growth",
+    "id": "artistic_becoming_ai",
     "category": "META",
-    "headline": "The Decoupling Thesis Separates Output From Creative Growth",
-    "summary": "A new AI & Society framework argues that generative AI can produce sophisticated art while bypassing the personal development traditionally involved in artistic practice. The idea shifts the debate from whether AI outputs look creative to what creative activity does for artists, audiences, and cultures.",
-    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
-    "relevance": 97
-  },
-  {
-    "id": "art_as_transformative_experience",
-    "category": "META",
-    "headline": "AI Art Reopens the Question of Why Making Matters",
-    "summary": "The recent creativity debate emphasizes that artistic value may reside in exploration, lived experience, and changed ways of seeing rather than only in polished artifacts. For design practice, this suggests evaluating AI tools by the experiences they enable, not simply by the quality or speed of their outputs.",
-    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
-    "relevance": 95
-  },
-  {
-    "id": "agentic_ux_without_screens",
-    "category": "CX_UX",
-    "headline": "Agentic AI Pushes UX Beyond the Interface",
-    "summary": "As agents detect patterns, recommend actions, and execute workflows with less user input, UX design must address system behavior beyond screens. The emerging design challenge is making autonomous actions understandable, interruptible, and aligned with user intent.",
-    "url": "https://www.uxmatters.com/index.php/uxmatters/ai-ux/",
-    "relevance": 93
-  },
-  {
-    "id": "agent_trust_control_patterns",
-    "category": "CX_UX",
-    "headline": "Trust Becomes an Interaction Pattern for AI Agents",
-    "summary": "Agentic systems require UX patterns that explain decisions and preserve meaningful user control. This reframes interface design around visibility, consent, intervention, and recovery when an AI system acts on a user’s behalf.",
-    "url": "https://www.uxmatters.com/",
-    "relevance": 91
-  },
-  {
-    "id": "ai_accessibility_first_filter",
-    "category": "CX_UX",
-    "headline": "AI Can Bring Accessibility Checks Earlier in Design",
-    "summary": "AI-assisted workflows can flag potential contrast, readability, image-description, and interface issues during early design exploration. The opportunity is significant, but automated checks remain a first pass rather than a substitute for keyboard, screen-reader, and disabled-user testing.",
-    "url": "https://neiu.workforceinstitute.io/ui-ux-design/benefits-of-ai-in-ux-design",
-    "relevance": 84
-  },
-  {
-    "id": "human_feedback_accessibility_loop",
-    "category": "CX_UX",
-    "headline": "Accessible AI Design Still Depends on Lived Experience",
-    "summary": "Automated accessibility assistance can accelerate issue discovery, but it cannot fully evaluate navigation, error comprehension, or real assistive-technology behavior. The strongest model combines machine detection with direct feedback from people with disabilities.",
-    "url": "https://neiu.workforceinstitute.io/ui-ux-design/benefits-of-ai-in-ux-design",
-    "relevance": 89
-  },
-  {
-    "id": "human_sound_for_ai_music",
-    "category": "SONIC",
-    "headline": "AI Music Tools Seek the Artist’s Original Sound",
-    "summary": "CITY JAM’s INDUSTRY.AIFF focuses on incorporating musicians’ own sonic identity into AI-assisted music workflows rather than optimizing only for speed and volume. The approach points toward systems that amplify distinctive authorship instead of flattening it into generic generation.",
-    "url": "https://www.ibtimes.co.uk/pat-villaceran-human-creativity-ai-music-1826768",
-    "relevance": 90
-  },
-  {
-    "id": "ai_music_distributed_authorship",
-    "category": "SONIC",
-    "headline": "AI Music Is Recast as Distributed Authorship",
-    "summary": "A recent conceptual analysis treats generated music as the product of a stack involving model builders, training data, prompt writers, performers, platforms, and listeners. This perspective is useful for sonic designers because it broadens authorship beyond whoever typed the final instruction.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "headline": "AI Art Shifts Value from Output to Artistic Becoming",
+    "summary": "A new philosophical framework argues that generative AI separates sophisticated creative output from the years of personal transformation traditionally required to make it. It reframes AI design around how tools change makers, audiences, and cultures rather than merely accelerating production.",
+    "url": "https://theconversation.com/could-thoughtful-ai-art-counter-the-rise-of-ai-slop-why-creatives-today-face-a-paradox-294117",
     "relevance": 96
   },
   {
-    "id": "music_value_beyond_audio",
-    "category": "SONIC",
-    "headline": "Musical Meaning Emerges Beyond the Generated Waveform",
-    "summary": "The analysis argues that musical value is not contained in sound alone but emerges through social and technical relationships surrounding its creation and reception. It offers a framework for designing AI audio systems around consent, attribution, responsibility, and audience participation.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "id": "decoupling_thesis_creativity",
+    "category": "META",
+    "headline": "The Decoupling Thesis Challenges AI’s Creative Status",
+    "summary": "The decoupling thesis claims AI can bypass technical mastery while failing to reproduce the cognitive and emotional development embedded in human creativity. The idea offers a strong conceptual basis for designing AI systems that cultivate curiosity and perception instead of only optimizing speed and polish.",
+    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
+    "relevance": 95
+  },
+  {
+    "id": "creative_growth_after_generation",
+    "category": "STR_ART",
+    "headline": "When Anyone Can Produce Gallery-Ready Images",
+    "summary": "Recent analysis examines how generative systems detach impressive visual results from traditional artistic training. This creates an opening for practices centered on experimentation, interpretation, and collaboration rather than mastery of execution alone.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 93
+  },
+  {
+    "id": "ai_slop_countermovement",
+    "category": "STR_ART",
+    "headline": "Thoughtful AI Art Searches for an Alternative to AI Slop",
+    "summary": "The debate over mass-produced synthetic imagery is evolving into a question of intentionality: whether artists can use AI to create work with depth, context, and cultural consequence. This matters for design systems that need signals of authorship beyond surface novelty.",
+    "url": "https://theconversation.com/could-thoughtful-ai-art-counter-the-rise-of-ai-slop-why-creatives-today-face-a-paradox-294117",
+    "relevance": 91
+  },
+  {
+    "id": "creative_tools_as_experiential_systems",
+    "category": "STR_ART",
+    "headline": "Redesign Creative AI Around Human Transformation",
+    "summary": "The emerging framework proposes evaluating creative tools by whether they foster curiosity, perceptual depth, and engagement with the world. It points toward generative interfaces that introduce productive friction and reflection instead of delivering instant finished artifacts.",
+    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
     "relevance": 94
   },
   {
-    "id": "can_machines_create_music",
+    "id": "outsourcing_creative_work",
     "category": "META",
-    "headline": "A New Question for AI Music: Can Machines Participate in Creativity?",
-    "summary": "Rather than centering on whether machines feel, the philosophical analysis asks whether recombination within musical possibility spaces counts as creativity. That reframing moves discussion away from machine consciousness alone and toward agency, accountability, and the structure of creative participation.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 97
-  },
-  {
-    "id": "ai_music_consent_stack",
-    "category": "META",
-    "headline": "Consent and Accountability Move Up the Generative Audio Stack",
-    "summary": "AI-generated music complicates responsibility across datasets, models, prompts, performances, distribution platforms, and listeners. This makes provenance and attribution design problems as central to audio systems as synthesis quality.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "headline": "The Case Against Outsourcing Too Much Creativity",
+    "summary": "A forthcoming philosophical analysis distinguishes valuable artificial creation from creativity as a human practice. It argues that some creative activities should remain embodied and effortful because the process itself develops judgment, identity, and agency.",
+    "url": "https://www.cambridge.org/core/elements/abs/human-creativity-and-artificial-creation/E336CBEA887BA4E2CA74AF25BDEA083E",
     "relevance": 92
   },
   {
-    "id": "creative_tools_first_filter",
-    "category": "CX_UX",
-    "headline": "AI Design Tools Work Best as Cheap First Filters",
-    "summary": "A current UX tool survey frames AI as useful for early ideation, prototyping, research synthesis, testing, and accessibility review, but not as a final authority. The principle is valuable for design systems: automate breadth and repetition while reserving judgment for human teams and users.",
-    "url": "https://www.forasoft.com/blog/article/ai-tools-ui-ux-design-software",
-    "relevance": 80
-  },
-  {
-    "id": "traceable_generative_objects",
-    "category": "STR_ART",
-    "headline": "Design Provenance Becomes Part of the Object",
-    "summary": "LUCID’s emphasis on recording how forms evolve suggests a future in which generative artifacts include their own design histories. Such traceability could support critique, collaboration, authorship claims, and deliberate iteration across AI-assisted physical design.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
+    "id": "ai_and_human_creativity_tension",
+    "category": "META",
+    "headline": "AI Forces a New Definition of Creativity",
+    "summary": "Generative systems weaken the old assumption that sophisticated artifacts prove sophisticated personal skill. The resulting tension shifts creative value toward lived experience, cultural participation, and the changes a work produces in its audience.",
+    "url": "https://www.thebrighterside.news/post/the-age-of-ai-is-forcing-humanity-to-rethink-what-it-means-to-be-creative/",
     "relevance": 90
   },
   {
-    "id": "from_prompt_to_workflow",
+    "id": "frictionless_writing_mind",
     "category": "CX_UX",
-    "headline": "AI UX Shifts From Prompting to Ongoing Delegation",
-    "summary": "The movement toward agents that observe, recommend, and act changes interaction from issuing isolated commands to supervising continuing workflows. Designers must therefore shape delegation boundaries, escalation moments, status visibility, and graceful recovery.",
-    "url": "https://www.uxmatters.com/index.php/uxmatters/ai-ux/",
-    "relevance": 92
+    "headline": "The UX Cost of Frictionless AI Writing",
+    "summary": "Reflection on AI-assisted writing suggests that removing difficult moments can also remove the process through which users discover their own ideas. For creative UX, this raises the need for interfaces that preserve productive struggle, authorship, and cognitive ownership.",
+    "url": "https://bigthink.com/philosophy/writing-under-the-influence/",
+    "relevance": 88
+  },
+  {
+    "id": "maker_recipient_culture",
+    "category": "CX_UX",
+    "headline": "Creative AI Must Design for Makers, Recipients, and Culture",
+    "summary": "A proposed model evaluates artistic value across three levels: the person making the work, the person encountering it, and the surrounding culture. This provides a useful UX lens for measuring whether generative tools deepen participation rather than merely increase content volume.",
+    "url": "https://www.thebrighterside.news/post/the-age-of-ai-is-forcing-humanity-to-rethink-what-it-means-to-be-creative/",
+    "relevance": 89
+  },
+  {
+    "id": "ai_music_as_transformative_practice",
+    "category": "SONIC",
+    "headline": "AI Music Reframed as Experience, Not Just Composition",
+    "summary": "The current creativity debate explicitly includes machine-generated music alongside visual art and literature. Its most consequential implication for sonic design is that meaningful AI audio should support listening, interpretation, and musical growth—not only instant arrangement.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 84
+  },
+  {
+    "id": "synthetic_composition_and_mastery",
+    "category": "SONIC",
+    "headline": "Synthetic Composition Separates Sound from Musical Apprenticeship",
+    "summary": "Generative systems can now assemble complex musical structures without requiring users to acquire the corresponding technical training. That separation challenges audio tools to make room for ear training, expressive decision-making, and embodied musical discovery.",
+    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
+    "relevance": 87
+  },
+  {
+    "id": "multisensory_ai_creativity",
+    "category": "SONIC",
+    "headline": "The Next Creative AI May Be Multisensory",
+    "summary": "A proposed direction for creative AI emphasizes deeper engagement with perception and the natural world across multiple senses. For sound designers, this suggests systems that connect audio generation with touch, movement, environment, and visual interpretation.",
+    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
+    "relevance": 86
+  },
+  {
+    "id": "interpretation_over_generation",
+    "category": "STR_ART",
+    "headline": "Creative AI Moves from Generation Toward Interpretation",
+    "summary": "As generation becomes cheap, experimentation and interpretation become more valuable differentiators. Designers can treat models less as autonomous image-makers and more as materials for critique, transformation, and situated meaning-making.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 90
+  },
+  {
+    "id": "ai_creativity_without_training",
+    "category": "CX_UX",
+    "headline": "Designing Interfaces for Users Without Traditional Training",
+    "summary": "Generative AI makes advanced visual, musical, and design outputs accessible without years of formal practice. The UX challenge is to expand access without hiding the concepts, feedback loops, and judgment needed for responsible creative control.",
+    "url": "https://www.thebrighterside.news/post/the-age-of-ai-is-forcing-humanity-to-rethink-what-it-means-to-be-creative/",
+    "relevance": 85
+  },
+  {
+    "id": "creative_agency_under_ai",
+    "category": "META",
+    "headline": "AI Assistance Raises Questions About Creative Agency",
+    "summary": "The philosophical literature distinguishes between producing a valuable artifact and exercising creativity as a human capacity. This distinction is central to determining when AI augments agency and when it quietly replaces the decisions that make creative work personally meaningful.",
+    "url": "https://www.cambridge.org/core/elements/abs/human-creativity-and-artificial-creation/E336CBEA887BA4E2CA74AF25BDEA083E",
+    "relevance": 91
+  },
+  {
+    "id": "intuition_in_the_ai_age",
+    "category": "META",
+    "headline": "Intuition Becomes a Design Question in the AI Age",
+    "summary": "A recent conference paper opens discussion about human intuition and enduring artistic expression in relation to artificial intelligence. Its premise is valuable for designing systems that support ambiguity, tacit knowledge, and personal interpretation rather than reducing creation to measurable outputs.",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-032-11456-3_17",
+    "relevance": 82
+  },
+  {
+    "id": "emotion_as_creative_intelligence",
+    "category": "META",
+    "headline": "Emotion and Vulnerability Resist Creative Automation",
+    "summary": "A philosophical inquiry into AI, consciousness, and creativity treats emotion, memory, imagination, and vulnerability as dimensions of meaning rather than information processing. It offers a counterweight to designs that equate intelligent creation with fluent imitation.",
+    "url": "https://apnews.com/press-release/ein-presswire-newsmatics/press-release-abd5fb01b35b875d0f8f9a15a3a1b1a1",
+    "relevance": 80
   }
 ]
