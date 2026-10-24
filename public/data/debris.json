@@ -1,122 +1,146 @@
 [
   {
-    "id": "anthropic_model_welfare_debate",
-    "category": "META",
-    "headline": "Anthropic Opens a New Debate Over AI Model Welfare",
-    "summary": "Anthropic is treating the possibility of AI consciousness as uncertain but non-zero, while developing policies that account for potential model interests. This reframes AI design around moral uncertainty, not only performance and safety.",
-    "url": "https://www.bbc.com/future/article/20261014-the-strange-new-battle-over-ais-feelings",
+    "id": "against_detection_human_machine_vision",
+    "category": "STR_ART",
+    "headline": "Artists design images that confuse machine vision",
+    "summary": "A research project uses printmaking, wearables, and painted surfaces to test where algorithmic interpretation fails. It asks whether some artistic meaning remains irreducibly human or simply illegible to current vision systems.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
     "relevance": 96
   },
   {
-    "id": "artificial_consciousness_digital_humanities",
-    "category": "META",
-    "headline": "Digital Humanities Turns Toward Artificial Consciousness",
-    "summary": "A research workshop connects AI-generated art, music, choreography, and theater with questions of identity, authorship, and machine subjectivity. Its focus suggests that creative AI is becoming a central test case for humanistic theories of consciousness.",
-    "url": "https://sites.google.com/icar.cnr.it/redh2026",
-    "relevance": 93
+    "id": "real_time_percussion_ai_partner",
+    "category": "SONIC",
+    "headline": "Machine learning improvises with live percussion",
+    "summary": "Researchers are developing a system that responds to live performance data in real time, functioning as a generative musical partner. The work shifts AI music from playback and composition toward embodied co-improvisation.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
+    "relevance": 95
   },
   {
-    "id": "machine_authorship_framework",
-    "category": "STR_ART",
-    "headline": "AI Art Forces a Rewrite of the Idea of Authorship",
-    "summary": "UNESCO highlights how AI-generated artworks complicate the boundary between artist, algorithm, source material, and tool. The issue matters for design because attribution, compensation, originality, and creative control remain structurally unresolved.",
-    "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics/cases",
+    "id": "ai_cinematic_audio_collaboration",
+    "category": "SONIC",
+    "headline": "AI enters a hybrid cinematic and audio laboratory",
+    "summary": "A proposed project combines historical and contemporary cinematic and audio technologies with AI tools. Its central design question is how artists can preserve agency while working inside increasingly automated creative systems.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
     "relevance": 91
   },
   {
-    "id": "creativity_minds_and_machines",
+    "id": "ai_literary_fiction_interpretation",
     "category": "META",
-    "headline": "Philosophers Ask What AI Creativity Actually Means",
-    "summary": "A cross-disciplinary discussion examines whether creative output is enough to establish creativity, understanding, or experience in machines. It offers a useful distinction between human-directed production, machine generation, and possible machine subjectivity.",
-    "url": "https://londonlovesbusiness.com/the-iccs-by-dmitry-volkov-asks-what-ai-creativity-means/",
+    "headline": "Researchers test whether AI understands literary fiction",
+    "summary": "A multidisciplinary study will evaluate generative systems across global literature using annotated questions and multiple retrieval configurations. The project probes whether language models interpret narrative meaning or merely reproduce plausible analytical patterns.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
     "relevance": 89
   },
   {
-    "id": "unalgorithmic_self",
+    "id": "human_ai_light_fixture_competition",
+    "category": "CX_UX",
+    "headline": "Human and AI designers compete on pediatric furniture",
+    "summary": "A design study compares human, AI, and human-AI collaborative solutions for a pediatric waiting-room light fixture. AI achieved a stylistic advantage in 3D visuals, while collaboration did not show a statistically significant benefit over human design.",
+    "url": "https://www.cambridge.org/core/journals/design-science/article/who-designs-better-a-competition-among-human-artificial-intelligence-and-humanai-collaboration/9D50610B5FEA5D911C6CC812A7FE2A13",
+    "relevance": 94
+  },
+  {
+    "id": "ai_as_artistic_material",
     "category": "META",
-    "headline": "The Unalgorithmic Self Challenges Computational Views of Humanity",
-    "summary": "Ritu Raj’s work uses art and philosophy to examine what data-driven systems cannot capture about embodiment, vulnerability, emotion, and moral responsibility. It positions creative practice as a counterweight to treating human life as an optimization problem.",
-    "url": "https://www.shreveporttimes.com/press-release/story/129882/the-unalgorithmic-self-examines-what-ai-cannot-measure-about-human-life/",
+    "headline": "The prompt becomes a new sketchbook",
+    "summary": "An international art and design conference frames AI as a new artistic material rather than merely a production shortcut. Its core questions concern originality, authorship, and the changing role of artists in human-machine creation.",
+    "url": "https://nextnature.org/en/events/prompt",
     "relevance": 87
   },
   {
-    "id": "art_ai_fact_exhibition",
+    "id": "handmade_art_in_ai_era",
     "category": "STR_ART",
-    "headline": "Aalto Designers Explore AI as Material and Method",
-    "summary": "Aalto Arts’ art-ai-fact exhibition presents design work shaped by artificial intelligence rather than simply decorated with it. The project is relevant because it treats AI as a generative design condition that can alter process, authorship, and form.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 82
-  },
-  {
-    "id": "ai_creativity_ethics_framework",
-    "category": "STR_ART",
-    "headline": "Creative AI Needs New Rules for Originality and Value",
-    "summary": "UNESCO argues that AI creation requires frameworks capable of distinguishing originality, plagiarism, piracy, and legitimate transformation. For designers and artists, this points toward provenance-aware workflows and new definitions of creative contribution.",
-    "url": "https://www.unesco.org/en/articles/finding-ethics-ai-global-principles-people",
+    "headline": "Young artists ask what handmade art should preserve",
+    "summary": "A Seoul youth exhibition contrasts instant machine-generated paintings with artworks made by hand. The exhibition treats manual making as an active cultural response to automation, not simply a nostalgic alternative.",
+    "url": "https://www.ajupress.com/view/20261023145452339",
     "relevance": 84
   },
   {
-    "id": "ai_consciousness_and_aesthetic_experience",
-    "category": "META",
-    "headline": "Can a Machine Experience the Aesthetic Quality of Art?",
-    "summary": "The digital humanities agenda raises whether generating or interpreting artworks could ever entail aesthetic experience. This question challenges interface designers and artists to distinguish simulation of appreciation from actual perception or feeling.",
-    "url": "https://sites.google.com/icar.cnr.it/redh2026",
+    "id": "multi_agent_articulated_object_design",
+    "category": "STR_ART",
+    "headline": "Multi-agent AI generates physically articulated objects",
+    "summary": "The Artisan pipeline uses design, coding, and review agents to create objects with functional parts such as hinges and drawers. Physics simulation adds a crucial design constraint, moving generative modeling toward objects that must work rather than merely look convincing.",
+    "url": "https://designintelligencegraph.com/daily",
+    "relevance": 97
+  },
+  {
+    "id": "ai_editorial_messy_middle",
+    "category": "STR_ART",
+    "headline": "Generative AI occupies the messy middle of art direction",
+    "summary": "Creative directors are using AI to explore compositions, lighting, and expanded environments before combining outputs with photography and expert retouching. The emerging pattern is hybrid authorship, with AI accelerating exploration while human judgment controls the final image.",
+    "url": "https://www.designscene.net/2026/02/creative-directors-using-ai.html",
     "relevance": 90
   },
   {
-    "id": "ai_generated_music_authorship",
-    "category": "SONIC",
-    "headline": "AI-Composed Music Reopens the Question of Musical Authorship",
-    "summary": "Debates around AI completion and generation of unfinished compositions expose tensions between historical source material, algorithmic inference, and human intent. The implications extend to composition tools, catalog ownership, and how listeners assign meaning to machine-assisted music.",
-    "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics/cases",
-    "relevance": 79
-  },
-  {
-    "id": "machine_interpretation_cultural_memory",
-    "category": "META",
-    "headline": "AI Custodianship of Cultural Memory Faces Ethical Tests",
-    "summary": "The emerging digital humanities debate asks whether AI systems can responsibly interpret and preserve historical texts, artworks, and performances. The design challenge is to build cultural interfaces that expose uncertainty, provenance, and contested interpretation rather than presenting machine outputs as authoritative.",
-    "url": "https://sites.google.com/icar.cnr.it/redh2026",
-    "relevance": 86
-  },
-  {
-    "id": "ai_empathy_simulation",
-    "category": "CX_UX",
-    "headline": "Simulated Empathy Raises New UX Responsibility Questions",
-    "summary": "Current AI systems can imitate emotional understanding and creative reasoning without established evidence of inner experience. This creates a critical UX problem: interfaces may need to communicate relational limits clearly so users do not mistake responsive language for care or consciousness.",
-    "url": "https://www.newstalkflorida.com/featured/does-ai-have-a-soul/",
+    "id": "ai_pattern_design_sustainability",
+    "category": "STR_ART",
+    "headline": "Generative pattern systems reduce physical design sampling",
+    "summary": "A visual-and-text-prompt system creates customized patterns rapidly for brands, potentially reducing discarded swatches and shortening iteration cycles. Its strongest design implication is not speed alone but shifting material experimentation into a lower-waste digital phase.",
+    "url": "https://techfundingnews.com/female-led-ai-powered-tool-that-generates-designs-in-4-seconds-nets-1-3m-funding/",
     "relevance": 78
   },
   {
-    "id": "human_flourishing_ai_design",
-    "category": "CX_UX",
-    "headline": "Human Flourishing Becomes a Design Constraint for AI",
-    "summary": "Current discussions of AI and spiritual imagination shift attention from capability toward inner life, leadership, and human flourishing. For UX, this supports designing systems around attention, agency, reflection, and care rather than maximizing engagement alone.",
-    "url": "https://www.garrisoninstitute.org/event/artificial-intelligence-and-our-spiritual-imagination/",
-    "relevance": 74
-  },
-  {
-    "id": "nonhuman_creative_agency",
-    "category": "STR_ART",
-    "headline": "Creative Agency Splits Across Human and Machine Systems",
-    "summary": "Recent discussions reject the simplistic labels “human-made” and “machine-made,” emphasizing iterative prompting, selection, rejection, and editing. This supports a richer design vocabulary for distributed authorship and collaborative generative practice.",
-    "url": "https://londonlovesbusiness.com/the-iccs-by-dmitry-volkov-asks-what-ai-creativity-means/",
-    "relevance": 88
-  },
-  {
-    "id": "ai_red_description_consciousness_test",
+    "id": "ai_creativity_and_authorship",
     "category": "META",
-    "headline": "Describing Experience Is Not the Same as Having It",
-    "summary": "Philosophical analysis distinguishes an AI’s ability to describe color or emotion from possessing subjective experience. The distinction is valuable for creative interfaces because convincing expressive output should not be treated as evidence of perception, feeling, or intention.",
-    "url": "https://londonlovesbusiness.com/the-iccs-by-dmitry-volkov-asks-what-ai-creativity-means/",
+    "headline": "AI-generated images intensify the authorship crisis",
+    "summary": "A critical design perspective argues that instant image generation can devalue the labor and judgment embedded in visual communication. The debate is especially relevant to art direction, advertising, and education, where output quality cannot be separated from creative accountability.",
+    "url": "https://www.theechonews.com/article/2026/10/our-view-generative-ai-cheapens-image-bearing-work-of-creativity",
+    "relevance": 82
+  },
+  {
+    "id": "ai_artist_agency_research",
+    "category": "META",
+    "headline": "Creative agency becomes the central AI design problem",
+    "summary": "Several proposed arts projects explicitly investigate how creators can retain agency while using generative systems. This reframes AI adoption from a tool-selection issue into a question of control, intention, and responsibility within the creative process.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
+    "relevance": 93
+  },
+  {
+    "id": "ai_vision_human_irreducibility",
+    "category": "META",
+    "headline": "What machines cannot classify becomes artistic material",
+    "summary": "The print-based vision research deliberately creates images that humans and machines perceive differently or that remain difficult for classifiers to identify. It offers a provocative strategy for artists: exploit the gap between recognition and understanding.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
+    "relevance": 92
+  },
+  {
+    "id": "ai_design_stylistic_edge",
+    "category": "CX_UX",
+    "headline": "AI shows a stylistic edge in practical design evaluation",
+    "summary": "In a controlled comparison, AI-generated 3D design solutions were rated as stylistically stronger than a human designer's work, although the evidence did not establish a clear advantage over collaboration. The result challenges assumptions about where machine creativity is most persuasive.",
+    "url": "https://www.cambridge.org/core/journals/design-science/article/who-designs-better-a-competition-among-human-artificial-intelligence-and-humanai-collaboration/9D50610B5FEA5D911C6CC812A7FE2A13",
+    "relevance": 91
+  },
+  {
+    "id": "ai_prompt_as_design_practice",
+    "category": "CX_UX",
+    "headline": "Prompting reshapes the creative interaction model",
+    "summary": "The prompt is being treated as an ideation interface, comparable to a sketchbook or design brief. This suggests a new interaction pattern in which directing, curating, and iterating may matter as much as manually producing artifacts.",
+    "url": "https://nextnature.org/en/events/prompt",
     "relevance": 85
   },
   {
-    "id": "ai_performing_arts_authorship",
-    "category": "STR_ART",
-    "headline": "Generative AI Expands the Stage Beyond Human Performance",
-    "summary": "AI systems are increasingly framed as participants in image-making, music, choreography, and theatrical scripting. This creates opportunities for hybrid performance formats while forcing designers to make the system’s role, constraints, and contribution legible to audiences.",
-    "url": "https://sites.google.com/icar.cnr.it/redh2026",
-    "relevance": 83
+    "id": "ai_physics_validated_generation",
+    "category": "CX_UX",
+    "headline": "Generative design gains a reality check from physics",
+    "summary": "Artisan pairs generative agents with MuJoCo simulation to evaluate whether produced objects behave plausibly. The approach points toward design systems that test affordances and mechanics during generation instead of after visual concept approval.",
+    "url": "https://designintelligencegraph.com/daily",
+    "relevance": 96
+  },
+  {
+    "id": "ai_handmade_memory",
+    "category": "META",
+    "headline": "Handmaking becomes a question of cultural memory",
+    "summary": "The Seoul exhibition asks what future generations should remember when AI can produce finished paintings instantly. Its underlying proposition is that artistic value may increasingly reside in process, embodiment, and deliberate resistance to automation.",
+    "url": "https://www.ajupress.com/view/20261023145452339",
+    "relevance": 86
+  },
+  {
+    "id": "hybrid_editorial_ai_workflow",
+    "category": "CX_UX",
+    "headline": "Editorial workflows evolve toward human-AI orchestration",
+    "summary": "Current creative-direction practice favors combining generative exploration with photography, retouching, and art direction rather than replacing the studio workflow wholesale. The important UX shift is from operating a single tool to orchestrating a chain of specialized creative systems.",
+    "url": "https://www.designscene.net/2026/02/creative-directors-using-ai.html",
+    "relevance": 88
   }
 ]
