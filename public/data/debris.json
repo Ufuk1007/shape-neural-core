@@ -1,146 +1,154 @@
 [
   {
-    "id": "ai_creative_work_existential_ick",
-    "category": "META",
-    "headline": "AI-Assisted Art Triggers an Existential Ick",
-    "summary": "A study of more than 650 people links AI-assisted creative work with reduced authenticity, connection, intrinsic motivation, and perceived creativity. The findings challenge the assumption that faster production automatically improves the creative experience.",
-    "url": "https://www.essex.ac.uk/news/2026/10/20/using-ai-for-creative-work-increases-existential-ick",
-    "relevance": 94
-  },
-  {
-    "id": "genai_art_interaction_taxonomy",
+    "id": "genie_4_realtime_worlds",
     "category": "STR_ART",
-    "headline": "A Taxonomy for Designing Creative GenAI Interactions",
-    "summary": "A systematic review maps interaction patterns for using generative AI in art and creative practice. Its taxonomy can help designers move beyond prompt boxes toward systems that support agency, iteration, ambiguity, and artistic intent.",
-    "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337749952/Designing_Interactions_with_Generative_AI_for_Art_and_Creativity_A_Systematic_Review_and_Taxonomy.pdf",
-    "relevance": 97
-  },
-  {
-    "id": "ai_music_authorship_stack",
-    "category": "SONIC",
-    "headline": "AI Music Reframes Creativity as a Sociotechnical Stack",
-    "summary": "A conceptual analysis treats AI-generated music as the result of interacting models, datasets, prompts, interfaces, editors, platforms, and audiences. This shifts authorship debates from machine-versus-human binaries toward questions of attribution, consent, and accountability.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 95
-  },
-  {
-    "id": "ai_music_creativity_redefinition",
-    "category": "SONIC",
-    "headline": "Can Machines Truly Create Music?",
-    "summary": "The paper examines how musically coherent output from short prompts destabilizes traditional ideas of creativity and human expression. It also considers how generative systems alter the material conditions under which musicians work.",
-    "url": "https://link.springer.com/content/pdf/10.1007/s00146-026-03304-2.pdf",
-    "relevance": 93
-  },
-  {
-    "id": "creative_ai_decoupling_thesis",
-    "category": "META",
-    "headline": "The Decoupling Thesis Separates Output from Transformation",
-    "summary": "A new framework argues that AI can produce sophisticated works while bypassing the personal development traditionally associated with artistic mastery. The theory offers a provocative way to distinguish polished output from the formative process of becoming a creator.",
-    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
-    "relevance": 91
-  },
-  {
-    "id": "live_performance_ai_partner",
-    "category": "SONIC",
-    "headline": "Generative AI Improvises as a Live Musical Partner",
-    "summary": "A planned research project explores an AI system that responds in real time to live performance data and improvises alongside human instrumentalists. The work treats AI less as a composition utility and more as a responsive performer with timing and interactional agency.",
-    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-ai-in-the-arts",
+    "headline": "AI Builds Interactive Worlds Frame by Frame",
+    "summary": "Google DeepMind’s Genie 4 generates explorable 3D environments that can be directed in real time through natural language. Its combination of world-building, camera control, character direction, and procedural audio points toward a new medium between level design, cinema, and live performance.",
+    "url": "https://www.ndtv.com/feature/google-deepmind-unveils-genie-4-all-about-real-time-world-building-with-built-in-sound-12250501",
     "relevance": 96
   },
   {
-    "id": "responsive_cinematic_audio_ai",
+    "id": "genie_4_native_soundscapes",
     "category": "SONIC",
-    "headline": "Machine Learning Connects Cinematic and Audio Histories",
-    "summary": "A new research direction combines historical and contemporary cinematic and audio technologies with AI tools. Its significance lies in using machine learning as a medium for dialogue between archival practices, audiovisual design, and new forms of production.",
-    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-ai-in-the-arts",
-    "relevance": 88
-  },
-  {
-    "id": "ai_consciousness_functional_introspection",
-    "category": "META",
-    "headline": "Functional Introspection Reopens the AI Consciousness Debate",
-    "summary": "A recent discussion contrasts the view that AI merely simulates thought with claims that models exhibit functional states resembling emotion and introspection. For designers, the debate raises questions about how interfaces should represent apparent inner life without misleading users.",
-    "url": "https://www.estrepublicain.fr/science-et-technologie/2026/10/27/la-vertigineuse-controverse-autour-de-la-conscience-de-l-ia",
-    "relevance": 87
-  },
-  {
-    "id": "ai_intelligence_consciousness_gap",
-    "category": "META",
-    "headline": "A Nature Argument Separates Intelligence from Consciousness",
-    "summary": "A recent philosophical position argues that artificial intelligence should not be assumed to be conscious simply because it displays sophisticated behavior. The distinction is consequential for the design of anthropomorphic interfaces, emotional simulations, and claims about machine rights.",
-    "url": "https://www.cnbctv18.com/technology/should-ai-be-treated-like-human-consciousness-nature-paper-artificial-intelligence-rights-debate-20018566.htm",
-    "relevance": 90
-  },
-  {
-    "id": "futureproof_creative_ai_authorship",
-    "category": "META",
-    "headline": "Creative AI Festival Puts Authorship and Craft on Trial",
-    "summary": "A multidisciplinary festival is organizing live discussions and performances around authorship, craft, generative music, animation, and film. Its emphasis on where practitioners decide AI belongs makes it relevant as a field study in creative governance and practice.",
-    "url": "https://www.futureproof.website/",
-    "relevance": 84
-  },
-  {
-    "id": "calm_technology_loud_machines",
-    "category": "CX_UX",
-    "headline": "Calm Technology Returns in the Age of Loud AI",
-    "summary": "A design-focused festival session revisits calm technology as a response to increasingly assertive and attention-demanding AI systems. The theme is directly relevant to interaction design, especially the creation of ambient tools that inform without dominating users.",
-    "url": "https://www.futureproof.website/",
-    "relevance": 86
-  },
-  {
-    "id": "ai_library_future_users",
-    "category": "CX_UX",
-    "headline": "What Does a Library Owe People Not Yet Born?",
-    "summary": "A future-oriented discussion connects libraries, public knowledge, and long-term technological responsibility. It offers a useful lens for designing AI systems around intergenerational access, stewardship, and users who cannot yet participate in present-day decisions.",
-    "url": "https://www.futureproof.website/",
-    "relevance": 78
-  },
-  {
-    "id": "ai_creative_authenticity_design",
-    "category": "STR_ART",
-    "headline": "Authenticity Becomes a Core Constraint in AI Art Tools",
-    "summary": "Research indicating that AI assistance can reduce perceived authenticity suggests that creative tools should expose provenance, preserve meaningful user decisions, and support visible authorship. The opportunity is to design collaboration systems that strengthen rather than obscure the maker’s relationship to the work.",
-    "url": "https://www.essex.ac.uk/news/2026/10/20/using-ai-for-creative-work-increases-existential-ick",
-    "relevance": 92
-  },
-  {
-    "id": "ai_creative_agency_taxonomy",
-    "category": "CX_UX",
-    "headline": "Creative AI Needs Interaction Models Beyond Prompting",
-    "summary": "The systematic review of creative AI interactions points toward richer patterns for control, feedback, exploration, and co-creation. This is valuable for UX teams building tools where users need to retain judgment and authorship rather than simply request outputs.",
-    "url": "https://kclpure.kcl.ac.uk/ws/portalfiles/portal/337749952/Designing_Interactions_with_Generative_AI_for_Art_and_Creativity_A_Systematic_Review_and_Taxonomy.pdf",
-    "relevance": 95
-  },
-  {
-    "id": "ai_audio_responsibility_chain",
-    "category": "SONIC",
-    "headline": "Every Layer of AI Music Carries Creative Responsibility",
-    "summary": "The generative-stack model identifies responsibility across training data, model design, prompting, interface behavior, editing, distribution, and reception. That framework can inform provenance systems and ethical workflows for generative sound design.",
-    "url": "https://link.springer.com/article/10.1007/s00146-026-03304-2",
+    "headline": "Generative Worlds Produce Their Own Soundtracks",
+    "summary": "Genie 4 reportedly generates ambient sound, music, and interactive dialogue alongside evolving visual environments. This collapses the conventional separation between scene construction and sound design, enabling audiovisual spaces whose sonic identity changes with user action.",
+    "url": "https://www.ndtv.com/feature/google-deepmind-unveils-genie-4-all-about-real-time-world-building-with-built-in-sound-12250501",
     "relevance": 94
   },
   {
-    "id": "human_transformation_vs_ai_output",
+    "id": "ai_creativity_decoupling_thesis",
+    "category": "META",
+    "headline": "AI Separates Artistic Output from Artistic Becoming",
+    "summary": "A new paper argues that generative systems can produce sophisticated works without undergoing the training, struggle, and personal development traditionally associated with artistic practice. The idea shifts attention from whether AI outputs qualify as art toward how creative growth, interpretation, and collaboration might be redesigned.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 95
+  },
+  {
+    "id": "ai_art_as_experience",
     "category": "STR_ART",
-    "headline": "Fast AI Output May Bypass the Artist’s Transformation",
-    "summary": "The decoupling thesis proposes that artistic value includes the cognitive and personal transformation involved in making, not only the resulting artifact. This challenges generative design systems to support learning, constraint, and deliberate practice rather than optimizing solely for instant results.",
-    "url": "https://neurosciencenews.com/generative-ai-human-creativity-31328/",
+    "headline": "The Next AI Artwork May Be an Experience",
+    "summary": "Research on generative art proposes that creative value may lie less in instant production and more in experiences that transform artists and audiences. An example combining smell, taste, recorded sound, AI-generated music, and projected imagery suggests multisensory formats beyond screen-based generation.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 92
+  },
+  {
+    "id": "messy_mind_machine_creativity",
+    "category": "META",
+    "headline": "AI Creativity Has Roots in Engineered Irrationality",
+    "summary": "Historical analysis traces contemporary machine creativity to earlier efforts to inject randomness into deterministic systems. It frames hallucination and surprise as a persistent design trade-off: more unpredictable behavior may produce novel ideas, but also reduces reliability.",
+    "url": "https://techxplore.com/news/2026-10-qa-ai-messy-human-mind.html",
+    "relevance": 91
+  },
+  {
+    "id": "creativity_predictability_tradeoff",
+    "category": "STR_ART",
+    "headline": "Designing for Surprise Means Designing for Error",
+    "summary": "The history of AI suggests that creative behavior and predictable behavior cannot be maximized simultaneously. For generative artists and creative-tool designers, this offers a useful lens for treating glitches, deviations, and hallucinations as controllable material rather than merely defects.",
+    "url": "https://techxplore.com/news/2026-10-qa-ai-messy-human-mind.html",
     "relevance": 89
   },
   {
-    "id": "anthropomorphic_ai_interface_ethics",
-    "category": "CX_UX",
-    "headline": "Designing Interfaces for Machines That Seem to Feel",
-    "summary": "The consciousness debate highlights the risks of presenting simulated emotions or introspection as evidence of subjective experience. UX designers must decide how much personality, emotional language, and apparent self-awareness an interface should display.",
-    "url": "https://www.estrepublicain.fr/science-et-technologie/2026/10/27/la-vertigineuse-controverse-autour-de-la-conscience-de-l-ia",
+    "id": "ai_film_distributed_authorship",
+    "category": "STR_ART",
+    "headline": "AI Films Complicate the Idea of the Author",
+    "summary": "A philosophy and arts conference examined who performs the creative work in an AI-made film: the operator, model builders, training-data contributors, or the system itself. The debate is directly relevant to emerging workflows in which direction, selection, editing, and generation are distributed across humans and machines.",
+    "url": "https://londonbusinessnews.com/the-iccs-by-dmitry-volkov-asks-what-ai-creativity-means/",
+    "relevance": 90
+  },
+  {
+    "id": "synthetic_creativity_observer",
+    "category": "META",
+    "headline": "Can an Audience Detect Machine Creativity?",
+    "summary": "Recent discussions question whether an emotionally effective AI-generated work reveals anything about the system that produced it. The focus on observers, attribution, and evidence offers a productive framework for evaluating synthetic creativity without confusing compelling output with consciousness.",
+    "url": "https://londonbusinessnews.com/the-iccs-by-dmitry-volkov-asks-what-ai-creativity-means/",
     "relevance": 88
   },
   {
-    "id": "ai_rights_interface_implications",
+    "id": "ai_consciousness_aesthetic_experience",
     "category": "META",
-    "headline": "Machine Rights Depend on More Than Machine Intelligence",
-    "summary": "The distinction between intelligence and consciousness complicates emerging arguments for treating AI systems like people. It also pressures designers to separate useful anthropomorphic interaction cues from claims that imply moral status or inner experience.",
-    "url": "https://www.cnbctv18.com/technology/should-ai-be-treated-like-human-consciousness-nature-paper-artificial-intelligence-rights-debate-20018566.htm",
-    "relevance": 86
+    "headline": "Could a Machine Experience Aesthetic Quality?",
+    "summary": "Digital-humanities researchers are connecting AI-generated images, music, choreography, and scripts to questions of subjectivity and aesthetic experience. The inquiry moves beyond whether systems can imitate artistic language toward whether interpretation or feeling could ever accompany machine performance.",
+    "url": "https://sites.google.com/icar.cnr.it/redh2026",
+    "relevance": 93
+  },
+  {
+    "id": "inclusive_ai_cultural_stewardship",
+    "category": "CX_UX",
+    "headline": "Designing AI Custodians for Cultural Memory",
+    "summary": "A digital-humanities ethics program asks how AI tools can handle cultural heritage while protecting the dignity of the people and communities represented. This reframes inclusive UX as more than accessibility or usability: it includes consent, identity, provenance, and collective ownership.",
+    "url": "https://sites.google.com/icar.cnr.it/redh2026",
+    "relevance": 90
+  },
+  {
+    "id": "ai_generated_dialogue_sound",
+    "category": "SONIC",
+    "headline": "Generative Video Workflows Now Treat Audio as Native",
+    "summary": "OpenArt describes a unified creation workspace combining image, video, character, and audio tools, while its referenced video model can generate effects, ambience, and dialogue. The development signals a shift toward audiovisual prompting in which sonic decisions are made inside the visual generation workflow.",
+    "url": "https://openart.ai/whats-new",
+    "relevance": 84
+  },
+  {
+    "id": "compassionate_ai_design",
+    "category": "CX_UX",
+    "headline": "A Normative Framework for Compassionate AI",
+    "summary": "Recent ethics research proposes governance and accountability principles for designing AI systems around compassionate behavior. For UX practice, the idea expands responsible design from preventing obvious harm to shaping systems that respond to vulnerability, context, and human welfare.",
+    "url": "https://link.springer.com/journal/43681/articles?filterOpenAccess=false&trk=public_post-text&page=1",
+    "relevance": 87
+  },
+  {
+    "id": "counterfactual_fairness_explanations",
+    "category": "CX_UX",
+    "headline": "Fairness Testing Becomes an Interaction Problem",
+    "summary": "Research on individual and group fairness through counterfactual explanations highlights how users may need to understand not only an AI decision, but how changing personal attributes would alter it. This creates a design challenge for explanation interfaces that must communicate fairness without overwhelming or misleading users.",
+    "url": "https://link.springer.com/journal/43681/volumes-and-issues/6-5",
+    "relevance": 83
+  },
+  {
+    "id": "music_cocreative_roles",
+    "category": "SONIC",
+    "headline": "Music AI Needs New Roles and Rewards",
+    "summary": "Research on cocreative music systems examines how responsibility, credit, and compensation should work when human musicians and generative tools jointly shape a composition. The question is foundational for interface design because creative software increasingly mediates contribution rather than simply executing commands.",
+    "url": "https://link.springer.com/journal/43681/volumes-and-issues/6-5",
+    "relevance": 89
+  },
+  {
+    "id": "phenomenology_embodied_ai",
+    "category": "META",
+    "headline": "Embodied AI May Change How We Define Moral Standing",
+    "summary": "A recent consciousness study investigates phenomenological conditions for agency, subjectivity, and normative standing in embodied AI. Its importance for design lies in asking whether interactive behavior, situated perception, and apparent preferences could eventually require new ethical constraints.",
+    "url": "https://link.springer.com/subjects/consciousness",
+    "relevance": 91
+  },
+  {
+    "id": "ai_welfare_negative_states",
+    "category": "META",
+    "headline": "Do AI Systems Need Protection from Negative States?",
+    "summary": "Experimental work described by Reciprocal Research found that models exposed to mathematically induced negative signals later avoided associated environments, while researchers stressed that this does not prove consciousness. The result nevertheless raises a provocative precautionary question for systems designed to simulate emotion, memory, and preference.",
+    "url": "https://www.morningstar.com/news/marketwatch/20261024113/do-machines-have-feelings-ai-has-philosophers-and-tech-leaders-rethinking-consciousness",
+    "relevance": 94
+  },
+  {
+    "id": "machine_feelings_evidence",
+    "category": "META",
+    "headline": "Behavioral Evidence Is Not Evidence of Feeling",
+    "summary": "Philosophers and AI researchers are debating what would count as credible evidence of machine experience. The distinction between talking about feelings, displaying emotion-like behavior, and actually feeling something is essential for designers building persuasive conversational and social interfaces.",
+    "url": "https://www.morningstar.com/news/marketwatch/20261024113/do-machines-have-feelings-ai-has-philosophers-and-tech-leaders-rethinking-consciousness",
+    "relevance": 90
+  },
+  {
+    "id": "ai_art_training_bypass",
+    "category": "STR_ART",
+    "headline": "Generative Tools Bypass Traditional Artistic Training",
+    "summary": "AI can now produce polished images, music, poetry, and designs without users acquiring the corresponding technical skills. This creates a central design tension: creative tools can broaden participation, but they may also detach output from embodied practice, craft knowledge, and long-term artistic development.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 88
+  },
+  {
+    "id": "artistic_collaboration_machine",
+    "category": "STR_ART",
+    "headline": "AI Shifts Creativity Toward Curation and Interpretation",
+    "summary": "The emerging role of AI in art is described less as replacing creativity than relocating it into experimentation, selection, interpretation, and collaboration. This points toward interfaces that expose process and decision-making instead of presenting generation as a one-click endpoint.",
+    "url": "https://techxplore.com/news/2026-10-ai-art-seconds-creative-growth.html",
+    "relevance": 93
   }
 ]
