@@ -1,146 +1,138 @@
 [
   {
-    "id": "craft_bot_architectural_reasoning",
+    "id": "suprematist_vibe_coding",
     "category": "STR_ART",
-    "headline": "AI Turns Architectural References Into Buildable Code",
-    "summary": "Aalto’s Craft Bot converts photographs, drawings, and construction manuals into Python-generated Blender structures, then tests designs through visual feedback. It matters because AI becomes an iterative architectural collaborator rather than a one-shot image generator, raising questions about structural reliability and authorship.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 95
-  },
-  {
-    "id": "lucid_transparent_form_generation",
-    "category": "STR_ART",
-    "headline": "LUCID Makes Generative Form Logic Editable",
-    "summary": "LUCID exposes how AI-generated 3D forms are constructed, allowing designers to guide, combine, and revise the underlying evolution of an object. This shifts generative design toward inspectable collaboration instead of opaque output selection.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 94
-  },
-  {
-    "id": "ai_knitted_textile_fabrication",
-    "category": "STR_ART",
-    "headline": "Generative Patterns Become Machine-Knitted Objects",
-    "summary": "Aalto’s textile project uses AI to explore shapes, textures, and patterns, then translates selected concepts into instructions for digital knitting machines. The workflow links speculative image generation directly to material production while retaining designer control.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 89
-  },
-  {
-    "id": "tree_aware_ai_furniture",
-    "category": "STR_ART",
-    "headline": "AI Designs Furniture Around Local Wood",
-    "summary": "When Tree Types Matter adapts a stool’s braces and material use to the properties of locally available wood. The project offers a compelling model of ecological generative design in which AI responds to material difference rather than forcing standardized inputs.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 91
-  },
-  {
-    "id": "six_fingered_hand_ai_sculpture",
-    "category": "STR_ART",
-    "headline": "An AI Image Error Becomes a Monument",
-    "summary": "Artist Paolo Troilo turns the familiar six-fingered hand error into a large, hand-finished 3D-printed sculpture. The work transforms a generative failure into an emblem of machine creativity, inviting debate about whether AI’s defects can become an artistic language.",
-    "url": "https://jen.jiji.com/jc/eng_agt?g=adnkronos&c=italy&k=20261030KRONOS-202610121580819548_eng",
-    "relevance": 88
-  },
-  {
-    "id": "genie_four_interactive_worlds",
-    "category": "STR_ART",
-    "headline": "Worldbuilding Models Collapse Concept Art Into Playable Space",
-    "summary": "Genie 4 generates explorable environments from natural-language ideas and lets creators alter camera, weather, characters, and events in real time. Its significance lies in treating visual design as an interactive medium that can be prototyped before conventional engine development.",
-    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-    "relevance": 96
-  },
-  {
-    "id": "genie_four_native_world_audio",
-    "category": "SONIC",
-    "headline": "Interactive Worlds Generate Their Own Soundscapes",
-    "summary": "Genie 4 produces ambient sound, music, and interactive dialogue alongside simulated environments. This points toward a unified worldbuilding workflow where spatial visuals and adaptive audio emerge from the same generative system.",
-    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-    "relevance": 95
-  },
-  {
-    "id": "semantic_art_browser_reading",
-    "category": "CX_UX",
-    "headline": "A Browser Turns Reading Into Semantic Motion",
-    "summary": "Opera’s Semantic Art experiment maps similar sentences as visual neighbors and renders an article as moving artwork. The concept challenges conventional information interfaces by making semantic relationships perceptible through motion and spatial composition.",
-    "url": "https://www.thurrott.com/a-i/343282/opera-is-bringing-local-ai-to-its-web-browsers-with-webai",
-    "relevance": 84
-  },
-  {
-    "id": "project_lens_contextual_reading",
-    "category": "CX_UX",
-    "headline": "Local AI Recolors Articles by User Relevance",
-    "summary": "Project Lens analyzes an article against a user’s stated project and visually weights paragraphs by importance. It suggests a lightweight, local alternative to generic summarization: interfaces that reorganize attention around a person’s immediate intent.",
-    "url": "https://www.thurrott.com/a-i/343282/opera-is-bringing-local-ai-to-its-web-browsers-with-webai",
+    "headline": "Vibe-Coded AI Generator Reimagines Suprematism",
+    "summary": "Supremath.art uses AI-assisted coding to generate geometric compositions inspired by Suprematism. It matters because conversational programming lowers the barrier to experimenting with art algorithms while exposing questions about stylistic imitation and authorship.",
+    "url": "https://emergent.sh/news/developer-vibe-codes-suprematist-art",
     "relevance": 87
   },
   {
-    "id": "attie_prompt_to_interactive_media",
-    "category": "CX_UX",
-    "headline": "Text Prompts Become Shareable Micro-Experiences",
-    "summary": "Bluesky’s Attie lets users create games, quizzes, polls, dashboards, websites, and other interactive projects from prompts. The design implication is a shift from consuming interfaces to authoring small, publishable experiences without traditional programming.",
-    "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-    "relevance": 90
-  },
-  {
-    "id": "attie_prompt_to_drum_machine",
-    "category": "SONIC",
-    "headline": "No-Code Social Creation Includes a Generative Drum Machine",
-    "summary": "Attie’s examples include a drum machine generated as a lightweight interactive application. This matters because AI-assisted creation is moving beyond static media toward small, playable sonic instruments that users can publish and remix.",
-    "url": "https://www.chatai.com/posts/bluesky-s-attie-now-lets-users-create-games-polls-and-apps-with-ai",
-    "relevance": 82
-  },
-  {
-    "id": "vidtune_multitrack_concepting",
-    "category": "SONIC",
-    "headline": "VidTune Generates Multiple Musical Directions at Once",
-    "summary": "Adobe Research’s VidTune creates several music tracks from a text prompt and pairs them with contextual visual thumbnails for comparison. The interface treats music ideation as a visual browsing problem, helping creators evaluate tone and direction before committing to a track.",
-    "url": "https://research.adobe.com/news/",
-    "relevance": 93
-  },
-  {
-    "id": "genie_four_realtime_sound_direction",
-    "category": "SONIC",
-    "headline": "Natural Language Directs Sound Inside Simulated Worlds",
-    "summary": "Genie 4 allows real-time prompting of world events while generating ambient audio, music, and dialogue within the scene. This creates a new sound-design paradigm in which sonic continuity responds directly to environmental and narrative changes.",
-    "url": "https://www.thurrott.com/a-i/343287/google-makes-genie-4-world-simulation-model-available-for-select-partners",
+    "id": "uneven_authorship_anxiety",
+    "category": "STR_ART",
+    "headline": "Art and Design Students Experience AI Authorship Differently",
+    "summary": "A survey of 2,441 students across 33 Chinese art and design institutions found that design students used generative AI more often, while fine-art students tied authorship more strongly to embodied making and imperfection. The contrast reveals how professional context reshapes the meaning of creative control.",
+    "url": "https://github.com/edtechdev/aied/blob/main/content/en/articles/authorship-anxiety-art-design-genai-2026.md",
     "relevance": 94
   },
   {
-    "id": "ai_failure_as_visual_identity",
-    "category": "META",
-    "headline": "The Hallucination Becomes AI’s Face",
-    "summary": "A.I. Like treats the six-fingered hand as a recognizable signature of image-generation systems rather than merely a defect. The project reframes error as cultural identity and asks how machine artifacts become symbols in human visual culture.",
-    "url": "https://jen.jiji.com/jc/eng_agt?g=adnkronos&c=italy&k=20261030KRONOS-202610121580819548_eng",
-    "relevance": 92
-  },
-  {
-    "id": "ai_design_self_correction",
-    "category": "META",
-    "headline": "Can AI Recognize and Repair Its Own Design Errors?",
-    "summary": "Craft Bot researchers are testing whether an AI can identify failures in generated architectural designs and correct them through iterative visual and code-based feedback. The experiment probes whether design intelligence requires not only generation, but situated judgment and self-critique.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
-    "relevance": 96
-  },
-  {
-    "id": "ai_visible_design_provenance",
-    "category": "META",
-    "headline": "LUCID Makes AI Design Histories Part of the Artifact",
-    "summary": "By tracking how forms evolve and allowing designers to inspect their generative logic, LUCID treats process history as part of the object. This offers a practical response to concerns about opaque authorship and untraceable machine decisions.",
-    "url": "https://www.aalto.fi/en/news/aalto-arts-exhibiting-ai-inspired-designs-at-dutch-design-week-2026",
+    "id": "ai_production_layer_ux",
+    "category": "CX_UX",
+    "headline": "AI Compresses UX Production, Not Design Responsibility",
+    "summary": "AI can draft screens, document design systems, summarize research, and flag accessibility issues, but it cannot replace user judgment or accountability. The emerging UX pattern is a division between automated production and human interpretation.",
+    "url": "https://www.kwan.com/blog/ai-the-role-of-uxui-designer-?hsLang=en",
     "relevance": 91
   },
   {
-    "id": "local_ai_browser_creativity",
-    "category": "META",
-    "headline": "Local Browser AI Turns Interface Into Creative Medium",
-    "summary": "Opera’s WebAI experiments run locally and include semantic visualization, quizzes, playful analysis, and generative reinterpretation of articles. The collection suggests that AI interfaces may evolve from answer engines into personal, privacy-oriented instruments for transforming information.",
-    "url": "https://www.thurrott.com/a-i/343282/opera-is-bringing-local-ai-to-its-web-browsers-with-webai",
+    "id": "accessibility_limits_ai_tools",
+    "category": "CX_UX",
+    "headline": "Automated Accessibility Checks Still Need Human Testing",
+    "summary": "Current AI-assisted UX workflows can identify missing labels, contrast problems, and inconsistent tokens, but they cannot fully assess real screen-reader or keyboard experiences. This reinforces accessibility as an embodied interaction problem rather than a compliance checkbox.",
+    "url": "https://modeinspect.com/blog/ai-ux-design",
+    "relevance": 89
+  },
+  {
+    "id": "ai_design_system_gap",
+    "category": "CX_UX",
+    "headline": "Generative UI Still Struggles With Design-System Fidelity",
+    "summary": "Recent UX guidance notes that generative tools remain weak at consistently supporting design systems. The gap suggests that future AI design tools must reason about states, tokens, constraints, and product context—not merely produce attractive screens.",
+    "url": "https://modeinspect.com/blog/ai-ux-design",
     "relevance": 86
   },
   {
-    "id": "ai_worlds_before_engine_code",
-    "category": "META",
-    "headline": "Playable Prototypes Arrive Before Conventional Development",
-    "summary": "Genie 4 enables creative technologists to test visual styles, materials, mechanics, and interactive concepts before writing engine code. This challenges established production hierarchies by making speculative experience design executable at the earliest ideation stage.",
-    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "id": "anonymous_ai_music_radio",
+    "category": "SONIC",
+    "headline": "AI Slop FM Tests Music Without Artist Identity",
+    "summary": "AI Slop FM asks listeners to judge tracks anonymously, removing human or machine labels from the initial listening experience. The experiment shifts the debate from provenance and branding toward perception, affect, and whether listeners can or should distinguish authorship.",
+    "url": "https://aimusicnewsletter.substack.com/p/making-music-more-playable-ai-slop",
     "relevance": 93
+  },
+  {
+    "id": "copista_sheet_music_model",
+    "category": "SONIC",
+    "headline": "Copista Turns Scanned Scores Into Playable Music",
+    "summary": "Copista uses a model to interpret scanned sheet music, with publicly available weights under an attribution license. Rather than generating new songs, it applies AI to recover, perform, and circulate existing musical notation.",
+    "url": "https://aimusicnewsletter.substack.com/p/making-music-more-playable-ai-slop",
+    "relevance": 88
+  },
+  {
+    "id": "agentic_daw_creativity",
+    "category": "SONIC",
+    "headline": "Agentic Music Tools Move From Generation to Self-Editing",
+    "summary": "Experimental DAWs and plugins allow AI agents to compose passages, select instruments and effects, evaluate their output, and revise it. This changes the musician’s role from direct constructor toward curator, supervisor, and editor.",
+    "url": "https://www.jdsupra.com/legalnews/when-does-ai-stop-being-just-a-tool-7451288/",
+    "relevance": 95
+  },
+  {
+    "id": "musical_ownership_automation",
+    "category": "SONIC",
+    "headline": "More Music Automation May Reduce Creative Ownership",
+    "summary": "A 2026 human–AI music-creation study found that participants reported weaker psychological ownership as automation increased. The result highlights a design tension: systems that maximize output may diminish the felt experience of making.",
+    "url": "https://www.jdsupra.com/legalnews/when-does-ai-stop-being-just-a-tool-7451288/",
+    "relevance": 96
+  },
+  {
+    "id": "generative_music_authorship",
+    "category": "META",
+    "headline": "Generative Music Forces a Broader Definition of Creativity",
+    "summary": "A conceptual analysis argues that generative systems can produce novel musical configurations through recombination, while human creators supply selection, revision, intention, and context. Creativity becomes a sociotechnical practice distributed across models, artists, audiences, and institutions.",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 97
+  },
+  {
+    "id": "ai_music_transparency_norms",
+    "category": "META",
+    "headline": "Creative AI Requires Disclosure When It Simulates Artists",
+    "summary": "The analysis recommends transparency when generative systems materially shape music, especially when they evoke or simulate identifiable artists. Disclosure becomes part of ethical authorship and protects audiences from confusing stylistic resemblance with artistic identity.",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 94
+  },
+  {
+    "id": "constructor_to_selector",
+    "category": "META",
+    "headline": "AI Risks Turning Makers Into Selectors",
+    "summary": "As systems become more autonomous, creators may spend less time constructing artifacts and more time choosing among machine-generated possibilities. This raises a philosophical question about whether creative agency depends on effort, constraint, and the possibility of failure.",
+    "url": "https://www.jdsupra.com/legalnews/when-does-ai-stop-being-just-a-tool-7451288/",
+    "relevance": 95
+  },
+  {
+    "id": "outsourced_emotional_expression",
+    "category": "META",
+    "headline": "The Deeper Risk May Be Outsourcing Emotional Expression",
+    "summary": "A Stanford discussion frames generative AI’s cultural danger as more than outsourced thinking: people may also outsource the difficult process through which they discover and express emotion. For creative-system design, this makes friction and practice valuable features rather than inefficiencies.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 90
+  },
+  {
+    "id": "listener_reception_creativity",
+    "category": "META",
+    "headline": "Can Audience Reception Make Machine Music Creative?",
+    "summary": "The philosophical analysis distinguishes machine novelty from human creativity but argues that listener reception and social context can make AI-generated music function creatively. Meaning therefore emerges not only from production, but also from interpretation and cultural placement.",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 92
+  },
+  {
+    "id": "ai_as_musical_practice",
+    "category": "SONIC",
+    "headline": "The Strongest AI Music Model May Be Collaborative",
+    "summary": "Generative music becomes most artistically productive when humans explore outputs, reject obvious results, edit materials, arrange structures, and place them in meaningful contexts. The model is less an autonomous composer than an instrument for expanding possibility space.",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 91
+  },
+  {
+    "id": "ai_research_traceability_ux",
+    "category": "CX_UX",
+    "headline": "UX Research AI Needs Evidence Trails, Not Just Summaries",
+    "summary": "Recommended workflows connect AI-generated research findings back to the underlying interview sessions before teams act on them. This pattern treats traceability as a core interaction requirement for trustworthy research synthesis.",
+    "url": "https://modeinspect.com/blog/ai-ux-design",
+    "relevance": 84
+  },
+  {
+    "id": "state_aware_generative_ui",
+    "category": "CX_UX",
+    "headline": "Prompting UI States Produces More Responsible Prototypes",
+    "summary": "UX guidance recommends specifying empty, loading, and error states before asking AI to generate interface screens. This makes generative design less focused on idealized visuals and more attentive to the conditions users actually encounter.",
+    "url": "https://modeinspect.com/blog/ai-ux-design",
+    "relevance": 85
   }
 ]
