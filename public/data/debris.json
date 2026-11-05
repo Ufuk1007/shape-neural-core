@@ -1,138 +1,122 @@
 [
   {
-    "id": "suprematist_vibe_coding",
-    "category": "STR_ART",
-    "headline": "Vibe-Coded AI Generator Reimagines Suprematism",
-    "summary": "Supremath.art uses AI-assisted coding to generate geometric compositions inspired by Suprematism. It matters because conversational programming lowers the barrier to experimenting with art algorithms while exposing questions about stylistic imitation and authorship.",
-    "url": "https://emergent.sh/news/developer-vibe-codes-suprematist-art",
-    "relevance": 87
-  },
-  {
-    "id": "uneven_authorship_anxiety",
-    "category": "STR_ART",
-    "headline": "Art and Design Students Experience AI Authorship Differently",
-    "summary": "A survey of 2,441 students across 33 Chinese art and design institutions found that design students used generative AI more often, while fine-art students tied authorship more strongly to embodied making and imperfection. The contrast reveals how professional context reshapes the meaning of creative control.",
-    "url": "https://github.com/edtechdev/aied/blob/main/content/en/articles/authorship-anxiety-art-design-genai-2026.md",
+    "id": "human_creativity_artificial_creation",
+    "category": "META",
+    "headline": "Can AI create, or only produce valuable artifacts?",
+    "summary": "A new Cambridge philosophical study distinguishes creativity from the ability to generate valuable outputs, arguing that current AI may lack genuine creativity. It challenges designers to decide which creative acts should remain human rather than being outsourced to systems.",
+    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
     "relevance": 94
   },
   {
-    "id": "ai_production_layer_ux",
-    "category": "CX_UX",
-    "headline": "AI Compresses UX Production, Not Design Responsibility",
-    "summary": "AI can draft screens, document design systems, summarize research, and flag accessibility issues, but it cannot replace user judgment or accountability. The emerging UX pattern is a division between automated production and human interpretation.",
-    "url": "https://www.kwan.com/blog/ai-the-role-of-uxui-designer-?hsLang=en",
-    "relevance": 91
+    "id": "chatgpt_generative_gif_loops",
+    "category": "STR_ART",
+    "headline": "Promptable GIFs turn image generation into loop design",
+    "summary": "A new visual-generation workflow creates short animated loops and supports conversational revisions to motion, color, and objects. The interaction shifts generative imagery from one-shot output toward iterative micro-animation and lightweight motion design.",
+    "url": "https://me.mashable.com/tech/77963/chatgpt-can-now-make-animated-gifs-how-openais-newest-visual-tool-works",
+    "relevance": 83
   },
   {
-    "id": "accessibility_limits_ai_tools",
-    "category": "CX_UX",
-    "headline": "Automated Accessibility Checks Still Need Human Testing",
-    "summary": "Current AI-assisted UX workflows can identify missing labels, contrast problems, and inconsistent tokens, but they cannot fully assess real screen-reader or keyboard experiences. This reinforces accessibility as an embodied interaction problem rather than a compliance checkbox.",
-    "url": "https://modeinspect.com/blog/ai-ux-design",
-    "relevance": 89
-  },
-  {
-    "id": "ai_design_system_gap",
-    "category": "CX_UX",
-    "headline": "Generative UI Still Struggles With Design-System Fidelity",
-    "summary": "Recent UX guidance notes that generative tools remain weak at consistently supporting design systems. The gap suggests that future AI design tools must reason about states, tokens, constraints, and product context—not merely produce attractive screens.",
-    "url": "https://modeinspect.com/blog/ai-ux-design",
-    "relevance": 86
-  },
-  {
-    "id": "anonymous_ai_music_radio",
-    "category": "SONIC",
-    "headline": "AI Slop FM Tests Music Without Artist Identity",
-    "summary": "AI Slop FM asks listeners to judge tracks anonymously, removing human or machine labels from the initial listening experience. The experiment shifts the debate from provenance and branding toward perception, affect, and whether listeners can or should distinguish authorship.",
-    "url": "https://aimusicnewsletter.substack.com/p/making-music-more-playable-ai-slop",
-    "relevance": 93
-  },
-  {
-    "id": "copista_sheet_music_model",
-    "category": "SONIC",
-    "headline": "Copista Turns Scanned Scores Into Playable Music",
-    "summary": "Copista uses a model to interpret scanned sheet music, with publicly available weights under an attribution license. Rather than generating new songs, it applies AI to recover, perform, and circulate existing musical notation.",
-    "url": "https://aimusicnewsletter.substack.com/p/making-music-more-playable-ai-slop",
-    "relevance": 88
-  },
-  {
-    "id": "agentic_daw_creativity",
-    "category": "SONIC",
-    "headline": "Agentic Music Tools Move From Generation to Self-Editing",
-    "summary": "Experimental DAWs and plugins allow AI agents to compose passages, select instruments and effects, evaluate their output, and revise it. This changes the musician’s role from direct constructor toward curator, supervisor, and editor.",
-    "url": "https://www.jdsupra.com/legalnews/when-does-ai-stop-being-just-a-tool-7451288/",
-    "relevance": 95
-  },
-  {
-    "id": "musical_ownership_automation",
-    "category": "SONIC",
-    "headline": "More Music Automation May Reduce Creative Ownership",
-    "summary": "A 2026 human–AI music-creation study found that participants reported weaker psychological ownership as automation increased. The result highlights a design tension: systems that maximize output may diminish the felt experience of making.",
-    "url": "https://www.jdsupra.com/legalnews/when-does-ai-stop-being-just-a-tool-7451288/",
+    "id": "canva_craft_blueprint_first_generation",
+    "category": "STR_ART",
+    "headline": "A generative model plans layouts before rendering pixels",
+    "summary": "Canva Craft reportedly creates a structural blueprint describing hierarchy, spacing, subject placement, and text areas before producing an image. Its layer-oriented workflow treats generation as editable design material rather than a finished illustration.",
+    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
     "relevance": 96
   },
   {
-    "id": "generative_music_authorship",
-    "category": "META",
-    "headline": "Generative Music Forces a Broader Definition of Creativity",
-    "summary": "A conceptual analysis argues that generative systems can produce novel musical configurations through recombination, while human creators supply selection, revision, intention, and context. Creativity becomes a sociotechnical practice distributed across models, artists, audiences, and institutions.",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 97
+    "id": "canva_craft_editable_design_material",
+    "category": "CX_UX",
+    "headline": "Generative imagery moves closer to native design-system logic",
+    "summary": "The reported separation of generated images into editable layers suggests a more useful bridge between generative AI and conventional design tools. This could improve control over hierarchy, iteration, and downstream accessibility compared with flattened image outputs.",
+    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
+    "relevance": 89
   },
   {
-    "id": "ai_music_transparency_norms",
+    "id": "human_ai_creative_partnership_principles",
     "category": "META",
-    "headline": "Creative AI Requires Disclosure When It Simulates Artists",
-    "summary": "The analysis recommends transparency when generative systems materially shape music, especially when they evoke or simulate identifiable artists. Disclosure becomes part of ethical authorship and protects audiences from confusing stylistic resemblance with artistic identity.",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 94
-  },
-  {
-    "id": "constructor_to_selector",
-    "category": "META",
-    "headline": "AI Risks Turning Makers Into Selectors",
-    "summary": "As systems become more autonomous, creators may spend less time constructing artifacts and more time choosing among machine-generated possibilities. This raises a philosophical question about whether creative agency depends on effort, constraint, and the possibility of failure.",
-    "url": "https://www.jdsupra.com/legalnews/when-does-ai-stop-being-just-a-tool-7451288/",
-    "relevance": 95
-  },
-  {
-    "id": "outsourced_emotional_expression",
-    "category": "META",
-    "headline": "The Deeper Risk May Be Outsourcing Emotional Expression",
-    "summary": "A Stanford discussion frames generative AI’s cultural danger as more than outsourced thinking: people may also outsource the difficult process through which they discover and express emotion. For creative-system design, this makes friction and practice valuable features rather than inefficiencies.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 90
-  },
-  {
-    "id": "listener_reception_creativity",
-    "category": "META",
-    "headline": "Can Audience Reception Make Machine Music Creative?",
-    "summary": "The philosophical analysis distinguishes machine novelty from human creativity but argues that listener reception and social context can make AI-generated music function creatively. Meaning therefore emerges not only from production, but also from interpretation and cultural placement.",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "headline": "Five principles for preserving human agency in AI creativity",
+    "summary": "A recent academic chapter proposes creative partnerships centered on human intentionality, transparency, critical awareness, and authentic human–technology relationships. The framework is relevant to studios and product teams designing AI workflows that augment rather than quietly replace authorship.",
+    "url": "https://academic.oup.com/edited-volume/63609/chapter-abstract/583705506?redirectedFrom=fulltext",
     "relevance": 92
   },
   {
-    "id": "ai_as_musical_practice",
-    "category": "SONIC",
-    "headline": "The Strongest AI Music Model May Be Collaborative",
-    "summary": "Generative music becomes most artistically productive when humans explore outputs, reject obvious results, edit materials, arrange structures, and place them in meaningful contexts. The model is less an autonomous composer than an instrument for expanding possibility space.",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "id": "creative_attribution_co_creation_ethics",
+    "category": "META",
+    "headline": "Who deserves credit in human–AI co-creation?",
+    "summary": "Research on creative attribution examines the tension between human agency, generative systems, and shared production. Its central design implication is that AI tools need visible provenance and authorship models, not merely better output quality.",
+    "url": "https://link.springer.com/10.1007/s43681-026-01320-y",
+    "relevance": 88
+  },
+  {
+    "id": "algorithms_subjectivity_aesthetic_culture",
+    "category": "META",
+    "headline": "Algorithmic images are reshaping aesthetic experience",
+    "summary": "A forthcoming philosophical issue frames AI image generation as a transformation of perception, authorship, and subjectivity rather than simply a new production technique. This perspective is useful for artists investigating how automated imagery changes what counts as seeing and making.",
+    "url": "https://www.unior.it/sites/default/files/2026-02/CALL%20for%20Papers%20Studi%20Filosofici_2026_monografico-%20%27Creativita%CC%80%20e%20Algoritmi%27.pdf",
+    "relevance": 86
+  },
+  {
+    "id": "ai_blueprint_before_drawing",
+    "category": "STR_ART",
+    "headline": "The prompt becomes a compositional plan before it becomes an image",
+    "summary": "Blueprint-first generation introduces an intermediate planning stage for composition, margins, visual priority, and relative scale. That architecture points toward AI systems behaving less like image vending machines and more like collaborative art directors.",
+    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
+    "relevance": 95
+  },
+  {
+    "id": "animated_gif_conversational_revision",
+    "category": "CX_UX",
+    "headline": "Conversational revision turns motion design into dialogue",
+    "summary": "Users can reportedly revise individual animation properties through natural-language instructions instead of rebuilding an asset. The pattern offers a compact example of AI-assisted interaction where intent, feedback, and visual iteration are tightly coupled.",
+    "url": "https://me.mashable.com/tech/77963/chatgpt-can-now-make-animated-gifs-how-openais-new-visual-tool-works",
+    "relevance": 82
+  },
+  {
+    "id": "human_creativity_outsourcing_limit",
+    "category": "META",
+    "headline": "A case against outsourcing most creative work to AI",
+    "summary": "The Cambridge study argues that even useful artificial creation may not justify replacing human creative activity. It gives design leaders a philosophical basis for distinguishing efficiency gains from the loss of formative, expressive, or culturally meaningful work.",
+    "url": "https://www.cambridge.org/core/elements/abs/human-creativity-and-artificial-creation/E336CBEA887BA4E2CA74AF25BDEA083E",
     "relevance": 91
   },
   {
-    "id": "ai_research_traceability_ux",
+    "id": "ai_poster_hierarchy_assistance",
     "category": "CX_UX",
-    "headline": "UX Research AI Needs Evidence Trails, Not Just Summaries",
-    "summary": "Recommended workflows connect AI-generated research findings back to the underlying interview sessions before teams act on them. This pattern treats traceability as a core interaction requirement for trustworthy research synthesis.",
-    "url": "https://modeinspect.com/blog/ai-ux-design",
-    "relevance": 84
+    "headline": "AI-assisted posters focus generation on hierarchy and structure",
+    "summary": "A recent design workshop centers AI on arranging information, establishing hierarchy, and editing poster layouts rather than merely decorating content. This reflects a practical UX direction: using language models as layout collaborators for information-heavy communication.",
+    "url": "https://calendar.lib.usf.edu/event/17555497?register",
+    "relevance": 74
   },
   {
-    "id": "state_aware_generative_ui",
-    "category": "CX_UX",
-    "headline": "Prompting UI States Produces More Responsible Prototypes",
-    "summary": "UX guidance recommends specifying empty, loading, and error states before asking AI to generate interface screens. This makes generative design less focused on idealized visuals and more attentive to the conditions users actually encounter.",
-    "url": "https://modeinspect.com/blog/ai-ux-design",
-    "relevance": 85
+    "id": "creative_ai_education_entanglement",
+    "category": "META",
+    "headline": "Creative education needs an ethic beyond tool use",
+    "summary": "Academic work on generative AI in education warns against reducing creative systems to utilities and calls for transparency about how technology frames human possibility. The argument matters for design pedagogy, where process and intentionality are often as important as the final artifact.",
+    "url": "https://academic.oup.com/edited-volume/63609/chapter-abstract/583705506?redirectedFrom=fulltext",
+    "relevance": 87
+  },
+  {
+    "id": "layered_generative_composition",
+    "category": "STR_ART",
+    "headline": "Layer-aware generation narrows the gap between AI and compositing",
+    "summary": "A workflow that generates with later editing in mind treats visual output as a structured composition of manipulable elements. This could support more precise art direction, responsive campaign variants, and iterative experimentation across media.",
+    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
+    "relevance": 90
+  },
+  {
+    "id": "ai_creativity_value_without_agency",
+    "category": "META",
+    "headline": "Useful output may not equal creative agency",
+    "summary": "The philosophical distinction between producing valuable work and possessing creativity separates performance from experience, intention, and authorship. For AI art systems, it raises a difficult question: should evaluation focus on artifacts, processes, or the agency behind them?",
+    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
+    "relevance": 93
+  },
+  {
+    "id": "prompt_to_motion_design_pattern",
+    "category": "STR_ART",
+    "headline": "Short-form generative motion becomes an editable design primitive",
+    "summary": "Natural-language generation of seamless animated loops makes motion a more accessible component of everyday visual communication. The most significant shift is not animation quality alone, but the ability to revise temporal behavior as easily as static attributes.",
+    "url": "https://me.mashable.com/tech/77963/chatgpt-can-now-make-animated-gifs-how-openais-newest-visual-tool-works",
+    "relevance": 80
   }
 ]
