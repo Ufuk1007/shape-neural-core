@@ -1,122 +1,146 @@
 [
   {
-    "id": "human_creativity_artificial_creation",
-    "category": "META",
-    "headline": "Can AI create, or only produce valuable artifacts?",
-    "summary": "A new Cambridge philosophical study distinguishes creativity from the ability to generate valuable outputs, arguing that current AI may lack genuine creativity. It challenges designers to decide which creative acts should remain human rather than being outsourced to systems.",
-    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
-    "relevance": 94
-  },
-  {
-    "id": "chatgpt_generative_gif_loops",
+    "id": "visual_element_guided_synthesis",
     "category": "STR_ART",
-    "headline": "Promptable GIFs turn image generation into loop design",
-    "summary": "A new visual-generation workflow creates short animated loops and supports conversational revisions to motion, color, and objects. The interaction shifts generative imagery from one-shot output toward iterative micro-animation and lightweight motion design.",
-    "url": "https://me.mashable.com/tech/77963/chatgpt-can-now-make-animated-gifs-how-openais-newest-visual-tool-works",
-    "relevance": 83
-  },
-  {
-    "id": "canva_craft_blueprint_first_generation",
-    "category": "STR_ART",
-    "headline": "A generative model plans layouts before rendering pixels",
-    "summary": "Canva Craft reportedly creates a structural blueprint describing hierarchy, spacing, subject placement, and text areas before producing an image. Its layer-oriented workflow treats generation as editable design material rather than a finished illustration.",
-    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
-    "relevance": 96
-  },
-  {
-    "id": "canva_craft_editable_design_material",
-    "category": "CX_UX",
-    "headline": "Generative imagery moves closer to native design-system logic",
-    "summary": "The reported separation of generated images into editable layers suggests a more useful bridge between generative AI and conventional design tools. This could improve control over hierarchy, iteration, and downstream accessibility compared with flattened image outputs.",
-    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
-    "relevance": 89
-  },
-  {
-    "id": "human_ai_creative_partnership_principles",
-    "category": "META",
-    "headline": "Five principles for preserving human agency in AI creativity",
-    "summary": "A recent academic chapter proposes creative partnerships centered on human intentionality, transparency, critical awareness, and authentic human–technology relationships. The framework is relevant to studios and product teams designing AI workflows that augment rather than quietly replace authorship.",
-    "url": "https://academic.oup.com/edited-volume/63609/chapter-abstract/583705506?redirectedFrom=fulltext",
-    "relevance": 92
-  },
-  {
-    "id": "creative_attribution_co_creation_ethics",
-    "category": "META",
-    "headline": "Who deserves credit in human–AI co-creation?",
-    "summary": "Research on creative attribution examines the tension between human agency, generative systems, and shared production. Its central design implication is that AI tools need visible provenance and authorship models, not merely better output quality.",
-    "url": "https://link.springer.com/10.1007/s43681-026-01320-y",
-    "relevance": 88
-  },
-  {
-    "id": "algorithms_subjectivity_aesthetic_culture",
-    "category": "META",
-    "headline": "Algorithmic images are reshaping aesthetic experience",
-    "summary": "A forthcoming philosophical issue frames AI image generation as a transformation of perception, authorship, and subjectivity rather than simply a new production technique. This perspective is useful for artists investigating how automated imagery changes what counts as seeing and making.",
-    "url": "https://www.unior.it/sites/default/files/2026-02/CALL%20for%20Papers%20Studi%20Filosofici_2026_monografico-%20%27Creativita%CC%80%20e%20Algoritmi%27.pdf",
-    "relevance": 86
-  },
-  {
-    "id": "ai_blueprint_before_drawing",
-    "category": "STR_ART",
-    "headline": "The prompt becomes a compositional plan before it becomes an image",
-    "summary": "Blueprint-first generation introduces an intermediate planning stage for composition, margins, visual priority, and relative scale. That architecture points toward AI systems behaving less like image vending machines and more like collaborative art directors.",
-    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
-    "relevance": 95
-  },
-  {
-    "id": "animated_gif_conversational_revision",
-    "category": "CX_UX",
-    "headline": "Conversational revision turns motion design into dialogue",
-    "summary": "Users can reportedly revise individual animation properties through natural-language instructions instead of rebuilding an asset. The pattern offers a compact example of AI-assisted interaction where intent, feedback, and visual iteration are tightly coupled.",
-    "url": "https://me.mashable.com/tech/77963/chatgpt-can-now-make-animated-gifs-how-openais-new-visual-tool-works",
-    "relevance": 82
-  },
-  {
-    "id": "human_creativity_outsourcing_limit",
-    "category": "META",
-    "headline": "A case against outsourcing most creative work to AI",
-    "summary": "The Cambridge study argues that even useful artificial creation may not justify replacing human creative activity. It gives design leaders a philosophical basis for distinguishing efficiency gains from the loss of formative, expressive, or culturally meaningful work.",
-    "url": "https://www.cambridge.org/core/elements/abs/human-creativity-and-artificial-creation/E336CBEA887BA4E2CA74AF25BDEA083E",
+    "headline": "AI image synthesis gets a grammar of visual elements",
+    "summary": "The VCE-GM model maps language prompts onto structured parameters such as points, lines, color, rhythm, proportion, and texture. This matters because it shifts generative art from loosely semantic prompting toward explicit visual composition and controllable design logic.[2]",
+    "url": "https://bioengineer.org/visual-element-guided-ai-model-enhances-image-synthesis-and-digital-art-creation/",
     "relevance": 91
   },
   {
-    "id": "ai_poster_hierarchy_assistance",
-    "category": "CX_UX",
-    "headline": "AI-assisted posters focus generation on hierarchy and structure",
-    "summary": "A recent design workshop centers AI on arranging information, establishing hierarchy, and editing poster layouts rather than merely decorating content. This reflects a practical UX direction: using language models as layout collaborators for information-heavy communication.",
-    "url": "https://calendar.lib.usf.edu/event/17555497?register",
-    "relevance": 74
+    "id": "suprematist_vibe_coding",
+    "category": "STR_ART",
+    "headline": "Vibe coding turns Suprematism into a living browser instrument",
+    "summary": "Supremath.art uses AI-assisted coding to generate geometric compositions inspired by Suprematism. The project is compelling as a low-barrier example of developers using conversational AI as a medium for aesthetic exploration rather than only software production.[7]",
+    "url": "https://emergent.sh/news/developer-vibe-codes-suprematist-art",
+    "relevance": 86
   },
   {
-    "id": "creative_ai_education_entanglement",
-    "category": "META",
-    "headline": "Creative education needs an ethic beyond tool use",
-    "summary": "Academic work on generative AI in education warns against reducing creative systems to utilities and calls for transparency about how technology frames human possibility. The argument matters for design pedagogy, where process and intentionality are often as important as the final artifact.",
-    "url": "https://academic.oup.com/edited-volume/63609/chapter-abstract/583705506?redirectedFrom=fulltext",
+    "id": "safe_genai_creator_control",
+    "category": "STR_ART",
+    "headline": "SafeGenAI explores how artists retain authorship",
+    "summary": "A new consortium is investigating ways to protect human creative contributions during AI-assisted prototyping. Its focus on control, privacy, and contribution tracking addresses a central design question: how can generative systems expand exploration without absorbing creative agency?[10]",
+    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
+    "relevance": 94
+  },
+  {
+    "id": "structured_visual_prompting",
+    "category": "STR_ART",
+    "headline": "Prompting evolves from description toward compositional direction",
+    "summary": "VCE-GM treats visual principles as parameters that can be connected directly to natural-language instructions. This offers designers a more legible bridge between conceptual intent and generated form, potentially making AI outputs easier to critique and iterate.[2]",
+    "url": "https://bioengineer.org/visual-element-guided-ai-model-enhances-image-synthesis-and-digital-art-creation/",
+    "relevance": 88
+  },
+  {
+    "id": "ai_accessibility_human_judgment",
+    "category": "CX_UX",
+    "headline": "AI-generated interfaces still require human accessibility audits",
+    "summary": "Current UX guidance warns that automated accessibility tools cannot evaluate every accessibility issue. Designers are urged to combine AI-assisted generation with keyboard testing, screen-reader checks, and testing on real product flows with users.[4]",
+    "url": "https://modeinspect.com/blog/ai-ux-design",
+    "relevance": 89
+  },
+  {
+    "id": "screen_reader_streaming_problem",
+    "category": "CX_UX",
+    "headline": "Streaming AI interfaces expose a new screen-reader failure mode",
+    "summary": "Incremental text generation can cause screen readers to announce words separately or lose their place. The proposed pattern is to announce system activity deliberately and communicate the completed result coherently, showing how generative behavior demands new interaction conventions.[6]",
+    "url": "https://agency.uxplanet.org/blog/ai-ux-patterns/",
+    "relevance": 92
+  },
+  {
+    "id": "keyboard_safe_ai_controls",
+    "category": "CX_UX",
+    "headline": "AI suggestions need explicit, keyboard-safe rejection states",
+    "summary": "Emerging AI UX patterns emphasize accessible accept and reject controls, intentional live-region behavior, and avoiding color as the sole indicator of generated content. These details turn trust and reversibility into concrete interface mechanics.[6]",
+    "url": "https://agency.uxplanet.org/blog/ai-ux-patterns/",
     "relevance": 87
   },
   {
-    "id": "layered_generative_composition",
-    "category": "STR_ART",
-    "headline": "Layer-aware generation narrows the gap between AI and compositing",
-    "summary": "A workflow that generates with later editing in mind treats visual output as a structured composition of manipulable elements. This could support more precise art direction, responsive campaign variants, and iterative experimentation across media.",
-    "url": "https://note.com/tidaa/n/n98446de2cf4d?hl=en",
+    "id": "uncertainty_first_ai_ux",
+    "category": "CX_UX",
+    "headline": "Designing AI around uncertainty instead of pretending certainty",
+    "summary": "Recent UX guidance frames uncertainty, trust, and errors as first-class interaction states. This is significant for design systems because AI components must communicate confidence, recoverability, and user control rather than behave like opaque finished features.[6]",
+    "url": "https://agency.uxplanet.org/blog/ai-ux-patterns/",
     "relevance": 90
   },
   {
-    "id": "ai_creativity_value_without_agency",
-    "category": "META",
-    "headline": "Useful output may not equal creative agency",
-    "summary": "The philosophical distinction between producing valuable work and possessing creativity separates performance from experience, intention, and authorship. For AI art systems, it raises a difficult question: should evaluation focus on artifacts, processes, or the agency behind them?",
-    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
+    "id": "a11y_agent_interfaces",
+    "category": "CX_UX",
+    "headline": "Accessibility practice expands to agent-driven interfaces",
+    "summary": "A11y Camp 2026 connects inclusive design with emerging AI and agent-based interfaces, including voice recognition and cognitive accessibility. The intersection matters because accessibility constraints are becoming part of the behavior and autonomy of systems, not just the layout of screens.[3]",
+    "url": "https://www.zevente.com/e/a11y-camp-2026-r71js5",
+    "relevance": 85
+  },
+  {
+    "id": "ai_music_authorship",
+    "category": "SONIC",
+    "headline": "Generative music reopens the definition of creativity",
+    "summary": "A new analysis argues that AI music can produce novel combinations while challenging conventional ideas of authorship, responsibility, and human expression. It presents generative music as a sociotechnical practice shaped by prompting, selection, editing, and cultural context rather than as autonomous composition alone.[1]",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 97
+  },
+  {
+    "id": "human_machine_musical_practice",
+    "category": "SONIC",
+    "headline": "The most creative AI music may be collaborative and curatorial",
+    "summary": "The philosophical analysis positions artists as explorers, selectors, editors, arrangers, and contextualizers of machine-generated material. This reframes the musician’s role from direct note production toward shaping possibility spaces and assigning meaning.[1]",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 94
+  },
+  {
+    "id": "ai_audio_enhancement_workflows",
+    "category": "SONIC",
+    "headline": "Audio AI finds practical value in repair and transformation",
+    "summary": "Musicians and audio practitioners are using generative tools for track separation and cleaning existing performances, rather than only generating complete songs. This points toward a less spectacular but highly consequential design space: AI as a material-processing layer in studio workflows.[9]",
+    "url": "https://www.tpr.org/news/2026-11-04/ai-generated-music-rocks-the-music-industry",
+    "relevance": 84
+  },
+  {
+    "id": "prompt_to_full_song",
+    "category": "SONIC",
+    "headline": "Text prompts collapse composition, performance, and production",
+    "summary": "Generative music systems can create coherent audio from short prompts, compressing several traditionally distinct musical roles into one interface. The resulting design challenge is not merely output quality but how systems expose authorship, editable structure, and meaningful control.[1]",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
     "relevance": 93
   },
   {
-    "id": "prompt_to_motion_design_pattern",
-    "category": "STR_ART",
-    "headline": "Short-form generative motion becomes an editable design primitive",
-    "summary": "Natural-language generation of seamless animated loops makes motion a more accessible component of everyday visual communication. The most significant shift is not animation quality alone, but the ability to revise temporal behavior as easily as static attributes.",
-    "url": "https://me.mashable.com/tech/77963/chatgpt-can-now-make-animated-gifs-how-openais-newest-visual-tool-works",
-    "relevance": 80
+    "id": "music_ai_labor_shift",
+    "category": "SONIC",
+    "headline": "AI music changes the labor map of recording",
+    "summary": "Coverage of AI-generated music highlights its potential to displace conventional composing, playing, and recording roles while also supporting restoration and creative enhancement. The tension makes audio design a useful test case for hybrid workflows that augment rather than erase expertise.[9]",
+    "url": "https://www.tpr.org/news/2026-11-04/ai-generated-music-rocks-the-music-industry",
+    "relevance": 90
+  },
+  {
+    "id": "boden_combinational_machine_creativity",
+    "category": "META",
+    "headline": "AI music qualifies as combinational creativity—but not human intent",
+    "summary": "The analysis applies Margaret Boden’s concept of combinational creativity to machine-generated music while distinguishing novelty from human-like purpose and expression. This creates a sharper vocabulary for discussing what AI systems do well and what remains socially situated.[1]",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 96
+  },
+  {
+    "id": "creative_agency_in_generative_tools",
+    "category": "META",
+    "headline": "Creative agency becomes a systems-design problem",
+    "summary": "SafeGenAI treats human control over generative tools as an interdisciplinary research problem involving creative practice, privacy, and industry collaboration. The work suggests that agency should be designed into workflows through provenance, boundaries, and revision rights.[10]",
+    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
+    "relevance": 95
+  },
+  {
+    "id": "ethical_ai_usability",
+    "category": "META",
+    "headline": "Ethical AI is being reframed as a usability discipline",
+    "summary": "A World Usability Day program links sustainable futures, inclusive design, and ethical AI. The intersection is valuable because it moves ethics away from abstract principles toward everyday product decisions about influence, communication, and user participation.[8]",
+    "url": "https://hussman.unc.edu/events/world-usability-day-designing-a-sustainable-future-with-ethical-ai",
+    "relevance": 82
+  },
+  {
+    "id": "ai_creativity_social_context",
+    "category": "META",
+    "headline": "Whether AI is creative may depend on how audiences receive it",
+    "summary": "The philosophical account argues that machine systems may satisfy some definitions of creativity through novelty and listener reception, while failing to match human creativity in intention and lived expression. This shifts the debate from model capability alone to the social contexts that make creative works meaningful.[1]",
+    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "relevance": 93
   }
 ]
