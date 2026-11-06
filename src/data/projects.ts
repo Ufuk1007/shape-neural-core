@@ -34,6 +34,8 @@ export interface Project {
   image?: string;
   video?: string;
   url?: string;
+  /** Live project is temporarily offline: the external link is hidden and an update notice is shown instead. */
+  updating?: boolean;
   insights: Insight[];
 }
 
@@ -71,6 +73,7 @@ export const PROJECTS: Project[] = [
     techStack: ["React", "TypeScript", "MediaPipe", "WebEyeTrack", "LibreFace ONNX", "Tone.js", "Mureka API", "Supabase"],
     image: melodeyeImg,
     url: "https://aura-soundscape-96.vercel.app",
+    updating: true,
     insights: [],
   },
   {
@@ -159,6 +162,7 @@ export const PROJECTS: Project[] = [
     techStack: ["Python", "FastAPI", "ACE-Step 1.5", "MiniMax M2.5", "React", "Supabase", "OBS Studio", "Cloudflare Tunnel"],
     image: btcRadioImg,
     url: "https://radio.shapeneural.com/",
+    updating: true,
     insights: [
       {
         id: "signal-layers",

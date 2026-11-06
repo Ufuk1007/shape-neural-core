@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { ArrowLeft, ArrowRight, Check, ExternalLink, Languages, Mail } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, ExternalLink, Languages, Mail, RefreshCw } from "lucide-react";
 import BindruneLogo from "@/components/BindruneLogo";
 import StudioMeta from "@/components/StudioMeta";
 import NotFound from "@/pages/NotFound";
@@ -134,7 +134,9 @@ export default function ModuleProjectPage() {
         <section className="mp-actions">
           <div className="mp-actions__primary">
             <Link to={`/kontakt?offer=similar-system&project=${project.slug}`}><Mail size={17} />{language === "de" ? "Ähnliches System besprechen" : "Discuss a similar system"}</Link>
-            {project.url && <a href={project.url} target="_blank" rel="noreferrer">{language === "de" ? "Live-Projekt öffnen" : "Open live project"}<ExternalLink size={17} /></a>}
+            {project.url && (project.updating
+              ? <span className="mp-actions__updating" aria-disabled="true">{language === "de" ? "Live-Projekt wird gerade aktualisiert" : "Live project is currently being updated"}<RefreshCw size={17} /></span>
+              : <a href={project.url} target="_blank" rel="noreferrer">{language === "de" ? "Live-Projekt öffnen" : "Open live project"}<ExternalLink size={17} /></a>)}
           </div>
           <Link to={`${projectsBase}/${next.slug}`}><span>{language === "de" ? "NÄCHSTES PROJEKT" : "NEXT PROJECT"}</span><strong>{next.title.replaceAll("_", " ")}</strong><ArrowRight /></Link>
         </section>
