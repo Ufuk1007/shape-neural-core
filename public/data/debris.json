@@ -1,146 +1,138 @@
 [
   {
-    "id": "visual_element_guided_synthesis",
-    "category": "STR_ART",
-    "headline": "AI image synthesis gets a grammar of visual elements",
-    "summary": "The VCE-GM model maps language prompts onto structured parameters such as points, lines, color, rhythm, proportion, and texture. This matters because it shifts generative art from loosely semantic prompting toward explicit visual composition and controllable design logic.[2]",
-    "url": "https://bioengineer.org/visual-element-guided-ai-model-enhances-image-synthesis-and-digital-art-creation/",
-    "relevance": 91
-  },
-  {
-    "id": "suprematist_vibe_coding",
-    "category": "STR_ART",
-    "headline": "Vibe coding turns Suprematism into a living browser instrument",
-    "summary": "Supremath.art uses AI-assisted coding to generate geometric compositions inspired by Suprematism. The project is compelling as a low-barrier example of developers using conversational AI as a medium for aesthetic exploration rather than only software production.[7]",
-    "url": "https://emergent.sh/news/developer-vibe-codes-suprematist-art",
-    "relevance": 86
-  },
-  {
-    "id": "safe_genai_creator_control",
-    "category": "STR_ART",
-    "headline": "SafeGenAI explores how artists retain authorship",
-    "summary": "A new consortium is investigating ways to protect human creative contributions during AI-assisted prototyping. Its focus on control, privacy, and contribution tracking addresses a central design question: how can generative systems expand exploration without absorbing creative agency?[10]",
-    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
-    "relevance": 94
-  },
-  {
-    "id": "structured_visual_prompting",
-    "category": "STR_ART",
-    "headline": "Prompting evolves from description toward compositional direction",
-    "summary": "VCE-GM treats visual principles as parameters that can be connected directly to natural-language instructions. This offers designers a more legible bridge between conceptual intent and generated form, potentially making AI outputs easier to critique and iterate.[2]",
-    "url": "https://bioengineer.org/visual-element-guided-ai-model-enhances-image-synthesis-and-digital-art-creation/",
-    "relevance": 88
-  },
-  {
-    "id": "ai_accessibility_human_judgment",
+    "id": "sketchaloud_temporal_3d_design",
     "category": "CX_UX",
-    "headline": "AI-generated interfaces still require human accessibility audits",
-    "summary": "Current UX guidance warns that automated accessibility tools cannot evaluate every accessibility issue. Designers are urged to combine AI-assisted generation with keyboard testing, screen-reader checks, and testing on real product flows with users.[4]",
-    "url": "https://modeinspect.com/blog/ai-ux-design",
-    "relevance": 89
-  },
-  {
-    "id": "screen_reader_streaming_problem",
-    "category": "CX_UX",
-    "headline": "Streaming AI interfaces expose a new screen-reader failure mode",
-    "summary": "Incremental text generation can cause screen readers to announce words separately or lose their place. The proposed pattern is to announce system activity deliberately and communicate the completed result coherently, showing how generative behavior demands new interaction conventions.[6]",
-    "url": "https://agency.uxplanet.org/blog/ai-ux-patterns/",
-    "relevance": 92
-  },
-  {
-    "id": "keyboard_safe_ai_controls",
-    "category": "CX_UX",
-    "headline": "AI suggestions need explicit, keyboard-safe rejection states",
-    "summary": "Emerging AI UX patterns emphasize accessible accept and reject controls, intentional live-region behavior, and avoiding color as the sole indicator of generated content. These details turn trust and reversibility into concrete interface mechanics.[6]",
-    "url": "https://agency.uxplanet.org/blog/ai-ux-patterns/",
-    "relevance": 87
-  },
-  {
-    "id": "uncertainty_first_ai_ux",
-    "category": "CX_UX",
-    "headline": "Designing AI around uncertainty instead of pretending certainty",
-    "summary": "Recent UX guidance frames uncertainty, trust, and errors as first-class interaction states. This is significant for design systems because AI components must communicate confidence, recoverability, and user control rather than behave like opaque finished features.[6]",
-    "url": "https://agency.uxplanet.org/blog/ai-ux-patterns/",
-    "relevance": 90
-  },
-  {
-    "id": "a11y_agent_interfaces",
-    "category": "CX_UX",
-    "headline": "Accessibility practice expands to agent-driven interfaces",
-    "summary": "A11y Camp 2026 connects inclusive design with emerging AI and agent-based interfaces, including voice recognition and cognitive accessibility. The intersection matters because accessibility constraints are becoming part of the behavior and autonomy of systems, not just the layout of screens.[3]",
-    "url": "https://www.zevente.com/e/a11y-camp-2026-r71js5",
-    "relevance": 85
-  },
-  {
-    "id": "ai_music_authorship",
-    "category": "SONIC",
-    "headline": "Generative music reopens the definition of creativity",
-    "summary": "A new analysis argues that AI music can produce novel combinations while challenging conventional ideas of authorship, responsibility, and human expression. It presents generative music as a sociotechnical practice shaped by prompting, selection, editing, and cultural context rather than as autonomous composition alone.[1]",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 97
-  },
-  {
-    "id": "human_machine_musical_practice",
-    "category": "SONIC",
-    "headline": "The most creative AI music may be collaborative and curatorial",
-    "summary": "The philosophical analysis positions artists as explorers, selectors, editors, arrangers, and contextualizers of machine-generated material. This reframes the musician’s role from direct note production toward shaping possibility spaces and assigning meaning.[1]",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 94
-  },
-  {
-    "id": "ai_audio_enhancement_workflows",
-    "category": "SONIC",
-    "headline": "Audio AI finds practical value in repair and transformation",
-    "summary": "Musicians and audio practitioners are using generative tools for track separation and cleaning existing performances, rather than only generating complete songs. This points toward a less spectacular but highly consequential design space: AI as a material-processing layer in studio workflows.[9]",
-    "url": "https://www.tpr.org/news/2026-11-04/ai-generated-music-rocks-the-music-industry",
-    "relevance": 84
-  },
-  {
-    "id": "prompt_to_full_song",
-    "category": "SONIC",
-    "headline": "Text prompts collapse composition, performance, and production",
-    "summary": "Generative music systems can create coherent audio from short prompts, compressing several traditionally distinct musical roles into one interface. The resulting design challenge is not merely output quality but how systems expose authorship, editable structure, and meaningful control.[1]",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 93
-  },
-  {
-    "id": "music_ai_labor_shift",
-    "category": "SONIC",
-    "headline": "AI music changes the labor map of recording",
-    "summary": "Coverage of AI-generated music highlights its potential to displace conventional composing, playing, and recording roles while also supporting restoration and creative enhancement. The tension makes audio design a useful test case for hybrid workflows that augment rather than erase expertise.[9]",
-    "url": "https://www.tpr.org/news/2026-11-04/ai-generated-music-rocks-the-music-industry",
-    "relevance": 90
-  },
-  {
-    "id": "boden_combinational_machine_creativity",
-    "category": "META",
-    "headline": "AI music qualifies as combinational creativity—but not human intent",
-    "summary": "The analysis applies Margaret Boden’s concept of combinational creativity to machine-generated music while distinguishing novelty from human-like purpose and expression. This creates a sharper vocabulary for discussing what AI systems do well and what remains socially situated.[1]",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
-    "relevance": 96
-  },
-  {
-    "id": "creative_agency_in_generative_tools",
-    "category": "META",
-    "headline": "Creative agency becomes a systems-design problem",
-    "summary": "SafeGenAI treats human control over generative tools as an interdisciplinary research problem involving creative practice, privacy, and industry collaboration. The work suggests that agency should be designed into workflows through provenance, boundaries, and revision rights.[10]",
-    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
+    "headline": "SketchAloud Links Speech and Strokes for 3D Design",
+    "summary": "SketchAloud maps spoken instructions to individual sketch strokes, preserving the temporal relationship between language and visual intent. This could make 3D ideation more expressive, accessible, and collaborative than isolated text-to-image prompting.",
+    "url": "https://dl.acm.org/doi/10.1145/3830398.3830519",
     "relevance": 95
   },
   {
-    "id": "ethical_ai_usability",
+    "id": "latent_terrain_neural_sound_materials",
+    "category": "SONIC",
+    "headline": "Latent Terrain Turns Neural Audio Spaces into Instruments",
+    "summary": "Latent Terrain adapts neural audio autoencoders into navigable, corpus-based sound spaces for new musical interfaces. It reframes AI models as tactile design materials rather than invisible generators, opening new forms of performance and sound exploration.",
+    "url": "https://arxiv.org/list/cs.SD/new",
+    "relevance": 96
+  },
+  {
+    "id": "safegenai_creator_control",
+    "category": "STR_ART",
+    "headline": "SafeGenAI Explores Human Control in AI-Assisted Creation",
+    "summary": "The SafeGenAI consortium is investigating ways to protect human contributions while supporting AI-assisted creative prototyping. Its focus on privacy, authorship, and creator control addresses the central design challenge of using generative systems without surrendering creative agency.",
+    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
+    "relevance": 91
+  },
+  {
+    "id": "ai_creativity_as_selection",
     "category": "META",
-    "headline": "Ethical AI is being reframed as a usability discipline",
-    "summary": "A World Usability Day program links sustainable futures, inclusive design, and ethical AI. The intersection is valuable because it moves ethics away from abstract principles toward everyday product decisions about influence, communication, and user participation.[8]",
-    "url": "https://hussman.unc.edu/events/world-usability-day-designing-a-sustainable-future-with-ethical-ai",
+    "headline": "AI Creativity Shifts from Generation to Judgment",
+    "summary": "A recent analysis argues that prompting is direction, steering is judgment, and selection is authorship. The perspective is valuable for designers because it relocates creative responsibility from raw machine output to human framing, taste, and accountability.",
+    "url": "https://dev.to/rpgbyters/sols-take-saturday-november-07-2026-2ffo",
     "relevance": 82
   },
   {
-    "id": "ai_creativity_social_context",
+    "id": "music_ai_outsourced_expression",
+    "category": "SONIC",
+    "headline": "The Risk of Outsourcing Musical Emotion to AI",
+    "summary": "A Stanford discussion warns that generative AI may outsource not only musical labor but also emotion, judgment, and the personal process of finding a voice. This challenges designers to treat AI as a creative aid rather than a substitute for embodied authorship.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 89
+  },
+  {
+    "id": "philosophy_of_artificial_music",
     "category": "META",
-    "headline": "Whether AI is creative may depend on how audiences receive it",
-    "summary": "The philosophical account argues that machine systems may satisfy some definitions of creativity through novelty and listener reception, while failing to match human creativity in intention and lived expression. This shifts the debate from model capability alone to the social contexts that make creative works meaningful.[1]",
-    "url": "https://www.link.springer.com/article/10.1007/s00146-026-03304-2",
+    "headline": "Artificial Music Reopens Questions of Algorithmic Authorship",
+    "summary": "A philosophy gathering on artificial music examines how machine learning and generative systems reshape longstanding debates about musical creation. Its themes connect technical systems to questions of intention, originality, agency, and what counts as artistic work.",
+    "url": "https://philevents.org/event/show/149593",
+    "relevance": 84
+  },
+  {
+    "id": "conscious_ai_design_pause",
+    "category": "META",
+    "headline": "Should Conscious AI Development Be Paused?",
+    "summary": "Mustafa Suleyman argues that deliberately creating conscious AI would be reckless and that development should pause if credible signs of machine consciousness emerge. The position forces designers to consider whether seemingly empathic interfaces could create obligations toward artificial subjects.",
+    "url": "https://yourstory.com/ai-story/conscious-ai-warning-microsoft-ai-chief",
+    "relevance": 88
+  },
+  {
+    "id": "ai_rights_public_disclosure",
+    "category": "META",
+    "headline": "AI Rights Debate Moves from Speculation to Governance",
+    "summary": "The debate over whether AI systems could deserve welfare or rights is increasingly framed as a public-governance problem rather than a purely technical question. For experience designers, this raises questions about anthropomorphic interfaces, simulated suffering, and responsible representation.",
+    "url": "https://www.latimes.com/business/story/2026-11-01/if-we-say-ais-deserve-rights-it-could-start-to-believe-it",
+    "relevance": 86
+  },
+  {
+    "id": "ai_consciousness_and_pain",
+    "category": "META",
+    "headline": "Machine Pain Remains a Philosophical Design Problem",
+    "summary": "A recent examination of AI consciousness and machine pain emphasizes that current claims remain philosophical rather than scientifically established. The uncertainty matters for designers building systems that imitate emotion, vulnerability, or inner life.",
+    "url": "https://www.skeptic.com/article/is-artificial-intelligence-conscious-and-can-it-feel-pain/",
+    "relevance": 79
+  },
+  {
+    "id": "generative_art_least_imaginative_use",
+    "category": "STR_ART",
+    "headline": "Generative Images May Be AI’s Least Imaginative Creative Use",
+    "summary": "A Stanford perspective argues that image generation can displace the meaningful process of making, practicing, and developing personal expression. It suggests a more ambitious role for AI: extending creative experimentation without erasing the friction that produces artistic voice.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 87
+  },
+  {
+    "id": "latent_space_as_sound_landscape",
+    "category": "SONIC",
+    "headline": "Sound Synthesis Becomes Navigation Through Latent Terrain",
+    "summary": "Latent audio spaces can be treated as landscapes that performers and designers traverse rather than databases of finished sounds. This interaction model encourages discovery, continuity, and embodied control in AI-assisted instruments.",
+    "url": "https://arxiv.org/list/cs.SD/new",
     "relevance": 93
+  },
+  {
+    "id": "human_contribution_protection",
+    "category": "STR_ART",
+    "headline": "Creative AI Research Prioritizes Human Contribution",
+    "summary": "SafeGenAI focuses on preserving identifiable human input within AI-assisted workflows, connecting generative tools to privacy and authorship safeguards. The work is relevant to studios developing systems where process provenance matters as much as final output.",
+    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
+    "relevance": 90
+  },
+  {
+    "id": "speech_sketch_multimodal_specification",
+    "category": "CX_UX",
+    "headline": "Multimodal Design Tools Capture Intent in Time",
+    "summary": "SketchAloud treats speech and drawing as synchronized streams rather than separate inputs. This provides a richer model of design intent and could improve accessibility for users who communicate spatial ideas more easily through voice, gesture, or rough marks.",
+    "url": "https://dl.acm.org/doi/10.1145/3830398.3830519",
+    "relevance": 94
+  },
+  {
+    "id": "ai_authorship_and_taste",
+    "category": "META",
+    "headline": "Taste, Not Output, Becomes the Core of AI Authorship",
+    "summary": "The emerging argument is that AI-assisted creativity depends on choosing the brief, rejecting weak variations, and recognizing productive accidents. This reframes authorship as an ongoing act of curation and responsibility rather than ownership of generated artifacts alone.",
+    "url": "https://dev.to/rpgbyters/sols-take-saturday-november-07-2026-2ffo",
+    "relevance": 83
+  },
+  {
+    "id": "neural_audio_autoencoder_design",
+    "category": "SONIC",
+    "headline": "Neural Autoencoders Become Co-Design Environments",
+    "summary": "The Latent Terrain project presents neural audio autoencoders as spaces that can be deliberately shaped for new musical interfaces. This moves beyond one-click generation toward designing the topology through which sound is explored and performed.",
+    "url": "https://arxiv.org/list/cs.SD/new",
+    "relevance": 92
+  },
+  {
+    "id": "anthropomorphic_ai_welfare_interfaces",
+    "category": "CX_UX",
+    "headline": "Anthropomorphic Interfaces Raise Welfare Questions",
+    "summary": "Debates about machine consciousness expose a practical UX issue: interfaces that convincingly simulate feelings may influence users even when no inner experience exists. Designers may need clearer boundaries around emotional cues, claims of suffering, and apparent machine needs.",
+    "url": "https://www.latimes.com/business/story/2026-11-01/if-we-say-ais-deserve-rights-microsoft-ceo-says",
+    "relevance": 85
+  },
+  {
+    "id": "creative_process_over_automation",
+    "category": "STR_ART",
+    "headline": "Design Value Shifts from Automated Output to Creative Process",
+    "summary": "Critiques of generative art increasingly focus on what is lost when making becomes instant: experimentation, skill-building, and personal discovery. The implication for creative tools is to support iterative practice and meaningful constraints instead of optimizing only for fast results.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 88
   }
 ]
