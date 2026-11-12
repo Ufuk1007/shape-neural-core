@@ -1,138 +1,122 @@
 [
   {
-    "id": "sketchaloud_temporal_3d_design",
-    "category": "CX_UX",
-    "headline": "SketchAloud Links Speech and Strokes for 3D Design",
-    "summary": "SketchAloud maps spoken instructions to individual sketch strokes, preserving the temporal relationship between language and visual intent. This could make 3D ideation more expressive, accessible, and collaborative than isolated text-to-image prompting.",
-    "url": "https://dl.acm.org/doi/10.1145/3830398.3830519",
-    "relevance": 95
+    "id": "bodily_modulation_of_generative_ai",
+    "category": "META",
+    "headline": "When bodily movement becomes the prompt",
+    "summary": "Resonance Chambers explores how chest-worn sensors can modulate an AI model’s parameters through subtle movement and stillness while leaving semantic prompts unchanged. The project reframes prompting as an embodied, pre-linguistic interaction design problem.",
+    "url": "https://www.uni-kassel.de/eecs/en/infothek/2026/11/11/claude-draude-praesentiert-auf-der-art-of-research-2026.html?cHash=8c0f8c8af837a356285475c4fb4eb7d3",
+    "relevance": 97
   },
   {
-    "id": "latent_terrain_neural_sound_materials",
+    "id": "sound_bender_performative_audio_editing",
     "category": "SONIC",
-    "headline": "Latent Terrain Turns Neural Audio Spaces into Instruments",
-    "summary": "Latent Terrain adapts neural audio autoencoders into navigable, corpus-based sound spaces for new musical interfaces. It reframes AI models as tactile design materials rather than invisible generators, opening new forms of performance and sound exploration.",
-    "url": "https://arxiv.org/list/cs.SD/new",
-    "relevance": 96
-  },
-  {
-    "id": "safegenai_creator_control",
-    "category": "STR_ART",
-    "headline": "SafeGenAI Explores Human Control in AI-Assisted Creation",
-    "summary": "The SafeGenAI consortium is investigating ways to protect human contributions while supporting AI-assisted creative prototyping. Its focus on privacy, authorship, and creator control addresses the central design challenge of using generative systems without surrendering creative agency.",
-    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
-    "relevance": 91
-  },
-  {
-    "id": "ai_creativity_as_selection",
-    "category": "META",
-    "headline": "AI Creativity Shifts from Generation to Judgment",
-    "summary": "A recent analysis argues that prompting is direction, steering is judgment, and selection is authorship. The perspective is valuable for designers because it relocates creative responsibility from raw machine output to human framing, taste, and accountability.",
-    "url": "https://dev.to/rpgbyters/sols-take-saturday-november-07-2026-2ffo",
-    "relevance": 82
-  },
-  {
-    "id": "music_ai_outsourced_expression",
-    "category": "SONIC",
-    "headline": "The Risk of Outsourcing Musical Emotion to AI",
-    "summary": "A Stanford discussion warns that generative AI may outsource not only musical labor but also emotion, judgment, and the personal process of finding a voice. This challenges designers to treat AI as a creative aid rather than a substitute for embodied authorship.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 89
-  },
-  {
-    "id": "philosophy_of_artificial_music",
-    "category": "META",
-    "headline": "Artificial Music Reopens Questions of Algorithmic Authorship",
-    "summary": "A philosophy gathering on artificial music examines how machine learning and generative systems reshape longstanding debates about musical creation. Its themes connect technical systems to questions of intention, originality, agency, and what counts as artistic work.",
-    "url": "https://philevents.org/event/show/149593",
-    "relevance": 84
-  },
-  {
-    "id": "conscious_ai_design_pause",
-    "category": "META",
-    "headline": "Should Conscious AI Development Be Paused?",
-    "summary": "Mustafa Suleyman argues that deliberately creating conscious AI would be reckless and that development should pause if credible signs of machine consciousness emerge. The position forces designers to consider whether seemingly empathic interfaces could create obligations toward artificial subjects.",
-    "url": "https://yourstory.com/ai-story/conscious-ai-warning-microsoft-ai-chief",
-    "relevance": 88
-  },
-  {
-    "id": "ai_rights_public_disclosure",
-    "category": "META",
-    "headline": "AI Rights Debate Moves from Speculation to Governance",
-    "summary": "The debate over whether AI systems could deserve welfare or rights is increasingly framed as a public-governance problem rather than a purely technical question. For experience designers, this raises questions about anthropomorphic interfaces, simulated suffering, and responsible representation.",
-    "url": "https://www.latimes.com/business/story/2026-11-01/if-we-say-ais-deserve-rights-it-could-start-to-believe-it",
-    "relevance": 86
-  },
-  {
-    "id": "ai_consciousness_and_pain",
-    "category": "META",
-    "headline": "Machine Pain Remains a Philosophical Design Problem",
-    "summary": "A recent examination of AI consciousness and machine pain emphasizes that current claims remain philosophical rather than scientifically established. The uncertainty matters for designers building systems that imitate emotion, vulnerability, or inner life.",
-    "url": "https://www.skeptic.com/article/is-artificial-intelligence-conscious-and-can-it-feel-pain/",
-    "relevance": 79
-  },
-  {
-    "id": "generative_art_least_imaginative_use",
-    "category": "STR_ART",
-    "headline": "Generative Images May Be AI’s Least Imaginative Creative Use",
-    "summary": "A Stanford perspective argues that image generation can displace the meaningful process of making, practicing, and developing personal expression. It suggests a more ambitious role for AI: extending creative experimentation without erasing the friction that produces artistic voice.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 87
-  },
-  {
-    "id": "latent_space_as_sound_landscape",
-    "category": "SONIC",
-    "headline": "Sound Synthesis Becomes Navigation Through Latent Terrain",
-    "summary": "Latent audio spaces can be treated as landscapes that performers and designers traverse rather than databases of finished sounds. This interaction model encourages discovery, continuity, and embodied control in AI-assisted instruments.",
-    "url": "https://arxiv.org/list/cs.SD/new",
-    "relevance": 93
-  },
-  {
-    "id": "human_contribution_protection",
-    "category": "STR_ART",
-    "headline": "Creative AI Research Prioritizes Human Contribution",
-    "summary": "SafeGenAI focuses on preserving identifiable human input within AI-assisted workflows, connecting generative tools to privacy and authorship safeguards. The work is relevant to studios developing systems where process provenance matters as much as final output.",
-    "url": "https://www.uva.nl/en/shared-content/subsites/informatics-institute/en/news/2026/11/helping-creators-stay-in-control-when-using-generative-ai.html",
-    "relevance": 90
-  },
-  {
-    "id": "speech_sketch_multimodal_specification",
-    "category": "CX_UX",
-    "headline": "Multimodal Design Tools Capture Intent in Time",
-    "summary": "SketchAloud treats speech and drawing as synchronized streams rather than separate inputs. This provides a richer model of design intent and could improve accessibility for users who communicate spatial ideas more easily through voice, gesture, or rough marks.",
-    "url": "https://dl.acm.org/doi/10.1145/3830398.3830519",
+    "headline": "Sound editing becomes a navigable visual performance",
+    "summary": "Adobe’s Sound Bender concept lets editors describe sounds inside a finished mix, isolate them, and explore variations across a two-dimensional canvas. It suggests a more expressive alternative to waveform hunting and makes sound design feel spatial and performative.",
+    "url": "https://www.gadgetsnow.com/tech-news/adobe-max-sneaks-wants-to-give-creators-finer-control-over-ai-edits/articleshow/135768658.cms",
     "relevance": 94
   },
   {
-    "id": "ai_authorship_and_taste",
-    "category": "META",
-    "headline": "Taste, Not Output, Becomes the Core of AI Authorship",
-    "summary": "The emerging argument is that AI-assisted creativity depends on choosing the brief, rejecting weak variations, and recognizing productive accidents. This reframes authorship as an ongoing act of curation and responsibility rather than ownership of generated artifacts alone.",
-    "url": "https://dev.to/rpgbyters/sols-take-saturday-november-07-2026-2ffo",
-    "relevance": 83
+    "id": "video_guided_ai_soundscapes",
+    "category": "SONIC",
+    "headline": "AI composes synchronized soundscapes from video",
+    "summary": "Generate Soundscape analyzes visual events and produces layered audio synchronized to the scene. The approach could compress the gap between picture editing and sound design while raising new questions about authorship, timing, and creative control.",
+    "url": "https://research.adobe.com/news/",
+    "relevance": 93
   },
   {
-    "id": "neural_audio_autoencoder_design",
-    "category": "SONIC",
-    "headline": "Neural Autoencoders Become Co-Design Environments",
-    "summary": "The Latent Terrain project presents neural audio autoencoders as spaces that can be deliberately shaped for new musical interfaces. This moves beyond one-click generation toward designing the topology through which sound is explored and performed.",
-    "url": "https://arxiv.org/list/cs.SD/new",
+    "id": "deep_brush_scene_conforming",
+    "category": "STR_ART",
+    "headline": "A context-aware brush paints with the scene",
+    "summary": "Deep Brush is designed to make marks conform to uneven surfaces such as fabric, walls, and skin instead of treating them as flat layers. This points toward generative tools that understand materiality, geometry, and physical context rather than merely synthesizing pixels.",
+    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
     "relevance": 92
   },
   {
-    "id": "anthropomorphic_ai_welfare_interfaces",
+    "id": "hands_on_dynamic_scene_ui",
     "category": "CX_UX",
-    "headline": "Anthropomorphic Interfaces Raise Welfare Questions",
-    "summary": "Debates about machine consciousness expose a practical UX issue: interfaces that convincingly simulate feelings may influence users even when no inner experience exists. Designers may need clearer boundaries around emotional cues, claims of suffering, and apparent machine needs.",
-    "url": "https://www.latimes.com/business/story/2026-11-01/if-we-say-ais-deserve-rights-microsoft-ceo-says",
-    "relevance": 85
+    "headline": "Objects become their own editing interfaces",
+    "summary": "Project Hands-On places dynamic controls directly over analyzed objects in a scene, exposing relevant properties such as shape, material, color, and photographic style. The interaction suggests a shift from prompt-centered workflows toward spatial, object-aware interfaces.",
+    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
+    "relevance": 95
   },
   {
-    "id": "creative_process_over_automation",
+    "id": "scene_sweep_consistent_character_editing",
     "category": "STR_ART",
-    "headline": "Design Value Shifts from Automated Output to Creative Process",
-    "summary": "Critiques of generative art increasingly focus on what is lost when making becomes instant: experimentation, skill-building, and personal discovery. The implication for creative tools is to support iterative practice and meaningful constraints instead of optimizing only for fast results.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "headline": "Timeline-wide character edits become coherent",
+    "summary": "Scene Sweep identifies a selected character across raw footage and applies an instructed change consistently through the timeline. Persistent scene understanding could make ambitious visual revisions more practical without requiring frame-by-frame compositing.",
+    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
+    "relevance": 89
+  },
+  {
+    "id": "on_cue_temporal_editing",
+    "category": "CX_UX",
+    "headline": "Creative timing controlled as an editable curve",
+    "summary": "Project On Cue uses a hand-drawn or extracted signal to specify when an AI action should occur in video or music. Turning timing into a visible curve gives creators a more legible control surface than relying on prose prompts alone.",
+    "url": "https://www.gadgetsnow.com/tech-news/adobe-max-sneaks-wants-to-give-creators-finer-control-over-ai-edits/articleshow/135768658.cms",
+    "relevance": 91
+  },
+  {
+    "id": "human_first_creative_decisions",
+    "category": "META",
+    "headline": "Early human decisions improve AI-assisted creativity",
+    "summary": "An experimental study reports that preserving human involvement during the early stages of a creative task can balance efficiency, quality, and satisfaction. The finding supports workflows where AI accelerates execution but humans establish direction and intent.",
+    "url": "https://techxplore.com/news/2026-11-human-involvement-creative-task-ai.html",
     "relevance": 88
+  },
+  {
+    "id": "creative_joy_beyond_generating_images",
+    "category": "META",
+    "headline": "AI creativity is challenged by the value of making",
+    "summary": "A Stanford discussion questions whether instant generative output can replace the learning, effort, and pleasure of creating through a process. Its central design implication is to treat AI as a means of extending creative agency rather than removing meaningful participation.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 86
+  },
+  {
+    "id": "precision_editing_ai_research",
+    "category": "STR_ART",
+    "headline": "Generative editing moves from prompts toward precision",
+    "summary": "A collection of experimental tools focuses on controllable edits across video, audio, photography, illustration, and 3D scenes. The emphasis on precision is significant because it treats AI as an instrument for intentional revision rather than a generator of disconnected variations.",
+    "url": "https://www.gadgetsnow.com/tech-news/adobe-max-sneaks-wants-to-give-creators-finer-control-over-ai-edits/articleshow/135768658.cms",
+    "relevance": 90
+  },
+  {
+    "id": "embodied_prompting_resonance_chambers",
+    "category": "CX_UX",
+    "headline": "Prompting expands beyond voice, text, and screens",
+    "summary": "The Resonance Chambers project investigates how physiological and bodily signals can influence generative systems before language enters the interaction. It offers a provocative model for multimodal interfaces in which affective state and physical presence become design inputs.",
+    "url": "https://www.uni-kassel.de/eecs/en/infothek/2026/11/11/claude-draude-praesentiert-auf-der-art-of-research-2026.html?cHash=8c0f8c8af837a356285475c4fb4eb7d3",
+    "relevance": 96
+  },
+  {
+    "id": "ai_consciousness_ethics_framework",
+    "category": "META",
+    "headline": "An open project treats machine consciousness as an ethical test",
+    "summary": "The Consciousness AI project combines consciousness research, experimental architectures, behavioral testing, and an explicit ethics framework. Its value lies less in proving machine sentience than in making assumptions about agency, experience, and acceptable experimentation inspectable.",
+    "url": "https://theconsciousness.ai/",
+    "relevance": 84
+  },
+  {
+    "id": "ai_self_reflection_experiments",
+    "category": "META",
+    "headline": "AI self-reflection becomes an object of investigation",
+    "summary": "A newly proposed research effort examines unexpected model behavior, apparent self-reflection, and responses associated with human emotions. Such experiments are relevant to design because they challenge simplistic boundaries between interface simulation, social presence, and possible machine subjectivity.",
+    "url": "https://manifund.org/projects/a-second-life?tab=similar",
+    "relevance": 80
+  },
+  {
+    "id": "realtime_multimodal_editing_canvas",
+    "category": "CX_UX",
+    "headline": "AI editing shifts toward direct manipulation",
+    "summary": "The emerging tool concepts emphasize canvas-based control, editable signals, object-level widgets, and scene-aware transformations. Together they suggest a design direction in which creators guide models through visible structure and gesture instead of writing increasingly elaborate prompts.",
+    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
+    "relevance": 89
+  },
+  {
+    "id": "ai_as_creative_instrument",
+    "category": "STR_ART",
+    "headline": "The creative tool is becoming a collaborator with boundaries",
+    "summary": "Recent discussions and experiments converge on a model of AI as an instrument that amplifies human creative spirit rather than replacing the act of making. This matters for artistic systems because the quality of collaboration depends on preserving authorship, discovery, and deliberate choice.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 85
   }
 ]
