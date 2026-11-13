@@ -1,122 +1,154 @@
 [
   {
-    "id": "bodily_modulation_of_generative_ai",
+    "id": "system_level_ai_creativity",
     "category": "META",
-    "headline": "When bodily movement becomes the prompt",
-    "summary": "Resonance Chambers explores how chest-worn sensors can modulate an AI model’s parameters through subtle movement and stillness while leaving semantic prompts unchanged. The project reframes prompting as an embodied, pre-linguistic interaction design problem.",
-    "url": "https://www.uni-kassel.de/eecs/en/infothek/2026/11/11/claude-draude-praesentiert-auf-der-art-of-research-2026.html?cHash=8c0f8c8af837a356285475c4fb4eb7d3",
+    "headline": "Creativity May Belong to the Human–AI System",
+    "summary": "A new ACM paper argues that creativity emerges from interaction rather than residing solely in a model or person. Its meta-analysis reports that human–AI collaboration outperforms human-only work, challenging current assumptions about authorship and creative governance.",
+    "url": "https://dl.acm.org/doi/10.1145/3806096.3844823",
+    "relevance": 98
+  },
+  {
+    "id": "sensory_percussion_machine_partner",
+    "category": "SONIC",
+    "headline": "Machine Learning Joins Live Improvisation as a Musical Partner",
+    "summary": "A Binghamton research project will let generative AI respond in real time to sensory data from live percussion performances. The work treats AI as an improvisational collaborator rather than a back-end composition tool, opening new questions about timing, agency, and ensemble behavior.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
     "relevance": 97
   },
   {
-    "id": "sound_bender_performative_audio_editing",
-    "category": "SONIC",
-    "headline": "Sound editing becomes a navigable visual performance",
-    "summary": "Adobe’s Sound Bender concept lets editors describe sounds inside a finished mix, isolate them, and explore variations across a two-dimensional canvas. It suggests a more expressive alternative to waveform hunting and makes sound design feel spatial and performative.",
-    "url": "https://www.gadgetsnow.com/tech-news/adobe-max-sneaks-wants-to-give-creators-finer-control-over-ai-edits/articleshow/135768658.cms",
-    "relevance": 94
-  },
-  {
-    "id": "video_guided_ai_soundscapes",
-    "category": "SONIC",
-    "headline": "AI composes synchronized soundscapes from video",
-    "summary": "Generate Soundscape analyzes visual events and produces layered audio synchronized to the scene. The approach could compress the gap between picture editing and sound design while raising new questions about authorship, timing, and creative control.",
-    "url": "https://research.adobe.com/news/",
-    "relevance": 93
-  },
-  {
-    "id": "deep_brush_scene_conforming",
+    "id": "small_data_creative_ai",
     "category": "STR_ART",
-    "headline": "A context-aware brush paints with the scene",
-    "summary": "Deep Brush is designed to make marks conform to uneven surfaces such as fabric, walls, and skin instead of treating them as flat layers. This points toward generative tools that understand materiality, geometry, and physical context rather than merely synthesizing pixels.",
-    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
-    "relevance": 92
-  },
-  {
-    "id": "hands_on_dynamic_scene_ui",
-    "category": "CX_UX",
-    "headline": "Objects become their own editing interfaces",
-    "summary": "Project Hands-On places dynamic controls directly over analyzed objects in a scene, exposing relevant properties such as shape, material, color, and photographic style. The interaction suggests a shift from prompt-centered workflows toward spatial, object-aware interfaces.",
-    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
-    "relevance": 95
-  },
-  {
-    "id": "scene_sweep_consistent_character_editing",
-    "category": "STR_ART",
-    "headline": "Timeline-wide character edits become coherent",
-    "summary": "Scene Sweep identifies a selected character across raw footage and applies an instructed change consistently through the timeline. Persistent scene understanding could make ambitious visual revisions more practical without requiring frame-by-frame compositing.",
-    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
-    "relevance": 89
-  },
-  {
-    "id": "on_cue_temporal_editing",
-    "category": "CX_UX",
-    "headline": "Creative timing controlled as an editable curve",
-    "summary": "Project On Cue uses a hand-drawn or extracted signal to specify when an AI action should occur in video or music. Turning timing into a visible curve gives creators a more legible control surface than relying on prose prompts alone.",
-    "url": "https://www.gadgetsnow.com/tech-news/adobe-max-sneaks-wants-to-give-creators-finer-control-over-ai-edits/articleshow/135768658.cms",
-    "relevance": 91
-  },
-  {
-    "id": "human_first_creative_decisions",
-    "category": "META",
-    "headline": "Early human decisions improve AI-assisted creativity",
-    "summary": "An experimental study reports that preserving human involvement during the early stages of a creative task can balance efficiency, quality, and satisfaction. The finding supports workflows where AI accelerates execution but humans establish direction and intent.",
-    "url": "https://techxplore.com/news/2026-11-human-involvement-creative-task-ai.html",
-    "relevance": 88
-  },
-  {
-    "id": "creative_joy_beyond_generating_images",
-    "category": "META",
-    "headline": "AI creativity is challenged by the value of making",
-    "summary": "A Stanford discussion questions whether instant generative output can replace the learning, effort, and pleasure of creating through a process. Its central design implication is to treat AI as a means of extending creative agency rather than removing meaningful participation.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 86
-  },
-  {
-    "id": "precision_editing_ai_research",
-    "category": "STR_ART",
-    "headline": "Generative editing moves from prompts toward precision",
-    "summary": "A collection of experimental tools focuses on controllable edits across video, audio, photography, illustration, and 3D scenes. The emphasis on precision is significant because it treats AI as an instrument for intentional revision rather than a generator of disconnected variations.",
-    "url": "https://www.gadgetsnow.com/tech-news/adobe-max-sneaks-wants-to-give-creators-finer-control-over-ai-edits/articleshow/135768658.cms",
-    "relevance": 90
-  },
-  {
-    "id": "embodied_prompting_resonance_chambers",
-    "category": "CX_UX",
-    "headline": "Prompting expands beyond voice, text, and screens",
-    "summary": "The Resonance Chambers project investigates how physiological and bodily signals can influence generative systems before language enters the interaction. It offers a provocative model for multimodal interfaces in which affective state and physical presence become design inputs.",
-    "url": "https://www.uni-kassel.de/eecs/en/infothek/2026/11/11/claude-draude-praesentiert-auf-der-art-of-research-2026.html?cHash=8c0f8c8af837a356285475c4fb4eb7d3",
+    "headline": "Small-Data AI Could Return Creative Control to Artists",
+    "summary": "A forthcoming talk presents alternatives to dominant generative systems through small datasets, model crafting, and artist-centered interaction. The approach aims to preserve cultural specificity while improving authorship, agency, and phenomenological ownership in sound and visual creation.",
+    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
     "relevance": 96
   },
   {
-    "id": "ai_consciousness_ethics_framework",
-    "category": "META",
-    "headline": "An open project treats machine consciousness as an ethical test",
-    "summary": "The Consciousness AI project combines consciousness research, experimental architectures, behavioral testing, and an explicit ethics framework. Its value lies less in proving machine sentience than in making assumptions about agency, experience, and acceptable experimentation inspectable.",
-    "url": "https://theconsciousness.ai/",
-    "relevance": 84
+    "id": "ai_music_labels_creative_behavior",
+    "category": "SONIC",
+    "headline": "Do AI Music Labels Change What Artists Create?",
+    "summary": "A Duke-led research project is studying whether labels for AI-generated music affect listener response, artist popularity, and production choices. It also examines whether human and synthetic musicians adapt their work to avoid misclassification, turning labeling into a potential creative force.",
+    "url": "https://www.today.duke.edu/2026/11/what-happens-human-creativity-age-ai",
+    "relevance": 94
   },
   {
-    "id": "ai_self_reflection_experiments",
-    "category": "META",
-    "headline": "AI self-reflection becomes an object of investigation",
-    "summary": "A newly proposed research effort examines unexpected model behavior, apparent self-reflection, and responses associated with human emotions. Such experiments are relevant to design because they challenge simplistic boundaries between interface simulation, social presence, and possible machine subjectivity.",
-    "url": "https://manifund.org/projects/a-second-life?tab=similar",
-    "relevance": 80
+    "id": "generate_soundscape_screen_aware_audio",
+    "category": "SONIC",
+    "headline": "Screen-Aware AI Generates Layered Soundscapes",
+    "summary": "Adobe Research describes a system that analyzes on-screen events and generates synchronized, layered audio for video. The interaction shifts sound design from manual asset hunting toward semantic, timeline-aware exploration while keeping creators in control of editing decisions.",
+    "url": "https://research.adobe.com/news/",
+    "relevance": 91
   },
   {
-    "id": "realtime_multimodal_editing_canvas",
-    "category": "CX_UX",
-    "headline": "AI editing shifts toward direct manipulation",
-    "summary": "The emerging tool concepts emphasize canvas-based control, editable signals, object-level widgets, and scene-aware transformations. Together they suggest a design direction in which creators guide models through visible structure and gesture instead of writing increasingly elaborate prompts.",
-    "url": "https://www.cnet.com/tech/services-and-software/adobe-max-2026-sneaks-ai-photo-video-editing-exclusive/",
+    "id": "ai_sound_effects_expressive_generation",
+    "category": "SONIC",
+    "headline": "Generative Sound Effects Become an Expressive Design Material",
+    "summary": "Adobe’s experimental sound-effects work frames audio generation as an intuitive and expressive creative process rather than a text-to-file utility. This could make nuanced sonic iteration more accessible to filmmakers, interaction designers, and artists without traditional recording workflows.",
+    "url": "https://research.adobe.com/news/",
     "relevance": 89
   },
   {
-    "id": "ai_as_creative_instrument",
+    "id": "responsibility_to_imagine",
+    "category": "META",
+    "headline": "Creative Friction Becomes an Ethical AI Practice",
+    "summary": "A design-focused ethics discussion argues that AI suggestions can narrow a creator’s sense of what is possible before a project has fully formed. Deliberately pausing, questioning assumptions, and reframing prompts are presented as practical methods for preserving judgment and responsibility.",
+    "url": "https://www.accademiadellearti.it/en/aant-at-new-technologies-and-ethics-conference/",
+    "relevance": 93
+  },
+  {
+    "id": "creative_ai_depolarization",
+    "category": "META",
+    "headline": "Creative AI Research Moves Beyond Automation Versus Replacement",
+    "summary": "An alternative framework emphasizes diversity, AI literacy, depolarization, and participatory co-creation. Its focus on direct manipulation and user agency offers a theory of creative tools designed to empower practitioners rather than optimize them away.",
+    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
+    "relevance": 92
+  },
+  {
+    "id": "ai_creativity_cultural_change",
+    "category": "META",
+    "headline": "AI Is Rewriting the Social Meaning of Creativity",
+    "summary": "An interdisciplinary Duke project examines how generative systems are changing music consumption, artistic development, and cultural standards. Rather than asking only what AI can produce, it investigates how creators and audiences may redefine human creativity around machine participation.",
+    "url": "https://www.today.duke.edu/2026/11/what-happens-human-creativity-age-ai",
+    "relevance": 91
+  },
+  {
+    "id": "responsive_cinematic_audio_system",
+    "category": "SONIC",
+    "headline": "Responsive Machine Learning Connects Cinema and Live Audio",
+    "summary": "A funded research project will combine historical and contemporary cinematic technologies with machine learning and other AI tools. Its responsive approach suggests a design space where audiovisual systems interpret context and evolve alongside performance rather than merely reproduce fixed media.",
+    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
+    "relevance": 88
+  },
+  {
+    "id": "creative_ai_symposium",
+    "category": "META",
+    "headline": "Creative AI Research Converges Across Art, Design, and Justice",
+    "summary": "A UCL symposium brings together experimentation and critical research across art, architecture, cultural heritage, and design. Its agenda links creative possibilities with labor, intellectual property, ethics, governance, and justice, making the field legible as a cultural system rather than a tool category.",
+    "url": "https://www.ucl.ac.uk/creative-cultural-industries/events/2026/nov/art-and-science-creative-ai-symposium",
+    "relevance": 87
+  },
+  {
+    "id": "culturai_responsible_cultural_ai",
+    "category": "META",
+    "headline": "Cultural AI Governance Targets Creativity and Diversity",
+    "summary": "The CULTURAI project focuses on responsible AI in audiovisual sectors and public cultural institutions. Its priorities include artistic freedom, cultural diversity, labor impacts, inclusion, governance, and AI literacy—areas where system design directly shapes who can create and whose culture is represented.",
+    "url": "https://www.unesco.org/en/articles/unesco-joins-eu-funded-culturai-project-advance-responsible-ai-cultural-and-creative-sectors",
+    "relevance": 90
+  },
+  {
+    "id": "ai_design_practice_exploration",
+    "category": "CX_UX",
+    "headline": "New Study Maps AI’s Role in Design Practice",
+    "summary": "A newly published open-access conference paper investigates how AI is being integrated into professional design work. Its practice-centered framing is relevant to interaction patterns, decision-making, workflow orchestration, and the changing boundaries between designer intent and machine suggestion.",
+    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
+    "relevance": 84
+  },
+  {
+    "id": "human_centered_creative_ai",
+    "category": "CX_UX",
+    "headline": "Direct Manipulation Replaces Prompt-Only Creative Interaction",
+    "summary": "Research highlighted in a creative-AI lab framework centers human agency, direct manipulation, and co-creation. This points toward interfaces where users shape generative systems continuously through gesture, constraints, and feedback instead of relying on one-shot prompts.",
+    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
+    "relevance": 93
+  },
+  {
+    "id": "ai_authorship_phenomenology",
+    "category": "CX_UX",
+    "headline": "Creative AI Evaluation Expands Beyond Output Quality",
+    "summary": "Artist and industry evaluations described in current research examine user experience, ethics, authorship, phenomenology, and technological acceptance. This broadens UX criteria for creative tools from speed and quality to feelings of ownership, meaning, and control.",
+    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
+    "relevance": 95
+  },
+  {
+    "id": "ai_suggestion_design_friction",
+    "category": "CX_UX",
+    "headline": "Designers Need Interfaces That Make AI Suggestions Questionable",
+    "summary": "Ethics research warns that early AI suggestions can silently define the creative search space. Designing for productive friction—through interruption, provenance, alternatives, and reframing—could help users retain critical distance instead of accepting the first plausible output.",
+    "url": "https://www.accademiadellearti.it/en/aant-at-new-technologies-and-ethics-conference/",
+    "relevance": 94
+  },
+  {
+    "id": "ai_art_less_imaginative_use",
     "category": "STR_ART",
-    "headline": "The creative tool is becoming a collaborator with boundaries",
-    "summary": "Recent discussions and experiments converge on a model of AI as an instrument that amplifies human creative spirit rather than replacing the act of making. This matters for artistic systems because the quality of collaboration depends on preserving authorship, discovery, and deliberate choice.",
+    "headline": "Generative Images May Be AI’s Least Imaginative Artistic Use",
+    "summary": "A Stanford discussion challenges the assumption that image generation represents the fullest creative potential of AI. The provocation redirects attention toward systems that reshape collaboration, perception, composition, and cultural participation rather than simply producing finished pictures.",
     "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 85
+    "relevance": 89
+  },
+  {
+    "id": "ai_creator_control_tools",
+    "category": "STR_ART",
+    "headline": "Creative AI’s Next Frontier Is Control, Not Automation",
+    "summary": "Adobe Research presents a broad set of experimental technologies aimed at giving creators finer control over image, video, and sound workflows. The design significance lies in treating AI as an editable material embedded in familiar creative processes rather than as an autonomous generator.",
+    "url": "https://research.adobe.com/news/",
+    "relevance": 86
+  },
+  {
+    "id": "creative_ai_governance_unit",
+    "category": "META",
+    "headline": "Governance Should Evaluate Creative Systems, Not Isolated Models",
+    "summary": "The system-level creativity argument implies that copyright, publishing, and academic-integrity rules should assess networks of people, models, interfaces, and institutions. This reframes accountability around the conditions that produce creative work instead of asking whether a model alone is creative.",
+    "url": "https://dl.acm.org/doi/10.1145/3806096.3844823",
+    "relevance": 96
   }
 ]
