@@ -1,154 +1,146 @@
 [
   {
-    "id": "system_level_ai_creativity",
+    "id": "creative_ai_ucl_symposium",
     "category": "META",
-    "headline": "Creativity May Belong to the Human–AI System",
-    "summary": "A new ACM paper argues that creativity emerges from interaction rather than residing solely in a model or person. Its meta-analysis reports that human–AI collaboration outperforms human-only work, challenging current assumptions about authorship and creative governance.",
-    "url": "https://dl.acm.org/doi/10.1145/3806096.3844823",
+    "headline": "UCL asks what creativity becomes with AI",
+    "summary": "The Art and Science of Creative AI symposium brings artists, designers, computer scientists, and philosophers together to examine AI as medium, research method, and critical object. Its focus on imperfect models challenges the assumption that better AI necessarily means more creativity.",
+    "url": "https://www.creativeai.org.uk/",
     "relevance": 98
   },
   {
-    "id": "sensory_percussion_machine_partner",
-    "category": "SONIC",
-    "headline": "Machine Learning Joins Live Improvisation as a Musical Partner",
-    "summary": "A Binghamton research project will let generative AI respond in real time to sensory data from live percussion performances. The work treats AI as an improvisational collaborator rather than a back-end composition tool, opening new questions about timing, agency, and ensemble behavior.",
-    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
-    "relevance": 97
-  },
-  {
-    "id": "small_data_creative_ai",
-    "category": "STR_ART",
-    "headline": "Small-Data AI Could Return Creative Control to Artists",
-    "summary": "A forthcoming talk presents alternatives to dominant generative systems through small datasets, model crafting, and artist-centered interaction. The approach aims to preserve cultural specificity while improving authorship, agency, and phenomenological ownership in sound and visual creation.",
-    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
+    "id": "human_creativity_artificial_creation",
+    "category": "META",
+    "headline": "Can AI create, or only produce valuable artifacts?",
+    "summary": "A new Cambridge philosophy work argues that current AI systems can generate valuable products without possessing creativity in the human sense. It reframes the design question from whether AI is creative to when humans should outsource creative labor.",
+    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
     "relevance": 96
   },
   {
-    "id": "ai_music_labels_creative_behavior",
-    "category": "SONIC",
-    "headline": "Do AI Music Labels Change What Artists Create?",
-    "summary": "A Duke-led research project is studying whether labels for AI-generated music affect listener response, artist popularity, and production choices. It also examines whether human and synthetic musicians adapt their work to avoid misclassification, turning labeling into a potential creative force.",
-    "url": "https://www.today.duke.edu/2026/11/what-happens-human-creativity-age-ai",
+    "id": "ai_design_practice_study",
+    "category": "CX_UX",
+    "headline": "Study maps AI’s expanding role across design practice",
+    "summary": "An exploratory design study examines AI across visual, product, industrial, and architectural workflows. Its central finding is augmentation rather than replacement, with implications for how design teams divide judgment, exploration, and execution.",
+    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
+    "relevance": 91
+  },
+  {
+    "id": "banana_palette_spatial_ai",
+    "category": "STR_ART",
+    "headline": "Jewelry becomes AI-generated interior architecture",
+    "summary": "Cornell’s Banana Palette project translates the colors, textures, forms, and rhythms of a handmade necklace into interior concepts for a café. The work demonstrates a compelling cross-domain pipeline from intimate craft artifact to spatial design system.",
+    "url": "https://events.cornell.edu/event/banana-palette",
     "relevance": 94
   },
   {
-    "id": "generate_soundscape_screen_aware_audio",
-    "category": "SONIC",
-    "headline": "Screen-Aware AI Generates Layered Soundscapes",
-    "summary": "Adobe Research describes a system that analyzes on-screen events and generates synchronized, layered audio for video. The interaction shifts sound design from manual asset hunting toward semantic, timeline-aware exploration while keeping creators in control of editing decisions.",
-    "url": "https://research.adobe.com/news/",
-    "relevance": 91
-  },
-  {
-    "id": "ai_sound_effects_expressive_generation",
-    "category": "SONIC",
-    "headline": "Generative Sound Effects Become an Expressive Design Material",
-    "summary": "Adobe’s experimental sound-effects work frames audio generation as an intuitive and expressive creative process rather than a text-to-file utility. This could make nuanced sonic iteration more accessible to filmmakers, interaction designers, and artists without traditional recording workflows.",
-    "url": "https://research.adobe.com/news/",
-    "relevance": 89
-  },
-  {
-    "id": "responsibility_to_imagine",
-    "category": "META",
-    "headline": "Creative Friction Becomes an Ethical AI Practice",
-    "summary": "A design-focused ethics discussion argues that AI suggestions can narrow a creator’s sense of what is possible before a project has fully formed. Deliberately pausing, questioning assumptions, and reframing prompts are presented as practical methods for preserving judgment and responsibility.",
-    "url": "https://www.accademiadellearti.it/en/aant-at-new-technologies-and-ethics-conference/",
+    "id": "llm_creative_canvas_agent",
+    "category": "STR_ART",
+    "headline": "An LLM agent orchestrates classic generative algorithms",
+    "summary": "The Creative Canvas combines language-model interaction with fractals, Lindenmayer systems, cellular automata, spatial trees, and Markov chains. Rather than treating image generation as a black box, it exposes algorithmic structure as a manipulable creative material.",
+    "url": "http://stal.blogspot.com/2026/11/the-creative-canvas-unleashing.html?m=0",
     "relevance": 93
   },
   {
-    "id": "creative_ai_depolarization",
-    "category": "META",
-    "headline": "Creative AI Research Moves Beyond Automation Versus Replacement",
-    "summary": "An alternative framework emphasizes diversity, AI literacy, depolarization, and participatory co-creation. Its focus on direct manipulation and user agency offers a theory of creative tools designed to empower practitioners rather than optimize them away.",
-    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
-    "relevance": 92
-  },
-  {
-    "id": "ai_creativity_cultural_change",
-    "category": "META",
-    "headline": "AI Is Rewriting the Social Meaning of Creativity",
-    "summary": "An interdisciplinary Duke project examines how generative systems are changing music consumption, artistic development, and cultural standards. Rather than asking only what AI can produce, it investigates how creators and audiences may redefine human creativity around machine participation.",
-    "url": "https://www.today.duke.edu/2026/11/what-happens-human-creativity-age-ai",
-    "relevance": 91
-  },
-  {
-    "id": "responsive_cinematic_audio_system",
-    "category": "SONIC",
-    "headline": "Responsive Machine Learning Connects Cinema and Live Audio",
-    "summary": "A funded research project will combine historical and contemporary cinematic technologies with machine learning and other AI tools. Its responsive approach suggests a design space where audiovisual systems interpret context and evolve alongside performance rather than merely reproduce fixed media.",
-    "url": "https://www.binghamton.edu/news/story/6349/grants-support-new-research-on-role-of-ai-in-the-arts",
+    "id": "debashis_sen_ai_canvas_show",
+    "category": "STR_ART",
+    "headline": "Kolkata exhibition positions AI as an artistic instrument",
+    "summary": "Debashis Sen’s sixth generative-canvas exhibition presents AI-generated works shaped through original prompts, repeated iterations, and AI printing. The project is notable for framing generative systems as an extension of individual artistic practice rather than an autonomous author.",
+    "url": "https://totheircredit.com/news/2026/11/13/debashis-sens-kolkata-ai-canvas-show/",
     "relevance": 88
   },
   {
-    "id": "creative_ai_symposium",
+    "id": "debashis_sen_human_imagination",
     "category": "META",
-    "headline": "Creative AI Research Converges Across Art, Design, and Justice",
-    "summary": "A UCL symposium brings together experimentation and critical research across art, architecture, cultural heritage, and design. Its agenda links creative possibilities with labor, intellectual property, ethics, governance, and justice, making the field legible as a cultural system rather than a tool category.",
-    "url": "https://www.ucl.ac.uk/creative-cultural-industries/events/2026/nov/art-and-science-creative-ai-symposium",
-    "relevance": 87
-  },
-  {
-    "id": "culturai_responsible_cultural_ai",
-    "category": "META",
-    "headline": "Cultural AI Governance Targets Creativity and Diversity",
-    "summary": "The CULTURAI project focuses on responsible AI in audiovisual sectors and public cultural institutions. Its priorities include artistic freedom, cultural diversity, labor impacts, inclusion, governance, and AI literacy—areas where system design directly shapes who can create and whose culture is represented.",
-    "url": "https://www.unesco.org/en/articles/unesco-joins-eu-funded-culturai-project-advance-responsible-ai-cultural-and-creative-sectors",
-    "relevance": 90
-  },
-  {
-    "id": "ai_design_practice_exploration",
-    "category": "CX_UX",
-    "headline": "New Study Maps AI’s Role in Design Practice",
-    "summary": "A newly published open-access conference paper investigates how AI is being integrated into professional design work. Its practice-centered framing is relevant to interaction patterns, decision-making, workflow orchestration, and the changing boundaries between designer intent and machine suggestion.",
-    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
-    "relevance": 84
-  },
-  {
-    "id": "human_centered_creative_ai",
-    "category": "CX_UX",
-    "headline": "Direct Manipulation Replaces Prompt-Only Creative Interaction",
-    "summary": "Research highlighted in a creative-AI lab framework centers human agency, direct manipulation, and co-creation. This points toward interfaces where users shape generative systems continuously through gesture, constraints, and feedback instead of relying on one-shot prompts.",
-    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
-    "relevance": 93
-  },
-  {
-    "id": "ai_authorship_phenomenology",
-    "category": "CX_UX",
-    "headline": "Creative AI Evaluation Expands Beyond Output Quality",
-    "summary": "Artist and industry evaluations described in current research examine user experience, ethics, authorship, phenomenology, and technological acceptance. This broadens UX criteria for creative tools from speed and quality to feelings of ownership, meaning, and control.",
-    "url": "https://dei.fe.up.pt/pt/blog/2026/11/12/creativity-talk-alternative-approaches-to-creative-ai-diversity-literacy-and-depolarization-por-philippe-pasquier-simon-fraser-university/",
-    "relevance": 95
-  },
-  {
-    "id": "ai_suggestion_design_friction",
-    "category": "CX_UX",
-    "headline": "Designers Need Interfaces That Make AI Suggestions Questionable",
-    "summary": "Ethics research warns that early AI suggestions can silently define the creative search space. Designing for productive friction—through interruption, provenance, alternatives, and reframing—could help users retain critical distance instead of accepting the first plausible output.",
-    "url": "https://www.accademiadellearti.it/en/aant-at-new-technologies-and-ethics-conference/",
-    "relevance": 94
-  },
-  {
-    "id": "ai_art_less_imaginative_use",
-    "category": "STR_ART",
-    "headline": "Generative Images May Be AI’s Least Imaginative Artistic Use",
-    "summary": "A Stanford discussion challenges the assumption that image generation represents the fullest creative potential of AI. The provocation redirects attention toward systems that reshape collaboration, perception, composition, and cultural participation rather than simply producing finished pictures.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 89
-  },
-  {
-    "id": "ai_creator_control_tools",
-    "category": "STR_ART",
-    "headline": "Creative AI’s Next Frontier Is Control, Not Automation",
-    "summary": "Adobe Research presents a broad set of experimental technologies aimed at giving creators finer control over image, video, and sound workflows. The design significance lies in treating AI as an editable material embedded in familiar creative processes rather than as an autonomous generator.",
-    "url": "https://research.adobe.com/news/",
+    "headline": "Generative art becomes a vocabulary for human imagination",
+    "summary": "A parallel account of Debashis Sen’s Kolkata exhibition emphasizes the artist’s hundreds of prompt iterations and the role of physical AI printing. It offers a grounded model of authorship in which agency resides in selection, iteration, and framing.",
+    "url": "https://news.webindia123.com//news/articles/business/20261113/4519293.html",
     "relevance": 86
   },
   {
-    "id": "creative_ai_governance_unit",
+    "id": "ai_art_or_ai_slop",
     "category": "META",
-    "headline": "Governance Should Evaluate Creative Systems, Not Isolated Models",
-    "summary": "The system-level creativity argument implies that copyright, publishing, and academic-integrity rules should assess networks of people, models, interfaces, and institutions. This reframes accountability around the conditions that produce creative work instead of asking whether a model alone is creative.",
-    "url": "https://dl.acm.org/doi/10.1145/3806096.3844823",
-    "relevance": 96
+    "headline": "A seminar investigates the rise of AI image slop",
+    "summary": "The Avignon seminar traces how generative images alter photography, media circulation, heritage, and creative practice. Its framing treats AI imagery as a reconfiguration of reality, not merely a faster production tool.",
+    "url": "https://univ-avignon.fr/en/event/ai-art-or-slop-ai-seminar-the-origins-and-evolution-of-ai-generated-digital-images/",
+    "relevance": 90
+  },
+  {
+    "id": "ai_creativity_amplifies_expertise",
+    "category": "META",
+    "headline": "AI may amplify creative inequality instead of flattening it",
+    "summary": "Research summarized by UConn suggests that AI assistance benefits people with stronger existing creative and cognitive skills more than others. For design education and professional practice, generative tools may magnify differences in judgment rather than democratize creativity automatically.",
+    "url": "https://today.uconn.edu/2026/01/neag-school-researcher-finds-that-human-creativity-still-matters-in-an-age-of-ai/",
+    "relevance": 95
+  },
+  {
+    "id": "ai_fashion_craftsmanship",
+    "category": "STR_ART",
+    "headline": "Fashion debates AI alongside craft and authorship",
+    "summary": "A discussion with Marina Pereira places generative imagery and AI-assisted fashion work beside craftsmanship and material knowledge. The intersection matters because it tests whether AI can extend making without displacing the embodied decisions that give objects cultural meaning.",
+    "url": "https://www.tallahassee.com/press-release/story/145946/the-art-of-making-marina-pereira-on-fashion-creativity-craftsmanship-and-ai/",
+    "relevance": 82
+  },
+  {
+    "id": "ai_as_design_amplifier",
+    "category": "CX_UX",
+    "headline": "Design research reframes AI as capability expansion",
+    "summary": "The emerging design-practice research describes AI as a way to broaden exploration in branding, image editing, 3D modeling, product optimization, and spatial simulation. This suggests a shift from isolated generative features toward AI embedded across the full design lifecycle.",
+    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
+    "relevance": 87
+  },
+  {
+    "id": "imperfect_models_creative_method",
+    "category": "META",
+    "headline": "Could incomplete AI models produce better ideas?",
+    "summary": "The UCL symposium explicitly questions whether creative value depends on model accuracy. Its emphasis on incompleteness opens a design space for errors, ambiguity, and productive failure as intentional properties of creative AI systems.",
+    "url": "https://www.creativeai.org.uk/",
+    "relevance": 94
+  },
+  {
+    "id": "generative_art_physical_output",
+    "category": "STR_ART",
+    "headline": "AI canvas practice reconnects prompts with physical objects",
+    "summary": "Sen’s exhibition links generative prompts, iterative image-making, AI printers, and gallery presentation. The workflow is significant because it moves AI art away from disposable screens toward materially situated, authored objects.",
+    "url": "https://news.webindia123.com//news/articles/business/20261113/4519293.html",
+    "relevance": 84
+  },
+  {
+    "id": "creative_ai_as_research_method",
+    "category": "CX_UX",
+    "headline": "Artistic experiments become instruments for AI research",
+    "summary": "The UCL program treats creative practice not only as an application of AI but also as a way to investigate and develop AI methods. This positions artists and designers as contributors to technical inquiry rather than downstream tool users.",
+    "url": "https://www.creativeai.org.uk/",
+    "relevance": 92
+  },
+  {
+    "id": "prompt_iteration_authorship",
+    "category": "META",
+    "headline": "Authorship shifts from making to iterative direction",
+    "summary": "The Kolkata exhibition foregrounds hundreds of prompt iterations as part of the artist’s process. It illustrates a broader authorship model in which creative identity emerges through curation, rejection, sequencing, and physical realization.",
+    "url": "https://totheircredit.com/news/2026/11/13/debashis-sens-kolkata-ai-canvas-show/",
+    "relevance": 89
+  },
+  {
+    "id": "ai_spatial_translation",
+    "category": "CX_UX",
+    "headline": "AI translates personal artifacts into public experience",
+    "summary": "Cornell’s café concepts show how AI can mediate between a designer’s personal object language and a shared architectural environment. The project suggests a new interaction pattern: systems that preserve visual DNA while transforming scale, context, and function.",
+    "url": "https://events.cornell.edu/event/banana-palette",
+    "relevance": 90
+  },
+  {
+    "id": "creative_work_outsourcing_ethics",
+    "category": "META",
+    "headline": "Philosophy asks what creative work should remain human",
+    "summary": "The Cambridge work distinguishes the ability to make useful artifacts from genuine creativity and examines reasons to resist outsourcing creative activity. This provides a sharper ethical framework for deciding which design decisions should remain human-led.",
+    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
+    "relevance": 93
+  },
+  {
+    "id": "algorithmic_canvas_language_interface",
+    "category": "STR_ART",
+    "headline": "Natural language opens a doorway into procedural art",
+    "summary": "The Creative Canvas gives an LLM access to established procedural techniques, including Julia sets, Game of Life, fractals, and spatial data structures. Its importance lies in making computational aesthetics legible through dialogue without hiding the underlying systems.",
+    "url": "http://stal.blogspot.com/2026/11/the-creative-canvas-unleashing.html?m=0",
+    "relevance": 91
   }
 ]
