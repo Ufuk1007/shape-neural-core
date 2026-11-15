@@ -1,146 +1,154 @@
 [
   {
-    "id": "creative_ai_ucl_symposium",
-    "category": "META",
-    "headline": "UCL asks what creativity becomes with AI",
-    "summary": "The Art and Science of Creative AI symposium brings artists, designers, computer scientists, and philosophers together to examine AI as medium, research method, and critical object. Its focus on imperfect models challenges the assumption that better AI necessarily means more creativity.",
-    "url": "https://www.creativeai.org.uk/",
-    "relevance": 98
-  },
-  {
-    "id": "human_creativity_artificial_creation",
-    "category": "META",
-    "headline": "Can AI create, or only produce valuable artifacts?",
-    "summary": "A new Cambridge philosophy work argues that current AI systems can generate valuable products without possessing creativity in the human sense. It reframes the design question from whether AI is creative to when humans should outsource creative labor.",
-    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
-    "relevance": 96
-  },
-  {
-    "id": "ai_design_practice_study",
-    "category": "CX_UX",
-    "headline": "Study maps AI’s expanding role across design practice",
-    "summary": "An exploratory design study examines AI across visual, product, industrial, and architectural workflows. Its central finding is augmentation rather than replacement, with implications for how design teams divide judgment, exploration, and execution.",
-    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
+    "id": "deep_brush_physical_paint_control",
+    "category": "STR_ART",
+    "headline": "Deep Brush Turns Generative Painting Into Material Control",
+    "summary": "Adobe’s Deep Brush experiment decomposes images into shape, color, and lighting information so artists can paint with effects that respond to the scene. Its emphasis on direct manipulation challenges prompt-first creative workflows and preserves more authorial control.",
+    "url": "https://www.yumiza.ph/articles/032da51950",
     "relevance": 91
   },
   {
-    "id": "banana_palette_spatial_ai",
-    "category": "STR_ART",
-    "headline": "Jewelry becomes AI-generated interior architecture",
-    "summary": "Cornell’s Banana Palette project translates the colors, textures, forms, and rhythms of a handmade necklace into interior concepts for a café. The work demonstrates a compelling cross-domain pipeline from intimate craft artifact to spatial design system.",
-    "url": "https://events.cornell.edu/event/banana-palette",
-    "relevance": 94
-  },
-  {
-    "id": "llm_creative_canvas_agent",
-    "category": "STR_ART",
-    "headline": "An LLM agent orchestrates classic generative algorithms",
-    "summary": "The Creative Canvas combines language-model interaction with fractals, Lindenmayer systems, cellular automata, spatial trees, and Markov chains. Rather than treating image generation as a black box, it exposes algorithmic structure as a manipulable creative material.",
-    "url": "http://stal.blogspot.com/2026/11/the-creative-canvas-unleashing.html?m=0",
-    "relevance": 93
-  },
-  {
-    "id": "debashis_sen_ai_canvas_show",
-    "category": "STR_ART",
-    "headline": "Kolkata exhibition positions AI as an artistic instrument",
-    "summary": "Debashis Sen’s sixth generative-canvas exhibition presents AI-generated works shaped through original prompts, repeated iterations, and AI printing. The project is notable for framing generative systems as an extension of individual artistic practice rather than an autonomous author.",
-    "url": "https://totheircredit.com/news/2026/11/13/debashis-sens-kolkata-ai-canvas-show/",
+    "id": "hands_on_gesture_driven_image_editing",
+    "category": "CX_UX",
+    "headline": "Hands-On Replaces Prompts With Gestural Image Editing",
+    "summary": "Adobe’s Hands On experiment explores image editing through brushes, dragging, and gestures rather than text commands. This points toward a more embodied interaction model in which AI responds to familiar creative actions instead of requiring users to learn prompt syntax.",
+    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
     "relevance": 88
   },
   {
-    "id": "debashis_sen_human_imagination",
-    "category": "META",
-    "headline": "Generative art becomes a vocabulary for human imagination",
-    "summary": "A parallel account of Debashis Sen’s Kolkata exhibition emphasizes the artist’s hundreds of prompt iterations and the role of physical AI printing. It offers a grounded model of authorship in which agency resides in selection, iteration, and framing.",
-    "url": "https://news.webindia123.com//news/articles/business/20261113/4519293.html",
-    "relevance": 86
-  },
-  {
-    "id": "ai_art_or_ai_slop",
-    "category": "META",
-    "headline": "A seminar investigates the rise of AI image slop",
-    "summary": "The Avignon seminar traces how generative images alter photography, media circulation, heritage, and creative practice. Its framing treats AI imagery as a reconfiguration of reality, not merely a faster production tool.",
-    "url": "https://univ-avignon.fr/en/event/ai-art-or-slop-ai-seminar-the-origins-and-evolution-of-ai-generated-digital-images/",
+    "id": "sight_span_navigable_image_worlds",
+    "category": "STR_ART",
+    "headline": "Sight Span Expands Flat Images Into Navigable Worlds",
+    "summary": "Project Sight Span generates explorable 3D scenes from photographs, paintings, and illustrations, extending visual material beyond its original frame. The technique could reshape storyboarding, installation design, and spatial media by treating a single image as latent world-building data.",
+    "url": "https://aihunt.app/shorts/adobe-unveils-groundbreaking-ai-tools-at-max-conference",
     "relevance": 90
   },
   {
-    "id": "ai_creativity_amplifies_expertise",
-    "category": "META",
-    "headline": "AI may amplify creative inequality instead of flattening it",
-    "summary": "Research summarized by UConn suggests that AI assistance benefits people with stronger existing creative and cognitive skills more than others. For design education and professional practice, generative tools may magnify differences in judgment rather than democratize creativity automatically.",
-    "url": "https://today.uconn.edu/2026/01/neag-school-researcher-finds-that-human-creativity-still-matters-in-an-age-of-ai/",
-    "relevance": 95
-  },
-  {
-    "id": "ai_fashion_craftsmanship",
+    "id": "screen_test_conversational_character_direction",
     "category": "STR_ART",
-    "headline": "Fashion debates AI alongside craft and authorship",
-    "summary": "A discussion with Marina Pereira places generative imagery and AI-assisted fashion work beside craftsmanship and material knowledge. The intersection matters because it tests whether AI can extend making without displacing the embodied decisions that give objects cultural meaning.",
-    "url": "https://www.tallahassee.com/press-release/story/145946/the-art-of-making-marina-pereira-on-fashion-creativity-craftsmanship-and-ai/",
-    "relevance": 82
-  },
-  {
-    "id": "ai_as_design_amplifier",
-    "category": "CX_UX",
-    "headline": "Design research reframes AI as capability expansion",
-    "summary": "The emerging design-practice research describes AI as a way to broaden exploration in branding, image editing, 3D modeling, product optimization, and spatial simulation. This suggests a shift from isolated generative features toward AI embedded across the full design lifecycle.",
-    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
-    "relevance": 87
-  },
-  {
-    "id": "imperfect_models_creative_method",
-    "category": "META",
-    "headline": "Could incomplete AI models produce better ideas?",
-    "summary": "The UCL symposium explicitly questions whether creative value depends on model accuracy. Its emphasis on incompleteness opens a design space for errors, ambiguity, and productive failure as intentional properties of creative AI systems.",
-    "url": "https://www.creativeai.org.uk/",
-    "relevance": 94
-  },
-  {
-    "id": "generative_art_physical_output",
-    "category": "STR_ART",
-    "headline": "AI canvas practice reconnects prompts with physical objects",
-    "summary": "Sen’s exhibition links generative prompts, iterative image-making, AI printers, and gallery presentation. The workflow is significant because it moves AI art away from disposable screens toward materially situated, authored objects.",
-    "url": "https://news.webindia123.com//news/articles/business/20261113/4519293.html",
-    "relevance": 84
-  },
-  {
-    "id": "creative_ai_as_research_method",
-    "category": "CX_UX",
-    "headline": "Artistic experiments become instruments for AI research",
-    "summary": "The UCL program treats creative practice not only as an application of AI but also as a way to investigate and develop AI methods. This positions artists and designers as contributors to technical inquiry rather than downstream tool users.",
-    "url": "https://www.creativeai.org.uk/",
-    "relevance": 92
-  },
-  {
-    "id": "prompt_iteration_authorship",
-    "category": "META",
-    "headline": "Authorship shifts from making to iterative direction",
-    "summary": "The Kolkata exhibition foregrounds hundreds of prompt iterations as part of the artist’s process. It illustrates a broader authorship model in which creative identity emerges through curation, rejection, sequencing, and physical realization.",
-    "url": "https://totheircredit.com/news/2026/11/13/debashis-sens-kolkata-ai-canvas-show/",
+    "headline": "Screen Test Directs AI Characters Through Conversation",
+    "summary": "Project Screen Test lets creators interact with AI-generated characters in an audition-like setting to shape personality, voice, and backstory. It reframes character design as an iterative performance relationship rather than a one-shot generation task.",
+    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
     "relevance": 89
   },
   {
-    "id": "ai_spatial_translation",
-    "category": "CX_UX",
-    "headline": "AI translates personal artifacts into public experience",
-    "summary": "Cornell’s café concepts show how AI can mediate between a designer’s personal object language and a shared architectural environment. The project suggests a new interaction pattern: systems that preserve visual DNA while transforming scale, context, and function.",
-    "url": "https://events.cornell.edu/event/banana-palette",
-    "relevance": 90
+    "id": "sound_bender_interactive_audio_retiming",
+    "category": "SONIC",
+    "headline": "Sound Bender Makes Audio Follow Visual Action",
+    "summary": "Project Sound Bender generates customized sound effects and synchronizes them to video through an interactive canvas. The approach treats sound design as spatial and temporal manipulation, giving creators a more visual way to author audio relationships.",
+    "url": "https://aihunt.app/shorts/adobe-unveils-groundbreaking-ai-tools-at-max-conference",
+    "relevance": 87
   },
   {
-    "id": "creative_work_outsourcing_ethics",
+    "id": "vidtune_music_tracks_with_visual_thumbnails",
+    "category": "SONIC",
+    "headline": "VidTune Maps Generated Music Through Contextual Thumbnails",
+    "summary": "Adobe Research’s VidTune produces multiple music tracks from a text prompt and pairs each option with a visual thumbnail. This creates a browsing interface for sound selection, linking sonic variation to visual cues and making comparison easier during editing.",
+    "url": "https://research.adobe.com/news/",
+    "relevance": 92
+  },
+  {
+    "id": "flow_artist_led_visual_generation",
+    "category": "STR_ART",
+    "headline": "Google Flow Adds Artist-Led Control to Generative Visuals",
+    "summary": "New Flow tools developed with visual artists support stylized image generation, character development, complex lighting, and video effects. Their significance lies in embedding recognizable artistic workflows into generative controls rather than offering only generic text-to-image output.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
+    "relevance": 84
+  },
+  {
+    "id": "flow_stylized_character_worldbuilding",
+    "category": "STR_ART",
+    "headline": "Flow Treats Character Design as an Iterative Visual System",
+    "summary": "Google Flow’s additions are designed to help creators develop characters and refine narrative visuals across multiple stages. This supports continuity and visual authorship, two persistent weaknesses in unconstrained generative media.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
+    "relevance": 82
+  },
+  {
+    "id": "creative_agent_cross_app_workflow",
+    "category": "CX_UX",
+    "headline": "Creative Agent Connects AI Assistance Across Design Apps",
+    "summary": "Adobe’s Creative Agent beta spans Premiere, Illustrator, InDesign, After Effects, and Frame.io. The cross-application model suggests an AI layer organized around project context and workflow continuity rather than isolated tool commands.",
+    "url": "https://www.aiaffairs.com/corporate/adobe-creative-agent-beta-firefly-builder-max-2026/",
+    "relevance": 80
+  },
+  {
+    "id": "local_project_editing_creative_agency",
+    "category": "CX_UX",
+    "headline": "Local Project Editing Points Toward More Inspectable AI",
+    "summary": "Adobe previewed local project editing alongside its Creative Agent beta, suggesting a workflow where creators can operate on project materials with greater proximity and control. Local or project-bound assistance may improve privacy, inspection, and confidence in complex design work.",
+    "url": "https://www.aiaffairs.com/corporate/adobe-creative-agent-beta-firefly-builder-max-2026/",
+    "relevance": 77
+  },
+  {
+    "id": "promptless_creative_interaction",
+    "category": "CX_UX",
+    "headline": "Creative AI Moves Beyond the Prompt Box",
+    "summary": "Across Adobe’s experimental projects, creators edit by brushing, dragging, gesturing, conversing, and manipulating interactive canvases. This represents a broader UX shift from language-mediated generation toward multimodal, task-native interaction.",
+    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
+    "relevance": 94
+  },
+  {
+    "id": "creative_control_as_ai_interface",
     "category": "META",
-    "headline": "Philosophy asks what creative work should remain human",
-    "summary": "The Cambridge work distinguishes the ability to make useful artifacts from genuine creativity and examines reasons to resist outsourcing creative activity. This provides a sharper ethical framework for deciding which design decisions should remain human-led.",
-    "url": "https://www.cambridge.org/core/browse-subjects/philosophy/philosophy-general-interest/listing?pageNum=1",
+    "headline": "Creative Control Becomes the Central Design Problem",
+    "summary": "Adobe’s experiments frame AI not as an autonomous producer but as a system whose value depends on how precisely artists can steer it. The emphasis raises a philosophical question: does creative AI expand authorship when it increases control, or merely redistribute decisions to hidden models?",
+    "url": "https://www.yumiza.ph/articles/032da51950",
+    "relevance": 86
+  },
+  {
+    "id": "small_data_artist_centered_ai",
+    "category": "META",
+    "headline": "Small-Data AI Offers an Alternative to Cultural Flattening",
+    "summary": "A Metacreation Lab presentation advocates small-data and model-crafting approaches that preserve artists’ cultural and aesthetic specificity. It positions artist-centered model design as a response to the homogenization risks of large-scale generative systems.",
+    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
+    "relevance": 95
+  },
+  {
+    "id": "human_ai_cocreation_user_agency",
+    "category": "CX_UX",
+    "headline": "Human–AI Co-Creation Prioritizes Agency Over Replacement",
+    "summary": "The Metacreation Lab emphasizes direct manipulation, participation, and user agency in creative AI systems. This provides a useful design framework for building tools that augment judgment and experimentation rather than hiding creative decisions behind automation.",
+    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
+    "relevance": 96
+  },
+  {
+    "id": "authorship_phenomenology_of_creative_ai",
+    "category": "META",
+    "headline": "Creative AI Research Examines Authorship as Experience",
+    "summary": "The cited work evaluates creative systems through user experience, ethics, authorship, phenomenology, and technological acceptance. This broadens AI creativity research beyond output quality to ask how people experience ownership, intention, and collaboration with generative systems.",
+    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
     "relevance": 93
   },
   {
-    "id": "algorithmic_canvas_language_interface",
+    "id": "generative_philosophy_ai_identity",
+    "category": "META",
+    "headline": "Generative Philosophy Reframes AI as Cultural Practice",
+    "summary": "The Generative Art International Conference links generative AI with philosophy, AI identity, artificial life, generative music, and future scenarios. Its interdisciplinary scope treats computation as a medium for cultural speculation rather than merely a production technology.",
+    "url": "https://www.generativeart.com/",
+    "relevance": 85
+  },
+  {
+    "id": "procedural_sound_and_live_coding",
+    "category": "SONIC",
+    "headline": "Generative Art Research Connects AI to Procedural Sound",
+    "summary": "The Generative Art conference program places generative music, live coding, procedural sound, and algorithmic design within the same field. This intersection suggests sound systems that behave like evolving visual or architectural structures rather than fixed compositions.",
+    "url": "https://www.generativeart.com/",
+    "relevance": 83
+  },
+  {
+    "id": "interactive_audio_visual_comparison",
+    "category": "SONIC",
+    "headline": "AI Audio Interfaces Make Variation Easier to Compare",
+    "summary": "VidTune’s combination of multiple generated tracks and contextual visual thumbnails proposes an interface for evaluating sound through rapid, multimodal comparison. The pattern could reduce the friction of music selection in film, games, and interactive installations.",
+    "url": "https://research.adobe.com/news/",
+    "relevance": 88
+  },
+  {
+    "id": "ai_as_performance_partner",
     "category": "STR_ART",
-    "headline": "Natural language opens a doorway into procedural art",
-    "summary": "The Creative Canvas gives an LLM access to established procedural techniques, including Julia sets, Game of Life, fractals, and spatial data structures. Its importance lies in making computational aesthetics legible through dialogue without hiding the underlying systems.",
-    "url": "http://stal.blogspot.com/2026/11/the-creative-canvas-unleashing.html?m=0",
-    "relevance": 91
+    "headline": "Conversational Characters Turn Generation Into Performance",
+    "summary": "Screen Test’s audition-style interaction treats an AI character as a responsive performance partner whose identity develops through dialogue. This opens a design space between directing, improvisation, and model conditioning.",
+    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
+    "relevance": 90
   }
 ]
