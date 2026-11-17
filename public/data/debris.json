@@ -1,154 +1,146 @@
 [
   {
-    "id": "deep_brush_physical_paint_control",
-    "category": "STR_ART",
-    "headline": "Deep Brush Turns Generative Painting Into Material Control",
-    "summary": "Adobe’s Deep Brush experiment decomposes images into shape, color, and lighting information so artists can paint with effects that respond to the scene. Its emphasis on direct manipulation challenges prompt-first creative workflows and preserves more authorial control.",
-    "url": "https://www.yumiza.ph/articles/032da51950",
-    "relevance": 91
-  },
-  {
-    "id": "hands_on_gesture_driven_image_editing",
+    "id": "natively_adaptive_interfaces",
     "category": "CX_UX",
-    "headline": "Hands-On Replaces Prompts With Gestural Image Editing",
-    "summary": "Adobe’s Hands On experiment explores image editing through brushes, dragging, and gestures rather than text commands. This points toward a more embodied interaction model in which AI responds to familiar creative actions instead of requiring users to learn prompt syntax.",
-    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
-    "relevance": 88
-  },
-  {
-    "id": "sight_span_navigable_image_worlds",
-    "category": "STR_ART",
-    "headline": "Sight Span Expands Flat Images Into Navigable Worlds",
-    "summary": "Project Sight Span generates explorable 3D scenes from photographs, paintings, and illustrations, extending visual material beyond its original frame. The technique could reshape storyboarding, installation design, and spatial media by treating a single image as latent world-building data.",
-    "url": "https://aihunt.app/shorts/adobe-unveils-groundbreaking-ai-tools-at-max-conference",
-    "relevance": 90
-  },
-  {
-    "id": "screen_test_conversational_character_direction",
-    "category": "STR_ART",
-    "headline": "Screen Test Directs AI Characters Through Conversation",
-    "summary": "Project Screen Test lets creators interact with AI-generated characters in an audition-like setting to shape personality, voice, and backstory. It reframes character design as an iterative performance relationship rather than a one-shot generation task.",
-    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
-    "relevance": 89
-  },
-  {
-    "id": "sound_bender_interactive_audio_retiming",
-    "category": "SONIC",
-    "headline": "Sound Bender Makes Audio Follow Visual Action",
-    "summary": "Project Sound Bender generates customized sound effects and synchronizes them to video through an interactive canvas. The approach treats sound design as spatial and temporal manipulation, giving creators a more visual way to author audio relationships.",
-    "url": "https://aihunt.app/shorts/adobe-unveils-groundbreaking-ai-tools-at-max-conference",
-    "relevance": 87
-  },
-  {
-    "id": "vidtune_music_tracks_with_visual_thumbnails",
-    "category": "SONIC",
-    "headline": "VidTune Maps Generated Music Through Contextual Thumbnails",
-    "summary": "Adobe Research’s VidTune produces multiple music tracks from a text prompt and pairs each option with a visual thumbnail. This creates a browsing interface for sound selection, linking sonic variation to visual cues and making comparison easier during editing.",
-    "url": "https://research.adobe.com/news/",
-    "relevance": 92
-  },
-  {
-    "id": "flow_artist_led_visual_generation",
-    "category": "STR_ART",
-    "headline": "Google Flow Adds Artist-Led Control to Generative Visuals",
-    "summary": "New Flow tools developed with visual artists support stylized image generation, character development, complex lighting, and video effects. Their significance lies in embedding recognizable artistic workflows into generative controls rather than offering only generic text-to-image output.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
-    "relevance": 84
-  },
-  {
-    "id": "flow_stylized_character_worldbuilding",
-    "category": "STR_ART",
-    "headline": "Flow Treats Character Design as an Iterative Visual System",
-    "summary": "Google Flow’s additions are designed to help creators develop characters and refine narrative visuals across multiple stages. This supports continuity and visual authorship, two persistent weaknesses in unconstrained generative media.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-google-flow-tools/",
-    "relevance": 82
-  },
-  {
-    "id": "creative_agent_cross_app_workflow",
-    "category": "CX_UX",
-    "headline": "Creative Agent Connects AI Assistance Across Design Apps",
-    "summary": "Adobe’s Creative Agent beta spans Premiere, Illustrator, InDesign, After Effects, and Frame.io. The cross-application model suggests an AI layer organized around project context and workflow continuity rather than isolated tool commands.",
-    "url": "https://www.aiaffairs.com/corporate/adobe-creative-agent-beta-firefly-builder-max-2026/",
-    "relevance": 80
-  },
-  {
-    "id": "local_project_editing_creative_agency",
-    "category": "CX_UX",
-    "headline": "Local Project Editing Points Toward More Inspectable AI",
-    "summary": "Adobe previewed local project editing alongside its Creative Agent beta, suggesting a workflow where creators can operate on project materials with greater proximity and control. Local or project-bound assistance may improve privacy, inspection, and confidence in complex design work.",
-    "url": "https://www.aiaffairs.com/corporate/adobe-creative-agent-beta-firefly-builder-max-2026/",
-    "relevance": 77
-  },
-  {
-    "id": "promptless_creative_interaction",
-    "category": "CX_UX",
-    "headline": "Creative AI Moves Beyond the Prompt Box",
-    "summary": "Across Adobe’s experimental projects, creators edit by brushing, dragging, gesturing, conversing, and manipulating interactive canvases. This represents a broader UX shift from language-mediated generation toward multimodal, task-native interaction.",
-    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
+    "headline": "AI prototypes interfaces that adapt to each user",
+    "summary": "Google Research presents Natively Adaptive Interfaces, a framework using multimodal AI to adjust applications to context and individual needs. Its live video-to-audio-description prototype points toward interfaces that actively reshape accessibility rather than merely comply with fixed standards.",
+    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
     "relevance": 94
   },
   {
-    "id": "creative_control_as_ai_interface",
-    "category": "META",
-    "headline": "Creative Control Becomes the Central Design Problem",
-    "summary": "Adobe’s experiments frame AI not as an autonomous producer but as a system whose value depends on how precisely artists can steer it. The emphasis raises a philosophical question: does creative AI expand authorship when it increases control, or merely redistribute decisions to hidden models?",
-    "url": "https://www.yumiza.ph/articles/032da51950",
-    "relevance": 86
+    "id": "pixel_art_gaussian_dioramas",
+    "category": "STR_ART",
+    "headline": "Open tools turn 3D models into animated pixel dioramas",
+    "summary": "A cluster of open-source projects converts existing 3D models into animated pixel-art Gaussian-splat scenes. The work matters because it turns a visual style into an editable, reusable production pipeline rather than a one-off generated image.",
+    "url": "https://fervorcreativeai.com/briefings/2026-11-16-0510/",
+    "relevance": 91
   },
   {
-    "id": "small_data_artist_centered_ai",
-    "category": "META",
-    "headline": "Small-Data AI Offers an Alternative to Cultural Flattening",
-    "summary": "A Metacreation Lab presentation advocates small-data and model-crafting approaches that preserve artists’ cultural and aesthetic specificity. It positions artist-centered model design as a response to the homogenization risks of large-scale generative systems.",
-    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
-    "relevance": 95
+    "id": "syntax_splat_scene_language",
+    "category": "STR_ART",
+    "headline": "Code becomes a language for sculpting spatial AI art",
+    "summary": "SyntaxSplat lets creators describe scenes as code, with lighting, dissolving parts, pixel treatments, and exportable spatial assets. This suggests a hybrid practice where generative art is authored through inspectable scene logic instead of opaque prompts.",
+    "url": "https://fervorcreativeai.com/briefings/2026-11-16-0510/",
+    "relevance": 89
   },
   {
-    "id": "human_ai_cocreation_user_agency",
-    "category": "CX_UX",
-    "headline": "Human–AI Co-Creation Prioritizes Agency Over Replacement",
-    "summary": "The Metacreation Lab emphasizes direct manipulation, participation, and user agency in creative AI systems. This provides a useful design framework for building tools that augment judgment and experimentation rather than hiding creative decisions behind automation.",
-    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
+    "id": "headless_pixel_splat_studio",
+    "category": "STR_ART",
+    "headline": "Pixel-art worlds become programmable and filmable",
+    "summary": "A Node-based toolkit combines sculpting, animation, physics, and headless rendering for pixel-art splats. Its browser and automation-oriented workflow makes stylized spatial art easier to iterate, batch, and integrate into creative systems.",
+    "url": "https://fervorcreativeai.com/briefings/2026-11-16-0510/",
+    "relevance": 87
+  },
+  {
+    "id": "programmable_brushstroke_generation",
+    "category": "STR_ART",
+    "headline": "AI paints through editable brushstroke programs",
+    "summary": "Experiments with Claude generating Python-based brushstroke routines produce highly detailed paintings through virtual bristles, paint accumulation, and self-correction. Because the result is code-driven, artists can tune individual passes and parameters rather than regenerate an entire image.",
+    "url": "https://betabriefing.ai/channels/the-builders-canvas/briefings/2026-11-16/",
     "relevance": 96
   },
   {
-    "id": "authorship_phenomenology_of_creative_ai",
-    "category": "META",
-    "headline": "Creative AI Research Examines Authorship as Experience",
-    "summary": "The cited work evaluates creative systems through user experience, ethics, authorship, phenomenology, and technological acceptance. This broadens AI creativity research beyond output quality to ask how people experience ownership, intention, and collaboration with generative systems.",
-    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
+    "id": "inspectable_visual_generation",
+    "category": "STR_ART",
+    "headline": "Inspectable execution loops reshape generative art",
+    "summary": "New visual-generation workflows emphasize programmable, parameter-level control over creative assets. This moves generative design toward versioned, inspectable systems in which process—not only output—becomes part of the artistic material.",
+    "url": "https://betabriefing.ai/channels/the-builders-canvas/briefings/2026-11-16/",
     "relevance": 93
   },
   {
-    "id": "generative_philosophy_ai_identity",
-    "category": "META",
-    "headline": "Generative Philosophy Reframes AI as Cultural Practice",
-    "summary": "The Generative Art International Conference links generative AI with philosophy, AI identity, artificial life, generative music, and future scenarios. Its interdisciplinary scope treats computation as a medium for cultural speculation rather than merely a production technology.",
-    "url": "https://www.generativeart.com/",
-    "relevance": 85
+    "id": "comfyart_spatial_canvas",
+    "category": "STR_ART",
+    "headline": "Spatial canvases let AI agents edit compositions directly",
+    "summary": "ComfyArt combines spatial layout, vector typography, and ComfyUI generation in an open canvas with an MCP endpoint. The interaction model lets external agents inspect and modify canvas objects, treating composition as a shared, manipulable workspace.",
+    "url": "https://betabriefing.ai/channels/the-builders-canvas/briefings/2026-11-16/",
+    "relevance": 92
   },
   {
-    "id": "procedural_sound_and_live_coding",
-    "category": "SONIC",
-    "headline": "Generative Art Research Connects AI to Procedural Sound",
-    "summary": "The Generative Art conference program places generative music, live coding, procedural sound, and algorithmic design within the same field. This intersection suggests sound systems that behave like evolving visual or architectural structures rather than fixed compositions.",
-    "url": "https://www.generativeart.com/",
-    "relevance": 83
+    "id": "genui_inclusive_experience_dilemma",
+    "category": "CX_UX",
+    "headline": "Generative interfaces challenge the meaning of inclusion",
+    "summary": "An analysis of GenUI argues that dynamically generated interfaces could better match individual needs, but warns that personalization is not equivalent to inclusion. It reframes accessibility as a question of care, agency, and designer accountability.",
+    "url": "https://synapsesocial.com/papers/6af94ba8e14da6b5f12dcec5",
+    "relevance": 95
   },
   {
-    "id": "interactive_audio_visual_comparison",
-    "category": "SONIC",
-    "headline": "AI Audio Interfaces Make Variation Easier to Compare",
-    "summary": "VidTune’s combination of multiple generated tracks and contextual visual thumbnails proposes an interface for evaluating sound through rapid, multimodal comparison. The pattern could reduce the friction of music selection in film, games, and interactive installations.",
-    "url": "https://research.adobe.com/news/",
+    "id": "context_informed_accessibility",
+    "category": "CX_UX",
+    "headline": "Universal design moves beyond one-size-fits-all rules",
+    "summary": "Multimodal AI prototypes make accessibility decisions using live context across voice, vision, and text. The approach could enable interfaces that adapt continuously to situational barriers such as low vision, noise, or changing attention.",
+    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
+    "relevance": 93
+  },
+  {
+    "id": "designers_as_ai_art_directors",
+    "category": "CX_UX",
+    "headline": "Taste becomes a core skill in AI-mediated design",
+    "summary": "A design forecast identifies art direction and taste as essential capabilities when AI handles more production work. The emphasis shifts UX practice from manually making every artifact toward setting intent, tone, constraints, and evaluative standards.",
+    "url": "https://processtopixels.substack.com/p/the-six-skills-designers-will-need",
+    "relevance": 82
+  },
+  {
+    "id": "beyond_chat_ai_interaction",
+    "category": "CX_UX",
+    "headline": "The next AI interface may not be a conversation",
+    "summary": "A set of principles for post-chat AI UX challenges the assumption that conversational interfaces are the default solution. The emerging direction favors richer interaction patterns grounded in usability research rather than novelty or anthropomorphic design.",
+    "url": "https://www.uxmatters.com/mt/archives/2026/11/beyond-chat-six-principles-for-the-next-generation-of-ai-ux.php",
     "relevance": 88
   },
   {
-    "id": "ai_as_performance_partner",
-    "category": "STR_ART",
-    "headline": "Conversational Characters Turn Generation Into Performance",
-    "summary": "Screen Test’s audition-style interaction treats an AI character as a responsive performance partner whose identity develops through dialogue. This opens a design space between directing, improvisation, and model conditioning.",
-    "url": "https://ground.news/article/adobes-ai-experiments-let-you-walk-around-in-photos-and-interview-your-characters",
+    "id": "human_ai_design_benchmark",
+    "category": "CX_UX",
+    "headline": "A benchmark questions the promise of human-AI design synergy",
+    "summary": "A study comparing frontier models and human designers across interface briefs investigates whether AI collaboration actually improves design outcomes. Its framing is valuable because it treats human-AI synergy as an empirical design question rather than an assumption.",
+    "url": "https://jakobnielsenphd.substack.com/p/ux-roundup-20261116",
+    "relevance": 86
+  },
+  {
+    "id": "ai_music_accessibility",
+    "category": "SONIC",
+    "headline": "AI lowers the barriers to making music",
+    "summary": "AI tools now support generated instruments and vocals, dialogue isolation, production, mixing, and mastering. The creative significance lies in opening musical authorship to people without formal instrumental training, studio access, or conventional singing ability.",
+    "url": "https://dataad.com/post/can-ai-capture-soul-of-music-taylor-mulye",
+    "relevance": 89
+  },
+  {
+    "id": "music_soul_and_machine",
+    "category": "SONIC",
+    "headline": "The debate shifts from musical perfection to human meaning",
+    "summary": "A musician and sound designer argues that AI can assist nearly every technical stage of production while still struggling with the qualities people perceive as musical soul. The perspective invites designers to evaluate audio systems by expressive meaning, not only fidelity or efficiency.",
+    "url": "https://dataad.com/post/can-ai-capture-soul-of-music-taylor-mulye",
+    "relevance": 91
+  },
+  {
+    "id": "artistic_intelligence_tradition",
+    "category": "META",
+    "headline": "AI is framed as artistic intelligence, not artistic replacement",
+    "summary": "A university perspective presents judicious AI use as a way to focus on essential creative decisions while continuing long artistic traditions. It offers a less technological view of AI creativity, emphasizing judgment, intention, and continuity.",
+    "url": "https://www.uni-muenster.de/news/view.php?cmdid=15774",
+    "relevance": 80
+  },
+  {
+    "id": "creative_agency_in_genui",
+    "category": "META",
+    "headline": "Generative interfaces raise questions about user agency",
+    "summary": "The GenUI debate asks whether AI-generated interfaces can support care and agency rather than merely optimize efficiency. It places responsibility on designers to shape the values and power relationships embedded in adaptive systems.",
+    "url": "https://synapsesocial.com/papers/6af94ba8e14da6b5f12dcec5",
+    "relevance": 94
+  },
+  {
+    "id": "editable_ai_authorship",
+    "category": "META",
+    "headline": "When generated art is code, authorship becomes negotiable",
+    "summary": "Brushstroke programs and agent-editable canvases make generative processes visible, revisable, and version-controlled. This complicates the boundary between artist, tool, and collaborator while offering a more accountable model of machine-assisted authorship.",
+    "url": "https://betabriefing.ai/channels/the-builders-canvas/briefings/2026-11-16/",
+    "relevance": 95
+  },
+  {
+    "id": "adaptive_interfaces_and_context",
+    "category": "META",
+    "headline": "Accessibility becomes an ongoing negotiation with context",
+    "summary": "Context-aware multimodal interfaces suggest that accessibility can be treated as dynamic negotiation rather than a fixed checklist. This raises deeper questions about who defines a user’s needs, how systems infer them, and when adaptation becomes intrusive.",
+    "url": "https://research.google/blog/how-ai-agents-can-redefine-universal-design-to-increase-accessibility/",
     "relevance": 90
   }
 ]
