@@ -1,146 +1,154 @@
 [
   {
-    "id": "revision_conceptual_visual_exploration",
+    "id": "aurora_biennial_ai_human_experience",
     "category": "STR_ART",
-    "headline": "ReVision Turns Visual References Into Generative Design Material",
-    "summary": "ReVision helps designers extract motifs and concepts from reference images, recombine them, and generate visual variations. Its material-oriented workflow addresses the creative friction caused by opaque, black-box image generators.",
-    "url": "https://dl.acm.org/doi/10.1145/3830397.3841822",
+    "headline": "AURORA Biennial Turns AI Into Interactive Human Experience",
+    "summary": "The AURORA Biennial showcases artists using AI with personal writing, voice, motion, climate data, and interactive simulation. It matters because the work frames AI as a medium for embodied and environmental storytelling rather than automated image production.",
+    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
     "relevance": 94
   },
   {
-    "id": "artist_centred_small_data_ai_art",
+    "id": "living_poem_generational_language_system",
     "category": "STR_ART",
-    "headline": "Small-Data Models Reframe AI as an Artist-Crafted Material",
-    "summary": "Artist-centred model crafting proposes smaller, more controllable systems instead of generic black-box generators. The approach could make training data, style, and model behavior part of the artwork’s visible authorship.",
-    "url": "https://dl.acm.org/doi/10.1145/3830397.3841822",
-    "relevance": 91
-  },
-  {
-    "id": "artists_keep_the_making",
-    "category": "META",
-    "headline": "Artists Delegate Research to AI but Keep the Making",
-    "summary": "Interviews with professional artists show a sharply bounded use of generative agents: information gathering and ideation are delegated, while conception, physical or digital making, and finishing remain human-controlled. Authorship, craft, and concern about training data drive this boundary.",
-    "url": "https://dl.acm.org/doi/10.1145/3841580.3845762",
-    "relevance": 96
-  },
-  {
-    "id": "creative_agency_chinese_digital_painting",
-    "category": "META",
-    "headline": "Chinese Digital Painters Re negotiate Where Human Agency Ends",
-    "summary": "A five-year view of Chinese digital painting examines how artists revise AI’s role as tool, collaborator, consultant, or competitor. It treats authorship as an evolving interaction design problem rather than a fixed property of the final image.",
-    "url": "https://dl.acm.org/doi/10.1145/3841580.3841589",
-    "relevance": 95
-  },
-  {
-    "id": "human_generative_visual_cod esign_review",
-    "category": "STR_ART",
-    "headline": "A Review Maps the Interaction Patterns of AI Co-Design",
-    "summary": "A systematic review of 47 studies identifies how generative AI is assigned roles across visual creativity workflows. Its value lies in shifting discussion from model capability toward task alignment, interaction modality, and human–AI division of labor.",
-    "url": "https://link.springer.com/article/10.1007/s10489-026-07554-x",
-    "relevance": 92
-  },
-  {
-    "id": "responsive_emotional_installation_art",
-    "category": "STR_ART",
-    "headline": "Interactive Installations Adapt to Motion, Sound, and Emotion",
-    "summary": "A proposed framework combines motion capture, facial expression, sound, and environmental inputs to drive responsive installation art. The work points toward artworks that behave as emotionally adaptive systems rather than static outputs.",
-    "url": "https://dl.acm.org/doi/10.4018/IJeC.422701",
-    "relevance": 90
-  },
-  {
-    "id": "ai_design_practice_role_mapping",
-    "category": "CX_UX",
-    "headline": "Design Teams Begin Treating AI as a Role, Not Just a Tool",
-    "summary": "Research on AI in design practice maps uses ranging from generative visual exploration to predictive user flows, wireframes, heatmaps, and personalized interfaces. The central design question becomes which decisions AI should anticipate, suggest, or execute.",
-    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
-    "relevance": 86
-  },
-  {
-    "id": "predictive_interface_behavior_design",
-    "category": "CX_UX",
-    "headline": "Predictive UX Moves From Layout Generation to User Behavior Modeling",
-    "summary": "AI-assisted design practice increasingly models how users may interact with interfaces before deployment. This creates opportunities for faster iteration, but also raises questions about whether predicted behavior narrows the range of users designers imagine.",
-    "url": "http://link.springer.com/chapter/10.1007/978-3-032-40958-4_1",
-    "relevance": 84
-  },
-  {
-    "id": "ai_interpreting_visual_art_human_curiosity",
-    "category": "META",
-    "headline": "AI Art Interpretation Becomes a Study of Human Curiosity",
-    "summary": "This work examines not only how AI classifies or interprets visual art, but how its interpretations reflect the structure of the artistic domain. It positions machine reading as a stimulus for human inquiry rather than a replacement for art criticism.",
-    "url": "https://dl.acm.org/doi/10.1145/3806096.3844805",
-    "relevance": 88
-  },
-  {
-    "id": "liveband_audio_accompaniment_generation",
-    "category": "SONIC",
-    "headline": "LiveBand Explores Real-Time AI Accompaniment",
-    "summary": "LiveBand investigates live accompaniment generation in the audio domain, targeting systems that respond while music is being performed. The creative potential is an adaptive ensemble partner whose timing and musical role can change during a session.",
-    "url": "https://www.aim.qmul.ac.uk/author/christosp/",
-    "relevance": 91
-  },
-  {
-    "id": "audiocodex_streaming_live_audio",
-    "category": "SONIC",
-    "headline": "Streaming Autoencoders Point Toward More Fluid Live Audio AI",
-    "summary": "AudioCodex explores streaming autoencoders for live audio, a direction suited to low-latency transformation and interactive sound design. Continuous processing could make AI effects feel performative rather than post-production based.",
-    "url": "https://www.aim.qmul.ac.uk/author/christosp/",
-    "relevance": 89
-  },
-  {
-    "id": "jazz_pianist_style_cross_attention",
-    "category": "SONIC",
-    "headline": "Cross-Attention Models Learn the Nuances of Jazz Pianist Style",
-    "summary": "Research on learning jazz pianist style with cross-attention conditioning investigates how expressive performance traits can be represented and controlled. It offers a route toward style-aware tools that support musicians without reducing performance to a static genre label.",
-    "url": "https://www.aim.qmul.ac.uk/author/christosp/",
-    "relevance": 87
-  },
-  {
-    "id": "dense_music_retrieval_concept_steering",
-    "category": "SONIC",
-    "headline": "Open-Vocabulary Concepts Make Music Search More Expressive",
-    "summary": "Steering dense music retrieval with open-vocabulary concept discovery lets listeners search through less rigid descriptions of sound and mood. This could reshape music interfaces around associative, embodied, and design-oriented language.",
-    "url": "https://www.aim.qmul.ac.uk/author/christosp/",
-    "relevance": 86
-  },
-  {
-    "id": "polyphony_voice_independence_benchmark",
-    "category": "SONIC",
-    "headline": "A New Metric Tests Whether AI Understands Musical Independence",
-    "summary": "A benchmark for symbolic music evaluates polyphony through voice independence rather than surface similarity alone. It offers a more musically meaningful test of whether generative systems preserve the interaction between simultaneous parts.",
-    "url": "https://www.aim.qmul.ac.uk/author/christosp/",
-    "relevance": 88
-  },
-  {
-    "id": "layerwise_music_deepfake_detection",
-    "category": "SONIC",
-    "headline": "LAMP Detects Synthetic Music by Modeling Authentic Sound",
-    "summary": "LAMP models the stable distribution of authentic music instead of continually chasing new generations of forgeries. That shift could make provenance and trust systems more resilient as synthetic music techniques evolve.",
-    "url": "https://dl.acm.org/doi/10.1145/3767308.3835764",
+    "headline": "A Living Poem Makes the Artist’s Archive Computational",
+    "summary": "Sasha Stiles’ work uses a generative language system trained on her poetry to create an evolving literary form. The project raises a compelling design question: how can an artist preserve authorship while allowing a model to become an active collaborator?",
+    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
     "relevance": 93
   },
   {
-    "id": "cross_domain_speech_deepfake_detection",
-    "category": "SONIC",
-    "headline": "Speech Deepfake Detection Targets Unfamiliar Audio Sources",
-    "summary": "Research on frozen speech encoders and backends studies detection across domains, where voice-cloning artifacts may not resemble training examples. Robust cross-domain detection is crucial for trustworthy voice interfaces, performance, and archival audio.",
-    "url": "https://www.coloradoan.com/press-release/story/164784/sound-ethics-research-team-at-uc-santa-barbara-advances-speech-deepfake-detection/",
-    "relevance": 90
+    "id": "climate_data_ocean_ecosystem_art",
+    "category": "STR_ART",
+    "headline": "Live Ocean Data Becomes a Generative Ecosystem",
+    "summary": "Theo Triantafyllidis’ Drift Lattice uses real-time climate and ocean data to drive an evolving digital ecosystem. It demonstrates how generative systems can translate planetary change into perceptual, participatory experiences.",
+    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
+    "relevance": 91
   },
   {
-    "id": "equivariant_music_transformer",
-    "category": "SONIC",
-    "headline": "Equivariance Offers a More Structured Path for Music Models",
-    "summary": "An equivariant music transformer explores architectures that preserve meaningful musical transformations and relationships. Encoding structure directly could improve controllability and reduce the tendency of generative systems to imitate only surface patterns.",
-    "url": "https://www.aim.qmul.ac.uk/author/christosp/",
+    "id": "portal_keeper_personal_data_art",
+    "category": "STR_ART",
+    "headline": "Personal Voice and Motion Data Power an Interactive AI Artwork",
+    "summary": "LaJuné McMillian’s The Portal’s Keeper combines personal writing, voice, and motion data in an interactive AI work. Its significance lies in treating intimate datasets as artistic material while making the audience’s body part of the interface.",
+    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
+    "relevance": 92
+  },
+  {
+    "id": "ai_wall_labels_art_world_authorship",
+    "category": "META",
+    "headline": "AI-Generated Wall Text Is Quietly Reshaping Art Institutions",
+    "summary": "Chatbot-written wall labels, artist statements, grant applications, and exhibition essays are becoming increasingly common in the art world. This matters because institutional interpretation can influence artistic value while obscuring who is actually speaking.",
+    "url": "https://www.ai-art-designer.com/2026/11/20/ai-text-wall-labels-art-world-2026/",
+    "relevance": 88
+  },
+  {
+    "id": "paris_photo_ai_art_history",
+    "category": "STR_ART",
+    "headline": "Paris Photo Places Generative Art in a Longer History",
+    "summary": "The digital sector at Paris Photo positioned AI and generative works alongside earlier photography and computer-art experiments. That framing challenges novelty-driven narratives and encourages designers to assess AI art through continuity, lineage, and technique.",
+    "url": "https://www.ai-art-designer.com/2026/11/20/ai-text-wall-labels-art-world-2026/",
+    "relevance": 86
+  },
+  {
+    "id": "artists_christies_ai_training_protest",
+    "category": "META",
+    "headline": "Artists Challenge AI Art Auctions Over Unconsented Training",
+    "summary": "Thousands of artists reportedly signed an open letter opposing an AI-focused Christie’s sale, citing the use of creative work in model training without consent. The dispute connects generative aesthetics to provenance, labor, ownership, and institutional legitimacy.",
+    "url": "https://www.ai-art-designer.com/2026/11/20/ai-text-wall-labels-art-world-2026/",
+    "relevance": 95
+  },
+  {
+    "id": "canva_ai_off_switch_creative_agency",
+    "category": "CX_UX",
+    "headline": "Canva Adds an AI Off Switch for Creative Control",
+    "summary": "Canva now lets users hide its generative tools and reduce exposure to AI-generated templates and design elements. The controls are notable as an interaction pattern that acknowledges preference, authorship, and the need for non-generative creative workflows.",
+    "url": "https://www.creativebloq.com/news/the-canva-ai-off-switch-finally-recognises-the-artist-backlash",
+    "relevance": 89
+  },
+  {
+    "id": "canva_ai_visibility_preference",
+    "category": "CX_UX",
+    "headline": "A New Design Pattern: Let Users Filter AI Out of the Interface",
+    "summary": "Canva’s separate controls for disabling generative features and seeing less AI content create a layered preference model. This offers a useful precedent for designing user agency in increasingly AI-saturated creative software.",
+    "url": "https://www.creativebloq.com/news/the-canva-ai-off-switch-finally-recognises-the-artist-backlash",
     "relevance": 87
   },
   {
-    "id": "ai_creativity_authorship_boundary",
+    "id": "human_judgment_ai_ux_research",
+    "category": "CX_UX",
+    "headline": "AI Speeds UX Research Without Replacing Interpretation",
+    "summary": "AI can draft screeners, transcribe interviews, and identify initial themes, while researchers retain responsibility for meaning and product decisions. The model is valuable because it defines AI as an assistive research layer rather than an autonomous arbiter of user needs.",
+    "url": "https://raw.studio/blog/ai-in-ux-research",
+    "relevance": 88
+  },
+  {
+    "id": "ai_wcag_accessibility_gap",
+    "category": "CX_UX",
+    "headline": "AI-Assisted Development Is Outrunning Accessibility Testing",
+    "summary": "Faster AI-assisted production can leave accessibility review behind, producing interfaces that ship quickly but remain difficult to use. The issue highlights a critical design-system requirement: automated accessibility checks must be paired with human testing and accountability.",
+    "url": "https://grzz.ly/blog/ai-builds-fast-accessibility-testing-gap/",
+    "relevance": 92
+  },
+  {
+    "id": "ai_accessibility_testing_human_review",
+    "category": "CX_UX",
+    "headline": "Automated Accessibility Audits Need Human Judgment",
+    "summary": "AI can identify many WCAG-related issues rapidly, but its output is only a starting point. This creates an important interaction pattern for design teams: treat automated compliance analysis as triage, not proof of an accessible experience.",
+    "url": "https://raw.studio/blog/ai-in-ux-research",
+    "relevance": 90
+  },
+  {
+    "id": "ai_creative_craft_design_agency",
     "category": "META",
-    "headline": "AI Creativity Is Becoming a Negotiation Over Process",
-    "summary": "Across recent studies, the key issue is less whether AI can produce compelling artifacts than where artists place responsibility within the workflow. The emerging model treats creativity as a negotiated process involving intent, craft, data, and control.",
-    "url": "https://link.springer.com/article/10.1007/s10489-026-07554-x",
-    "relevance": 97
+    "headline": "Designers Are Reasserting Their Role in AI-Mediated Craft",
+    "summary": "A new design briefing argues that AI’s efficiency can erode creative craft unless designers actively shape how these systems are used. The central insight is that creative direction, judgment, and cultural responsibility remain design work even when production becomes automated.",
+    "url": "https://gds.li/briefing/2026-11-20/blueprint-briefing",
+    "relevance": 87
+  },
+  {
+    "id": "ai_music_human_voice",
+    "category": "SONIC",
+    "headline": "AI Music Raises a New Question: Who Gets to Find a Voice?",
+    "summary": "A Stanford discussion frames AI as a tool that should extend the joy of making music rather than replace human creativity. The perspective matters for sonic design because it shifts attention from output quality to agency, expression, and the experience of creating.",
+    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
+    "relevance": 89
+  },
+  {
+    "id": "ai_music_access_creation",
+    "category": "SONIC",
+    "headline": "Generative Music Tools Expand Experimental Access",
+    "summary": "Discussion of AI music suggests that emerging artists can explore sounds and arrangements previously beyond their technical reach. The creative opportunity is substantial, but it also raises questions about whether expanded access changes the value of musical skill and labor.",
+    "url": "https://www.dailycardinal.com/article/2026/11/if-ai-can-make-a-hit-song-what-happens-to-human-musicians",
+    "relevance": 84
+  },
+  {
+    "id": "ai_mastering_and_stock_voices",
+    "category": "SONIC",
+    "headline": "AI Now Spans Music Mastering and Synthetic Vocal Production",
+    "summary": "Tools such as AI mastering services and generative music platforms are compressing several stages of audio production into accessible workflows. This matters for sonic designers because the boundary between composition, performance, engineering, and stock content is becoming fluid.",
+    "url": "https://www.dailycardinal.com/article/2026/11/if-ai-can-make-a-hit-song-what-happens-to-human-musicians",
+    "relevance": 82
+  },
+  {
+    "id": "ai_music_value_creative_labor",
+    "category": "META",
+    "headline": "AI Music Forces a Reassessment of Creative Labor",
+    "summary": "Debate around AI-generated hit songs centers on threatened jobs, artistic expression, and the value audiences attach to human performance. The issue is foundational for future-facing sound design because it separates technical novelty from cultural meaning.",
+    "url": "https://www.dailycardinal.com/article/2026/11/if-ai-can-make-a-hit-song-what-happens-to-human-musicians",
+    "relevance": 91
+  },
+  {
+    "id": "ai_training_copyright_creativity",
+    "category": "META",
+    "headline": "Copyright Disputes Put AI Creativity’s Foundations on Trial",
+    "summary": "Arguments over training models on copyrighted creative work without permission expose a structural conflict between generative innovation and artistic consent. The outcome will shape not only legal ownership but also which creative ecosystems AI is allowed to learn from.",
+    "url": "https://joelgoodmanmusic.substack.com/p/ai-threatens-the-value-we-put-on",
+    "relevance": 94
+  },
+  {
+    "id": "machine_authorship_ai_art_law",
+    "category": "META",
+    "headline": "Human Authorship Remains Central to AI-Assisted Art",
+    "summary": "Recent discussion of U.S. copyright treatment emphasizes that fully machine-generated imagery is not protected as human authorship, while human-created elements in AI-assisted work may be. This distinction gives designers a practical framework for documenting creative contribution.",
+    "url": "https://artdaily.cc/news/200082/From-Brush-to-Prompt--What-the-Numbers-Say-About-AI-Image-Generation-and-the-Art-World",
+    "relevance": 86
   }
 ]
