@@ -1,154 +1,138 @@
 [
   {
-    "id": "aurora_biennial_ai_human_experience",
-    "category": "STR_ART",
-    "headline": "AURORA Biennial Turns AI Into Interactive Human Experience",
-    "summary": "The AURORA Biennial showcases artists using AI with personal writing, voice, motion, climate data, and interactive simulation. It matters because the work frames AI as a medium for embodied and environmental storytelling rather than automated image production.",
-    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
+    "id": "windchime_language_to_sound_installation",
+    "category": "SONIC",
+    "headline": "Windchime turns spoken language into audiovisual composition",
+    "summary": "This interactive installation uses an audio-language model to retrieve music and animations from an artist-authored corpus. It reframes speech interfaces as instruments for situated, embodied composition rather than utility-driven assistants.",
+    "url": "https://arxiv.org/list/cs.AI/new",
+    "relevance": 98
+  },
+  {
+    "id": "sound_bender_promptable_audio_isolation",
+    "category": "SONIC",
+    "headline": "Sound Bender makes finished mixes editable through language",
+    "summary": "Adobe’s experimental project isolates and modifies sounds in completed mixes using text descriptions. The approach could shift sound design from timeline-level editing toward semantic manipulation of sonic scenes.",
+    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
     "relevance": 94
   },
   {
-    "id": "living_poem_generational_language_system",
+    "id": "sight_span_images_as_navigable_worlds",
     "category": "STR_ART",
-    "headline": "A Living Poem Makes the Artist’s Archive Computational",
-    "summary": "Sasha Stiles’ work uses a generative language system trained on her poetry to create an evolving literary form. The project raises a compelling design question: how can an artist preserve authorship while allowing a model to become an active collaborator?",
-    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
-    "relevance": 93
-  },
-  {
-    "id": "climate_data_ocean_ecosystem_art",
-    "category": "STR_ART",
-    "headline": "Live Ocean Data Becomes a Generative Ecosystem",
-    "summary": "Theo Triantafyllidis’ Drift Lattice uses real-time climate and ocean data to drive an evolving digital ecosystem. It demonstrates how generative systems can translate planetary change into perceptual, participatory experiences.",
-    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
-    "relevance": 91
-  },
-  {
-    "id": "portal_keeper_personal_data_art",
-    "category": "STR_ART",
-    "headline": "Personal Voice and Motion Data Power an Interactive AI Artwork",
-    "summary": "LaJuné McMillian’s The Portal’s Keeper combines personal writing, voice, and motion data in an interactive AI work. Its significance lies in treating intimate datasets as artistic material while making the audience’s body part of the interface.",
-    "url": "https://syncai.news/article/what-aurora-biennial-2026-reveals-about-art-ai-and-human-experience-b996e7",
-    "relevance": 92
-  },
-  {
-    "id": "ai_wall_labels_art_world_authorship",
-    "category": "META",
-    "headline": "AI-Generated Wall Text Is Quietly Reshaping Art Institutions",
-    "summary": "Chatbot-written wall labels, artist statements, grant applications, and exhibition essays are becoming increasingly common in the art world. This matters because institutional interpretation can influence artistic value while obscuring who is actually speaking.",
-    "url": "https://www.ai-art-designer.com/2026/11/20/ai-text-wall-labels-art-world-2026/",
-    "relevance": 88
-  },
-  {
-    "id": "paris_photo_ai_art_history",
-    "category": "STR_ART",
-    "headline": "Paris Photo Places Generative Art in a Longer History",
-    "summary": "The digital sector at Paris Photo positioned AI and generative works alongside earlier photography and computer-art experiments. That framing challenges novelty-driven narratives and encourages designers to assess AI art through continuity, lineage, and technique.",
-    "url": "https://www.ai-art-designer.com/2026/11/20/ai-text-wall-labels-art-world-2026/",
-    "relevance": 86
-  },
-  {
-    "id": "artists_christies_ai_training_protest",
-    "category": "META",
-    "headline": "Artists Challenge AI Art Auctions Over Unconsented Training",
-    "summary": "Thousands of artists reportedly signed an open letter opposing an AI-focused Christie’s sale, citing the use of creative work in model training without consent. The dispute connects generative aesthetics to provenance, labor, ownership, and institutional legitimacy.",
-    "url": "https://www.ai-art-designer.com/2026/11/20/ai-text-wall-labels-art-world-2026/",
+    "headline": "Sight Span turns flat images into navigable 3D spaces",
+    "summary": "The experiment transforms photographs, paintings, and illustrations into environments that can be explored from changing viewpoints. It points toward a new visual grammar where images become spatial experiences rather than fixed compositions.",
+    "url": "https://ua.news/en/dovkolo-svitu/adobe-predstavila-eksperimentalni-shi-proiekti-dlia-3d-stsen-the-verge",
     "relevance": 95
   },
   {
-    "id": "canva_ai_off_switch_creative_agency",
-    "category": "CX_UX",
-    "headline": "Canva Adds an AI Off Switch for Creative Control",
-    "summary": "Canva now lets users hide its generative tools and reduce exposure to AI-generated templates and design elements. The controls are notable as an interaction pattern that acknowledges preference, authorship, and the need for non-generative creative workflows.",
-    "url": "https://www.creativebloq.com/news/the-canva-ai-off-switch-finally-recognises-the-artist-backlash",
-    "relevance": 89
-  },
-  {
-    "id": "canva_ai_visibility_preference",
-    "category": "CX_UX",
-    "headline": "A New Design Pattern: Let Users Filter AI Out of the Interface",
-    "summary": "Canva’s separate controls for disabling generative features and seeing less AI content create a layered preference model. This offers a useful precedent for designing user agency in increasingly AI-saturated creative software.",
-    "url": "https://www.creativebloq.com/news/the-canva-ai-off-switch-finally-recognises-the-artist-backlash",
-    "relevance": 87
-  },
-  {
-    "id": "human_judgment_ai_ux_research",
-    "category": "CX_UX",
-    "headline": "AI Speeds UX Research Without Replacing Interpretation",
-    "summary": "AI can draft screeners, transcribe interviews, and identify initial themes, while researchers retain responsibility for meaning and product decisions. The model is valuable because it defines AI as an assistive research layer rather than an autonomous arbiter of user needs.",
-    "url": "https://raw.studio/blog/ai-in-ux-research",
-    "relevance": 88
-  },
-  {
-    "id": "ai_wcag_accessibility_gap",
-    "category": "CX_UX",
-    "headline": "AI-Assisted Development Is Outrunning Accessibility Testing",
-    "summary": "Faster AI-assisted production can leave accessibility review behind, producing interfaces that ship quickly but remain difficult to use. The issue highlights a critical design-system requirement: automated accessibility checks must be paired with human testing and accountability.",
-    "url": "https://grzz.ly/blog/ai-builds-fast-accessibility-testing-gap/",
-    "relevance": 92
-  },
-  {
-    "id": "ai_accessibility_testing_human_review",
-    "category": "CX_UX",
-    "headline": "Automated Accessibility Audits Need Human Judgment",
-    "summary": "AI can identify many WCAG-related issues rapidly, but its output is only a starting point. This creates an important interaction pattern for design teams: treat automated compliance analysis as triage, not proof of an accessible experience.",
-    "url": "https://raw.studio/blog/ai-in-ux-research",
-    "relevance": 90
-  },
-  {
-    "id": "ai_creative_craft_design_agency",
-    "category": "META",
-    "headline": "Designers Are Reasserting Their Role in AI-Mediated Craft",
-    "summary": "A new design briefing argues that AI’s efficiency can erode creative craft unless designers actively shape how these systems are used. The central insight is that creative direction, judgment, and cultural responsibility remain design work even when production becomes automated.",
-    "url": "https://gds.li/briefing/2026-11-20/blueprint-briefing",
-    "relevance": 87
-  },
-  {
-    "id": "ai_music_human_voice",
-    "category": "SONIC",
-    "headline": "AI Music Raises a New Question: Who Gets to Find a Voice?",
-    "summary": "A Stanford discussion frames AI as a tool that should extend the joy of making music rather than replace human creativity. The perspective matters for sonic design because it shifts attention from output quality to agency, expression, and the experience of creating.",
-    "url": "https://ed.stanford.edu/news/creativity-age-ai-music-technology-and-finding-your-voice",
-    "relevance": 89
-  },
-  {
-    "id": "ai_music_access_creation",
-    "category": "SONIC",
-    "headline": "Generative Music Tools Expand Experimental Access",
-    "summary": "Discussion of AI music suggests that emerging artists can explore sounds and arrangements previously beyond their technical reach. The creative opportunity is substantial, but it also raises questions about whether expanded access changes the value of musical skill and labor.",
-    "url": "https://www.dailycardinal.com/article/2026/11/if-ai-can-make-a-hit-song-what-happens-to-human-musicians",
-    "relevance": 84
-  },
-  {
-    "id": "ai_mastering_and_stock_voices",
-    "category": "SONIC",
-    "headline": "AI Now Spans Music Mastering and Synthetic Vocal Production",
-    "summary": "Tools such as AI mastering services and generative music platforms are compressing several stages of audio production into accessible workflows. This matters for sonic designers because the boundary between composition, performance, engineering, and stock content is becoming fluid.",
-    "url": "https://www.dailycardinal.com/article/2026/11/if-ai-can-make-a-hit-song-what-happens-to-human-musicians",
-    "relevance": 82
-  },
-  {
-    "id": "ai_music_value_creative_labor",
-    "category": "META",
-    "headline": "AI Music Forces a Reassessment of Creative Labor",
-    "summary": "Debate around AI-generated hit songs centers on threatened jobs, artistic expression, and the value audiences attach to human performance. The issue is foundational for future-facing sound design because it separates technical novelty from cultural meaning.",
-    "url": "https://www.dailycardinal.com/article/2026/11/if-ai-can-make-a-hit-song-what-happens-to-human-musicians",
+    "id": "deep_brush_ai_light_painting",
+    "category": "STR_ART",
+    "headline": "Deep Brush paints light through shape, color, and atmosphere",
+    "summary": "Deep Brush interprets an image’s form, palette, and lighting to generate responsive light-painting effects. Its significance lies in treating illumination as an expressive, manipulable design material rather than a fixed rendering property.",
+    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
     "relevance": 91
   },
   {
-    "id": "ai_training_copyright_creativity",
-    "category": "META",
-    "headline": "Copyright Disputes Put AI Creativity’s Foundations on Trial",
-    "summary": "Arguments over training models on copyrighted creative work without permission expose a structural conflict between generative innovation and artistic consent. The outcome will shape not only legal ownership but also which creative ecosystems AI is allowed to learn from.",
-    "url": "https://joelgoodmanmusic.substack.com/p/ai-threatens-the-value-we-put-on",
-    "relevance": 94
+    "id": "rinse_repeat_editable_visual_propagation",
+    "category": "STR_ART",
+    "headline": "Rinse Repeat propagates edits without flattening creative control",
+    "summary": "The project replicates image edits across new captures while keeping the results editable in Photoshop. This suggests a hybrid workflow in which AI handles visual consistency but artists retain layered, reversible control.",
+    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
+    "relevance": 90
   },
   {
-    "id": "machine_authorship_ai_art_law",
-    "category": "META",
-    "headline": "Human Authorship Remains Central to AI-Assisted Art",
-    "summary": "Recent discussion of U.S. copyright treatment emphasizes that fully machine-generated imagery is not protected as human authorship, while human-created elements in AI-assisted work may be. This distinction gives designers a practical framework for documenting creative contribution.",
-    "url": "https://artdaily.cc/news/200082/From-Brush-to-Prompt--What-the-Numbers-Say-About-AI-Image-Generation-and-the-Art-World",
+    "id": "link_up_perspective_aware_vector_design",
+    "category": "STR_ART",
+    "headline": "Link Up makes vector graphics adapt to real-world perspective",
+    "summary": "Link Up explores placing vector elements into three-dimensional scenes while preserving perspective and context. It could make spatial graphic design more fluid by allowing marks to respond dynamically to photographed environments.",
+    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
+    "relevance": 88
+  },
+  {
+    "id": "screen_test_conversational_character_creation",
+    "category": "STR_ART",
+    "headline": "Screen Test develops characters through conversation",
+    "summary": "Screen Test explores creating video characters through dialogue rather than conventional modeling or casting workflows. The concept raises productive questions about authorship, performance, identity, and the boundaries between directing and prompting.",
+    "url": "https://ua.news/en/dovkolo-svitu/adobe-predstavila-eksperimentalni-shi-proiekti-dlia-3d-stsen-the-verge",
+    "relevance": 93
+  },
+  {
+    "id": "scene_sweep_consistent_editing_across_shots",
+    "category": "STR_ART",
+    "headline": "Scene Sweep carries visual edits across entire sequences",
+    "summary": "Scene Sweep aims to apply a visual edit consistently across multiple video shots. This addresses one of generative media’s central design problems: preserving intentional continuity while accelerating iteration.",
+    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
+    "relevance": 87
+  },
+  {
+    "id": "on_cue_generative_video_timing_control",
+    "category": "STR_ART",
+    "headline": "On Cue gives creators finer control over generated-video timing",
+    "summary": "On Cue focuses on timing controls for generated video, moving beyond prompt-only direction toward explicit temporal composition. Its value is architectural: it treats rhythm and duration as design parameters rather than accidental model output.",
+    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
     "relevance": 86
+  },
+  {
+    "id": "custom_filters_modelled_visual_language",
+    "category": "STR_ART",
+    "headline": "Custom Filters explores personal visual languages as generative systems",
+    "summary": "The experimental project investigates reusable, customized visual transformations. It points toward design systems that encode an artist’s aesthetic decisions while remaining adaptable across different images and contexts.",
+    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
+    "relevance": 84
+  },
+  {
+    "id": "hands_on_gesture_driven_ai_design",
+    "category": "CX_UX",
+    "headline": "Hands On tests gesture as a control layer for AI design",
+    "summary": "Hands On explores gesture-based interaction within creative workflows. The experiment is relevant to UX because it suggests more direct, spatial alternatives to text prompts for manipulating generative systems.",
+    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
+    "relevance": 88
+  },
+  {
+    "id": "flow_artist_visual_ai_sessions",
+    "category": "STR_ART",
+    "headline": "Flow sessions show artists shaping experimental generative cinema",
+    "summary": "Google’s Flow sessions present visual projects made with artists using generative tools. The work matters less as a product showcase than as evidence of emerging hybrid practices in which artists choreograph models, edits, and references.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists/?ref=refetch.io",
+    "relevance": 85
+  },
+  {
+    "id": "flow_music_artist_authored_generation",
+    "category": "SONIC",
+    "headline": "Flow Music sessions treat generative audio as collaboration",
+    "summary": "The artist-led sessions showcase experimental audio workflows built around generative tools. They foreground the role of musicians as curators, editors, and directors of model behavior rather than passive recipients of generated tracks.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists/?ref=refetch.io",
+    "relevance": 86
+  },
+  {
+    "id": "generative_spark_ai_for_good_exhibition",
+    "category": "META",
+    "headline": "Generative Spark asks what creative AI is for",
+    "summary": "The exhibition combines AI-generated storytelling, experimental media, and student projects with a focus on public-good applications. Its central contribution is cultural rather than technical: it frames creative AI through social purpose and collective imagination.",
+    "url": "https://calendar.ohio.edu/event/generative-spark-20-ai-for-good",
+    "relevance": 82
+  },
+  {
+    "id": "generative_spark_human_machine_imagination",
+    "category": "META",
+    "headline": "An exhibition positions AI as a partner in public imagination",
+    "summary": "Generative Spark presents human and machine creativity as a collaborative space for addressing real-world challenges. This invites debate about whether AI’s most meaningful artistic role is autonomous production or amplification of human agency.",
+    "url": "https://calendar.ohio.edu/event/generative-spark-20-ai-for-good",
+    "relevance": 80
+  },
+  {
+    "id": "ai_creative_sector_control_tension",
+    "category": "META",
+    "headline": "Creative AI experiments expose a growing control paradox",
+    "summary": "The latest experimental tools promise automation across casting, sound design, editing, and directing while retaining claims of creative control. That tension makes them useful case studies for examining whether AI expands authorship or quietly redistributes it.",
+    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
+    "relevance": 92
+  },
+  {
+    "id": "ai_as_editable_creative_infrastructure",
+    "category": "META",
+    "headline": "The next creative frontier may be editable AI, not one-click generation",
+    "summary": "Projects such as Rinse Repeat and Deep Brush emphasize reversible edits, spatial control, and iterative manipulation. Together they suggest a philosophy of AI as creative infrastructure that preserves negotiation and revision instead of replacing them.",
+    "url": "https://www.aib.vote/en/news/adobe-max-2026-creative-ai-experiments",
+    "relevance": 89
   }
 ]
