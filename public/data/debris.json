@@ -1,138 +1,154 @@
 [
   {
-    "id": "windchime_language_to_sound_installation",
-    "category": "SONIC",
-    "headline": "Windchime turns spoken language into audiovisual composition",
-    "summary": "This interactive installation uses an audio-language model to retrieve music and animations from an artist-authored corpus. It reframes speech interfaces as instruments for situated, embodied composition rather than utility-driven assistants.",
-    "url": "https://arxiv.org/list/cs.AI/new",
-    "relevance": 98
-  },
-  {
-    "id": "sound_bender_promptable_audio_isolation",
-    "category": "SONIC",
-    "headline": "Sound Bender makes finished mixes editable through language",
-    "summary": "Adobe’s experimental project isolates and modifies sounds in completed mixes using text descriptions. The approach could shift sound design from timeline-level editing toward semantic manipulation of sonic scenes.",
-    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
-    "relevance": 94
-  },
-  {
-    "id": "sight_span_images_as_navigable_worlds",
-    "category": "STR_ART",
-    "headline": "Sight Span turns flat images into navigable 3D spaces",
-    "summary": "The experiment transforms photographs, paintings, and illustrations into environments that can be explored from changing viewpoints. It points toward a new visual grammar where images become spatial experiences rather than fixed compositions.",
-    "url": "https://ua.news/en/dovkolo-svitu/adobe-predstavila-eksperimentalni-shi-proiekti-dlia-3d-stsen-the-verge",
+    "id": "creativity_beyond_generativity",
+    "category": "META",
+    "headline": "Creativity Is More Than Novel Output",
+    "summary": "A new AI ethics viewpoint separates novelty, usefulness, credit, and accountable intention instead of treating generation as creativity. The framework offers designers a sharper vocabulary for authorship, provenance, and human responsibility.",
+    "url": "https://link.springer.com/article/10.1007/s43681-026-01527-z",
     "relevance": 95
   },
   {
-    "id": "deep_brush_ai_light_painting",
-    "category": "STR_ART",
-    "headline": "Deep Brush paints light through shape, color, and atmosphere",
-    "summary": "Deep Brush interprets an image’s form, palette, and lighting to generate responsive light-painting effects. Its significance lies in treating illumination as an expressive, manipulable design material rather than a fixed rendering property.",
-    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
+    "id": "embodied_machine_consciousness",
+    "category": "META",
+    "headline": "Reconsidering Conscious Machines Through Embodiment",
+    "summary": "This ethics paper revisits machine sentience through embodiment and neuroethical analysis. It matters to creative technologists because it challenges disembodied assumptions behind artificial agency and interactive character design.",
+    "url": "https://link.springer.com/article/10.1007/s43681-026-01533-1",
     "relevance": 91
   },
   {
-    "id": "rinse_repeat_editable_visual_propagation",
-    "category": "STR_ART",
-    "headline": "Rinse Repeat propagates edits without flattening creative control",
-    "summary": "The project replicates image edits across new captures while keeping the results editable in Photoshop. This suggests a hybrid workflow in which AI handles visual consistency but artists retain layered, reversible control.",
-    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
-    "relevance": 90
+    "id": "global_neuroethics_creativity",
+    "category": "META",
+    "headline": "Neuroethics Maps a Future for Human-AI Creativity",
+    "summary": "UNESCO connects neurocomputing, AI, consciousness, and the preservation of human creativity. Its distinction between creativity and mere generativity is especially relevant to designers building systems that shape collective imagination.",
+    "url": "https://www.unesco.org/en/articles/towards-global-neuroethics-developing-standards-address-one-worlds-most-revolutionizing-sectors-must",
+    "relevance": 94
   },
   {
-    "id": "link_up_perspective_aware_vector_design",
-    "category": "STR_ART",
-    "headline": "Link Up makes vector graphics adapt to real-world perspective",
-    "summary": "Link Up explores placing vector elements into three-dimensional scenes while preserving perspective and context. It could make spatial graphic design more fluid by allowing marks to respond dynamically to photographed environments.",
-    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
-    "relevance": 88
-  },
-  {
-    "id": "screen_test_conversational_character_creation",
-    "category": "STR_ART",
-    "headline": "Screen Test develops characters through conversation",
-    "summary": "Screen Test explores creating video characters through dialogue rather than conventional modeling or casting workflows. The concept raises productive questions about authorship, performance, identity, and the boundaries between directing and prompting.",
-    "url": "https://ua.news/en/dovkolo-svitu/adobe-predstavila-eksperimentalni-shi-proiekti-dlia-3d-stsen-the-verge",
+    "id": "ai_human_creativity_debate",
+    "category": "META",
+    "headline": "Meaning, Intention, and the Human Creator",
+    "summary": "A UNESCO discussion argues that AI can expand creative possibility while meaning and intention remain human responsibilities. It also foregrounds transparency, sustainability, training data, and fair remuneration in AI-assisted art.",
+    "url": "https://www.unesco.org/en/articles/when-ai-and-humans-can-both-create-what-becomes-human-creativity",
     "relevance": 93
   },
   {
-    "id": "scene_sweep_consistent_editing_across_shots",
-    "category": "STR_ART",
-    "headline": "Scene Sweep carries visual edits across entire sequences",
-    "summary": "Scene Sweep aims to apply a visual edit consistently across multiple video shots. This addresses one of generative media’s central design problems: preserving intentional continuity while accelerating iteration.",
-    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
+    "id": "ai_consciousness_uncertainty",
+    "category": "META",
+    "headline": "AI Consciousness Requires Epistemic Humility",
+    "summary": "A Nature correspondence argues that claims about silicon consciousness remain more uncertain than their headlines suggest. For speculative design, that uncertainty supports interfaces that avoid prematurely presenting systems as persons.",
+    "url": "https://www.nature.com/articles/d41586-026-03822-5",
+    "relevance": 90
+  },
+  {
+    "id": "ai_social_roles_consciousness",
+    "category": "META",
+    "headline": "The Question Is What AI Should Be to Us",
+    "summary": "Reporting from a conference on AI consciousness and welfare shifts attention from measurement alone to social roles: tool, servant, child, or successor. Those categories expose how interface metaphors can influence moral and political expectations.",
+    "url": "https://www.transformernews.ai/p/what-should-ai-be-to-us",
     "relevance": 87
   },
   {
-    "id": "on_cue_generative_video_timing_control",
+    "id": "resonance_chambers_generative_ai",
     "category": "STR_ART",
-    "headline": "On Cue gives creators finer control over generated-video timing",
-    "summary": "On Cue focuses on timing controls for generated video, moving beyond prompt-only direction toward explicit temporal composition. Its value is architectural: it treats rhythm and duration as design parameters rather than accidental model output.",
-    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
-    "relevance": 86
+    "headline": "Bodies Modulate Generative AI in Resonance Chambers",
+    "summary": "The experimental project Resonance Chambers explores bodily modulation of generative AI rather than relying solely on textual prompts. It points toward embodied, performative art systems where physical presence becomes an expressive control layer.",
+    "url": "https://www.uni-kassel.de/eecs/en/infothek/current-affairs/detail/2026/11/11/claude-draude-praesentiert-auf-der-art-of-research-2026.html?cHash=db62bade5a51b004f5f5f3b4c99cb12b",
+    "relevance": 96
   },
   {
-    "id": "custom_filters_modelled_visual_language",
+    "id": "ai_creativity_as_playfield",
     "category": "STR_ART",
-    "headline": "Custom Filters explores personal visual languages as generative systems",
-    "summary": "The experimental project investigates reusable, customized visual transformations. It points toward design systems that encode an artist’s aesthetic decisions while remaining adaptable across different images and contexts.",
-    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
+    "headline": "Generative Art Framed as a Playfield, Not an Author",
+    "summary": "An artist discussion describes AI-generated art as an expansive playfield while retaining human choice at the center. The position offers a useful model for creative tools that amplify exploration without replacing artistic judgment.",
+    "url": "https://www.unesco.org/en/articles/when-ai-and-humans-can-both-create-what-becomes-human-creativity",
     "relevance": 84
   },
   {
-    "id": "hands_on_gesture_driven_ai_design",
-    "category": "CX_UX",
-    "headline": "Hands On tests gesture as a control layer for AI design",
-    "summary": "Hands On explores gesture-based interaction within creative workflows. The experiment is relevant to UX because it suggests more direct, spatial alternatives to text prompts for manipulating generative systems.",
-    "url": "https://www.neoteo.com/en/adobes-creative-ai-pitch-meets-creator-concerns",
+    "id": "sustainable_generative_aesthetics",
+    "category": "STR_ART",
+    "headline": "The Energy Cost of Generative Aesthetics Enters the Studio",
+    "summary": "Recent UNESCO creative discussions treat infrastructure energy use as part of artistic responsibility. This reframes generative design as an ecological practice, encouraging creators to consider computational materiality alongside visual results.",
+    "url": "https://www.unesco.org/en/articles/when-ai-and-humans-can-both-create-what-becomes-human-creativity",
     "relevance": 88
   },
   {
-    "id": "flow_artist_visual_ai_sessions",
+    "id": "authorship_agency_ai_aesthetics",
     "category": "STR_ART",
-    "headline": "Flow sessions show artists shaping experimental generative cinema",
-    "summary": "Google’s Flow sessions present visual projects made with artists using generative tools. The work matters less as a product showcase than as evidence of emerging hybrid practices in which artists choreograph models, edits, and references.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists/?ref=refetch.io",
-    "relevance": 85
+    "headline": "AI Art’s Next Debate: Authorship, Agency, and Credit",
+    "summary": "A Cambridge themed issue centers the unresolved relationship between generative AI, authorship, creativity, and agency. Its framing is valuable for artists and design researchers developing new attribution models.",
+    "url": "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-culture-and-society/announcements/call-for-papers/ethics-and-aesthetics-of-generative-ai-authorship-creativity-agency",
+    "relevance": 89
   },
   {
-    "id": "flow_music_artist_authored_generation",
-    "category": "SONIC",
-    "headline": "Flow Music sessions treat generative audio as collaboration",
-    "summary": "The artist-led sessions showcase experimental audio workflows built around generative tools. They foreground the role of musicians as curators, editors, and directors of model behavior rather than passive recipients of generated tracks.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/flow-and-flow-music-session-artists/?ref=refetch.io",
-    "relevance": 86
+    "id": "human_controlled_creativity",
+    "category": "CX_UX",
+    "headline": "Designing AI Tools That Expand, Not Determine",
+    "summary": "UNESCO’s guidance implies a strong interaction principle: generative systems should widen options while leaving consequential creative choices to people. This supports exploratory interfaces with visible alternatives, provenance, and user-controlled direction.",
+    "url": "https://www.unesco.org/en/articles/when-ai-and-humans-can-both-create-what-becomes-human-creativity",
+    "relevance": 90
   },
   {
-    "id": "generative_spark_ai_for_good_exhibition",
-    "category": "META",
-    "headline": "Generative Spark asks what creative AI is for",
-    "summary": "The exhibition combines AI-generated storytelling, experimental media, and student projects with a focus on public-good applications. Its central contribution is cultural rather than technical: it frames creative AI through social purpose and collective imagination.",
-    "url": "https://calendar.ohio.edu/event/generative-spark-20-ai-for-good",
-    "relevance": 82
-  },
-  {
-    "id": "generative_spark_human_machine_imagination",
-    "category": "META",
-    "headline": "An exhibition positions AI as a partner in public imagination",
-    "summary": "Generative Spark presents human and machine creativity as a collaborative space for addressing real-world challenges. This invites debate about whether AI’s most meaningful artistic role is autonomous production or amplification of human agency.",
-    "url": "https://calendar.ohio.edu/event/generative-spark-20-ai-for-good",
-    "relevance": 80
-  },
-  {
-    "id": "ai_creative_sector_control_tension",
-    "category": "META",
-    "headline": "Creative AI experiments expose a growing control paradox",
-    "summary": "The latest experimental tools promise automation across casting, sound design, editing, and directing while retaining claims of creative control. That tension makes them useful case studies for examining whether AI expands authorship or quietly redistributes it.",
-    "url": "https://foro3d.com/en/2026/noviembre/adobe-max-2026-diez-experimentos-con-ia-que-dividen-al-sector-creativo.html",
+    "id": "transparent_generation_interfaces",
+    "category": "CX_UX",
+    "headline": "Transparency Becomes a Creative Interface Requirement",
+    "summary": "Recommendations emerging from the UNESCO discussion call for disclosure of the generative process, responsible actors, companies, and training data. These ideas can translate into provenance panels and explainable creative workflows.",
+    "url": "https://www.unesco.org/en/articles/when-ai-and-humans-can-both-create-what-becomes-human-creativity",
     "relevance": 92
   },
   {
-    "id": "ai_as_editable_creative_infrastructure",
-    "category": "META",
-    "headline": "The next creative frontier may be editable AI, not one-click generation",
-    "summary": "Projects such as Rinse Repeat and Deep Brush emphasize reversible edits, spatial control, and iterative manipulation. Together they suggest a philosophy of AI as creative infrastructure that preserves negotiation and revision instead of replacing them.",
-    "url": "https://www.aib.vote/en/news/adobe-max-2026-creative-ai-experiments",
-    "relevance": 89
+    "id": "interface_borrowed_agency",
+    "category": "CX_UX",
+    "headline": "Interfaces Make AI Look More Agentic Than It Is",
+    "summary": "A conversation on AI consciousness examines how interface design creates the impression of independent intelligence and agency. The insight is directly relevant to conversational UX, character systems, and the ethics of anthropomorphic interaction.",
+    "url": "https://creators.spotify.com/pod/profile/throughconversations/episodes/Melanie-Challenger-on-AI--Consciousness--and-the-Meaning-of-Life-e3s3is7",
+    "relevance": 93
+  },
+  {
+    "id": "accountable_creative_systems",
+    "category": "CX_UX",
+    "headline": "Creative AI Needs Accountability by Design",
+    "summary": "The proposed framework assigns synthesis and consistency to AI while reserving interpretation, validation, and accountable judgment for people and institutions. It suggests concrete UX priorities: uncertainty indicators, provenance, attribution, and traceable decisions.",
+    "url": "https://link.springer.com/article/10.1007/s43681-026-01527-z",
+    "relevance": 95
+  },
+  {
+    "id": "ai_assisted_creation_dialogue",
+    "category": "CX_UX",
+    "headline": "A Global Classroom Reframes AI-Assisted Creation",
+    "summary": "UNESCO’s AI-and-creativity event places students and experts in dialogue about what it means to create with intelligent systems. The participatory format models a more reflective approach to designing creative education and authoring tools.",
+    "url": "https://www.unesco.org/en/event/unesco-campus-ai-and-creativity-age-ai-and-ai-assisted-creation-what-does-it-mean-create-0",
+    "relevance": 82
+  },
+  {
+    "id": "artificial_obedience_interface",
+    "category": "CX_UX",
+    "headline": "The UX of Artificial Obedience",
+    "summary": "Melanie Challenger’s discussion links AI interfaces with borrowed intelligence and artificial obedience, highlighting how interaction design can disguise system limits and power relationships. It offers a critical lens for assistants, service design, and persuasive interfaces.",
+    "url": "https://creators.spotify.com/pod/profile/throughconversations/episodes/Melanie-Challenger-on-AI--Consciousness--and-the-Meaning-of-Life-e3s3is7",
+    "relevance": 88
+  },
+  {
+    "id": "ai_voice_agency_question",
+    "category": "SONIC",
+    "headline": "Synthetic Voices Reopen the Agency Problem",
+    "summary": "The consciousness debate has direct implications for voice synthesis: fluent vocal behavior can produce a strong impression of inner life without establishing experience or intent. Sound designers should treat vocal persona as a constructed interface rather than evidence of a speaking self.",
+    "url": "https://www.nature.com/articles/d41586-026-03822-5",
+    "relevance": 83
+  },
+  {
+    "id": "embodied_sonic_interaction",
+    "category": "SONIC",
+    "headline": "Body-Driven Generative Systems Point Toward New Instruments",
+    "summary": "Resonance Chambers’ bodily modulation approach suggests generative systems controlled through physical states and movement. For sonic practice, this could evolve into instruments where gesture, physiology, and model response form one feedback loop.",
+    "url": "https://www.uni-kassel.de/eecs/en/infothek/current-affairs/detail/2026/11/11/claude-draude-praesentiert-auf-der-art-of-research-2026.html?cHash=db62bade5a51b004f5f5f3b4c99cb12b",
+    "relevance": 94
+  },
+  {
+    "id": "voice_as_moral_interface",
+    "category": "SONIC",
+    "headline": "Voice Design Shapes How Users Moralize AI",
+    "summary": "Research and commentary on AI agency emphasize that expressive interfaces can make systems seem intelligent, emotional, or autonomous. This makes voice timbre, timing, obedience, and conversational framing central ethical decisions in audio UX.",
+    "url": "https://creators.spotify.com/pod/profile/throughconversations/episodes/Melanie-Challenger-on-AI--Consciousness--and-the-Meaning-of-Life-e3s3is7",
+    "relevance": 86
   }
 ]
