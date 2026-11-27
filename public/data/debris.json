@@ -1,146 +1,146 @@
 [
   {
-    "id": "rd_flow_64_pixel_art",
-    "category": "STR_ART",
-    "headline": "RD Flow 64 Makes Pixel Art, Not Pixel-Like Images",
-    "summary": "Retro Diffusion’s RD Flow 64 is presented as a model designed specifically for authentic pixel-art generation rather than downsampling conventional images. Its significance lies in encoding a visual medium’s discrete grammar, offering artists a more controllable tool for retro aesthetics and game-oriented worldbuilding.",
-    "url": "https://fervorcreativeai.com/briefings/2026-11-25-0505/",
-    "relevance": 91
-  },
-  {
-    "id": "krea_2_style_reference_numbers",
-    "category": "STR_ART",
-    "headline": "A Style Becomes a Reproducible Number",
-    "summary": "The Krea 2 Sref adapter maps whole numbers to visual styles, making aesthetic references easier to record, share, and reproduce in generative workflows. This shifts style direction toward a programmable design-system concept while raising questions about authorship, taste, and the commodification of visual language.",
-    "url": "https://fervorcreativeai.com/briefings/2026-11-25-0505/",
-    "relevance": 88
-  },
-  {
-    "id": "dbs_scene_projection_ai_nuke",
-    "category": "STR_ART",
-    "headline": "One Frame Becomes a Nuke Projection Setup",
-    "summary": "DBS_SceneProjection uses AI depth estimation and object masking to construct projection geometry from a single frame, then connects it to Blender and Nuke workflows. The approach is notable because AI measures and organizes production space without replacing the source image, preserving a more deliberate compositing process.",
-    "url": "https://fervorcreativeai.com/briefings/2026-11-25-0505/",
+    "id": "human_first_creative_collaboration",
+    "category": "META",
+    "headline": "Human-led AI collaboration improves creative outcomes",
+    "summary": "A controlled study finds that preserving human involvement in early creative decisions can improve the balance between productivity, quality, creative diversity, and satisfaction. The finding suggests that collaboration choreography—not automation alone—is a core design variable for creative AI systems.",
+    "url": "https://techxplore.com/news/2026-11-human-involvement-creative-task-ai.html",
     "relevance": 94
   },
   {
-    "id": "art_basel_zero_10_ai_art",
-    "category": "STR_ART",
-    "headline": "Art Basel Expands Its AI and Generative-Art Platform",
-    "summary": "Art Basel Miami Beach’s Zero 10: Generation program is expanding to 21 exhibitors focused on digital art, AI, generative art, and emerging technologies. The development matters because it places computational and AI-mediated practices inside a major institutional context rather than treating them as peripheral experiments.",
-    "url": "https://mymodernmet.com/art-basel-miami-beach-2026-highlights/",
-    "relevance": 76
-  },
-  {
-    "id": "generative_spark_ai_for_good",
-    "category": "STR_ART",
-    "headline": "An Exhibition Frames AI as Civic Creative Infrastructure",
-    "summary": "Generative Spark 2.0 presents AI-generated visual storytelling, experimental media, and student projects connected to real-world challenges. Its design relevance comes from emphasizing collaborative imagination and public benefit over technical spectacle.",
-    "url": "https://calendar.ohio.edu/event/generative-spark-20-ai-for-good",
-    "relevance": 72
-  },
-  {
-    "id": "ux_ai_progress_rate",
+    "id": "creative_collaboration_tradeoffs",
     "category": "CX_UX",
-    "headline": "AI UX Progress Is Measured Through Design Tasks",
-    "summary": "Jakob Nielsen’s analysis examines which UX activities AI may perform and when, including multi-screen visual design, accessibility, hierarchy, and design-system compliance. Framing progress through concrete design tasks provides a more useful benchmark than vague claims about general intelligence.",
-    "url": "https://jakobnielsenphd.substack.com/p/ai-ux-progress-rate",
-    "relevance": 90
-  },
-  {
-    "id": "ux_ray_design_evaluation",
-    "category": "CX_UX",
-    "headline": "UX-Ray Tests Design Without Letting AI Judge It",
-    "summary": "The discussion highlights UX-Ray as a system that evaluates generative design outputs without relying on generative AI to make the judgment itself. This separation between production and assessment is a valuable pattern for trustworthy design tooling, especially where accessibility and consistency must be verified.",
-    "url": "https://jakobnielsenphd.substack.com/p/ai-ux-progress-rate",
-    "relevance": 86
-  },
-  {
-    "id": "human_machine_experience_design",
-    "category": "CX_UX",
-    "headline": "UX Expands from Human-Centered to Human-and-Machine Design",
-    "summary": "The proposed shift toward human and machine experience design treats machines as participants that must also interpret information, services, and interfaces. It suggests a future design discipline concerned not only with human usability but with machine-readable structure, actionability, and coordination.",
-    "url": "https://www.deepend.com.au/news/from-user-centred-design-to-human-and-machine-experience-design/",
-    "relevance": 93
-  },
-  {
-    "id": "accessible_ai_assistants",
-    "category": "CX_UX",
-    "headline": "Accessible AI Assistants Require Deliberate Interaction Design",
-    "summary": "A design workshop focused on accessible AI assistants foregrounds the need to adapt conversational systems for users with different sensory, cognitive, and motor needs. The topic matters because accessibility cannot be treated as a post-processing layer when interfaces are probabilistic and dynamically generated.",
-    "url": "https://createwith.com/event/edinburgh-ai-assistants-are-everywhere-let-s-make-them-accessible-with-nov-2026",
-    "relevance": 82
-  },
-  {
-    "id": "ai_generated_accessibility_burden",
-    "category": "CX_UX",
-    "headline": "AI-Generated Content Can Increase Accessibility Debt",
-    "summary": "Recent UX discussion identifies the volume of AI-generated content as a potential accessibility burden, particularly for screen-reader structure and cognitive load. The recommendation to audit generated surfaces before shipping reframes AI output as a new source of technical and experiential debt.",
-    "url": "https://www.aiuxdesign.guide/news/ai-ux-daily-nov-26-slopnami-accessibility-fallout-meta-muse-in-dms-figma-usabil",
-    "relevance": 89
-  },
-  {
-    "id": "meta_ai_unpredictable_experience",
-    "category": "CX_UX",
-    "headline": "Unpredictable AI Requires New UX Evaluation Methods",
-    "summary": "An internal assessment of Meta AI experiences reportedly surfaced difficulties in evaluating systems that produce unpredictable responses. The design implication is a need for methods that address uncertainty, user expectations, error detection, and responsibility rather than relying only on conventional usability metrics.",
-    "url": "https://tldr.tech/design/2026-11-25",
-    "relevance": 95
-  },
-  {
-    "id": "photoshop_generativity_transparency",
-    "category": "CX_UX",
-    "headline": "Invisible Generative Editing Challenges Trust in Creative Tools",
-    "summary": "The New York Times’ reported restriction on Photoshop 2027 features reflects concern that generative edits may be difficult for users to distinguish from conventional editing. This makes transparency an interaction-design problem: tools need to communicate when, where, and how synthetic manipulation occurred.",
-    "url": "https://tldr.tech/design/2026-11-25",
-    "relevance": 87
-  },
-  {
-    "id": "tidal_wholly_ai_music_policy",
-    "category": "SONIC",
-    "headline": "Tidal Plans to Reject Music Made Entirely by AI",
-    "summary": "Tidal reportedly plans to reject and remove wholly AI-generated tracks, moving beyond labeling toward platform-level exclusion. The policy creates a significant design and cultural question about whether creativity is defined by the tool, the process, the artist’s intent, or the listener’s experience.",
-    "url": "https://liveaiwire.com/2026/11/tidal-ai-music-ban.html",
-    "relevance": 94
-  },
-  {
-    "id": "ai_music_authorship_evidence",
-    "category": "SONIC",
-    "headline": "AI-Assisted Musicians May Need to Prove Their Process",
-    "summary": "The emerging distinction between fully synthetic tracks and human-led productions gives artists a practical reason to retain evidence of their creative workflow. This could make provenance, session history, and contribution tracking central components of future music-production interfaces.",
-    "url": "https://liveaiwire.com/2026/11/tidal-ai-music-ban.html",
-    "relevance": 91
-  },
-  {
-    "id": "ai_music_human_creativity_boundary",
-    "category": "SONIC",
-    "headline": "Streaming Policy Turns the Human-AI Boundary Into a Sonic Issue",
-    "summary": "Tidal’s proposed policy challenges the assumption that AI-generated music can be handled through simple labels alone. It forces platforms, artists, and listeners to negotiate what counts as meaningful human participation in a medium built from layered tools and production systems.",
-    "url": "https://liveaiwire.com/2026/11/tidal-ai-music-ban.html",
-    "relevance": 88
-  },
-  {
-    "id": "machine_experience_design_ethics",
-    "category": "META",
-    "headline": "Designing for Machines Changes What User-Centered Means",
-    "summary": "The move toward human and machine experience design implies that interfaces increasingly serve both people and automated agents. This raises philosophical questions about whose interpretation counts, whether machine legibility becomes a new form of power, and how designers balance human clarity with machine optimization.",
-    "url": "https://www.deepend.com.au/news/from-user-centred-design-to-human-and-machine-experience-design/",
-    "relevance": 92
-  },
-  {
-    "id": "ai_uncertainty_responsibility",
-    "category": "META",
-    "headline": "AI Interfaces Make Responsibility a Design Material",
-    "summary": "The difficulty of evaluating unpredictable AI behavior points to a broader shift in design ethics: systems must communicate uncertainty and make accountability visible. This moves interface design beyond efficiency toward the governance of ambiguity, error, and delegated judgment.",
-    "url": "https://tldr.tech/design/2026-11-25",
+    "headline": "Designing the handoff between humans and generative AI",
+    "summary": "A PNAS Nexus experiment compares multiple human–AI collaboration designs in a creative writing task. Its focus on productivity, satisfaction, and creative diversity offers actionable evidence for designing interfaces that preserve agency rather than simply accelerating output.",
+    "url": "https://0-academic-oup-com.legcat.gov.ns.ca/pnasnexus/article/5/11/pgag353/9025436",
     "relevance": 96
   },
   {
-    "id": "synthetic_music_creative_identity",
-    "category": "META",
-    "headline": "Who Counts as the Author of an AI-Made Song?",
-    "summary": "The debate around excluding wholly AI-generated music exposes competing theories of authorship, intention, and creative labor. It is especially relevant to cybernetic design because the artist may increasingly operate as a selector, trainer, editor, performer, or system architect rather than a sole originator.",
-    "url": "https://liveaiwire.com/2026/11/tidal-ai-music-ban.html",
+    "id": "yuri_suzuki_evolving_sound_environments",
+    "category": "SONIC",
+    "headline": "AI turns public sound art into an evolving shared environment",
+    "summary": "Sound artist Yuri Suzuki is exploring AI-generated environments that change with visitor interaction and timing. The work treats machine learning as a compositional participant while retaining accessibility and the embodied, collective character of public art.",
+    "url": "https://newsnix.com/articles/yuri-suzuki-sound-artist-designboom-interview/",
+    "relevance": 91
+  },
+  {
+    "id": "alternative_creative_ai_agency",
+    "category": "CX_UX",
+    "headline": "Creative AI research shifts from replacement to user agency",
+    "summary": "A talk by Philippe Pasquier presents alternatives centered on diversity, literacy, depolarization, direct manipulation, and participatory co-creation. Evaluations with artists, students, and industry examine authorship, phenomenology, ethics, user experience, and technology acceptance.",
+    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
     "relevance": 95
+  },
+  {
+    "id": "authorship_agency_generative_ai",
+    "category": "META",
+    "headline": "Generative AI reframes authorship as a distributed practice",
+    "summary": "A Cambridge Forum call for papers highlights how prompting, curation, editing, dataset construction, and fine-tuning redistribute creative labor and responsibility. The framing is valuable for designers because it treats agency as something negotiated across people, models, interfaces, and datasets.",
+    "url": "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-culture-and-society/announcements/call-for-papers/ethics-and-aesthetics-of-generative-ai-authorship-creativity-agency",
+    "relevance": 93
+  },
+  {
+    "id": "synthetic_knowledge_aesthetics",
+    "category": "META",
+    "headline": "Synthetic knowledge becomes an aesthetic question",
+    "summary": "An interdisciplinary UCL symposium asks whether non-human processes can produce forms of understanding and aesthetic insight. Its focus on embodiment, intentionality, cultural memory, and dataset influence offers a strong theoretical lens for AI-mediated creative practice.",
+    "url": "https://www.ucl.ac.uk/ioe/events/2026/nov/art-and-science-creative-ai",
+    "relevance": 90
+  },
+  {
+    "id": "ai_music_creativity_ethics",
+    "category": "SONIC",
+    "headline": "Musical creativity meets the ethics of generative composition",
+    "summary": "A newly listed peer-reviewed paper examines opportunities, ethical challenges, and future prospects for AI in musical composition. The intersection matters because composition systems are changing not only production workflows but also ideas of originality, authorship, and musical intention.",
+    "url": "https://aiuniversejournal.org/projects/23-ai-music-and-arts/",
+    "relevance": 88
+  },
+  {
+    "id": "multimodal_audio_recommendation",
+    "category": "SONIC",
+    "headline": "Causal multimodal models reshape sequential audio discovery",
+    "summary": "A new preprint investigates causal disentanglement across multiple domains for sequential audio recommendation. Such systems could move beyond opaque personalization toward interfaces that expose why a listener is guided through changing sonic contexts.",
+    "url": "https://aiuniversejournal.org/projects/23-ai-music-and-arts/",
+    "relevance": 84
+  },
+  {
+    "id": "creative_cloth_pattern_generation",
+    "category": "STR_ART",
+    "headline": "Generative models transform plain cloth into stylized pattern systems",
+    "summary": "Research combines segmentation and Stable Diffusion-style generation to transform plain textile surfaces into stylized cloth patterns. The technique points toward rapid, material-aware exploration for fashion, surface design, and generative fabrication.",
+    "url": "https://aiuniversejournal.org/projects/23-ai-music-and-arts/",
+    "relevance": 87
+  },
+  {
+    "id": "product_style_transfer_visual_search",
+    "category": "STR_ART",
+    "headline": "Visual search becomes a generative style-transfer pipeline",
+    "summary": "A peer-reviewed project integrates mobile visual search with generative models for product artistic style transfer. It suggests a future in which reference gathering, visual comparison, and style variation collapse into one creative interaction loop.",
+    "url": "https://aiuniversejournal.org/projects/23-ai-music-and-arts/",
+    "relevance": 85
+  },
+  {
+    "id": "ai_music_lab_creative_process",
+    "category": "SONIC",
+    "headline": "A music lab studies AI as a creative and aesthetic process",
+    "summary": "The AI Music Lab brings researchers, artists, and technologists together around generative models, lyrics, production, and musical creativity. Its emphasis on creative and aesthetic processes makes it more relevant to sonic design than a conventional technology showcase.",
+    "url": "https://www.uax.com/en/faculties-and-centres/ai-music-lab",
+    "relevance": 86
+  },
+  {
+    "id": "creactivity_design_ethics",
+    "category": "STR_ART",
+    "headline": "Design education confronts generative AI without surrendering imagination",
+    "summary": "Creactivity 2026 centers generative AI, systemic design, innovation, and ethics in a design-focused program. Its guiding question is how emerging tools can expand interpretation and originality rather than reduce design to automated production.",
+    "url": "https://firenzeurbanlifestyle.com/en/creactivity-2026-pontedera-design-artificial-intelligence/",
+    "relevance": 82
+  },
+  {
+    "id": "unesco_human_ai_creativity",
+    "category": "META",
+    "headline": "UNESCO asks what remains distinctly human in AI creativity",
+    "summary": "A UNESCO discussion with artists and students frames AI as an amplifier of experimentation rather than a substitute for human choice. It also connects creative practice to transparency, sustainability, energy use, and disclosure of data and process.",
+    "url": "https://www.unesco.org/en/articles/when-ai-and-humans-can-both-create-what-becomes-human-creativity",
+    "relevance": 92
+  },
+  {
+    "id": "creative_ai_diversity_literacy",
+    "category": "CX_UX",
+    "headline": "Creative AI needs literacy and pluralism, not just better prompts",
+    "summary": "Alternative approaches to creative AI emphasize diversity, literacy, and depolarization alongside technical capability. This reframes the user experience challenge as helping people understand, contest, and shape model behavior rather than merely obtaining faster outputs.",
+    "url": "https://dei.fe.up.pt/creativitytalks/portfolio/creativity-talk-21/",
+    "relevance": 90
+  },
+  {
+    "id": "ai_authorship_design_labor",
+    "category": "STR_ART",
+    "headline": "The creative act expands beyond the final generated image",
+    "summary": "Current theory treats prompting, selection, editing, dataset building, and fine-tuning as meaningful creative labor. For visual designers, this expands the design artifact from an output into a traceable system of decisions and responsibilities.",
+    "url": "https://www.cambridge.org/core/journals/cambridge-forum-on-ai-culture-and-society/announcements/call-for-papers/ethics-and-aesthetics-of-generative-ai-authorship-creativity-agency",
+    "relevance": 91
+  },
+  {
+    "id": "embodied_ai_sound_art",
+    "category": "SONIC",
+    "headline": "Machine-generated sound is being designed for bodies, not screens",
+    "summary": "Yuri Suzuki’s evolving sound environments position AI output within physical, social, and participatory installations. The approach challenges purely screen-based generative media by making listening an embodied and shared interaction.",
+    "url": "https://newsnix.com/articles/yuri-suzuki-sound-artist-designboom-interview/",
+    "relevance": 89
+  },
+  {
+    "id": "creative_ai_for_people_planet",
+    "category": "META",
+    "headline": "Creative AI is being judged by cultural and planetary impact",
+    "summary": "The Art and Science of Creative AI program links artistic experimentation to responsible development, cultural memory, and environmental concerns. It frames model design and dataset choices as cultural decisions with consequences beyond efficiency.",
+    "url": "https://www.ucl.ac.uk/ioe/events/2026/nov/art-and-science-creative-ai",
+    "relevance": 88
+  },
+  {
+    "id": "human_ai_creative_satisfaction",
+    "category": "CX_UX",
+    "headline": "Creative interfaces must optimize satisfaction, not output volume",
+    "summary": "Research on human–AI creative work shows that faster production can conflict with creative diversity and user satisfaction. This creates a clear UX mandate: measure whether systems preserve ownership, exploration, and meaningful decision-making alongside productivity.",
+    "url": "https://techxplore.com/news/2026-11-human-involvement-creative-task-ai.html",
+    "relevance": 93
   }
 ]
